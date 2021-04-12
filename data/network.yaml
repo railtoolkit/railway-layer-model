@@ -1,0 +1,100 @@
+%YAML 1.2
+---
+network:
+  name: "Example Infrastructure"
+  id: base_layer
+  stations:
+    - id: Wenden
+      plot_x_coord: 0.0
+      plot_y_coord: 0.0
+    - id: Rebenau
+      plot_x_coord: 2.0
+      plot_y_coord: 0.0
+    - id: Okerbach Gbf
+      plot_x_coord: 4.5
+      plot_y_coord: -0.5
+    - id: Okerbach Pbf
+      plot_x_coord: 5.5
+      plot_y_coord: -0.5
+    - id: Abzweig Bülten
+      plot_x_coord: 8.0
+      plot_y_coord: 0.0
+    - id: Schleinitz
+      plot_x_coord: 10.0
+      plot_y_coord: 0.0
+    - id: Schlossberg
+      plot_x_coord: 13.0
+      plot_y_coord: 0.0
+    - id: Mittelstadt
+      plot_x_coord: 2.0
+      plot_y_coord: 1.0
+    - id: Pockelsdorf
+      plot_x_coord: 5.0
+      plot_y_coord: 0.5
+  lines:
+    # Wenden Schlossberg via Okerbach (9721)
+    - id: wenden_to_rebenau
+      name: "9721"
+      source: Wenden
+      target: Rebenau
+      start: 9.1
+      end: 16.3
+    - id: rebenau_to_okerbachGbf
+      name: "9721"
+      source: Rebenau
+      target: Okerbach Gbf
+      start: 16.3
+      end: 26.3
+    - id: okerbachGbf_to_okerbachPbf
+      name: "9721"
+      source: Okerbach Gbf
+      target: Okerbach Pbf
+      start: 26.3
+      end: 27.2
+    - id: okerbachPbf_to_buelten
+      name: "9721"
+      source: Okerbach Pbf
+      target: Abzweig Bülten
+      start: 27.2
+      end: 32.1
+    - id: buelten_to_schleinitz
+      name: "9721"
+      source: Abzweig Bülten
+      target: Schleinitz
+      start: 32.1
+      end: 36.0
+    - id: schleinitz_to_schlossberg
+      name: "9721"
+      source: Schleinitz
+      target: Schlossberg
+      start: 36.0
+      end: 42.8
+    # Rebenau Buelten via Pockelsdorf (9724)
+    - id: rebenau_to_pockelsdorf
+      name: "9724"
+      source: Rebenau
+      target: Pockelsdorf
+      start: 0.0
+      end: 9.8
+    - id: pockelsdorf_to_buelten
+      name: "9724"
+      source: Pockelsdorf
+      target: Abzweig Bülten
+      start: 9.8
+      end: 18.9
+    # Mittelstadt Pockelsdorf (9344)
+    - id: mittelstadt_to_pockelsdorf
+      name: "9344"
+      source: Mittelstadt
+      target: Pockelsdorf
+      start: 5.5
+      end: 9.7
+---
+topology:
+  id: 
+  turnouts: 
+---
+resistance:
+   - [station, link]
+   - [      0, null]
+   - [  10000, null]
