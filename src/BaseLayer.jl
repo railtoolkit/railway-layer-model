@@ -8,12 +8,16 @@
 module BaseLayer
 
 using YAML
-using LightGraphs
-using GraphPlot
-using Colors
+using LightGraphs, MetaGraphs
+using GraphPlot, Colors
 
 export importBaseLayer, showBaseLayer
 
+# ===========================
+"""
+Takes a YAML-file and extracts the "network" from it.
+Returns a MetaGraph object.
+"""
 function importBaseLayer(file_path)
 
   # load data from external file
@@ -23,67 +27,87 @@ function importBaseLayer(file_path)
   numStations = length(data["network"]["stations"])
   
   # map station ids to a number and vice versa
-  stationNum2Names = []
-  for elem in 1:numStations
-    push!(stationNum2Names, data["network"]["stations"][elem]["id"])
+  stationNum2ID = []
+  for station in 1:numStations
+    push!(stationNum2ID, data["network"]["stations"][station]["id"])
   end
-  stationNames2Num = Dict(stationNum2Names[1] => 1) # first element
-  for elem in 2:numStations # all the other elements
-    push!(stationNames2Num, stationNum2Names[elem] => elem)
-  end
-
-  # get plot coords for each station
-  coord_x = Float64[]
-  for elem in 1:numStations
-    push!(coord_x, data["network"]["stations"][elem]["plot_x_coord"])
-  end
-  coord_y = Float64[]
-  for elem in 1:numStations
-    push!(coord_y, data["network"]["stations"][elem]["plot_y_coord"])
+  stationID2Num = Dict(stationNum2ID[1] => 1) # first station
+  for station in 2:numStations # all the other stations
+    push!(stationID2Num, stationNum2ID[station] => station)
   end
 
-  # determine line connections in external file
-  connections = []
-  for link in data["network"]["lines"]
-    source = stationNames2Num[link["source"]]
-    target = stationNames2Num[link["target"]]
-    # for correct sorting and mapping the correct names in the plot
-    if source > target # swap
-      local tmp = source
-      source = target
-      target = tmp
-    end
-    id = link["id"]
-    name = link["name"]
-    push!(connections, (source, target, name, id))
-  end
-  # sort it by the source for mapping the correct names in the plot
-  sort!(connections, by = first)
-  linesNum2Names = []
-  for link in connections
-    push!(linesNum2Names, link[4])
-  end
-
-  # construct graph with station and connections
+  # construct SimpleGraph with station and connections
   network = LightGraphs.Graph(numStations)
-  for link in connections
-    LightGraphs.add_edge!(network, link[1], link[2])
+  # convert SimpleGraph to a MetaGraph
+  network = MetaGraphs.MetaGraph(network)
+  # add generell graph informations
+  MetaGraphs.set_props!(
+    network,
+    Dict(
+      :id   => data["network"]["id"],
+      :name => data["network"]["name"]
+    )
+  )
+  # add properties for the stations (vertices)
+  for station in 1:numStations
+    MetaGraphs.set_props!(
+      network,
+      station,
+      Dict(
+        :id         => data["network"]["stations"][station]["id"],
+        :name       => data["network"]["stations"][station]["name"],
+        :plot_coord => (
+          data["network"]["stations"][station]["plot_x_coord"],
+          data["network"]["stations"][station]["plot_y_coord"]
+        )
+      )
+    )
+  end
+  # add properties for the links (edges)
+  for link in data["network"]["lines"]
+    source = stationID2Num[link["source"]]
+    target = stationID2Num[link["target"]]
+    # add link to Graph
+    LightGraphs.add_edge!(network, source, target)
+    #
+    MetaGraphs.set_props!(
+      network,
+      LightGraphs.Edge(source, target),
+      Dict(
+        :id   => link["id"],
+        :name => link["name"]
+      )
+    )
   end
 
-  return Dict(
-    "graph"      => network,
-    "nodeNames"  => stationNum2Names,
-    "nodeCoords" => (coord_x,coord_y),
-    "edgeNames"  => linesNum2Names
-  )
+  return network # MetaGraph object
 
-end
+end # function importBaseLayer
 
-function showBaseLayer(graph, nodeNames, nodeCoords, edgeNames)
-  locs_x, locs_y = nodeCoords
+# ===========================
+"""
+Takes a MetaGraph object with a base layer and prints it.
+"""
+function showBaseLayer(network::MetaGraph)
+
+  nodeNames = []
+  locs_x = Float64[]
+  locs_y = Float64[]
+  for item in 1:LightGraphs.nv(network.graph)
+    push!(nodeNames, MetaGraphs.get_prop(network, item, :name))
+    coord_x, coord_y = MetaGraphs.get_prop(network, item, :plot_coord)
+    push!(locs_x, coord_x)
+    push!(locs_y, coord_y)
+  end
+
+  edgeNames = []
+  for item in LightGraphs.edges(network)
+    source, target = LightGraphs.src(item), LightGraphs.dst(item)
+    push!(edgeNames, MetaGraphs.get_prop(network, source, target, :name))
+  end
 
   GraphPlot.gplot(
-    graph,
+    network.graph,
     locs_x, locs_y,
     nodelabel=nodeNames,
     NODESIZE=0.05,
@@ -92,6 +116,6 @@ function showBaseLayer(graph, nodeNames, nodeCoords, edgeNames)
     edgelabel=edgeNames
   )
 
-end
+end # function showBaseLayer
 
 end # module BaseLayer

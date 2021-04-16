@@ -12,8 +12,8 @@ module TestBaseLayer
 file_path = "data/network.yaml"
 
 baseLayer = Main.BaseLayer.importBaseLayer(file_path)
-Main.BaseLayer.showBaseLayer(baseLayer["graph"],baseLayer["nodeNames"],baseLayer["nodeCoords"],baseLayer["edgeNames"])
+Main.BaseLayer.showBaseLayer(baseLayer)
 
-# Test for baseLayer if connection is possible without "kopfmachen"
+# TODO: Test for baseLayer if connection is possible without "kopfmachen"
 
 end # module TestBaseLayer
