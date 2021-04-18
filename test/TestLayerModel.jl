@@ -5,15 +5,15 @@
 # __copyright__     = "2018-2021"
 # __license__       = "ISC"
 
-include("../src/BaseLayer.jl")
+include("src/BaseLayer.jl")
 
 module TestBaseLayer
 
-file_path = "data/network.yaml"
+load_file = "data/base_layer.yaml"
+save_file = "test/base_layer.yaml"
 
-baseLayer = Main.BaseLayer.importBaseLayer(file_path)
+baseLayer = Main.BaseLayer.importBaseLayer(load_file)
 Main.BaseLayer.showBaseLayer(baseLayer)
-
-# TODO: Test for baseLayer if connection is possible without "kopfmachen"
+Main.BaseLayer.exportBaseLayer(baseLayer, save_file)
 
 end # module TestBaseLayer

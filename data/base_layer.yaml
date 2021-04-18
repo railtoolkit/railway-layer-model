@@ -1,8 +1,7 @@
 %YAML 1.2
 ---
-network:
+base_layer:
   name: "Example Infrastructure"
-  id: base_layer
   stations:
     - id: XWN
       name: Wenden
@@ -89,39 +88,3 @@ network:
       target: XPD
       start: 5.5
       end: 9.7
----
-topology:
-  id: physical_layer
-  nodes:
-    - id: 
-      type: branch
-      shape: turnout
-    - id: 
-      type: branch
-      shape: crossing
-    - id: 
-      type: end
-      shape: resuming
-    - id: 
-      type: end
-      shape: buffer stop
-    - id: 
-      type: intermediate
-      shape: signal
-  tracks:
-    - id: 
-      source: 
-      target: 
-      start:
-      end: 
-  curves:
-    - id:
-  slope:
-    - id:
-  traffic_control:
-    - id:
----
-resistance:
-   - [station, link]
-   - [      0, null]
-   - [  10000, null]
