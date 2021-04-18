@@ -11,14 +11,14 @@ using YAML
 using LightGraphs, MetaGraphs
 using GraphPlot, Colors
 
-export importBaseLayer, exportBaseLayer, showBaseLayer
+export loadBaseLayer, saveBaseLayer, showBaseLayer
 
 # ===========================
 """
 Takes a YAML-file and extracts the "network" from it.
 Returns a MetaGraph object.
 """
-function importBaseLayer(file_path)
+function loadBaseLayer(file_path)
 
   # load data from external file
   # TODO error handling
@@ -65,7 +65,7 @@ function importBaseLayer(file_path)
 
   return network # MetaGraph object
 
-end # function importBaseLayer
+end # function loadBaseLayer
 
 # ===========================
 """
@@ -105,7 +105,7 @@ end # function showBaseLayer
 """
 Takes a MetaGraph object and converts it to a YAML-file.
 """
-function exportBaseLayer(network, file_path)
+function saveBaseLayer(network, file_path)
 
   data = Dict()
   push!(data, :base_layer => Dict())
@@ -142,6 +142,6 @@ function exportBaseLayer(network, file_path)
   # TODO error handling
   YAML.write_file(file_path, data)
 
-end # function exportBaseLayer
+end # function saveBaseLayer
 
 end # module BaseLayer
