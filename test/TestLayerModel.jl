@@ -12,8 +12,10 @@ module TestBaseLayer
 load_file = "data/base_layer.yaml"
 save_file = "test/base_layer.yaml"
 
-baseLayer = Main.BaseLayer.loadBaseLayer(load_file)
-Main.BaseLayer.showBaseLayer(baseLayer)
-Main.BaseLayer.saveBaseLayer(baseLayer, save_file)
+@time baseLayer = Main.BaseLayer.loadBaseLayer(load_file)
+
+@time Main.BaseLayer.showBaseLayer(baseLayer)
+
+@time Main.BaseLayer.saveBaseLayer(baseLayer, save_file)
 
 end # module TestBaseLayer

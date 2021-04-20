@@ -9,7 +9,7 @@ module BaseLayer
 
 using YAML
 using LightGraphs, MetaGraphs
-using GraphPlot, Colors
+using GraphPlot
 
 export loadBaseLayer, saveBaseLayer, showBaseLayer
 
@@ -37,33 +37,32 @@ function loadBaseLayer(file_path)
   network = MetaGraphs.MetaDiGraph(numStations)
   # add generell graph informations
   MetaGraphs.set_prop!(network, :name, data["base_layer"]["name"])
+
   # add properties for the stations (vertices)
   for station in 1:numStations
-    MetaGraphs.set_props!(
-      network, station,
-      Dict(
-        :id         =>  data["base_layer"]["stations"][station]["id"],
-        :name       =>  data["base_layer"]["stations"][station]["name"],
-        :plot_coord => (data["base_layer"]["stations"][station]["plot_coord"])
-      )
-    )
-  end
-  # add properties for the links (edges)
-  for link in data["base_layer"]["lines"]
-    source, target = stationID2Num[link["source"]], stationID2Num[link["target"]]
-    LightGraphs.add_edge!(network, source, target)
-    MetaGraphs.set_props!(
-      network, LightGraphs.Edge(source, target),
-      Dict(
-        :id    => link["id"],
-        :name  => link["name"],
-        :start => link["start"],
-        :end   => link["end"]
-      )
-    )
+    station_props = data["base_layer"]["stations"][station]
+    # make sure the station has an id and remove it from the Dict
+    MetaGraphs.set_prop!( network, station, :id, pop!(station_props,"id"))
+    # add remaining properties
+    for station_prop in station_props
+      MetaGraphs.set_prop!(network, station, Symbol(station_prop[1]), station_prop[2])
+    end
   end
 
-  return network # MetaGraph object
+  # add properties for the links (edges)
+  for link in data["base_layer"]["lines"]
+    # make sure the link has a source and a target and remove them from Dict
+    source = stationID2Num[pop!(link,"source")]
+    target = stationID2Num[pop!(link,"target")]
+    # adding the link to the graph
+    LightGraphs.add_edge!(network, source, target)
+    # add remaining properties
+    for link_prop in link
+      MetaGraphs.set_prop!(network, source, target, Symbol(link_prop[1]), link_prop[2])
+    end
+  end
+
+  return network # MetaDiGraph object
 
 end # function loadBaseLayer
 
@@ -71,7 +70,7 @@ end # function loadBaseLayer
 """
 Takes a MetaGraph object with a base layer and prints it.
 """
-function showBaseLayer(network)
+function showBaseLayer(network::AbstractMetaGraph)
 
   nodeNames = []
   locs_x = Float64[]
@@ -105,7 +104,7 @@ end # function showBaseLayer
 """
 Takes a MetaGraph object and converts it to a YAML-file.
 """
-function saveBaseLayer(network, file_path)
+function saveBaseLayer(network::AbstractMetaGraph, file_path)
 
   data = Dict()
   push!(data, :base_layer => Dict())
