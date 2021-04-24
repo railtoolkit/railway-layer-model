@@ -1,0 +1,23 @@
+%YAML 1.2
+---
+physical_layer:
+  name: "signal"
+  elements:
+    - id: E1
+      type: end
+      pos: 0.000
+    - id: E2
+      type: signal
+      forward: [b]
+      backward: [a]
+      pos: 0.250
+    - id: E3
+      type: end
+      pos: 0.500
+  tracks:
+    - id: a
+      source: E1
+      target: E2
+    - id: b
+      source: E2
+      target: E3

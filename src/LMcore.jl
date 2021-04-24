@@ -62,6 +62,8 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
     end
   end
 
+  MetaGraphs.set_indexing_prop!(graph, :id)
+
   return graph # MetaDiGraph object
 
 end # function loadGraph
@@ -119,9 +121,9 @@ Takes a MetaGraph object with a base layer and prints it.
 function showGraph(graph::AbstractMetaGraph)
 
   # test if graph has special properties
-  graph_has_prop_node_names = hasNodeProp(graph, :name)
-  graph_has_prop_edge_names = hasEdgeProp(graph, :name)
-  graph_has_prop_plot_coord = hasNodeProp(graph, :plot_coord)
+  graph_has_prop_node_names = !isempty(MetaGraphs.filter_vertices(graph,:name))
+  graph_has_prop_edge_names = !isempty(MetaGraphs.filter_edges(graph,:name))
+  graph_has_prop_plot_coord = !isempty(MetaGraphs.filter_vertices(graph,:plot_coord))
 
   nodeNames = []
   for item in 1:LightGraphs.nv(graph.graph)
@@ -175,27 +177,5 @@ function showGraph(graph::AbstractMetaGraph)
   end
 
 end # function showGraph
-
-function hasNodeProp(graph::AbstractGraph, prop::Symbol)
-  try
-    MetaGraphs.get_prop(graph, 1, prop)
-    catch error
-    if isa(error, KeyError)
-      return false
-    end
-  end
-  return true
-end # function hasNodeProp
-
-function hasEdgeProp(graph::AbstractGraph, prop::Symbol)
-  try
-    MetaGraphs.get_prop(graph, collect(edges(graph))[1], prop)
-    catch error
-    if isa(error, KeyError)
-      return false
-    end
-  end
-  return true
-end # function hasEdgeProp
 
 end # module LMcore

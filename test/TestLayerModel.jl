@@ -5,17 +5,20 @@
 # __copyright__     = "2018-2021"
 # __license__       = "ISC"
 
+include("src/LMcore.jl")
+
 include("src/BaseLayer.jl")
+include("src/PhysicalLayer.jl")
 
 module TestBaseLayer
 
-load_file = "data/base_layer.yaml"
-save_file = "test/base_layer.yaml"
+@time baseLayer = Main.BaseLayer.loadBaseLayer("data/base_layer.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("data/physical_layer.yaml")
 
-@time baseLayer = Main.BaseLayer.loadBaseLayer(load_file)
+@time Main.LMcore.showGraph(baseLayer)
+@time Main.LMcore.showGraph(physicalLayer)
 
-@time Main.BaseLayer.showBaseLayer(baseLayer)
-
-@time Main.BaseLayer.saveBaseLayer(baseLayer, save_file)
+@time Main.BaseLayer.saveBaseLayer(baseLayer, "test/base_layer.yaml")
+@time Main.PhysicalLayer.savePhysicalLayer(physicalLayer, "test/physical_layer.yaml")
 
 end # module TestBaseLayer

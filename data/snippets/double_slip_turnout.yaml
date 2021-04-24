@@ -1,0 +1,35 @@
+%YAML 1.2
+---
+physical_layer:
+  name: "double slip turnout"
+  elements:
+    - id: E1
+      type: end
+      pos: 0.000
+    - id: E2
+      type: end
+      pos: 0.000
+    - id: E3
+      type: branch
+      forward: [c,d]
+      backward: [a,b]
+      pos: 0.250
+    - id: E4
+      type: end
+      pos: 0.500
+    - id: E5
+      type: end
+      pos: 0.500
+  tracks:
+    - id: a
+      source: E1
+      target: E3
+    - id: b
+      source: E2
+      target: E3
+    - id: c
+      source: E3
+      target: E4
+    - id: d
+      source: E3
+      target: E5

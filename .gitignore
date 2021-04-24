@@ -49,3 +49,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# exclude test YAML-files
+test/*.yaml
