@@ -35,6 +35,7 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
 
   # construct MetaDiGraph with node and edges
   graph = MetaGraphs.MetaDiGraph(numNodes)
+  MetaGraphs.defaultweight!(graph, NaN)
   # add generell graph informations
   MetaGraphs.set_prop!(graph, :name, data[graph_name]["name"])
 
@@ -49,6 +50,9 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
     end
   end
 
+  # create distance matrix
+  distmx = zeros((numNodes,numNodes))
+
   # add properties for the edges
   for edge in data[graph_name][edge_name]
     # make sure the edge has a source and a target and remove them from Dict
@@ -60,8 +64,17 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
     for prop in edge
       MetaGraphs.set_prop!(graph, source, target, Symbol(prop[1]), prop[2])
     end
+    # add distance to weight field
+    if edge["start"] < edge["end"]
+      distance = edge["end"] - edge["start"]
+    else
+      distance = edge["start"]- edge["end"]
+    end
+    distmx[source,target] = distmx[target,source] = distance
   end
 
+  MetaGraphs.set_prop!(graph, :distances, distmx)
+  MetaGraphs.weightfield!(graph, :distances)
   MetaGraphs.set_indexing_prop!(graph, :id)
 
   return graph # MetaDiGraph object

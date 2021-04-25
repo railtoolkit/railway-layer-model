@@ -24,12 +24,20 @@ physical_layer:
     - id: a
       source: E1
       target: E3
+      start: 0.000
+      end: 0.250
     - id: b
       source: E2
       target: E3
+      start: 0.000
+      end: 0.250
     - id: c
       source: E3
       target: E4
+      start: 0.250
+      end: 0.500
     - id: d
       source: E3
       target: E5
+      start: 0.250
+      end: 0.500
