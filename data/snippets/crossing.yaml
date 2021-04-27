@@ -11,8 +11,8 @@ physical_layer:
       pos: 0.000
     - id: E3
       type: crossing
-      forward: [c,d]
-      backward: [a,b]
+      in: [c,d]
+      out: [a,b]
       pos: 0.250
     - id: E4
       type: end
