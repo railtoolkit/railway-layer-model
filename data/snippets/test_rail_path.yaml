@@ -1,0 +1,71 @@
+%YAML 1.2
+---
+physical_layer:
+  name: "turnout"
+  elements:
+    - id: "1"
+      type: end
+      pos: 0.000
+    - id: "2"
+      type: end
+      pos: 0.000
+    - id: W1
+      type: branch
+      in: [b,c]
+      out: [a]
+      pos: 0.250
+    - id: W2
+      type: branch
+      in: [b,c]
+      out: [a]
+      pos: 0.350
+    - id: W3
+      type: branch
+      in: [b,c]
+      out: [a]
+      pos: 0.250
+    - id: "3"
+      type: end
+      pos: 0.500
+    - id: "4"
+      type: end
+      pos: 0.500
+    - id: "5"
+      type: end
+      pos: 0.500
+  tracks:
+    - id: a
+      source: "1"
+      target: W1
+      start: 0.000
+      end: 0.250
+    - id: b
+      source: W1
+      target: "3"
+      start: 0.250
+      end: 0.500
+    - id: c
+      source: W1
+      target: W2
+      start: 0.250
+      end: 0.350
+    - id: d
+      source: W2
+      target: "4"
+      start: 0.350
+      end: 0.500
+    - id: e
+      source: W3
+      target: W2
+      start: 0.250
+      end: 0.350
+    - id: f
+      source: "2"
+      target: W3
+      start: 0.000
+      end: 0.250
+    - id: g
+      source: W3
+      target: "5"
+      start: 0.250
+      end: 0.500

@@ -18,7 +18,6 @@ Takes a YAML-file and extracts the Physical Layer Attributes.
 Returns a MetaGraph object.
 """
 function loadPhysicalLayer(file_path)
-  file_path = "data/physical_layer.yaml"
 
   graph_name = "physical_layer"
   node_name  = "elements"
@@ -67,5 +66,21 @@ function savePhysicalLayer(graph, file_path)
   LMcore.saveGraph(physicalLayer, file_path, graph_name, node_name, edge_name)
 
 end # function saveBaseLayer
+
+
+# ===========================
+"""
+Doc
+"""
+function find_rail_path(g::AbstractMetaGraph, source::Integer, target::Integer)
+  ## test if source, target exist else throw exception
+  # LightGraph.has_path(g::AbstractGraph, u, v; exclude_vertices=Vector())
+
+  ## dijkstra > shortest path between two nodes in a undirected weighted graph
+  # 
+  ## branching rule
+  ## crossing rule
+
+end
 
 end # module PhysicalLayer

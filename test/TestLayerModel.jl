@@ -14,6 +14,7 @@ module TestBaseLayer
 
 @time baseLayer = Main.BaseLayer.loadBaseLayer("data/base_layer.yaml")
 @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("data/physical_layer.yaml")
+@time test = Main.PhysicalLayer.loadPhysicalLayer("data/snippets/test_rail_path.yaml")
 
 @time Main.LMcore.showGraph(baseLayer)
 @time Main.LMcore.showGraph(physicalLayer)
