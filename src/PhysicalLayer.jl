@@ -19,7 +19,7 @@ Returns a MetaGraph object.
 """
 function loadPhysicalLayer(file_path)
 
-  graph_name = "physical_layer"
+  graph_name = "physical"
   node_name  = "elements"
   edge_name  = "tracks"
 
@@ -48,7 +48,7 @@ function savePhysicalLayer(graph, file_path)
   # make a copy so that the original graph will not be altered
   physicalLayer = copy(graph)
 
-  graph_name = "physical_layer"
+  graph_name = "physical"
   node_name  = "elements"
   edge_name  = "tracks"
 

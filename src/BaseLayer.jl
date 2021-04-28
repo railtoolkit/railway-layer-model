@@ -18,7 +18,7 @@ Returns a MetaGraph object.
 """
 function loadBaseLayer(file_path)
 
-  graph_name = "base_layer"
+  graph_name = "base"
   node_name  = "stations"
   edge_name  = "lines"
 
@@ -32,7 +32,7 @@ Takes a Base Layer MetaGraph object and converts it to a YAML-file.
 """
 function saveBaseLayer(baseLayer, file_path)
 
-  graph_name = "base_layer"
+  graph_name = "base"
   node_name  = "stations"
   edge_name  = "lines"
 

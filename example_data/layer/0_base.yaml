@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-base_layer:
+base:
   name: "Example Infrastructure"
   stations:
     - id: XWN

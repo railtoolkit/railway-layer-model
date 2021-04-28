@@ -1,0 +1,149 @@
+%YAML 1.2
+---
+network:
+  name: "Example Infrastructure"
+  id: network
+  nodes:
+    - id: XR_west
+      type: junction
+    - id: XR_1
+      type: track
+    - id: XR_2
+      type: track
+    - id: XR_3
+      type: track
+    - id: XR_4
+      type: track
+    - id: XR_5
+      type: track
+    - id: XR_east
+      type: junction
+    - id: XR_XPD
+      type: track
+    - id: XPD_west
+      type: junction
+    - id: XPD_1
+      type: track
+    - id: XPD_2
+      type: track
+    - id: XPD_3
+      type: track
+    - id: XPD_east
+      type: junction
+    - id: XPD_XBU
+      type: track
+    - id: XBU
+      type: junction
+    - id: XBU_XSZ_1
+      type: track
+    - id: XBU_XSZ_2
+      type: track
+    - id: XSZ_west
+      type: junction
+    - id: XSZ_1
+      type: track
+    - id: XSZ_2
+      type: track
+    - id: XSZ_3
+      type: track
+    - id: XSZ_4
+      type: track
+    - id: XSZ_east
+      type: junction
+  connections:
+    - id: 
+      source: XR_west
+      target: XR_1
+    - id: 
+      source: XR_west
+      target: XR_2
+    - id: 
+      source: XR_west
+      target: XR_3
+    - id: 
+      source: XR_west
+      target: XR_4
+    - id: 
+      source: XR_west
+      target: XR_5
+    - id: 
+      source: XR_1
+      target: XR_east
+    - id: 
+      source: XR_2
+      target: XR_east
+    - id: 
+      source: XR_3
+      target: XR_east
+    - id: 
+      source: XR_4
+      target: XR_east
+    - id: 
+      source: XR_5
+      target: XR_east
+    - id: 
+      source: XR_east
+      target: XR_XPD
+    - id: 
+      source: XR_XPD
+      target: XPD_west
+    - id: 
+      source: XPD_west
+      target: XPD_1
+    - id: 
+      source: XPD_west
+      target: XPD_2
+    - id: 
+      source: XPD_west
+      target: XPD_3
+    - id: 
+      source: XPD_1
+      target: XPD_east
+    - id: 
+      source: XPD_2
+      target: XPD_east
+    - id: 
+      source: XPD_3
+      target: XPD_east
+    - id: 
+      source: XPD_east
+      target: XPD_XBU
+    - id: 
+      source: XPD_XBU
+      target: XBU
+    - id: 
+      source: XBU
+      target: XBU_XSZ_1
+    - id: 
+      source: XBU
+      target: XBU_XSZ_2
+    - id: 
+      source: XBU_XSZ_1
+      target: XSZ_west
+    - id: 
+      source: XBU_XSZ_2
+      target: XSZ_west
+    - id: 
+      source: XSZ_west
+      target: XSZ_1
+    - id: 
+      source: XSZ_west
+      target: XSZ_2
+    - id: 
+      source: XSZ_west
+      target: XSZ_3
+    - id: 
+      source: XSZ_west
+      target: XSZ_4
+    - id: 
+      source: XSZ_1
+      target: XSZ_east
+    - id: 
+      source: XSZ_2
+      target: XSZ_east
+    - id: 
+      source: XSZ_3
+      target: XSZ_east
+    - id: 
+      source: XSZ_4
+      target: XSZ_east

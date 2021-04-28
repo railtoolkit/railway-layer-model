@@ -1,6 +1,6 @@
 %YAML 1.2
 ---
-physical_layer:
+physical:
   name: "Example Infrastructure"
   elements:
     - id: E1

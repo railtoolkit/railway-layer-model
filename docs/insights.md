@@ -17,7 +17,15 @@ double vertex graph
     * BFS
     * DFS
     * Dijkstra
+    * Floyd–Warshall algorithm
   * modified version of Dijkstra-algo
   * Dijkstra to costly for a complete microscopic network
     -> idea if intermediate layer with lines and junctions (see Paper "Train Slots" Figure 9)
-  
+    -> new network layer
+
+# network layer
+
+  * tracks - can have multiple track sections or train berths
+  * junctions definied as either the american Interlocking limit by NORAC:
+    "Interlocking limit: The tracks between the opposing home signals of an interlocking. - Home Signal: A fixed signal governing entrance to an interlocking or controlled point."
+    or by Vakhtel:2002 "Gesamtfahrstraßenknoten"
