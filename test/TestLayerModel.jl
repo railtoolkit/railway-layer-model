@@ -8,18 +8,23 @@
 include("src/LMcore.jl")
 
 include("src/BaseLayer.jl")
+include("src/NetworkLayer.jl")
 include("src/PhysicalLayer.jl")
 
-module TestBaseLayer
+using Test
 
-@time baseLayer = Main.BaseLayer.loadBaseLayer("data/base_layer.yaml")
-@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("data/physical_layer.yaml")
-@time test = Main.PhysicalLayer.loadPhysicalLayer("data/snippets/test_rail_path.yaml")
+module TestLayerModel
+
+@time baseLayer = Main.BaseLayer.loadBaseLayer("example_data/layer/0_base.yaml")
+@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/layer/1_network.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/layer/2_physical.yaml")
+@time test = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_rail_path.yaml")
 
 @time Main.LMcore.showGraph(baseLayer)
+@time Main.LMcore.showGraph(networkLayer)
 @time Main.LMcore.showGraph(physicalLayer)
 
 @time Main.BaseLayer.saveBaseLayer(baseLayer, "test/base_layer.yaml")
 @time Main.PhysicalLayer.savePhysicalLayer(physicalLayer, "test/physical_layer.yaml")
 
-end # module TestBaseLayer
+end # module TestLayerModel

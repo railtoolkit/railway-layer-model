@@ -64,13 +64,15 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
     for prop in edge
       MetaGraphs.set_prop!(graph, source, target, Symbol(prop[1]), prop[2])
     end
-    # add distance to weight field
-    if edge["start"] < edge["end"]
-      distance = edge["end"] - edge["start"]
-    else
-      distance = edge["start"]- edge["end"]
+    # add distance to weight field if hast "start" and "end"
+    if haskey(edge, "start") & haskey(edge, "end")
+      if edge["start"] < edge["end"]
+        distance = edge["end"] - edge["start"]
+      else
+        distance = edge["start"]- edge["end"]
+      end
+      distmx[source,target] = distmx[target,source] = distance
     end
-    distmx[source,target] = distmx[target,source] = distance
   end
 
   MetaGraphs.set_prop!(graph, :distances, distmx)

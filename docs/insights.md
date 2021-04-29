@@ -22,6 +22,8 @@ double vertex graph
   * Dijkstra to costly for a complete microscopic network
     -> idea if intermediate layer with lines and junctions (see Paper "Train Slots" Figure 9)
     -> new network layer
+  * shortest path algorithms are to costly on full physical layer
+    -> division into juctions by network layer
 
 # network layer
 
@@ -29,3 +31,8 @@ double vertex graph
   * junctions definied as either the american Interlocking limit by NORAC:
     "Interlocking limit: The tracks between the opposing home signals of an interlocking. - Home Signal: A fixed signal governing entrance to an interlocking or controlled point."
     or by Vakhtel:2002 "Gesamtfahrstraßenknoten"
+  * tracks and junction contradictory to Gille:2008
+
+usefullness of layer?
+  * path traversel
+  * junction->track: is a track reachable? substitutability/vertretbarkeit?

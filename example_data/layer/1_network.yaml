@@ -48,102 +48,110 @@ network:
       type: track
     - id: XSZ_4
       type: track
+    - id: XSZ_5
+      type: track
     - id: XSZ_east
       type: junction
   connections:
-    - id: 
+    - id: XR_west_to_XR_1
       source: XR_west
       target: XR_1
-    - id: 
+    - id: XR_west_to_XR_2
       source: XR_west
       target: XR_2
-    - id: 
+    - id: XR_west_to_XR_3
       source: XR_west
       target: XR_3
-    - id: 
+    - id: XR_west_to_XR_4
       source: XR_west
       target: XR_4
-    - id: 
+    - id: XR_west_to_XR_5
       source: XR_west
       target: XR_5
-    - id: 
+    - id: XR_1_to_XR_east
       source: XR_1
       target: XR_east
-    - id: 
+    - id: XR_2_to_XR_east
       source: XR_2
       target: XR_east
-    - id: 
+    - id: XR_3_to_XR_east
       source: XR_3
       target: XR_east
-    - id: 
+    - id: XR_4_to_XR_east
       source: XR_4
       target: XR_east
-    - id: 
+    - id: XR_5_to_XR_east
       source: XR_5
       target: XR_east
-    - id: 
+    - id: XR_east_to_XR_XPD
       source: XR_east
       target: XR_XPD
-    - id: 
+    - id: XR_XPD_to_XPD_west
       source: XR_XPD
       target: XPD_west
-    - id: 
+    - id: XPD_west_to_XPD_1
       source: XPD_west
       target: XPD_1
-    - id: 
+    - id: XPD_west_to_XPD_2
       source: XPD_west
       target: XPD_2
-    - id: 
+    - id: XPD_west_to_XPD_3
       source: XPD_west
       target: XPD_3
-    - id: 
+    - id: XPD_1_to_XPD_east
       source: XPD_1
       target: XPD_east
-    - id: 
+    - id: XPD_2_to_XPD_east
       source: XPD_2
       target: XPD_east
-    - id: 
+    - id: XPD_3_to_XPD_east
       source: XPD_3
       target: XPD_east
-    - id: 
+    - id: XPD_east_to_XPD_XBU
       source: XPD_east
       target: XPD_XBU
-    - id: 
+    - id: XPD_XBU_to_XBU
       source: XPD_XBU
       target: XBU
-    - id: 
+    - id: XBU_to_XBU_XSZ_1
       source: XBU
       target: XBU_XSZ_1
-    - id: 
+    - id: XBU_to_XBU_XSZ_2
       source: XBU
       target: XBU_XSZ_2
-    - id: 
+    - id: XBU_XSZ_1_to_XSZ_west
       source: XBU_XSZ_1
       target: XSZ_west
-    - id: 
+    - id: XBU_XSZ_2_to_XSZ_west
       source: XBU_XSZ_2
       target: XSZ_west
-    - id: 
+    - id: XSZ_west_to_XSZ_1
       source: XSZ_west
       target: XSZ_1
-    - id: 
+    - id: XSZ_west_to_XSZ_2
       source: XSZ_west
       target: XSZ_2
-    - id: 
+    - id: XSZ_west_to_XSZ_3
       source: XSZ_west
       target: XSZ_3
-    - id: 
+    - id: XSZ_west_to_XSZ_4
       source: XSZ_west
       target: XSZ_4
-    - id: 
+    - id: XSZ_west_to_XSZ_5
+      source: XSZ_west
+      target: XSZ_5
+    - id: XSZ_1_to_XSZ_east
       source: XSZ_1
       target: XSZ_east
-    - id: 
+    - id: XSZ_2_to_XSZ_east
       source: XSZ_2
       target: XSZ_east
-    - id: 
+    - id: XSZ_3_to_XSZ_east
       source: XSZ_3
       target: XSZ_east
-    - id: 
+    - id: XSZ_4_to_XSZ_east
       source: XSZ_4
+      target: XSZ_east
+    - id: XSZ_5_to_XSZ_east
+      source: XSZ_5
       target: XSZ_east
