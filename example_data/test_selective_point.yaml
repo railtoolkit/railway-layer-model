@@ -1,7 +1,17 @@
 %YAML 1.2
 ---
-physical_layer:
-  name: "turnout"
+network:
+  name: "selective protective point"
+  id: network
+  nodes:
+    - id: west
+      type: junction
+      in: [1,2]
+      out: [3,4,5]
+  connections:  
+physical:
+  name: "selective protective point"
+  id: west
   elements:
     - id: "1"
       type: end
@@ -11,18 +21,18 @@ physical_layer:
       pos: 0.000
     - id: W1
       type: branch
-      in: [b,c]
-      out: [a]
+      in: [a]
+      out: [b,c]
       pos: 0.250
     - id: W2
       type: branch
-      in: [b,c]
-      out: [a]
+      in: [c,e]
+      out: [d]
       pos: 0.350
     - id: W3
       type: branch
-      in: [b,c]
-      out: [a]
+      in: [f]
+      out: [g,e]
       pos: 0.250
     - id: "3"
       type: end

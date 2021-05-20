@@ -25,9 +25,9 @@ function loadPhysicalLayer(file_path)
 
   graph = LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
-  for node in filter_vertices(graph, :forward)# or :backward
-    # replace strings in :forward and :backward with Edge object
-    for symbol in [:forward,:backward]
+  for node in filter_vertices(graph, :in)# or :out
+    # replace strings in :in and :out with Edge object
+    for symbol in [:in,:out]
       tmp  = LightGraphs.Edge[]
       for edge in MetaGraphs.get_prop(graph, node, symbol)
         push!(tmp, first(MetaGraphs.filter_edges(graph, :id ,edge)))
@@ -66,21 +66,5 @@ function savePhysicalLayer(graph, file_path)
   LMcore.saveGraph(physicalLayer, file_path, graph_name, node_name, edge_name)
 
 end # function saveBaseLayer
-
-
-# ===========================
-"""
-Doc
-"""
-function find_rail_path(g::AbstractMetaGraph, source::Integer, target::Integer)
-  ## test if source, target exist else throw exception
-  # LightGraph.has_path(g::AbstractGraph, u, v; exclude_vertices=Vector())
-
-  ## dijkstra > shortest path between two nodes in a undirected weighted graph
-  # 
-  ## branching rule
-  ## crossing rule
-
-end
 
 end # module PhysicalLayer

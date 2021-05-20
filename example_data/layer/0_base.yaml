@@ -2,6 +2,7 @@
 ---
 base:
   name: "Example Infrastructure"
+  id: base
   stations:
     - id: XWN
       name: Wenden

@@ -1,0 +1,80 @@
+%YAML 1.2
+---
+network:
+  name: "junction case 1"
+  id: network
+  nodes:
+    - id: west
+      type: junction
+      in: [1,2]
+      out: [3,4]
+  connections:  
+physical:
+  name: "junction case 1"
+  id: west
+  elements:
+    - id: "1"
+      type: end
+      pos: 0.000
+    - id: "2"
+      type: end
+      pos: 0.000
+    - id: W1
+      type: branch
+      in: [a]
+      out: [b,d]
+      pos: 0.200
+    - id: W2
+      type: branch
+      in: [b,e]
+      out: [c]
+      pos: 0.340
+    - id: W3
+      type: branch
+      in: [d,f]
+      out: [g]
+      pos: 0.250
+    - id: W4
+      type: branch
+      in: [g]
+      out: [h,e]
+      pos: 0.300
+    - id: "3"
+      type: end
+      pos: 0.500
+    - id: "4"
+      type: end
+      pos: 0.500
+  tracks:
+    - id: a
+      source: "1"
+      target: W1
+      length: 0.200
+    - id: b
+      source: W1
+      target: W2
+      length: 0.150
+    - id: c
+      source: W2
+      target: "3"
+      length: 0.150
+    - id: d
+      source: W1
+      target: W3
+      length: 0.060
+    - id: e
+      source: W4
+      target: W2
+      length: 0.060
+    - id: f
+      source: "2"
+      target: W3
+      length: 0.250
+    - id: g
+      source: W3
+      target: W4
+      length: 0.050
+    - id: h
+      source: W4
+      target: "4"
+      length: 0.200

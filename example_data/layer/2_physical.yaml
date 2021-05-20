@@ -2,6 +2,7 @@
 ---
 physical:
   name: "Example Infrastructure"
+  id: physical
   elements:
     - id: E1
       type: end

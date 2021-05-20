@@ -9,9 +9,10 @@ module LMcore
 
 using YAML
 using LightGraphs, MetaGraphs
+using LinearAlgebra
 using GraphPlot
 
-export loadGraph, saveBaseLayer, showBaseLayer
+export loadGraph, saveBaseLayer, showBaseLayer, distance_type
 
 # ===========================
 """
@@ -37,7 +38,12 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
   graph = MetaGraphs.MetaDiGraph(numNodes)
   MetaGraphs.defaultweight!(graph, NaN)
   # add generell graph informations
-  MetaGraphs.set_prop!(graph, :name, data[graph_name]["name"])
+  if haskey(data[graph_name], "name") & (typeof(data[graph_name]["name"]) != Nothing)
+    MetaGraphs.set_prop!(graph, :name, data[graph_name]["name"])
+  end
+  if haskey(data[graph_name], "id") & (typeof(data[graph_name]["id"]) != Nothing)
+    MetaGraphs.set_prop!(graph, :id, data[graph_name]["id"])
+  end
 
   # add properties for the nodes (vertices)
   for node in 1:numNodes
@@ -51,27 +57,34 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
   end
 
   # create distance matrix
-  distmx = zeros((numNodes,numNodes))
+  #distmx = zeros(numNodes,numNodes)
+  distmx =  Array{Union{Missing, Float64}}(missing, numNodes, numNodes)
+  # diagonal with zeros
+  distmx[LinearAlgebra.diagind(distmx)] .= 0.0
 
   # add properties for the edges
-  for edge in data[graph_name][edge_name]
-    # make sure the edge has a source and a target and remove them from Dict
-    source = nodeID2Num[pop!(edge,"source")]
-    target = nodeID2Num[pop!(edge,"target")]
-    # adding the edge to the graph
-    LightGraphs.add_edge!(graph, source, target)
-    # add remaining properties
-    for prop in edge
-      MetaGraphs.set_prop!(graph, source, target, Symbol(prop[1]), prop[2])
-    end
-    # add distance to weight field if hast "start" and "end"
-    if haskey(edge, "start") & haskey(edge, "end")
-      if edge["start"] < edge["end"]
-        distance = edge["end"] - edge["start"]
-      else
-        distance = edge["start"]- edge["end"]
+  if haskey(data[graph_name], edge_name) & (typeof(data[graph_name][edge_name]) != Nothing)
+    for edge in data[graph_name][edge_name]
+      # make sure the edge has a source and a target and remove them from Dict
+      source = nodeID2Num[pop!(edge,"source")]
+      target = nodeID2Num[pop!(edge,"target")]
+      # adding the edge to the graph
+      LightGraphs.add_edge!(graph, source, target)
+      # add remaining properties
+      for prop in edge
+        MetaGraphs.set_prop!(graph, source, target, Symbol(prop[1]), prop[2])
       end
-      distmx[source,target] = distmx[target,source] = distance
+      # add distance to weight field if hast "start" and "end"
+      if haskey(edge, "start") & haskey(edge, "end")
+        if edge["start"] < edge["end"]
+          distance = edge["end"] - edge["start"]
+        else
+          distance = edge["start"] - edge["end"]
+        end
+        distmx[source,target] = distmx[target,source] = distance
+      elseif haskey(edge, "length")
+        distmx[source,target] = distmx[target,source] = edge["length"]
+      end
     end
   end
 
@@ -192,5 +205,17 @@ function showGraph(graph::AbstractMetaGraph)
   end
 
 end # function showGraph
+
+"""
+Function to make sure that nodes are ordered.
+Enables distance matrix to be symetric.
+"""
+function distance_type(node1,node2,distance)
+  if node2 > node1
+    return Dict((node1,node2) => distance)
+  else
+    return Dict((node2,node1) => distance)
+  end
+end # function distance_type
 
 end # module LMcore

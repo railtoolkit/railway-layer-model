@@ -16,9 +16,19 @@ using Test
 module TestLayerModel
 
 @time baseLayer = Main.BaseLayer.loadBaseLayer("example_data/layer/0_base.yaml")
-@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/layer/1_network.yaml")
-@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/layer/2_physical.yaml")
-@time test = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_rail_path.yaml")
+# @time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/layer/1_network.yaml")
+# @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/layer/2_physical.yaml")
+
+### test files:
+@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test_selective_point.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_selective_point.yaml")
+#
+@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test_track.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_track.yaml")
+
+# @time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test_junction1.yaml")
+# @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_junction1.yaml")
+@time Main.NetworkLayer.add_junction_path!(physicalLayer,networkLayer)
 
 @time Main.LMcore.showGraph(baseLayer)
 @time Main.LMcore.showGraph(networkLayer)

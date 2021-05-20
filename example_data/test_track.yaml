@@ -1,0 +1,40 @@
+%YAML 1.2
+---
+network:
+  name: "test track"
+  id: network
+  nodes:
+    - id: t_1
+      type: test
+      in: [1]
+      out: [4]
+  connections:  
+physical:
+  name: "test track"
+  id: t_1
+  elements:
+    - id: "1"
+      type: end
+      pos: 0.000
+    - id: "2"
+      type: berth
+      pos: 0.050
+    - id: "3"
+      type: berth
+      pos: 0.800
+    - id: "4"
+      type: end
+      pos: 0.850
+  tracks:
+    - id: a
+      source: "1"
+      target: "2"
+      length: 0.050
+    - id: b
+      source: "2"
+      target: "3"
+      length: 0.750
+    - id: c
+      source: "3"
+      target: "4"
+      length: 0.050

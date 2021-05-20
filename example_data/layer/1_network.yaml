@@ -6,6 +6,8 @@ network:
   nodes:
     - id: XR_west
       type: junction
+      in: []
+      out: [XR_west_to_XR_1,XR_west_to_XR_2,XR_west_to_XR_3,XR_west_to_XR_4,XR_west_to_XR_5]
     - id: XR_1
       type: track
     - id: XR_2
@@ -18,10 +20,14 @@ network:
       type: track
     - id: XR_east
       type: junction
+      in: [XR_1_to_XR_east,XR_2_to_XR_east,XR_3_to_XR_east,XR_4_to_XR_east,XR_5_to_XR_east]
+      out: [XR_east_to_XR_XPD]
     - id: XR_XPD
       type: track
     - id: XPD_west
       type: junction
+      in: [XR_XPD_to_XPD_west]
+      out: [XPD_west_to_XPD_1,XPD_west_to_XPD_2,XPD_west_to_XPD_3]
     - id: XPD_1
       type: track
     - id: XPD_2
@@ -30,16 +36,22 @@ network:
       type: track
     - id: XPD_east
       type: junction
+      in: [XPD_1_to_XPD_east,XPD_2_to_XPD_east,XPD_3_to_XPD_east]
+      out: [XPD_east_to_XPD_XBU]
     - id: XPD_XBU
       type: track
     - id: XBU
       type: junction
+      in: [XPD_XBU_to_XBU]
+      out: [XBU_to_XBU_XSZ_1,XBU_to_XBU_XSZ_2]
     - id: XBU_XSZ_1
       type: track
     - id: XBU_XSZ_2
       type: track
     - id: XSZ_west
       type: junction
+      in: [XBU_XSZ_1_to_XSZ_west,XBU_XSZ_2_to_XSZ_west]
+      out: [XSZ_west_to_XSZ_1,XSZ_west_to_XSZ_2,XSZ_west_to_XSZ_3,XSZ_west_to_XSZ_4,XSZ_west_to_XSZ_5]
     - id: XSZ_1
       type: track
     - id: XSZ_2
@@ -52,6 +64,8 @@ network:
       type: track
     - id: XSZ_east
       type: junction
+      in: [XSZ_1_to_XSZ_east,XSZ_2_to_XSZ_east,XSZ_3_to_XSZ_east,XSZ_4_to_XSZ_east,XSZ_5_to_XSZ_east]
+      out: []
   connections:
     - id: XR_west_to_XR_1
       source: XR_west
