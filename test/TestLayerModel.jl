@@ -20,14 +20,14 @@ module TestLayerModel
 # @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/layer/2_physical.yaml")
 
 ### test files:
-@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test_selective_point.yaml")
-@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_selective_point.yaml")
+@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test/selective_protective_point.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/selective_protective_point.yaml")
 #
-@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test_track.yaml")
-@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_track.yaml")
+@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test/track.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/track.yaml")
 
-# @time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test_junction1.yaml")
-# @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test_junction1.yaml")
+# @time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test/junction1.yaml")
+# @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/junction1.yaml")
 @time Main.NetworkLayer.add_junction_path!(physicalLayer,networkLayer)
 
 @time Main.LMcore.showGraph(baseLayer)

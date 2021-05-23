@@ -6,22 +6,22 @@ physical_layer:
     - id: E1
       type: end
       pos: 0.000
-    - id: E2
-      type: signal
-      in: [b]
-      out: [a]
+    - id: S1
+      type: sign
+      class: signal
+      direction: [a,b]
       pos: 0.250
-    - id: E3
+    - id: E2
       type: end
       pos: 0.500
   tracks:
     - id: a
       source: E1
-      target: E2
+      target: S1
       start: 0.000
       end: 0.250
     - id: b
-      source: E2
-      target: E3
+      source: S1
+      target: E2
       start: 0.250
       end: 0.500

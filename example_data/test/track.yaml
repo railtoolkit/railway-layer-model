@@ -17,10 +17,14 @@ physical:
       type: end
       pos: 0.000
     - id: "2"
-      type: berth
+      type: sign
+      class: berth
+      direction: [b,a]
       pos: 0.050
     - id: "3"
-      type: berth
+      type: sign
+      class: berth
+      direction: [b,c]
       pos: 0.800
     - id: "4"
       type: end

@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
 physical_layer:
-  name: "double slip turnout"
+  name: "single slip turnout"
   elements:
     - id: E1
       type: end
@@ -10,9 +10,8 @@ physical_layer:
       type: end
       pos: 0.000
     - id: W1
-      type: branch
-      in: [a,b]
-      out: [c,d]
+      type: crossing
+      link: [[a,d],[b,c],[b,d]]
       pos: 0.250
     - id: E3
       type: end
