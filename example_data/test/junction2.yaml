@@ -37,7 +37,7 @@ physical:
     - id: W4
       type: branch
       in: [e,i]
-      out: [h,e]
+      out: [j]
       pos: 0.350
     - id: K5
       type: crossing

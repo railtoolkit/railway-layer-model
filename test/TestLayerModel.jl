@@ -25,11 +25,23 @@ module TestLayerModel
 #
 @time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test/track.yaml")
 @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/track.yaml")
+#
+@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test/junction1.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/junction1.yaml")
+#
+@time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test/junction2.yaml")
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/junction2.yaml")
+#
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/snippets/double_crossing.yaml")
+@time distmx = Main.PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2","E3"], ["E4","E5","E6"])
+#
+@time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/snippets/single_slip_turnout.yaml")
+@time distmx = Main.PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2"], ["E3","E4"])
 
-# @time networkLayer = Main.NetworkLayer.loadNetworkLayer("example_data/test/junction1.yaml")
-# @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/junction1.yaml")
-@time Main.NetworkLayer.add_junction_path!(physicalLayer,networkLayer)
+# test function add_junction_paths!
+@time Main.NetworkLayer.addJunctionPaths!(physicalLayer,networkLayer)
 
+# test function showGraph
 @time Main.LMcore.showGraph(baseLayer)
 @time Main.LMcore.showGraph(networkLayer)
 @time Main.LMcore.showGraph(physicalLayer)

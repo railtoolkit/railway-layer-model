@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
-physical_layer:
-  name: "crossing"
+physical:
+  id: "crossing"
   elements:
     - id: E1
       type: end
@@ -11,8 +11,6 @@ physical_layer:
       pos: 0.000
     - id: K1
       type: crossing
-      in: [a,b]
-      out: [c,d]
       link: [[a,d],[b,c]]
       pos: 0.250
     - id: E3

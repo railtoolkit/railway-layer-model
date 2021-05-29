@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
-physical_layer:
-  name: "signal"
+physical:
+  id: "signal"
   elements:
     - id: E1
       type: end

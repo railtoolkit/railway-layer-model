@@ -1,0 +1,67 @@
+%YAML 1.2
+---
+physical:
+  id: "double crossing"
+  elements:
+    - id: E1
+      type: end
+      pos: 0.000
+    - id: E2
+      type: end
+      pos: 0.000
+    - id: E3
+      type: end
+      pos: 0.000
+    - id: K1
+      type: crossing
+      link: [[b,g],[c,d]]
+      pos: 0.200
+    - id: K2
+      type: crossing
+      link: [[a,f],[d,e]]
+      pos: 0.300
+    - id: E4
+      type: end
+      pos: 0.500
+    - id: E5
+      type: end
+      pos: 0.500
+    - id: E6
+      type: end
+      pos: 0.500
+  tracks:
+    - id: a
+      source: E1
+      target: K2
+      start: 0.000
+      end: 0.300
+    - id: b
+      source: E2
+      target: K1
+      start: 0.000
+      end: 0.200
+    - id: c
+      source: E3
+      target: K1
+      start: 0.000
+      end: 0.200
+    - id: d
+      source: K1
+      target: K2
+      start: 0.200
+      end: 0.300
+    - id: e
+      source: K2
+      target: E4
+      start: 0.300
+      end: 0.500
+    - id: f
+      source: K2
+      target: E5
+      start: 0.300
+      end: 0.500
+    - id: g
+      source: K1
+      target: E6
+      start: 0.200
+      end: 0.500

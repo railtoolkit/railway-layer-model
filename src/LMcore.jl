@@ -38,10 +38,10 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
   graph = MetaGraphs.MetaDiGraph(numNodes)
   MetaGraphs.defaultweight!(graph, NaN)
   # add generell graph informations
-  if haskey(data[graph_name], "name") & (typeof(data[graph_name]["name"]) != Nothing)
+  if haskey(data[graph_name], "name") && (typeof(data[graph_name]["name"]) != Nothing)
     MetaGraphs.set_prop!(graph, :name, data[graph_name]["name"])
   end
-  if haskey(data[graph_name], "id") & (typeof(data[graph_name]["id"]) != Nothing)
+  if haskey(data[graph_name], "id") && (typeof(data[graph_name]["id"]) != Nothing)
     MetaGraphs.set_prop!(graph, :id, data[graph_name]["id"])
   end
 

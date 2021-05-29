@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
-physical_layer:
-  name: "single slip turnout"
+physical:
+  id: "single slip turnout"
   elements:
     - id: E1
       type: end
