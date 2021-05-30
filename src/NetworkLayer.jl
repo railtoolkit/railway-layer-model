@@ -43,7 +43,7 @@ end # function saveNetworkLayer
 
 # ===========================
 """
-Documentation TODO
+Adds a Dict with path to junction based on the physical layer.
 """
 function addJunctionPaths!(physicalLayer::AbstractMetaGraph, networkLayer::AbstractMetaGraph; progression = :forward)
   if progression == :forward
@@ -61,9 +61,9 @@ function addJunctionPaths!(physicalLayer::AbstractMetaGraph, networkLayer::Abstr
   inNodes = MetaGraphs.get_prop(networkLayer, junction_id, junction_progression)
   outNodes = MetaGraphs.get_prop(networkLayer, junction_id, junction_progression_reverse)
 
-  distmx = Main.PhysicalLayer.physicalPaths(physicalLayer, inNodes, outNodes, progression)
+  pathtab = Main.PhysicalLayer.physicalPaths(physicalLayer, inNodes, outNodes, progression)
 
-  MetaGraphs.set_prop!(networkLayer, junction_id, :paths, distmx)
+  MetaGraphs.set_prop!(networkLayer, junction_id, :paths, pathtab)
 
 end # function addJunctionPaths!
 

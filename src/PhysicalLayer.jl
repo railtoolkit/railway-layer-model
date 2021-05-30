@@ -121,7 +121,7 @@ function physicalPaths(physicalLayer::AbstractMetaGraph, inNodes, outNodes; prog
   # TODO: optimize so that already found shortest path can be used with double vertx constraint
   #       e.g. with an adapted Floyd–Warshall algorithm
   # create distance matrix
-  distmx = Dict{Tuple{Int64,Int64}, Tuple{Float64, Vector{Int64}}}()# (inNode,outNode) => (distance, [path])
+  pathtab = Dict{Tuple{Int64,Int64}, Tuple{Float64, Vector{Int64}}}()# (inNode,outNode) => (distance, [path])
   #
   while !isempty(in_nodes)
     # println("DEBUG - in_nodes: $in_nodes")
@@ -144,7 +144,7 @@ function physicalPaths(physicalLayer::AbstractMetaGraph, inNodes, outNodes; prog
           Main.PhysicalLayer.add_path_to_table!(edge, distance, physicalLayer, Q, previous)
         end
       elseif MetaGraphs.get_prop(physicalLayer, u, :type) == "crossing" # double vertex graph voodoo
-        Main.PhysicalLayer.extend_path_along_crossing!(u, physicalLayer, Q, previous, progression)
+        Main.PhysicalLayer.extend_path_along_links!(u, physicalLayer, Q, previous, progression)
       elseif (MetaGraphs.get_prop(physicalLayer, u, :type) == "end") & (u != start_node)
         # do not add the next node
       else# node not a branch, crossing or end and therefore a single node
@@ -159,7 +159,7 @@ function physicalPaths(physicalLayer::AbstractMetaGraph, inNodes, outNodes; prog
 
     end # while !isempty(Q)
 
-    # take path from out_nodes and save them in the distmx
+    # take path from out_nodes and save them in the pathtab
     for node in intersect(out_nodes,visited)
       pseq = Int64[]# seqence of nodes from to start_node, previous node
       n = node
@@ -173,19 +173,19 @@ function physicalPaths(physicalLayer::AbstractMetaGraph, inNodes, outNodes; prog
       pushfirst!(pseq, start_node)
       #
       dist = previous[node][1]
-      push!(distmx, (start_node, node) => (dist, pseq))
+      push!(pathtab, (start_node, node) => (dist, pseq))
     end
-    # println("DEBUG - distmx: $distmx")
+    # println("DEBUG - pathtab: $pathtab")
 
   end # while !isempty(in_nodes)
 
-  return distmx
+  return pathtab
 
 end # function physicalPaths
 
 # ===========================
 """
-Function to call inside "add_junction_paths!".
+Function to call inside physicalPaths().
 Needs access to "physicalLayer", "Q", and "previous".
 """
 function add_path_to_table!(edge, curr_dist, physicalLayer, Q, previous)
@@ -199,10 +199,10 @@ function add_path_to_table!(edge, curr_dist, physicalLayer, Q, previous)
 end # function add_path_to_table!
 
 """
-Function to call inside "add_junction_paths!".
+Function to call inside physicalPaths().
 Needs access to "physicalLayer", "Q", and "previous".
 """
-function extend_path_along_crossing!(node, physicalLayer, Q, previous, progression)
+function extend_path_along_links!(node, physicalLayer, Q, previous, progression)
   incoming = LightGraphs.Edge(last(previous[node][2]),node)
   outgoing = LightGraphs.Edge[]
   for link in MetaGraphs.get_prop(physicalLayer, node, :link)# find outgoing edge
@@ -237,22 +237,22 @@ function extend_path_along_crossing!(node, physicalLayer, Q, previous, progressi
     Main.PhysicalLayer.update_queue!(Q,v,distance,path,previous)
     
   end
-end # function extend_path_along_crossing!
+end # function extend_path_along_links!
 
 """
-Function to call inside "add_path_to_table!" and "extend_path_along_crossing!".
+Function to call inside "add_path_to_table!" and "extend_path_along_links!".
 Needs access to "physicalLayer".
 """
-function graph_distance(graph, edge, distance)
-  if !isempty(MetaGraphs.filter_edges(graph,:length))# edge has property "length"
-    return distance + MetaGraphs.get_prop(graph, edge, :length)
+function graph_distance(physicalLayer, edge, distance)
+  if !isempty(MetaGraphs.filter_edges(physicalLayer,:length))# edge has property "length"
+    return distance + MetaGraphs.get_prop(physicalLayer, edge, :length)
   else
-    return distance + MetaGraphs.get_prop(graph, edge, :end) - MetaGraphs.get_prop(graph, edge, :start)
+    return distance + MetaGraphs.get_prop(physicalLayer, edge, :end) - MetaGraphs.get_prop(physicalLayer, edge, :start)
   end
 end # function graph_distance
 
 """
-Function to call inside "add_path_to_table!" and "extend_path_along_crossing!".
+Function to call inside "add_path_to_table!" and "extend_path_along_links!".
 Needs access to "previous".
 """
 function update_queue!(Q,node,distance,predecessor_list,previous_table)

@@ -1,16 +1,16 @@
 # base layer
 
-  what does a edge or a node represent?
+  * what does a edge or a node represent?
     * a node could be a german "Bahnhof"; or 
     * a collective name of a berth grouping
 
-  usefullness of layer?
+  * usefullness of layer?
     * path traversel
     * A->B->C: does a train need to reverse direction in B?
 
 # physical layer
 
-  double vertex graph
+  * double vertex graph:
     * complex implementation
     * adaption of graph mit with properties :in and :out in direction of mileage
     * path from nade X to node Y with railway typical constrains:
@@ -25,7 +25,10 @@
     * shortest path algorithms are to costly on full physical layer
       -> division into juctions by network layer
   
-  a directed graph can also model a common turnout, but not the signal or a crossing
+  * a directed graph can also model a common turnout, but not the signal or a crossing
+
+  * direction in directed graph used for progression along objects
+    * progression forward as in with the milage of the tracks
 
 # network layer
 

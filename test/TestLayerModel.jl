@@ -33,10 +33,10 @@ module TestLayerModel
 @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/test/junction2.yaml")
 #
 @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/snippets/double_crossing.yaml")
-@time distmx = Main.PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2","E3"], ["E4","E5","E6"])
+@time pathtab = Main.PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2","E3"], ["E4","E5","E6"])
 #
 @time physicalLayer = Main.PhysicalLayer.loadPhysicalLayer("example_data/snippets/single_slip_turnout.yaml")
-@time distmx = Main.PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2"], ["E3","E4"])
+@time pathtab = Main.PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2"], ["E3","E4"])
 
 # test function add_junction_paths!
 @time Main.NetworkLayer.addJunctionPaths!(physicalLayer,networkLayer)
