@@ -22,7 +22,7 @@ function loadPhysicalLayer(file_path)
 
   graph_name = "physical"
   node_name  = "elements"
-  edge_name  = "tracks"
+  edge_name  = "sections"
 
   graph = LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
@@ -62,7 +62,7 @@ function savePhysicalLayer(graph, file_path)
 
   graph_name = "physical"
   node_name  = "elements"
-  edge_name  = "tracks"
+  edge_name  = "sections"
 
   for node in filter_vertices(physicalLayer, :in)# or :out
     # replace Edge object in :forward and :backward with strings

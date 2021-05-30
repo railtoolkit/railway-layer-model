@@ -19,7 +19,7 @@ physical:
     - id: E4
       type: end
       pos: 0.500
-  tracks:
+  sections:
     - id: a
       source: E1
       target: K1

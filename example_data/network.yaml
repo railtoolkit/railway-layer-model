@@ -108,7 +108,7 @@ topology:
     - id: 
       type: intermediate
       shape: signal
-  tracks:
+  sections:
     - id: 
       source: 
       target: 

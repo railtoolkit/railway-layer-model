@@ -43,7 +43,7 @@ physical:
     - id: "5"
       type: end
       pos: 0.500
-  tracks:
+  sections:
     - id: a
       source: "1"
       target: W1
