@@ -10,14 +10,14 @@ module NetworkLayer
 include("LMcore.jl")
 using LightGraphs, MetaGraphs
 
-export loadNetworkLayer, saveNetworkLayer, addJunctionPaths!
+export load, save, addJunctionPaths!
 
 # ===========================
 """
 Takes a YAML-file and extracts the Network Layer Attributes.
 Returns a MetaGraph object.
 """
-function loadNetworkLayer(file_path)
+function load(file_path)
 
   graph_name = "network"
   node_name  = "nodes"
@@ -25,13 +25,13 @@ function loadNetworkLayer(file_path)
 
   return LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
-end # function loadNetworkLayer
+end # function load
 
 # ===========================
 """
 Takes a Network Layer MetaGraph object and converts it to a YAML-file.
 """
-function saveNetworkLayer(networkLayer, file_path)
+function save(networkLayer, file_path)
 
   graph_name = "network"
   node_name  = "nodes"
@@ -39,7 +39,7 @@ function saveNetworkLayer(networkLayer, file_path)
 
   LMcore.saveGraph(networkLayer, file_path, graph_name, node_name, edge_name)
 
-end # function saveNetworkLayer
+end # function save
 
 # ===========================
 """

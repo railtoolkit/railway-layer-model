@@ -13,14 +13,14 @@ import .LMcore
 using LightGraphs, MetaGraphs
 using DataStructures
 
-export loadPhysicalLayer, savePhysicalLayer, physicalPaths
+export load, save, physicalPaths
 
 # ===========================
 """
 Takes a YAML-file and extracts the Physical Layer Attributes.
 Returns a MetaGraph object.
 """
-function loadPhysicalLayer(file_path)
+function load(file_path)
 
   graph_name = "physical"
   node_name  = "elements"
@@ -52,13 +52,13 @@ function loadPhysicalLayer(file_path)
 
   return graph
 
-end # function loadPhysicalLayer
+end # function load
 
 # ===========================
 """
 Takes a Physical Layer MetaGraph object and converts it to a YAML-file.
 """
-function savePhysicalLayer(graph, file_path)
+function save(graph, file_path)
   # make a copy so that the original graph will not be altered
   physicalLayer = copy(graph)
 
@@ -96,7 +96,7 @@ function savePhysicalLayer(graph, file_path)
 
   LMcore.saveGraph(physicalLayer, file_path, graph_name, node_name, edge_name)
 
-end # function saveBaseLayer
+end # function save
 
 # ===========================
 """

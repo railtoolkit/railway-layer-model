@@ -9,14 +9,14 @@ module BaseLayer
 
 include("LMcore.jl")
 
-export loadBaseLayer, saveBaseLayer
+export load, save
 
 # ===========================
 """
 Takes a YAML-file and extracts the Base Layer Attributes.
 Returns a MetaGraph object.
 """
-function loadBaseLayer(file_path)
+function load(file_path)
 
   graph_name = "base"
   node_name  = "stations"
@@ -24,13 +24,13 @@ function loadBaseLayer(file_path)
 
   return LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
-end # function loadBaseLayer
+end # function load
 
 # ===========================
 """
 Takes a Base Layer MetaGraph object and converts it to a YAML-file.
 """
-function saveBaseLayer(baseLayer, file_path)
+function save(baseLayer, file_path)
 
   graph_name = "base"
   node_name  = "stations"
@@ -38,6 +38,6 @@ function saveBaseLayer(baseLayer, file_path)
 
   LMcore.saveGraph(baseLayer, file_path, graph_name, node_name, edge_name)
 
-end # function saveBaseLayer
+end # function save
 
 end # module BaseLayer

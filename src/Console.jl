@@ -25,7 +25,7 @@ function main()
     if !endswith(file_path, ".yaml")
       file_path = file_path * ".yaml"
     end
-    graph = PhysicalLayer.loadPhysicalLayer(file_path)
+    graph = PhysicalLayer.load(file_path)
   else
     # construct MetaDiGraph with node and edges
     graph = MetaGraphs.MetaDiGraph(0)
@@ -49,7 +49,7 @@ function main()
       elseif userinput in ("L","l")
         userList(graph)
       # elseif userinput in ("P","p")
-      #   LMcore.showGraph(graph)
+      #   LMcore.show(graph)
       elseif userinput in ("S","s")
         userSave(graph)
       elseif userinput in ("X","x")
@@ -437,7 +437,7 @@ function userSave(graph)
   if !endswith(file_path, ".yaml")
     file_path = file_path * ".yaml"
   end
-  PhysicalLayer.savePhysicalLayer(graph, file_path)
+  PhysicalLayer.save(graph, file_path)
   println("Graph saved in $file_path")
 end # function userSave
 

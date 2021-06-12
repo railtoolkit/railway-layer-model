@@ -12,7 +12,7 @@ using LightGraphs, MetaGraphs
 using LinearAlgebra
 using GraphPlot
 
-export loadGraph, saveGraph, showGraph, distance_type, has_edge, has_node
+export loadGraph, saveGraph, show, distance_type, has_edge, has_node
 
 # ===========================
 """
@@ -143,13 +143,13 @@ function saveGraph(graph::AbstractMetaGraph, file_path, graph_name, node_name, e
   # TODO error handling
   YAML.write_file(file_path, data)
 
-end # function saveBaseLayer
+end # function save
 
 # ===========================
 """
 Takes a MetaGraph object with a base layer and prints it.
 """
-function showGraph(graph::AbstractMetaGraph)
+function show(graph::AbstractMetaGraph)
 
   # test if graph has special properties
   graph_has_prop_node_names = !isempty(MetaGraphs.filter_vertices(graph,:name))
@@ -207,7 +207,7 @@ function showGraph(graph::AbstractMetaGraph)
 
   end
 
-end # function showGraph
+end # function show
 
 """
 Function to make sure that nodes are ordered.

@@ -21,27 +21,27 @@ using Test
 
 module TestLayerModel
 
-@time baseLayer = BaseLayer.loadBaseLayer("example_data/layer/0_base.yaml")
-# @time networkLayer = NetworkLayer.loadNetworkLayer("example_data/layer/1_network.yaml")
-# @time physicalLayer = PhysicalLayer.loadPhysicalLayer("example_data/layer/2_physical.yaml")
+@time baseLayer = BaseLayer.load("example_data/layer/0_base.yaml")
+# @time networkLayer = NetworkLayer.load("example_data/layer/1_network.yaml")
+# @time physicalLayer = PhysicalLayer.load("example_data/layer/2_physical.yaml")
 
 ### test files:
-@time networkLayer = NetworkLayer.loadNetworkLayer("example_data/test/selective_protective_point.yaml")
-@time physicalLayer = PhysicalLayer.loadPhysicalLayer("example_data/test/selective_protective_point.yaml")
+@time networkLayer = NetworkLayer.load("example_data/test/selective_protective_point.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/test/selective_protective_point.yaml")
 #
-@time networkLayer = NetworkLayer.loadNetworkLayer("example_data/test/track.yaml")
-@time physicalLayer = PhysicalLayer.loadPhysicalLayer("example_data/test/track.yaml")
+@time networkLayer = NetworkLayer.load("example_data/test/track.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/test/track.yaml")
 #
-@time networkLayer = NetworkLayer.loadNetworkLayer("example_data/test/junction1.yaml")
-@time physicalLayer = PhysicalLayer.loadPhysicalLayer("example_data/test/junction1.yaml")
+@time networkLayer = NetworkLayer.load("example_data/test/junction1.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/test/junction1.yaml")
 #
-@time networkLayer = NetworkLayer.loadNetworkLayer("example_data/test/junction2.yaml")
-@time physicalLayer = PhysicalLayer.loadPhysicalLayer("example_data/test/junction2.yaml")
+@time networkLayer = NetworkLayer.load("example_data/test/junction2.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/test/junction2.yaml")
 #
-@time physicalLayer = PhysicalLayer.loadPhysicalLayer("example_data/snippets/double_crossing.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/double_crossing.yaml")
 @time pathtab = PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2","E3"], ["E4","E5","E6"])
 #
-@time physicalLayer = PhysicalLayer.loadPhysicalLayer("example_data/snippets/single_slip_turnout.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/single_slip_turnout.yaml")
 @time pathtab = PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2"], ["E3","E4"])
 
 # test function add_junction_paths!
@@ -50,12 +50,12 @@ module TestLayerModel
 # test manual user input for the PhysicalLayer
 Console.main()
 
-# test function showGraph
-@time LMcore.showGraph(baseLayer)
-@time LMcore.showGraph(networkLayer)
-@time LMcore.showGraph(physicalLayer)
+# test function show
+@time LMcore.show(baseLayer)
+@time LMcore.show(networkLayer)
+@time LMcore.show(physicalLayer)
 
-@time BaseLayer.saveBaseLayer(baseLayer, "test/base_layer.yaml")
-@time PhysicalLayer.savePhysicalLayer(physicalLayer, "test/physical_layer.yaml")
+@time BaseLayer.save(baseLayer, "test/base_layer.yaml")
+@time PhysicalLayer.save(physicalLayer, "test/physical_layer.yaml")
 
 end # module TestLayerModel
