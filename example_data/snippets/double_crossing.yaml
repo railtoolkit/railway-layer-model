@@ -29,7 +29,7 @@ physical:
     - id: E6
       type: end
       pos: 0.500
-  sections:
+  tracksections:
     - id: a
       source: E1
       target: K2
