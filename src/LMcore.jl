@@ -12,7 +12,7 @@ using LightGraphs, MetaGraphs
 using LinearAlgebra
 using GraphPlot
 
-export loadGraph, saveBaseLayer, showBaseLayer, distance_type
+export loadGraph, saveGraph, showGraph, distance_type, has_edge, has_node
 
 # ===========================
 """
@@ -25,7 +25,7 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
   # TODO error handling
   data = YAML.load(open(file_path))
 
-  # determine number of nodes/stations in external file
+  # determine number of nodes/nodes in external file
   numNodes = length(data[graph_name][node_name])
   
   # map node ids to a number
@@ -48,7 +48,7 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
   # add properties for the nodes (vertices)
   for node in 1:numNodes
     node_props = data[graph_name][node_name][node]
-    # make sure the station has an id and remove it from the Dict
+    # make sure the node has an id and remove it from the Dict
     MetaGraphs.set_prop!(graph, node, :id, pop!(node_props,"id"))
     # add remaining properties
     for prop in node_props
@@ -107,35 +107,38 @@ function saveGraph(graph::AbstractMetaGraph, file_path, graph_name, node_name, e
 
   data = Dict()
   push!(data, graph_name => Dict())
-  push!(data[graph_name], :name => MetaGraphs.get_prop(graph, :name))
-  stations = []
+  if MetaGraphs.has_prop(graph, :name)
+    push!(data[graph_name], :name => MetaGraphs.get_prop(graph, :name))
+  end
+
+  nodes = []
   for item in 1:LightGraphs.nv(graph.graph)
-    station = Dict()
+    node = Dict()
     for (key,value) in MetaGraphs.props(graph, item)
-      push!(station, key => value)
+      push!(node, key => value)
     end
-    push!(stations, station)
+    push!(nodes, node)
   end
-  push!(data[graph_name], node_name => stations)
+  push!(data[graph_name], node_name => nodes)
 
-  # map station number to an id 
-  stationNum2ID = []
+  # map node number to an id 
+  nodeNum2ID = []
   for item in 1:LightGraphs.nv(graph.graph)
-    push!(stationNum2ID, MetaGraphs.get_prop(graph, item, :id))
+    push!(nodeNum2ID, MetaGraphs.get_prop(graph, item, :id))
   end
 
-  lines = []
+  relations = []
   for item in LightGraphs.edges(graph)
-    line = Dict()
+    relation = Dict()
     source, target = LightGraphs.src(item), LightGraphs.dst(item)
-    push!(line, :source => stationNum2ID[source])
-    push!(line, :target => stationNum2ID[target])
+    push!(relation, :source => nodeNum2ID[source])
+    push!(relation, :target => nodeNum2ID[target])
     for (key,value) in MetaGraphs.props(graph, source, target)
-      push!(line, key => value)
+      push!(relation, key => value)
     end
-    push!(lines, line)
+    push!(relations, relation)
   end
-  push!(data[graph_name], edge_name => lines)
+  push!(data[graph_name], edge_name => relations)
 
   # TODO error handling
   YAML.write_file(file_path, data)
@@ -217,5 +220,13 @@ function distance_type(node1,node2,distance)
     return Dict((node2,node1) => distance)
   end
 end # function distance_type
+
+function has_node(graph, node_id)::Bool
+  return !(length(collect(MetaGraphs.filter_vertices(graph, :id, node_id))) == 0)
+end # function has_node
+
+function has_edge(graph, edge_id)::Bool
+  return !(length(collect(MetaGraphs.filter_edges(graph, :id, edge_id))) == 0)
+end # function has_edge
 
 end # module LMcore

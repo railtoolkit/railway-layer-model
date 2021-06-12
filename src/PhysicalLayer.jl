@@ -8,6 +8,8 @@
 module PhysicalLayer
 
 include("LMcore.jl")
+import .LMcore
+
 using LightGraphs, MetaGraphs
 using DataStructures
 
@@ -75,7 +77,7 @@ function savePhysicalLayer(graph, file_path)
     end
   end
 
-  for node in filter_vertices(physicalLayer, :link)# or :out
+  for node in filter_vertices(physicalLayer, :link)
     # replace Edge object in :forward and :backward with strings
     tmp  = []
     for elem in MetaGraphs.get_prop(physicalLayer, node, :link)
@@ -84,6 +86,12 @@ function savePhysicalLayer(graph, file_path)
       push!(tmp, [a,b])
     end
     MetaGraphs.set_prop!(physicalLayer, node, :link, tmp)
+  end
+
+  for node in filter_vertices(physicalLayer, :length)
+    length = MetaGraphs.get_prop(physicalLayer, node, :length)
+    length = round(length,digits=4)
+    MetaGraphs.set_prop!(physicalLayer, node, :length, length)
   end
 
   LMcore.saveGraph(physicalLayer, file_path, graph_name, node_name, edge_name)
