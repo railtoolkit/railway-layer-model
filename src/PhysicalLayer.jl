@@ -88,10 +88,10 @@ function save(graph, file_path)
     MetaGraphs.set_prop!(physicalLayer, node, :link, tmp)
   end
 
-  for node in filter_vertices(physicalLayer, :length)
-    length = MetaGraphs.get_prop(physicalLayer, node, :length)
+  for edge in filter_edges(physicalLayer, :length)
+    length = MetaGraphs.get_prop(physicalLayer, edge, :length)
     length = round(length,digits=4)
-    MetaGraphs.set_prop!(physicalLayer, node, :length, length)
+    MetaGraphs.set_prop!(physicalLayer, edge, :length, length)
   end
 
   LMcore.saveGraph(physicalLayer, file_path, graph_name, node_name, edge_name)

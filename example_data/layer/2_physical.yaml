@@ -1,36 +1,583 @@
 %YAML 1.2
 ---
 physical:
-  name: "Example Infrastructure"
-  id: physical
   elements:
-    - id: E1
-      type: end
-      pos: 0.000
-    - id: E2
-      type: branch
-      in: [b,c]
-      out: [a]
-      pos: 0.100
-    - id: E3
-      type: end
-      pos: 0.500
-    - id: E4
-      type: end
-      pos: 0.500
+    - pos: 0.126
+      id: "4_A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.136
+      id: "W7"
+      type: "branch"
+      in:
+        - "4_1"
+      out:
+        - "5_1"
+        - "4_2"
+    - pos: 0.243
+      id: "5_A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.243
+      id: "P5"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 0.243
+      id: "4_C"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.243
+      id: "P4"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 0.293
+      id: "5_C"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 0.717
+      id: "5_D"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 0.293
+      id: "4_E"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 0.803
+      id: "4_F"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 0.041
+      id: "3_A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.156
+      id: "W8"
+      type: "branch"
+      in:
+        - "3_1"
+      out:
+        - "3_2"
+        - "2_1"
+    - pos: 0.289
+      id: "3_C"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.289
+      id: "P3"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 0.261
+      id: "2_B"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.261
+      id: "2_A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.37
+      id: "W9"
+      type: "branch"
+      in:
+        - "2_2"
+        - "21_1"
+      out:
+        - "2_3"
+    - pos: 0.375
+      id: "2_D"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.375
+      id: "P2"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 0.339
+      id: "3_E"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 0.871
+      id: "3_F"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 0.425
+      id: "2_F"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 0.742
+      id: "2_G"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 0.767
+      id: "N5"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 0.767
+      id: "5_F"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.853
+      id: "N4"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 0.853
+      id: "4_H"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.921
+      id: "N3"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 0.921
+      id: "3_H"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.792
+      id: "N2"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 0.792
+      id: "2_I"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.797
+      id: "W15"
+      type: "branch"
+      in:
+        - "2_7"
+      out:
+        - "1_1"
+        - "2_8"
+    - pos: 1.061
+      id: "1_A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.031
+      id: "2_K"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.823
+      id: "W12"
+      type: "branch"
+      in:
+        - "5_5"
+      out:
+        - "51_1"
+        - "5_6"
+    - pos: 0.873
+      id: "51_A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.861
+      id: "5_H"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.927
+      id: "4_J"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.924
+      id: "5_J"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.991
+      id: "3_J"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.031
+      id: "5_K"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 0.891
+      id: "W13"
+      type: "branch"
+      in:
+        - "5_7"
+        - "4_6"
+      out:
+        - "5_8"
+        - "4_7"
+    - pos: 0.961
+      id: "W14"
+      type: "branch"
+      in:
+        - "5_9"
+        - "3_6"
+      out:
+        - "5_10"
+        - "3_7"
+    - pos: 1.046
+      link:
+        -
+          - "5_11"
+          - "5_12"
+        -
+          - "2_9"
+          - "2_10"
+      id: "K16"
+      type: "crossing"
+    - pos: 1.061
+      id: "5_L"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.071
+      id: "2_L"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.161
+      id: "3_K"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.161
+      id: "2_M"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.266
+      id: "W19"
+      type: "branch"
+      in:
+        - "3_9"
+        - "2_12"
+      out:
+        - "3_10"
+        - "2_13"
+    - pos: 1.311
+      id: "4_K"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.311
+      id: "2_N"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.312
+      id: "3_M"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.368
+      id: "W20"
+      type: "branch"
+      in:
+        - "4_9"
+        - "2_14"
+      out:
+        - "4_10"
+    - pos: 1.378
+      id: "4_M"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.378
+      id: "W20Y"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 1.521
+      id: "4_O"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.521
+      id: "Ra10_1"
+      type: "sign"
+      class: "board"
+      direction: "forward"
+    - pos: 1.691
+      id: "4_Q"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 1.691
+      id: "G"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
   tracksections:
-    - id: a
-      source: E1
-      target: E2
-      start: 0.000
-      end: 0.100
-    - id: b
-      source: E2
-      target: E3
-      start: 0.100
-      end: 0.500
-    - id: c
-      source: E2
-      target: E4
-      start: 0.100
-      end: 0.500
+    - id: "4_1"
+      source: "4_A"
+      target: "W7"
+      length: 0.01
+    - id: "5_1"
+      source: "W7"
+      target: "5_A"
+      length: 0.107
+    - id: "4_2"
+      source: "W7"
+      target: "4_C"
+      length: 0.107
+    - id: "5_1_1"
+      source: "5_A"
+      target: "P5"
+      length: 0.0
+    - id: "5_2"
+      source: "P5"
+      target: "5_C"
+      length: 0.05
+    - id: "4_2_1"
+      source: "4_C"
+      target: "P4"
+      length: 0.0
+    - id: "4_3"
+      source: "P4"
+      target: "4_E"
+      length: 0.05
+    - id: "5_3"
+      source: "5_C"
+      target: "5_D"
+      length: 0.424
+    - id: "5_4"
+      source: "5_D"
+      target: "N5"
+      length: 0.05
+    - id: "4_4"
+      source: "4_E"
+      target: "4_F"
+      length: 0.51
+    - id: "4_5"
+      source: "4_F"
+      target: "N4"
+      length: 0.05
+    - id: "3_1"
+      source: "3_A"
+      target: "W8"
+      length: 0.115
+    - id: "3_2"
+      source: "W8"
+      target: "3_C"
+      length: 0.133
+    - id: "2_1"
+      source: "W8"
+      target: "2_B"
+      length: 0.105
+    - id: "3_2_1"
+      source: "3_C"
+      target: "P3"
+      length: 0.0
+    - id: "3_3"
+      source: "P3"
+      target: "3_E"
+      length: 0.05
+    - id: "2_2"
+      source: "2_B"
+      target: "W9"
+      length: 0.109
+    - id: "21_1"
+      source: "2_A"
+      target: "W9"
+      length: 0.109
+    - id: "2_3"
+      source: "W9"
+      target: "2_D"
+      length: 0.005
+    - id: "2_3_1"
+      source: "2_D"
+      target: "P2"
+      length: 0.0
+    - id: "2_4"
+      source: "P2"
+      target: "2_F"
+      length: 0.05
+    - id: "3_4"
+      source: "3_E"
+      target: "3_F"
+      length: 0.532
+    - id: "3_5"
+      source: "3_F"
+      target: "N3"
+      length: 0.05
+    - id: "2_5"
+      source: "2_F"
+      target: "2_G"
+      length: 0.317
+    - id: "2_6"
+      source: "2_G"
+      target: "N2"
+      length: 0.05
+    - id: "5_4_1"
+      source: "N5"
+      target: "5_F"
+      length: 0.0
+    - id: "5_5"
+      source: "5_F"
+      target: "W12"
+      length: 0.056
+    - id: "4_5_1"
+      source: "N4"
+      target: "4_H"
+      length: 0.0
+    - id: "4_6"
+      source: "4_H"
+      target: "W13"
+      length: 0.038
+    - id: "3_5_1"
+      source: "N3"
+      target: "3_H"
+      length: 0.0
+    - id: "3_6"
+      source: "3_H"
+      target: "W14"
+      length: 0.04
+    - id: "2_6_1"
+      source: "N2"
+      target: "2_I"
+      length: 0.0
+    - id: "2_7"
+      source: "2_I"
+      target: "W15"
+      length: 0.005
+    - id: "1_1"
+      source: "W15"
+      target: "1_A"
+      length: 0.264
+    - id: "2_8"
+      source: "W15"
+      target: "2_K"
+      length: 0.234
+    - id: "2_9"
+      source: "2_K"
+      target: "K16"
+      length: 0.015
+    - id: "51_1"
+      source: "W12"
+      target: "51_A"
+      length: 0.05
+    - id: "5_6"
+      source: "W12"
+      target: "5_H"
+      length: 0.038
+    - id: "5_7"
+      source: "5_H"
+      target: "W13"
+      length: 0.03
+    - id: "4_8"
+      source: "4_J"
+      target: "4_K"
+      length: 0.384
+    - id: "5_9"
+      source: "5_J"
+      target: "W14"
+      length: 0.037
+    - id: "3_8"
+      source: "3_J"
+      target: "3_K"
+      length: 0.17
+    - id: "5_11"
+      source: "5_K"
+      target: "K16"
+      length: 0.015
+    - id: "4_7"
+      source: "W13"
+      target: "4_J"
+      length: 0.036
+    - id: "5_8"
+      source: "W13"
+      target: "5_J"
+      length: 0.033
+    - id: "3_7"
+      source: "W14"
+      target: "3_J"
+      length: 0.03
+    - id: "5_10"
+      source: "W14"
+      target: "5_K"
+      length: 0.07
+    - id: "5_12"
+      source: "K16"
+      target: "5_L"
+      length: 0.015
+    - id: "2_10"
+      source: "K16"
+      target: "2_L"
+      length: 0.025
+    - id: "2_11"
+      source: "2_L"
+      target: "2_M"
+      length: 0.09
+    - id: "3_9"
+      source: "3_K"
+      target: "W19"
+      length: 0.105
+    - id: "2_12"
+      source: "2_M"
+      target: "W19"
+      length: 0.105
+    - id: "2_13"
+      source: "W19"
+      target: "2_N"
+      length: 0.045
+    - id: "3_10"
+      source: "W19"
+      target: "3_M"
+      length: 0.046
+    - id: "4_9"
+      source: "4_K"
+      target: "W20"
+      length: 0.057
+    - id: "2_14"
+      source: "2_N"
+      target: "W20"
+      length: 0.057
+    - id: "4_10"
+      source: "W20"
+      target: "4_M"
+      length: 0.01
+    - id: "4_10_1"
+      source: "4_M"
+      target: "W20Y"
+      length: 0.0
+    - id: "4_11"
+      source: "W20Y"
+      target: "4_O"
+      length: 0.143
+    - id: "4_11_1"
+      source: "4_O"
+      target: "Ra10_1"
+      length: 0.0
+    - id: "4_12"
+      source: "Ra10_1"
+      target: "4_Q"
+      length: 0.17
+    - id: "4_12_1"
+      source: "4_Q"
+      target: "G"
+      length: 0.0

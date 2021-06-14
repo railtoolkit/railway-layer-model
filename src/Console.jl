@@ -33,12 +33,12 @@ function main()
   end
   #
   while true
-    printHelpMessage()
-    #
-    # try
-      print("command? ")
+    try
+      print("command (h: help)? ")
       userinput = readline()
-      if     userinput in ("T","t")
+      if     userinput in ("H","h")
+        printHelpMessage()
+      elseif userinput in ("T","t")
         userAddTrack!(graph)
       elseif userinput in ("E","e")
         userAddElement!(graph)
@@ -57,17 +57,19 @@ function main()
         break
       else
         println("Did not recognize command.\n")
+        printHelpMessage()
       end
-    # catch err
-    #   println("\nAn error occured in the last use function.")
-    #   println("Error type: $err")
-    # end
+    catch err
+      println("\nAn error occured in the last use function.")
+      println("Error type: $err")
+    end
   end
 end # function main
 
 function printHelpMessage()
   println("")
   println("==========================================")
+  println("h - print this message")
   println("t - add a new track section to the graph")
   println("e - add an element to the graph")
   println("c - connect elements with track sections")
@@ -373,7 +375,7 @@ function userConnect!(graph)
       end
     end
   end
-
+  println("------------------------------------------")
 end # function userConnect!
 
 function userInsertElement!(graph)
