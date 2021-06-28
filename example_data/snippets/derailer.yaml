@@ -1,27 +1,26 @@
 %YAML 1.2
 ---
 physical:
-  id: "signal"
+  id: "turnout"
   elements:
     - id: E1
       type: end
       pos: 0.000
-    - id: S1
-      type: sign
-      class: signal
+    - id: D1
+      type: derailer
       direction: forward
-      pos: 0.250
+      pos: 0.100
     - id: E2
       type: end
-      pos: 0.500
+      pos: 0.200
   tracksections:
     - id: a
       source: E1
-      target: S1
+      target: D1
       start: 0.000
-      end: 0.250
+      end: 0.100
     - id: b
-      source: S1
+      source: D1
       target: E2
-      start: 0.250
-      end: 0.500
+      start: 0.100
+      end: 0.200

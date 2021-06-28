@@ -1,0 +1,633 @@
+physical:
+  elements:
+    - pos: 9.559
+      id: "A"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 9.559
+      id: "G101A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 9.709
+      id: "G101/G201"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 9.709
+      id: "Ra10_1"
+      type: "sign"
+      class: "board"
+      direction: "backward"
+    - pos: 9.909
+      id: "G201/W1"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 9.909
+      id: "201X"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 9.913
+      id: "W1"
+      type: "branch"
+      in:
+        - "W1_1"
+      out:
+        - "W1_2"
+        - "W1_3"
+    - pos: 9.975
+      id: "W1/W2"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 9.975
+      id: "W1/W3"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 9.6
+      id: "E_XM"
+      type: "end"
+      class: "continuing"
+    - pos: 10.04
+      id: "G243/W3"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.371
+      id: "W2"
+      type: "branch"
+      in:
+        - "W2_1"
+      out:
+        - "W2_2"
+        - "W2_3"
+    - pos: 10.08
+      link:
+        -
+          - "W3_1"
+          - "W3_4"
+        -
+          - "W3_2"
+          - "W3_3"
+        -
+          - "W3_2"
+          - "W3_4"
+      id: "W3"
+      type: "crossing"
+    - pos: 10.12
+      id: "W3/G301"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.1
+      id: "W3/W4"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.035
+      id: "W2/W4"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.161
+      id: "W2/G103"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.161
+      id: "P3"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 10.153
+      id: "W4"
+      type: "branch"
+      in:
+        - "W4_2"
+        - "W4_1"
+      out:
+        - "W4_3"
+    - pos: 10.181
+      id: "H3_1"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 10.16
+      id: "W4/G102"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.207
+      id: "G102/G202"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.207
+      id: "G301/G401"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.207
+      id: "P2"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 10.207
+      id: "P1"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 10.227
+      id: "H2_1"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 10.227
+      id: "H1_1"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 10.37
+      id: "H2_2"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 10.37
+      id: "H1_2"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 10.37
+      id: "102X"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 10.37
+      id: "301X"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 10.373
+      id: "G202A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.373
+      id: "G401A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.375
+      id: "202Y"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 10.375
+      id: "401Y"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 10.375
+      id: "H2_3"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 10.375
+      id: "H1_3"
+      type: "sign"
+      class: "berth"
+      direction: "backward"
+    - pos: 10.434
+      id: "H3_2"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 10.493
+      id: "H2_4"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 10.588
+      id: "H1_4"
+      type: "sign"
+      class: "berth"
+      direction: "forward"
+    - pos: 10.454
+      id: "N3"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 10.513
+      id: "N2"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 10.608
+      id: "N1"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 10.454
+      id: "G103/W3"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.513
+      id: "G202/W5"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.608
+      id: "G401/W6"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.618
+      id: "W5"
+      type: "branch"
+      in:
+        - "W5_2"
+        - "W5_1"
+      out:
+        - "W5_3"
+    - pos: 10.619
+      id: "W5/W6"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.661
+      id: "W6"
+      type: "branch"
+      in:
+        - "W6_2"
+        - "W6_1"
+      out:
+        - "W6_3"
+    - pos: 10.662
+      id: "W6/W7"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.664
+      id: "W7"
+      type: "branch"
+      in:
+        - "W7_1"
+      out:
+        - "W7_2"
+        - "W7_3"
+    - pos: 10.78
+      id: "E_Industrie"
+      type: "end"
+      class: "continuing"
+    - pos: 10.714
+      id: "W7/G501"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.714
+      id: "501Y"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 10.914
+      id: "Ra10_2"
+      type: "sign"
+      class: "board"
+      direction: "forward"
+    - pos: 10.914
+      id: "G501/G601"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 11.093
+      id: "G601B"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 11.093
+      id: "F"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 10.04
+      id: "210X"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 9.871
+      id: "Ra10_3"
+      type: "sign"
+      class: "board"
+      direction: "backward"
+    - pos: 9.871
+      id: "G143/G243"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 9.685
+      id: "G143A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 9.685
+      id: "B"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 10.733
+      id: "Sp10"
+      type: "derailer"
+      direction: "backward"
+    - pos: 10.738
+      id: "W7/G10"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 10.738
+      id: "310Y"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 10.454
+      id: "G103/W5"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+  tracksections:
+    - id: "101_1"
+      source: "A"
+      target: "G101A"
+      length: 0.0
+    - id: "101_2"
+      source: "G101A"
+      target: "Ra10_1"
+      length: 0.15
+    - id: "201_2"
+      source: "G101/G201"
+      target: "G201/W1"
+      length: 0.2
+    - id: "201_1"
+      source: "Ra10_1"
+      target: "G101/G201"
+      length: 0.0
+    - id: "201_3"
+      source: "G201/W1"
+      target: "201X"
+      length: 0.0
+    - id: "W1_1"
+      source: "201X"
+      target: "W1"
+      length: 0.004
+    - id: "W1_3"
+      source: "W1"
+      target: "W1/W2"
+      length: 0.062
+    - id: "W1_2"
+      source: "W1"
+      target: "W1/W3"
+      length: 0.062
+    - id: "W2_1"
+      source: "W1/W2"
+      target: "W2"
+      length: 0.396
+    - id: "W3_1"
+      source: "W1/W3"
+      target: "W3"
+      length: 0.105
+    - id: "143_1"
+      source: "E_XM"
+      target: "B"
+      length: 0.085
+    - id: "W3_2"
+      source: "G243/W3"
+      target: "W3"
+      length: 0.04
+    - id: "W2_2"
+      source: "W2"
+      target: "W2/W4"
+      length: -0.336
+    - id: "W2_3"
+      source: "W2"
+      target: "W2/G103"
+      length: -0.21
+    - id: "W3_4"
+      source: "W3"
+      target: "W3/G301"
+      length: 0.04
+    - id: "W3_3"
+      source: "W3"
+      target: "W3/W4"
+      length: 0.02
+    - id: "301"
+      source: "W3/G301"
+      target: "G301/G401"
+      length: 0.087
+    - id: "W4_2"
+      source: "W3/W4"
+      target: "W4"
+      length: 0.053
+    - id: "W4_1"
+      source: "W2/W4"
+      target: "W4"
+      length: 0.118
+    - id: "103_1"
+      source: "W2/G103"
+      target: "P3"
+      length: 0.0
+    - id: "103_2"
+      source: "P3"
+      target: "H3_1"
+      length: 0.02
+    - id: "W4_3"
+      source: "W4"
+      target: "W4/G102"
+      length: 0.007
+    - id: "103_3"
+      source: "H3_1"
+      target: "H3_2"
+      length: 0.253
+    - id: "102"
+      source: "W4/G102"
+      target: "G102/G202"
+      length: 0.047
+    - id: "202_1"
+      source: "G102/G202"
+      target: "P2"
+      length: 0.0
+    - id: "401_1"
+      source: "G301/G401"
+      target: "P1"
+      length: 0.0
+    - id: "202_2"
+      source: "P2"
+      target: "H2_1"
+      length: 0.02
+    - id: "401_2"
+      source: "P1"
+      target: "H1_1"
+      length: 0.02
+    - id: "202_3"
+      source: "H2_1"
+      target: "H2_2"
+      length: 0.143
+    - id: "401_3"
+      source: "H1_1"
+      target: "H1_2"
+      length: 0.143
+    - id: "202_4"
+      source: "H2_2"
+      target: "102X"
+      length: 0.0
+    - id: "401_4"
+      source: "H1_2"
+      target: "301X"
+      length: 0.0
+    - id: "202_5"
+      source: "102X"
+      target: "G202A"
+      length: 0.003
+    - id: "401_5"
+      source: "301X"
+      target: "G401A"
+      length: 0.003
+    - id: "202_6"
+      source: "G202A"
+      target: "202Y"
+      length: 0.002
+    - id: "401_6"
+      source: "G401A"
+      target: "401Y"
+      length: 0.002
+    - id: "202_7"
+      source: "202Y"
+      target: "H2_3"
+      length: 0.0
+    - id: "401_7"
+      source: "401Y"
+      target: "H1_3"
+      length: 0.0
+    - id: "202_8"
+      source: "H2_3"
+      target: "H2_4"
+      length: 0.118
+    - id: "401_8"
+      source: "H1_3"
+      target: "H1_4"
+      length: 0.213
+    - id: "103_4"
+      source: "H3_2"
+      target: "N3"
+      length: 0.02
+    - id: "202_9"
+      source: "H2_4"
+      target: "N2"
+      length: 0.02
+    - id: "401_9"
+      source: "H1_4"
+      target: "N1"
+      length: 0.02
+    - id: "103_5"
+      source: "N3"
+      target: "G103/W5"
+      length: 0.0
+    - id: "202_10"
+      source: "N2"
+      target: "G202/W5"
+      length: 0.0
+    - id: "401_10"
+      source: "N1"
+      target: "G401/W6"
+      length: 0.0
+    - id: "W5_2"
+      source: "G202/W5"
+      target: "W5"
+      length: 0.105
+    - id: "W6_2"
+      source: "G401/W6"
+      target: "W6"
+      length: 0.053
+    - id: "W5_3"
+      source: "W5"
+      target: "W5/W6"
+      length: 0.001
+    - id: "W6_1"
+      source: "W5/W6"
+      target: "W6"
+      length: 0.042
+    - id: "W6_3"
+      source: "W6"
+      target: "W6/W7"
+      length: 0.001
+    - id: "W7_1"
+      source: "W6/W7"
+      target: "W7"
+      length: 0.002
+    - id: "W7_2"
+      source: "W7"
+      target: "W7/G501"
+      length: 0.05
+    - id: "W7_3"
+      source: "W7"
+      target: "Sp10"
+      length: 0.069
+    - id: "501_1"
+      source: "W7/G501"
+      target: "501Y"
+      length: 0.0
+    - id: "501_2"
+      source: "501Y"
+      target: "Ra10_2"
+      length: 0.2
+    - id: "501_3"
+      source: "Ra10_2"
+      target: "G501/G601"
+      length: 0.0
+    - id: "601_1"
+      source: "G501/G601"
+      target: "G601B"
+      length: 0.179
+    - id: "601_2"
+      source: "G601B"
+      target: "F"
+      length: 0.0
+    - id: "243_3"
+      source: "210X"
+      target: "G243/W3"
+      length: 0.0
+    - id: "243_2"
+      source: "Ra10_3"
+      target: "210X"
+      length: 0.169
+    - id: "243_1"
+      source: "G143/G243"
+      target: "Ra10_3"
+      length: 0.0
+    - id: "143_3"
+      source: "G143A"
+      target: "G143/G243"
+      length: 0.186
+    - id: "143_2"
+      source: "B"
+      target: "G143A"
+      length: 0.0
+    - id: "G10_1"
+      source: "Sp10"
+      target: "W7/G10"
+      length: 0.005
+    - id: "G10_2"
+      source: "W7/G10"
+      target: "310Y"
+      length: 0.0
+    - id: "G10_3"
+      source: "310Y"
+      target: "E_Industrie"
+      length: 0.042
+    - id: "W5_1"
+      source: "G103/W5"
+      target: "W5"
+      length: 0.164

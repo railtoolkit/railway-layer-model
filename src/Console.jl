@@ -15,6 +15,11 @@ using UUIDs
 using LightGraphs, MetaGraphs
 # using GraphPlot
 
+"""
+Manually enter Physical Layer Graph:
+1. Enter all elements
+2. Connect elements in the order of the milage!
+"""
 function main()
   println("Manual Input for a PhysicalLayer")
   println("Load previous graph? (y/N) ")
@@ -38,12 +43,14 @@ function main()
       userinput = readline()
       if     userinput in ("H","h")
         printHelpMessage()
-      elseif userinput in ("T","t")
-        userAddTrack!(graph)
+      # elseif userinput in ("T","t")
+      #   userAddTrack!(graph)
       elseif userinput in ("E","e")
         userAddElement!(graph)
       elseif userinput in ("C","c")
         userConnect!(graph)
+      elseif userinput in ("M","m")
+        userChainConnect!(graph)
       elseif userinput in ("I","i")
         userInsertElement!(graph)
       elseif userinput in ("L","l")
@@ -70,9 +77,10 @@ function printHelpMessage()
   println("")
   println("==========================================")
   println("h - print this message")
-  println("t - add a new track section to the graph")
+  # println("t - add a new track section to the graph")
   println("e - add an element to the graph")
   println("c - connect elements with track sections")
+  println("m - multiple connections of elements with track sections")
   println("i - insert element in a track section")
   # println("m - modify an element")
   println("l - List all current track sections or elements")
@@ -146,7 +154,33 @@ end # function userAddTrack!
 
 function userAddElement!(graph, node_id = -1)
   println("==========================================")
-  println("Adding new element\n")
+  # println("Adding new element\n")
+  if node_id == -1
+    print("specify element id (leave empty to omit): ")
+    node_id = readline()
+    if isempty(node_id)
+      node_id = string(UUIDs.uuid4())
+    end
+  end
+  if !LMcore.has_node(graph, node_id)
+    node = addElement!(graph, node_id)
+  else
+    println("Element with ID $node_id already exists in the graph!")
+    return false
+  end
+
+  print("Position KM: ")
+  pos = readline()
+  try
+    if occursin(",", pos)
+      pos = replace(pos, "," => ".")
+    end
+    pos = parse(Float64, pos)
+  catch err
+    println(err)
+    return false
+  end
+
   println("Specify element type!")
   println("1 - branch | 2 - crossing | 3 - sign | 4 - detector | 5 - anchor | 6 - end")
   print("type? (1 - 6) ")
@@ -168,33 +202,8 @@ function userAddElement!(graph, node_id = -1)
     return false
   end
 
-  println("creating new $type element")
-  if node_id == -1
-    print("specify element id (leave empty to omit): ")
-    node_id = readline()
-    if isempty(node_id)
-      node_id = string(UUIDs.uuid4())
-    end
-  end
-  if !LMcore.has_node(graph, node_id)
-    node = addElement!(graph, node_id)
-  else
-    println("Element with ID $node_id already exists in the graph!")
-    return false
-  end
+  # println("DEBUG: creating new $type element")
   MetaGraphs.set_prop!(graph, node, :type, type)
-
-  print("Position KM: ")
-  pos = readline()
-  try
-    if occursin(",", pos)
-      pos = replace(pos, "," => ".")
-    end
-    pos = parse(Float64, pos)
-  catch err
-    println(err)
-    return false
-  end
   MetaGraphs.set_prop!(graph, node, :pos, pos)
 
   if type == "sign"
@@ -269,28 +278,32 @@ function userAddElement!(graph, node_id = -1)
     MetaGraphs.set_prop!(graph, node, :direction, "bidirectional")
   end
 
+  println("\nAdded Element '$node_id' as type '$type' at postion '$pos'")
+  println("------------------------------------------")
   return node_id
 end # function userAddElement!
 
-function userConnect!(graph)
-  println("==========================================")
-  println("Connecting elements with track sections\n")
+function userConnect!(graph, source_id = -1)
 
-  # asked for source of the connection
-  print("element id of source node: ")
-  source_id = readline()
+  if source_id == -1 # asked for source of the connection
+    println("==========================================")
+    println("Connecting elements with track sections\n")
+    print("element id of source node: ")
+    source_id = readline()
+  end
+
   if LMcore.has_node(graph, source_id)
     source = first(MetaGraphs.filter_vertices(graph, :id, source_id))
   else
-    println("Element with ID $source_id does not exist in the graph!")
-    return false
+    println(" - ERROR: Element with ID $source_id does not exist in the graph!")
+    return source_id
   end
   # asked for ID of the connection
   print("enter a track section id: ")
   track_id = readline()
   if LMcore.has_edge(graph, track_id)
-    println("Element with ID $track_id already exists in the graph!")
-    return false
+    println(" - ERROR: Element with ID $track_id already exists in the graph!")
+    return source_id
   end
   # asked for destination of the connection
   print("element id of target node: ")
@@ -298,8 +311,8 @@ function userConnect!(graph)
   if LMcore.has_node(graph, target_id)
     target = first(MetaGraphs.filter_vertices(graph, :id, target_id))
   else
-    println("Element with ID $target_id does not exist in the graph!")
-    return false
+    println(" - ERROR: Element with ID $target_id does not exist in the graph!")
+    return source_id
   end
   ###
   LightGraphs.add_edge!(graph, source, target)
@@ -375,8 +388,26 @@ function userConnect!(graph)
       end
     end
   end
+
+  println("\nConnected '$source_id' to '$target_id' with track section '$track_id'")
   println("------------------------------------------")
+
+  return target_id
+
 end # function userConnect!
+
+function userChainConnect!(graph)
+  source_id = -1
+  userinput = true
+  while userinput
+    source_id = userConnect!(graph, source_id)
+    print("continue with '$source_id'? Y/n? ")
+    answer = readline()
+    if answer ∈ ("N","n","No","NO","no")
+      userinput = false
+    end
+  end
+end # function userChainConnect!
 
 function userInsertElement!(graph)
   println("inserting element")
@@ -388,8 +419,7 @@ function userInsertElement!(graph)
     println("Element $node_id does not exist.")
     print("Create it? (Y/n) ")
     answer = readline()
-    if answer in ("N","n","No","NO","no")
-    else
+    if answer ∉ ("N","n","No","NO","no")
       userAddElement!(graph, node_id)
       node_in_graph = true
     end

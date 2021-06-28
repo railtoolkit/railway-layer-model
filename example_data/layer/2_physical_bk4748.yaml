@@ -1,0 +1,26 @@
+physical:
+  elements:
+    - pos: 14.35
+      id: "47"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 14.4
+      id: "BK47/BK48"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 14.45
+      id: "48"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+  tracksections:
+    - id: "147"
+      source: "41"
+      target: "BK47/BK48"
+      length: 0.05
+    - id: "148"
+      source: "BK47/BK48"
+      target: "42"
+      length: 0.05

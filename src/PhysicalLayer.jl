@@ -66,7 +66,7 @@ function save(graph, file_path)
   node_name  = "elements"
   edge_name  = "tracksections"
 
-  for node in filter_vertices(physicalLayer, :in)# or :out
+  for node in MetaGraphs.filter_vertices(physicalLayer, :in)# or :out
     # replace Edge object in :forward and :backward with strings
     for symbol in [:in,:out]
       tmp  = []
@@ -77,7 +77,7 @@ function save(graph, file_path)
     end
   end
 
-  for node in filter_vertices(physicalLayer, :link)
+  for node in MetaGraphs.filter_vertices(physicalLayer, :link)
     # replace Edge object in :forward and :backward with strings
     tmp  = []
     for elem in MetaGraphs.get_prop(physicalLayer, node, :link)
@@ -88,7 +88,7 @@ function save(graph, file_path)
     MetaGraphs.set_prop!(physicalLayer, node, :link, tmp)
   end
 
-  for edge in filter_edges(physicalLayer, :length)
+  for edge in MetaGraphs.filter_edges(physicalLayer, :length)
     length = MetaGraphs.get_prop(physicalLayer, edge, :length)
     length = round(length,digits=4)
     MetaGraphs.set_prop!(physicalLayer, edge, :length, length)

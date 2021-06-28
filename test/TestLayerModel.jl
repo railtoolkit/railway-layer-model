@@ -7,6 +7,8 @@
 
 include("src/LMcore.jl")
 import .LMcore
+include("src/LMtools.jl")
+import .LMtools
 include("src/Console.jl")
 import .Console
 
@@ -49,6 +51,9 @@ module TestLayerModel
 
 # test manual user input for the PhysicalLayer
 Console.main()
+
+#
+@time LMtools.posOffset(physicalLayer, 15.739)
 
 # test function show
 @time LMcore.show(baseLayer)

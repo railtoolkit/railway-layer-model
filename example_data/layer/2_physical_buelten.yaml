@@ -1,0 +1,204 @@
+physical:
+  elements:
+    - pos: 31.912
+      id: "E_XO_1"
+      type: "end"
+      class: "continuing"
+    - pos: 31.912
+      id: "E_XO_2"
+      type: "end"
+      class: "continuing"
+    - pos: 31.912
+      id: "39"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 31.912
+      id: "19"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 31.912
+      id: "G101A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 31.912
+      id: "G102A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.173
+      id: "G101/W103"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.023
+      id: "G102/W101"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 31.912
+      id: "49"
+      type: "sign"
+      class: "signal"
+      direction: "forward"
+    - pos: 31.912
+      id: "G103A"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.023
+      id: "G103/W101"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.088
+      id: "W101"
+      type: "branch"
+      in:
+        - "W101_1"
+        - "W101_3"
+      out:
+        - "W101_2"
+    - pos: 32.1
+      id: "W101/W102"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.112
+      id: "W102"
+      type: "branch"
+      in:
+        - "W102_1"
+      out:
+        - "W102_2"
+        - "W102_3"
+    - pos: 32.177
+      id: "W102/W103"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.238
+      id: "W103"
+      type: "branch"
+      in:
+        - "W103_1"
+        - "W103_3"
+      out:
+        - "W103_2"
+    - pos: 32.251
+      id: "W103/G201"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.177
+      id: "W102/G202"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.451
+      id: "G201B"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.451
+      id: "G202B"
+      type: "detector"
+      class: "clearing point"
+      direction: "bidirectional"
+    - pos: 32.451
+      id: "20"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+    - pos: 32.451
+      id: "30"
+      type: "sign"
+      class: "signal"
+      direction: "backward"
+  tracksections:
+    - id: "101_1"
+      source: "E_XO_1"
+      target: "39"
+      length: 0.0
+    - id: "102_1"
+      source: "E_XO_2"
+      target: "19"
+      length: 0.0
+    - id: "101_2"
+      source: "39"
+      target: "G101A"
+      length: 0.0
+    - id: "102_2"
+      source: "19"
+      target: "G102A"
+      length: 0.0
+    - id: "101_3"
+      source: "G101A"
+      target: "G101/W103"
+      length: 0.261
+    - id: "102_3"
+      source: "G102A"
+      target: "G102/W101"
+      length: 0.111
+    - id: "W103_1"
+      source: "G101/W103"
+      target: "W103"
+      length: 0.065
+    - id: "W101_1"
+      source: "G102/W101"
+      target: "W101"
+      length: 0.065
+    - id: "103_1"
+      source: "49"
+      target: "G103A"
+      length: 0.0
+    - id: "103_2"
+      source: "G103A"
+      target: "G103/W101"
+      length: 0.111
+    - id: "W101_3"
+      source: "G103/W101"
+      target: "W101"
+      length: 0.065
+    - id: "W101_2"
+      source: "W101"
+      target: "W101/W102"
+      length: 0.012
+    - id: "W102_1"
+      source: "W101/W102"
+      target: "W102"
+      length: 0.012
+    - id: "W102_3"
+      source: "W102"
+      target: "W102/W103"
+      length: 0.065
+    - id: "W102_2"
+      source: "W102"
+      target: "W102/G202"
+      length: 0.065
+    - id: "W103_3"
+      source: "W102/W103"
+      target: "W103"
+      length: 0.061
+    - id: "W103_2"
+      source: "W103"
+      target: "W103/G201"
+      length: 0.013
+    - id: "201_1"
+      source: "W103/G201"
+      target: "G201B"
+      length: 0.2
+    - id: "202_1"
+      source: "W102/G202"
+      target: "G202B"
+      length: 0.274
+    - id: "201_2"
+      source: "G201B"
+      target: "20"
+      length: 0.0
+    - id: "202_2"
+      source: "G202B"
+      target: "30"
+      length: 0.0
