@@ -17,10 +17,10 @@ physical:
       direction: "backward"
   tracksections:
     - id: "147"
-      source: "41"
+      source: "47"
       target: "BK47/BK48"
       length: 0.05
     - id: "148"
       source: "BK47/BK48"
-      target: "42"
+      target: "48"
       length: 0.05
