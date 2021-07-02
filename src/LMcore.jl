@@ -12,7 +12,7 @@ using LightGraphs, MetaGraphs
 using LinearAlgebra
 using GraphPlot
 
-export loadGraph, saveGraph, show, distance_type, has_edge, has_node
+export loadGraph, newGraph, saveGraph, show, distance_type, has_edge, has_node
 
 # ===========================
 """
@@ -95,6 +95,29 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
   return graph # MetaDiGraph object
 
 end # function loadGraph
+
+# ===========================
+"""
+Creates an empty MetaGraph object and returns it.
+"""
+function newGraph(graph_id, numNodes = 0 )
+  graph = MetaGraphs.MetaDiGraph(numNodes)
+  MetaGraphs.defaultweight!(graph, NaN)
+
+  # create distance matrix
+  #distmx = zeros(numNodes,numNodes)
+  distmx =  Array{Union{Missing, Float64}}(missing, numNodes, numNodes)
+  # diagonal with zeros
+  distmx[LinearAlgebra.diagind(distmx)] .= 0.0
+
+  MetaGraphs.set_prop!(graph, :distances, distmx)
+  MetaGraphs.weightfield!(graph, :distances)
+  MetaGraphs.set_prop!(graph, :id, graph_id)
+  MetaGraphs.set_indexing_prop!(graph, :id)
+
+  return graph # MetaDiGraph object
+
+end # function newGraph
 
 # ===========================
 """

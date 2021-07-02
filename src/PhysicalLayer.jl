@@ -31,7 +31,7 @@ function load(file_path)
   for node in MetaGraphs.filter_vertices(graph, :in)# or :out
     # replace strings in :in and :out with Edge object
     for symbol in [:in,:out]
-      tmp  = LightGraphs.Edge[]
+      tmp = LightGraphs.Edge[]
       for edge in MetaGraphs.get_prop(graph, node, symbol)
         push!(tmp, first(MetaGraphs.filter_edges(graph, :id ,edge)))
       end
@@ -41,7 +41,7 @@ function load(file_path)
 
   for node in MetaGraphs.filter_vertices(graph, :link)#
     # replace strings in :link with Edge object
-    tmp  = Tuple{LightGraphs.Edge, LightGraphs.Edge}[]
+    tmp = Tuple{LightGraphs.Edge, LightGraphs.Edge}[]
     for link in MetaGraphs.get_prop(graph, node, :link)
       a = first(MetaGraphs.filter_edges(graph, :id ,link[1]))
       b = first(MetaGraphs.filter_edges(graph, :id ,link[2]))
@@ -67,10 +67,11 @@ function save(graph, file_path)
   edge_name  = "tracksections"
 
   for node in MetaGraphs.filter_vertices(physicalLayer, :in)# or :out
-    # replace Edge object in :forward and :backward with strings
+    # replace Edge object in :in and :out with strings
     for symbol in [:in,:out]
       tmp  = []
       for edge in MetaGraphs.get_prop(physicalLayer, node, symbol)
+        # println("DEBUG: Node $node - $edge")
         push!(tmp, MetaGraphs.get_prop(physicalLayer, edge, :id))
       end
       MetaGraphs.set_prop!(physicalLayer, node, symbol, tmp)
@@ -78,7 +79,7 @@ function save(graph, file_path)
   end
 
   for node in MetaGraphs.filter_vertices(physicalLayer, :link)
-    # replace Edge object in :forward and :backward with strings
+    # replace Edge object in :in and :out with strings
     tmp  = []
     for elem in MetaGraphs.get_prop(physicalLayer, node, :link)
       a = MetaGraphs.get_prop(physicalLayer, elem[1], :id)
@@ -86,6 +87,12 @@ function save(graph, file_path)
       push!(tmp, [a,b])
     end
     MetaGraphs.set_prop!(physicalLayer, node, :link, tmp)
+  end
+
+  for node in MetaGraphs.filter_vertices(physicalLayer, :pos)
+    pos = MetaGraphs.get_prop(physicalLayer, node, :pos)
+    pos = round(pos,digits=5)
+    MetaGraphs.set_prop!(physicalLayer, node, :pos, pos)
   end
 
   for edge in MetaGraphs.filter_edges(physicalLayer, :length)
