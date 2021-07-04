@@ -1,3 +1,5 @@
+%YAML 1.2
+---
 physical:
   elements:
     - pos: 15.865
@@ -386,8 +388,11 @@ physical:
     - pos: 15.13
       id: "W1"
       type: "branch"
-      in: []
-      out: []
+      in:
+        - "W1_1"
+      out:
+        - "W1_2"
+        - "W1_3"
     - pos: 15.195
       id: "W1/W2"
       type: "detector"
@@ -403,6 +408,7 @@ physical:
       type: "branch"
       in:
         - "W2_1"
+        - "W2_3"
       out:
         - "W2_2"
     - pos: 15.269
@@ -644,7 +650,7 @@ physical:
       class: "signal"
       direction: "backward"
     - pos: 17.429
-      id: "E_XD_2"
+      id: "E_XOG_2"
       type: "end"
       class: "continuing"
     - pos: 17.051
@@ -673,7 +679,7 @@ physical:
       class: "signal"
       direction: "backward"
     - pos: 17.429
-      id: "E_XD_1"
+      id: "E_XOG_1"
       type: "end"
       class: "continuing"
   tracksections:
@@ -981,10 +987,22 @@ physical:
       source: "G103/W2"
       target: "W2"
       length: 0.136
-    - id: "W1"
+    - id: "W1_1"
       source: "G201/W1"
+      target: "W1"
+      length: 0.010
+    - id: "W1_2"
+      source: "W1"
       target: "W1/G301"
-      length: 0.075
+      length: 0.065
+    - id: "W1_3"
+      source: "W1"
+      target: "W1/W2"
+      length: 0.065
+    - id: "W2_3"
+      source: "W1/W2"
+      target: "W2"
+      length: 0.061
     - id: "301_1"
       source: "W1/G301"
       target: "301Y"
@@ -1175,7 +1193,7 @@ physical:
       length: 0.0
     - id: "501_4"
       source: "FF"
-      target: "E_XD_2"
+      target: "E_XOG_2"
       length: 0.0
     - id: "503_2"
       source: "503X"
@@ -1195,5 +1213,5 @@ physical:
       length: 0.0
     - id: "603_3"
       source: "F"
-      target: "E_XD_1"
+      target: "E_XOG_1"
       length: 0.0

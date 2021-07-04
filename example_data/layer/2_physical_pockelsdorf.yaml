@@ -1,3 +1,5 @@
+%YAML 1.2
+---
 physical:
   elements:
     - pos: 9.559
@@ -231,11 +233,6 @@ physical:
       type: "sign"
       class: "signal"
       direction: "forward"
-    - pos: 10.454
-      id: "G103/W3"
-      type: "detector"
-      class: "clearing point"
-      direction: "bidirectional"
     - pos: 10.513
       id: "G202/W5"
       type: "detector"
