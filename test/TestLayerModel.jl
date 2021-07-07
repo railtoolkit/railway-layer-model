@@ -28,17 +28,17 @@ module TestLayerModel
 @time physicalLayer = PhysicalLayer.load("example_data/layer/2_physical.yaml")
 
 ### test files:
-@time networkLayer = NetworkLayer.load("example_data/test/selective_protective_point.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/test/selective_protective_point.yaml")
+@time networkLayer = NetworkLayer.load("example_data/snippets/selective_protective_point.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/selective_protective_point.yaml")
 #
-@time networkLayer = NetworkLayer.load("example_data/test/track.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/test/track.yaml")
+@time networkLayer = NetworkLayer.load("example_data/snippets/track.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/track.yaml")
 #
-@time networkLayer = NetworkLayer.load("example_data/test/junction1.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/test/junction1.yaml")
+@time networkLayer = NetworkLayer.load("example_data/snippets/junction1.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/junction1.yaml")
 #
-@time networkLayer = NetworkLayer.load("example_data/test/junction2.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/test/junction2.yaml")
+@time networkLayer = NetworkLayer.load("example_data/snippets/junction2.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/junction2.yaml")
 #
 @time physicalLayer = PhysicalLayer.load("example_data/snippets/double_crossing.yaml")
 @time pathtab = PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2","E3"], ["E4","E5","E6"])

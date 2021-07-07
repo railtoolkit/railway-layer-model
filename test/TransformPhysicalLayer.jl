@@ -16,12 +16,12 @@ import .PhysicalLayer
 module TransformPhysicalLayer
 
 # load PhysicalLayer of operational points (in geo order)
-rebenau     = PhysicalLayer.load("example_data/layer/2_physical_rebenau.yaml")
-bk4142      = PhysicalLayer.load("example_data/layer/2_physical_bk4142.yaml")
-pockelsdorf = PhysicalLayer.load("example_data/layer/2_physical_pockelsdorf.yaml")
-bk4748      = PhysicalLayer.load("example_data/layer/2_physical_bk4748.yaml")
-buelten     = PhysicalLayer.load("example_data/layer/2_physical_buelten.yaml")
-schleinitz  = PhysicalLayer.load("example_data/layer/2_physical_schleinitz.yaml")
+rebenau     = PhysicalLayer.load("example_data/snippets/2_physical_rebenau.yaml")
+bk4142      = PhysicalLayer.load("example_data/snippets/2_physical_bk4142.yaml")
+pockelsdorf = PhysicalLayer.load("example_data/snippets/2_physical_pockelsdorf.yaml")
+bk4748      = PhysicalLayer.load("example_data/snippets/2_physical_bk4748.yaml")
+buelten     = PhysicalLayer.load("example_data/snippets/2_physical_buelten.yaml")
+schleinitz  = PhysicalLayer.load("example_data/snippets/2_physical_schleinitz.yaml")
 
 # level milage to the same of bk4142, bk4748 and pockelsdorf
 LMtools.posOffset!(rebenau, -15.739)
