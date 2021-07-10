@@ -1,28 +1,36 @@
-%YAML 1.2
----
 physical:
   elements:
     - pos: 4.85
-      id: "41"
+      base_ref: "rebenau_to_pockelsdorf"
+      id: "14e2f6a9-13e5-43c2-be8e-b14282f79cc3"
       type: "sign"
       class: "signal"
+      name: "41"
       direction: "forward"
     - pos: 4.9
-      id: "BK41/BK42"
+      base_ref: "rebenau_to_pockelsdorf"
+      id: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
       type: "detector"
       class: "clearing point"
+      name: "BK41/BK42"
       direction: "bidirectional"
     - pos: 4.95
-      id: "42"
+      base_ref: "rebenau_to_pockelsdorf"
+      id: "8db30b9e-38c2-4683-86cd-e13a7d653bfc"
       type: "sign"
       class: "signal"
+      name: "42"
       direction: "backward"
   tracksections:
-    - id: "141"
-      source: "41"
-      target: "BK41/BK42"
+    - base_ref: "rebenau_to_pockelsdorf"
+      id: "a2844695-205f-40d4-a24a-e3e237ef7c96"
+      name: "141"
+      source: "14e2f6a9-13e5-43c2-be8e-b14282f79cc3"
+      target: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
       length: 0.05
-    - id: "142"
-      source: "BK41/BK42"
-      target: "42"
+    - base_ref: "rebenau_to_pockelsdorf"
+      id: "428d23d0-14aa-4cc5-beea-3cb6f681ffaf"
+      name: "142"
+      source: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
+      target: "8db30b9e-38c2-4683-86cd-e13a7d653bfc"
       length: 0.05

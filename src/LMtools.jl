@@ -27,14 +27,14 @@ end # function posOffset!
 """
 Add a Location ID to all nodes and edges
 """
-function addLocationID!(graph::AbstractMetaGraph, location_id)
+function addProp!(graph::AbstractMetaGraph, prop::Symbol, value)
   # nodes
   for node in 1:LightGraphs.nv(graph.graph)
-    MetaGraphs.set_prop!(graph, node, :location, location_id)
+    MetaGraphs.set_prop!(graph, node, prop, value)
   end
   # edges
   for edge in LightGraphs.edges(graph.graph)
-    MetaGraphs.set_prop!(graph, edge, :location, location_id)
+    MetaGraphs.set_prop!(graph, edge, prop, value)
   end
 end # function addLocationID!
 
@@ -145,11 +145,11 @@ function connect!(graph::AbstractMetaGraph, source_id, target_id)
 end
 
 """
-Returns the ID of the node with the name and location.
-The combination of name and location must be unique.
+Returns the ID of the node with the name and base_ref.
+The combination of name and base_ref must be unique.
 """
 function name2ID(graph, name, location_id)
-  set1 = MetaGraphs.filter_vertices(graph, :location, location_id)
+  set1 = MetaGraphs.filter_vertices(graph, :base_ref, location_id)
   set2 = MetaGraphs.filter_vertices(graph, :name, name)
   return MetaGraphs.get_prop(graph, first(intersect(set1,set2)), :id)
 end # function name2ID
@@ -157,9 +157,9 @@ end # function name2ID
 """
 #TODO
 """
-function set_edge_prop!(graph, edge, name, location)
+function set_edge_prop!(graph, edge, name, base_ref)
   MetaGraphs.set_prop!(graph, edge, :name, name)
-  MetaGraphs.set_prop!(graph, edge, :location, location)
+  MetaGraphs.set_prop!(graph, edge, :base_ref, base_ref)
   if !(MetaGraphs.has_prop(graph, edge, :id))
     MetaGraphs.set_prop!(graph, edge, :id, string(UUIDs.uuid4()))
   end
