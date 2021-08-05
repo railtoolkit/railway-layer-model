@@ -91,7 +91,7 @@ function save(graph, file_path)
 
   for node in MetaGraphs.filter_vertices(physicalLayer, :pos)
     pos = MetaGraphs.get_prop(physicalLayer, node, :pos)
-    pos = round(pos,digits=5)
+    pos = round(pos,digits=6)
     MetaGraphs.set_prop!(physicalLayer, node, :pos, pos)
   end
 

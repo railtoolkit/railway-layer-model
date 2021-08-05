@@ -14,6 +14,8 @@
   * junctions definied as either the american Interlocking limit by NORAC:
     "Interlocking limit: The tracks between the opposing home signals of an interlocking. - Home Signal: A fixed signal governing entrance to an interlocking or controlled point."
     or by Vakhtel:2002 "Gesamtfahrstraßenknoten"
+    -> signals mark borders
+    -> for block signals see speed profile layer
   * tracks and junction contradictory to Gille:2008
   * name nodes which connects to other tracks/junctions
 
@@ -47,4 +49,18 @@
   * for this prototype no milage based on a line, but:
     * selecting one milage  out of the coverage of my scope
     * conversion to an overall single milage
-    
+  
+  * base_ref connects to the BaseLayer
+
+  * precision of pos is length 6 due to the "hoehenplan"
+
+# speed profile layer
+
+  * automatic creation from physical layer desired
+    * physical layer needs:
+    -> slope, max speed, turnout speed, radius, tunnel
+  * divided into characteristic sections (CS)
+    * within a CS, the maximum permissible speed and the track resistance is constant
+  * network layer as a base
+    * each signal represents a place where a train can stop
+    -> therefore blocksignals (BK4142) in contrast to the networl layer will result in an edge
