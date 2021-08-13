@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+speed:
+  allowance:
+    - pos: -1 # from here on
+      vMax: 160 # in km/h
+    - pos: 0.84009
+      vMax: 140
+    - pos: 18.78988
+      vMax: 80
+    - pos: 18.90000
+      vMax: 160
+    - pos: 23.76242
+      vMax: 100

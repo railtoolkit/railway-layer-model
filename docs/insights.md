@@ -58,9 +58,12 @@
 
   * automatic creation from physical layer desired
     * physical layer needs:
-    -> slope, max speed, turnout speed, radius, tunnel
+    -> slope, max speed, radius (turnout speed), tunnel
   * divided into characteristic sections (CS)
     * within a CS, the maximum permissible speed and the track resistance is constant
   * network layer as a base
     * each signal represents a place where a train can stop
     -> therefore blocksignals (BK4142) in contrast to the networl layer will result in an edge
+    * a network node might have different dimensions depend on the used track. i.e. XR_west to track 1 ends earlier then to track 2
+    -> network references do make limited sense
+    -> a lookup table (how to implement?) for A:pos to B:pos with the resistance

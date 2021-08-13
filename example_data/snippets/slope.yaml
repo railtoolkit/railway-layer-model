@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+speed:
+  gradient_changes:
+    - pos: 15.04160  # from here on
+      slope: +1.72 #in ‰
+      # length:
+      # radius:
