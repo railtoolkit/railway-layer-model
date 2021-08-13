@@ -64,6 +64,12 @@
   * network layer as a base
     * each signal represents a place where a train can stop
     -> therefore blocksignals (BK4142) in contrast to the networl layer will result in an edge
-    * a network node might have different dimensions depend on the used track. i.e. XR_west to track 1 ends earlier then to track 2
+    * a network junction might have different dimensions depend on the used track. i.e. XR_west to track 1 ends earlier then to track 2
     -> network references do make limited sense
     -> a lookup table (how to implement?) for A:pos to B:pos with the resistance
+  * slope is valid for all routes in a network junction
+  * radius and thus vmax speed for a junction depends on the physical path from the physical layer
+    -> also relevant for the interlocking layer
+
+# interlocking layer
+
