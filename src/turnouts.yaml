@@ -1,0 +1,16 @@
+%YAML 1.2
+---
+### Specifications per country
+# DE: [DB Ril 800.0120, VDV BOStrab]
+# CH: [SBB I-22046, VöV RTE 22564]
+# AT: [Voestalpine Weichen]
+# NL: [OVS00056]
+###
+###
+ 190-1: [radius:  190, frog angle denominator:  7  , overall length: 27.006 , tangent length: 13.503 ]
+ 190-2: [radius:  190, frog angle denominator:  9  , overall length: 27.1381, tangent length: 10.5232]
+ 300-1: [radius:  300, frog angle denominator:  9  , overall length: 33.2310, tangent length: 16.6155]
+ 500-1: [radius:  500, frog angle denominator: 12  , overall length: 41.5946, tangent length: 20.7973]
+ 500-2: [radius:  500, frog angle denominator: 14  , overall length: 42.371 , tangent length: 17.834 ]
+ 760-1: [radius:  760, frog angle denominator: 14  , overall length: 54.2166, tangent length: 27.1053]
+1200-1: [radius: 1200, frog angle denominator: 18.5, overall length: 64.8176, tangent length: 32.4088]
