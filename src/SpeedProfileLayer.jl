@@ -40,4 +40,22 @@ function save(speedProfileLayer, file_path)
 
 end # function save
 
+function runtime()
+
+  #TODO
+
+end # function runtime
+
+function staticSpeedProfile()
+
+  # TODO
+
+end
+
+function dynamicSpeedProfile()
+
+  # TODO
+
+end
+
 end # module SpeedProfileLayer

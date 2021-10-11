@@ -1,2 +1,5 @@
-* Weichenkatalog für die Weichen in Physical für vMax bei routes bei Fahrzeitermittlung und bei interlocking
 * übertragung von track geometry auf physical layer
+* function runtime()
+* function staticSpeedProfile()
+* function dynamicSpeedProfile()
+* calculate plot-coordination for different layers
