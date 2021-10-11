@@ -15,20 +15,20 @@ physical:
   elements:
     - id: "1"
       type: end
-      pos: 0.000
+      pos: 0.000 # in km
     - id: "2"
       type: sign
       class: berth
-      direction: [b,a]
-      pos: 0.050
+      direction: backward
+      pos: 0.050 # in km
     - id: "3"
       type: sign
       class: berth
-      direction: [b,c]
-      pos: 0.800
+      direction: forward
+      pos: 0.800 # in km
     - id: "4"
       type: end
-      pos: 0.850
+      pos: 0.850 # in km
   tracksections:
     - id: a
       source: "1"
