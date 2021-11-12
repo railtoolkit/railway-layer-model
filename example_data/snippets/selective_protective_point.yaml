@@ -20,19 +20,34 @@ physical:
       type: end
       pos: 0.000
     - id: W1
-      type: branch
-      in: [a]
-      out: [b,c]
+      type: branching
+      branches:
+        - id: straight
+          path: [a,b]
+          speed: .inf
+        - id: left
+          path: [a,c]
+          speed: 60
       pos: 0.250
     - id: W2
-      type: branch
-      in: [c,e]
-      out: [d]
+      type: branching
+      branches:
+        - id: right
+          path: [c,d]
+          speed: 60
+        - id: left
+          path: [e,d]
+          speed: 60
       pos: 0.350
     - id: W3
-      type: branch
-      in: [f]
-      out: [g,e]
+      type: branching
+      branches:
+        - id: straight
+          path: [f,g]
+          speed: .inf
+        - id: right
+          path: [f,e]
+          speed: 60
       pos: 0.250
     - id: "3"
       type: end

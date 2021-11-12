@@ -7,10 +7,16 @@ physical:
       type: end
       pos: 0.000
     - id: W1
-      type: branch
-      in: [a]
-      out: [b,c]
+      type: branching
+      branches:
+        - id: straight
+          path: [a,b]
+          speed: .inf
+        - id: left
+          path: [a,c]
+          speed: 60
       pos: 0.250
+      specimen: 500-1 # kind in katalog
     - id: E2
       type: end
       pos: 0.500

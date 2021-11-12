@@ -10,8 +10,15 @@ physical:
       type: end
       pos: 0.000
     - id: K1
-      type: crossing
-      link: [[a,d],[b,c]]
+      type: branching
+      branches:
+        - id: straight1
+          path: [a,d]
+          speed: .inf
+        - id: straight2
+          path: [b,c]
+          speed: .inf
+      specimen: 500-1 # kind in katalog
       pos: 0.250
     - id: E3
       type: end

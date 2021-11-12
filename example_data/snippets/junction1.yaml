@@ -1,80 +1,110 @@
-%YAML 1.2
----
 network:
-  name: "junction case 1"
-  id: network
   nodes:
-    - id: west
-      type: junction
-      in: [1,2]
-      out: [3,4]
-  connections:  
+    - out:
+        - 3
+        - 4
+      id: "west"
+      in:
+        - 1
+        - 2
+      type: "junction"
+  name: "junction case 1"
+  connections: ~
+  id: "network"
 physical:
   name: "junction case 1"
-  id: west
+  id: "west"
   elements:
     - id: "1"
-      type: end
-      pos: 0.000
+      pos: 0.0
+      type: "end"
     - id: "2"
-      type: end
-      pos: 0.000
-    - id: W1
-      type: branch
-      in: [a]
-      out: [b,d]
-      pos: 0.200
-    - id: W2
-      type: branch
-      in: [b,e]
-      out: [c]
-      pos: 0.340
-    - id: W3
-      type: branch
-      in: [d,f]
-      out: [g]
-      pos: 0.250
-    - id: W4
-      type: branch
-      in: [g]
-      out: [h,e]
-      pos: 0.300
+      pos: 0.0
+      type: "end"
+    - branches:
+        - id: "branch1"
+          path:
+            - "a"
+            - "b"
+        - id: "branch2"
+          path:
+            - "a"
+            - "d"
+      id: "W1"
+      type: "branching"
+      pos: 0.2
+    - branches:
+        - id: "branch1"
+          path:
+            - "b"
+            - "c"
+        - id: "branch2"
+          path:
+            - "e"
+            - "c"
+      id: "W2"
+      type: "branching"
+      pos: 0.34
+    - branches:
+        - id: "branch1"
+          path:
+            - "d"
+            - "g"
+        - id: "branch2"
+          path:
+            - "f"
+            - "g"
+      id: "W3"
+      type: "branching"
+      pos: 0.25
+    - branches:
+        - id: "branch1"
+          path:
+            - "g"
+            - "h"
+        - id: "branch2"
+          path:
+            - "g"
+            - "e"
+      id: "W4"
+      type: "branching"
+      pos: 0.3
     - id: "3"
-      type: end
-      pos: 0.500
+      pos: 0.5
+      type: "end"
     - id: "4"
-      type: end
-      pos: 0.500
+      pos: 0.5
+      type: "end"
   tracksections:
-    - id: a
+    - length: 0.2
       source: "1"
-      target: W1
-      length: 0.200
-    - id: b
-      source: W1
-      target: W2
-      length: 0.150
-    - id: c
-      source: W2
+      id: "a"
+      target: "W1"
+    - length: 0.15
+      source: "W1"
+      id: "b"
+      target: "W2"
+    - length: 0.15
+      source: "W2"
+      id: "c"
       target: "3"
-      length: 0.150
-    - id: d
-      source: W1
-      target: W3
-      length: 0.060
-    - id: e
-      source: W4
-      target: W2
-      length: 0.060
-    - id: f
+    - length: 0.06
+      source: "W1"
+      id: "d"
+      target: "W3"
+    - length: 0.06
+      source: "W4"
+      id: "e"
+      target: "W2"
+    - length: 0.25
       source: "2"
-      target: W3
-      length: 0.250
-    - id: g
-      source: W3
-      target: W4
-      length: 0.050
-    - id: h
-      source: W4
+      id: "f"
+      target: "W3"
+    - length: 0.05
+      source: "W3"
+      id: "g"
+      target: "W4"
+    - length: 0.2
+      source: "W4"
+      id: "h"
       target: "4"
-      length: 0.200

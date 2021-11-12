@@ -18,6 +18,8 @@ include("src/NetworkLayer.jl")
 import .NetworkLayer
 include("src/PhysicalLayer.jl")
 import .PhysicalLayer
+include("src/ChangeTurnoutModel.jl")
+import .ChangeTurnoutModel
 
 using Test
 
@@ -34,8 +36,18 @@ module TestLayerModel
 @time networkLayer = NetworkLayer.load("example_data/snippets/track.yaml")
 @time physicalLayer = PhysicalLayer.load("example_data/snippets/track.yaml")
 #
-@time networkLayer = NetworkLayer.load("example_data/snippets/junction1.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/junction1.yaml")
+# test turnout/corssing information for links
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/turnout.yaml")
+@time physicalLayer = PhysicalLayer.load("example_data/snippets/crossing.yaml")
+#
+# convert from old to new turnout model
+@time ChangeTurnoutModel.replaceModel!("example_data/snippets/junction1.yaml")
+@time ChangeTurnoutModel.replaceModel!("example_data/snippets/junction2.yaml")
+@time ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_buelten.yaml")
+@time ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_pockelsdorf.yaml")
+@time ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_rebenau.yaml")
+@time ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_schleinitz.yaml")
+@time ChangeTurnoutModel.replaceModel!("example_data/layer/2_physical.yaml")
 #
 @time networkLayer = NetworkLayer.load("example_data/snippets/junction2.yaml")
 @time physicalLayer = PhysicalLayer.load("example_data/snippets/junction2.yaml")

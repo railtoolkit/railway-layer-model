@@ -42,16 +42,16 @@
       -> division into juctions by network layer
   
   * a directed graph can also model a common turnout, but not the signal or a crossing
-
+  * turnout/crossing complex element in railML as well: "complexType SwitchIS"
   * direction in directed graph used for progression along objects
     * progression forward as in with the milage of the tracks
+  * [1] the modeling of a crossing can be used for all branching objects, but the directed graph modeling of a turnout cannot be used for crossings (see [2])
+    * name: branch and relation
   
   * for this prototype no milage based on a line, but:
     * selecting one milage  out of the coverage of my scope
     * conversion to an overall single milage
-  
   * base_ref connects to the BaseLayer
-
   * precision of pos is length 6 due to the "hoehenplan"
 
 # speed profile layer
@@ -59,6 +59,7 @@
   * automatic creation from physical layer desired
     * physical layer needs:
     -> slope, max speed, radius (turnout speed), tunnel
+    * turnout speed information depends on turnout specimen
   * divided into characteristic sections (CS)
     * within a CS, the maximum permissible speed and the track resistance is constant
   * network layer as a base
@@ -70,6 +71,15 @@
   * slope is valid for all routes in a network junction
   * radius and thus vmax speed for a junction depends on the physical path from the physical layer
     -> also relevant for the interlocking layer
+  * actual speed of train depends on combinations of track, train, dispatching (see Process Map of Railway Operation) and current behavior section (BS)
 
 # interlocking layer
 
+  * differentiation between route start and route end at a signal:
+    - route start (entrance): destination, locked turnouts, flank zone, route clearing points
+    - route end (exit): overlap
+  * howto include speed restrictions from shortened overlap?
+  * needs to know speed restrictions from divirgent track at turnout/crossing (see speed layer)
+  * turnout/crossing position information must be stored for route as well for flank protection for the use of a route
+  * [2] turnout/crossing speed must be derived from lower layer -> changed modelling of turnout/crossing for physicalLayer (see [1])
+  * speed restriktion cannot be derived from radius, since the jerk is relevant

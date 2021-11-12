@@ -1,92 +1,130 @@
-%YAML 1.2
----
 network:
-  name: "junction case 2"
-  id: network
   nodes:
-    - id: west
-      type: junction
-      in: [1,2]
-      out: [3,4]
-  connections:  
+    - out:
+        - 3
+        - 4
+      id: "west"
+      in:
+        - 1
+        - 2
+      type: "junction"
+  name: "junction case 2"
+  connections: ~
+  id: "network"
 physical:
   name: "junction case 2"
-  id: west
+  tracksections:
+    - length: 0.2
+      source: "1"
+      id: "a"
+      target: "W1"
+    - length: 0.1
+      source: "W1"
+      id: "b"
+      target: "W2"
+    - length: 0.15
+      source: "W2"
+      id: "c"
+      target: "3"
+    - length: 0.06
+      source: "W1"
+      id: "d"
+      target: "K5"
+    - length: 0.06
+      source: "K5"
+      id: "e"
+      target: "W4"
+    - length: 0.06
+      source: "W3"
+      id: "f"
+      target: "K5"
+    - length: 0.06
+      source: "K5"
+      id: "g"
+      target: "W2"
+    - length: 0.25
+      source: "2"
+      id: "h"
+      target: "W3"
+    - length: 0.1
+      source: "W3"
+      id: "i"
+      target: "W4"
+    - length: 0.15
+      source: "W4"
+      id: "j"
+      target: "4"
   elements:
     - id: "1"
-      type: end
-      pos: 0.000
+      pos: 0.0
+      type: "end"
     - id: "2"
-      type: end
-      pos: 0.000
-    - id: W1
-      type: branch
-      in: [a]
-      out: [b,d]
-      pos: 0.250
-    - id: W2
-      type: branch
-      in: [b,g]
-      out: [c]
-      pos: 0.350
-    - id: W3
-      type: branch
-      in: [h]
-      out: [f,i]
-      pos: 0.250
-    - id: W4
-      type: branch
-      in: [e,i]
-      out: [j]
-      pos: 0.350
-    - id: K5
-      type: crossing
-      link: [[d,e],[f,g]]
-      pos: 0.300
+      pos: 0.0
+      type: "end"
+    - branches:
+        - id: "branch1"
+          path:
+            - "a"
+            - "b"
+        - id: "branch2"
+          path:
+            - "a"
+            - "d"
+      id: "W1"
+      type: "branching"
+      pos: 0.25
+    - branches:
+        - id: "branch1"
+          path:
+            - "b"
+            - "c"
+        - id: "branch2"
+          path:
+            - "g"
+            - "c"
+      id: "W2"
+      type: "branching"
+      pos: 0.35
+    - branches:
+        - id: "branch1"
+          path:
+            - "h"
+            - "f"
+        - id: "branch2"
+          path:
+            - "h"
+            - "i"
+      id: "W3"
+      type: "branching"
+      pos: 0.25
+    - branches:
+        - id: "branch1"
+          path:
+            - "e"
+            - "j"
+        - id: "branch2"
+          path:
+            - "i"
+            - "j"
+      id: "W4"
+      type: "branching"
+      pos: 0.35
+    - branches:
+        - id: "branch1"
+          path:
+            - "d"
+            - "e"
+        - id: "branch2"
+          path:
+            - "f"
+            - "g"
+      id: "K5"
+      pos: 0.3
+      type: "branching"
     - id: "3"
-      type: end
-      pos: 0.500
+      pos: 0.5
+      type: "end"
     - id: "4"
-      type: end
-      pos: 0.500
-  tracksections:
-    - id: a
-      source: "1"
-      target: W1
-      length: 0.200
-    - id: b
-      source: W1
-      target: W2
-      length: 0.100
-    - id: c
-      source: W2
-      target: "3"
-      length: 0.150
-    - id: d
-      source: W1
-      target: K5
-      length: 0.060
-    - id: e
-      source: K5
-      target: W4
-      length: 0.060
-    - id: f
-      source: W3
-      target: K5
-      length: 0.060
-    - id: g
-      source: K5
-      target: W2
-      length: 0.060
-    - id: h
-      source: "2"
-      target: W3
-      length: 0.250
-    - id: i
-      source: W3
-      target: W4
-      length: 0.100
-    - id: j
-      source: W4
-      target: "4"
-      length: 0.150
+      pos: 0.5
+      type: "end"
+  id: "west"
