@@ -5,15 +5,20 @@ physical:
   elements:
     - id: E1
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: S1
       type: sign
       class: signal
       direction: forward
-      pos: 0.250
+      overlaps: #todo
+      routes: #todo
+      pos:
+        "line0": 0.250
     - id: E2
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
   tracksections:
     - id: a
       source: E1

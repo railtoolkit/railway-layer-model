@@ -2,7 +2,8 @@
 ---
 speed:
   gradient_changes:
-    - pos: 15.04160  # from here on
+    - pos:
+        "line0": 15.04160  # from here on
       slope: +1.72 #in ‰
       # length:
       # radius:

@@ -3,9 +3,14 @@
   * what does a edge or a node represent?
     * a node could be a german "Bahnhof"; or 
     * a collective name of a berth grouping
+  * [3] mileage in line with network layer and speed layer (see [4,5])
+    * attribute pos: for staions instead of start:, end: for lines
+    * pos: attribute as list for linear location of different running lines
+    * [6] change if implementaion for positioning code (see [7])
 
   * usefullness of layer?
     * path traversel
+    * are lines connected (see [3])
     * A->B->C: does a train need to reverse direction in B?
 
 # network layer
@@ -18,6 +23,7 @@
     -> for block signals see speed profile layer
   * tracks and junction contradictory to Gille:2008
   * name nodes which connects to other tracks/junctions
+  * [4] mileage in line with base layer and speed layer (see [3,5])
 
   usefullness of layer?
     * path traversel with modified dijkstra for double vertecies
@@ -50,9 +56,12 @@
   
   * for this prototype no milage based on a line, but:
     * selecting one milage  out of the coverage of my scope
-    * conversion to an overall single milage
+    * conversion to an overall single milage -> missconception (see [6])
+    * [7] change if implementaion for positioning code (see [6])
   * base_ref connects to the BaseLayer
   * precision of pos is length 6 due to the "hoehenplan"
+
+  * usefullness of layer?
 
 # speed profile layer
 
@@ -71,7 +80,14 @@
   * slope is valid for all routes in a network junction
   * radius and thus vmax speed for a junction depends on the physical path from the physical layer
     -> also relevant for the interlocking layer
+    -> routine to include radius and v_max
   * actual speed of train depends on combinations of track, train, dispatching (see Process Map of Railway Operation) and current behavior section (BS)
+  * [5] mileage in line with base layer and network layer (see [3,4])
+
+  * usefullness of layer?
+    * running time calculation
+    * resistance
+    * main running line / "durchgehendes Hauptgleis"
 
 # interlocking layer
 
@@ -83,3 +99,5 @@
   * turnout/crossing position information must be stored for route as well for flank protection for the use of a route
   * [2] turnout/crossing speed must be derived from lower layer -> changed modelling of turnout/crossing for physicalLayer (see [1])
   * speed restriktion cannot be derived from radius, since the jerk is relevant
+
+  * usefullness of layer?

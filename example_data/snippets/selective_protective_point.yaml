@@ -15,10 +15,12 @@ physical:
   elements:
     - id: "1"
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: "2"
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: W1
       type: branching
       branches:
@@ -28,7 +30,8 @@ physical:
         - id: left
           path: [a,c]
           speed: 60
-      pos: 0.250
+      pos:
+        "line0": 0.250
     - id: W2
       type: branching
       branches:
@@ -38,7 +41,8 @@ physical:
         - id: left
           path: [e,d]
           speed: 60
-      pos: 0.350
+      pos:
+        "line0": 0.350
     - id: W3
       type: branching
       branches:
@@ -48,16 +52,20 @@ physical:
         - id: right
           path: [f,e]
           speed: 60
-      pos: 0.250
+      pos:
+        "line0": 0.250
     - id: "3"
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
     - id: "4"
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
     - id: "5"
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
   tracksections:
     - id: a
       source: "1"

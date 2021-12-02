@@ -1,5 +1,9 @@
 %YAML 1.2
 ---
+base:
+  lines:
+    - name: "fictitious line"
+      id: "line0"
 network:
   name: "test track"
   id: network
@@ -15,20 +19,24 @@ physical:
   elements:
     - id: "1"
       type: end
-      pos: 0.000 # in km
+      pos:
+        "line0": 0.000 # in km
     - id: "2"
       type: sign
       class: berth
       direction: backward
-      pos: 0.050 # in km
+      pos:
+        "line0": 0.050 # in km
     - id: "3"
       type: sign
       class: berth
       direction: forward
-      pos: 0.800 # in km
+      pos:
+        "line0": 0.800 # in km
     - id: "4"
       type: end
-      pos: 0.850 # in km
+      pos:
+        "line0": 0.850 # in km
   tracksections:
     - id: a
       source: "1"

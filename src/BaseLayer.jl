@@ -20,7 +20,7 @@ function load(file_path)
 
   graph_name = "base"
   node_name  = "stations"
-  edge_name  = "lines"
+  edge_name  = "relations"
 
   return LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
@@ -34,7 +34,7 @@ function save(baseLayer, file_path)
 
   graph_name = "base"
   node_name  = "stations"
-  edge_name  = "lines"
+  edge_name  = "relations"
 
   LMcore.saveGraph(baseLayer, file_path, graph_name, node_name, edge_name)
 

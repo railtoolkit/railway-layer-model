@@ -5,7 +5,8 @@ physical:
   elements:
     - id: E1
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: W1
       type: branching
       branches:
@@ -15,14 +16,17 @@ physical:
         - id: left
           path: [a,c]
           speed: 60
-      pos: 0.250
+      pos:
+        "line0": 0.250
       specimen: 500-1 # kind in katalog
     - id: E2
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
     - id: E3
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
   tracksections:
     - id: a
       source: E1

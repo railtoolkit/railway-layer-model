@@ -2,5 +2,6 @@
 ---
 speed:
   allowance:
-    - pos: 16.57909 # from here on
+    - pos:
+        "line0": 16.57909 # from here on
       vMax: 140 # in km/h

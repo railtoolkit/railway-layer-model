@@ -5,13 +5,16 @@ physical:
   elements:
     - id: E1
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: E2
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: E3
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: K1
       type: branching
       branches:
@@ -21,7 +24,8 @@ physical:
         - id: straight2
           path: [c,d]
           speed: .inf
-      pos: 0.200
+      pos:
+        "line0": 0.200
     - id: K2
       type: branching
       branches:
@@ -31,16 +35,20 @@ physical:
         - id: straight2
           path: [d,e]
           speed: .inf
-      pos: 0.300
+      pos:
+        "line0": 0.300
     - id: E4
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
     - id: E5
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
     - id: E6
       type: end
-      pos: 0.500
+      pos:
+        "line0": 0.500
   tracksections:
     - id: a
       source: E1

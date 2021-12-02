@@ -1,76 +1,108 @@
 %YAML 1.2
 ---
 speed:
-  allowance:
-    - pos: -1 # from here on
-      vMax: 160 # in km/h
-    - pos: 0.84009
-      vMax: 140
-    - pos: 18.78988
-      vMax: 80
-    - pos: 18.90000
-      vMax: 160
-    - pos: 23.76242
-      vMax: 100
-  gradient_changes:
-    - pos: -2.87780 # from here on
-      slope: -1.1 # in ‰
-    - pos: -0.69740
-      slope: 1.72
-    - pos: 1.52500
-      slope: -12.06
-    - pos: 2.37186
-      slope: 1.12
-    - pos: 3.09819
-      slope: 12.4
-    - pos: 3.55755
-      slope: -8.37
-    - pos: 3.97393
-      slope: 2.87
-    - pos: 4.90000
-      slope: -9.24
-    - pos: 5.72000
-      slope: 12.46
-    - pos: 5.99213
-      slope: -8.41
-    - pos: 6.37383
-      slope: -11.78
-    - pos: 6.70246
-      slope: 8.97
-    - pos: 7.08145
-      slope: 2.17
-    - pos: 8.03730
-      slope: 9.57
-    - pos: 8.51055
-      slope: 5.15
-    - pos: 9.02500
-      slope: -6.25
-    - pos: 9.35000
-      slope: -1
-    - pos: 10.90000
-      slope: -3.42
-    - pos: 12.29000
-      slope: 2.88
-    - pos: 12.86208
-      slope: 12.5
-    - pos: 14.28919
-      slope: 1.25
-    - pos: 14.80000
-      slope: -3.43
-    - pos: 15.56723
-      slope: -12.22
-    - pos: 16.14006
-      slope: 3.4
-    - pos: 16.69365
-      slope: 11.58
-    - pos: 18.81700
-      slope: 7.03
-    - pos: 19.84580
-      slope: -5.88
-    - pos: 21.53000
-      slope: 1.05
-    - pos: 23.62370
-      slope: 3.48
+  - running_line: left track forward
+    id: 
+    name: Wenden Schlossberg via Okerbach (9721)
+    path: [XR_west,XR_3,XR_east]
+  - running_line: right track forward
+    id: 
+    name: Wenden Schlossberg via Okerbach (9721)
+    path: [XR_west,XR_1,XR_east]
+  - running_line: 
+    id: 
+    name: Wenden Schlossberg via Okerbach (9721)
+    path: [XBU,XBU_XSZ_2,XSZ_west,XSZ_3,XZS_east]
+    allowance:
+      - forward: 
+        - pos: 18.90000
+          vMax: 160
+        - pos: 23.76242
+          vMax: 100
+      - backward: 
+  - running_line: 
+    id: 
+    name: Wenden Schlossberg via Okerbach (9721)
+    path: [XBU,XBU_XSZ_1,XSZ_west,XSZ_2,XZS_east]
+    allowance:
+      - forward: 
+        - pos: 18.90000
+          vMax: 160
+        - pos: 23.76242
+          vMax: 100
+      - backward: 
+  - running_line: 9724
+    id: 9724
+    name: Rebenau Buelten via Pockelsdorf (9724)
+    path: [XR_4,XR_east,XR_XPD,XPD_west,XPD_1,XPD_east,XPD_XBU,XBU] # from NetworkLayer
+    allowance:
+      - forward: 
+        - pos: -1 # from here on
+          vMax: 160 # in km/h
+        - pos: 0.84009
+          vMax: 140
+        - pos: 18.78988
+          vMax: 80
+      - backward: 
+    gradient_changes:
+      - pos: -2.87780 # from here on
+        slope: -1.1 # in ‰
+      - pos: -0.69740
+        slope: 1.72
+      - pos: 1.52500
+        slope: -12.06
+      - pos: 2.37186
+        slope: 1.12
+      - pos: 3.09819
+        slope: 12.4
+      - pos: 3.55755
+        slope: -8.37
+      - pos: 3.97393
+        slope: 2.87
+      - pos: 4.90000
+        slope: -9.24
+      - pos: 5.72000
+        slope: 12.46
+      - pos: 5.99213
+        slope: -8.41
+      - pos: 6.37383
+        slope: -11.78
+      - pos: 6.70246
+        slope: 8.97
+      - pos: 7.08145
+        slope: 2.17
+      - pos: 8.03730
+        slope: 9.57
+      - pos: 8.51055
+        slope: 5.15
+      - pos: 9.02500
+        slope: -6.25
+      - pos: 9.35000
+        slope: -1
+      - pos: 10.90000
+        slope: -3.42
+      - pos: 12.29000
+        slope: 2.88
+      - pos: 12.86208
+        slope: 12.5
+      - pos: 14.28919
+        slope: 1.25
+      - pos: 14.80000
+        slope: -3.43
+      - pos: 15.56723
+        slope: -12.22
+      - pos: 16.14006
+        slope: 3.4
+      - pos: 16.69365
+        slope: 11.58
+      - pos: 18.81700
+        slope: 7.03
+      - pos: 19.84580
+        slope: -5.88
+      - pos: 21.53000
+        slope: 1.05
+      - pos: 23.62370
+        slope: 3.48
   radius_changes:
     - pos: -1
       class: straight

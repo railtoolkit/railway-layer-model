@@ -5,14 +5,17 @@ physical:
   elements:
     - id: E1
       type: end
-      pos: 0.000
+      pos:
+        "line0": 0.000
     - id: D1
       type: derailer
       direction: forward
-      pos: 0.100
+      pos:
+        "line0": 0.100
     - id: E2
       type: end
-      pos: 0.200
+      pos:
+        "line0": 0.200
   tracksections:
     - id: a
       source: E1
