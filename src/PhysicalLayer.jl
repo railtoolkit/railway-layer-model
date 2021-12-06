@@ -10,7 +10,7 @@ module PhysicalLayer
 include("LMcore.jl")
 import .LMcore
 
-using LightGraphs, MetaGraphs
+using Graphs, MetaGraphs
 using DataStructures
 
 export load, save, physicalPaths
@@ -28,11 +28,11 @@ function load(file_path)
 
   graph = LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
-  # find switches/crossings and replace "path" with LightGraphs.Edge and store it in paths
+  # find switches/crossings and replace "path" with Graphs.Edge and store it in paths
   # include speeds for switches/crossings with branches
   for node in MetaGraphs.filter_vertices(graph, :branches)#
     # replace strings in :relations with Edge object
-    paths = Dict{Symbol, Tuple{LightGraphs.Edge, LightGraphs.Edge}}()
+    paths = Dict{Symbol, Tuple{Graphs.Edge, Graphs.Edge}}()
     speeds = Dict{Symbol, Float64}()
     default_id = 1
     for branch in MetaGraphs.get_prop(graph, node, :branches)
@@ -71,27 +71,24 @@ function save(graph, file_path)
   # find type branching
   for node in MetaGraphs.filter_vertices(physicalLayer, :paths)
     # replace Edge object in :in and :out with strings
+    # println("DEBUG: handling branches for node $node.")
     branches  = []
-    for elem in MetaGraphs.get_prop(physicalLayer, node, :paths)
-      branch = Dict()
-      id = elem[1]
-      push!(branch, "id" => string(id))
-      a = MetaGraphs.get_prop(physicalLayer, elem[2][1], :id)
-      b = MetaGraphs.get_prop(physicalLayer, elem[2][2], :id)
-      push!(branch, "path" => [a,b])
-      speed = get(MetaGraphs.get_prop(physicalLayer, node, :speeds), id, Inf)
-      push!(branch, "speed" => speed)
-      push!(branches, branch)
+    for branch in MetaGraphs.get_prop(physicalLayer, node, :paths)
+      tmp = Dict()
+      branch_id = branch[1]
+      branch_path = branch[2]
+      # println("DEBUG: \t branch: $branch_path.")
+      a = MetaGraphs.get_prop(physicalLayer, branch_path[1], :id)
+      b = MetaGraphs.get_prop(physicalLayer, branch_path[2], :id)
+      speed = get(MetaGraphs.get_prop(physicalLayer, node, :speeds), branch_id, Inf)
+      push!(tmp, "id" => string(branch_id))
+      push!(tmp, "path" => [a,b])
+      push!(tmp, "speed" => speed)
+      push!(branches, tmp)
     end
     MetaGraphs.set_prop!(physicalLayer, node, :branches, branches)
     MetaGraphs.rem_prop!(physicalLayer, node, :paths)
     MetaGraphs.rem_prop!(physicalLayer, node, :speeds)
-  end
-
-  for node in MetaGraphs.filter_vertices(physicalLayer, :pos)
-    pos = MetaGraphs.get_prop(physicalLayer, node, :pos)
-    pos = round(pos,digits=6)
-    MetaGraphs.set_prop!(physicalLayer, node, :pos, pos)
   end
 
   for edge in MetaGraphs.filter_edges(physicalLayer, :length)
@@ -158,8 +155,8 @@ function physicalPaths(physicalLayer::AbstractMetaGraph, inNodes, outNodes; prog
       elseif (MetaGraphs.get_prop(physicalLayer, u, :type) == "end") & (u != start_node)
         # do not add the next node
       else# node not a branch or end and therefore a single node
-        v = LightGraphs.all_neighbors(physicalLayer.graph, u)[1]
-        add_path_to_table!(LightGraphs.Edge(u,v), distance, physicalLayer, Q, previous)
+        v = Graphs.all_neighbors(physicalLayer.graph, u)[1]
+        add_path_to_table!(Graphs.Edge(u,v), distance, physicalLayer, Q, previous)
       end# type testing of nodes
 
       # update
@@ -199,8 +196,8 @@ Function to call inside physicalPaths().
 Needs access to "physicalLayer", "Q", and "previous".
 """
 function add_path_to_table!(edge, curr_dist, physicalLayer, Q, previous)
-  local u = LightGraphs.src(edge)
-  local v = LightGraphs.dst(edge)
+  local u = Graphs.src(edge)
+  local v = Graphs.dst(edge)
 
   distance = Main.PhysicalLayer.graph_distance(physicalLayer, edge, curr_dist)
 
@@ -213,9 +210,9 @@ Function to call inside physicalPaths().
 Needs access to "physicalLayer", "Q", and "previous".
 """
 function extend_path_along_relations!(node, physicalLayer, Q, previous_table, progression)
-  incoming = LightGraphs.Edge(last(previous_table[node][2]),node)
+  incoming = Graphs.Edge(last(previous_table[node][2]),node)
   # determine all outgoing egdes
-  outgoing = LightGraphs.Edge[]
+  outgoing = Graphs.Edge[]
   for link in MetaGraphs.get_prop(physicalLayer, node, :link)# find outgoing edge
     if progression == :forward
       if incoming == link[1]
@@ -244,8 +241,8 @@ function extend_path_along_relations!(node, physicalLayer, Q, previous_table, pr
   for elem in outgoing
     distance = Main.PhysicalLayer.graph_distance(physicalLayer, elem, curr_dist)
 
-    local u = LightGraphs.src(incoming)
-    local v = LightGraphs.dst(elem)
+    local u = Graphs.src(incoming)
+    local v = Graphs.dst(elem)
 
     Main.PhysicalLayer.update_queue!(Q,v,distance,path,previous_table)
     

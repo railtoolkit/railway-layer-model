@@ -131,13 +131,15 @@ physical:
       base_ref: "XBU"
       class: "continuing"
       id: "1f35a368-41b6-4ff8-8fb7-a992e33ae60e"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "end"
     - name: "E_XO_2"
       base_ref: "XBU"
       class: "continuing"
       id: "ff48a1b7-8ba0-4c6f-ba75-3c0ef0d0285e"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "end"
     - network_ref: "XBU"
       name: "39"
@@ -145,7 +147,8 @@ physical:
       class: "signal"
       id: "7c4ff364-86b7-4040-b7c4-8a105f592afe"
       direction: "forward"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "sign"
     - network_ref: "XBU"
       name: "19"
@@ -153,35 +156,40 @@ physical:
       class: "signal"
       id: "aa57a28f-74dc-45eb-ba8d-dc64387fd698"
       direction: "forward"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "sign"
     - name: "G101A"
       base_ref: "XBU"
       class: "clearing point"
       id: "5daa7069-572a-48a5-924c-76ec4da497ff"
       direction: "bidirectional"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "detector"
     - name: "G102A"
       base_ref: "XBU"
       class: "clearing point"
       id: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
       direction: "bidirectional"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "detector"
     - name: "G101/W103"
       base_ref: "XBU"
       class: "clearing point"
       id: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
       direction: "bidirectional"
-      pos: 32.173
+      pos:
+        "9721": 32.173
       type: "detector"
     - name: "G102/W101"
       base_ref: "XBU"
       class: "clearing point"
       id: "a53e0380-0c83-4572-9931-e040c80f828d"
       direction: "bidirectional"
-      pos: 32.023
+      pos:
+        "9721": 32.023
       type: "detector"
     - network_ref: "XBU"
       name: "49"
@@ -189,21 +197,24 @@ physical:
       class: "signal"
       id: "02cd9644-102e-4534-abb3-f7f714293054"
       direction: "forward"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "sign"
     - name: "G103A"
       base_ref: "XBU"
       class: "clearing point"
       id: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
       direction: "bidirectional"
-      pos: 31.912
+      pos:
+        "9721": 31.912
       type: "detector"
     - name: "G103/W101"
       base_ref: "XBU"
       class: "clearing point"
       id: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
       direction: "bidirectional"
-      pos: 32.023
+      pos:
+        "9721": 32.023
       type: "detector"
     - name: "W101"
       branches:
@@ -217,14 +228,16 @@ physical:
             - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
       base_ref: "XBU"
       id: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
-      pos: 32.088
+      pos:
+        "9721": 32.088
       type: "branching"
     - name: "W101/W102"
       base_ref: "XBU"
       class: "clearing point"
       id: "8b1888d9-e216-4252-a9ae-f737342ad002"
       direction: "bidirectional"
-      pos: 32.1
+      pos:
+        "9721": 32.1
       type: "detector"
     - name: "W102"
       branches:
@@ -238,14 +251,16 @@ physical:
             - "ac58c309-a617-45dd-a0d6-4856379ff143"
       base_ref: "XBU"
       id: "34366cf4-7867-4e57-abce-f93b573dd3ed"
-      pos: 32.112
+      pos:
+        "9721": 32.112
       type: "branching"
     - name: "W102/W103"
       base_ref: "XBU"
       class: "clearing point"
       id: "52f61012-e921-4ad5-bc16-8895c6b9a043"
       direction: "bidirectional"
-      pos: 32.177
+      pos:
+        "9721": 32.177
       type: "detector"
     - name: "W103"
       branches:
@@ -259,35 +274,40 @@ physical:
             - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
       base_ref: "XBU"
       id: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
-      pos: 32.238
+      pos:
+        "9721": 32.238
       type: "branching"
     - name: "W103/G201"
       base_ref: "XBU"
       class: "clearing point"
       id: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
       direction: "bidirectional"
-      pos: 32.251
+      pos:
+        "9721": 32.251
       type: "detector"
     - name: "W102/G202"
       base_ref: "XBU"
       class: "clearing point"
       id: "db840367-179a-4087-9d0f-574924793914"
       direction: "bidirectional"
-      pos: 32.177
+      pos:
+        "9721": 32.177
       type: "detector"
     - name: "G201B"
       base_ref: "XBU"
       class: "clearing point"
       id: "769ef354-f159-40db-80e5-00cff4d7ad0d"
       direction: "bidirectional"
-      pos: 32.451
+      pos:
+        "9721": 32.451
       type: "detector"
     - name: "G202B"
       base_ref: "XBU"
       class: "clearing point"
       id: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
       direction: "bidirectional"
-      pos: 32.451
+      pos:
+        "9721": 32.451
       type: "detector"
     - network_ref: "XBU"
       name: "20"
@@ -295,7 +315,8 @@ physical:
       class: "signal"
       id: "971d9e83-f492-45f3-a7e3-4457e46fc8f7"
       direction: "backward"
-      pos: 32.451
+      pos:
+        "9721": 32.451
       type: "sign"
     - network_ref: "XBU"
       name: "30"
@@ -303,5 +324,6 @@ physical:
       class: "signal"
       id: "06058d21-d0b1-4926-b60a-0ef82414cbac"
       direction: "backward"
-      pos: 32.451
+      pos:
+        "9721": 32.451
       type: "sign"

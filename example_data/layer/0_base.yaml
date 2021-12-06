@@ -64,49 +64,49 @@ base:
         "9344": 9.7
   relations:
     # Wenden Schlossberg via Okerbach (9721)
-    - id: 
+    - id: "wenden_to_rebenau"
       name: "wenden_to_rebenau"
       source: XWN
       target: XR
       line: "9721"
-    - id: 
+    - id: "rebenau_to_okerbachGbf"
       name: "rebenau_to_okerbachGbf"
       source: XR
       target: XOG
       line: "9721"
-    - id: 
+    - id: "okerbachGbf_to_okerbachPbf"
       name: "okerbachGbf_to_okerbachPbf"
       source: XOG
       target: XO
       line: "9721"
-    - id: 
+    - id: "okerbachPbf_to_buelten"
       name: "okerbachPbf_to_buelten"
       source: XO
       target: XBU
       line: "9721"
-    - id: 
+    - id: "buelten_to_schleinitz"
       name: "buelten_to_schleinitz"
       source: XBU
       target: XSZ
       line: "9721"
-    - id: 
+    - id: "schleinitz_to_schlossberg"
       name: "schleinitz_to_schlossberg"
       source: XSZ
       target: XSBG
       line: "9721"
     # Rebenau Buelten via Pockelsdorf (9724)
-    - id: 
+    - id: "rebenau_to_pockelsdorf"
       name: "rebenau_to_pockelsdorf"
       source: XR
       target: XPD
       line: "9724"
-    - id: 
+    - id: "pockelsdorf_to_buelten"
       name: "pockelsdorf_to_buelten"
       source: XPD
       target: XBU
       line: "9724"
     # Mittelstadt Pockelsdorf (9344)
-    - id: 
+    - id: "mittelstadt_to_pockelsdorf"
       name: "mittelstadt_to_pockelsdorf"
       source: XM
       target: XPD
