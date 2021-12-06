@@ -1,6 +1,6 @@
 #!/usr/bin/env julia
 # -*- coding: UTF-8 -*-
-# __julia-version__ = 1.6.0
+# __julia-version__ = 1.7.0
 # __author__        = "Martin Scheidt"
 # __copyright__     = "2018-2021"
 # __license__       = "ISC"
@@ -8,7 +8,7 @@
 module LMcore
 
 using YAML
-using LightGraphs, MetaGraphs
+using Graphs, MetaGraphs
 using LinearAlgebra
 using GraphPlot
 
@@ -69,7 +69,7 @@ function loadGraph(file_path, graph_name, node_name, edge_name)
       source = nodeID2Num[pop!(edge,"source")]
       target = nodeID2Num[pop!(edge,"target")]
       # adding the edge to the graph
-      LightGraphs.add_edge!(graph, source, target)
+      Graphs.add_edge!(graph.graph, source, target)
       # add remaining properties
       for prop in edge
         MetaGraphs.set_prop!(graph, source, target, Symbol(prop[1]), prop[2])
@@ -135,7 +135,7 @@ function saveGraph(graph::AbstractMetaGraph, file_path, graph_name, node_name, e
   end
 
   nodes = []
-  for item in 1:LightGraphs.nv(graph.graph)
+  for item in 1:Graphs.nv(graph.graph)
     node = Dict()
     for (key,value) in MetaGraphs.props(graph, item)
       push!(node, key => value)
@@ -146,14 +146,14 @@ function saveGraph(graph::AbstractMetaGraph, file_path, graph_name, node_name, e
 
   # map node number to an id 
   nodeNum2ID = []
-  for item in 1:LightGraphs.nv(graph.graph)
+  for item in 1:Graphs.nv(graph.graph)
     push!(nodeNum2ID, MetaGraphs.get_prop(graph, item, :id))
   end
 
   relations = []
-  for item in LightGraphs.edges(graph)
+  for item in Graphs.edges(graph)
     relation = Dict()
-    source, target = LightGraphs.src(item), LightGraphs.dst(item)
+    source, target = Graphs.src(item), Graphs.dst(item)
     push!(relation, :source => nodeNum2ID[source])
     push!(relation, :target => nodeNum2ID[target])
     for (key,value) in MetaGraphs.props(graph, source, target)
@@ -180,7 +180,7 @@ function show(graph::AbstractMetaGraph)
   graph_has_prop_plot_coord = !isempty(MetaGraphs.filter_vertices(graph,:plot_coord))
 
   nodeNames = []
-  for item in 1:LightGraphs.nv(graph.graph)
+  for item in 1:Graphs.nv(graph.graph)
     if graph_has_prop_node_names
       push!(nodeNames, MetaGraphs.get_prop(graph, item, :name))
     else
@@ -189,8 +189,8 @@ function show(graph::AbstractMetaGraph)
   end
 
   edgeNames = []
-  for item in LightGraphs.edges(graph)
-    source, target = LightGraphs.src(item), LightGraphs.dst(item)
+  for item in Graphs.edges(graph)
+    source, target = Graphs.src(item), Graphs.dst(item)
     if graph_has_prop_edge_names
       push!(edgeNames, MetaGraphs.get_prop(graph, source, target, :name))
     else
@@ -201,7 +201,7 @@ function show(graph::AbstractMetaGraph)
   if graph_has_prop_plot_coord
     locs_x = Float64[]
     locs_y = Float64[]
-    for item in 1:LightGraphs.nv(graph.graph)
+    for item in 1:Graphs.nv(graph.graph)
       coord_x, coord_y = MetaGraphs.get_prop(graph, item, :plot_coord)
       push!(locs_x, coord_x)
       push!(locs_y, coord_y)

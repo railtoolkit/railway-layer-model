@@ -1,6 +1,6 @@
 #!/usr/bin/env julia
 # -*- coding: UTF-8 -*-
-# __julia-version__ = 1.6.0
+# __julia-version__ = 1.7.0
 # __author__        = "Martin Scheidt"
 # __copyright__     = "2018-2021"
 # __license__       = "ISC"
@@ -12,7 +12,7 @@ include("PhysicalLayer.jl")
 using .LMcore, .PhysicalLayer
 
 using UUIDs
-using LightGraphs, MetaGraphs
+using Graphs, MetaGraphs
 # using GraphPlot
 
 """
@@ -147,9 +147,9 @@ function userAddTrack!(graph)
     MetaGraphs.set_prop!(graph, target, :pos, endKM)
     MetaGraphs.set_prop!(graph, target, :type, "end")
   end
-  LightGraphs.add_edge!(graph, source, target)
-  MetaGraphs.set_prop!(graph, LightGraphs.Edge(source, target), :id, track_id)
-  MetaGraphs.set_prop!(graph, LightGraphs.Edge(source, target), :length, endKM - startKM)
+  Graphs.add_edge!(graph, source, target)
+  MetaGraphs.set_prop!(graph, Graphs.Edge(source, target), :id, track_id)
+  MetaGraphs.set_prop!(graph, Graphs.Edge(source, target), :length, endKM - startKM)
 end # function userAddTrack!
 
 function userAddElement!(graph, node_id = -1)
@@ -237,10 +237,10 @@ function userAddElement!(graph, node_id = -1)
     end
     MetaGraphs.set_prop!(graph, node, :class, class)
   elseif type == "branch"
-    MetaGraphs.set_prop!(graph, node, :in, LightGraphs.Edge[])
-    MetaGraphs.set_prop!(graph, node, :out, LightGraphs.Edge[])
+    MetaGraphs.set_prop!(graph, node, :in, Graphs.Edge[])
+    MetaGraphs.set_prop!(graph, node, :out, Graphs.Edge[])
   elseif type == "crossing"
-    MetaGraphs.set_prop!(graph, node, :link, Tuple{LightGraphs.Edge, LightGraphs.Edge}[])
+    MetaGraphs.set_prop!(graph, node, :link, Tuple{Graphs.Edge, Graphs.Edge}[])
   elseif type == "end"
     println("Specify element class!")
     println("1 - buffer stop | 2 - continuious track")
@@ -315,23 +315,23 @@ function userConnect!(graph, source_id = -1)
     return source_id
   end
   ###
-  LightGraphs.add_edge!(graph, source, target)
-  MetaGraphs.set_prop!(graph, LightGraphs.Edge(source, target), :id, track_id)
+  Graphs.add_edge!(graph, source, target)
+  MetaGraphs.set_prop!(graph, Graphs.Edge(source, target), :id, track_id)
 
   # determine length
   startKM = MetaGraphs.get_prop(graph, source, :pos)
   endKM = MetaGraphs.get_prop(graph, target, :pos)
   length = endKM - startKM
-  MetaGraphs.set_prop!(graph, LightGraphs.Edge(source, target), :length, length)
+  MetaGraphs.set_prop!(graph, Graphs.Edge(source, target), :length, length)
 
   # special handling for branches
   if MetaGraphs.get_prop(graph, source, :type) == "branch"
     tmp = MetaGraphs.get_prop(graph, source, :out)
-    push!(tmp, LightGraphs.Edge(source,target))
+    push!(tmp, Graphs.Edge(source,target))
   end
   if MetaGraphs.get_prop(graph, target, :type) == "branch"
     tmp = MetaGraphs.get_prop(graph, target, :in)
-    push!(tmp, LightGraphs.Edge(source,target))
+    push!(tmp, Graphs.Edge(source,target))
   end
 
   # special handling for crossings
@@ -361,10 +361,10 @@ function userConnect!(graph, source_id = -1)
         
         if connect
           link = MetaGraphs.get_prop(graph, node, :link)
-          if LightGraphs.dst(to_link[i]) == node
-            push!(link, (to_link[i], LightGraphs.Edge(source,target)))
+          if Graphs.dst(to_link[i]) == node
+            push!(link, (to_link[i], Graphs.Edge(source,target)))
           else
-            push!(link, (LightGraphs.Edge(source,target), to_link[i]))
+            push!(link, (Graphs.Edge(source,target), to_link[i]))
           end
           # remove from prop :to_link
           println("All connections with track setion $opposing_edge_id attached?")
@@ -378,12 +378,12 @@ function userConnect!(graph, source_id = -1)
             MetaGraphs.rem_prop!(graph, node, :to_link)
           end
         else
-          push!(to_link, LightGraphs.Edge(source,target))
+          push!(to_link, Graphs.Edge(source,target))
         end
 
       else
-        to_link  = LightGraphs.Edge[]
-        push!(to_link, LightGraphs.Edge(source,target))
+        to_link  = Graphs.Edge[]
+        push!(to_link, Graphs.Edge(source,target))
         MetaGraphs.set_prop!(graph, node, :to_link, to_link)
       end
     end
@@ -430,7 +430,7 @@ function userInsertElement!(graph)
     track_id = readline()
     edge = first(MetaGraphs.filter_edges(graph, :id, track_id))
     # test if edge exists
-    if !LightGraphs.has_edge(graph, edge)
+    if !Graphs.has_edge(graph, edge)
       println("Error: track section not known!")
     else
       insertElement!(graph, edge, node_id)
@@ -478,14 +478,14 @@ end # function userSave
 ##===================================##
 
 function addElement!(graph, node_id)
-  LightGraphs.add_vertex!(graph)
-  MetaGraphs.set_prop!(graph, LightGraphs.nv(graph), :id, node_id)
-  return LightGraphs.nv(graph)
+  Graphs.add_vertex!(graph)
+  MetaGraphs.set_prop!(graph, Graphs.nv(graph), :id, node_id)
+  return Graphs.nv(graph)
 end # function addElement!
 
 function insertElement!(graph, edge, node_id)
   x = first(MetaGraphs.filter_vertices(graph, :id, node_id))
-  u,v = LightGraphs.src(edge), LightGraphs.dst(edge)
+  u,v = Graphs.src(edge), Graphs.dst(edge)
   pos_x = MetaGraphs.get_prop(graph, x, :pos)
   pos_u = MetaGraphs.get_prop(graph, u, :pos)
   pos_v = MetaGraphs.get_prop(graph, v, :pos)
@@ -502,32 +502,32 @@ function insertElement!(graph, edge, node_id)
     length_2 = pos_v - pos_x
   end
   #
-  LightGraphs.rem_edge!(graph, edge)
-  LightGraphs.add_edge!(graph, u, x)
-  LightGraphs.add_edge!(graph, x, v)
+  Graphs.rem_edge!(graph, edge)
+  Graphs.add_edge!(graph, u, x)
+  Graphs.add_edge!(graph, x, v)
 
   print("Choose name for track section id BEFORE $node_id: ")
   before = readline()
   print("Choose name for track section id AFTER $node_id: ")
   after = readline()
   if isempty(before) | !LMcore.has_edge(graph, before)
-    MetaGraphs.set_prop!(graph, LightGraphs.Edge(u,x), :id, track_id * "_1")
+    MetaGraphs.set_prop!(graph, Graphs.Edge(u,x), :id, track_id * "_1")
   else
-    MetaGraphs.set_prop!(graph, LightGraphs.Edge(u,x), :id, before)
+    MetaGraphs.set_prop!(graph, Graphs.Edge(u,x), :id, before)
   end
   if isempty(after) | !LMcore.has_edge(graph, after)
-    MetaGraphs.set_prop!(graph, LightGraphs.Edge(x,v), :id, track_id * "_2")
+    MetaGraphs.set_prop!(graph, Graphs.Edge(x,v), :id, track_id * "_2")
   else
-    MetaGraphs.set_prop!(graph, LightGraphs.Edge(x,v), :id, after)
+    MetaGraphs.set_prop!(graph, Graphs.Edge(x,v), :id, after)
   end
 
-  MetaGraphs.set_prop!(graph, LightGraphs.Edge(u,x), :length, length_1)
-  MetaGraphs.set_prop!(graph, LightGraphs.Edge(x,v), :length, length_2)
+  MetaGraphs.set_prop!(graph, Graphs.Edge(u,x), :length, length_1)
+  MetaGraphs.set_prop!(graph, Graphs.Edge(x,v), :length, length_2)
 end # function insertElement!
 
 function listElements(graph)
   println("\nElements:")
-  for vertex in LightGraphs.vertices(graph)
+  for vertex in Graphs.vertices(graph)
     print("  No.: ")
     print(vertex)
     print("  ID: ")
@@ -542,7 +542,7 @@ end # function listElements
 
 function listTrackSections(graph)
   println("\nTrack sections:")
-  for edge in LightGraphs.edges(graph)
+  for edge in Graphs.edges(graph)
     # print("  ")
     # print(edge)
     print("  ID: ")
@@ -550,9 +550,9 @@ function listTrackSections(graph)
     print("  length: ")
     print(MetaGraphs.get_prop(graph, edge, :length))
     print("  src: ")
-    print(LightGraphs.src(edge))
+    print(Graphs.src(edge))
     print("  dst: ")
-    print(LightGraphs.dst(edge))
+    print(Graphs.dst(edge))
     println("")
   end
 end # function listTrackSections

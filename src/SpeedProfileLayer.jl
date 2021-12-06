@@ -1,6 +1,6 @@
 #!/usr/bin/env julia
 # -*- coding: UTF-8 -*-
-# __julia-version__ = 1.6.0
+# __julia-version__ = 1.7.0
 # __author__        = "Martin Scheidt"
 # __copyright__     = "2018-2021"
 # __license__       = "ISC"

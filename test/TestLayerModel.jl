@@ -1,24 +1,24 @@
 #!/usr/bin/env julia
 # -*- coding: UTF-8 -*-
-# __julia-version__ = 1.6.0
+# __julia-version__ = 1.7.0
 # __author__        = "Martin Scheidt"
 # __copyright__     = "2018-2021"
 # __license__       = "ISC"
 
-include("src/LMcore.jl")
+include("../src/LMcore.jl")
 import .LMcore
-include("src/LMtools.jl")
+include("../src/LMtools.jl")
 import .LMtools
-include("src/Console.jl")
+include("../src/Console.jl")
 import .Console
 
-include("src/BaseLayer.jl")
+include("../src/BaseLayer.jl")
 import .BaseLayer
-include("src/NetworkLayer.jl")
+include("../src/NetworkLayer.jl")
 import .NetworkLayer
-include("src/PhysicalLayer.jl")
+include("../src/PhysicalLayer.jl")
 import .PhysicalLayer
-include("src/ChangeTurnoutModel.jl")
+include("../src/ChangeTurnoutModel.jl")
 import .ChangeTurnoutModel
 
 using Test
