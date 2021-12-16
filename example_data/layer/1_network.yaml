@@ -9,6 +9,7 @@ network:
       type: junction
       in: []
       out: [XR_west_to_XR_1,XR_west_to_XR_2,XR_west_to_XR_3,XR_west_to_XR_4,XR_west_to_XR_5]
+      limits: [A,AA,124X,21X,P1,P2,P3,P4,P5]
     - id: XR_1
       base_ref: "XR"
       type: track
@@ -29,6 +30,7 @@ network:
       type: junction
       in: [XR_1_to_XR_east,XR_2_to_XR_east,XR_3_to_XR_east,XR_4_to_XR_east,XR_5_to_XR_east]
       out: [XR_east_to_XR_XPD]
+      limits: [N1,N2,N3,N4,N5,51X,G,F,FF]
     - id: XR_XPD
       base_ref: "rebenau_to_pockelsdorf"
       type: track
@@ -37,6 +39,7 @@ network:
       type: junction
       in: [XR_XPD_to_XPD_west]
       out: [XPD_west_to_XPD_1,XPD_west_to_XPD_2,XPD_west_to_XPD_3]
+      limits: [A,B,P1,P2,P3]
     - id: XPD_1
       base_ref: "XPD"
       type: track
@@ -51,6 +54,7 @@ network:
       type: junction
       in: [XPD_1_to_XPD_east,XPD_2_to_XPD_east,XPD_3_to_XPD_east]
       out: [XPD_east_to_XPD_XBU]
+      limits: [N1,N2,N3,F,310Y]
     - id: XPD_XBU
       base_ref: "pockelsdorf_to_buelten"
     - id: XBU
@@ -58,6 +62,7 @@ network:
       type: junction
       in: [XPD_XBU_to_XBU]
       out: [XBU_to_XBU_XSZ_1,XBU_to_XBU_XSZ_2]
+      limits: ["19","39","49","20","30"]
     - id: XBU_XSZ_1
       base_ref: "buelten_to_schleinitz"
       type: track
@@ -69,6 +74,7 @@ network:
       type: junction
       in: [XBU_XSZ_1_to_XSZ_west,XBU_XSZ_2_to_XSZ_west]
       out: [XSZ_west_to_XSZ_1,XSZ_west_to_XSZ_2,XSZ_west_to_XSZ_3,XSZ_west_to_XSZ_4,XSZ_west_to_XSZ_5]
+      limits: [A,AA,41X,P1,P2,P3,p4,105Y]
     - id: XSZ_1
       base_ref: "XSZ"
       type: track
@@ -89,6 +95,7 @@ network:
       type: junction
       in: [XSZ_1_to_XSZ_east,XSZ_2_to_XSZ_east,XSZ_3_to_XSZ_east,XSZ_4_to_XSZ_east,XSZ_5_to_XSZ_east]
       out: []
+      limits: [N1,N2,N3,N4,105X,11Y,F,FF]
   connections:
     - id: XR_west_to_XR_1
       source: XR_west

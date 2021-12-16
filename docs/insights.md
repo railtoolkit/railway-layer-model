@@ -20,6 +20,7 @@
     "Interlocking limit: The tracks between the opposing home signals of an interlocking. - Home Signal: A fixed signal governing entrance to an interlocking or controlled point."
     or by Vakhtel:2002 "Gesamtfahrstraßenknoten"
     -> signals mark borders
+    * included specific limits in layer
     -> for block signals see speed profile layer
   * tracks and junction contradictory to Gille:2008
   * name nodes which connects to other tracks/junctions
@@ -81,6 +82,7 @@
   * radius and thus vmax speed for a junction depends on the physical path from the physical layer
     -> also relevant for the interlocking layer
     -> routine to include radius and v_max
+    -> speed attribute also part of the physicalLayer in turnouts/crossings (see [2])
   * actual speed of train depends on combinations of track, train, dispatching (see Process Map of Railway Operation) and current behavior section (BS)
   * [5] mileage in line with base layer and network layer (see [3,4])
 
@@ -88,6 +90,7 @@
     * running time calculation
     * resistance
     * main running line / "durchgehendes Hauptgleis"
+    * correct speed limit determination at junction of two lines (e.g from XSZ to XPX via XBU)
 
 # interlocking layer
 
