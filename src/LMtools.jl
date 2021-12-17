@@ -124,30 +124,18 @@ end # function join!
 
 """
 Connects two node IDs in a graph with an edge
+and generats basic properties
 """
-function connect!(graph::AbstractMetaGraph, source_id, target_id)
+function connect!(graph::AbstractMetaGraph, source_id, target_id, name)
+  # add connecting edge to graph
   source = first(MetaGraphs.filter_vertices(graph, :id, source_id))
   target = first(MetaGraphs.filter_vertices(graph, :id, target_id))
   Graphs.add_edge!(graph, source, target)
-  return Graphs.Edge(source, target)
-end
-
-"""
-Returns the ID of the node with the name and base_ref.
-The combination of name and base_ref must be unique.
-"""
-function name2ID(graph, name, location_id)
-  set1 = MetaGraphs.filter_vertices(graph, :base_ref, location_id)
-  set2 = MetaGraphs.filter_vertices(graph, :name, name)
-  return MetaGraphs.get_prop(graph, first(intersect(set1,set2)), :id)
-end # function name2ID
-
-"""
-#TODO
-"""
-function set_edge_prop!(graph, edge, name, base_ref)
+  #
+  edge = Graphs.Edge(source, target)
+  #
+  # set name
   MetaGraphs.set_prop!(graph, edge, :name, name)
-  MetaGraphs.set_prop!(graph, edge, :base_ref, base_ref)
   #
   # generate ID
   MetaGraphs.set_prop!(graph, edge, :id, string(UUIDs.uuid4()))
@@ -165,6 +153,17 @@ function set_edge_prop!(graph, edge, name, base_ref)
   # set length
   MetaGraphs.set_prop!(graph, edge, :length, endKM - startKM)
   #
-end # function set_edge_prop!
+  return edge
+end # function connect!
+
+"""
+Returns the ID of the node with the name and base_ref.
+The combination of name and base_ref must be unique.
+"""
+function name2ID(graph, name, location_id)
+  set1 = MetaGraphs.filter_vertices(graph, :base_ref, location_id)
+  set2 = MetaGraphs.filter_vertices(graph, :name, name)
+  return MetaGraphs.get_prop(graph, first(intersect(set1,set2)), :id)
+end # function name2ID
 
 end # module LMtools

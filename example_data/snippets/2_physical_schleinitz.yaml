@@ -3,174 +3,203 @@ physical:
     - length: 0.0
       name: "102_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "e68d3951-4d0c-4606-b7d4-fcd63207c2fb"
       id: "1ec76f15-384f-415c-af7d-1e8fac6448a8"
       target: "8a3913bc-f8db-4d3f-8f37-c0c7948a09c6"
     - length: 0.0
       name: "103_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "7cf06e6b-a398-4202-ad15-164d800cc779"
       id: "3939e291-79b3-4a3d-9f63-9287dd046a7d"
       target: "d2d7f7d4-1c43-4942-93d8-9d65894ca795"
     - length: 0.157
       name: "102_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "8a3913bc-f8db-4d3f-8f37-c0c7948a09c6"
       id: "ba065979-37fc-4ee3-af57-14ac7fb9ea3e"
       target: "767f6ef8-364b-4035-af25-e94e80ca84c1"
     - length: 0.24
       name: "103_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "d2d7f7d4-1c43-4942-93d8-9d65894ca795"
       id: "2ce063cf-17c2-40db-9760-54a86ad78fa4"
       target: "6e0c3501-a7a8-4947-8f44-76d9ebc9bcd5"
     - length: 0.083
       name: "202_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "49690e1e-1057-479d-9481-d4c0f169ac83"
       id: "6f3e743f-aeba-4820-9490-dcec337fddf1"
       target: "ffb7d91a-45c4-4bf6-a3b8-df0be7f237fb"
     - length: 0.0
       name: "202_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "767f6ef8-364b-4035-af25-e94e80ca84c1"
       id: "55702a79-e4c0-41c5-aced-816726de407a"
       target: "49690e1e-1057-479d-9481-d4c0f169ac83"
     - length: 0.0
       name: "103_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "6e0c3501-a7a8-4947-8f44-76d9ebc9bcd5"
       id: "a2722f64-3cd5-4873-9fd6-1e03ff0409f5"
       target: "c9f939f9-897a-42b7-b3ba-ae870fa6e539"
     - length: 0.01
       name: "W1_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "c9f939f9-897a-42b7-b3ba-ae870fa6e539"
       id: "93a6b353-ba1e-4f13-9aed-436f66a0a276"
       target: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
     - length: 0.0
       name: "202_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "ffb7d91a-45c4-4bf6-a3b8-df0be7f237fb"
       id: "793cd3c3-3da9-48cf-9c47-9b617641eed7"
       target: "7da89c5f-4ae7-4c69-bc4c-aab16dfd0044"
     - length: 0.105
       name: "W2_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "7da89c5f-4ae7-4c69-bc4c-aab16dfd0044"
       id: "e573c6a7-4afa-411e-a91e-a4a0d93191b1"
       target: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
     - length: 0.041
       name: "W1_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
       id: "7ad94fe9-e01f-4cb7-b28a-1bc055cdc824"
       target: "57cdbb94-30f4-41bc-ba9a-0f1e84e84fed"
     - length: 0.051
       name: "W1_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
       id: "fb0f68b5-7d08-436c-ba27-360552dc5d02"
       target: "2c34cdc4-52cd-4402-bc5b-d3687b174beb"
     - length: 0.054
       name: "W2_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "57cdbb94-30f4-41bc-ba9a-0f1e84e84fed"
       id: "89546a28-470f-4cbf-ab9c-e6f0a4accc47"
       target: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
     - length: 0.186
       name: "W4_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "2c34cdc4-52cd-4402-bc5b-d3687b174beb"
       id: "650d1f77-d0c1-49dc-a747-bec372bda68e"
       target: "bb074bbe-1046-4532-9dbd-a645c34789eb"
     - length: 0.009
       name: "W2_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
       id: "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
       target: "bf53206b-2132-4d50-9bb6-37a488318692"
     - length: 0.047
       name: "W3_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "bf53206b-2132-4d50-9bb6-37a488318692"
       id: "b4e09f43-a962-4567-898e-a46dff3fe13e"
       target: "eece4636-b7ab-42ad-9745-47aadd63746a"
     - length: 0.047
       name: "W3_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "bf53206b-2132-4d50-9bb6-37a488318692"
       id: "8943c5dd-fe5e-4db6-87a2-8f6469b29823"
       target: "f616b4e1-c549-49db-896f-2e7de061b28e"
     - length: 0.086
       name: "W4_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "eece4636-b7ab-42ad-9745-47aadd63746a"
       id: "9768f2a2-490f-43d9-b41c-bfb4489753fa"
       target: "bb074bbe-1046-4532-9dbd-a645c34789eb"
     - length: 0.181
       name: "W8_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "f616b4e1-c549-49db-896f-2e7de061b28e"
       id: "29ad8bf4-a42b-49e3-b767-b8aa219a08bb"
       target: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
     - length: 0.004
       name: "W4_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "bb074bbe-1046-4532-9dbd-a645c34789eb"
       id: "01a068a3-5e53-48ba-a4c3-04abe6bd03fc"
       target: "8b414b13-4604-4a36-837e-bd0373a6a7c4"
     - length: 0.102
       name: "W5_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "8b414b13-4604-4a36-837e-bd0373a6a7c4"
       id: "a0c780fa-909b-438e-a297-e1500cb3600d"
       target: "085078f4-e164-48d2-bfa5-f48d5f88728f"
     - length: 0.118
       name: "W8_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
       id: "6b44d057-5951-4535-84c2-8001d093f272"
       target: "642d19e1-b327-4257-a705-38f5f7653b05"
     - length: 0.118
       name: "W8_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
       id: "0ff0112a-af29-4b1d-afed-149c5823d26c"
       target: "966bfedb-27cf-4692-9e14-eb7bd7c686cf"
     - length: 0.0
       name: "101_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "642d19e1-b327-4257-a705-38f5f7653b05"
       id: "961815c3-e024-47e8-b0a5-a85542cb951a"
       target: "4ff5ec23-4517-4ed9-9490-88462395e929"
     - length: 0.02
       name: "101_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_1"
       source: "4ff5ec23-4517-4ed9-9490-88462395e929"
       id: "c0537897-c19b-4729-9d7f-011306316880"
       target: "a756cd47-5f55-4fe5-a311-dd83c67a1a2a"
     - length: 0.0
       name: "302_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "966bfedb-27cf-4692-9e14-eb7bd7c686cf"
       id: "38a2198f-c1ae-4ffa-bc6c-73f1a9103db3"
       target: "fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b"
     - length: 0.02
       name: "302_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_2"
       source: "fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b"
       id: "e510e28c-1518-4a9b-a271-ae7cce111951"
       target: "beb565bc-b1d2-483a-a2c9-2ebaad59f995"
     - length: 0.76
       name: "101_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_1"
       source: "a756cd47-5f55-4fe5-a311-dd83c67a1a2a"
       id: "2466363f-ebfc-44e1-a821-5482b432bbfb"
       target: "ce1fdb35-0110-4f80-9315-520362760f20"
     - length: 0.76
       name: "302_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_2"
       source: "beb565bc-b1d2-483a-a2c9-2ebaad59f995"
       id: "4e150880-b35c-45a5-b463-1206f0658120"
       target: "7907115d-238e-432a-a457-e8e00f977ee0"
@@ -183,240 +212,280 @@ physical:
     - length: 0.0
       name: "41_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "9242d5d0-9329-4cbd-aec3-3a0992948a6c"
       id: "ddf60c3b-b527-4f27-a8f3-c138d714a845"
       target: "d0894bc4-700c-407b-bc28-c1ea98018cbc"
     - length: 0.005
       name: "41_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "d0894bc4-700c-407b-bc28-c1ea98018cbc"
       id: "c7a33007-2ae9-4ef3-9258-04eb3e5528e5"
       target: "e1ae967e-ab5b-4af6-b406-fb42437ce938"
     - length: 0.037
       name: "W6_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "e1ae967e-ab5b-4af6-b406-fb42437ce938"
       id: "784e92f6-df18-4d7a-971d-d6abbcde5036"
       target: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
     - length: 0.043
       name: "W5_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "085078f4-e164-48d2-bfa5-f48d5f88728f"
       id: "028c200f-c11e-4d79-a511-84d335cc62f5"
       target: "5a4c21fd-26c1-4abe-bdec-eec5fa41bf67"
     - length: 0.158
       name: "W5_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "085078f4-e164-48d2-bfa5-f48d5f88728f"
       id: "389bd3b6-9ffc-4993-b84d-400c7970ab68"
       target: "10a84137-a0f1-4d18-a237-e4ce8d965add"
     - length: 0.03
       name: "W6_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "5a4c21fd-26c1-4abe-bdec-eec5fa41bf67"
       id: "be0e6d4d-5010-481e-ade1-5f8bf4c2c5f5"
       target: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
     - length: 0.005
       name: "W6_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
       id: "378c8aa1-93cf-4b70-8f4c-37ec77d19a32"
       target: "1de71d78-a163-4cf7-b01b-0ded012a7583"
     - length: 0.002
       name: "W7_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "1de71d78-a163-4cf7-b01b-0ded012a7583"
       id: "636446fe-11d1-4a5e-a43d-79135c5ba631"
       target: "cff292e1-3de4-404d-a471-7bceb80fddcb"
     - length: 0.041
       name: "W7_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "cff292e1-3de4-404d-a471-7bceb80fddcb"
       id: "277446d0-fabb-4420-9352-a3dbf660f731"
       target: "0e72eb6e-6cd2-443a-a6d6-d84196fbc065"
     - length: 0.078
       name: "W7_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "cff292e1-3de4-404d-a471-7bceb80fddcb"
       id: "6389d7e2-8bb9-4502-967a-2e4ac0e7d9cd"
       target: "14d754b6-43b9-4f1f-96d8-f2a1369e2d75"
     - length: 0.0
       name: "105_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "0e72eb6e-6cd2-443a-a6d6-d84196fbc065"
       id: "c3668af8-b7eb-4926-bfad-15f6248072ad"
       target: "19713f62-e216-46e0-b35e-475666a72761"
     - length: 0.862
       name: "105_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_5"
       source: "19713f62-e216-46e0-b35e-475666a72761"
       id: "5c372e2f-00af-4157-a4b2-09c3ad677a6f"
       target: "de01a8a2-b464-4e5f-a7d4-a2923949b0da"
     - length: 0.0
       name: "104_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "14d754b6-43b9-4f1f-96d8-f2a1369e2d75"
       id: "1b8f1c66-7ed2-44a6-9b2a-5f1c0ff9cf36"
       target: "da21e9b4-84c6-4440-8a62-fdf22fb420ba"
     - length: 0.02
       name: "104_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_4"
       source: "da21e9b4-84c6-4440-8a62-fdf22fb420ba"
       id: "61500e86-ddd6-4141-9f1e-e38d58514773"
       target: "fd296bfb-e1e8-4611-a4b6-a929155fc3dc"
     - length: 0.0
       name: "203_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       source: "10a84137-a0f1-4d18-a237-e4ce8d965add"
       id: "b1b8fa58-2080-46a4-b475-c4bfb1a667ad"
       target: "72c19288-28bc-4eca-a4c2-4c604b6dd57a"
     - length: 0.02
       name: "203_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_3"
       source: "72c19288-28bc-4eca-a4c2-4c604b6dd57a"
       id: "0039bd46-dbf1-4dc0-9fe0-def4973b544b"
       target: "fc4fe5af-897a-414b-9757-53d4d100197a"
     - length: 0.709
       name: "104_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_4"
       source: "fd296bfb-e1e8-4611-a4b6-a929155fc3dc"
       id: "348beb5b-7e47-4075-b759-e05272a1a57f"
       target: "288fb89d-3db0-45bc-8fc5-179e33168300"
     - length: 0.709
       name: "203_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_3"
       source: "fc4fe5af-897a-414b-9757-53d4d100197a"
       id: "8b2170ac-685f-481d-890e-8832def49f54"
       target: "b0d18e57-8160-4169-ad48-129aab74bcd5"
     - length: 0.02
       name: "104_4"
       base_ref: "XSZ"
+      network_ref: "XSZ_4"
       source: "288fb89d-3db0-45bc-8fc5-179e33168300"
       id: "45d6815f-b792-49f5-9513-7d19af1c5cf8"
       target: "c08f7e18-ad76-411c-8bbb-560ca591c50f"
     - length: 0.02
       name: "203_4"
       base_ref: "XSZ"
+      network_ref: "XSZ_3"
       source: "b0d18e57-8160-4169-ad48-129aab74bcd5"
       id: "47701754-83ce-416c-9c97-52ca8d8b7aef"
       target: "24295eb7-2335-4ddf-94d2-f33e9f8bf96f"
     - length: 0.02
       name: "302_4"
       base_ref: "XSZ"
+      network_ref: "XSZ_2"
       source: "7907115d-238e-432a-a457-e8e00f977ee0"
       id: "868d9a6e-7da3-45b0-b39c-0bbfb323a07a"
       target: "89d3d5aa-716b-4b98-92c7-bff39ed5f91a"
     - length: 0.02
       name: "101_4"
       base_ref: "XSZ"
+      network_ref: "XSZ_1"
       source: "ce1fdb35-0110-4f80-9315-520362760f20"
       id: "8f1851b7-fef7-4e30-8abe-53f16b96785e"
       target: "9e66fce3-42b8-4edb-8aa2-be4f4fcbcb38"
     - length: 0.0
       name: "104_5"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "c08f7e18-ad76-411c-8bbb-560ca591c50f"
       id: "a683c766-1176-47b3-bc79-f4f51f5d5436"
       target: "7b6dbc79-92ff-4eb1-b306-9d2ac385678c"
     - length: 0.0
       name: "203_5"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "24295eb7-2335-4ddf-94d2-f33e9f8bf96f"
       id: "1655fcbe-3c44-46c5-8a85-b7b3d51cdbb0"
       target: "9e8ede47-89c6-4d09-a013-3e2f38b1685b"
     - length: 0.0
       name: "302_5"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "89d3d5aa-716b-4b98-92c7-bff39ed5f91a"
       id: "33c0915e-892a-4b53-bd8e-83c14a40a0a1"
       target: "194ec252-6df4-4778-afbd-9d2722445086"
     - length: 0.0
       name: "101_5"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "9e66fce3-42b8-4edb-8aa2-be4f4fcbcb38"
       id: "4e2f19f3-7a96-49f4-bd02-3923f6f829d8"
       target: "4b43cc40-6233-4425-9881-12d960fa94d9"
     - length: 0.117
       name: "W11_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "7b6dbc79-92ff-4eb1-b306-9d2ac385678c"
       id: "d7547c5d-df45-43af-82fd-723c06494e31"
       target: "7b81abd3-5278-4387-9816-911d808db0bb"
     - length: 0.197
       name: "W12_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "9e8ede47-89c6-4d09-a013-3e2f38b1685b"
       id: "23e49add-053c-4cbb-96a3-9854a4f68edb"
       target: "7e17901c-361f-4c45-a536-191182631ce8"
     - length: 0.19
       name: "W10_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "194ec252-6df4-4778-afbd-9d2722445086"
       id: "ed3d5182-958f-4c97-908d-480acb3d6cdd"
       target: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
     - length: 0.054
       name: "W9_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "4b43cc40-6233-4425-9881-12d960fa94d9"
       id: "77d4e465-4137-4ded-8a09-60e4ac588a1c"
       target: "854ecaf5-4c86-4770-949c-e620514ed495"
     - length: 0.0
       name: "105_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "de01a8a2-b464-4e5f-a7d4-a2923949b0da"
       id: "e7323f0d-ee31-4aee-a2dd-03cfe36cc449"
       target: "b32b9392-3d53-4de9-941f-113a53bd1f7a"
     - length: 0.041
       name: "W11_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "b32b9392-3d53-4de9-941f-113a53bd1f7a"
       id: "d0a0c674-f9e6-4706-908d-2200ed300f39"
       target: "7b81abd3-5278-4387-9816-911d808db0bb"
     - length: 0.039
       name: "W11_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "7b81abd3-5278-4387-9816-911d808db0bb"
       id: "d7092dcb-2669-41c6-aa27-f4c9fca2ce0f"
       target: "287a180c-a696-45a9-b82e-8571757ae8a6"
     - length: 0.041
       name: "W12_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "287a180c-a696-45a9-b82e-8571757ae8a6"
       id: "806ac744-ddb7-443e-bb8c-2048b8d26f47"
       target: "7e17901c-361f-4c45-a536-191182631ce8"
     - length: 0.069
       name: "W12_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "7e17901c-361f-4c45-a536-191182631ce8"
       id: "896afbda-b1ce-4aef-9e42-f723bfac8ee3"
       target: "390a7b2d-c975-41ef-a855-2ff9e7542a82"
     - length: 0.007
       name: "W13_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "390a7b2d-c975-41ef-a855-2ff9e7542a82"
       id: "001832f1-8442-4230-a954-622aabfdb63e"
       target: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
     - length: 0.041
       name: "W9_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "854ecaf5-4c86-4770-949c-e620514ed495"
       id: "4c9beef0-03e2-41ef-b8ea-95dea6550abe"
       target: "3b71eb90-399c-4565-992e-bc8b2ce2afca"
     - length: 0.061
       name: "W9_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "854ecaf5-4c86-4770-949c-e620514ed495"
       id: "22048935-a4a9-4090-b00d-a66461bc8303"
       target: "a0a8b218-babb-49d0-aa39-09c308bd1911"
     - length: 0.005
       name: "11_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "3b71eb90-399c-4565-992e-bc8b2ce2afca"
       id: "6a80568e-4b39-4d45-b26c-060e9591ac35"
       target: "d3253e21-e623-434e-8a57-6198da0246cb"
     - length: 0.0
       name: "11_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "d3253e21-e623-434e-8a57-6198da0246cb"
       id: "39ab202e-3e51-44d5-b2ef-afb029166719"
       target: "e8026d1c-90e9-432e-bea2-ec720f51e50a"
@@ -429,84 +498,98 @@ physical:
     - length: 0.075
       name: "W10_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "a0a8b218-babb-49d0-aa39-09c308bd1911"
       id: "8263234a-4894-426d-af2c-6e67a5de058e"
       target: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
     - length: 0.161
       name: "W10_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
       id: "3f8bb6b6-5e80-4745-b94b-cede59f3c19e"
       target: "fae99c78-2dc7-475c-8dd1-48a51d4646b4"
     - length: 0.054
       name: "W14_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "fae99c78-2dc7-475c-8dd1-48a51d4646b4"
       id: "8f7c64be-a19d-4681-841b-0d788eb90526"
       target: "6f73d007-0451-4d6b-9323-897ff43a4eac"
     - length: 0.068
       name: "W13_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
       id: "80f00a8e-0842-46de-bfc5-b368b91e1a7d"
       target: "d7f2738e-a7ec-4659-9019-d96e0794c7bf"
     - length: 0.142
       name: "W13_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
       id: "f611ac36-81de-4f92-b6a1-42b6d96c199f"
       target: "2b1f1556-9b4e-4f67-93cf-5a47e0da0f6e"
     - length: 0.064
       name: "W14_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "d7f2738e-a7ec-4659-9019-d96e0794c7bf"
       id: "1112a77e-0639-4fef-82ef-2c4e98c88c2b"
       target: "6f73d007-0451-4d6b-9323-897ff43a4eac"
     - length: 0.01
       name: "W14_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "6f73d007-0451-4d6b-9323-897ff43a4eac"
       id: "e595119f-96d5-422d-b45b-d390877a0848"
       target: "82c133ef-4a05-43d7-be08-66a867025ee2"
     - length: 0.0
       name: "503_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "2b1f1556-9b4e-4f67-93cf-5a47e0da0f6e"
       id: "7367ff66-707f-4bc4-896c-ffa08b566ebd"
       target: "aaca17e4-5c0a-466a-9e6e-1c736d77b684"
     - length: 0.015
       name: "503_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "aaca17e4-5c0a-466a-9e6e-1c736d77b684"
       id: "b41ba980-6692-47ff-9f61-738565767d0d"
       target: "92f84da4-fd6d-4362-8b59-3573eee5b627"
     - length: 0.0
       name: "602_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "82c133ef-4a05-43d7-be08-66a867025ee2"
       id: "13b204e0-51df-4f0e-8ca5-450709a05b9a"
       target: "2eafbe28-aac1-4f39-963f-aae39a60f23c"
     - length: 0.285
       name: "602_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "2eafbe28-aac1-4f39-963f-aae39a60f23c"
       id: "f216ef7e-b746-49fe-861d-2b0a7056cb67"
       target: "c9e0519f-3f3f-40ea-ac76-0d00f67dceff"
     - length: 0.0
       name: "503_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "92f84da4-fd6d-4362-8b59-3573eee5b627"
       id: "7016decc-b13d-4959-a5d9-91c7dc8e609b"
       target: "7d0e31aa-9372-4142-9d21-f4d911be6046"
     - length: 0.27
       name: "403_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "7d0e31aa-9372-4142-9d21-f4d911be6046"
       id: "ea1f6b66-65e1-4785-bef9-9aec8e99bc6f"
       target: "8bf4d964-2e52-4a34-bb60-a908bc92c8ba"
     - length: 0.0
       name: "403_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "8bf4d964-2e52-4a34-bb60-a908bc92c8ba"
       id: "41fff331-f6f5-4af6-8604-26fe0b16d3f1"
       target: "e04066a1-5044-4d5b-9782-471f4c05ca51"
@@ -519,6 +602,7 @@ physical:
     - length: 0.0
       name: "602_3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       source: "c9e0519f-3f3f-40ea-ac76-0d00f67dceff"
       id: "32951c04-82a3-4664-8150-1ea26093c1cc"
       target: "f2409ff0-de4d-42ed-9fbd-4953a589c709"
@@ -529,8 +613,8 @@ physical:
       id: "d02f73d4-0f46-4376-bc35-42278e0443be"
       target: "69941db8-7a21-4eba-b8c6-8cb368e78edb"
   elements:
-    - network_ref: "XSZ_west"
-      name: "A"
+    - name: "A"
+      network_ref: "XSZ_west"
       base_ref: "XSZ"
       class: "signal"
       id: "e68d3951-4d0c-4606-b7d4-fcd63207c2fb"
@@ -538,8 +622,8 @@ physical:
       pos:
         "9721": 34.829
       type: "sign"
-    - network_ref: "XSZ_west"
-      name: "AA"
+    - name: "AA"
+      network_ref: "XSZ_west"
       base_ref: "XSZ"
       class: "signal"
       id: "7cf06e6b-a398-4202-ad15-164d800cc779"
@@ -549,6 +633,7 @@ physical:
       type: "sign"
     - name: "G102A"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "8a3913bc-f8db-4d3f-8f37-c0c7948a09c6"
       direction: "bidirectional"
@@ -557,6 +642,7 @@ physical:
       type: "detector"
     - name: "G103B"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "d2d7f7d4-1c43-4942-93d8-9d65894ca795"
       direction: "bidirectional"
@@ -565,6 +651,7 @@ physical:
       type: "detector"
     - name: "Ra10_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "board"
       id: "49690e1e-1057-479d-9481-d4c0f169ac83"
       direction: "backward"
@@ -573,6 +660,7 @@ physical:
       type: "sign"
     - name: "G102/G202"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "767f6ef8-364b-4035-af25-e94e80ca84c1"
       direction: "bidirectional"
@@ -581,6 +669,7 @@ physical:
       type: "detector"
     - name: "203X"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "signal"
       id: "6e0c3501-a7a8-4947-8f44-76d9ebc9bcd5"
       direction: "forward"
@@ -589,6 +678,7 @@ physical:
       type: "sign"
     - name: "G103/W1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "c9f939f9-897a-42b7-b3ba-ae870fa6e539"
       direction: "bidirectional"
@@ -597,6 +687,7 @@ physical:
       type: "detector"
     - name: "302X"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "signal"
       id: "ffb7d91a-45c4-4bf6-a3b8-df0be7f237fb"
       direction: "forward"
@@ -605,6 +696,7 @@ physical:
       type: "sign"
     - name: "G202/W2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "7da89c5f-4ae7-4c69-bc4c-aab16dfd0044"
       direction: "bidirectional"
@@ -613,21 +705,26 @@ physical:
       type: "detector"
     - name: "W1"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "93a6b353-ba1e-4f13-9aed-436f66a0a276"
             - "fb0f68b5-7d08-436c-ba27-360552dc5d02"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "93a6b353-ba1e-4f13-9aed-436f66a0a276"
             - "7ad94fe9-e01f-4cb7-b28a-1bc055cdc824"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
       pos:
         "9721": 35.079
       type: "branching"
+      specimen: 500-2
     - name: "W1/W2"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "57cdbb94-30f4-41bc-ba9a-0f1e84e84fed"
       direction: "bidirectional"
@@ -635,6 +732,7 @@ physical:
         "9721": 35.12
       type: "detector"
     - name: "W1/W4"
+      network_ref: "XSZ_west"
       base_ref: "XSZ"
       class: "clearing point"
       id: "2c34cdc4-52cd-4402-bc5b-d3687b174beb"
@@ -644,36 +742,45 @@ physical:
       type: "detector"
     - name: "W2"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "e573c6a7-4afa-411e-a91e-a4a0d93191b1"
             - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "89546a28-470f-4cbf-ab9c-e6f0a4accc47"
             - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
       pos:
         "9721": 35.174
       type: "branching"
+      specimen: 500-2
     - name: "W3"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
             - "8943c5dd-fe5e-4db6-87a2-8f6469b29823"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
             - "b4e09f43-a962-4567-898e-a46dff3fe13e"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "bf53206b-2132-4d50-9bb6-37a488318692"
       pos:
         "9721": 35.183
       type: "branching"
+      specimen: 500-2
     - name: "W2/W4"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "eece4636-b7ab-42ad-9745-47aadd63746a"
       direction: "bidirectional"
@@ -682,6 +789,7 @@ physical:
       type: "detector"
     - name: "W2/W8"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "f616b4e1-c549-49db-896f-2e7de061b28e"
       direction: "bidirectional"
@@ -690,21 +798,26 @@ physical:
       type: "detector"
     - name: "W4"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "650d1f77-d0c1-49dc-a747-bec372bda68e"
             - "01a068a3-5e53-48ba-a4c3-04abe6bd03fc"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "9768f2a2-490f-43d9-b41c-bfb4489753fa"
             - "01a068a3-5e53-48ba-a4c3-04abe6bd03fc"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "bb074bbe-1046-4532-9dbd-a645c34789eb"
       pos:
         "9721": 35.316
       type: "branching"
+      specimen: 500-2
     - name: "W4/W5"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "8b414b13-4604-4a36-837e-bd0373a6a7c4"
       direction: "bidirectional"
@@ -713,30 +826,35 @@ physical:
       type: "detector"
     - name: "W8"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "29ad8bf4-a42b-49e3-b767-b8aa219a08bb"
             - "0ff0112a-af29-4b1d-afed-149c5823d26c"
-        - id: "branch2"
+          speed: 160
+        - id: "right"
           path:
             - "29ad8bf4-a42b-49e3-b767-b8aa219a08bb"
             - "6b44d057-5951-4535-84c2-8001d093f272"
+          speed: 70
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
       pos:
         "9721": 35.411
       type: "branching"
+      specimen: 500-2
     - name: "W8/G101"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "642d19e1-b327-4257-a705-38f5f7653b05"
       direction: "bidirectional"
       pos:
         "9721": 35.529
       type: "detector"
-    - network_ref: "XSZ_west"
-      name: "P1"
+    - name: "P1"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "signal"
       id: "4ff5ec23-4517-4ed9-9490-88462395e929"
       direction: "backward"
@@ -745,14 +863,15 @@ physical:
       type: "sign"
     - name: "W8/G302"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "966bfedb-27cf-4692-9e14-eb7bd7c686cf"
       direction: "bidirectional"
       pos:
         "9721": 35.529
       type: "detector"
-    - network_ref: "XSZ_west"
-      name: "P2"
+    - name: "P2"
+      network_ref: "XSZ_west"
       base_ref: "XSZ"
       class: "signal"
       id: "fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b"
@@ -760,8 +879,8 @@ physical:
       pos:
         "9721": 35.529
       type: "sign"
-    - network_ref: "XSZ_1"
-      name: "H1_1"
+    - name: "H1_1"
+      network_ref: "XSZ_1"
       base_ref: "XSZ"
       class: "berth"
       id: "a756cd47-5f55-4fe5-a311-dd83c67a1a2a"
@@ -769,8 +888,8 @@ physical:
       pos:
         "9721": 35.549
       type: "sign"
-    - network_ref: "XSZ_2"
-      name: "H2_1"
+    - name: "H2_1"
+      network_ref: "XSZ_2"
       base_ref: "XSZ"
       class: "berth"
       id: "beb565bc-b1d2-483a-a2c9-2ebaad59f995"
@@ -785,9 +904,9 @@ physical:
       pos:
         "9721": 35.39
       type: "end"
-    - network_ref: "XSZ_west"
-      name: "41X"
+    - name: "41X"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "signal"
       id: "9242d5d0-9329-4cbd-aec3-3a0992948a6c"
       direction: "forward"
@@ -796,6 +915,7 @@ physical:
       type: "sign"
     - name: "G41/W6"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "d0894bc4-700c-407b-bc28-c1ea98018cbc"
       direction: "bidirectional"
@@ -804,6 +924,7 @@ physical:
       type: "detector"
     - name: "Sp41"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "e1ae967e-ab5b-4af6-b406-fb42437ce938"
       direction: "forward"
       pos:
@@ -811,21 +932,26 @@ physical:
       type: "derailer"
     - name: "W5"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "a0c780fa-909b-438e-a297-e1500cb3600d"
             - "389bd3b6-9ffc-4993-b84d-400c7970ab68"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "a0c780fa-909b-438e-a297-e1500cb3600d"
             - "028c200f-c11e-4d79-a511-84d335cc62f5"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "085078f4-e164-48d2-bfa5-f48d5f88728f"
       pos:
         "9721": 35.422
       type: "branching"
+      specimen: 500-1
     - name: "W5/W6"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "5a4c21fd-26c1-4abe-bdec-eec5fa41bf67"
       direction: "bidirectional"
@@ -834,21 +960,26 @@ physical:
       type: "detector"
     - name: "W6"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "be0e6d4d-5010-481e-ade1-5f8bf4c2c5f5"
             - "378c8aa1-93cf-4b70-8f4c-37ec77d19a32"
-        - id: "branch2"
+          speed: 90
+        - id: "right"
           path:
             - "784e92f6-df18-4d7a-971d-d6abbcde5036"
             - "378c8aa1-93cf-4b70-8f4c-37ec77d19a32"
+          speed: 40
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
       pos:
         "9721": 35.495
       type: "branching"
+      specimen: 190-2
     - name: "W6/W7"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "1de71d78-a163-4cf7-b01b-0ded012a7583"
       direction: "bidirectional"
@@ -857,30 +988,35 @@ physical:
       type: "detector"
     - name: "W7"
       branches:
-        - id: "branch1"
+        - id: "right"
           path:
             - "636446fe-11d1-4a5e-a43d-79135c5ba631"
             - "6389d7e2-8bb9-4502-967a-2e4ac0e7d9cd"
-        - id: "branch2"
+          speed: 90
+        - id: "left"
           path:
             - "636446fe-11d1-4a5e-a43d-79135c5ba631"
             - "277446d0-fabb-4420-9352-a3dbf660f731"
+          speed: 40
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       id: "cff292e1-3de4-404d-a471-7bceb80fddcb"
       pos:
         "9721": 35.502
       type: "branching"
+      specimen: 190-1
     - name: "W7/G105"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "0e72eb6e-6cd2-443a-a6d6-d84196fbc065"
       direction: "bidirectional"
       pos:
         "9721": 35.543
       type: "detector"
-    - network_ref: "XSZ_west"
-      name: "105Y"
+    - name: "105Y"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "signal"
       id: "19713f62-e216-46e0-b35e-475666a72761"
       direction: "backward"
@@ -889,15 +1025,16 @@ physical:
       type: "sign"
     - name: "W7/G104"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "14d754b6-43b9-4f1f-96d8-f2a1369e2d75"
       direction: "bidirectional"
       pos:
         "9721": 35.58
       type: "detector"
-    - network_ref: "XSZ_west"
-      name: "P4"
+    - name: "P4"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "signal"
       id: "da21e9b4-84c6-4440-8a62-fdf22fb420ba"
       direction: "backward"
@@ -906,105 +1043,106 @@ physical:
       type: "sign"
     - name: "W5/G203"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "clearing point"
       id: "10a84137-a0f1-4d18-a237-e4ce8d965add"
       direction: "bidirectional"
       pos:
         "9721": 35.58
       type: "detector"
-    - network_ref: "XSZ_west"
-      name: "P3"
+    - name: "P3"
       base_ref: "XSZ"
+      network_ref: "XSZ_west"
       class: "signal"
       id: "72c19288-28bc-4eca-a4c2-4c604b6dd57a"
       direction: "backward"
       pos:
         "9721": 35.58
       type: "sign"
-    - network_ref: "XSZ_4"
-      name: "H4_1"
+    - name: "H4_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_4"
       class: "berth"
       id: "fd296bfb-e1e8-4611-a4b6-a929155fc3dc"
       direction: "backward"
       pos:
         "9721": 35.6
       type: "sign"
-    - network_ref: "XSZ_3"
-      name: "H3_1"
+    - name: "H3_1"
       base_ref: "XSZ"
+      network_ref: "XSZ_3"
       class: "berth"
       id: "fc4fe5af-897a-414b-9757-53d4d100197a"
       direction: "backward"
       pos:
         "9721": 35.6
       type: "sign"
-    - network_ref: "XSZ_4"
-      name: "H4_2"
+    - name: "H4_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_4"
       class: "berth"
       id: "288fb89d-3db0-45bc-8fc5-179e33168300"
       direction: "forward"
       pos:
         "9721": 36.309
       type: "sign"
-    - network_ref: "XSZ_3"
-      name: "H3_2"
+    - name: "H3_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_3"
       class: "berth"
       id: "b0d18e57-8160-4169-ad48-129aab74bcd5"
       direction: "forward"
       pos:
         "9721": 36.309
       type: "sign"
-    - network_ref: "XSZ_2"
-      name: "H2_2"
+    - name: "H2_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_2"
       class: "berth"
       id: "7907115d-238e-432a-a457-e8e00f977ee0"
       direction: "forward"
       pos:
         "9721": 36.309
       type: "sign"
-    - network_ref: "XSZ_1"
-      name: "H1_2"
+    - name: "H1_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_1"
       class: "berth"
       id: "ce1fdb35-0110-4f80-9315-520362760f20"
       direction: "forward"
       pos:
         "9721": 36.309
       type: "sign"
-    - network_ref: "XSZ_east"
-      name: "N4"
+    - name: "N4"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "c08f7e18-ad76-411c-8bbb-560ca591c50f"
       direction: "forward"
       pos:
         "9721": 36.329
       type: "sign"
-    - network_ref: "XSZ_east"
-      name: "N3"
+    - name: "N3"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "24295eb7-2335-4ddf-94d2-f33e9f8bf96f"
       direction: "forward"
       pos:
         "9721": 36.329
       type: "sign"
-    - network_ref: "XSZ_east"
-      name: "N2"
+    - name: "N2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "89d3d5aa-716b-4b98-92c7-bff39ed5f91a"
       direction: "forward"
       pos:
         "9721": 36.329
       type: "sign"
-    - network_ref: "XSZ_east"
-      name: "N1"
+    - name: "N1"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "9e66fce3-42b8-4edb-8aa2-be4f4fcbcb38"
       direction: "forward"
@@ -1013,6 +1151,7 @@ physical:
       type: "sign"
     - name: "G104/W11"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "7b6dbc79-92ff-4eb1-b306-9d2ac385678c"
       direction: "bidirectional"
@@ -1021,6 +1160,7 @@ physical:
       type: "detector"
     - name: "G203/W12"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "9e8ede47-89c6-4d09-a013-3e2f38b1685b"
       direction: "bidirectional"
@@ -1029,6 +1169,7 @@ physical:
       type: "detector"
     - name: "G302/W10"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "194ec252-6df4-4778-afbd-9d2722445086"
       direction: "bidirectional"
@@ -1037,14 +1178,15 @@ physical:
       type: "detector"
     - name: "G101/W9"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "4b43cc40-6233-4425-9881-12d960fa94d9"
       direction: "bidirectional"
       pos:
         "9721": 36.329
       type: "detector"
-    - network_ref: "XSZ_east"
-      name: "105X"
+    - name: "105X"
+      network_ref: "XSZ_east"
       base_ref: "XSZ"
       class: "signal"
       id: "de01a8a2-b464-4e5f-a7d4-a2923949b0da"
@@ -1054,6 +1196,7 @@ physical:
       type: "sign"
     - name: "G105/W11"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "b32b9392-3d53-4de9-941f-113a53bd1f7a"
       direction: "bidirectional"
@@ -1062,21 +1205,26 @@ physical:
       type: "detector"
     - name: "W11"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "d7547c5d-df45-43af-82fd-723c06494e31"
             - "d7092dcb-2669-41c6-aa27-f4c9fca2ce0f"
-        - id: "branch2"
+          speed: 90
+        - id: "right"
           path:
             - "d0a0c674-f9e6-4706-908d-2200ed300f39"
             - "d7092dcb-2669-41c6-aa27-f4c9fca2ce0f"
+          speed: 40
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       id: "7b81abd3-5278-4387-9816-911d808db0bb"
       pos:
         "9721": 36.446
       type: "branching"
+      specimen: 190-1
     - name: "W11/W12"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "287a180c-a696-45a9-b82e-8571757ae8a6"
       direction: "bidirectional"
@@ -1085,21 +1233,26 @@ physical:
       type: "detector"
     - name: "W12"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "23e49add-053c-4cbb-96a3-9854a4f68edb"
             - "896afbda-b1ce-4aef-9e42-f723bfac8ee3"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "806ac744-ddb7-443e-bb8c-2048b8d26f47"
             - "896afbda-b1ce-4aef-9e42-f723bfac8ee3"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       id: "7e17901c-361f-4c45-a536-191182631ce8"
       pos:
         "9721": 36.526
       type: "branching"
+      specimen: 500-2
     - name: "W12/W13"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "390a7b2d-c975-41ef-a855-2ff9e7542a82"
       direction: "bidirectional"
@@ -1108,21 +1261,26 @@ physical:
       type: "detector"
     - name: "W9"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "77d4e465-4137-4ded-8a09-60e4ac588a1c"
             - "22048935-a4a9-4090-b00d-a66461bc8303"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "77d4e465-4137-4ded-8a09-60e4ac588a1c"
             - "4c9beef0-03e2-41ef-b8ea-95dea6550abe"
+          speed: 40
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       id: "854ecaf5-4c86-4770-949c-e620514ed495"
       pos:
         "9721": 36.383
       type: "branching"
+      specimen: 190-2
     - name: "Sp11"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       id: "3b71eb90-399c-4565-992e-bc8b2ce2afca"
       direction: "backward"
       pos:
@@ -1130,15 +1288,16 @@ physical:
       type: "derailer"
     - name: "W9/G11"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "d3253e21-e623-434e-8a57-6198da0246cb"
       direction: "bidirectional"
       pos:
         "9721": 36.429
       type: "detector"
-    - network_ref: "XSZ_east"
-      name: "11Y"
+    - name: "11Y"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "e8026d1c-90e9-432e-bea2-ec720f51e50a"
       direction: "backward"
@@ -1154,6 +1313,7 @@ physical:
       type: "end"
     - name: "W9/W10"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "a0a8b218-babb-49d0-aa39-09c308bd1911"
       direction: "bidirectional"
@@ -1162,21 +1322,26 @@ physical:
       type: "detector"
     - name: "W10"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "ed3d5182-958f-4c97-908d-480acb3d6cdd"
             - "3f8bb6b6-5e80-4745-b94b-cede59f3c19e"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "8263234a-4894-426d-af2c-6e67a5de058e"
             - "3f8bb6b6-5e80-4745-b94b-cede59f3c19e"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       id: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
       pos:
         "9721": 36.519
       type: "branching"
+      specimen: 500-2
     - name: "W10/W14"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "fae99c78-2dc7-475c-8dd1-48a51d4646b4"
       direction: "bidirectional"
@@ -1185,21 +1350,26 @@ physical:
       type: "detector"
     - name: "W13"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "001832f1-8442-4230-a954-622aabfdb63e"
             - "f611ac36-81de-4f92-b6a1-42b6d96c199f"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "001832f1-8442-4230-a954-622aabfdb63e"
             - "80f00a8e-0842-46de-bfc5-b368b91e1a7d"
+          speed: 60
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       id: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
       pos:
         "9721": 36.602
       type: "branching"
+      specimen: 500-2
     - name: "W13/W14"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "d7f2738e-a7ec-4659-9019-d96e0794c7bf"
       direction: "bidirectional"
@@ -1208,21 +1378,26 @@ physical:
       type: "detector"
     - name: "W14"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "8f7c64be-a19d-4681-841b-0d788eb90526"
             - "e595119f-96d5-422d-b45b-d390877a0848"
-        - id: "branch2"
+          speed: 160
+        - id: "right"
           path:
             - "1112a77e-0639-4fef-82ef-2c4e98c88c2b"
             - "e595119f-96d5-422d-b45b-d390877a0848"
+          speed: 70
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       id: "6f73d007-0451-4d6b-9323-897ff43a4eac"
       pos:
         "9721": 36.734
       type: "branching"
+      specimen: 500-2
     - name: "W13/G303"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "2b1f1556-9b4e-4f67-93cf-5a47e0da0f6e"
       direction: "bidirectional"
@@ -1231,6 +1406,7 @@ physical:
       type: "detector"
     - name: "503Y"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "aaca17e4-5c0a-466a-9e6e-1c736d77b684"
       direction: "backward"
@@ -1239,6 +1415,7 @@ physical:
       type: "sign"
     - name: "W14/G402"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "82c133ef-4a05-43d7-be08-66a867025ee2"
       direction: "bidirectional"
@@ -1247,6 +1424,7 @@ physical:
       type: "detector"
     - name: "602Y"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "2eafbe28-aac1-4f39-963f-aae39a60f23c"
       direction: "backward"
@@ -1255,6 +1433,7 @@ physical:
       type: "sign"
     - name: "Ra10_2"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "board"
       id: "92f84da4-fd6d-4362-8b59-3573eee5b627"
       direction: "forward"
@@ -1263,6 +1442,7 @@ physical:
       type: "sign"
     - name: "G303/G403"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "7d0e31aa-9372-4142-9d21-f4d911be6046"
       direction: "bidirectional"
@@ -1271,15 +1451,16 @@ physical:
       type: "detector"
     - name: "G403A"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "8bf4d964-2e52-4a34-bb60-a908bc92c8ba"
       direction: "bidirectional"
       pos:
         "9721": 37.029
       type: "detector"
-    - network_ref: "XSZ_east"
-      name: "F"
+    - name: "F"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "e04066a1-5044-4d5b-9782-471f4c05ca51"
       direction: "backward"
@@ -1288,15 +1469,16 @@ physical:
       type: "sign"
     - name: "G402B"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "clearing point"
       id: "c9e0519f-3f3f-40ea-ac76-0d00f67dceff"
       direction: "bidirectional"
       pos:
         "9721": 37.029
       type: "detector"
-    - network_ref: "XSZ_east"
-      name: "FF"
+    - name: "FF"
       base_ref: "XSZ"
+      network_ref: "XSZ_east"
       class: "signal"
       id: "f2409ff0-de4d-42ed-9fbd-4953a589c709"
       direction: "backward"

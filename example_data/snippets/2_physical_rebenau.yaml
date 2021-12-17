@@ -3,390 +3,455 @@ physical:
     - length: 0.01
       name: "W7_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
       id: "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
       target: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
     - length: 0.107
       name: "W7_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
       id: "81c8f580-840e-4682-ac8e-e338886a36a4"
       target: "398c4772-e871-47fd-abba-beb0b998fc3b"
     - length: 0.107
       name: "W7_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
       id: "b448ec40-82c0-45dc-ad70-6cb087c4e868"
       target: "f493994b-4415-441f-a815-202691c0d28c"
     - length: 0.0
       name: "105_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "398c4772-e871-47fd-abba-beb0b998fc3b"
       id: "5b1a33e1-96e0-4acd-bda9-7699d4f4597b"
       target: "a631e1fa-e935-4995-902b-529ed5a3b07a"
     - length: 0.05
       name: "105_2"
       base_ref: "XR"
+      network_ref: "XR_5"
       source: "a631e1fa-e935-4995-902b-529ed5a3b07a"
       id: "50ada139-b59f-40b4-8737-a0b3da3ab4ee"
       target: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
     - length: 0.0
       name: "104_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "f493994b-4415-441f-a815-202691c0d28c"
       id: "dae0d2d3-b47b-4ce2-97bd-91885e61bede"
       target: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
     - length: 0.05
       name: "104_2"
       base_ref: "XR"
+      network_ref: "XR_4"
       source: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
       id: "91bc846b-2bea-41cc-b7a2-984cee39b67c"
       target: "495a4bab-4ee7-4440-a46c-c304db058aef"
     - length: 0.424
       name: "105_3"
       base_ref: "XR"
+      network_ref: "XR_5"
       source: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
       id: "524ab6c2-6276-41fb-b792-1d1cfd2fc18c"
       target: "ee2478ac-01e7-4dd8-823e-acb274b20831"
     - length: 0.05
       name: "105_4"
       base_ref: "XR"
+      network_ref: "XR_5"
       source: "ee2478ac-01e7-4dd8-823e-acb274b20831"
       id: "5817b8ae-7ff3-4162-b520-10984d891ad1"
       target: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
     - length: 0.51
       name: "104_3"
       base_ref: "XR"
+      network_ref: "XR_4"
       source: "495a4bab-4ee7-4440-a46c-c304db058aef"
       id: "48a1feda-0319-4b57-9962-5e57d4137a4d"
       target: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
     - length: 0.05
       name: "104_4"
       base_ref: "XR"
+      network_ref: "XR_4"
       source: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
       id: "335c38da-34ee-4f63-8ae0-8e3447a96a19"
       target: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
     - length: 0.115
       name: "W8_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "beb5f987-f0a0-4cda-b7f9-6ea4e6aef29a"
       id: "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
       target: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
     - length: 0.133
       name: "W8_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
       id: "181e892d-4dba-420b-8d2b-b202e0e4d8aa"
       target: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
     - length: 0.105
       name: "W8_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
       id: "4a02cfc5-4f8a-4c1a-8ddc-31804496e2ba"
       target: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
     - length: 0.0
       name: "303_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
       id: "587514a2-29b3-4e28-86ad-0cd6d13a7146"
       target: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
     - length: 0.05
       name: "303_2"
       base_ref: "XR"
+      network_ref: "XR_3"
       source: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
       id: "4dbd323c-6296-4e61-9d92-1c25743f4f3a"
       target: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
     - length: 0.109
       name: "W9_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
       id: "61bd1813-d8cf-4e40-81c9-aad713e5cb3b"
       target: "c65dbc29-58da-406f-9901-d590009a81ba"
     - length: 0.109
       name: "W9_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
       id: "f809f458-5a32-49ec-8ae7-f27a22ed30e3"
       target: "c65dbc29-58da-406f-9901-d590009a81ba"
     - length: 0.005
       name: "W9_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "c65dbc29-58da-406f-9901-d590009a81ba"
       id: "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
       target: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
     - length: 0.0
       name: "102_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
       id: "1ee57ded-3380-43a8-8308-cf6435fa9cdc"
       target: "54dec955-deee-4087-b39a-6a670df59706"
     - length: 0.05
       name: "102_2"
       base_ref: "XR"
+      network_ref: "XR_2"
       source: "54dec955-deee-4087-b39a-6a670df59706"
       id: "a2803fdb-bd26-4863-acdf-fabb5fd21185"
       target: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
     - length: 0.532
       name: "303_3"
       base_ref: "XR"
+      network_ref: "XR_3"
       source: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
       id: "106aae72-ae4d-4b53-a657-3cc261c59e8f"
       target: "271f086a-22b4-4139-b8e5-91dd863e5c44"
     - length: 0.05
       name: "303_4"
       base_ref: "XR"
+      network_ref: "XR_3"
       source: "271f086a-22b4-4139-b8e5-91dd863e5c44"
       id: "c2302818-fac1-402f-99ec-dbd5c3e06000"
       target: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
     - length: 0.317
       name: "102_3"
       base_ref: "XR"
+      network_ref: "XR_2"
       source: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
       id: "dd5e1326-8c11-41fd-8bde-b9fdf7368b83"
       target: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
     - length: 0.05
       name: "102_4"
       base_ref: "XR"
+      network_ref: "XR_2"
       source: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
       id: "b2b2062d-c057-4c56-843a-653b033f1cd4"
       target: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
     - length: 0.0
       name: "105_5"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
       id: "b79152c5-d6ed-46c6-87f4-6ba807098296"
       target: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
     - length: 0.056
       name: "W12_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
       id: "2501d609-0f92-4918-8442-b23df762b366"
       target: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
     - length: 0.0
       name: "104_5"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
       id: "28709dbf-be51-413b-889a-2aea91482f8f"
       target: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
     - length: 0.038
       name: "W13_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
       id: "e95ecc25-ad89-4dff-be84-689b657b8fcc"
       target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
     - length: 0.0
       name: "303_5"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
       id: "0e73302c-dae2-4922-bbf5-5f0e9097345c"
       target: "15452298-8414-45f1-b5e0-3b9a60ed088e"
     - length: 0.04
       name: "W14_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "15452298-8414-45f1-b5e0-3b9a60ed088e"
       id: "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
       target: "d0342aa7-cb3b-4feb-9200-813f1da75625"
     - length: 0.0
       name: "102_5"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
       id: "d2b76579-4a70-4e09-a645-53d9062b9392"
       target: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
     - length: 0.005
       name: "W15_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
       id: "925d9c4c-12a6-4e84-b11c-0c70be0af312"
       target: "e444b175-2eff-4bd1-96c5-185ed4424f61"
     - length: 0.264
       name: "W15_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "e444b175-2eff-4bd1-96c5-185ed4424f61"
       id: "01be204c-08ad-4292-ba76-79b61ba189b0"
       target: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
     - length: 0.234
       name: "W15_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "e444b175-2eff-4bd1-96c5-185ed4424f61"
       id: "246048e1-cb84-4657-99b8-98bc3d6c14c7"
       target: "dd64948a-2423-451f-87bb-fc541735aad8"
     - length: 0.045
       name: "W17_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
       id: "97292225-29c0-4899-a38b-b359f771ccdf"
       target: "0e202ec8-370e-4279-ba82-d53657190abe"
     - length: 0.015
       name: "K16_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "dd64948a-2423-451f-87bb-fc541735aad8"
       id: "2db166ca-7913-4b3a-97d5-ab981cc34209"
       target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
     - length: 0.038
       name: "W12_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
       id: "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
       target: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
     - length: 0.045
       name: "W12_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
       id: "0f107da6-f8cb-4868-b686-1c053336b1d1"
       target: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
     - length: 0.03
       name: "W13_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
       id: "02595aac-198b-404e-8a1c-10fda9d3ef2d"
       target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
     - length: 0.384
       name: "204"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "712f1424-b556-4758-9ac6-c0cb328d7705"
       id: "4aa77376-6a24-469a-aa37-30c251a28dc6"
       target: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
     - length: 0.037
       name: "W14_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "70122a48-8078-496c-943b-8f1e781dbf64"
       id: "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
       target: "d0342aa7-cb3b-4feb-9200-813f1da75625"
     - length: 0.17
       name: "403"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
       id: "4bafc796-3fa8-46ce-83cd-223691082044"
       target: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
     - length: 0.015
       name: "K16_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
       id: "c446df42-516e-4cbd-8897-bf242bac1e4d"
       target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
     - length: 0.036
       name: "W13_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
       id: "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
       target: "712f1424-b556-4758-9ac6-c0cb328d7705"
     - length: 0.033
       name: "W13_4"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
       id: "6125547d-9d2d-4086-8898-16114f058550"
       target: "70122a48-8078-496c-943b-8f1e781dbf64"
     - length: 0.03
       name: "W14_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "d0342aa7-cb3b-4feb-9200-813f1da75625"
       id: "dcc02a80-c322-42db-9458-e8ccf613e7a0"
       target: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
     - length: 0.07
       name: "W14_4"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "d0342aa7-cb3b-4feb-9200-813f1da75625"
       id: "42d05546-05d2-4c7d-ad18-d7703bb9259e"
       target: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
     - length: 0.015
       name: "K16_4"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
       id: "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
       target: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
     - length: 0.025
       name: "K16_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
       id: "8337b3a5-29c2-441d-9232-ebdc8e14af07"
       target: "3a00ba63-ff25-4720-be64-1f08d329a31b"
     - length: 0.045
       name: "W17_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
       id: "9c5236c4-0099-4811-a7ee-5d16f82b00a7"
       target: "0e202ec8-370e-4279-ba82-d53657190abe"
     - length: 0.09
       name: "202"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "3a00ba63-ff25-4720-be64-1f08d329a31b"
       id: "6b55968a-c55e-4d6e-bada-615bddb8d9f1"
       target: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
     - length: 0.105
       name: "W19_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
       id: "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
       target: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
     - length: 0.105
       name: "W19_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
       id: "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
       target: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
     - length: 0.045
       name: "W19_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
       id: "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
       target: "e4741cd5-3096-431e-8739-bf4a7001221e"
     - length: 0.046
       name: "W19_4"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
       id: "b58eb471-b63e-4021-8965-e7e8cc4e3369"
       target: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
     - length: 0.057
       name: "W20_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
       id: "f39fcc72-c5ad-4df1-b2b1-b7744944c5c2"
       target: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
     - length: 0.057
       name: "W20_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "e4741cd5-3096-431e-8739-bf4a7001221e"
       id: "da26a3c4-8a53-4d43-a504-57206151a42d"
       target: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
     - length: 0.0
       name: "503_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
       id: "09595d8a-8cd6-4352-aa02-60c77ccceb26"
       target: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
     - length: 0.01
       name: "W20_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
       id: "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
       target: "8890eec1-8048-4853-8d25-71cfb8365a36"
     - length: 0.0
       name: "304_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "8890eec1-8048-4853-8d25-71cfb8365a36"
       id: "7e18556b-9216-4acf-a96b-2ab547cf91d0"
       target: "ad21db91-ef23-401b-8138-8dfa933e688c"
     - length: 0.143
       name: "304_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "ad21db91-ef23-401b-8138-8dfa933e688c"
       id: "e3eea382-8bae-49c8-b3a7-156261786131"
       target: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
     - length: 0.17
       name: "404_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "40323a52-1608-4e52-834c-7a6112f56073"
       id: "8578f9aa-a3f1-4de8-837d-c4f51e2dcb48"
       target: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
     - length: 0.0
       name: "304_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
       id: "68a55c8e-a578-45ba-acfd-253a69081599"
       target: "40323a52-1608-4e52-834c-7a6112f56073"
     - length: 0.0
       name: "404_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
       id: "0c9cd676-60d0-416d-8340-3cb6ded4ff1b"
       target: "ae83219c-febb-4bc7-bee4-218465b65584"
@@ -405,120 +470,140 @@ physical:
     - length: 0.0
       name: "103_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "c4d62f2c-71b6-41a8-86f2-36c641af3b0f"
       id: "f01f1a87-7d1a-4f41-b9a9-e6bae6897e94"
       target: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
     - length: 0.0
       name: "101_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "1e94145d-9d16-446d-8fed-a61000b4e5d4"
       id: "7ef9c3be-fb5b-42bf-8463-c5848294bf14"
       target: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
     - length: 0.425
       name: "103_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
       id: "766af4d5-2131-4600-9ca1-df0de0bf3b66"
       target: "96341cef-c47f-4a36-b095-caa3c0ab191b"
     - length: 0.225
       name: "101_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
       id: "c5587235-6c1e-4f0d-b1bb-b3bbeec7a4d3"
       target: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
     - length: 0.0
       name: "201_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
       id: "10088805-c567-47cb-af2a-3d89574d9b23"
       target: "6af304ac-5742-452d-a9e2-df6c10df649b"
     - length: 0.2
       name: "201_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "6af304ac-5742-452d-a9e2-df6c10df649b"
       id: "02ef2a96-f31f-42d0-a9f6-605e773235be"
       target: "906eea64-c07c-4c28-8a3a-018f29401311"
     - length: 0.0
       name: "103_4"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "96341cef-c47f-4a36-b095-caa3c0ab191b"
       id: "ff921d0d-47db-431e-89e6-68647418576d"
       target: "3b394a1e-94f1-40e0-b867-221a95ed7478"
     - length: 0.0
       name: "201_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "906eea64-c07c-4c28-8a3a-018f29401311"
       id: "1f6f9c2a-dac6-47de-9d28-1b12200f3ccc"
       target: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
     - length: 0.136
       name: "W2_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "3b394a1e-94f1-40e0-b867-221a95ed7478"
       id: "bedf4859-682d-4720-8800-0ba6d865acc9"
       target: "46efc37a-7802-4f69-859b-484b44eed272"
     - length: 0.01
       name: "W1_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
       id: "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
       target: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
     - length: 0.065
       name: "W1_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
       id: "975a55ac-301c-4221-9e44-c92869304025"
       target: "268e860e-1b7e-4d3f-9373-e28a25174937"
     - length: 0.065
       name: "W1_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
       id: "86a25dce-af41-4d43-83d0-d9bc16f4f63d"
       target: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
     - length: 0.061
       name: "W2_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "268e860e-1b7e-4d3f-9373-e28a25174937"
       id: "853e8e62-5ccd-4d56-9301-edfe49b221a5"
       target: "46efc37a-7802-4f69-859b-484b44eed272"
     - length: 0.071
       name: "301_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
       id: "9e81beff-f5d0-4659-a91f-909f8fc97044"
       target: "e699224e-44c1-4a39-a400-e7b8b0fded59"
     - length: 0.013
       name: "W2_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "46efc37a-7802-4f69-859b-484b44eed272"
       id: "52f4b921-81a0-4ea6-8e36-52a41f098d84"
       target: "f80fda90-58c5-488c-885c-388ca1673e9a"
     - length: 0.0
       name: "203_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "f80fda90-58c5-488c-885c-388ca1673e9a"
       id: "4cdfe483-a916-4046-be43-114da8ad086b"
       target: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
     - length: 0.267
       name: "203_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
       id: "35ff8e9f-ac49-4017-9119-0ab89b6d2cc3"
       target: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
     - length: 0.27
       name: "301_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "e699224e-44c1-4a39-a400-e7b8b0fded59"
       id: "b11e4826-24e6-444b-a34c-b2f7061dcd3c"
       target: "77175a18-3820-4035-a6b8-57a2ee609e8d"
     - length: 0.146
       name: "203_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
       id: "c2a637cb-7705-4a2a-a933-c83f68ffa2d5"
       target: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
     - length: 0.146
       name: "301_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "77175a18-3820-4035-a6b8-57a2ee609e8d"
       id: "aeeecd82-f136-4b54-999d-3e8b13a9a82d"
       target: "a563f377-3832-4cc4-9b75-b605550d4c07"
@@ -531,54 +616,63 @@ physical:
     - length: 0.0
       name: "124_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "bf41a121-6a3c-4452-b3d2-efef64fe70c2"
       id: "f2b22410-cf04-450f-ac79-6f70dfc297f9"
       target: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
     - length: 0.005
       name: "124_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
       id: "171a617f-867b-4664-a918-d7e92629214e"
       target: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
     - length: 0.005
       name: "W3_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
       id: "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
       target: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
     - length: 0.0
       name: "203_4"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
       id: "2df2eb98-0968-4a33-b83b-891a108d7147"
       target: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
     - length: 0.048
       name: "W4_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
       id: "89259aba-7a16-4ce7-ab35-d553843e548f"
       target: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
     - length: 0.0
       name: "301_4"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "a563f377-3832-4cc4-9b75-b605550d4c07"
       id: "7216ff88-b3b2-46e0-9414-9477c79df573"
       target: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
     - length: 0.082
       name: "W10_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
       id: "6d30e635-c33a-470c-816c-61844e528355"
       target: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
     - length: 0.005
       name: "51_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
       id: "752085c9-58d6-4057-a92c-ac02710b8e82"
       target: "5f52ad57-6723-4412-8eb4-16650b308dd7"
     - length: 0.0
       name: "51_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "5f52ad57-6723-4412-8eb4-16650b308dd7"
       id: "6c5fbf3c-6b29-4ef4-b133-77cd7cd7f5f4"
       target: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
@@ -591,35 +685,41 @@ physical:
     - length: 0.047
       name: "W3_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
       id: "9fcda44e-017a-44db-a615-f182d06e23d3"
       target: "515f1257-d556-4371-af6a-4bda8d0ee351"
     - length: 0.067
       name: "W3_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
       id: "da07abe1-e40c-4115-84db-dff64b01ba8f"
       target: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
     - length: 0.214
       name: "W6_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "515f1257-d556-4371-af6a-4bda8d0ee351"
       id: "9a8b9a4d-6a48-472e-b726-bea8ffdd835c"
       target: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
     - length: 0.07
       name: "W4_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
       id: "c4a95b27-b5ba-4055-b349-e6246bee04c6"
       target: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
     - length: 0.009
       name: "W4_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
       id: "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
       target: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
     - length: 0.041
       name: "W4_4"
+      network_ref: "XR_west"
       base_ref: "XR"
       source: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
       id: "3511c870-d8bd-4e40-b3f7-95e90391c40d"
@@ -627,36 +727,42 @@ physical:
     - length: 0.061
       name: "W4_5"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
       id: "d3794520-9377-4fd9-98ac-c3fe9518673b"
       target: "814413bd-dee7-4037-af21-5fe0acd57069"
     - length: 0.054
       name: "W6_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "814413bd-dee7-4037-af21-5fe0acd57069"
       id: "25c65a85-7ead-4b6b-bea5-a00287940a66"
       target: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
     - length: 0.011
       name: "W6_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
       id: "80755594-0760-44af-8082-69e5880e9a17"
       target: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
     - length: 0.056
       name: "W10_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
       id: "2bcfa1ac-5cf8-43b6-9541-95438672ec12"
       target: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
     - length: 0.165
       name: "W10_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
       id: "f2801dc8-7025-4157-9917-d809ea8f620b"
       target: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
     - length: 0.044
       name: "W11_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
       id: "cebe90f8-8122-4883-9e94-3daa8960e4d2"
       target: "4bacaae6-e599-4cfc-822a-35bc23735979"
@@ -669,96 +775,112 @@ physical:
     - length: 0.0
       name: "21_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "8067ab6b-61f0-428e-9449-5f2ab7f8ded2"
       id: "cb0e9b3e-46b7-4fb8-b9dc-2e02e391e011"
       target: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
     - length: 0.002
       name: "21_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
       id: "95caa752-4741-4a22-b293-4d9bbbe82ea9"
       target: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
     - length: 0.059
       name: "W11_3"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
       id: "6f7b125c-e706-41fd-9165-ed1719ab9fd9"
       target: "4bacaae6-e599-4cfc-822a-35bc23735979"
     - length: 0.136
       name: "W11_2"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "4bacaae6-e599-4cfc-822a-35bc23735979"
       id: "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
       target: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
     - length: 0.0
       name: "401_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       source: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
       id: "1d21963b-03e1-4ac5-9bde-c88814e7b229"
       target: "0f8d67a8-3183-4b87-b911-e722107cda5d"
     - length: 0.02
       name: "401_2"
       base_ref: "XR"
+      network_ref: "XR_1"
       source: "0f8d67a8-3183-4b87-b911-e722107cda5d"
       id: "7b35b4b0-4550-498c-a5ee-9fdb3ec6c9f5"
       target: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
     - length: 0.734
       name: "401_3"
       base_ref: "XR"
+      network_ref: "XR_1"
       source: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
       id: "1ea8c234-a2bc-40e9-9fe3-01aac1dc51a8"
       target: "de3e722c-a217-4257-b868-0ca6bbc6310c"
     - length: 0.02
       name: "401_4"
       base_ref: "XR"
+      network_ref: "XR_1"
       source: "de3e722c-a217-4257-b868-0ca6bbc6310c"
       id: "343c4abd-a5f1-42b5-b099-367b5c960a53"
       target: "cfb9c041-df5f-42ff-96e4-8051299467cc"
     - length: 0.0
       name: "401_5"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "cfb9c041-df5f-42ff-96e4-8051299467cc"
       id: "0d5ee3b7-1021-4f70-9a86-4de68bfd6d02"
       target: "a4e4c075-249c-45b4-820b-b77523fcf124"
     - length: 0.179
       name: "W18_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "a4e4c075-249c-45b4-820b-b77523fcf124"
       id: "4ae249bc-a193-4c8f-b723-dbcf27bbcb5c"
       target: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
     - length: 0.001
       name: "W17_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "0e202ec8-370e-4279-ba82-d53657190abe"
       id: "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
       target: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
     - length: 0.036
       name: "W18_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
       id: "f6980045-b4cf-4cca-bf55-ae41163df70d"
       target: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
     - length: 0.01
       name: "W18_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
       id: "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
       target: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
     - length: 0.0
       name: "501_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
       id: "1ba31143-fe9a-4e36-a710-c50510622c4a"
       target: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
     - length: 0.537
       name: "501_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
       id: "727d9010-302a-4e06-9028-475bb8c2dbec"
       target: "1daca293-0191-40d9-9f32-1e749223d03d"
     - length: 0.0
       name: "501_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "1daca293-0191-40d9-9f32-1e749223d03d"
       id: "061de7f4-1d51-4ecb-b1bd-6e0fd25d79d3"
       target: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
@@ -771,24 +893,28 @@ physical:
     - length: 0.1
       name: "503_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
       id: "6322afe1-1fa4-40aa-a4df-9f6cd90a24db"
       target: "73bc3a56-243d-40eb-ad05-6480825bb643"
     - length: 0.0
       name: "503_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "73bc3a56-243d-40eb-ad05-6480825bb643"
       id: "08c72bb3-6727-4d9e-83dc-134d1535452b"
       target: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
     - length: 0.278
       name: "603_1"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
       id: "d9e04eaf-ab2f-4625-845c-e7e5732dbe4d"
       target: "f31e3747-80c6-4342-9782-8ce4c7a24379"
     - length: 0.0
       name: "603_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       source: "f31e3747-80c6-4342-9782-8ce4c7a24379"
       id: "3f0a3950-d11a-40d6-87a0-e57fdbf3dca4"
       target: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
@@ -801,38 +927,46 @@ physical:
   elements:
     - name: "W6/W7"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
       direction: "bidirectional"
       pos:
         "9721": 15.865
+        "9724": 0.126
       type: "detector"
     - name: "W7"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
             - "81c8f580-840e-4682-ac8e-e338886a36a4"
-        - id: "branch2"
+          speed: 80
+        - id: "right"
           path:
             - "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
             - "b448ec40-82c0-45dc-ad70-6cb087c4e868"
+          speed: 120
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
       pos:
         "9721": 15.875
+        "9724": 0.136
       type: "branching"
+      specimen: 500-2
     - name: "W7/G105"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "398c4772-e871-47fd-abba-beb0b998fc3b"
       direction: "bidirectional"
       pos:
         "9721": 15.982
       type: "detector"
-    - network_ref: "XR_west"
-      name: "P5"
+    - name: "P5"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "a631e1fa-e935-4995-902b-529ed5a3b07a"
       direction: "backward"
@@ -841,59 +975,65 @@ physical:
       type: "sign"
     - name: "W7/G104"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "f493994b-4415-441f-a815-202691c0d28c"
       direction: "bidirectional"
       pos:
         "9721": 15.982
+        "9724": 0.243
       type: "detector"
-    - network_ref: "XR_west"
-      name: "P4"
+    - name: "P4"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
       direction: "backward"
       pos:
         "9721": 15.982
+        "9724": 0.243
       type: "sign"
-    - network_ref: "XR_5"
-      name: "H5_1"
+    - name: "H5_1"
       base_ref: "XR"
+      network_ref: "XR_5"
       class: "berth"
       id: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
       direction: "backward"
       pos:
         "9721": 16.032
       type: "sign"
-    - network_ref: "XR_5"
-      name: "H5_2"
+    - name: "H5_2"
       base_ref: "XR"
+      network_ref: "XR_5"
       class: "berth"
       id: "ee2478ac-01e7-4dd8-823e-acb274b20831"
       direction: "forward"
       pos:
         "9721": 16.456
       type: "sign"
-    - network_ref: "XR_4"
-      name: "H4_1"
+    - name: "H4_1"
       base_ref: "XR"
+      network_ref: "XR_4"
       class: "berth"
       id: "495a4bab-4ee7-4440-a46c-c304db058aef"
       direction: "backward"
       pos:
         "9721": 16.032
+        "9724": 0.293
       type: "sign"
-    - network_ref: "XR_4"
-      name: "H4_2"
+    - name: "H4_2"
       base_ref: "XR"
+      network_ref: "XR_4"
       class: "berth"
       id: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
       direction: "forward"
       pos:
         "9721": 16.542
+        "9724": 0.803
       type: "sign"
     - name: "W4/W8"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "beb5f987-f0a0-4cda-b7f9-6ea4e6aef29a"
       direction: "bidirectional"
@@ -902,30 +1042,35 @@ physical:
       type: "detector"
     - name: "W8"
       branches:
-        - id: "branch1"
+        - id: "right1"
           path:
             - "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
             - "181e892d-4dba-420b-8d2b-b202e0e4d8aa"
-        - id: "branch2"
+          speed: 160
+        - id: "right2"
           path:
             - "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
             - "4a02cfc5-4f8a-4c1a-8ddc-31804496e2ba"
+          speed: 50
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
       pos:
         "9721": 15.895
       type: "branching"
+      specimen: 500-1
     - name: "W8/G303"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
       direction: "bidirectional"
       pos:
         "9721": 16.028
       type: "detector"
-    - network_ref: "XR_west"
-      name: "P3"
+    - name: "P3"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
       direction: "backward"
@@ -934,6 +1079,7 @@ physical:
       type: "sign"
     - name: "W8/W9"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
       direction: "bidirectional"
@@ -942,6 +1088,7 @@ physical:
       type: "detector"
     - name: "W11/W9"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
       direction: "bidirectional"
@@ -950,75 +1097,80 @@ physical:
       type: "detector"
     - name: "W9"
       branches:
-        - id: "branch1"
+        - id: "right"
           path:
             - "61bd1813-d8cf-4e40-81c9-aad713e5cb3b"
             - "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
-        - id: "branch2"
+          speed: 60
+        - id: "straight"
           path:
             - "f809f458-5a32-49ec-8ae7-f27a22ed30e3"
             - "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "c65dbc29-58da-406f-9901-d590009a81ba"
       pos:
         "9721": 16.109
       type: "branching"
+      specimen: 500-1
     - name: "W9/G102"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
       direction: "bidirectional"
       pos:
         "9721": 16.114
       type: "detector"
-    - network_ref: "XR_west"
-      name: "P2"
+    - name: "P2"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "54dec955-deee-4087-b39a-6a670df59706"
       direction: "backward"
       pos:
         "9721": 16.114
       type: "sign"
-    - network_ref: "XR_3"
-      name: "H3_1"
+    - name: "H3_1"
       base_ref: "XR"
+      network_ref: "XR_3"
       class: "berth"
       id: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
       direction: "backward"
       pos:
         "9721": 16.078
       type: "sign"
-    - network_ref: "XR_3"
-      name: "H3_2"
+    - name: "H3_2"
       base_ref: "XR"
+      network_ref: "XR_3"
       class: "berth"
       id: "271f086a-22b4-4139-b8e5-91dd863e5c44"
       direction: "forward"
       pos:
         "9721": 16.61
       type: "sign"
-    - network_ref: "XR_2"
-      name: "H2_1"
+    - name: "H2_1"
       base_ref: "XR"
+      network_ref: "XR_2"
       class: "berth"
       id: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
       direction: "backward"
       pos:
         "9721": 16.164
       type: "sign"
-    - network_ref: "XR_2"
-      name: "H2_2"
+    - name: "H2_2"
       base_ref: "XR"
+      network_ref: "XR_2"
       class: "berth"
       id: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
       direction: "forward"
       pos:
         "9721": 16.481
       type: "sign"
-    - network_ref: "XR_east"
-      name: "N5"
+    - name: "N5"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
       direction: "forward"
@@ -1027,32 +1179,36 @@ physical:
       type: "sign"
     - name: "G105/W12"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
       direction: "bidirectional"
       pos:
         "9721": 16.506
       type: "detector"
-    - network_ref: "XR_east"
-      name: "N4"
+    - name: "N4"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
       direction: "forward"
       pos:
         "9721": 16.592
+        "9724": 0.853
       type: "sign"
     - name: "G104/W13"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
       direction: "bidirectional"
       pos:
         "9721": 16.592
+        "9724": 0.853
       type: "detector"
-    - network_ref: "XR_east"
-      name: "N3"
+    - name: "N3"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
       direction: "forward"
@@ -1061,15 +1217,16 @@ physical:
       type: "sign"
     - name: "G303/W14"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "15452298-8414-45f1-b5e0-3b9a60ed088e"
       direction: "bidirectional"
       pos:
         "9721": 16.66
       type: "detector"
-    - network_ref: "XR_east"
-      name: "N2"
+    - name: "N2"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
       direction: "forward"
@@ -1078,6 +1235,7 @@ physical:
       type: "sign"
     - name: "G102/W15"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
       direction: "bidirectional"
@@ -1086,21 +1244,26 @@ physical:
       type: "detector"
     - name: "W15"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
             - "01be204c-08ad-4292-ba76-79b61ba189b0"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
             - "246048e1-cb84-4657-99b8-98bc3d6c14c7"
+          speed: 50
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "e444b175-2eff-4bd1-96c5-185ed4424f61"
       pos:
         "9721": 16.536
       type: "branching"
+      specimen: 300-1
     - name: "W15/W17"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
       direction: "bidirectional"
@@ -1109,6 +1272,7 @@ physical:
       type: "detector"
     - name: "W15/K16"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "dd64948a-2423-451f-87bb-fc541735aad8"
       direction: "bidirectional"
@@ -1117,21 +1281,26 @@ physical:
       type: "detector"
     - name: "W12"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "2501d609-0f92-4918-8442-b23df762b366"
             - "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "2501d609-0f92-4918-8442-b23df762b366"
             - "0f107da6-f8cb-4868-b686-1c053336b1d1"
+          speed: 40
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
       pos:
         "9721": 16.562
       type: "branching"
+      specimen: 190-2
     - name: "W12/W13"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
       direction: "bidirectional"
@@ -1140,14 +1309,17 @@ physical:
       type: "detector"
     - name: "W13/G204"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "712f1424-b556-4758-9ac6-c0cb328d7705"
       direction: "bidirectional"
       pos:
         "9721": 16.666
+        "9724": 0.927
       type: "detector"
     - name: "W13/W14"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "70122a48-8078-496c-943b-8f1e781dbf64"
       direction: "bidirectional"
@@ -1156,6 +1328,7 @@ physical:
       type: "detector"
     - name: "W14/G403"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
       direction: "bidirectional"
@@ -1164,6 +1337,7 @@ physical:
       type: "detector"
     - name: "W14/K16"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
       direction: "bidirectional"
@@ -1172,67 +1346,85 @@ physical:
       type: "detector"
     - name: "W13"
       branches:
-        - id: "branch1"
+        - id: "straight1"
           path:
             - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
             - "6125547d-9d2d-4086-8898-16114f058550"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
             - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
-        - id: "branch3"
+          speed: 60
+        - id: "right"
           path:
             - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
             - "6125547d-9d2d-4086-8898-16114f058550"
-        - id: "branch4"
+          speed: 60
+        - id: "straight2"
           path:
             - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
             - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
       pos:
         "9721": 16.63
+        "9724": 0.891
       type: "branching"
+      specimen: ~
     - name: "W14"
       branches:
-        - id: "branch1"
+        - id: "straight1"
           path:
             - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
             - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
             - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
-        - id: "branch3"
+          speed: 60
+        - id: "right"
           path:
             - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
             - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
-        - id: "branch4"
+          speed: 60
+        - id: "straight2"
           path:
             - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
             - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "d0342aa7-cb3b-4feb-9200-813f1da75625"
       pos:
         "9721": 16.7
       type: "branching"
+      specimen: ~
     - name: "K16"
       branches:
-        - id: "branch1"
+        - id: "straight1"
           path:
             - "c446df42-516e-4cbd-8897-bf242bac1e4d"
             - "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
-        - id: "branch2"
+          speed: .inf
+        - id: "straight2"
           path:
             - "2db166ca-7913-4b3a-97d5-ab981cc34209"
             - "8337b3a5-29c2-441d-9232-ebdc8e14af07"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
       pos:
         "9721": 16.785
       type: "branching"
+      specimen: ~
     - name: "K16/W17"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
       direction: "bidirectional"
@@ -1241,6 +1433,7 @@ physical:
       type: "detector"
     - name: "K16/G202"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "3a00ba63-ff25-4720-be64-1f08d329a31b"
       direction: "bidirectional"
@@ -1249,6 +1442,7 @@ physical:
       type: "detector"
     - name: "G403/W19"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
       direction: "bidirectional"
@@ -1257,6 +1451,7 @@ physical:
       type: "detector"
     - name: "G202/W19"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
       direction: "bidirectional"
@@ -1265,37 +1460,46 @@ physical:
       type: "detector"
     - name: "W19"
       branches:
-        - id: "branch1"
+        - id: "straight1"
           path:
             - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
             - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
             - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
-        - id: "branch3"
+          speed: 60
+        - id: "right"
           path:
             - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
             - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
-        - id: "branch4"
+          speed: 60
+        - id: "straight2"
           path:
             - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
             - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
       pos:
         "9721": 17.005
       type: "branching"
+      specimen: ~
     - name: "G204/W20"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
       direction: "bidirectional"
       pos:
         "9721": 17.05
+        "9724": 1.311
       type: "detector"
     - name: "W19/W20"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "e4741cd5-3096-431e-8739-bf4a7001221e"
       direction: "bidirectional"
@@ -1304,6 +1508,7 @@ physical:
       type: "detector"
     - name: "W19/G503"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
       direction: "bidirectional"
@@ -1312,67 +1517,83 @@ physical:
       type: "detector"
     - name: "W20"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "f39fcc72-c5ad-4df1-b2b1-b7744944c5c2"
             - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "da26a3c4-8a53-4d43-a504-57206151a42d"
             - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
+          speed: 60
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
       pos:
         "9721": 17.107
+        "9724": 1.368
       type: "branching"
+      specimen: 500-1
     - name: "W20/G304"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "8890eec1-8048-4853-8d25-71cfb8365a36"
       direction: "bidirectional"
       pos:
         "9721": 17.117
+        "9724": 1.378
       type: "detector"
     - name: "W20Y"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "ad21db91-ef23-401b-8138-8dfa933e688c"
       direction: "backward"
       pos:
         "9721": 17.117
+        "9724": 1.378
       type: "sign"
     - name: "G304/G404"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "40323a52-1608-4e52-834c-7a6112f56073"
       direction: "bidirectional"
       pos:
         "9721": 17.26
+        "9724": 1.521
       type: "detector"
     - name: "Ra10_3"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "board"
       id: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
       direction: "forward"
       pos:
         "9721": 17.26
+        "9724": 1.521
       type: "sign"
     - name: "G404A"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
       direction: "bidirectional"
       pos:
         "9721": 17.43
+        "9724": 1.691
       type: "detector"
-    - network_ref: "XR_east"
-      name: "G"
+    - name: "G"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "ae83219c-febb-4bc7-bee4-218465b65584"
       direction: "backward"
       pos:
         "9721": 17.43
+        "9724": 1.691
       type: "sign"
     - name: "E_XW_1"
       base_ref: "XR"
@@ -1388,18 +1609,18 @@ physical:
       pos:
         "9721": 14.695
       type: "end"
-    - network_ref: "XR_west"
-      name: "AA"
+    - name: "AA"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "c4d62f2c-71b6-41a8-86f2-36c641af3b0f"
       direction: "forward"
       pos:
         "9721": 14.695
       type: "sign"
-    - network_ref: "XR_west"
-      name: "A"
+    - name: "A"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "1e94145d-9d16-446d-8fed-a61000b4e5d4"
       direction: "forward"
@@ -1408,6 +1629,7 @@ physical:
       type: "sign"
     - name: "G103B"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
       direction: "bidirectional"
@@ -1416,6 +1638,7 @@ physical:
       type: "detector"
     - name: "G101A"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
       direction: "bidirectional"
@@ -1424,6 +1647,7 @@ physical:
       type: "detector"
     - name: "G101/G201"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
       direction: "bidirectional"
@@ -1432,6 +1656,7 @@ physical:
       type: "detector"
     - name: "Ra10_1"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "6af304ac-5742-452d-a9e2-df6c10df649b"
       direction: "backward"
@@ -1440,6 +1665,7 @@ physical:
       type: "sign"
     - name: "203X"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "96341cef-c47f-4a36-b095-caa3c0ab191b"
       direction: "forward"
@@ -1448,6 +1674,7 @@ physical:
       type: "sign"
     - name: "301X"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "906eea64-c07c-4c28-8a3a-018f29401311"
       direction: "forward"
@@ -1456,6 +1683,7 @@ physical:
       type: "sign"
     - name: "G103/W2"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "3b394a1e-94f1-40e0-b867-221a95ed7478"
       direction: "bidirectional"
@@ -1464,6 +1692,7 @@ physical:
       type: "detector"
     - name: "G201/W1"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
       direction: "bidirectional"
@@ -1472,21 +1701,26 @@ physical:
       type: "detector"
     - name: "W1"
       branches:
-        - id: "branch1"
+        - id: "right"
           path:
             - "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
             - "86a25dce-af41-4d43-83d0-d9bc16f4f63d"
-        - id: "branch2"
+          speed: 200
+        - id: "left"
           path:
             - "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
             - "975a55ac-301c-4221-9e44-c92869304025"
+          speed: 100
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
       pos:
         "9721": 15.13
       type: "branching"
+      specimen: 760-1
     - name: "W1/W2"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "268e860e-1b7e-4d3f-9373-e28a25174937"
       direction: "bidirectional"
@@ -1495,6 +1729,7 @@ physical:
       type: "detector"
     - name: "W1/G301"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
       direction: "bidirectional"
@@ -1503,21 +1738,26 @@ physical:
       type: "detector"
     - name: "W2"
       branches:
-        - id: "branch1"
+        - id: "left1"
           path:
             - "bedf4859-682d-4720-8800-0ba6d865acc9"
             - "52f4b921-81a0-4ea6-8e36-52a41f098d84"
-        - id: "branch2"
+          speed: 160
+        - id: "left2"
           path:
             - "853e8e62-5ccd-4d56-9301-edfe49b221a5"
             - "52f4b921-81a0-4ea6-8e36-52a41f098d84"
+          speed: 80
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "46efc37a-7802-4f69-859b-484b44eed272"
       pos:
         "9721": 15.256
       type: "branching"
+      specimen: 760-1
     - name: "W2/G203"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "f80fda90-58c5-488c-885c-388ca1673e9a"
       direction: "bidirectional"
@@ -1526,6 +1766,7 @@ physical:
       type: "detector"
     - name: "203Y"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
       direction: "backward"
@@ -1534,6 +1775,7 @@ physical:
       type: "sign"
     - name: "301Y"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "e699224e-44c1-4a39-a400-e7b8b0fded59"
       direction: "backward"
@@ -1542,6 +1784,7 @@ physical:
       type: "sign"
     - name: "Vn3"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
       direction: "forward"
@@ -1550,6 +1793,7 @@ physical:
       type: "sign"
     - name: "Vn1"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "77175a18-3820-4035-a6b8-57a2ee609e8d"
       direction: "forward"
@@ -1563,9 +1807,9 @@ physical:
       pos:
         "9721": 15.583
       type: "end"
-    - network_ref: "XR_west"
-      name: "124X"
+    - name: "124X"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "bf41a121-6a3c-4452-b3d2-efef64fe70c2"
       direction: "forward"
@@ -1574,6 +1818,7 @@ physical:
       type: "sign"
     - name: "G124/W3"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
       direction: "bidirectional"
@@ -1582,6 +1827,7 @@ physical:
       type: "detector"
     - name: "Sp124"
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
       direction: "forward"
       pos:
@@ -1589,6 +1835,7 @@ physical:
       type: "derailer"
     - name: "303X"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
       direction: "forward"
@@ -1597,6 +1844,7 @@ physical:
       type: "sign"
     - name: "G203/W4"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
       direction: "bidirectional"
@@ -1605,6 +1853,7 @@ physical:
       type: "detector"
     - name: "7X"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "a563f377-3832-4cc4-9b75-b605550d4c07"
       direction: "forward"
@@ -1613,6 +1862,7 @@ physical:
       type: "sign"
     - name: "G301/W10"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
       direction: "bidirectional"
@@ -1621,6 +1871,7 @@ physical:
       type: "detector"
     - name: "Sp51"
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
       direction: "backward"
       pos:
@@ -1628,15 +1879,16 @@ physical:
       type: "derailer"
     - name: "W12/G51"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "5f52ad57-6723-4412-8eb4-16650b308dd7"
       direction: "bidirectional"
       pos:
         "9721": 16.612
       type: "detector"
-    - network_ref: "XR_east"
-      name: "51X"
+    - name: "51X"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
       direction: "backward"
@@ -1652,21 +1904,26 @@ physical:
       type: "end"
     - name: "W3"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
             - "9fcda44e-017a-44db-a615-f182d06e23d3"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
             - "da07abe1-e40c-4115-84db-dff64b01ba8f"
+          speed: 50
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
       pos:
         "9721": 15.593
       type: "branching"
+      specimen: 300-1
     - name: "W3/W6"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "515f1257-d556-4371-af6a-4bda8d0ee351"
       direction: "bidirectional"
@@ -1675,6 +1932,7 @@ physical:
       type: "detector"
     - name: "W3/W4"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
       direction: "bidirectional"
@@ -1683,74 +1941,95 @@ physical:
       type: "detector"
     - name: "W4"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "89259aba-7a16-4ce7-ab35-d553843e548f"
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "c4a95b27-b5ba-4055-b349-e6246bee04c6"
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
+          speed: 50
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
       pos:
         "9721": 15.73
       type: "branching"
+      specimen: 300-1
     - name: "W5"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
             - "d3794520-9377-4fd9-98ac-c3fe9518673b"
-        - id: "branch2"
+          speed: 60
+        - id: "straight"
           path:
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
             - "3511c870-d8bd-4e40-b3f7-95e90391c40d"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
       pos:
         "9721": 15.739
+        "9724": 0.0
       type: "branching"
+      specimen: 500-2
     - name: "W4/W6"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "814413bd-dee7-4037-af21-5fe0acd57069"
       direction: "bidirectional"
       pos:
         "9721": 15.8
+        "9724": 0.061
       type: "detector"
     - name: "W6"
       branches:
-        - id: "branch1"
+        - id: "right"
           path:
             - "9a8b9a4d-6a48-472e-b726-bea8ffdd835c"
             - "80755594-0760-44af-8082-69e5880e9a17"
-        - id: "branch2"
+          speed: 100
+        - id: "left"
           path:
             - "25c65a85-7ead-4b6b-bea5-a00287940a66"
             - "80755594-0760-44af-8082-69e5880e9a17"
+          speed: 120
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
       pos:
         "9721": 15.854
+        "9724": 0.115
       type: "branching"
+      specimen: 500-2
     - name: "W10"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "6d30e635-c33a-470c-816c-61844e528355"
             - "f2801dc8-7025-4157-9917-d809ea8f620b"
-        - id: "branch2"
+          speed: .inf
+        - id: "left"
           path:
             - "6d30e635-c33a-470c-816c-61844e528355"
             - "2bcfa1ac-5cf8-43b6-9541-95438672ec12"
+          speed: 60
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
       pos:
         "9721": 15.764
       type: "branching"
+      specimen: 500-2
     - name: "W10/W11"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
       direction: "bidirectional"
@@ -1764,9 +2043,9 @@ physical:
       pos:
         "9721": 15.71
       type: "end"
-    - network_ref: "XR_west"
-      name: "21X"
+    - name: "21X"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "8067ab6b-61f0-428e-9449-5f2ab7f8ded2"
       direction: "forward"
@@ -1775,6 +2054,7 @@ physical:
       type: "sign"
     - name: "G21/W11"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
       direction: "bidirectional"
@@ -1783,6 +2063,7 @@ physical:
       type: "detector"
     - name: "Sp21"
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
       direction: "forward"
       pos:
@@ -1790,57 +2071,62 @@ physical:
       type: "derailer"
     - name: "W11"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "cebe90f8-8122-4883-9e94-3daa8960e4d2"
             - "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
-        - id: "branch2"
+          speed: 60
+        - id: "straight"
           path:
             - "6f7b125c-e706-41fd-9165-ed1719ab9fd9"
             - "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_west"
       id: "4bacaae6-e599-4cfc-822a-35bc23735979"
       pos:
         "9721": 15.864
       type: "branching"
+      specimen: 500-2
     - name: "W10/G401"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "clearing point"
       id: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
       direction: "bidirectional"
       pos:
         "9721": 15.929
       type: "detector"
-    - network_ref: "XR_west"
-      name: "P1"
+    - name: "P1"
       base_ref: "XR"
+      network_ref: "XR_west"
       class: "signal"
       id: "0f8d67a8-3183-4b87-b911-e722107cda5d"
       direction: "backward"
       pos:
         "9721": 15.929
       type: "sign"
-    - network_ref: "XR_1"
-      name: "H1_1"
+    - name: "H1_1"
       base_ref: "XR"
+      network_ref: "XR_1"
       class: "berth"
       id: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
       direction: "backward"
       pos:
         "9721": 15.949
       type: "sign"
-    - network_ref: "XR_1"
-      name: "H1_2"
+    - name: "H1_2"
       base_ref: "XR"
+      network_ref: "XR_1"
       class: "berth"
       id: "de3e722c-a217-4257-b868-0ca6bbc6310c"
       direction: "forward"
       pos:
         "9721": 16.683
       type: "sign"
-    - network_ref: "XR_east"
-      name: "N1"
+    - name: "N1"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "cfb9c041-df5f-42ff-96e4-8051299467cc"
       direction: "forward"
@@ -1849,6 +2135,7 @@ physical:
       type: "sign"
     - name: "G401/W18"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "a4e4c075-249c-45b4-820b-b77523fcf124"
       direction: "bidirectional"
@@ -1857,21 +2144,26 @@ physical:
       type: "detector"
     - name: "W17"
       branches:
-        - id: "branch1"
+        - id: "left"
           path:
             - "97292225-29c0-4899-a38b-b359f771ccdf"
             - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
-        - id: "branch2"
+          speed: 50
+        - id: "straight"
           path:
             - "9c5236c4-0099-4811-a7ee-5d16f82b00a7"
             - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
+          speed: .inf
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "0e202ec8-370e-4279-ba82-d53657190abe"
       pos:
         "9721": 16.845
       type: "branching"
+      specimen: 300-1
     - name: "W17/W18"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
       direction: "bidirectional"
@@ -1880,21 +2172,26 @@ physical:
       type: "detector"
     - name: "W18"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "4ae249bc-a193-4c8f-b723-dbcf27bbcb5c"
             - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "f6980045-b4cf-4cca-bf55-ae41163df70d"
             - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
+          speed: 50
       base_ref: "XR"
+      network_ref: "XR_east"
       id: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
       pos:
         "9721": 16.882
       type: "branching"
+      specimen: 300-1
     - name: "W18/G501"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
       direction: "bidirectional"
@@ -1903,6 +2200,7 @@ physical:
       type: "detector"
     - name: "501X"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
       direction: "backward"
@@ -1911,15 +2209,16 @@ physical:
       type: "sign"
     - name: "G501B"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "1daca293-0191-40d9-9f32-1e749223d03d"
       direction: "bidirectional"
       pos:
         "9721": 17.429
       type: "detector"
-    - network_ref: "XR_east"
-      name: "FF"
+    - name: "FF"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
       direction: "backward"
@@ -1935,6 +2234,7 @@ physical:
       type: "end"
     - name: "503X"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
       direction: "backward"
@@ -1943,6 +2243,7 @@ physical:
       type: "sign"
     - name: "Ra10_2"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "board"
       id: "73bc3a56-243d-40eb-ad05-6480825bb643"
       direction: "forward"
@@ -1951,6 +2252,7 @@ physical:
       type: "sign"
     - name: "G503/G603"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
       direction: "bidirectional"
@@ -1959,15 +2261,16 @@ physical:
       type: "detector"
     - name: "G603A"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "clearing point"
       id: "f31e3747-80c6-4342-9782-8ce4c7a24379"
       direction: "bidirectional"
       pos:
         "9721": 17.429
       type: "detector"
-    - network_ref: "XR_east"
-      name: "F"
+    - name: "F"
       base_ref: "XR"
+      network_ref: "XR_east"
       class: "signal"
       id: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
       direction: "backward"

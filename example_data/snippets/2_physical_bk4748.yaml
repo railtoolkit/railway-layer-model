@@ -1,39 +1,44 @@
 physical:
   elements:
-    - pos: 
+    - name: "47"
+      pos: 
         "9724": 14.35
       base_ref: "pockelsdorf_to_buelten"
+      network_ref: XPD_XBU
       id: "5f115822-5c58-45f9-b9e0-ced2b9cd2be0"
       type: "sign"
       class: "signal"
-      name: "47"
       direction: "forward"
-    - pos: 
+    - name: "BK47/BK48"
+      pos: 
         "9724": 14.4
       base_ref: "pockelsdorf_to_buelten"
+      network_ref: XPD_XBU
       id: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
       type: "detector"
       class: "clearing point"
-      name: "BK47/BK48"
       direction: "bidirectional"
-    - pos: 
+    - name: "48"
+      pos: 
         "9724": 14.45
       base_ref: "pockelsdorf_to_buelten"
+      network_ref: XPD_XBU
       id: "0bc68652-0bdd-4b0b-a366-ded5d870a8e4"
       type: "sign"
       class: "signal"
-      name: "48"
       direction: "backward"
   tracksections:
-    - base_ref: "pockelsdorf_to_buelten"
+    - name: "147"
+      base_ref: "pockelsdorf_to_buelten"
+      network_ref: XPD_XBU
       id: "831f33f3-6bed-456c-b304-2248e6765d20"
-      name: "147"
       source: "5f115822-5c58-45f9-b9e0-ced2b9cd2be0"
       target: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
       length: 0.05
-    - base_ref: "pockelsdorf_to_buelten"
+    - name: "148"
+      base_ref: "pockelsdorf_to_buelten"
+      network_ref: XPD_XBU
       id: "a93de29e-43b6-4ddd-a739-3200957579df"
-      name: "148"
       source: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
       target: "0bc68652-0bdd-4b0b-a366-ded5d870a8e4"
       length: 0.05

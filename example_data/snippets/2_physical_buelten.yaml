@@ -15,114 +15,133 @@ physical:
     - length: 0.0
       name: "101_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "7c4ff364-86b7-4040-b7c4-8a105f592afe"
       id: "4e333a7e-7020-495a-86ee-c2d2ee4ee564"
       target: "5daa7069-572a-48a5-924c-76ec4da497ff"
     - length: 0.0
       name: "102_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "aa57a28f-74dc-45eb-ba8d-dc64387fd698"
       id: "414302e1-dd8a-4850-b128-7ab466c9ab93"
       target: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
     - length: 0.261
       name: "101_3"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "5daa7069-572a-48a5-924c-76ec4da497ff"
       id: "7b09e642-0c3a-44db-8fc5-8a2f8c04edf3"
       target: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
     - length: 0.111
       name: "102_3"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
       id: "ee57c98a-0940-4659-a8c4-b1f64e60999f"
       target: "a53e0380-0c83-4572-9931-e040c80f828d"
     - length: 0.065
       name: "W103_1"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
       id: "d95ce46a-597c-4b87-8cea-895ced2b8f5d"
       target: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
     - length: 0.065
       name: "W101_1"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "a53e0380-0c83-4572-9931-e040c80f828d"
       id: "de75e438-11df-4439-9fac-6cc8927f3aed"
       target: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
     - length: 0.0
       name: "103_1"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "02cd9644-102e-4534-abb3-f7f714293054"
       id: "788bc33e-1a9a-41a3-a747-e7813c0d4fec"
       target: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
     - length: 0.111
       name: "103_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
       id: "8e9e24d2-3800-4b78-a95c-913d2511eff9"
       target: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
     - length: 0.065
       name: "W101_3"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
       id: "645435d1-e6b5-45df-9b51-bb2b42d3e5e4"
       target: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
     - length: 0.012
       name: "W101_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
       id: "98da089e-cbed-4783-9350-0bb97e4a9cc9"
       target: "8b1888d9-e216-4252-a9ae-f737342ad002"
     - length: 0.012
       name: "W102_1"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "8b1888d9-e216-4252-a9ae-f737342ad002"
       id: "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
       target: "34366cf4-7867-4e57-abce-f93b573dd3ed"
     - length: 0.065
       name: "W102_3"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "34366cf4-7867-4e57-abce-f93b573dd3ed"
       id: "ac58c309-a617-45dd-a0d6-4856379ff143"
       target: "52f61012-e921-4ad5-bc16-8895c6b9a043"
     - length: 0.065
       name: "W102_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "34366cf4-7867-4e57-abce-f93b573dd3ed"
       id: "66d5fd8c-9ca0-4984-8dd2-97ac2f4e3941"
       target: "db840367-179a-4087-9d0f-574924793914"
     - length: 0.061
       name: "W103_3"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "52f61012-e921-4ad5-bc16-8895c6b9a043"
       id: "16d8c6b8-cc59-452a-8460-3782a940b059"
       target: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
     - length: 0.013
       name: "W103_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
       id: "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
       target: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
     - length: 0.2
       name: "201_1"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
       id: "17139506-d503-4104-919c-470f78759c4b"
       target: "769ef354-f159-40db-80e5-00cff4d7ad0d"
     - length: 0.274
       name: "202_1"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "db840367-179a-4087-9d0f-574924793914"
       id: "0d71f223-331a-4ddb-b4d0-ff80154f313f"
       target: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
     - length: 0.0
       name: "201_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "769ef354-f159-40db-80e5-00cff4d7ad0d"
       id: "5d76ed6f-d7d8-4307-a39b-48b20ad3fa02"
       target: "971d9e83-f492-45f3-a7e3-4457e46fc8f7"
     - length: 0.0
       name: "202_2"
       base_ref: "XBU"
+      network_ref: "XBU"
       source: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
       id: "ce514783-e182-4f08-9a9a-bff77479b4df"
       target: "06058d21-d0b1-4926-b60a-0ef82414cbac"
@@ -141,18 +160,18 @@ physical:
       pos:
         "9721": 31.912
       type: "end"
-    - network_ref: "XBU"
-      name: "39"
+    - name: "39"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "signal"
       id: "7c4ff364-86b7-4040-b7c4-8a105f592afe"
       direction: "forward"
       pos:
         "9721": 31.912
       type: "sign"
-    - network_ref: "XBU"
-      name: "19"
+    - name: "19"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "signal"
       id: "aa57a28f-74dc-45eb-ba8d-dc64387fd698"
       direction: "forward"
@@ -161,6 +180,7 @@ physical:
       type: "sign"
     - name: "G101A"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "5daa7069-572a-48a5-924c-76ec4da497ff"
       direction: "bidirectional"
@@ -169,6 +189,7 @@ physical:
       type: "detector"
     - name: "G102A"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
       direction: "bidirectional"
@@ -177,6 +198,7 @@ physical:
       type: "detector"
     - name: "G101/W103"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
       direction: "bidirectional"
@@ -185,77 +207,90 @@ physical:
       type: "detector"
     - name: "G102/W101"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "a53e0380-0c83-4572-9931-e040c80f828d"
       direction: "bidirectional"
       pos:
         "9721": 32.023
       type: "detector"
-    - network_ref: "XBU"
-      name: "49"
+    - name: "49"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "signal"
       id: "02cd9644-102e-4534-abb3-f7f714293054"
       direction: "forward"
       pos:
-        "9721": 31.912
+        "9724": 18.712
       type: "sign"
     - name: "G103A"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
       direction: "bidirectional"
       pos:
-        "9721": 31.912
+        "9724": 18.712
       type: "detector"
     - name: "G103/W101"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
       direction: "bidirectional"
       pos:
-        "9721": 32.023
+        "9724": 18.823
       type: "detector"
     - name: "W101"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "de75e438-11df-4439-9fac-6cc8927f3aed"
             - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "645435d1-e6b5-45df-9b51-bb2b42d3e5e4"
             - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
+          speed: 80
       base_ref: "XBU"
       id: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
       pos:
         "9721": 32.088
+        "9724": 18.888
       type: "branching"
+      specimen: 760-1
     - name: "W101/W102"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "8b1888d9-e216-4252-a9ae-f737342ad002"
       direction: "bidirectional"
       pos:
         "9721": 32.1
+        "9724": 18.9
       type: "detector"
     - name: "W102"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
             - "66d5fd8c-9ca0-4984-8dd2-97ac2f4e3941"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
             - "ac58c309-a617-45dd-a0d6-4856379ff143"
+          speed: 80
       base_ref: "XBU"
       id: "34366cf4-7867-4e57-abce-f93b573dd3ed"
       pos:
         "9721": 32.112
       type: "branching"
+      specimen: 760-1
     - name: "W102/W103"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "52f61012-e921-4ad5-bc16-8895c6b9a043"
       direction: "bidirectional"
@@ -264,21 +299,25 @@ physical:
       type: "detector"
     - name: "W103"
       branches:
-        - id: "branch1"
+        - id: "straight"
           path:
             - "d95ce46a-597c-4b87-8cea-895ced2b8f5d"
             - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
-        - id: "branch2"
+          speed: .inf
+        - id: "right"
           path:
             - "16d8c6b8-cc59-452a-8460-3782a940b059"
             - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
+          speed: 80
       base_ref: "XBU"
       id: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
       pos:
         "9721": 32.238
       type: "branching"
+      specimen: 760-1
     - name: "W103/G201"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
       direction: "bidirectional"
@@ -287,6 +326,7 @@ physical:
       type: "detector"
     - name: "W102/G202"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "db840367-179a-4087-9d0f-574924793914"
       direction: "bidirectional"
@@ -295,6 +335,7 @@ physical:
       type: "detector"
     - name: "G201B"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "769ef354-f159-40db-80e5-00cff4d7ad0d"
       direction: "bidirectional"
@@ -303,24 +344,25 @@ physical:
       type: "detector"
     - name: "G202B"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "clearing point"
       id: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
       direction: "bidirectional"
       pos:
         "9721": 32.451
       type: "detector"
-    - network_ref: "XBU"
-      name: "20"
+    - name: "20"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "signal"
       id: "971d9e83-f492-45f3-a7e3-4457e46fc8f7"
       direction: "backward"
       pos:
         "9721": 32.451
       type: "sign"
-    - network_ref: "XBU"
-      name: "30"
+    - name: "30"
       base_ref: "XBU"
+      network_ref: "XBU"
       class: "signal"
       id: "06058d21-d0b1-4926-b60a-0ef82414cbac"
       direction: "backward"
