@@ -1,0 +1,21 @@
+%YAML 1.2
+---
+signal:
+  ref: "e9449472-545f-4198-b640-6e3de097719b"
+  name: A
+  base_ref: "XPD"
+  overlaps:
+    - id: 
+      name: main
+      speed:
+      end: # detection object (clearing point)
+      turnouts_en_route: # switch_id:link_id
+      flankprotection: # object_id:status? #TODO
+  routes:
+    - id: 
+      name: main
+      speed: # objects with speed restrictions
+      exit: # signal id
+      turnouts_en_route: # switch_id:link_id
+      flankprotection: # object_id:status? #TODO
+      route_clearing:
