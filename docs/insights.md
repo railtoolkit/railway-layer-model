@@ -104,3 +104,11 @@
   * speed restriktion cannot be derived from radius, since the jerk is relevant
 
   * usefullness of layer?
+
+# ressource layer
+
+  * differentiating bewteen junctions and tracks from network layer
+  * borders by clearing points
+  * 
+  
+  * usefullness of layer?
