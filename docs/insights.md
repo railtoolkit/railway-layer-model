@@ -29,6 +29,7 @@
   usefullness of layer?
     * path traversel with modified dijkstra for double vertecies
     * junction->track: is a track reachable? substitutability/vertretbarkeit?
+      -> clustering of track berth (see [8])
     * calculating routing from physical layer via shortest path
 
 # physical layer
@@ -105,10 +106,18 @@
 
   * usefullness of layer?
 
-# ressource layer
+# resource layer
 
   * differentiating bewteen junctions and tracks from network layer
   * borders by clearing points
-  * 
+  * "virtual" smaller 'tracksections/physical layer' (e.g. 50 m) to accompany Moving Block with virtual blocks for transit layer and interlocking layer
+  * [8] clustering of track berth for properties("vertretbarkeit") and naming for passengers
   
+  * usefullness of layer?
+
+# transit layer
+
+  * sequence of 'tracksections/resource layer' from physical layer together with occupation time for different types of trains ("Musterzug")
+  * berth nodes for dwell time (see [8])
+
   * usefullness of layer?
