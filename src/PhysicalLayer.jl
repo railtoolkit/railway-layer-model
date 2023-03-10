@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 # __julia-version__ = 1.7.0
 # __author__        = "Martin Scheidt"
-# __copyright__     = "2018-2021"
+# __copyright__     = "2018-2023"
 # __license__       = "ISC"
 
 module PhysicalLayer
