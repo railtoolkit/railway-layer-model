@@ -175,15 +175,21 @@ Takes a MetaGraph object with a base layer and prints it.
 function show(graph::AbstractMetaGraph)
 
   # test if graph has special properties
+  graph_has_prop_node_id = !isempty(MetaGraphs.filter_vertices(graph,:id))
+  graph_has_prop_edge_id = !isempty(MetaGraphs.filter_edges(graph,:id))
   graph_has_prop_node_names = !isempty(MetaGraphs.filter_vertices(graph,:name))
   graph_has_prop_edge_names = !isempty(MetaGraphs.filter_edges(graph,:name))
+  graph_has_prop_node_labels = !isempty(MetaGraphs.filter_vertices(graph,:label))
+  graph_has_prop_edge_labels = !isempty(MetaGraphs.filter_edges(graph,:label))
   graph_has_prop_plot_coord = !isempty(MetaGraphs.filter_vertices(graph,:plot_coord))
 
   nodeNames = []
   for item in 1:Graphs.nv(graph.graph)
     if graph_has_prop_node_names
       push!(nodeNames, MetaGraphs.get_prop(graph, item, :name))
-    else
+    elseif graph_has_prop_node_labels
+      push!(nodeNames, MetaGraphs.get_prop(graph, item, :label))
+    elseif graph_has_prop_node_id
       push!(nodeNames, MetaGraphs.get_prop(graph, item, :id))
     end
   end
@@ -193,7 +199,9 @@ function show(graph::AbstractMetaGraph)
     source, target = Graphs.src(item), Graphs.dst(item)
     if graph_has_prop_edge_names
       push!(edgeNames, MetaGraphs.get_prop(graph, source, target, :name))
-    else
+    elseif graph_has_prop_edge_labels
+      push!(edgeNames, MetaGraphs.get_prop(graph, source, target, :label))
+    elseif graph_has_prop_edge_id
       push!(edgeNames, MetaGraphs.get_prop(graph, source, target, :id))
     end
   end

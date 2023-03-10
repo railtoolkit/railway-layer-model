@@ -1,0 +1,78 @@
+{
+  "$id": "https://railtoolkit.org/layer-model/DSR_cycles/1/schema/layer_model.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Railway Layer Model - 1. DSR cycle",
+  "description":
+    "The railway layer model is part of a PhD thesis. Copyright (c) 2018 - 2023, Martin Scheidt [m.scheidt@tu-bs.de] under the ISC License. This schema can be used to verify the YAML snippets for railway layer model. First cycle of DSR only includes the base layer",
+  "type": "object",
+  "required": [ "base" ],
+  "properties": {
+    "base": {
+      "title": "base layer",
+      "type": "object",
+      "description": "macroscopic connections & network access",
+      "properties": {
+        "name": { "type": "string" },
+        "id": { "type": "string" },
+        "stations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "plot_coord": {
+                "type": "array",
+                "items": {}
+              },
+              "coord": {
+                "type": "array",
+                "items": {}
+              }
+            },
+            "required": [
+              "id",
+              "name"
+            ]
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "source": {
+                "description": "$id of a station",
+                "type": "string"
+              },
+              "target": {
+                "description": "$id of a station",
+                "type": "string"
+              },
+              "length": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            },
+            "required": [
+              "source",
+              "target",
+              "length"
+            ]
+          }
+        }
+      },
+      "required": [ "stations", "relations" ]
+    }
+  }
+}

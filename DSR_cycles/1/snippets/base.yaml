@@ -1,0 +1,64 @@
+%YAML 1.2
+---
+base:
+  name: "Example Infrastructure"
+  id: base
+  stations:
+    - id: XWN
+      name: Wenden
+      plot_coord: [0.0,0.0]
+    - id: XR
+      name: Rebenau
+      plot_coord: [2.0,0.0]
+    - id: XOG
+      name: Okerbach Gbf
+      plot_coord: [4.5,-0.5]
+    - id: XO
+      name: Okerbach Pbf
+      plot_coord: [5.5,-0.5]
+    - id: XBU
+      name: Abzweig Bülten
+      plot_coord: [8.0,0.0]
+    - id: XSZ
+      name: Schleinitz
+      plot_coord: [10.0,0.0]
+    - id: XSBG
+      name: Schlossberg
+      plot_coord: [13.0,0.0]
+    - id: XM
+      name: Mittelstadt
+      plot_coord: [2.0,1.0]
+    - id: XPD
+      name: Pockelsdorf
+      plot_coord: [5.0,0.5]
+  relations:
+    # Wenden Schlossberg via Okerbach (9721)
+    - source: XWN
+      target: XR
+      length: 7.2
+    - source: XR
+      target: XOG
+      length: 10.0
+    - source: XOG
+      target: XO
+      length: 0.9
+    - source: XO
+      target: XBU
+      length: 4.9
+    - source: XBU
+      target: XSZ
+      length: 3.9
+    - source: XSZ
+      target: XSBG
+      length: 6.8
+    # Rebenau Buelten via Pockelsdorf (9724)
+    - source: XR
+      target: XPD
+      length: 9.8
+    - source: XPD
+      target: XBU
+      length: 9.1
+    # Mittelstadt Pockelsdorf (9344)
+    - source: XM
+      target: XPD
+      length: 9.5
