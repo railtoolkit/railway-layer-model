@@ -16,7 +16,7 @@ import .LMcore
 include("../../../src/BaseLayer.jl")
 import .BaseLayer
 
-baseLayerFile = "snippets/base.yaml"
+baseLayerFile = "example/base.yaml"
 schemaFile = "schema/layer_model.json"
 isvalid(Schema(JSON.parsefile(schemaFile)), YAML.load(open(baseLayerFile)))
 
@@ -25,4 +25,4 @@ fig = LMcore.show(baseLayer)
 draw(PDF("base.pdf", 16cm, 6cm), fig)# save the plot
 
 distmx = get_prop(baseLayer, :distances)
-CSV.write("distmx.csv",  Tables.table(distmx), writeheader=false)
+CSV.write("distmx_base.csv",  Tables.table(distmx), writeheader=false)
