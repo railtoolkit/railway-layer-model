@@ -932,8 +932,10 @@ physical:
       id: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
       direction: "bidirectional"
       pos:
-        "9721": 15.865
-        "9724": 0.126
+        - line: "9721"
+          milage: 15.865
+        - line: "9724"
+          milage: 0.126
       type: "detector"
     - name: "W7"
       branches:
@@ -951,8 +953,10 @@ physical:
       network_ref: "XR_west"
       id: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
       pos:
-        "9721": 15.875
-        "9724": 0.136
+        - line: "9721"
+          milage: 15.875
+        - line: "9724"
+          milage: 0.136
       type: "branching"
       specimen: 500-2
     - name: "W7/G105"
@@ -962,7 +966,8 @@ physical:
       id: "398c4772-e871-47fd-abba-beb0b998fc3b"
       direction: "bidirectional"
       pos:
-        "9721": 15.982
+        - line: "9721"
+          milage: 15.982
       type: "detector"
     - name: "P5"
       base_ref: "XR"
@@ -971,7 +976,8 @@ physical:
       id: "a631e1fa-e935-4995-902b-529ed5a3b07a"
       direction: "backward"
       pos:
-        "9721": 15.982
+        - line: "9721"
+          milage: 15.982
       type: "sign"
     - name: "W7/G104"
       base_ref: "XR"
@@ -980,8 +986,10 @@ physical:
       id: "f493994b-4415-441f-a815-202691c0d28c"
       direction: "bidirectional"
       pos:
-        "9721": 15.982
-        "9724": 0.243
+        - line: "9721"
+          milage: 15.982
+        - line: "9724"
+          milage: 0.243
       type: "detector"
     - name: "P4"
       base_ref: "XR"
@@ -990,8 +998,10 @@ physical:
       id: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
       direction: "backward"
       pos:
-        "9721": 15.982
-        "9724": 0.243
+        - line: "9721"
+          milage: 15.982
+        - line: "9724"
+          milage: 0.243
       type: "sign"
     - name: "H5_1"
       base_ref: "XR"
@@ -1000,7 +1010,8 @@ physical:
       id: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
       direction: "backward"
       pos:
-        "9721": 16.032
+        - line: "9721"
+          milage: 16.032
       type: "sign"
     - name: "H5_2"
       base_ref: "XR"
@@ -1009,7 +1020,8 @@ physical:
       id: "ee2478ac-01e7-4dd8-823e-acb274b20831"
       direction: "forward"
       pos:
-        "9721": 16.456
+        - line: "9721"
+          milage: 16.456
       type: "sign"
     - name: "H4_1"
       base_ref: "XR"
@@ -1018,8 +1030,10 @@ physical:
       id: "495a4bab-4ee7-4440-a46c-c304db058aef"
       direction: "backward"
       pos:
-        "9721": 16.032
-        "9724": 0.293
+        - line: "9721"
+          milage: 16.032
+        - line: "9724"
+          milage: 0.293
       type: "sign"
     - name: "H4_2"
       base_ref: "XR"
@@ -1028,8 +1042,10 @@ physical:
       id: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
       direction: "forward"
       pos:
-        "9721": 16.542
-        "9724": 0.803
+        - line: "9721"
+          milage: 16.542
+        - line: "9724"
+          milage: 0.803
       type: "sign"
     - name: "W4/W8"
       base_ref: "XR"
@@ -1038,7 +1054,8 @@ physical:
       id: "beb5f987-f0a0-4cda-b7f9-6ea4e6aef29a"
       direction: "bidirectional"
       pos:
-        "9721": 15.78
+        - line: "9721"
+          milage: 15.78
       type: "detector"
     - name: "W8"
       branches:
@@ -1056,7 +1073,8 @@ physical:
       network_ref: "XR_west"
       id: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
       pos:
-        "9721": 15.895
+        - line: "9721"
+          milage: 15.895
       type: "branching"
       specimen: 500-1
     - name: "W8/G303"
@@ -1066,7 +1084,8 @@ physical:
       id: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
       direction: "bidirectional"
       pos:
-        "9721": 16.028
+        - line: "9721"
+          milage: 16.028
       type: "detector"
     - name: "P3"
       base_ref: "XR"
@@ -1075,7 +1094,8 @@ physical:
       id: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
       direction: "backward"
       pos:
-        "9721": 16.028
+        - line: "9721"
+          milage: 16.028
       type: "sign"
     - name: "W8/W9"
       base_ref: "XR"
@@ -1084,7 +1104,8 @@ physical:
       id: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
       direction: "bidirectional"
       pos:
-        "9721": 16.0
+        - line: "9721"
+          milage: 16.0
       type: "detector"
     - name: "W11/W9"
       base_ref: "XR"
@@ -1093,7 +1114,8 @@ physical:
       id: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
       direction: "bidirectional"
       pos:
-        "9721": 16.0
+        - line: "9721"
+          milage: 16.0
       type: "detector"
     - name: "W9"
       branches:
@@ -1111,7 +1133,8 @@ physical:
       network_ref: "XR_west"
       id: "c65dbc29-58da-406f-9901-d590009a81ba"
       pos:
-        "9721": 16.109
+        - line: "9721"
+          milage: 16.109
       type: "branching"
       specimen: 500-1
     - name: "W9/G102"
@@ -1121,7 +1144,8 @@ physical:
       id: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
       direction: "bidirectional"
       pos:
-        "9721": 16.114
+        - line: "9721"
+          milage: 16.114
       type: "detector"
     - name: "P2"
       base_ref: "XR"
@@ -1130,7 +1154,8 @@ physical:
       id: "54dec955-deee-4087-b39a-6a670df59706"
       direction: "backward"
       pos:
-        "9721": 16.114
+        - line: "9721"
+          milage: 16.114
       type: "sign"
     - name: "H3_1"
       base_ref: "XR"
@@ -1139,7 +1164,8 @@ physical:
       id: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
       direction: "backward"
       pos:
-        "9721": 16.078
+        - line: "9721"
+          milage: 16.078
       type: "sign"
     - name: "H3_2"
       base_ref: "XR"
@@ -1148,7 +1174,8 @@ physical:
       id: "271f086a-22b4-4139-b8e5-91dd863e5c44"
       direction: "forward"
       pos:
-        "9721": 16.61
+        - line: "9721"
+          milage: 16.61
       type: "sign"
     - name: "H2_1"
       base_ref: "XR"
@@ -1157,7 +1184,8 @@ physical:
       id: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
       direction: "backward"
       pos:
-        "9721": 16.164
+        - line: "9721"
+          milage: 16.164
       type: "sign"
     - name: "H2_2"
       base_ref: "XR"
@@ -1166,7 +1194,8 @@ physical:
       id: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
       direction: "forward"
       pos:
-        "9721": 16.481
+        - line: "9721"
+          milage: 16.481
       type: "sign"
     - name: "N5"
       base_ref: "XR"
@@ -1175,7 +1204,8 @@ physical:
       id: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
       direction: "forward"
       pos:
-        "9721": 16.506
+        - line: "9721"
+          milage: 16.506
       type: "sign"
     - name: "G105/W12"
       base_ref: "XR"
@@ -1184,7 +1214,8 @@ physical:
       id: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
       direction: "bidirectional"
       pos:
-        "9721": 16.506
+        - line: "9721"
+          milage: 16.506
       type: "detector"
     - name: "N4"
       base_ref: "XR"
@@ -1193,8 +1224,10 @@ physical:
       id: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
       direction: "forward"
       pos:
-        "9721": 16.592
-        "9724": 0.853
+        - line: "9721"
+          milage: 16.592
+        - line: "9724"
+          milage: 0.853
       type: "sign"
     - name: "G104/W13"
       base_ref: "XR"
@@ -1203,8 +1236,10 @@ physical:
       id: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
       direction: "bidirectional"
       pos:
-        "9721": 16.592
-        "9724": 0.853
+        - line: "9721"
+          milage: 16.592
+        - line: "9724"
+          milage: 0.853
       type: "detector"
     - name: "N3"
       base_ref: "XR"
@@ -1213,7 +1248,8 @@ physical:
       id: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
       direction: "forward"
       pos:
-        "9721": 16.66
+        - line: "9721"
+          milage: 16.66
       type: "sign"
     - name: "G303/W14"
       base_ref: "XR"
@@ -1222,7 +1258,8 @@ physical:
       id: "15452298-8414-45f1-b5e0-3b9a60ed088e"
       direction: "bidirectional"
       pos:
-        "9721": 16.66
+        - line: "9721"
+          milage: 16.66
       type: "detector"
     - name: "N2"
       base_ref: "XR"
@@ -1231,7 +1268,8 @@ physical:
       id: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
       direction: "forward"
       pos:
-        "9721": 16.531
+        - line: "9721"
+          milage: 16.531
       type: "sign"
     - name: "G102/W15"
       base_ref: "XR"
@@ -1240,7 +1278,8 @@ physical:
       id: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
       direction: "bidirectional"
       pos:
-        "9721": 16.531
+        - line: "9721"
+          milage: 16.531
       type: "detector"
     - name: "W15"
       branches:
@@ -1258,7 +1297,8 @@ physical:
       network_ref: "XR_east"
       id: "e444b175-2eff-4bd1-96c5-185ed4424f61"
       pos:
-        "9721": 16.536
+        - line: "9721"
+          milage: 16.536
       type: "branching"
       specimen: 300-1
     - name: "W15/W17"
@@ -1268,7 +1308,8 @@ physical:
       id: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
       direction: "bidirectional"
       pos:
-        "9721": 16.8
+        - line: "9721"
+          milage: 16.8
       type: "detector"
     - name: "W15/K16"
       base_ref: "XR"
@@ -1277,7 +1318,8 @@ physical:
       id: "dd64948a-2423-451f-87bb-fc541735aad8"
       direction: "bidirectional"
       pos:
-        "9721": 16.77
+        - line: "9721"
+          milage: 16.77
       type: "detector"
     - name: "W12"
       branches:
@@ -1295,7 +1337,8 @@ physical:
       network_ref: "XR_east"
       id: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
       pos:
-        "9721": 16.562
+        - line: "9721"
+          milage: 16.562
       type: "branching"
       specimen: 190-2
     - name: "W12/W13"
@@ -1305,7 +1348,8 @@ physical:
       id: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
       direction: "bidirectional"
       pos:
-        "9721": 16.6
+        - line: "9721"
+          milage: 16.6
       type: "detector"
     - name: "W13/G204"
       base_ref: "XR"
@@ -1314,8 +1358,10 @@ physical:
       id: "712f1424-b556-4758-9ac6-c0cb328d7705"
       direction: "bidirectional"
       pos:
-        "9721": 16.666
-        "9724": 0.927
+        - line: "9721"
+          milage: 16.666
+        - line: "9724"
+          milage: 0.927
       type: "detector"
     - name: "W13/W14"
       base_ref: "XR"
@@ -1324,7 +1370,8 @@ physical:
       id: "70122a48-8078-496c-943b-8f1e781dbf64"
       direction: "bidirectional"
       pos:
-        "9721": 16.663
+        - line: "9721"
+          milage: 16.663
       type: "detector"
     - name: "W14/G403"
       base_ref: "XR"
@@ -1333,7 +1380,8 @@ physical:
       id: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
       direction: "bidirectional"
       pos:
-        "9721": 16.73
+        - line: "9721"
+          milage: 16.73
       type: "detector"
     - name: "W14/K16"
       base_ref: "XR"
@@ -1342,7 +1390,8 @@ physical:
       id: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
       direction: "bidirectional"
       pos:
-        "9721": 16.77
+        - line: "9721"
+          milage: 16.77
       type: "detector"
     - name: "W13"
       branches:
@@ -1370,8 +1419,10 @@ physical:
       network_ref: "XR_east"
       id: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
       pos:
-        "9721": 16.63
-        "9724": 0.891
+        - line: "9721"
+          milage: 16.63
+        - line: "9724"
+          milage: 0.891
       type: "branching"
       specimen: ~
     - name: "W14"
@@ -1400,7 +1451,8 @@ physical:
       network_ref: "XR_east"
       id: "d0342aa7-cb3b-4feb-9200-813f1da75625"
       pos:
-        "9721": 16.7
+        - line: "9721"
+          milage: 16.7
       type: "branching"
       specimen: ~
     - name: "K16"
@@ -1419,7 +1471,8 @@ physical:
       network_ref: "XR_east"
       id: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
       pos:
-        "9721": 16.785
+        - line: "9721"
+          milage: 16.785
       type: "branching"
       specimen: ~
     - name: "K16/W17"
@@ -1429,7 +1482,8 @@ physical:
       id: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
       direction: "bidirectional"
       pos:
-        "9721": 16.8
+        - line: "9721"
+          milage: 16.8
       type: "detector"
     - name: "K16/G202"
       base_ref: "XR"
@@ -1438,7 +1492,8 @@ physical:
       id: "3a00ba63-ff25-4720-be64-1f08d329a31b"
       direction: "bidirectional"
       pos:
-        "9721": 16.81
+        - line: "9721"
+          milage: 16.81
       type: "detector"
     - name: "G403/W19"
       base_ref: "XR"
@@ -1447,7 +1502,8 @@ physical:
       id: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
       direction: "bidirectional"
       pos:
-        "9721": 16.9
+        - line: "9721"
+          milage: 16.9
       type: "detector"
     - name: "G202/W19"
       base_ref: "XR"
@@ -1456,7 +1512,8 @@ physical:
       id: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
       direction: "bidirectional"
       pos:
-        "9721": 16.9
+        - line: "9721"
+          milage: 16.9
       type: "detector"
     - name: "W19"
       branches:
@@ -1484,7 +1541,8 @@ physical:
       network_ref: "XR_east"
       id: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
       pos:
-        "9721": 17.005
+        - line: "9721"
+          milage: 17.005
       type: "branching"
       specimen: ~
     - name: "G204/W20"
@@ -1494,8 +1552,10 @@ physical:
       id: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
       direction: "bidirectional"
       pos:
-        "9721": 17.05
-        "9724": 1.311
+        - line: "9721"
+          milage: 17.05
+        - line: "9724"
+          milage: 1.311
       type: "detector"
     - name: "W19/W20"
       base_ref: "XR"
@@ -1504,7 +1564,8 @@ physical:
       id: "e4741cd5-3096-431e-8739-bf4a7001221e"
       direction: "bidirectional"
       pos:
-        "9721": 17.05
+        - line: "9721"
+          milage: 17.05
       type: "detector"
     - name: "W19/G503"
       base_ref: "XR"
@@ -1513,7 +1574,8 @@ physical:
       id: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
       direction: "bidirectional"
       pos:
-        "9721": 17.051
+        - line: "9721"
+          milage: 17.051
       type: "detector"
     - name: "W20"
       branches:
@@ -1531,8 +1593,10 @@ physical:
       network_ref: "XR_east"
       id: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
       pos:
-        "9721": 17.107
-        "9724": 1.368
+        - line: "9721"
+          milage: 17.107
+        - line: "9724"
+          milage: 1.368
       type: "branching"
       specimen: 500-1
     - name: "W20/G304"
@@ -1542,8 +1606,10 @@ physical:
       id: "8890eec1-8048-4853-8d25-71cfb8365a36"
       direction: "bidirectional"
       pos:
-        "9721": 17.117
-        "9724": 1.378
+        - line: "9721"
+          milage: 17.117
+        - line: "9724"
+          milage: 1.378
       type: "detector"
     - name: "W20Y"
       base_ref: "XR"
@@ -1552,8 +1618,10 @@ physical:
       id: "ad21db91-ef23-401b-8138-8dfa933e688c"
       direction: "backward"
       pos:
-        "9721": 17.117
-        "9724": 1.378
+        - line: "9721"
+          milage: 17.117
+        - line: "9724"
+          milage: 1.378
       type: "sign"
     - name: "G304/G404"
       base_ref: "XR"
@@ -1562,8 +1630,10 @@ physical:
       id: "40323a52-1608-4e52-834c-7a6112f56073"
       direction: "bidirectional"
       pos:
-        "9721": 17.26
-        "9724": 1.521
+        - line: "9721"
+          milage: 17.26
+        - line: "9724"
+          milage: 1.521
       type: "detector"
     - name: "Ra10_3"
       base_ref: "XR"
@@ -1572,8 +1642,10 @@ physical:
       id: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
       direction: "forward"
       pos:
-        "9721": 17.26
-        "9724": 1.521
+        - line: "9721"
+          milage: 17.26
+        - line: "9724"
+          milage: 1.521
       type: "sign"
     - name: "G404A"
       base_ref: "XR"
@@ -1582,8 +1654,10 @@ physical:
       id: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
       direction: "bidirectional"
       pos:
-        "9721": 17.43
-        "9724": 1.691
+        - line: "9721"
+          milage: 17.43
+        - line: "9724"
+          milage: 1.691
       type: "detector"
     - name: "G"
       base_ref: "XR"
@@ -1592,22 +1666,26 @@ physical:
       id: "ae83219c-febb-4bc7-bee4-218465b65584"
       direction: "backward"
       pos:
-        "9721": 17.43
-        "9724": 1.691
+        - line: "9721"
+          milage: 17.43
+        - line: "9724"
+          milage: 1.691
       type: "sign"
     - name: "E_XW_1"
       base_ref: "XR"
       class: "continuing"
       id: "cc93ea69-365c-451f-92a9-a5754be34e52"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       type: "end"
     - name: "E_XW_2"
       base_ref: "XR"
       class: "continuing"
       id: "cc0123c1-5a0c-428d-b4ff-8341cfe3fffd"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       type: "end"
     - name: "AA"
       base_ref: "XR"
@@ -1616,7 +1694,8 @@ physical:
       id: "c4d62f2c-71b6-41a8-86f2-36c641af3b0f"
       direction: "forward"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       type: "sign"
     - name: "A"
       base_ref: "XR"
@@ -1625,7 +1704,8 @@ physical:
       id: "1e94145d-9d16-446d-8fed-a61000b4e5d4"
       direction: "forward"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       type: "sign"
     - name: "G103B"
       base_ref: "XR"
@@ -1634,7 +1714,8 @@ physical:
       id: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
       direction: "bidirectional"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       type: "detector"
     - name: "G101A"
       base_ref: "XR"
@@ -1643,7 +1724,8 @@ physical:
       id: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
       direction: "bidirectional"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       type: "detector"
     - name: "G101/G201"
       base_ref: "XR"
@@ -1652,7 +1734,8 @@ physical:
       id: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
       direction: "bidirectional"
       pos:
-        "9721": 14.92
+        - line: "9721"
+          milage: 14.92
       type: "detector"
     - name: "Ra10_1"
       base_ref: "XR"
@@ -1661,7 +1744,8 @@ physical:
       id: "6af304ac-5742-452d-a9e2-df6c10df649b"
       direction: "backward"
       pos:
-        "9721": 14.92
+        - line: "9721"
+          milage: 14.92
       type: "sign"
     - name: "203X"
       base_ref: "XR"
@@ -1670,7 +1754,8 @@ physical:
       id: "96341cef-c47f-4a36-b095-caa3c0ab191b"
       direction: "forward"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       type: "sign"
     - name: "301X"
       base_ref: "XR"
@@ -1679,7 +1764,8 @@ physical:
       id: "906eea64-c07c-4c28-8a3a-018f29401311"
       direction: "forward"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       type: "sign"
     - name: "G103/W2"
       base_ref: "XR"
@@ -1688,7 +1774,8 @@ physical:
       id: "3b394a1e-94f1-40e0-b867-221a95ed7478"
       direction: "bidirectional"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       type: "detector"
     - name: "G201/W1"
       base_ref: "XR"
@@ -1697,7 +1784,8 @@ physical:
       id: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
       direction: "bidirectional"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       type: "detector"
     - name: "W1"
       branches:
@@ -1715,7 +1803,8 @@ physical:
       network_ref: "XR_west"
       id: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
       pos:
-        "9721": 15.13
+        - line: "9721"
+          milage: 15.13
       type: "branching"
       specimen: 760-1
     - name: "W1/W2"
@@ -1725,7 +1814,8 @@ physical:
       id: "268e860e-1b7e-4d3f-9373-e28a25174937"
       direction: "bidirectional"
       pos:
-        "9721": 15.195
+        - line: "9721"
+          milage: 15.195
       type: "detector"
     - name: "W1/G301"
       base_ref: "XR"
@@ -1734,7 +1824,8 @@ physical:
       id: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
       direction: "bidirectional"
       pos:
-        "9721": 15.195
+        - line: "9721"
+          milage: 15.195
       type: "detector"
     - name: "W2"
       branches:
@@ -1752,7 +1843,8 @@ physical:
       network_ref: "XR_west"
       id: "46efc37a-7802-4f69-859b-484b44eed272"
       pos:
-        "9721": 15.256
+        - line: "9721"
+          milage: 15.256
       type: "branching"
       specimen: 760-1
     - name: "W2/G203"
@@ -1762,7 +1854,8 @@ physical:
       id: "f80fda90-58c5-488c-885c-388ca1673e9a"
       direction: "bidirectional"
       pos:
-        "9721": 15.269
+        - line: "9721"
+          milage: 15.269
       type: "detector"
     - name: "203Y"
       base_ref: "XR"
@@ -1771,7 +1864,8 @@ physical:
       id: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
       direction: "backward"
       pos:
-        "9721": 15.269
+        - line: "9721"
+          milage: 15.269
       type: "sign"
     - name: "301Y"
       base_ref: "XR"
@@ -1780,7 +1874,8 @@ physical:
       id: "e699224e-44c1-4a39-a400-e7b8b0fded59"
       direction: "backward"
       pos:
-        "9721": 15.266
+        - line: "9721"
+          milage: 15.266
       type: "sign"
     - name: "Vn3"
       base_ref: "XR"
@@ -1789,7 +1884,8 @@ physical:
       id: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
       direction: "forward"
       pos:
-        "9721": 15.536
+        - line: "9721"
+          milage: 15.536
       type: "sign"
     - name: "Vn1"
       base_ref: "XR"
@@ -1798,14 +1894,16 @@ physical:
       id: "77175a18-3820-4035-a6b8-57a2ee609e8d"
       direction: "forward"
       pos:
-        "9721": 15.536
+        - line: "9721"
+          milage: 15.536
       type: "sign"
     - name: "E_Industrie"
       base_ref: "XR"
       class: "continuing"
       id: "2262fef8-1868-4cc9-94bc-ee7ac622ee22"
       pos:
-        "9721": 15.583
+        - line: "9721"
+          milage: 15.583
       type: "end"
     - name: "124X"
       base_ref: "XR"
@@ -1814,7 +1912,8 @@ physical:
       id: "bf41a121-6a3c-4452-b3d2-efef64fe70c2"
       direction: "forward"
       pos:
-        "9721": 15.583
+        - line: "9721"
+          milage: 15.583
       type: "sign"
     - name: "G124/W3"
       base_ref: "XR"
@@ -1823,7 +1922,8 @@ physical:
       id: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
       direction: "bidirectional"
       pos:
-        "9721": 15.583
+        - line: "9721"
+          milage: 15.583
       type: "detector"
     - name: "Sp124"
       base_ref: "XR"
@@ -1831,7 +1931,8 @@ physical:
       id: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
       direction: "forward"
       pos:
-        "9721": 15.588
+        - line: "9721"
+          milage: 15.588
       type: "derailer"
     - name: "303X"
       base_ref: "XR"
@@ -1840,7 +1941,8 @@ physical:
       id: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
       direction: "forward"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       type: "sign"
     - name: "G203/W4"
       base_ref: "XR"
@@ -1849,7 +1951,8 @@ physical:
       id: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
       direction: "bidirectional"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       type: "detector"
     - name: "7X"
       base_ref: "XR"
@@ -1858,7 +1961,8 @@ physical:
       id: "a563f377-3832-4cc4-9b75-b605550d4c07"
       direction: "forward"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       type: "sign"
     - name: "G301/W10"
       base_ref: "XR"
@@ -1867,7 +1971,8 @@ physical:
       id: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
       direction: "bidirectional"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       type: "detector"
     - name: "Sp51"
       base_ref: "XR"
@@ -1875,7 +1980,8 @@ physical:
       id: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
       direction: "backward"
       pos:
-        "9721": 16.607
+        - line: "9721"
+          milage: 16.607
       type: "derailer"
     - name: "W12/G51"
       base_ref: "XR"
@@ -1884,7 +1990,8 @@ physical:
       id: "5f52ad57-6723-4412-8eb4-16650b308dd7"
       direction: "bidirectional"
       pos:
-        "9721": 16.612
+        - line: "9721"
+          milage: 16.612
       type: "detector"
     - name: "51X"
       base_ref: "XR"
@@ -1893,14 +2000,16 @@ physical:
       id: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
       direction: "backward"
       pos:
-        "9721": 16.612
+        - line: "9721"
+          milage: 16.612
       type: "sign"
     - name: "E51"
       base_ref: "XR"
       class: "buffer stop"
       id: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
       pos:
-        "9721": 16.67
+        - line: "9721"
+          milage: 16.67
       type: "end"
     - name: "W3"
       branches:
@@ -1918,7 +2027,8 @@ physical:
       network_ref: "XR_west"
       id: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
       pos:
-        "9721": 15.593
+        - line: "9721"
+          milage: 15.593
       type: "branching"
       specimen: 300-1
     - name: "W3/W6"
@@ -1928,7 +2038,8 @@ physical:
       id: "515f1257-d556-4371-af6a-4bda8d0ee351"
       direction: "bidirectional"
       pos:
-        "9721": 15.64
+        - line: "9721"
+          milage: 15.64
       type: "detector"
     - name: "W3/W4"
       base_ref: "XR"
@@ -1937,7 +2048,8 @@ physical:
       id: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
       direction: "bidirectional"
       pos:
-        "9721": 15.66
+        - line: "9721"
+          milage: 15.66
       type: "detector"
     - name: "W4"
       branches:
@@ -1955,7 +2067,8 @@ physical:
       network_ref: "XR_west"
       id: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
       pos:
-        "9721": 15.73
+        - line: "9721"
+          milage: 15.73
       type: "branching"
       specimen: 300-1
     - name: "W5"
@@ -1974,8 +2087,10 @@ physical:
       network_ref: "XR_west"
       id: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
       pos:
-        "9721": 15.739
-        "9724": 0.0
+        - line: "9721"
+          milage: 15.739
+        - line: "9724"
+          milage: 0.0
       type: "branching"
       specimen: 500-2
     - name: "W4/W6"
@@ -1985,8 +2100,10 @@ physical:
       id: "814413bd-dee7-4037-af21-5fe0acd57069"
       direction: "bidirectional"
       pos:
-        "9721": 15.8
-        "9724": 0.061
+        - line: "9721"
+          milage: 15.8
+        - line: "9724"
+          milage: 0.061
       type: "detector"
     - name: "W6"
       branches:
@@ -2004,8 +2121,10 @@ physical:
       network_ref: "XR_west"
       id: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
       pos:
-        "9721": 15.854
-        "9724": 0.115
+        - line: "9721"
+          milage: 15.854
+        - line: "9724"
+          milage: 0.115
       type: "branching"
       specimen: 500-2
     - name: "W10"
@@ -2024,7 +2143,8 @@ physical:
       network_ref: "XR_west"
       id: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
       pos:
-        "9721": 15.764
+        - line: "9721"
+          milage: 15.764
       type: "branching"
       specimen: 500-2
     - name: "W10/W11"
@@ -2034,14 +2154,16 @@ physical:
       id: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
       direction: "bidirectional"
       pos:
-        "9721": 15.82
+        - line: "9721"
+          milage: 15.82
       type: "detector"
     - name: "E21"
       base_ref: "XR"
       class: "buffer stop"
       id: "2913ae88-0553-4836-8914-38d54b211a40"
       pos:
-        "9721": 15.71
+        - line: "9721"
+          milage: 15.71
       type: "end"
     - name: "21X"
       base_ref: "XR"
@@ -2050,7 +2172,8 @@ physical:
       id: "8067ab6b-61f0-428e-9449-5f2ab7f8ded2"
       direction: "forward"
       pos:
-        "9721": 15.803
+        - line: "9721"
+          milage: 15.803
       type: "sign"
     - name: "G21/W11"
       base_ref: "XR"
@@ -2059,7 +2182,8 @@ physical:
       id: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
       direction: "bidirectional"
       pos:
-        "9721": 15.803
+        - line: "9721"
+          milage: 15.803
       type: "detector"
     - name: "Sp21"
       base_ref: "XR"
@@ -2067,7 +2191,8 @@ physical:
       id: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
       direction: "forward"
       pos:
-        "9721": 15.805
+        - line: "9721"
+          milage: 15.805
       type: "derailer"
     - name: "W11"
       branches:
@@ -2085,7 +2210,8 @@ physical:
       network_ref: "XR_west"
       id: "4bacaae6-e599-4cfc-822a-35bc23735979"
       pos:
-        "9721": 15.864
+        - line: "9721"
+          milage: 15.864
       type: "branching"
       specimen: 500-2
     - name: "W10/G401"
@@ -2095,7 +2221,8 @@ physical:
       id: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
       direction: "bidirectional"
       pos:
-        "9721": 15.929
+        - line: "9721"
+          milage: 15.929
       type: "detector"
     - name: "P1"
       base_ref: "XR"
@@ -2104,7 +2231,8 @@ physical:
       id: "0f8d67a8-3183-4b87-b911-e722107cda5d"
       direction: "backward"
       pos:
-        "9721": 15.929
+        - line: "9721"
+          milage: 15.929
       type: "sign"
     - name: "H1_1"
       base_ref: "XR"
@@ -2113,7 +2241,8 @@ physical:
       id: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
       direction: "backward"
       pos:
-        "9721": 15.949
+        - line: "9721"
+          milage: 15.949
       type: "sign"
     - name: "H1_2"
       base_ref: "XR"
@@ -2122,7 +2251,8 @@ physical:
       id: "de3e722c-a217-4257-b868-0ca6bbc6310c"
       direction: "forward"
       pos:
-        "9721": 16.683
+        - line: "9721"
+          milage: 16.683
       type: "sign"
     - name: "N1"
       base_ref: "XR"
@@ -2131,7 +2261,8 @@ physical:
       id: "cfb9c041-df5f-42ff-96e4-8051299467cc"
       direction: "forward"
       pos:
-        "9721": 16.703
+        - line: "9721"
+          milage: 16.703
       type: "sign"
     - name: "G401/W18"
       base_ref: "XR"
@@ -2140,7 +2271,8 @@ physical:
       id: "a4e4c075-249c-45b4-820b-b77523fcf124"
       direction: "bidirectional"
       pos:
-        "9721": 16.703
+        - line: "9721"
+          milage: 16.703
       type: "detector"
     - name: "W17"
       branches:
@@ -2158,7 +2290,8 @@ physical:
       network_ref: "XR_east"
       id: "0e202ec8-370e-4279-ba82-d53657190abe"
       pos:
-        "9721": 16.845
+        - line: "9721"
+          milage: 16.845
       type: "branching"
       specimen: 300-1
     - name: "W17/W18"
@@ -2168,7 +2301,8 @@ physical:
       id: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
       direction: "bidirectional"
       pos:
-        "9721": 16.846
+        - line: "9721"
+          milage: 16.846
       type: "detector"
     - name: "W18"
       branches:
@@ -2186,7 +2320,8 @@ physical:
       network_ref: "XR_east"
       id: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
       pos:
-        "9721": 16.882
+        - line: "9721"
+          milage: 16.882
       type: "branching"
       specimen: 300-1
     - name: "W18/G501"
@@ -2196,7 +2331,8 @@ physical:
       id: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
       direction: "bidirectional"
       pos:
-        "9721": 16.892
+        - line: "9721"
+          milage: 16.892
       type: "detector"
     - name: "501X"
       base_ref: "XR"
@@ -2205,7 +2341,8 @@ physical:
       id: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
       direction: "backward"
       pos:
-        "9721": 16.892
+        - line: "9721"
+          milage: 16.892
       type: "sign"
     - name: "G501B"
       base_ref: "XR"
@@ -2214,7 +2351,8 @@ physical:
       id: "1daca293-0191-40d9-9f32-1e749223d03d"
       direction: "bidirectional"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       type: "detector"
     - name: "FF"
       base_ref: "XR"
@@ -2223,14 +2361,16 @@ physical:
       id: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
       direction: "backward"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       type: "sign"
     - name: "E_XOG_2"
       base_ref: "XR"
       class: "continuing"
       id: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       type: "end"
     - name: "503X"
       base_ref: "XR"
@@ -2239,7 +2379,8 @@ physical:
       id: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
       direction: "backward"
       pos:
-        "9721": 17.051
+        - line: "9721"
+          milage: 17.051
       type: "sign"
     - name: "Ra10_2"
       base_ref: "XR"
@@ -2248,7 +2389,8 @@ physical:
       id: "73bc3a56-243d-40eb-ad05-6480825bb643"
       direction: "forward"
       pos:
-        "9721": 17.151
+        - line: "9721"
+          milage: 17.151
       type: "sign"
     - name: "G503/G603"
       base_ref: "XR"
@@ -2257,7 +2399,8 @@ physical:
       id: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
       direction: "bidirectional"
       pos:
-        "9721": 17.151
+        - line: "9721"
+          milage: 17.151
       type: "detector"
     - name: "G603A"
       base_ref: "XR"
@@ -2266,7 +2409,8 @@ physical:
       id: "f31e3747-80c6-4342-9782-8ce4c7a24379"
       direction: "bidirectional"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       type: "detector"
     - name: "F"
       base_ref: "XR"
@@ -2275,12 +2419,14 @@ physical:
       id: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
       direction: "backward"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       type: "sign"
     - name: "E_XOG_1"
       base_ref: "XR"
       class: "continuing"
       id: "dc59f431-4159-4667-9e6d-2e109b39bda2"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       type: "end"

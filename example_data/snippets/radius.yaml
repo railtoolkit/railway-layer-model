@@ -4,13 +4,13 @@ speed:
   radius_changes:
     - pos:
         "line0": 16.57909 # from here on
-      class: straight #transition, straight, curve
+      kind: straight #transition, straight, curve
       radius: Inf
     - pos:
         "line0": 16.57909 # from here on
-      class: transition
-      type: linear # type of function
+      kind: transition
+      class: linear # class of function
     - pos:
         "line0": 16.80309 # from here on
-      class: curve
+      kind: curve
       radius: -3000 # positive -> left curvature / negative -> right curvature

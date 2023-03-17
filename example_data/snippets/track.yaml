@@ -9,7 +9,7 @@ network:
   id: network
   nodes:
     - id: t_1
-      type: test
+      class: test
       in: [1]
       out: [4]
   connections:  
@@ -18,23 +18,23 @@ physical:
   id: t_1
   elements:
     - id: "1"
-      type: end
+      class: end
       pos:
         "line0": 0.000 # in km
     - id: "2"
-      type: sign
-      class: berth
+      class: sign
+      kind: berth
       direction: backward
       pos:
         "line0": 0.050 # in km
     - id: "3"
-      type: sign
-      class: berth
+      class: sign
+      kind: berth
       direction: forward
       pos:
         "line0": 0.800 # in km
     - id: "4"
-      type: end
+      class: end
       pos:
         "line0": 0.850 # in km
   tracksections:

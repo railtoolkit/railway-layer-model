@@ -2,7 +2,8 @@ physical:
   elements:
     - name: "41"
       pos: 
-        "9724": 4.85
+        - line: "9724"
+          milage: 4.85
       base_ref: "rebenau_to_pockelsdorf"
       network_ref: "XR_XPD"
       id: "14e2f6a9-13e5-43c2-be8e-b14282f79cc3"
@@ -11,7 +12,8 @@ physical:
       direction: "forward"
     - name: "BK41/BK42"
       pos: 
-        "9724": 4.9
+        - line: "9724"
+          milage: 4.9
       base_ref: "rebenau_to_pockelsdorf"
       network_ref: "XR_XPD"
       id: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
@@ -20,7 +22,8 @@ physical:
       direction: "bidirectional"
     - name: "42"
       pos: 
-        "9724": 4.95
+        - line: "9724"
+          milage: 4.95
       base_ref: "rebenau_to_pockelsdorf"
       network_ref: "XR_XPD"
       id: "8db30b9e-38c2-4683-86cd-e13a7d653bfc"

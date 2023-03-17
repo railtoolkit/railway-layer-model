@@ -2,23 +2,27 @@ physical:
   elements:
     - base_ref: "XR"
       pos:
-        "9724": 0.126
-        "9721": 15.865
+        - line: "9724"
+          milage: 0.126
+        - line: "9721"
+          milage: 15.865
       id: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
-      type: "detector"
+      class: "detector"
       name: "W6/W7"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "500-2"
       id: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
       pos:
-        "9724": 0.136
-        "9721": 15.875
+        - line: "9724"
+          milage: 0.136
+        - line: "9721"
+          milage: 15.875
       name: "W7"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 80.0
           id: "left"
@@ -32,97 +36,111 @@ physical:
             - "b448ec40-82c0-45dc-ad70-6cb087c4e868"
     - base_ref: "XR"
       pos:
-        "9721": 15.982
+        - line: "9721"
+          milage: 15.982
       id: "398c4772-e871-47fd-abba-beb0b998fc3b"
-      type: "detector"
+      class: "detector"
       name: "W7/G105"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.982
+        - line: "9721"
+          milage: 15.982
       id: "a631e1fa-e935-4995-902b-529ed5a3b07a"
-      type: "sign"
+      class: "sign"
       name: "P5"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9724": 0.243
-        "9721": 15.982
+        - line: "9724"
+          milage: 0.243
+        - line: "9721"
+          milage: 15.982
       id: "f493994b-4415-441f-a815-202691c0d28c"
-      type: "detector"
+      class: "detector"
       name: "W7/G104"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9724": 0.243
-        "9721": 15.982
+        - line: "9724"
+          milage: 0.243
+        - line: "9721"
+          milage: 15.982
       id: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
-      type: "sign"
+      class: "sign"
       name: "P4"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.032
+        - line: "9721"
+          milage: 16.032
       id: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
-      type: "sign"
+      class: "sign"
       name: "H5_1"
       network_ref: "XR_5"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.456
+        - line: "9721"
+          milage: 16.456
       id: "ee2478ac-01e7-4dd8-823e-acb274b20831"
-      type: "sign"
+      class: "sign"
       name: "H5_2"
       network_ref: "XR_5"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9724": 0.293
-        "9721": 16.032
+        - line: "9724"
+          milage: 0.293
+        - line: "9721"
+          milage: 16.032
       id: "495a4bab-4ee7-4440-a46c-c304db058aef"
-      type: "sign"
+      class: "sign"
       name: "H4_1"
       network_ref: "XR_4"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9724": 0.803
-        "9721": 16.542
+        - line: "9724"
+          milage: 0.803
+        - line: "9721"
+          milage: 16.542
       id: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
-      type: "sign"
+      class: "sign"
       name: "H4_2"
       network_ref: "XR_4"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.78
+        - line: "9721"
+          milage: 15.78
       id: "beb5f987-f0a0-4cda-b7f9-6ea4e6aef29a"
-      type: "detector"
+      class: "detector"
       name: "W4/W8"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "500-1"
       id: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
       pos:
-        "9721": 15.895
+        - line: "9721"
+          milage: 15.895
       name: "W8"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 50.0
           id: "right2"
@@ -136,48 +154,53 @@ physical:
             - "181e892d-4dba-420b-8d2b-b202e0e4d8aa"
     - base_ref: "XR"
       pos:
-        "9721": 16.028
+        - line: "9721"
+          milage: 16.028
       id: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
-      type: "detector"
+      class: "detector"
       name: "W8/G303"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.028
+        - line: "9721"
+          milage: 16.028
       id: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
-      type: "sign"
+      class: "sign"
       name: "P3"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.0
+        - line: "9721"
+          milage: 16.0
       id: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
-      type: "detector"
+      class: "detector"
       name: "W8/W9"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.0
+        - line: "9721"
+          milage: 16.0
       id: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
-      type: "detector"
+      class: "detector"
       name: "W11/W9"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "500-1"
       id: "c65dbc29-58da-406f-9901-d590009a81ba"
       pos:
-        "9721": 16.109
+        - line: "9721"
+          milage: 16.109
       name: "W9"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "right"
@@ -191,140 +214,157 @@ physical:
             - "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
     - base_ref: "XR"
       pos:
-        "9721": 16.114
+        - line: "9721"
+          milage: 16.114
       id: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
-      type: "detector"
+      class: "detector"
       name: "W9/G102"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.114
+        - line: "9721"
+          milage: 16.114
       id: "54dec955-deee-4087-b39a-6a670df59706"
-      type: "sign"
+      class: "sign"
       name: "P2"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.078
+        - line: "9721"
+          milage: 16.078
       id: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
-      type: "sign"
+      class: "sign"
       name: "H3_1"
       network_ref: "XR_3"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.61
+        - line: "9721"
+          milage: 16.61
       id: "271f086a-22b4-4139-b8e5-91dd863e5c44"
-      type: "sign"
+      class: "sign"
       name: "H3_2"
       network_ref: "XR_3"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 16.164
+        - line: "9721"
+          milage: 16.164
       id: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
-      type: "sign"
+      class: "sign"
       name: "H2_1"
       network_ref: "XR_2"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.481
+        - line: "9721"
+          milage: 16.481
       id: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
-      type: "sign"
+      class: "sign"
       name: "H2_2"
       network_ref: "XR_2"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 16.506
+        - line: "9721"
+          milage: 16.506
       id: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
-      type: "sign"
+      class: "sign"
       name: "N5"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 16.506
+        - line: "9721"
+          milage: 16.506
       id: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
-      type: "detector"
+      class: "detector"
       name: "G105/W12"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9724": 0.853
-        "9721": 16.592
+        - line: "9724"
+          milage: 0.853
+        - line: "9721"
+          milage: 16.592
       id: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
-      type: "sign"
+      class: "sign"
       name: "N4"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9724": 0.853
-        "9721": 16.592
+        - line: "9724"
+          milage: 0.853
+        - line: "9721"
+          milage: 16.592
       id: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
-      type: "detector"
+      class: "detector"
       name: "G104/W13"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.66
+        - line: "9721"
+          milage: 16.66
       id: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
-      type: "sign"
+      class: "sign"
       name: "N3"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 16.66
+        - line: "9721"
+          milage: 16.66
       id: "15452298-8414-45f1-b5e0-3b9a60ed088e"
-      type: "detector"
+      class: "detector"
       name: "G303/W14"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.531
+        - line: "9721"
+          milage: 16.531
       id: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
-      type: "sign"
+      class: "sign"
       name: "N2"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 16.531
+        - line: "9721"
+          milage: 16.531
       id: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
-      type: "detector"
+      class: "detector"
       name: "G102/W15"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "300-1"
       id: "e444b175-2eff-4bd1-96c5-185ed4424f61"
       pos:
-        "9721": 16.536
+        - line: "9721"
+          milage: 16.536
       name: "W15"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 50.0
           id: "left"
@@ -338,30 +378,33 @@ physical:
             - "01be204c-08ad-4292-ba76-79b61ba189b0"
     - base_ref: "XR"
       pos:
-        "9721": 16.8
+        - line: "9721"
+          milage: 16.8
       id: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
-      type: "detector"
+      class: "detector"
       name: "W15/W17"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.77
+        - line: "9721"
+          milage: 16.77
       id: "dd64948a-2423-451f-87bb-fc541735aad8"
-      type: "detector"
+      class: "detector"
       name: "W15/K16"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "190-2"
       id: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
       pos:
-        "9721": 16.562
+        - line: "9721"
+          milage: 16.562
       name: "W12"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 40.0
           id: "left"
@@ -375,59 +418,67 @@ physical:
             - "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
     - base_ref: "XR"
       pos:
-        "9721": 16.6
+        - line: "9721"
+          milage: 16.6
       id: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
-      type: "detector"
+      class: "detector"
       name: "W12/W13"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9724": 0.927
-        "9721": 16.666
+        - line: "9724"
+          milage: 0.927
+        - line: "9721"
+          milage: 16.666
       id: "712f1424-b556-4758-9ac6-c0cb328d7705"
-      type: "detector"
+      class: "detector"
       name: "W13/G204"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.663
+        - line: "9721"
+          milage: 16.663
       id: "70122a48-8078-496c-943b-8f1e781dbf64"
-      type: "detector"
+      class: "detector"
       name: "W13/W14"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.73
+        - line: "9721"
+          milage: 16.73
       id: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
-      type: "detector"
+      class: "detector"
       name: "W14/G403"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.77
+        - line: "9721"
+          milage: 16.77
       id: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
-      type: "detector"
+      class: "detector"
       name: "W14/K16"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: ~
       id: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
       pos:
-        "9724": 0.891
-        "9721": 16.63
+        - line: "9724"
+          milage: 0.891
+        - line: "9721"
+          milage: 16.63
       name: "W13"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -453,10 +504,11 @@ physical:
       specimen: ~
       id: "d0342aa7-cb3b-4feb-9200-813f1da75625"
       pos:
-        "9721": 16.7
+        - line: "9721"
+          milage: 16.7
       name: "W14"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -482,10 +534,11 @@ physical:
       specimen: ~
       id: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
       pos:
-        "9721": 16.785
+        - line: "9721"
+          milage: 16.785
       name: "K16"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: .inf
           id: "straight1"
@@ -499,48 +552,53 @@ physical:
             - "8337b3a5-29c2-441d-9232-ebdc8e14af07"
     - base_ref: "XR"
       pos:
-        "9721": 16.8
+        - line: "9721"
+          milage: 16.8
       id: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
-      type: "detector"
+      class: "detector"
       name: "K16/W17"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.81
+        - line: "9721"
+          milage: 16.81
       id: "3a00ba63-ff25-4720-be64-1f08d329a31b"
-      type: "detector"
+      class: "detector"
       name: "K16/G202"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.9
+        - line: "9721"
+          milage: 16.9
       id: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
-      type: "detector"
+      class: "detector"
       name: "G403/W19"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.9
+        - line: "9721"
+          milage: 16.9
       id: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
-      type: "detector"
+      class: "detector"
       name: "G202/W19"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: ~
       id: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
       pos:
-        "9721": 17.005
+        - line: "9721"
+          milage: 17.005
       name: "W19"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -564,41 +622,47 @@ physical:
             - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
     - base_ref: "XR"
       pos:
-        "9724": 1.311
-        "9721": 17.05
+        - line: "9724"
+          milage: 1.311
+        - line: "9721"
+          milage: 17.05
       id: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
-      type: "detector"
+      class: "detector"
       name: "G204/W20"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 17.05
+        - line: "9721"
+          milage: 17.05
       id: "e4741cd5-3096-431e-8739-bf4a7001221e"
-      type: "detector"
+      class: "detector"
       name: "W19/W20"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 17.051
+        - line: "9721"
+          milage: 17.051
       id: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
-      type: "detector"
+      class: "detector"
       name: "W19/G503"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "500-1"
       id: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
       pos:
-        "9724": 1.368
-        "9721": 17.107
+        - line: "9724"
+          milage: 1.368
+        - line: "9721"
+          milage: 17.107
       name: "W20"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -612,176 +676,201 @@ physical:
             - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
     - base_ref: "XR"
       pos:
-        "9724": 1.378
-        "9721": 17.117
+        - line: "9724"
+          milage: 1.378
+        - line: "9721"
+          milage: 17.117
       id: "8890eec1-8048-4853-8d25-71cfb8365a36"
-      type: "detector"
+      class: "detector"
       name: "W20/G304"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9724": 1.378
-        "9721": 17.117
+        - line: "9724"
+          milage: 1.378
+        - line: "9721"
+          milage: 17.117
       id: "ad21db91-ef23-401b-8138-8dfa933e688c"
-      type: "sign"
+      class: "sign"
       name: "W20Y"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9724": 1.521
-        "9721": 17.26
+        - line: "9724"
+          milage: 1.521
+        - line: "9721"
+          milage: 17.26
       id: "40323a52-1608-4e52-834c-7a6112f56073"
-      type: "detector"
+      class: "detector"
       name: "G304/G404"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9724": 1.521
-        "9721": 17.26
+        - line: "9724"
+          milage: 1.521
+        - line: "9721"
+          milage: 17.26
       id: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
-      type: "sign"
+      class: "sign"
       name: "Ra10_3"
       network_ref: "XR_east"
-      class: "board"
+      kind: "board"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9724": 1.691
-        "9721": 17.43
+        - line: "9724"
+          milage: 1.691
+        - line: "9721"
+          milage: 17.43
       id: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
-      type: "detector"
+      class: "detector"
       name: "G404A"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9724": 1.691
-        "9721": 17.43
+        - line: "9724"
+          milage: 1.691
+        - line: "9721"
+          milage: 17.43
       id: "ae83219c-febb-4bc7-bee4-218465b65584"
-      type: "sign"
+      class: "sign"
       name: "G"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       id: "cc93ea69-365c-451f-92a9-a5754be34e52"
-      type: "end"
+      class: "end"
       name: "E_XW_1"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XR"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       id: "cc0123c1-5a0c-428d-b4ff-8341cfe3fffd"
-      type: "end"
+      class: "end"
       name: "E_XW_2"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XR"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       id: "c4d62f2c-71b6-41a8-86f2-36c641af3b0f"
-      type: "sign"
+      class: "sign"
       name: "AA"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       id: "1e94145d-9d16-446d-8fed-a61000b4e5d4"
-      type: "sign"
+      class: "sign"
       name: "A"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       id: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
-      type: "detector"
+      class: "detector"
       name: "G103B"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 14.695
+        - line: "9721"
+          milage: 14.695
       id: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
-      type: "detector"
+      class: "detector"
       name: "G101A"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 14.92
+        - line: "9721"
+          milage: 14.92
       id: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
-      type: "detector"
+      class: "detector"
       name: "G101/G201"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 14.92
+        - line: "9721"
+          milage: 14.92
       id: "6af304ac-5742-452d-a9e2-df6c10df649b"
-      type: "sign"
+      class: "sign"
       name: "Ra10_1"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       id: "96341cef-c47f-4a36-b095-caa3c0ab191b"
-      type: "sign"
+      class: "sign"
       name: "203X"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       id: "906eea64-c07c-4c28-8a3a-018f29401311"
-      type: "sign"
+      class: "sign"
       name: "301X"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       id: "3b394a1e-94f1-40e0-b867-221a95ed7478"
-      type: "detector"
+      class: "detector"
       name: "G103/W2"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.12
+        - line: "9721"
+          milage: 15.12
       id: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
-      type: "detector"
+      class: "detector"
       name: "G201/W1"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "760-1"
       id: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
       pos:
-        "9721": 15.13
+        - line: "9721"
+          milage: 15.13
       name: "W1"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 100.0
           id: "left"
@@ -795,30 +884,33 @@ physical:
             - "86a25dce-af41-4d43-83d0-d9bc16f4f63d"
     - base_ref: "XR"
       pos:
-        "9721": 15.195
+        - line: "9721"
+          milage: 15.195
       id: "268e860e-1b7e-4d3f-9373-e28a25174937"
-      type: "detector"
+      class: "detector"
       name: "W1/W2"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.195
+        - line: "9721"
+          milage: 15.195
       id: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
-      type: "detector"
+      class: "detector"
       name: "W1/G301"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "760-1"
       id: "46efc37a-7802-4f69-859b-484b44eed272"
       pos:
-        "9721": 15.256
+        - line: "9721"
+          milage: 15.256
       name: "W2"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 160.0
           id: "left1"
@@ -832,159 +924,177 @@ physical:
             - "52f4b921-81a0-4ea6-8e36-52a41f098d84"
     - base_ref: "XR"
       pos:
-        "9721": 15.269
+        - line: "9721"
+          milage: 15.269
       id: "f80fda90-58c5-488c-885c-388ca1673e9a"
-      type: "detector"
+      class: "detector"
       name: "W2/G203"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.269
+        - line: "9721"
+          milage: 15.269
       id: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
-      type: "sign"
+      class: "sign"
       name: "203Y"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 15.266
+        - line: "9721"
+          milage: 15.266
       id: "e699224e-44c1-4a39-a400-e7b8b0fded59"
-      type: "sign"
+      class: "sign"
       name: "301Y"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 15.536
+        - line: "9721"
+          milage: 15.536
       id: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
-      type: "sign"
+      class: "sign"
       name: "Vn3"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.536
+        - line: "9721"
+          milage: 15.536
       id: "77175a18-3820-4035-a6b8-57a2ee609e8d"
-      type: "sign"
+      class: "sign"
       name: "Vn1"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.583
+        - line: "9721"
+          milage: 15.583
       id: "2262fef8-1868-4cc9-94bc-ee7ac622ee22"
-      type: "end"
+      class: "end"
       name: "E_Industrie"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XR"
       pos:
-        "9721": 15.583
+        - line: "9721"
+          milage: 15.583
       id: "bf41a121-6a3c-4452-b3d2-efef64fe70c2"
-      type: "sign"
+      class: "sign"
       name: "124X"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.583
+        - line: "9721"
+          milage: 15.583
       id: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
-      type: "detector"
+      class: "detector"
       name: "G124/W3"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.588
+        - line: "9721"
+          milage: 15.588
       id: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
-      type: "derailer"
+      class: "derailer"
       name: "Sp124"
       network_ref: "XR_west"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       id: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
-      type: "sign"
+      class: "sign"
       name: "303X"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       id: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
-      type: "detector"
+      class: "detector"
       name: "G203/W4"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       id: "a563f377-3832-4cc4-9b75-b605550d4c07"
-      type: "sign"
+      class: "sign"
       name: "7X"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.682
+        - line: "9721"
+          milage: 15.682
       id: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
-      type: "detector"
+      class: "detector"
       name: "G301/W10"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.607
+        - line: "9721"
+          milage: 16.607
       id: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
-      type: "derailer"
+      class: "derailer"
       name: "Sp51"
       network_ref: "XR_east"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.612
+        - line: "9721"
+          milage: 16.612
       id: "5f52ad57-6723-4412-8eb4-16650b308dd7"
-      type: "detector"
+      class: "detector"
       name: "W12/G51"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.612
+        - line: "9721"
+          milage: 16.612
       id: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
-      type: "sign"
+      class: "sign"
       name: "51X"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.67
+        - line: "9721"
+          milage: 16.67
       id: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
-      type: "end"
+      class: "end"
       name: "E51"
-      class: "buffer stop"
+      kind: "buffer stop"
     - base_ref: "XR"
       specimen: "300-1"
       id: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
       pos:
-        "9721": 15.593
+        - line: "9721"
+          milage: 15.593
       name: "W3"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 50.0
           id: "right"
@@ -998,30 +1108,33 @@ physical:
             - "9fcda44e-017a-44db-a615-f182d06e23d3"
     - base_ref: "XR"
       pos:
-        "9721": 15.64
+        - line: "9721"
+          milage: 15.64
       id: "515f1257-d556-4371-af6a-4bda8d0ee351"
-      type: "detector"
+      class: "detector"
       name: "W3/W6"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.66
+        - line: "9721"
+          milage: 15.66
       id: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
-      type: "detector"
+      class: "detector"
       name: "W3/W4"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "300-1"
       id: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
       pos:
-        "9721": 15.73
+        - line: "9721"
+          milage: 15.73
       name: "W4"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 50.0
           id: "right"
@@ -1037,11 +1150,13 @@ physical:
       specimen: "500-2"
       id: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
       pos:
-        "9724": 0.0
-        "9721": 15.739
+        - line: "9724"
+          milage: 0.0
+        - line: "9721"
+          milage: 15.739
       name: "W5"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -1055,23 +1170,27 @@ physical:
             - "3511c870-d8bd-4e40-b3f7-95e90391c40d"
     - base_ref: "XR"
       pos:
-        "9724": 0.061
-        "9721": 15.8
+        - line: "9724"
+          milage: 0.061
+        - line: "9721"
+          milage: 15.8
       id: "814413bd-dee7-4037-af21-5fe0acd57069"
-      type: "detector"
+      class: "detector"
       name: "W4/W6"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "500-2"
       id: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
       pos:
-        "9724": 0.115
-        "9721": 15.854
+        - line: "9724"
+          milage: 0.115
+        - line: "9721"
+          milage: 15.854
       name: "W6"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 120.0
           id: "left"
@@ -1087,10 +1206,11 @@ physical:
       specimen: "500-2"
       id: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
       pos:
-        "9721": 15.764
+        - line: "9721"
+          milage: 15.764
       name: "W10"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -1104,43 +1224,48 @@ physical:
             - "f2801dc8-7025-4157-9917-d809ea8f620b"
     - base_ref: "XR"
       pos:
-        "9721": 15.82
+        - line: "9721"
+          milage: 15.82
       id: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
-      type: "detector"
+      class: "detector"
       name: "W10/W11"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.71
+        - line: "9721"
+          milage: 15.71
       id: "2913ae88-0553-4836-8914-38d54b211a40"
-      type: "end"
+      class: "end"
       name: "E21"
-      class: "buffer stop"
+      kind: "buffer stop"
     - base_ref: "XR"
       pos:
-        "9721": 15.803
+        - line: "9721"
+          milage: 15.803
       id: "8067ab6b-61f0-428e-9449-5f2ab7f8ded2"
-      type: "sign"
+      class: "sign"
       name: "21X"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 15.803
+        - line: "9721"
+          milage: 15.803
       id: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
-      type: "detector"
+      class: "detector"
       name: "G21/W11"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.805
+        - line: "9721"
+          milage: 15.805
       id: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
-      type: "derailer"
+      class: "derailer"
       name: "Sp21"
       network_ref: "XR_west"
       direction: "forward"
@@ -1148,10 +1273,11 @@ physical:
       specimen: "500-2"
       id: "4bacaae6-e599-4cfc-822a-35bc23735979"
       pos:
-        "9721": 15.864
+        - line: "9721"
+          milage: 15.864
       name: "W11"
       network_ref: "XR_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -1165,66 +1291,73 @@ physical:
             - "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
     - base_ref: "XR"
       pos:
-        "9721": 15.929
+        - line: "9721"
+          milage: 15.929
       id: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
-      type: "detector"
+      class: "detector"
       name: "W10/G401"
       network_ref: "XR_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 15.929
+        - line: "9721"
+          milage: 15.929
       id: "0f8d67a8-3183-4b87-b911-e722107cda5d"
-      type: "sign"
+      class: "sign"
       name: "P1"
       network_ref: "XR_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 15.949
+        - line: "9721"
+          milage: 15.949
       id: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
-      type: "sign"
+      class: "sign"
       name: "H1_1"
       network_ref: "XR_1"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 16.683
+        - line: "9721"
+          milage: 16.683
       id: "de3e722c-a217-4257-b868-0ca6bbc6310c"
-      type: "sign"
+      class: "sign"
       name: "H1_2"
       network_ref: "XR_1"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 16.703
+        - line: "9721"
+          milage: 16.703
       id: "cfb9c041-df5f-42ff-96e4-8051299467cc"
-      type: "sign"
+      class: "sign"
       name: "N1"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 16.703
+        - line: "9721"
+          milage: 16.703
       id: "a4e4c075-249c-45b4-820b-b77523fcf124"
-      type: "detector"
+      class: "detector"
       name: "G401/W18"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "300-1"
       id: "0e202ec8-370e-4279-ba82-d53657190abe"
       pos:
-        "9721": 16.845
+        - line: "9721"
+          milage: 16.845
       name: "W17"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 50.0
           id: "left"
@@ -1238,21 +1371,23 @@ physical:
             - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
     - base_ref: "XR"
       pos:
-        "9721": 16.846
+        - line: "9721"
+          milage: 16.846
       id: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
-      type: "detector"
+      class: "detector"
       name: "W17/W18"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       specimen: "300-1"
       id: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
       pos:
-        "9721": 16.882
+        - line: "9721"
+          milage: 16.882
       name: "W18"
       network_ref: "XR_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 50.0
           id: "right"
@@ -1266,188 +1401,209 @@ physical:
             - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
     - base_ref: "XR"
       pos:
-        "9721": 16.892
+        - line: "9721"
+          milage: 16.892
       id: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
-      type: "detector"
+      class: "detector"
       name: "W18/G501"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 16.892
+        - line: "9721"
+          milage: 16.892
       id: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
-      type: "sign"
+      class: "sign"
       name: "501X"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       id: "1daca293-0191-40d9-9f32-1e749223d03d"
-      type: "detector"
+      class: "detector"
       name: "G501B"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       id: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
-      type: "sign"
+      class: "sign"
       name: "FF"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       id: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
-      type: "end"
+      class: "end"
       name: "E_XOG_2"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XR"
       pos:
-        "9721": 17.051
+        - line: "9721"
+          milage: 17.051
       id: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
-      type: "sign"
+      class: "sign"
       name: "503X"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 17.151
+        - line: "9721"
+          milage: 17.151
       id: "73bc3a56-243d-40eb-ad05-6480825bb643"
-      type: "sign"
+      class: "sign"
       name: "Ra10_2"
       network_ref: "XR_east"
-      class: "board"
+      kind: "board"
       direction: "forward"
     - base_ref: "XR"
       pos:
-        "9721": 17.151
+        - line: "9721"
+          milage: 17.151
       id: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
-      type: "detector"
+      class: "detector"
       name: "G503/G603"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       id: "f31e3747-80c6-4342-9782-8ce4c7a24379"
-      type: "detector"
+      class: "detector"
       name: "G603A"
       network_ref: "XR_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XR"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       id: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
-      type: "sign"
+      class: "sign"
       name: "F"
       network_ref: "XR_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XR"
       pos:
-        "9721": 17.429
+        - line: "9721"
+          milage: 17.429
       id: "dc59f431-4159-4667-9e6d-2e109b39bda2"
-      type: "end"
+      class: "end"
       name: "E_XOG_1"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "rebenau_to_pockelsdorf"
       pos:
-        "9724": 4.85
+        - line: "9724"
+          milage: 4.85
       id: "14e2f6a9-13e5-43c2-be8e-b14282f79cc3"
-      type: "sign"
+      class: "sign"
       name: "41"
       network_ref: "XR_XPD"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "rebenau_to_pockelsdorf"
       pos:
-        "9724": 4.9
+        - line: "9724"
+          milage: 4.9
       id: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
-      type: "detector"
+      class: "detector"
       name: "BK41/BK42"
       network_ref: "XR_XPD"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "rebenau_to_pockelsdorf"
       pos:
-        "9724": 4.95
+        - line: "9724"
+          milage: 4.95
       id: "8db30b9e-38c2-4683-86cd-e13a7d653bfc"
-      type: "sign"
+      class: "sign"
       name: "42"
       network_ref: "XR_XPD"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 9.559
+        - line: "9724"
+          milage: 9.559
       id: "e9449472-545f-4198-b640-6e3de097719b"
-      type: "sign"
+      class: "sign"
       name: "A"
       network_ref: "XPD_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 9.559
+        - line: "9724"
+          milage: 9.559
       id: "b2a66f9f-3ab3-44c1-8da1-aabcd5f65e89"
-      type: "detector"
+      class: "detector"
       name: "G101A"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 9.709
+        - line: "9724"
+          milage: 9.709
       id: "d4a694ec-483e-47eb-8dcf-8d89054ea626"
-      type: "detector"
+      class: "detector"
       name: "G101/G201"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 9.709
+        - line: "9724"
+          milage: 9.709
       id: "4fc84ef1-9396-4a5a-a476-3c86eb850047"
-      type: "sign"
+      class: "sign"
       name: "Ra10_1"
       network_ref: "XPD_west"
-      class: "board"
+      kind: "board"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 9.909
+        - line: "9724"
+          milage: 9.909
       id: "eb954114-bb76-479f-96e6-1907c853299a"
-      type: "detector"
+      class: "detector"
       name: "G201/W1"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 9.909
+        - line: "9724"
+          milage: 9.909
       id: "30de60bc-4bb5-4ac2-ac06-aa3cb091e1aa"
-      type: "sign"
+      class: "sign"
       name: "201X"
       network_ref: "XPD_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       specimen: "500-2"
       id: "9df723f1-cd38-4418-95e0-b61091abcb13"
       pos:
-        "9724": 9.913
+        - line: "9724"
+          milage: 9.913
       name: "W1"
       network_ref: "XPD_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -1461,91 +1617,101 @@ physical:
             - "6fd4fa17-c27e-43e8-a8ed-b0c55d6c86a5"
     - base_ref: "XPD"
       pos:
-        "9724": 9.975
+        - line: "9724"
+          milage: 9.975
       id: "6d4dcc44-ceb0-4523-baca-79f3a9bd13cd"
-      type: "detector"
+      class: "detector"
       name: "W1/W2"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 9.975
+        - line: "9724"
+          milage: 9.975
       id: "cc12e61d-76df-4f2e-8605-192f53daa46e"
-      type: "detector"
+      class: "detector"
       name: "W1/W3"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.04
+        - line: "9724"
+          milage: 10.04
       id: "14d4afa0-6d62-4fab-92dc-6f5fe62d26f3"
-      type: "sign"
+      class: "sign"
       name: "210X"
       network_ref: "XPD_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 9.871
+        - line: "9724"
+          milage: 9.871
       id: "1e2cb47f-996d-4bfe-af60-1f22695cf0b1"
-      type: "sign"
+      class: "sign"
       name: "Ra10_3"
       network_ref: "XPD_west"
-      class: "board"
+      kind: "board"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 9.871
+        - line: "9724"
+          milage: 9.871
       id: "7cd65efa-be49-490e-a3c3-209bd5af250f"
-      type: "detector"
+      class: "detector"
       name: "G143/G243"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 9.685
+        - line: "9724"
+          milage: 9.685
       id: "49a33d17-6d19-462e-86b0-fef3e557186c"
-      type: "detector"
+      class: "detector"
       name: "G143A"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 9.685
+        - line: "9724"
+          milage: 9.685
       id: "a820721f-8fd9-424a-b4ca-ef581c38e366"
-      type: "sign"
+      class: "sign"
       name: "B"
       network_ref: "XPD_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 9.6
+        - line: "9724"
+          milage: 9.6
       id: "ae108c83-41e5-41f4-9cb3-d7347d7b5b4a"
-      type: "end"
+      class: "end"
       name: "E_XM"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XPD"
       pos:
-        "9724": 10.04
+        - line: "9724"
+          milage: 10.04
       id: "c514c6eb-404a-43a0-b99d-8a170668a755"
-      type: "detector"
+      class: "detector"
       name: "G243/W3"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       specimen: "300-1"
       id: "72512996-cd53-4049-8fa6-c41cc3dee301"
       pos:
-        "9724": 10.371
+        - line: "9724"
+          milage: 10.371
       name: "W2"
       network_ref: "XPD_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 50.0
           id: "left"
@@ -1561,10 +1727,11 @@ physical:
       specimen: ~
       id: "ab8e437d-278f-4da1-9ff0-628375c8db03"
       pos:
-        "9724": 10.08
+        - line: "9724"
+          milage: 10.08
       name: "W3"
       network_ref: "XPD_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: .inf
           id: "straight1"
@@ -1583,57 +1750,63 @@ physical:
             - "0919ffee-91cf-4e42-9176-53a7fa7e00cb"
     - base_ref: "XPD"
       pos:
-        "9724": 10.12
+        - line: "9724"
+          milage: 10.12
       id: "2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3"
-      type: "detector"
+      class: "detector"
       name: "W3/G301"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.1
+        - line: "9724"
+          milage: 10.1
       id: "81ed8132-4731-4069-b999-6d3dfd37e7e8"
-      type: "detector"
+      class: "detector"
       name: "W3/W4"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.035
+        - line: "9724"
+          milage: 10.035
       id: "3e6bdbd9-1704-44c8-bbdd-391e3b928134"
-      type: "detector"
+      class: "detector"
       name: "W2/W4"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.161
+        - line: "9724"
+          milage: 10.161
       id: "73c04241-f1a4-4786-aae7-2dae2f085e37"
-      type: "detector"
+      class: "detector"
       name: "W2/G103"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.161
+        - line: "9724"
+          milage: 10.161
       id: "f0913f71-4530-4209-9da0-4b9e6d7d8250"
-      type: "sign"
+      class: "sign"
       name: "P3"
       network_ref: "XPD_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       specimen: "500-2"
       id: "1632b4a9-5a73-4653-a744-37045e198cef"
       pos:
-        "9724": 10.153
+        - line: "9724"
+          milage: 10.153
       name: "W4"
       network_ref: "XPD_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -1647,246 +1820,273 @@ physical:
             - "9bb44939-1319-47fb-b88e-48a45591191f"
     - base_ref: "XPD"
       pos:
-        "9724": 10.181
+        - line: "9724"
+          milage: 10.181
       id: "8f8ab62b-74b8-4303-a495-27a2978414a5"
-      type: "sign"
+      class: "sign"
       name: "H3_1"
       network_ref: "XPD_3"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.16
+        - line: "9724"
+          milage: 10.16
       id: "1e8df13d-567f-44ad-9563-3820ed0f57b6"
-      type: "detector"
+      class: "detector"
       name: "W4/G102"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.207
+        - line: "9724"
+          milage: 10.207
       id: "6292e51a-4808-4fab-b2b4-10a55d1e59dc"
-      type: "detector"
+      class: "detector"
       name: "G102/G202"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.207
+        - line: "9724"
+          milage: 10.207
       id: "16df5974-d6e1-4b08-ae94-d20b26807546"
-      type: "detector"
+      class: "detector"
       name: "G301/G401"
       network_ref: "XPD_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.207
+        - line: "9724"
+          milage: 10.207
       id: "1559135a-021c-4e24-a5c2-e8075bc4c4c5"
-      type: "sign"
+      class: "sign"
       name: "P2"
       network_ref: "XPD_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.207
+        - line: "9724"
+          milage: 10.207
       id: "b361a3ee-5069-4569-872f-6f3642209fe8"
-      type: "sign"
+      class: "sign"
       name: "P1"
       network_ref: "XPD_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.227
+        - line: "9724"
+          milage: 10.227
       id: "6080652c-60fd-4e55-849a-913467a9b094"
-      type: "sign"
+      class: "sign"
       name: "H2_1"
       network_ref: "XPD_2"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.227
+        - line: "9724"
+          milage: 10.227
       id: "763163e9-c6c5-487b-a455-d78c17e826c9"
-      type: "sign"
+      class: "sign"
       name: "H1_1"
       network_ref: "XPD_1"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.37
+        - line: "9724"
+          milage: 10.37
       id: "4c6edf43-db69-4d3f-9b06-45d7c94d7e47"
-      type: "sign"
+      class: "sign"
       name: "H2_2"
       network_ref: "XPD_2"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.37
+        - line: "9724"
+          milage: 10.37
       id: "604398d9-43bb-4c1e-b251-fd0bf1696d44"
-      type: "sign"
+      class: "sign"
       name: "H1_2"
       network_ref: "XPD_1"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.37
+        - line: "9724"
+          milage: 10.37
       id: "0fb8b00f-7bd4-4c9f-9b12-0ee503ab551a"
-      type: "sign"
+      class: "sign"
       name: "102X"
       network_ref: "XPD_2"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.37
+        - line: "9724"
+          milage: 10.37
       id: "0675f75f-72ae-4da9-82b8-d65903373996"
-      type: "sign"
+      class: "sign"
       name: "301X"
       network_ref: "XPD_1"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.373
+        - line: "9724"
+          milage: 10.373
       id: "3573a52a-26f6-4430-aafd-d050f83740ef"
-      type: "detector"
+      class: "detector"
       name: "G202A"
       network_ref: "XPD_2"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.373
+        - line: "9724"
+          milage: 10.373
       id: "b496cd79-5b95-4eb5-a028-78d8ecac3e12"
-      type: "detector"
+      class: "detector"
       name: "G401A"
       network_ref: "XPD_1"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.375
+        - line: "9724"
+          milage: 10.375
       id: "f29ccb46-651b-4cee-ad9a-a76011cb00c0"
-      type: "sign"
+      class: "sign"
       name: "202Y"
       network_ref: "XPD_2"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.375
+        - line: "9724"
+          milage: 10.375
       id: "eba1750e-8bfd-4633-b158-11f69f70cf4a"
-      type: "sign"
+      class: "sign"
       name: "401Y"
       network_ref: "XPD_1"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.375
+        - line: "9724"
+          milage: 10.375
       id: "140c29f2-3406-4366-be5c-91d683ba2017"
-      type: "sign"
+      class: "sign"
       name: "H2_3"
       network_ref: "XPD_2"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.375
+        - line: "9724"
+          milage: 10.375
       id: "2477d593-ced3-4cb7-b8e7-4cd12b75d0fe"
-      type: "sign"
+      class: "sign"
       name: "H1_3"
       network_ref: "XPD_1"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.434
+        - line: "9724"
+          milage: 10.434
       id: "fbe65262-c5f1-4ae9-9aea-080df9fbaebf"
-      type: "sign"
+      class: "sign"
       name: "H3_2"
       network_ref: "XPD_3"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.493
+        - line: "9724"
+          milage: 10.493
       id: "a2193577-ca8f-4b6c-8b51-115704b11b50"
-      type: "sign"
+      class: "sign"
       name: "H2_4"
       network_ref: "XPD_2"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.588
+        - line: "9724"
+          milage: 10.588
       id: "abb3dee7-682c-4a2e-af81-ba7e9a394945"
-      type: "sign"
+      class: "sign"
       name: "H1_4"
       network_ref: "XPD_1"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.454
+        - line: "9724"
+          milage: 10.454
       id: "c72286b5-297f-4ac1-b885-5944511ac734"
-      type: "sign"
+      class: "sign"
       name: "N3"
       network_ref: "XPD_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.513
+        - line: "9724"
+          milage: 10.513
       id: "94bbccb9-5bfc-474b-a5e7-bea7704077d8"
-      type: "sign"
+      class: "sign"
       name: "N2"
       network_ref: "XPD_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.608
+        - line: "9724"
+          milage: 10.608
       id: "606c2f08-3624-4623-9374-c7398320bace"
-      type: "sign"
+      class: "sign"
       name: "N1"
       network_ref: "XPD_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.513
+        - line: "9724"
+          milage: 10.513
       id: "19521a1b-6297-491a-a061-0c73062feb04"
-      type: "detector"
+      class: "detector"
       name: "G202/W5"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.608
+        - line: "9724"
+          milage: 10.608
       id: "560f05a3-8e83-4f8a-a4e2-c0cdf83dcec7"
-      type: "detector"
+      class: "detector"
       name: "G401/W6"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       specimen: "300-1"
       id: "c6c855c4-e6c4-4b97-a641-b1022b7d6195"
       pos:
-        "9724": 10.618
+        - line: "9724"
+          milage: 10.618
       name: "W5"
       network_ref: "XPD_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -1900,21 +2100,23 @@ physical:
             - "f575f64c-f620-4e4d-93c8-94dd5ae398f5"
     - base_ref: "XPD"
       pos:
-        "9724": 10.619
+        - line: "9724"
+          milage: 10.619
       id: "70c48f98-23d6-4090-816e-65e8c30e8969"
-      type: "detector"
+      class: "detector"
       name: "W5/W6"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       specimen: "500-2"
       id: "9895f886-f2f3-4762-9713-9a192cb8f253"
       pos:
-        "9724": 10.661
+        - line: "9724"
+          milage: 10.661
       name: "W6"
       network_ref: "XPD_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "right"
@@ -1928,21 +2130,23 @@ physical:
             - "ca4dc14d-d618-4ae2-84b5-4429e4f6dd3a"
     - base_ref: "XPD"
       pos:
-        "9724": 10.662
+        - line: "9724"
+          milage: 10.662
       id: "9801e51c-1c86-4ae9-9b1c-beea9f2ce841"
-      type: "detector"
+      class: "detector"
       name: "W6/W7"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       specimen: "300-1"
       id: "93500b41-bf43-446e-9d51-6ecef073b9f5"
       pos:
-        "9724": 10.664
+        - line: "9724"
+          milage: 10.664
       name: "W7"
       network_ref: "XPD_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 40.0
           id: "right"
@@ -1956,230 +2160,257 @@ physical:
             - "d32a053a-2ac9-4135-a904-7de7941860b0"
     - base_ref: "XPD"
       pos:
-        "9724": 10.78
+        - line: "9724"
+          milage: 10.78
       id: "fb15b45e-88a0-42df-ad67-575d8a003a8e"
-      type: "end"
+      class: "end"
       name: "E_Industrie"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XPD"
       pos:
-        "9724": 10.714
+        - line: "9724"
+          milage: 10.714
       id: "90ccc8bc-0d07-47a2-b4cc-5bb898d88b5d"
-      type: "detector"
+      class: "detector"
       name: "W7/G501"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.714
+        - line: "9724"
+          milage: 10.714
       id: "91ac4007-51b8-497d-ba28-b70732856aab"
-      type: "sign"
+      class: "sign"
       name: "501Y"
       network_ref: "XPD_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.914
+        - line: "9724"
+          milage: 10.914
       id: "a6da5559-38ee-4434-94b0-80fddeadc3ed"
-      type: "sign"
+      class: "sign"
       name: "Ra10_2"
       network_ref: "XPD_east"
-      class: "board"
+      kind: "board"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.914
+        - line: "9724"
+          milage: 10.914
       id: "1951d717-a151-4408-9cd5-03cc3c8fed7a"
-      type: "detector"
+      class: "detector"
       name: "G501/G601"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 11.093
+        - line: "9724"
+          milage: 11.093
       id: "2a219fea-2cf3-4320-a401-c369156a401c"
-      type: "detector"
+      class: "detector"
       name: "G601B"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 11.093
+        - line: "9724"
+          milage: 11.093
       id: "df2d72d2-2e2d-4e55-937c-ec3229be381c"
-      type: "sign"
+      class: "sign"
       name: "F"
       network_ref: "XPD_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.733
+        - line: "9724"
+          milage: 10.733
       id: "7fb67957-e5db-4a4c-b4b8-9b3b5dadb1e9"
-      type: "derailer"
+      class: "derailer"
       name: "Sp10"
       network_ref: "XPD_east"
       direction: "backward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.738
+        - line: "9724"
+          milage: 10.738
       id: "381bd4ad-c5ec-46c8-81fc-7f10a5b3a8da"
-      type: "detector"
+      class: "detector"
       name: "W7/G10"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XPD"
       pos:
-        "9724": 10.738
+        - line: "9724"
+          milage: 10.738
       id: "c074cd16-e8fd-4574-8c69-5e5d13958253"
-      type: "sign"
+      class: "sign"
       name: "310Y"
       network_ref: "XPD_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XPD"
       pos:
-        "9724": 10.454
+        - line: "9724"
+          milage: 10.454
       id: "afa409a4-4436-4f28-969c-984f5d75e908"
-      type: "detector"
+      class: "detector"
       name: "G103/W5"
       network_ref: "XPD_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "pockelsdorf_to_buelten"
       pos:
-        "9724": 14.35
+        - line: "9724"
+          milage: 14.35
       id: "5f115822-5c58-45f9-b9e0-ced2b9cd2be0"
-      type: "sign"
+      class: "sign"
       name: "47"
       network_ref: "XPD_XBU"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "pockelsdorf_to_buelten"
       pos:
-        "9724": 14.4
+        - line: "9724"
+          milage: 14.4
       id: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
-      type: "detector"
+      class: "detector"
       name: "BK47/BK48"
       network_ref: "XPD_XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "pockelsdorf_to_buelten"
       pos:
-        "9724": 14.45
+        - line: "9724"
+          milage: 14.45
       id: "0bc68652-0bdd-4b0b-a366-ded5d870a8e4"
-      type: "sign"
+      class: "sign"
       name: "48"
       network_ref: "XPD_XBU"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XBU"
       pos:
-        "9721": 31.912
+        - line: "9721"
+          milage: 31.912
       id: "1f35a368-41b6-4ff8-8fb7-a992e33ae60e"
-      type: "end"
+      class: "end"
       name: "E_XO_1"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XBU"
       pos:
-        "9721": 31.912
+        - line: "9721"
+          milage: 31.912
       id: "ff48a1b7-8ba0-4c6f-ba75-3c0ef0d0285e"
-      type: "end"
+      class: "end"
       name: "E_XO_2"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XBU"
       pos:
-        "9721": 31.912
+        - line: "9721"
+          milage: 31.912
       id: "7c4ff364-86b7-4040-b7c4-8a105f592afe"
-      type: "sign"
+      class: "sign"
       name: "39"
       network_ref: "XBU"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XBU"
       pos:
-        "9721": 31.912
+        - line: "9721"
+          milage: 31.912
       id: "aa57a28f-74dc-45eb-ba8d-dc64387fd698"
-      type: "sign"
+      class: "sign"
       name: "19"
       network_ref: "XBU"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XBU"
       pos:
-        "9721": 31.912
+        - line: "9721"
+          milage: 31.912
       id: "5daa7069-572a-48a5-924c-76ec4da497ff"
-      type: "detector"
+      class: "detector"
       name: "G101A"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9721": 31.912
+        - line: "9721"
+          milage: 31.912
       id: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
-      type: "detector"
+      class: "detector"
       name: "G102A"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9721": 32.173
+        - line: "9721"
+          milage: 32.173
       id: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
-      type: "detector"
+      class: "detector"
       name: "G101/W103"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9721": 32.023
+        - line: "9721"
+          milage: 32.023
       id: "a53e0380-0c83-4572-9931-e040c80f828d"
-      type: "detector"
+      class: "detector"
       name: "G102/W101"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9724": 18.712
+        - line: "9724"
+          milage: 18.712
       id: "02cd9644-102e-4534-abb3-f7f714293054"
-      type: "sign"
+      class: "sign"
       name: "49"
       network_ref: "XBU"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XBU"
       pos:
-        "9724": 18.712
+        - line: "9724"
+          milage: 18.712
       id: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
-      type: "detector"
+      class: "detector"
       name: "G103A"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9724": 18.823
+        - line: "9724"
+          milage: 18.823
       id: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
-      type: "detector"
+      class: "detector"
       name: "G103/W101"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       specimen: "760-1"
       id: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
       pos:
-        "9724": 18.888
-        "9721": 32.088
+        - line: "9724"
+          milage: 18.888
+        - line: "9721"
+          milage: 32.088
       name: "W101"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 80.0
           id: "right"
@@ -2193,21 +2424,24 @@ physical:
             - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
     - base_ref: "XBU"
       pos:
-        "9724": 18.9
-        "9721": 32.1
+        - line: "9724"
+          milage: 18.9
+        - line: "9721"
+          milage: 32.1
       id: "8b1888d9-e216-4252-a9ae-f737342ad002"
-      type: "detector"
+      class: "detector"
       name: "W101/W102"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       specimen: "760-1"
       id: "34366cf4-7867-4e57-abce-f93b573dd3ed"
       pos:
-        "9721": 32.112
+        - line: "9721"
+          milage: 32.112
       name: "W102"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 80.0
           id: "right"
@@ -2221,20 +2455,22 @@ physical:
             - "66d5fd8c-9ca0-4984-8dd2-97ac2f4e3941"
     - base_ref: "XBU"
       pos:
-        "9721": 32.177
+        - line: "9721"
+          milage: 32.177
       id: "52f61012-e921-4ad5-bc16-8895c6b9a043"
-      type: "detector"
+      class: "detector"
       name: "W102/W103"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       specimen: "760-1"
       id: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
       pos:
-        "9721": 32.238
+        - line: "9721"
+          milage: 32.238
       name: "W103"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 80.0
           id: "right"
@@ -2248,156 +2484,173 @@ physical:
             - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
     - base_ref: "XBU"
       pos:
-        "9721": 32.251
+        - line: "9721"
+          milage: 32.251
       id: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
-      type: "detector"
+      class: "detector"
       name: "W103/G201"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9721": 32.177
+        - line: "9721"
+          milage: 32.177
       id: "db840367-179a-4087-9d0f-574924793914"
-      type: "detector"
+      class: "detector"
       name: "W102/G202"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9721": 32.451
+        - line: "9721"
+          milage: 32.451
       id: "769ef354-f159-40db-80e5-00cff4d7ad0d"
-      type: "detector"
+      class: "detector"
       name: "G201B"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9721": 32.451
+        - line: "9721"
+          milage: 32.451
       id: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
-      type: "detector"
+      class: "detector"
       name: "G202B"
       network_ref: "XBU"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XBU"
       pos:
-        "9721": 32.451
+        - line: "9721"
+          milage: 32.451
       id: "971d9e83-f492-45f3-a7e3-4457e46fc8f7"
-      type: "sign"
+      class: "sign"
       name: "20"
       network_ref: "XBU"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XBU"
       pos:
-        "9721": 32.451
+        - line: "9721"
+          milage: 32.451
       id: "06058d21-d0b1-4926-b60a-0ef82414cbac"
-      type: "sign"
+      class: "sign"
       name: "30"
       network_ref: "XBU"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 34.829
+        - line: "9721"
+          milage: 34.829
       id: "e68d3951-4d0c-4606-b7d4-fcd63207c2fb"
-      type: "sign"
+      class: "sign"
       name: "A"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 34.829
+        - line: "9721"
+          milage: 34.829
       id: "7cf06e6b-a398-4202-ad15-164d800cc779"
-      type: "sign"
+      class: "sign"
       name: "AA"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 34.829
+        - line: "9721"
+          milage: 34.829
       id: "8a3913bc-f8db-4d3f-8f37-c0c7948a09c6"
-      type: "detector"
+      class: "detector"
       name: "G102A"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 34.829
+        - line: "9721"
+          milage: 34.829
       id: "d2d7f7d4-1c43-4942-93d8-9d65894ca795"
-      type: "detector"
+      class: "detector"
       name: "G103B"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 34.986
+        - line: "9721"
+          milage: 34.986
       id: "49690e1e-1057-479d-9481-d4c0f169ac83"
-      type: "sign"
+      class: "sign"
       name: "Ra10_1"
       network_ref: "XSZ_west"
-      class: "board"
+      kind: "board"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 34.986
+        - line: "9721"
+          milage: 34.986
       id: "767f6ef8-364b-4035-af25-e94e80ca84c1"
-      type: "detector"
+      class: "detector"
       name: "G102/G202"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.069
+        - line: "9721"
+          milage: 35.069
       id: "6e0c3501-a7a8-4947-8f44-76d9ebc9bcd5"
-      type: "sign"
+      class: "sign"
       name: "203X"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.069
+        - line: "9721"
+          milage: 35.069
       id: "c9f939f9-897a-42b7-b3ba-ae870fa6e539"
-      type: "detector"
+      class: "detector"
       name: "G103/W1"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.069
+        - line: "9721"
+          milage: 35.069
       id: "ffb7d91a-45c4-4bf6-a3b8-df0be7f237fb"
-      type: "sign"
+      class: "sign"
       name: "302X"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.069
+        - line: "9721"
+          milage: 35.069
       id: "7da89c5f-4ae7-4c69-bc4c-aab16dfd0044"
-      type: "detector"
+      class: "detector"
       name: "G202/W2"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
       pos:
-        "9721": 35.079
+        - line: "9721"
+          milage: 35.079
       name: "W1"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "right"
@@ -2411,30 +2664,33 @@ physical:
             - "fb0f68b5-7d08-436c-ba27-360552dc5d02"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.12
+        - line: "9721"
+          milage: 35.12
       id: "57cdbb94-30f4-41bc-ba9a-0f1e84e84fed"
-      type: "detector"
+      class: "detector"
       name: "W1/W2"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.13
+        - line: "9721"
+          milage: 35.13
       id: "2c34cdc4-52cd-4402-bc5b-d3687b174beb"
-      type: "detector"
+      class: "detector"
       name: "W1/W4"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
       pos:
-        "9721": 35.174
+        - line: "9721"
+          milage: 35.174
       name: "W2"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "right"
@@ -2450,10 +2706,11 @@ physical:
       specimen: "500-2"
       id: "bf53206b-2132-4d50-9bb6-37a488318692"
       pos:
-        "9721": 35.183
+        - line: "9721"
+          milage: 35.183
       name: "W3"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -2467,30 +2724,33 @@ physical:
             - "8943c5dd-fe5e-4db6-87a2-8f6469b29823"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.23
+        - line: "9721"
+          milage: 35.23
       id: "eece4636-b7ab-42ad-9745-47aadd63746a"
-      type: "detector"
+      class: "detector"
       name: "W2/W4"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.23
+        - line: "9721"
+          milage: 35.23
       id: "f616b4e1-c549-49db-896f-2e7de061b28e"
-      type: "detector"
+      class: "detector"
       name: "W2/W8"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "bb074bbe-1046-4532-9dbd-a645c34789eb"
       pos:
-        "9721": 35.316
+        - line: "9721"
+          milage: 35.316
       name: "W4"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -2504,21 +2764,23 @@ physical:
             - "01a068a3-5e53-48ba-a4c3-04abe6bd03fc"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.32
+        - line: "9721"
+          milage: 35.32
       id: "8b414b13-4604-4a36-837e-bd0373a6a7c4"
-      type: "detector"
+      class: "detector"
       name: "W4/W5"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
       pos:
-        "9721": 35.411
+        - line: "9721"
+          milage: 35.411
       name: "W8"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 160.0
           id: "left"
@@ -2532,88 +2794,98 @@ physical:
             - "6b44d057-5951-4535-84c2-8001d093f272"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.529
+        - line: "9721"
+          milage: 35.529
       id: "642d19e1-b327-4257-a705-38f5f7653b05"
-      type: "detector"
+      class: "detector"
       name: "W8/G101"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.529
+        - line: "9721"
+          milage: 35.529
       id: "4ff5ec23-4517-4ed9-9490-88462395e929"
-      type: "sign"
+      class: "sign"
       name: "P1"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.529
+        - line: "9721"
+          milage: 35.529
       id: "966bfedb-27cf-4692-9e14-eb7bd7c686cf"
-      type: "detector"
+      class: "detector"
       name: "W8/G302"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.529
+        - line: "9721"
+          milage: 35.529
       id: "fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b"
-      type: "sign"
+      class: "sign"
       name: "P2"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.549
+        - line: "9721"
+          milage: 35.549
       id: "a756cd47-5f55-4fe5-a311-dd83c67a1a2a"
-      type: "sign"
+      class: "sign"
       name: "H1_1"
       network_ref: "XSZ_1"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.549
+        - line: "9721"
+          milage: 35.549
       id: "beb565bc-b1d2-483a-a2c9-2ebaad59f995"
-      type: "sign"
+      class: "sign"
       name: "H2_1"
       network_ref: "XSZ_2"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.39
+        - line: "9721"
+          milage: 35.39
       id: "c46d4118-0d6a-4fe3-a5b3-65c64a1bae2e"
-      type: "end"
+      class: "end"
       name: "E41"
-      class: "buffer stop"
+      kind: "buffer stop"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.453
+        - line: "9721"
+          milage: 35.453
       id: "9242d5d0-9329-4cbd-aec3-3a0992948a6c"
-      type: "sign"
+      class: "sign"
       name: "41X"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.453
+        - line: "9721"
+          milage: 35.453
       id: "d0894bc4-700c-407b-bc28-c1ea98018cbc"
-      type: "detector"
+      class: "detector"
       name: "G41/W6"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.458
+        - line: "9721"
+          milage: 35.458
       id: "e1ae967e-ab5b-4af6-b406-fb42437ce938"
-      type: "derailer"
+      class: "derailer"
       name: "Sp41"
       network_ref: "XSZ_west"
       direction: "forward"
@@ -2621,10 +2893,11 @@ physical:
       specimen: "500-1"
       id: "085078f4-e164-48d2-bfa5-f48d5f88728f"
       pos:
-        "9721": 35.422
+        - line: "9721"
+          milage: 35.422
       name: "W5"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -2638,21 +2911,23 @@ physical:
             - "389bd3b6-9ffc-4993-b84d-400c7970ab68"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.465
+        - line: "9721"
+          milage: 35.465
       id: "5a4c21fd-26c1-4abe-bdec-eec5fa41bf67"
-      type: "detector"
+      class: "detector"
       name: "W5/W6"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "190-2"
       id: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
       pos:
-        "9721": 35.495
+        - line: "9721"
+          milage: 35.495
       name: "W6"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 90.0
           id: "left"
@@ -2666,21 +2941,23 @@ physical:
             - "378c8aa1-93cf-4b70-8f4c-37ec77d19a32"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.5
+        - line: "9721"
+          milage: 35.5
       id: "1de71d78-a163-4cf7-b01b-0ded012a7583"
-      type: "detector"
+      class: "detector"
       name: "W6/W7"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "190-1"
       id: "cff292e1-3de4-404d-a471-7bceb80fddcb"
       pos:
-        "9721": 35.502
+        - line: "9721"
+          milage: 35.502
       name: "W7"
       network_ref: "XSZ_west"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 40.0
           id: "left"
@@ -2694,210 +2971,233 @@ physical:
             - "6389d7e2-8bb9-4502-967a-2e4ac0e7d9cd"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.543
+        - line: "9721"
+          milage: 35.543
       id: "0e72eb6e-6cd2-443a-a6d6-d84196fbc065"
-      type: "detector"
+      class: "detector"
       name: "W7/G105"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.543
+        - line: "9721"
+          milage: 35.543
       id: "19713f62-e216-46e0-b35e-475666a72761"
-      type: "sign"
+      class: "sign"
       name: "105Y"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.58
+        - line: "9721"
+          milage: 35.58
       id: "14d754b6-43b9-4f1f-96d8-f2a1369e2d75"
-      type: "detector"
+      class: "detector"
       name: "W7/G104"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.58
+        - line: "9721"
+          milage: 35.58
       id: "da21e9b4-84c6-4440-8a62-fdf22fb420ba"
-      type: "sign"
+      class: "sign"
       name: "P4"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.58
+        - line: "9721"
+          milage: 35.58
       id: "10a84137-a0f1-4d18-a237-e4ce8d965add"
-      type: "detector"
+      class: "detector"
       name: "W5/G203"
       network_ref: "XSZ_west"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.58
+        - line: "9721"
+          milage: 35.58
       id: "72c19288-28bc-4eca-a4c2-4c604b6dd57a"
-      type: "sign"
+      class: "sign"
       name: "P3"
       network_ref: "XSZ_west"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.6
+        - line: "9721"
+          milage: 35.6
       id: "fd296bfb-e1e8-4611-a4b6-a929155fc3dc"
-      type: "sign"
+      class: "sign"
       name: "H4_1"
       network_ref: "XSZ_4"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 35.6
+        - line: "9721"
+          milage: 35.6
       id: "fc4fe5af-897a-414b-9757-53d4d100197a"
-      type: "sign"
+      class: "sign"
       name: "H3_1"
       network_ref: "XSZ_3"
-      class: "berth"
+      kind: "berth"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.309
+        - line: "9721"
+          milage: 36.309
       id: "288fb89d-3db0-45bc-8fc5-179e33168300"
-      type: "sign"
+      class: "sign"
       name: "H4_2"
       network_ref: "XSZ_4"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.309
+        - line: "9721"
+          milage: 36.309
       id: "b0d18e57-8160-4169-ad48-129aab74bcd5"
-      type: "sign"
+      class: "sign"
       name: "H3_2"
       network_ref: "XSZ_3"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.309
+        - line: "9721"
+          milage: 36.309
       id: "7907115d-238e-432a-a457-e8e00f977ee0"
-      type: "sign"
+      class: "sign"
       name: "H2_2"
       network_ref: "XSZ_2"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.309
+        - line: "9721"
+          milage: 36.309
       id: "ce1fdb35-0110-4f80-9315-520362760f20"
-      type: "sign"
+      class: "sign"
       name: "H1_2"
       network_ref: "XSZ_1"
-      class: "berth"
+      kind: "berth"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "c08f7e18-ad76-411c-8bbb-560ca591c50f"
-      type: "sign"
+      class: "sign"
       name: "N4"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "24295eb7-2335-4ddf-94d2-f33e9f8bf96f"
-      type: "sign"
+      class: "sign"
       name: "N3"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "89d3d5aa-716b-4b98-92c7-bff39ed5f91a"
-      type: "sign"
+      class: "sign"
       name: "N2"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "9e66fce3-42b8-4edb-8aa2-be4f4fcbcb38"
-      type: "sign"
+      class: "sign"
       name: "N1"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "7b6dbc79-92ff-4eb1-b306-9d2ac385678c"
-      type: "detector"
+      class: "detector"
       name: "G104/W11"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "9e8ede47-89c6-4d09-a013-3e2f38b1685b"
-      type: "detector"
+      class: "detector"
       name: "G203/W12"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "194ec252-6df4-4778-afbd-9d2722445086"
-      type: "detector"
+      class: "detector"
       name: "G302/W10"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.329
+        - line: "9721"
+          milage: 36.329
       id: "4b43cc40-6233-4425-9881-12d960fa94d9"
-      type: "detector"
+      class: "detector"
       name: "G101/W9"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.405
+        - line: "9721"
+          milage: 36.405
       id: "de01a8a2-b464-4e5f-a7d4-a2923949b0da"
-      type: "sign"
+      class: "sign"
       name: "105X"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.405
+        - line: "9721"
+          milage: 36.405
       id: "b32b9392-3d53-4de9-941f-113a53bd1f7a"
-      type: "detector"
+      class: "detector"
       name: "G105/W11"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "190-1"
       id: "7b81abd3-5278-4387-9816-911d808db0bb"
       pos:
-        "9721": 36.446
+        - line: "9721"
+          milage: 36.446
       name: "W11"
       network_ref: "XSZ_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 90.0
           id: "left"
@@ -2911,21 +3211,23 @@ physical:
             - "d7092dcb-2669-41c6-aa27-f4c9fca2ce0f"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.485
+        - line: "9721"
+          milage: 36.485
       id: "287a180c-a696-45a9-b82e-8571757ae8a6"
-      type: "detector"
+      class: "detector"
       name: "W11/W12"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "7e17901c-361f-4c45-a536-191182631ce8"
       pos:
-        "9721": 36.526
+        - line: "9721"
+          milage: 36.526
       name: "W12"
       network_ref: "XSZ_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "right"
@@ -2939,21 +3241,23 @@ physical:
             - "896afbda-b1ce-4aef-9e42-f723bfac8ee3"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.595
+        - line: "9721"
+          milage: 36.595
       id: "390a7b2d-c975-41ef-a855-2ff9e7542a82"
-      type: "detector"
+      class: "detector"
       name: "W12/W13"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "190-2"
       id: "854ecaf5-4c86-4770-949c-e620514ed495"
       pos:
-        "9721": 36.383
+        - line: "9721"
+          milage: 36.383
       name: "W9"
       network_ref: "XSZ_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 40.0
           id: "right"
@@ -2967,54 +3271,60 @@ physical:
             - "22048935-a4a9-4090-b00d-a66461bc8303"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.424
+        - line: "9721"
+          milage: 36.424
       id: "3b71eb90-399c-4565-992e-bc8b2ce2afca"
-      type: "derailer"
+      class: "derailer"
       name: "Sp11"
       network_ref: "XSZ_east"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.429
+        - line: "9721"
+          milage: 36.429
       id: "d3253e21-e623-434e-8a57-6198da0246cb"
-      type: "detector"
+      class: "detector"
       name: "W9/G11"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.429
+        - line: "9721"
+          milage: 36.429
       id: "e8026d1c-90e9-432e-bea2-ec720f51e50a"
-      type: "sign"
+      class: "sign"
       name: "11Y"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.53
+        - line: "9721"
+          milage: 36.53
       id: "036ff4b0-c027-4b08-abf5-905c58331ea6"
-      type: "end"
+      class: "end"
       name: "E11"
-      class: "buffer stop"
+      kind: "buffer stop"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.444
+        - line: "9721"
+          milage: 36.444
       id: "a0a8b218-babb-49d0-aa39-09c308bd1911"
-      type: "detector"
+      class: "detector"
       name: "W9/W10"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
       pos:
-        "9721": 36.519
+        - line: "9721"
+          milage: 36.519
       name: "W10"
       network_ref: "XSZ_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "left"
@@ -3028,21 +3338,23 @@ physical:
             - "3f8bb6b6-5e80-4745-b94b-cede59f3c19e"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.68
+        - line: "9721"
+          milage: 36.68
       id: "fae99c78-2dc7-475c-8dd1-48a51d4646b4"
-      type: "detector"
+      class: "detector"
       name: "W10/W14"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
       pos:
-        "9721": 36.602
+        - line: "9721"
+          milage: 36.602
       name: "W13"
       network_ref: "XSZ_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 60.0
           id: "right"
@@ -3056,21 +3368,23 @@ physical:
             - "f611ac36-81de-4f92-b6a1-42b6d96c199f"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.67
+        - line: "9721"
+          milage: 36.67
       id: "d7f2738e-a7ec-4659-9019-d96e0794c7bf"
-      type: "detector"
+      class: "detector"
       name: "W13/W14"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       specimen: "500-2"
       id: "6f73d007-0451-4d6b-9323-897ff43a4eac"
       pos:
-        "9721": 36.734
+        - line: "9721"
+          milage: 36.734
       name: "W14"
       network_ref: "XSZ_east"
-      type: "branching"
+      class: "branching"
       branches:
         - speed: 160.0
           id: "left"
@@ -3084,108 +3398,120 @@ physical:
             - "e595119f-96d5-422d-b45b-d390877a0848"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.744
+        - line: "9721"
+          milage: 36.744
       id: "2b1f1556-9b4e-4f67-93cf-5a47e0da0f6e"
-      type: "detector"
+      class: "detector"
       name: "W13/G303"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.744
+        - line: "9721"
+          milage: 36.744
       id: "aaca17e4-5c0a-466a-9e6e-1c736d77b684"
-      type: "sign"
+      class: "sign"
       name: "503Y"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.744
+        - line: "9721"
+          milage: 36.744
       id: "82c133ef-4a05-43d7-be08-66a867025ee2"
-      type: "detector"
+      class: "detector"
       name: "W14/G402"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.744
+        - line: "9721"
+          milage: 36.744
       id: "2eafbe28-aac1-4f39-963f-aae39a60f23c"
-      type: "sign"
+      class: "sign"
       name: "602Y"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.759
+        - line: "9721"
+          milage: 36.759
       id: "92f84da4-fd6d-4362-8b59-3573eee5b627"
-      type: "sign"
+      class: "sign"
       name: "Ra10_2"
       network_ref: "XSZ_east"
-      class: "board"
+      kind: "board"
       direction: "forward"
     - base_ref: "XSZ"
       pos:
-        "9721": 36.759
+        - line: "9721"
+          milage: 36.759
       id: "7d0e31aa-9372-4142-9d21-f4d911be6046"
-      type: "detector"
+      class: "detector"
       name: "G303/G403"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 37.029
+        - line: "9721"
+          milage: 37.029
       id: "8bf4d964-2e52-4a34-bb60-a908bc92c8ba"
-      type: "detector"
+      class: "detector"
       name: "G403A"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 37.029
+        - line: "9721"
+          milage: 37.029
       id: "e04066a1-5044-4d5b-9782-471f4c05ca51"
-      type: "sign"
+      class: "sign"
       name: "F"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 37.029
+        - line: "9721"
+          milage: 37.029
       id: "c9e0519f-3f3f-40ea-ac76-0d00f67dceff"
-      type: "detector"
+      class: "detector"
       name: "G402B"
       network_ref: "XSZ_east"
-      class: "clearing point"
+      kind: "clearing point"
       direction: "bidirectional"
     - base_ref: "XSZ"
       pos:
-        "9721": 37.029
+        - line: "9721"
+          milage: 37.029
       id: "f2409ff0-de4d-42ed-9fbd-4953a589c709"
-      type: "sign"
+      class: "sign"
       name: "FF"
       network_ref: "XSZ_east"
-      class: "signal"
+      kind: "signal"
       direction: "backward"
     - base_ref: "XSZ"
       pos:
-        "9721": 37.029
+        - line: "9721"
+          milage: 37.029
       id: "69941db8-7a21-4eba-b8c6-8cb368e78edb"
-      type: "end"
+      class: "end"
       name: "E_XSBG_1"
-      class: "continuing"
+      kind: "continuing"
     - base_ref: "XSZ"
       pos:
-        "9721": 37.029
+        - line: "9721"
+          milage: 37.029
       id: "68788fa5-14d1-49c9-b67c-4b6d63c33045"
-      type: "end"
+      class: "end"
       name: "E_XSBG_2"
-      class: "continuing"
+      kind: "continuing"
   tracksections:
     - base_ref: "XR"
       id: "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"

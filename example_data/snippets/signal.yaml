@@ -4,19 +4,19 @@ physical:
   id: "signal"
   elements:
     - id: E1
-      type: end
+      class: end
       pos:
         "line0": 0.000
     - id: S1
-      type: sign
-      class: signal
+      class: sign
+      kind: signal
       direction: forward
       overlaps: #todo
       routes: #todo
       pos:
         "line0": 0.250
     - id: E2
-      type: end
+      class: end
       pos:
         "line0": 0.500
   tracksections:

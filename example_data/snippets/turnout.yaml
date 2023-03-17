@@ -4,11 +4,11 @@ physical:
   id: "turnout"
   elements:
     - id: E1
-      type: end
+      class: end
       pos:
         "line0": 0.000
     - id: W1
-      type: branching
+      class: branching
       branches:
         - id: straight
           path: [a,b]
@@ -20,11 +20,11 @@ physical:
         "line0": 0.250
       specimen: 500-1 # kind in katalog
     - id: E2
-      type: end
+      class: end
       pos:
         "line0": 0.500
     - id: E3
-      type: end
+      class: end
       pos:
         "line0": 0.500
   tracksections:

@@ -4,15 +4,15 @@ physical:
   id: "double slip turnout"
   elements:
     - id: E1
-      type: end
+      class: end
       pos:
         "line0": 0.000
     - id: E2
-      type: end
+      class: end
       pos:
         "line0": 0.000
     - id: W1
-      type: branching
+      class: branching
       branches:
         - id: straight1
           path: [a,d]
@@ -29,11 +29,11 @@ physical:
       pos:
         "line0": 0.250
     - id: E3
-      type: end
+      class: end
       pos:
         "line0": 0.500
     - id: E4
-      type: end
+      class: end
       pos:
         "line0": 0.500
   tracksections:

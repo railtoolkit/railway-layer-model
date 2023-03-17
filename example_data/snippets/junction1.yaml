@@ -7,7 +7,7 @@ network:
       in:
         - 1
         - 2
-      type: "junction"
+      class: "junction"
   name: "junction case 1"
   connections: ~
   id: "network"
@@ -18,11 +18,11 @@ physical:
     - id: "1"
       pos:
         "line0": 0.0
-      type: "end"
+      class: "end"
     - id: "2"
       pos:
         "line0": 0.0
-      type: "end"
+      class: "end"
     - branches:
         - id: "branch1"
           path:
@@ -33,7 +33,7 @@ physical:
             - "a"
             - "d"
       id: "W1"
-      type: "branching"
+      class: "branching"
       pos:
         "line0": 0.2
     - branches:
@@ -46,7 +46,7 @@ physical:
             - "e"
             - "c"
       id: "W2"
-      type: "branching"
+      class: "branching"
       pos:
         "line0": 0.34
     - branches:
@@ -59,7 +59,7 @@ physical:
             - "f"
             - "g"
       id: "W3"
-      type: "branching"
+      class: "branching"
       pos:
         "line0": 0.25
     - branches:
@@ -72,17 +72,17 @@ physical:
             - "g"
             - "e"
       id: "W4"
-      type: "branching"
+      class: "branching"
       pos:
         "line0": 0.3
     - id: "3"
       pos:
         "line0": 0.5
-      type: "end"
+      class: "end"
     - id: "4"
       pos:
         "line0": 0.5
-      type: "end"
+      class: "end"
   tracksections:
     - length: 0.2
       source: "1"

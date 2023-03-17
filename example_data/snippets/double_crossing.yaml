@@ -4,19 +4,19 @@ physical:
   id: "double crossing"
   elements:
     - id: E1
-      type: end
+      class: end
       pos:
         "line0": 0.000
     - id: E2
-      type: end
+      class: end
       pos:
         "line0": 0.000
     - id: E3
-      type: end
+      class: end
       pos:
         "line0": 0.000
     - id: K1
-      type: branching
+      class: branching
       branches:
         - id: straight1
           path: [b,g]
@@ -27,7 +27,7 @@ physical:
       pos:
         "line0": 0.200
     - id: K2
-      type: branching
+      class: branching
       branches:
         - id: straight1
           path: [a,f]
@@ -38,15 +38,15 @@ physical:
       pos:
         "line0": 0.300
     - id: E4
-      type: end
+      class: end
       pos:
         "line0": 0.500
     - id: E5
-      type: end
+      class: end
       pos:
         "line0": 0.500
     - id: E6
-      type: end
+      class: end
       pos:
         "line0": 0.500
   tracksections:
