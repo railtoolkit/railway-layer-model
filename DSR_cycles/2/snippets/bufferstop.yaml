@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+physical:
+  id: "bufferstop"
+  elements:
+    - id: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
+      name: "E51"
+      base_ref: "XR"
+      class: "end"
+      kind: "buffer stop"
+      pos:
+        - line: "9721"
+          milage: 16.67

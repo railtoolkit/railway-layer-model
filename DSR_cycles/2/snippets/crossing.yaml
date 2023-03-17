@@ -1,0 +1,49 @@
+%YAML 1.2
+---
+physical:
+  id: "crossing"
+  elements:
+    - id: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      name: "K16"
+      base_ref: "XR"
+      class: "branching"
+      kind: "diamond crossing"
+      branches:
+        - name: "straight"
+          path:
+            - "c446df42-516e-4cbd-8897-bf242bac1e4d"
+            - "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
+          speed: .inf
+        - name: "straight2"
+          path:
+            - "2db166ca-7913-4b3a-97d5-ab981cc34209"
+            - "8337b3a5-29c2-441d-9232-ebdc8e14af07"
+          speed: .inf
+      pos:
+        - line: "9721"
+          milage: 16.785
+  tracksections:
+    - id: "2db166ca-7913-4b3a-97d5-ab981cc34209"
+      length: 0.015
+      name: "K16_1"
+      base_ref: "XR"
+      source: "dd64948a-2423-451f-87bb-fc541735aad8"
+      target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+    - id: "c446df42-516e-4cbd-8897-bf242bac1e4d"
+      length: 0.015
+      name: "K16_2"
+      base_ref: "XR"
+      source: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
+      target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+    - id: "8337b3a5-29c2-441d-9232-ebdc8e14af07"
+      length: 0.025
+      name: "K16_3"
+      base_ref: "XR"
+      source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      target: "3a00ba63-ff25-4720-be64-1f08d329a31b"
+    - id: "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
+      length: 0.015
+      name: "K16_4"
+      base_ref: "XR"
+      source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      target: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"

@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+physical:
+  id: "derailer"
+  elements:
+    - id: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
+      name: "Sp51"
+      base_ref: "XR"
+      class: "trap"
+      kind: "derailer"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 16.607

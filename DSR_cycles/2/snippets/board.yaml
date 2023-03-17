@@ -1,0 +1,16 @@
+%YAML 1.2
+---
+physical:
+  id: "signal"
+  elements:
+    - id: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
+      name: "Ra10_3"
+      base_ref: "XR"
+      class: "sign"
+      kind: "board"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 17.26
+        - line: "9724"
+          milage: 1.521

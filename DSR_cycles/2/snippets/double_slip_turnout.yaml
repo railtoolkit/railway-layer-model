@@ -1,0 +1,61 @@
+%YAML 1.2
+---
+physical:
+  id: "double slip turnout"
+  elements:
+    - id: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      name: "W13"
+      base_ref: "XR"
+      class: "branching"
+      kind: "slip turnout"
+      branches:
+        - name: "straight"
+          path:
+            - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+            - "6125547d-9d2d-4086-8898-16114f058550"
+          speed: .inf
+        - name: "left"
+          path:
+            - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+            - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+          speed: 60
+        - name: "right"
+          path:
+            - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+            - "6125547d-9d2d-4086-8898-16114f058550"
+          speed: 60
+        - name: "straight2"
+          path:
+            - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+            - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+          speed: .inf
+      pos:
+        - line: "9721"
+          milage: 16.63
+        - line: "9724"
+          milage: 0.891
+  tracksections:
+    - length: 0.038
+      name: "W13_1"
+      base_ref: "XR"
+      source: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
+      id: "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+      target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+    - length: 0.03
+      name: "W13_2"
+      base_ref: "XR"
+      source: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+      id: "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+      target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+    - length: 0.036
+      name: "W13_3"
+      base_ref: "XR"
+      source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      id: "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+      target: "712f1424-b556-4758-9ac6-c0cb328d7705"
+    - length: 0.033
+      name: "W13_4"
+      base_ref: "XR"
+      source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      id: "6125547d-9d2d-4086-8898-16114f058550"
+      target: "70122a48-8078-496c-943b-8f1e781dbf64"

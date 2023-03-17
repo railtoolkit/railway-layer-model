@@ -1,0 +1,13 @@
+%YAML 1.2
+---
+physical:
+  id: "track ending"
+  elements:
+    - id: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
+      name: "E_XOG_2"
+      base_ref: "XR"
+      class: "end"
+      kind: "continuing"
+      pos:
+        - line: "9721"
+          milage: 17.429

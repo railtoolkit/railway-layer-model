@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+physical:
+  id: "clearing point"
+  name: "clearing point snippet"
+  elements:
+    - id: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+      name: "G105/W12"
+      base_ref: "XR"
+      class: "detector"
+      kind: "clearing point"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.506

@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+physical:
+  id: "turnout"
+  elements:
+    - id: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      name: "W12"
+      base_ref: "XR"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - name: "straight"
+          path:
+            - "2501d609-0f92-4918-8442-b23df762b366"
+            - "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
+          speed: .inf
+        - name: "left"
+          path:
+            - "2501d609-0f92-4918-8442-b23df762b366"
+            - "0f107da6-f8cb-4868-b686-1c053336b1d1"
+          speed: 40
+      pos:
+        - line: "9721"
+          milage: 16.562
+      specimen: 190-2
+  tracksections:
+    - length: 0.056
+      name: "W12_1"
+      base_ref: "XR"
+      source: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+      id: "2501d609-0f92-4918-8442-b23df762b366"
+      target: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+    - length: 0.038
+      name: "W12_3"
+      base_ref: "XR"
+      source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      id: "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
+      target: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+    - length: 0.045
+      name: "W12_2"
+      base_ref: "XR"
+      source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      id: "0f107da6-f8cb-4868-b686-1c053336b1d1"
+      target: "6ac95844-b735-4ab1-aa93-c06c5946db4a"

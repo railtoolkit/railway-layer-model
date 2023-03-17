@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+physical:
+  name: "test track"
+  id: t_1
+  elements:
+    - id: "de3e722c-a217-4257-b868-0ca6bbc6310c"
+      name: "H1_2"
+      class: "berth"
+      kind: "end platform"
+      base_ref: "XR"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.683

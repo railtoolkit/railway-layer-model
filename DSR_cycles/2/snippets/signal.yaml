@@ -1,0 +1,14 @@
+%YAML 1.2
+---
+physical:
+  id: "signal"
+  elements:
+    - id: "cfb9c041-df5f-42ff-96e4-8051299467cc"
+      name: "N1"
+      base_ref: "XR"
+      class: "sign"
+      kind: "signal"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.703
