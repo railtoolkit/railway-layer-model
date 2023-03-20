@@ -19,61 +19,61 @@ base:
       plot_coord: [0.0,0.0]
       pos:
         - line: "9721"
-          milage: 9.1
+          mileage: 9.1
     - id: XR
       name: Rebenau
       plot_coord: [2.0,0.0]
       pos:
         - line: "9721"
-          milage: 16.3
+          mileage: 16.3
         - line: "9724"
-          milage: 0.561
+          mileage: 0.561
     - id: XOG
       name: Okerbach Gbf
       plot_coord: [4.5,-0.5]
       pos:
         - line: "9721"
-          milage: 26.3
+          mileage: 26.3
     - id: XO
       name: Okerbach Pbf
       plot_coord: [5.5,-0.5]
       pos:
         - line: "9721"
-          milage: 27.2
+          mileage: 27.2
     - id: XBU
       name: Abzweig Bülten
       plot_coord: [8.0,0.0]
       pos:
         - line: "9721"
-          milage: 32.1
+          mileage: 32.1
         - line: "9724"
-          milage: 18.9
+          mileage: 18.9
     - id: XSZ
       name: Schleinitz
       plot_coord: [10.0,0.0]
       pos:
         - line: "9721"
-          milage: 36.0
+          mileage: 36.0
     - id: XSBG
       name: Schlossberg
       plot_coord: [13.0,0.0]
       pos:
         - line: "9721"
-          milage: 42.8
+          mileage: 42.8
     - id: XM
       name: Mittelstadt
       plot_coord: [2.0,1.0]
       pos:
         - line: "9344"
-          milage: 5.5
+          mileage: 5.5
     - id: XPD
       name: Pockelsdorf
       plot_coord: [5.0,0.5]
       pos:
         - line: "9724"
-          milage: 9.8
+          mileage: 9.8
         - line: "9344"
-          milage: 9.7
+          mileage: 9.7
   relations:
     # Wenden Schlossberg via Okerbach (9721)
     - id: "wenden_to_rebenau"

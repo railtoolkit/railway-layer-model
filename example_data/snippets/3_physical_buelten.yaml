@@ -152,7 +152,7 @@ physical:
       id: "1f35a368-41b6-4ff8-8fb7-a992e33ae60e"
       pos:
         - line: "9721"
-          milage: 31.912
+          mileage: 31.912
       type: "end"
     - name: "E_XO_2"
       base_ref: "XBU"
@@ -160,7 +160,7 @@ physical:
       id: "ff48a1b7-8ba0-4c6f-ba75-3c0ef0d0285e"
       pos:
         - line: "9721"
-          milage: 31.912
+          mileage: 31.912
       type: "end"
     - name: "39"
       base_ref: "XBU"
@@ -170,7 +170,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 31.912
+          mileage: 31.912
       type: "sign"
     - name: "19"
       base_ref: "XBU"
@@ -180,7 +180,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 31.912
+          mileage: 31.912
       type: "sign"
     - name: "G101A"
       base_ref: "XBU"
@@ -190,7 +190,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 31.912
+          mileage: 31.912
       type: "detector"
     - name: "G102A"
       base_ref: "XBU"
@@ -200,7 +200,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 31.912
+          mileage: 31.912
       type: "detector"
     - name: "G101/W103"
       base_ref: "XBU"
@@ -210,7 +210,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.173
+          mileage: 32.173
       type: "detector"
     - name: "G102/W101"
       base_ref: "XBU"
@@ -220,7 +220,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.023
+          mileage: 32.023
       type: "detector"
     - name: "49"
       base_ref: "XBU"
@@ -230,7 +230,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9724"
-          milage: 18.712
+          mileage: 18.712
       type: "sign"
     - name: "G103A"
       base_ref: "XBU"
@@ -240,7 +240,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9724"
-          milage: 18.712
+          mileage: 18.712
       type: "detector"
     - name: "G103/W101"
       base_ref: "XBU"
@@ -250,7 +250,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9724"
-          milage: 18.823
+          mileage: 18.823
       type: "detector"
     - name: "W101"
       branches:
@@ -268,9 +268,9 @@ physical:
       id: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
       pos:
         - line: "9721"
-          milage: 32.088
+          mileage: 32.088
         - line: "9724"
-          milage: 18.888
+          mileage: 18.888
       type: "branching"
       specimen: 760-1
     - name: "W101/W102"
@@ -281,9 +281,9 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.1
+          mileage: 32.1
         - line: "9724"
-          milage: 18.9
+          mileage: 18.9
       type: "detector"
     - name: "W102"
       branches:
@@ -301,7 +301,7 @@ physical:
       id: "34366cf4-7867-4e57-abce-f93b573dd3ed"
       pos:
         - line: "9721"
-          milage: 32.112
+          mileage: 32.112
       type: "branching"
       specimen: 760-1
     - name: "W102/W103"
@@ -312,7 +312,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.177
+          mileage: 32.177
       type: "detector"
     - name: "W103"
       branches:
@@ -330,7 +330,7 @@ physical:
       id: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
       pos:
         - line: "9721"
-          milage: 32.238
+          mileage: 32.238
       type: "branching"
       specimen: 760-1
     - name: "W103/G201"
@@ -341,7 +341,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.251
+          mileage: 32.251
       type: "detector"
     - name: "W102/G202"
       base_ref: "XBU"
@@ -351,7 +351,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.177
+          mileage: 32.177
       type: "detector"
     - name: "G201B"
       base_ref: "XBU"
@@ -361,7 +361,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.451
+          mileage: 32.451
       type: "detector"
     - name: "G202B"
       base_ref: "XBU"
@@ -371,7 +371,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 32.451
+          mileage: 32.451
       type: "detector"
     - name: "20"
       base_ref: "XBU"
@@ -381,7 +381,7 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 32.451
+          mileage: 32.451
       type: "sign"
     - name: "30"
       base_ref: "XBU"
@@ -391,5 +391,5 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 32.451
+          mileage: 32.451
       type: "sign"

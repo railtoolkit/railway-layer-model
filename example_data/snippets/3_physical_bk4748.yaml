@@ -3,7 +3,7 @@ physical:
     - name: "47"
       pos: 
         - line: "9724"
-          milage: 14.35
+          mileage: 14.35
       base_ref: "pockelsdorf_to_buelten"
       network_ref: XPD_XBU
       id: "5f115822-5c58-45f9-b9e0-ced2b9cd2be0"
@@ -13,7 +13,7 @@ physical:
     - name: "BK47/BK48"
       pos: 
         - line: "9724"
-          milage: 14.4
+          mileage: 14.4
       base_ref: "pockelsdorf_to_buelten"
       network_ref: XPD_XBU
       id: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
@@ -23,7 +23,7 @@ physical:
     - name: "48"
       pos: 
         - line: "9724"
-          milage: 14.45
+          mileage: 14.45
       base_ref: "pockelsdorf_to_buelten"
       network_ref: XPD_XBU
       id: "0bc68652-0bdd-4b0b-a366-ded5d870a8e4"

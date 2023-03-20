@@ -370,7 +370,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.506
+          mileage: 16.506
       class: "sign"
     - name: "G105/W12"
       base_ref: "XR"
@@ -379,7 +379,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.506
+          mileage: 16.506
       class: "detector"
     - name: "N4"
       base_ref: "XR"
@@ -388,9 +388,9 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.592
+          mileage: 16.592
         - line: "9724"
-          milage: 0.853
+          mileage: 0.853
       class: "sign"
     - name: "G104/W13"
       base_ref: "XR"
@@ -399,9 +399,9 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.592
+          mileage: 16.592
         - line: "9724"
-          milage: 0.853
+          mileage: 0.853
       class: "detector"
     - name: "N3"
       base_ref: "XR"
@@ -410,7 +410,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.66
+          mileage: 16.66
       class: "sign"
     - name: "G303/W14"
       base_ref: "XR"
@@ -419,7 +419,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.66
+          mileage: 16.66
       class: "detector"
     - name: "N2"
       base_ref: "XR"
@@ -428,7 +428,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.531
+          mileage: 16.531
       class: "sign"
     - name: "G102/W15"
       base_ref: "XR"
@@ -437,7 +437,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.531
+          mileage: 16.531
       class: "detector"
     - name: "W15"
       branches:
@@ -455,7 +455,7 @@ physical:
       id: "e444b175-2eff-4bd1-96c5-185ed4424f61"
       pos:
         - line: "9721"
-          milage: 16.536
+          mileage: 16.536
       class: "branching"
       specimen: 300-1
     - name: "W15/W17"
@@ -465,7 +465,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.8
+          mileage: 16.8
       class: "detector"
     - name: "W15/K16"
       base_ref: "XR"
@@ -474,7 +474,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.77
+          mileage: 16.77
       class: "detector"
     - name: "W12"
       branches:
@@ -492,7 +492,7 @@ physical:
       id: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
       pos:
         - line: "9721"
-          milage: 16.562
+          mileage: 16.562
       class: "branching"
       specimen: 190-2
     - name: "W12/W13"
@@ -502,7 +502,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.6
+          mileage: 16.6
       class: "detector"
     - name: "W13/G204"
       base_ref: "XR"
@@ -511,9 +511,9 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.666
+          mileage: 16.666
         - line: "9724"
-          milage: 0.927
+          mileage: 0.927
       class: "detector"
     - name: "W13/W14"
       base_ref: "XR"
@@ -522,7 +522,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.663
+          mileage: 16.663
       class: "detector"
     - name: "W14/G403"
       base_ref: "XR"
@@ -531,7 +531,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.73
+          mileage: 16.73
       class: "detector"
     - name: "W14/K16"
       base_ref: "XR"
@@ -540,7 +540,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.77
+          mileage: 16.77
       class: "detector"
     - name: "W13"
       branches:
@@ -568,9 +568,9 @@ physical:
       id: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
       pos:
         - line: "9721"
-          milage: 16.63
+          mileage: 16.63
         - line: "9724"
-          milage: 0.891
+          mileage: 0.891
       class: "branching"
       specimen: ~
     - name: "W14"
@@ -599,7 +599,7 @@ physical:
       id: "d0342aa7-cb3b-4feb-9200-813f1da75625"
       pos:
         - line: "9721"
-          milage: 16.7
+          mileage: 16.7
       class: "branching"
       specimen: ~
     - name: "K16"
@@ -618,7 +618,7 @@ physical:
       id: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
       pos:
         - line: "9721"
-          milage: 16.785
+          mileage: 16.785
       class: "branching"
       specimen: ~
     - name: "K16/W17"
@@ -628,7 +628,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.8
+          mileage: 16.8
       class: "detector"
     - name: "K16/G202"
       base_ref: "XR"
@@ -637,7 +637,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.81
+          mileage: 16.81
       class: "detector"
     - name: "G403/W19"
       base_ref: "XR"
@@ -646,7 +646,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.9
+          mileage: 16.9
       class: "detector"
     - name: "G202/W19"
       base_ref: "XR"
@@ -655,7 +655,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.9
+          mileage: 16.9
       class: "detector"
     - name: "W19"
       branches:
@@ -683,7 +683,7 @@ physical:
       id: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
       pos:
         - line: "9721"
-          milage: 17.005
+          mileage: 17.005
       class: "branching"
       specimen: ~
     - name: "G204/W20"
@@ -693,9 +693,9 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.05
+          mileage: 17.05
         - line: "9724"
-          milage: 1.311
+          mileage: 1.311
       class: "detector"
     - name: "W19/W20"
       base_ref: "XR"
@@ -704,7 +704,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.05
+          mileage: 17.05
       class: "detector"
     - name: "W19/G503"
       base_ref: "XR"
@@ -713,7 +713,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.051
+          mileage: 17.051
       class: "detector"
     - name: "W20"
       branches:
@@ -731,9 +731,9 @@ physical:
       id: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
       pos:
         - line: "9721"
-          milage: 17.107
+          mileage: 17.107
         - line: "9724"
-          milage: 1.368
+          mileage: 1.368
       class: "branching"
       specimen: 500-1
     - name: "W20/G304"
@@ -743,9 +743,9 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.117
+          mileage: 17.117
         - line: "9724"
-          milage: 1.378
+          mileage: 1.378
       class: "detector"
     - name: "W20Y"
       base_ref: "XR"
@@ -754,9 +754,9 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 17.117
+          mileage: 17.117
         - line: "9724"
-          milage: 1.378
+          mileage: 1.378
       class: "sign"
     - name: "G304/G404"
       base_ref: "XR"
@@ -765,9 +765,9 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.26
+          mileage: 17.26
         - line: "9724"
-          milage: 1.521
+          mileage: 1.521
       class: "detector"
     - name: "Ra10_3"
       base_ref: "XR"
@@ -776,9 +776,9 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 17.26
+          mileage: 17.26
         - line: "9724"
-          milage: 1.521
+          mileage: 1.521
       class: "sign"
     - name: "G404A"
       base_ref: "XR"
@@ -787,9 +787,9 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.43
+          mileage: 17.43
         - line: "9724"
-          milage: 1.691
+          mileage: 1.691
       class: "detector"
     - name: "G"
       base_ref: "XR"
@@ -798,9 +798,9 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 17.43
+          mileage: 17.43
         - line: "9724"
-          milage: 1.691
+          mileage: 1.691
       class: "sign"
     - name: "Sp51"
       base_ref: "XR"
@@ -808,7 +808,7 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 16.607
+          mileage: 16.607
       class: "derailer"
     - name: "W12/G51"
       base_ref: "XR"
@@ -817,7 +817,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.612
+          mileage: 16.612
       class: "detector"
     - name: "51X"
       base_ref: "XR"
@@ -826,7 +826,7 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 16.612
+          mileage: 16.612
       class: "sign"
     - name: "E51"
       base_ref: "XR"
@@ -834,7 +834,7 @@ physical:
       id: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
       pos:
         - line: "9721"
-          milage: 16.67
+          mileage: 16.67
       class: "end"
     - name: "N1"
       base_ref: "XR"
@@ -843,7 +843,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.703
+          mileage: 16.703
       class: "sign"
     - name: "G401/W18"
       base_ref: "XR"
@@ -852,7 +852,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.703
+          mileage: 16.703
       class: "detector"
     - name: "W17"
       branches:
@@ -870,7 +870,7 @@ physical:
       id: "0e202ec8-370e-4279-ba82-d53657190abe"
       pos:
         - line: "9721"
-          milage: 16.845
+          mileage: 16.845
       class: "branching"
       specimen: 300-1
     - name: "W17/W18"
@@ -880,7 +880,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.846
+          mileage: 16.846
       class: "detector"
     - name: "W18"
       branches:
@@ -898,7 +898,7 @@ physical:
       id: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
       pos:
         - line: "9721"
-          milage: 16.882
+          mileage: 16.882
       class: "branching"
       specimen: 300-1
     - name: "W18/G501"
@@ -908,7 +908,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 16.892
+          mileage: 16.892
       class: "detector"
     - name: "501X"
       base_ref: "XR"
@@ -917,7 +917,7 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 16.892
+          mileage: 16.892
       class: "sign"
     - name: "G501B"
       base_ref: "XR"
@@ -926,7 +926,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.429
+          mileage: 17.429
       class: "detector"
     - name: "FF"
       base_ref: "XR"
@@ -935,7 +935,7 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 17.429
+          mileage: 17.429
       class: "sign"
     - name: "E_XOG_2"
       base_ref: "XR"
@@ -943,7 +943,7 @@ physical:
       id: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
       pos:
         - line: "9721"
-          milage: 17.429
+          mileage: 17.429
       class: "end"
     - name: "503X"
       base_ref: "XR"
@@ -952,7 +952,7 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 17.051
+          mileage: 17.051
       class: "sign"
     - name: "Ra10_2"
       base_ref: "XR"
@@ -961,7 +961,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 17.151
+          mileage: 17.151
       class: "sign"
     - name: "G503/G603"
       base_ref: "XR"
@@ -970,7 +970,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.151
+          mileage: 17.151
       class: "detector"
     - name: "G603A"
       base_ref: "XR"
@@ -979,7 +979,7 @@ physical:
       direction: "bidirectional"
       pos:
         - line: "9721"
-          milage: 17.429
+          mileage: 17.429
       class: "detector"
     - name: "F"
       base_ref: "XR"
@@ -988,7 +988,7 @@ physical:
       direction: "backward"
       pos:
         - line: "9721"
-          milage: 17.429
+          mileage: 17.429
       class: "sign"
     - name: "E_XOG_1"
       base_ref: "XR"
@@ -996,7 +996,7 @@ physical:
       id: "dc59f431-4159-4667-9e6d-2e109b39bda2"
       pos:
         - line: "9721"
-          milage: 17.429
+          mileage: 17.429
       class: "end"
     - id: "271f086a-22b4-4139-b8e5-91dd863e5c44"
       name: "H3_2"
@@ -1006,7 +1006,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.61
+          mileage: 16.61
     - id: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
       name: "H2_2"
       class: "berth"
@@ -1015,7 +1015,7 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.481
+          mileage: 16.481
     - id: "de3e722c-a217-4257-b868-0ca6bbc6310c"
       name: "H1_2"
       class: "berth"
@@ -1024,4 +1024,4 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 16.683
+          mileage: 16.683

@@ -12,36 +12,36 @@ speed:
   allowance:
     - pos:
         - line: "9721"
-          milage: 7.7
+          mileage: 7.7
       vMax: 160
     - pos:
         - line: "9721"
-          milage: 36.96242
+          mileage: 36.96242
       vMax: 100
   gradient_changes:
     - pos:
         - line: "9721"
-          milage: 12.8612 # from here on
+          mileage: 12.8612 # from here on
       slope: -1.1 # in ‰
     - pos:
         - line: "9721"
-          milage: 15.0416
+          mileage: 15.0416
       slope: 1.72
     - pos:
         - line: "9721"
-          milage: 32.01700
+          mileage: 32.01700
       slope: 7.03
     - pos:
         - line: "9721"
-          milage: 33.0458
+          mileage: 33.0458
       slope: -5.88
     - pos:
         - line: "9721"
-          milage: 34.73
+          mileage: 34.73
       slope: 1.05
     - pos:
         - line: "9721"
-          milage: 36.8237
+          mileage: 36.8237
       slope: 3.48
   radius_changes:
 - name: Wenden Schlossberg via Okerbach (9721,left,backward)
@@ -55,32 +55,32 @@ speed:
   allowance:
     - pos:
         - line: "9721"
-          milage: 42.0
+          mileage: 42.0
       vMax: 100
     - pos:
         - line: "9721"
-          milage: 36.96242
+          mileage: 36.96242
       vMax: 160
   gradient_changes:
     - pos:
         - line: "9721"
-          milage: 36.8237
+          mileage: 36.8237
       slope: 1.05
     - pos:
         - line: "9721"
-          milage: 34.73
+          mileage: 34.73
       slope: -5.88
     - pos:
         - line: "9721"
-          milage: 33.0458
+          mileage: 33.0458
       slope: 7.03
     - pos:
         - line: "9721"
-          milage: 32.01700
+          mileage: 32.01700
       slope: 1.72
     - pos:
         - line: "9721"
-          milage: 15.0416
+          mileage: 15.0416
       slope: -1.1
   radius_changes:
 - name: Wenden Schlossberg via Okerbach (9721,right,forward)
@@ -94,36 +94,36 @@ speed:
   allowance:
     - pos:
         - line: "9721"
-          milage: 7.7
+          mileage: 7.7
       vMax: 160
     - pos:
         - line: "9721"
-          milage: 36.96242
+          mileage: 36.96242
       vMax: 100
   gradient_changes:
     - pos:
         - line: "9721"
-          milage: 12.8612 # from here on
+          mileage: 12.8612 # from here on
       slope: -1.1 # in ‰
     - pos:
         - line: "9721"
-          milage: 15.0416
+          mileage: 15.0416
       slope: 1.72
     - pos:
         - line: "9721"
-          milage: 32.01700
+          mileage: 32.01700
       slope: 7.03
     - pos:
         - line: "9721"
-          milage: 33.0458
+          mileage: 33.0458
       slope: -5.88
     - pos:
         - line: "9721"
-          milage: 34.73
+          mileage: 34.73
       slope: 1.05
     - pos:
         - line: "9721"
-          milage: 36.8237
+          mileage: 36.8237
       slope: 3.48
   radius_changes:
 - name: Wenden Schlossberg via Okerbach (9721,right,backward)
@@ -137,32 +137,32 @@ speed:
   allowance:
     - pos:
         - line: "9721"
-          milage: 42.0
+          mileage: 42.0
       vMax: 100
     - pos:
         - line: "9721"
-          milage: 36.96242
+          mileage: 36.96242
       vMax: 160
   gradient_changes:
     - pos:
         - line: "9721"
-          milage: 36.8237
+          mileage: 36.8237
       slope: 1.05
     - pos:
         - line: "9721"
-          milage: 34.73
+          mileage: 34.73
       slope: -5.88
     - pos:
         - line: "9721"
-          milage: 33.0458
+          mileage: 33.0458
       slope: 7.03
     - pos:
         - line: "9721"
-          milage: 32.01700
+          mileage: 32.01700
       slope: 1.72
     - pos:
         - line: "9721"
-          milage: 15.0416
+          mileage: 15.0416
       slope: -1.1
   radius_changes:
 - name: Rebenau Buelten via Pockelsdorf (9724, forward)
@@ -176,108 +176,108 @@ speed:
   allowance:
     - pos:
         - line: "9724"
-          milage: 0.0 # from here on
+          mileage: 0.0 # from here on
       vMax: 160 # in km/h
     - pos:
         - line: "9724"
-          milage: 0.84009
+          mileage: 0.84009
       vMax: 140
   gradient_changes:
     - pos:
         - line: "9724"
-          milage: 1.52500
+          mileage: 1.52500
       slope: -12.06
     - pos:
         - line: "9724"
-          milage: 2.37186
+          mileage: 2.37186
       slope: 1.12
     - pos:
         - line: "9724"
-          milage: 3.09819
+          mileage: 3.09819
       slope: 12.4
     - pos:
         - line: "9724"
-          milage: 3.55755
+          mileage: 3.55755
       slope: -8.37
     - pos:
         - line: "9724"
-          milage: 3.97393
+          mileage: 3.97393
       slope: 2.87
     - pos:
         - line: "9724"
-          milage: 4.90000
+          mileage: 4.90000
       slope: -9.24
     - pos:
         - line: "9724"
-          milage: 5.72000
+          mileage: 5.72000
       slope: 12.46
     - pos:
         - line: "9724"
-          milage: 5.99213
+          mileage: 5.99213
       slope: -8.41
     - pos:
         - line: "9724"
-          milage: 6.37383
+          mileage: 6.37383
       slope: -11.78
     - pos:
         - line: "9724"
-          milage: 6.70246
+          mileage: 6.70246
       slope: 8.97
     - pos:
         - line: "9724"
-          milage: 7.08145
+          mileage: 7.08145
       slope: 2.17
     - pos:
         - line: "9724"
-          milage: 8.03730
+          mileage: 8.03730
       slope: 9.57
     - pos:
         - line: "9724"
-          milage: 8.51055
+          mileage: 8.51055
       slope: 5.15
     - pos:
         - line: "9724"
-          milage: 9.02500
+          mileage: 9.02500
       slope: -6.25
     - pos:
         - line: "9724"
-          milage: 9.35000
+          mileage: 9.35000
       slope: -1
     - pos:
         - line: "9724"
-          milage: 10.90000
+          mileage: 10.90000
       slope: -3.42
     - pos:
         - line: "9724"
-          milage: 12.29000
+          mileage: 12.29000
       slope: 2.88
     - pos:
         - line: "9724"
-          milage: 12.86208
+          mileage: 12.86208
       slope: 12.5
     - pos:
         - line: "9724"
-          milage: 14.28919
+          mileage: 14.28919
       slope: 1.25
     - pos:
         - line: "9724"
-          milage: 14.80000
+          mileage: 14.80000
       slope: -3.43
     - pos:
         - line: "9724"
-          milage: 15.56723
+          mileage: 15.56723
       slope: -12.22
     - pos:
         - line: "9724"
-          milage: 16.14006
+          mileage: 16.14006
       slope: 3.4
     - pos:
         - line: "9724"
-          milage: 16.69365
+          mileage: 16.69365
       slope: 11.58
     - pos:
         - line: "9724"
-          milage: 18.81700
+          mileage: 18.81700
       slope: 7.03
   radius_changes:
     - pos:
@@ -563,11 +563,11 @@ speed:
   allowance:
     - pos:
         - line: "9724"
-          milage: 18.9 # from here on
+          mileage: 18.9 # from here on
       vMax: 140 # in km/h
     - pos:
         - line: "9724"
-          milage: 0.84009
+          mileage: 0.84009
       vMax: 160
   gradient_changes:
   radius_changes:

@@ -21,7 +21,7 @@ physical:
           speed: .inf
       pos:
         - line: "9721"
-          milage: 16.785
+          mileage: 16.785
   tracksections:
     - id: "2db166ca-7913-4b3a-97d5-ab981cc34209"
       length: 0.015

@@ -31,9 +31,9 @@ physical:
           speed: .inf
       pos:
         - line: "9721"
-          milage: 16.63
+          mileage: 16.63
         - line: "9724"
-          milage: 0.891
+          mileage: 0.891
   tracksections:
     - length: 0.038
       name: "W13_1"

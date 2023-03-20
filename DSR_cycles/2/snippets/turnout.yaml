@@ -21,7 +21,7 @@ physical:
           speed: 40
       pos:
         - line: "9721"
-          milage: 16.562
+          mileage: 16.562
       specimen: 190-2
   tracksections:
     - length: 0.056

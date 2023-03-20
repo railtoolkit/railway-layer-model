@@ -11,6 +11,6 @@ physical:
       direction: "forward"
       pos:
         - line: "9721"
-          milage: 17.26
+          mileage: 17.26
         - line: "9724"
-          milage: 1.521
+          mileage: 1.521
