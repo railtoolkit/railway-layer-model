@@ -1,0 +1,8 @@
+%YAML 1.2
+---
+network:
+  id: track
+  nodes:
+    - id: XR_1
+      base_ref: "XR"
+      type: track

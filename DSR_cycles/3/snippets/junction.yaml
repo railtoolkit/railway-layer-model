@@ -1,0 +1,11 @@
+%YAML 1.2
+---
+network:
+  id: junction
+  nodes:
+    - id: XR_east
+      base_ref: "XR"
+      type: junction
+      in: [XR_1_to_XR_east,XR_2_to_XR_east,XR_3_to_XR_east,XR_4_to_XR_east,XR_5_to_XR_east]
+      out: [XR_east_to_XR_XPD]
+      limits: [N1,N2,N3,N4,N5,51X,G,F,FF]

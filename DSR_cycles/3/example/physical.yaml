@@ -1,0 +1,1145 @@
+%YAML 1.2
+---
+physical:
+  tracksections:
+    - length: 0.0
+      name: "105_5"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
+      id: "b79152c5-d6ed-46c6-87f4-6ba807098296"
+      target: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+    - length: 0.056
+      name: "W12_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+      id: "2501d609-0f92-4918-8442-b23df762b366"
+      target: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+    - length: 0.0
+      name: "104_5"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
+      id: "28709dbf-be51-413b-889a-2aea91482f8f"
+      target: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
+    - length: 0.038
+      name: "W13_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
+      id: "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+      target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+    - length: 0.0
+      name: "303_5"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
+      id: "0e73302c-dae2-4922-bbf5-5f0e9097345c"
+      target: "15452298-8414-45f1-b5e0-3b9a60ed088e"
+    - length: 0.04
+      name: "W14_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "15452298-8414-45f1-b5e0-3b9a60ed088e"
+      id: "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
+      target: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+    - length: 0.0
+      name: "102_5"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
+      id: "d2b76579-4a70-4e09-a645-53d9062b9392"
+      target: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
+    - length: 0.005
+      name: "W15_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
+      id: "925d9c4c-12a6-4e84-b11c-0c70be0af312"
+      target: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+    - length: 0.264
+      name: "W15_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+      id: "01be204c-08ad-4292-ba76-79b61ba189b0"
+      target: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
+    - length: 0.234
+      name: "W15_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+      id: "246048e1-cb84-4657-99b8-98bc3d6c14c7"
+      target: "dd64948a-2423-451f-87bb-fc541735aad8"
+    - length: 0.045
+      name: "W17_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
+      id: "97292225-29c0-4899-a38b-b359f771ccdf"
+      target: "0e202ec8-370e-4279-ba82-d53657190abe"
+    - length: 0.015
+      name: "K16_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "dd64948a-2423-451f-87bb-fc541735aad8"
+      id: "2db166ca-7913-4b3a-97d5-ab981cc34209"
+      target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+    - length: 0.038
+      name: "W12_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      id: "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
+      target: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+    - length: 0.045
+      name: "W12_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      id: "0f107da6-f8cb-4868-b686-1c053336b1d1"
+      target: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
+    - length: 0.03
+      name: "W13_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+      id: "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+      target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+    - length: 0.384
+      name: "204"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "712f1424-b556-4758-9ac6-c0cb328d7705"
+      id: "4aa77376-6a24-469a-aa37-30c251a28dc6"
+      target: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
+    - length: 0.037
+      name: "W14_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "70122a48-8078-496c-943b-8f1e781dbf64"
+      id: "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
+      target: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+    - length: 0.17
+      name: "403"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
+      id: "4bafc796-3fa8-46ce-83cd-223691082044"
+      target: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
+    - length: 0.015
+      name: "K16_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
+      id: "c446df42-516e-4cbd-8897-bf242bac1e4d"
+      target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+    - length: 0.036
+      name: "W13_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      id: "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+      target: "712f1424-b556-4758-9ac6-c0cb328d7705"
+    - length: 0.033
+      name: "W13_4"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      id: "6125547d-9d2d-4086-8898-16114f058550"
+      target: "70122a48-8078-496c-943b-8f1e781dbf64"
+    - length: 0.03
+      name: "W14_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      id: "dcc02a80-c322-42db-9458-e8ccf613e7a0"
+      target: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
+    - length: 0.07
+      name: "W14_4"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      id: "42d05546-05d2-4c7d-ad18-d7703bb9259e"
+      target: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
+    - length: 0.015
+      name: "K16_4"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      id: "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
+      target: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
+    - length: 0.025
+      name: "K16_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      id: "8337b3a5-29c2-441d-9232-ebdc8e14af07"
+      target: "3a00ba63-ff25-4720-be64-1f08d329a31b"
+    - length: 0.045
+      name: "W17_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
+      id: "9c5236c4-0099-4811-a7ee-5d16f82b00a7"
+      target: "0e202ec8-370e-4279-ba82-d53657190abe"
+    - length: 0.09
+      name: "202"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "3a00ba63-ff25-4720-be64-1f08d329a31b"
+      id: "6b55968a-c55e-4d6e-bada-615bddb8d9f1"
+      target: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
+    - length: 0.105
+      name: "W19_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
+      id: "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
+      target: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+    - length: 0.105
+      name: "W19_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
+      id: "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
+      target: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+    - length: 0.045
+      name: "W19_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      id: "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
+      target: "e4741cd5-3096-431e-8739-bf4a7001221e"
+    - length: 0.046
+      name: "W19_4"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      id: "b58eb471-b63e-4021-8965-e7e8cc4e3369"
+      target: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
+    - length: 0.057
+      name: "W20_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
+      id: "f39fcc72-c5ad-4df1-b2b1-b7744944c5c2"
+      target: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+    - length: 0.057
+      name: "W20_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "e4741cd5-3096-431e-8739-bf4a7001221e"
+      id: "da26a3c4-8a53-4d43-a504-57206151a42d"
+      target: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+    - length: 0.0
+      name: "503_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
+      id: "09595d8a-8cd6-4352-aa02-60c77ccceb26"
+      target: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
+    - length: 0.01
+      name: "W20_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+      id: "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
+      target: "8890eec1-8048-4853-8d25-71cfb8365a36"
+    - length: 0.0
+      name: "304_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "8890eec1-8048-4853-8d25-71cfb8365a36"
+      id: "7e18556b-9216-4acf-a96b-2ab547cf91d0"
+      target: "ad21db91-ef23-401b-8138-8dfa933e688c"
+    - length: 0.143
+      name: "304_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "ad21db91-ef23-401b-8138-8dfa933e688c"
+      id: "e3eea382-8bae-49c8-b3a7-156261786131"
+      target: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
+    - length: 0.17
+      name: "404_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "40323a52-1608-4e52-834c-7a6112f56073"
+      id: "8578f9aa-a3f1-4de8-837d-c4f51e2dcb48"
+      target: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
+    - length: 0.0
+      name: "304_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
+      id: "68a55c8e-a578-45ba-acfd-253a69081599"
+      target: "40323a52-1608-4e52-834c-7a6112f56073"
+    - length: 0.0
+      name: "404_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
+      id: "0c9cd676-60d0-416d-8340-3cb6ded4ff1b"
+      target: "ae83219c-febb-4bc7-bee4-218465b65584"
+    - length: 0.005
+      name: "51_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
+      id: "752085c9-58d6-4057-a92c-ac02710b8e82"
+      target: "5f52ad57-6723-4412-8eb4-16650b308dd7"
+    - length: 0.0
+      name: "51_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "5f52ad57-6723-4412-8eb4-16650b308dd7"
+      id: "6c5fbf3c-6b29-4ef4-b133-77cd7cd7f5f4"
+      target: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
+    - length: 0.058
+      name: "51_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
+      id: "5d108427-0c91-4c94-b33b-ed0e286694d9"
+      target: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
+    - length: 0.0
+      name: "401_5"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "cfb9c041-df5f-42ff-96e4-8051299467cc"
+      id: "0d5ee3b7-1021-4f70-9a86-4de68bfd6d02"
+      target: "a4e4c075-249c-45b4-820b-b77523fcf124"
+    - length: 0.179
+      name: "W18_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "a4e4c075-249c-45b4-820b-b77523fcf124"
+      id: "4ae249bc-a193-4c8f-b723-dbcf27bbcb5c"
+      target: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+    - length: 0.001
+      name: "W17_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "0e202ec8-370e-4279-ba82-d53657190abe"
+      id: "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
+      target: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
+    - length: 0.036
+      name: "W18_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
+      id: "f6980045-b4cf-4cca-bf55-ae41163df70d"
+      target: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+    - length: 0.01
+      name: "W18_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+      id: "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
+      target: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
+    - length: 0.0
+      name: "501_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
+      id: "1ba31143-fe9a-4e36-a710-c50510622c4a"
+      target: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
+    - length: 0.537
+      name: "501_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
+      id: "727d9010-302a-4e06-9028-475bb8c2dbec"
+      target: "1daca293-0191-40d9-9f32-1e749223d03d"
+    - length: 0.0
+      name: "501_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "1daca293-0191-40d9-9f32-1e749223d03d"
+      id: "061de7f4-1d51-4ecb-b1bd-6e0fd25d79d3"
+      target: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
+    - length: 0.0
+      name: "501_4"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
+      id: "c0ea9c28-71f5-44a0-ac3d-ee0990b288b6"
+      target: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
+    - length: 0.1
+      name: "503_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
+      id: "6322afe1-1fa4-40aa-a4df-9f6cd90a24db"
+      target: "73bc3a56-243d-40eb-ad05-6480825bb643"
+    - length: 0.0
+      name: "503_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "73bc3a56-243d-40eb-ad05-6480825bb643"
+      id: "08c72bb3-6727-4d9e-83dc-134d1535452b"
+      target: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
+    - length: 0.278
+      name: "603_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
+      id: "d9e04eaf-ab2f-4625-845c-e7e5732dbe4d"
+      target: "f31e3747-80c6-4342-9782-8ce4c7a24379"
+    - length: 0.0
+      name: "603_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "f31e3747-80c6-4342-9782-8ce4c7a24379"
+      id: "3f0a3950-d11a-40d6-87a0-e57fdbf3dca4"
+      target: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
+    - length: 0.0
+      name: "603_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      source: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
+      id: "4bace8f9-935d-490d-a7de-ef6f22298fb7"
+      target: "dc59f431-4159-4667-9e6d-2e109b39bda2"
+    - base_ref: "XR"
+      network_ref: "XR_1"
+      id: "343c4abd-a5f1-42b5-b099-367b5c960a53"
+      name: "401_4"
+      source: "de3e722c-a217-4257-b868-0ca6bbc6310c"
+      target: "cfb9c041-df5f-42ff-96e4-8051299467cc"
+      length: 0.02
+    - base_ref: "XR"
+      network_ref: "XR_2"
+      id: "b2b2062d-c057-4c56-843a-653b033f1cd4"
+      name: "102_4"
+      source: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
+      target: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
+      length: 0.05
+    - base_ref: "XR"
+      network_ref: "XR_3"
+      id: "c2302818-fac1-402f-99ec-dbd5c3e06000"
+      name: "303_4"
+      source: "271f086a-22b4-4139-b8e5-91dd863e5c44"
+      target: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
+      length: 0.05
+  elements:
+    - name: "N5"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.506
+      class: "sign"
+    - name: "G105/W12"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.506
+      class: "detector"
+    - name: "N4"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.592
+        - line: "9724"
+          milage: 0.853
+      class: "sign"
+    - name: "G104/W13"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.592
+        - line: "9724"
+          milage: 0.853
+      class: "detector"
+    - name: "N3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.66
+      class: "sign"
+    - name: "G303/W14"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "15452298-8414-45f1-b5e0-3b9a60ed088e"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.66
+      class: "detector"
+    - name: "N2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.531
+      class: "sign"
+    - name: "G102/W15"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.531
+      class: "detector"
+    - name: "W15"
+      branches:
+        - name: "straight"
+          path:
+            - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
+            - "01be204c-08ad-4292-ba76-79b61ba189b0"
+          speed: .inf
+        - name: "left"
+          path:
+            - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
+            - "246048e1-cb84-4657-99b8-98bc3d6c14c7"
+          speed: 50
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+      pos:
+        - line: "9721"
+          milage: 16.536
+      class: "branching"
+      specimen: 300-1
+    - name: "W15/W17"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.8
+      class: "detector"
+    - name: "W15/K16"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "dd64948a-2423-451f-87bb-fc541735aad8"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.77
+      class: "detector"
+    - name: "W12"
+      branches:
+        - name: "straight"
+          path:
+            - "2501d609-0f92-4918-8442-b23df762b366"
+            - "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
+          speed: .inf
+        - name: "left"
+          path:
+            - "2501d609-0f92-4918-8442-b23df762b366"
+            - "0f107da6-f8cb-4868-b686-1c053336b1d1"
+          speed: 40
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      pos:
+        - line: "9721"
+          milage: 16.562
+      class: "branching"
+      specimen: 190-2
+    - name: "W12/W13"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.6
+      class: "detector"
+    - name: "W13/G204"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "712f1424-b556-4758-9ac6-c0cb328d7705"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.666
+        - line: "9724"
+          milage: 0.927
+      class: "detector"
+    - name: "W13/W14"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "70122a48-8078-496c-943b-8f1e781dbf64"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.663
+      class: "detector"
+    - name: "W14/G403"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.73
+      class: "detector"
+    - name: "W14/K16"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.77
+      class: "detector"
+    - name: "W13"
+      branches:
+        - name: "straight"
+          path:
+            - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+            - "6125547d-9d2d-4086-8898-16114f058550"
+          speed: .inf
+        - name: "left"
+          path:
+            - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+            - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+          speed: 60
+        - name: "right"
+          path:
+            - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+            - "6125547d-9d2d-4086-8898-16114f058550"
+          speed: 60
+        - name: "straight2"
+          path:
+            - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+            - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+          speed: .inf
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      pos:
+        - line: "9721"
+          milage: 16.63
+        - line: "9724"
+          milage: 0.891
+      class: "branching"
+      specimen: ~
+    - name: "W14"
+      branches:
+        - name: "straight"
+          path:
+            - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
+            - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
+          speed: .inf
+        - name: "left"
+          path:
+            - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
+            - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
+          speed: 60
+        - name: "right"
+          path:
+            - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
+            - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
+          speed: 60
+        - name: "straight2"
+          path:
+            - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
+            - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
+          speed: .inf
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      pos:
+        - line: "9721"
+          milage: 16.7
+      class: "branching"
+      specimen: ~
+    - name: "K16"
+      branches:
+        - name: "straight"
+          path:
+            - "c446df42-516e-4cbd-8897-bf242bac1e4d"
+            - "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
+          speed: .inf
+        - name: "straight2"
+          path:
+            - "2db166ca-7913-4b3a-97d5-ab981cc34209"
+            - "8337b3a5-29c2-441d-9232-ebdc8e14af07"
+          speed: .inf
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      pos:
+        - line: "9721"
+          milage: 16.785
+      class: "branching"
+      specimen: ~
+    - name: "K16/W17"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.8
+      class: "detector"
+    - name: "K16/G202"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "3a00ba63-ff25-4720-be64-1f08d329a31b"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.81
+      class: "detector"
+    - name: "G403/W19"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.9
+      class: "detector"
+    - name: "G202/W19"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.9
+      class: "detector"
+    - name: "W19"
+      branches:
+        - name: "straight"
+          path:
+            - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
+            - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
+          speed: .inf
+        - name: "left"
+          path:
+            - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
+            - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
+          speed: 60
+        - name: "right"
+          path:
+            - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
+            - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
+          speed: 60
+        - name: "straight2"
+          path:
+            - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
+            - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
+          speed: .inf
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      pos:
+        - line: "9721"
+          milage: 17.005
+      class: "branching"
+      specimen: ~
+    - name: "G204/W20"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.05
+        - line: "9724"
+          milage: 1.311
+      class: "detector"
+    - name: "W19/W20"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "e4741cd5-3096-431e-8739-bf4a7001221e"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.05
+      class: "detector"
+    - name: "W19/G503"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.051
+      class: "detector"
+    - name: "W20"
+      branches:
+        - name: "straight"
+          path:
+            - "f39fcc72-c5ad-4df1-b2b1-b7744944c5c2"
+            - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
+          speed: .inf
+        - name: "left"
+          path:
+            - "da26a3c4-8a53-4d43-a504-57206151a42d"
+            - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
+          speed: 60
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+      pos:
+        - line: "9721"
+          milage: 17.107
+        - line: "9724"
+          milage: 1.368
+      class: "branching"
+      specimen: 500-1
+    - name: "W20/G304"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "8890eec1-8048-4853-8d25-71cfb8365a36"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.117
+        - line: "9724"
+          milage: 1.378
+      class: "detector"
+    - name: "W20Y"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "ad21db91-ef23-401b-8138-8dfa933e688c"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 17.117
+        - line: "9724"
+          milage: 1.378
+      class: "sign"
+    - name: "G304/G404"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "40323a52-1608-4e52-834c-7a6112f56073"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.26
+        - line: "9724"
+          milage: 1.521
+      class: "detector"
+    - name: "Ra10_3"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "board"
+      id: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 17.26
+        - line: "9724"
+          milage: 1.521
+      class: "sign"
+    - name: "G404A"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.43
+        - line: "9724"
+          milage: 1.691
+      class: "detector"
+    - name: "G"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "ae83219c-febb-4bc7-bee4-218465b65584"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 17.43
+        - line: "9724"
+          milage: 1.691
+      class: "sign"
+    - name: "Sp51"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 16.607
+      class: "derailer"
+    - name: "W12/G51"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "5f52ad57-6723-4412-8eb4-16650b308dd7"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.612
+      class: "detector"
+    - name: "51X"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 16.612
+      class: "sign"
+    - name: "E51"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "buffer stop"
+      id: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
+      pos:
+        - line: "9721"
+          milage: 16.67
+      class: "end"
+    - name: "N1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "cfb9c041-df5f-42ff-96e4-8051299467cc"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.703
+      class: "sign"
+    - name: "G401/W18"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "a4e4c075-249c-45b4-820b-b77523fcf124"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.703
+      class: "detector"
+    - name: "W17"
+      branches:
+        - name: "left"
+          path:
+            - "97292225-29c0-4899-a38b-b359f771ccdf"
+            - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
+          speed: 50
+        - name: "straight"
+          path:
+            - "9c5236c4-0099-4811-a7ee-5d16f82b00a7"
+            - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
+          speed: .inf
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "0e202ec8-370e-4279-ba82-d53657190abe"
+      pos:
+        - line: "9721"
+          milage: 16.845
+      class: "branching"
+      specimen: 300-1
+    - name: "W17/W18"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.846
+      class: "detector"
+    - name: "W18"
+      branches:
+        - name: "straight"
+          path:
+            - "4ae249bc-a193-4c8f-b723-dbcf27bbcb5c"
+            - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
+          speed: .inf
+        - name: "right"
+          path:
+            - "f6980045-b4cf-4cca-bf55-ae41163df70d"
+            - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
+          speed: 50
+      base_ref: "XR"
+      network_ref: "XR_east"
+      id: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+      pos:
+        - line: "9721"
+          milage: 16.882
+      class: "branching"
+      specimen: 300-1
+    - name: "W18/G501"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 16.892
+      class: "detector"
+    - name: "501X"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 16.892
+      class: "sign"
+    - name: "G501B"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "1daca293-0191-40d9-9f32-1e749223d03d"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.429
+      class: "detector"
+    - name: "FF"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 17.429
+      class: "sign"
+    - name: "E_XOG_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "continuing"
+      id: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
+      pos:
+        - line: "9721"
+          milage: 17.429
+      class: "end"
+    - name: "503X"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 17.051
+      class: "sign"
+    - name: "Ra10_2"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "board"
+      id: "73bc3a56-243d-40eb-ad05-6480825bb643"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 17.151
+      class: "sign"
+    - name: "G503/G603"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.151
+      class: "detector"
+    - name: "G603A"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      id: "f31e3747-80c6-4342-9782-8ce4c7a24379"
+      direction: "bidirectional"
+      pos:
+        - line: "9721"
+          milage: 17.429
+      class: "detector"
+    - name: "F"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "signal"
+      id: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
+      direction: "backward"
+      pos:
+        - line: "9721"
+          milage: 17.429
+      class: "sign"
+    - name: "E_XOG_1"
+      base_ref: "XR"
+      network_ref: "XR_east"
+      kind: "continuing"
+      id: "dc59f431-4159-4667-9e6d-2e109b39bda2"
+      pos:
+        - line: "9721"
+          milage: 17.429
+      class: "end"
+    - id: "271f086a-22b4-4139-b8e5-91dd863e5c44"
+      name: "H3_2"
+      base_ref: "XR"
+      network_ref: "XR_3"
+      class: "berth"
+      kind: "platform end"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.61
+    - id: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
+      name: "H2_2"
+      class: "berth"
+      base_ref: "XR"
+      network_ref: "XR_2"
+      kind: "platform end"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.481
+    - id: "de3e722c-a217-4257-b868-0ca6bbc6310c"
+      name: "H1_2"
+      class: "berth"
+      base_ref: "XR"
+      network_ref: "XR_1"
+      kind: "platform end"
+      direction: "forward"
+      pos:
+        - line: "9721"
+          milage: 16.683
