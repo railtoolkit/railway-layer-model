@@ -2,3 +2,9 @@ name = "railway_layer_model"
 uuid = "408ab8f0-951a-4262-85b8-7f78191ce244"
 authors = ["Martin Scheidt <m.scheidt@tu-braunschweig.de>"]
 version = "0.1.0"
+
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+
+[compat]
+DataFrames = "^1.4"
