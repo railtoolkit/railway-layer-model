@@ -1,178 +1,14 @@
 %YAML 1.2
 ---
 speed:
-- name: Wenden Schlossberg via Okerbach (9721,left,forward)
-  line: "9721"
-  track: left
-  direction: forward
-  id: 9721_left_forward
-  path: [XR_west,XR_3,XR_east,XBU,XBU_XSZ_2,XSZ_west,XSZ_3,XZS_east]
-  start: 7.7
-  end: 42.0
-  allowance:
-    - pos:
-        - line: "9721"
-          mileage: 7.7
-      vMax: 160
-    - pos:
-        - line: "9721"
-          mileage: 36.96242
-      vMax: 100
-  gradient_changes:
-    - pos:
-        - line: "9721"
-          mileage: 12.8612 # from here on
-      slope: -1.1 # in ‰
-    - pos:
-        - line: "9721"
-          mileage: 15.0416
-      slope: 1.72
-    - pos:
-        - line: "9721"
-          mileage: 32.01700
-      slope: 7.03
-    - pos:
-        - line: "9721"
-          mileage: 33.0458
-      slope: -5.88
-    - pos:
-        - line: "9721"
-          mileage: 34.73
-      slope: 1.05
-    - pos:
-        - line: "9721"
-          mileage: 36.8237
-      slope: 3.48
-  radius_changes:
-- name: Wenden Schlossberg via Okerbach (9721,left,backward)
-  line: "9721"
-  track: left
-  direction: backward
-  id: 9721_left_backward
-  path: [XZS_east,XSZ_3,XSZ_west,XBU_XSZ_2,XBU,XR_east,XR_3,XR_west]
-  start: 42.0
-  end: 7.7
-  allowance:
-    - pos:
-        - line: "9721"
-          mileage: 42.0
-      vMax: 100
-    - pos:
-        - line: "9721"
-          mileage: 36.96242
-      vMax: 160
-  gradient_changes:
-    - pos:
-        - line: "9721"
-          mileage: 36.8237
-      slope: 1.05
-    - pos:
-        - line: "9721"
-          mileage: 34.73
-      slope: -5.88
-    - pos:
-        - line: "9721"
-          mileage: 33.0458
-      slope: 7.03
-    - pos:
-        - line: "9721"
-          mileage: 32.01700
-      slope: 1.72
-    - pos:
-        - line: "9721"
-          mileage: 15.0416
-      slope: -1.1
-  radius_changes:
-- name: Wenden Schlossberg via Okerbach (9721,right,forward)
-  line: "9721"
-  track: right
-  direction: forward
-  id: 9721_right_forward
-  path: [XR_west,XR_1,XR_east,XBU,XBU_XSZ_1,XSZ_west,XSZ_2,XZS_east]
-  start: 7.7
-  end: 42.0
-  allowance:
-    - pos:
-        - line: "9721"
-          mileage: 7.7
-      vMax: 160
-    - pos:
-        - line: "9721"
-          mileage: 36.96242
-      vMax: 100
-  gradient_changes:
-    - pos:
-        - line: "9721"
-          mileage: 12.8612 # from here on
-      slope: -1.1 # in ‰
-    - pos:
-        - line: "9721"
-          mileage: 15.0416
-      slope: 1.72
-    - pos:
-        - line: "9721"
-          mileage: 32.01700
-      slope: 7.03
-    - pos:
-        - line: "9721"
-          mileage: 33.0458
-      slope: -5.88
-    - pos:
-        - line: "9721"
-          mileage: 34.73
-      slope: 1.05
-    - pos:
-        - line: "9721"
-          mileage: 36.8237
-      slope: 3.48
-  radius_changes:
-- name: Wenden Schlossberg via Okerbach (9721,right,backward)
-  line: "9721"
-  track: right
-  direction: backward
-  id: 9721_right_backward
-  path: [XZS_east,XSZ_2,XSZ_west,XBU_XSZ_1,XBU,XR_east,XR_1,XR_west]
-  start: 42.0
-  end: 7.7
-  allowance:
-    - pos:
-        - line: "9721"
-          mileage: 42.0
-      vMax: 100
-    - pos:
-        - line: "9721"
-          mileage: 36.96242
-      vMax: 160
-  gradient_changes:
-    - pos:
-        - line: "9721"
-          mileage: 36.8237
-      slope: 1.05
-    - pos:
-        - line: "9721"
-          mileage: 34.73
-      slope: -5.88
-    - pos:
-        - line: "9721"
-          mileage: 33.0458
-      slope: 7.03
-    - pos:
-        - line: "9721"
-          mileage: 32.01700
-      slope: 1.72
-    - pos:
-        - line: "9721"
-          mileage: 15.0416
-      slope: -1.1
-  radius_changes:
 - name: Rebenau Buelten via Pockelsdorf (9724, forward)
   line: "9724"
   track: single
+  start: 0.0
+  end: 18.9
   direction: forward
   id: 9724_forward
   path: [XR_4,XR_east,XR_XPD,XPD_west,XPD_1,XPD_east,XPD_XBU,XBU] # from NetworkLayer
-  start: 0.0
-  end: 18.9
   allowance:
     - pos:
         - line: "9724"
@@ -185,457 +21,649 @@ speed:
   gradient_changes:
     - pos:
         - line: "9724"
-          mileage: 1.52500
-      slope: -12.06
+          mileage: 0.0 # from here on
+      slope: 1.72 #in ‰
+      elevation: 111.37
+      # length:
+      # radius:
     - pos:
         - line: "9724"
-          mileage: 2.37186
-      slope: 1.12
+          mileage: 1.52500 # from here on
+      slope: -12.06 #in ‰
+      elevation: 113.99
+      # length:
+      # radius:
+    - pos:
+        - line: "9724"
+          mileage: 2.37186 # from here on
+      slope: 1.12 #in ‰
+      elevation: 103.78
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 3.09819
-      slope: 12.4
+      slope: 12.42 #in ‰
+      elevation: 104.59
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 3.55755
-      slope: -8.37
+      slope: -8.37 #in ‰
+      elevation: 110.29
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 3.97393
-      slope: 2.87
+      slope: 2.87 #in ‰
+      elevation: 106.80
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 4.90000
-      slope: -9.24
+      slope: -9.24 #in ‰
+      elevation: 109.46
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 5.72000
-      slope: 12.46
+      slope: 12.46 #in ‰
+      elevation: 101.88
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 5.99213
-      slope: -8.41
+      slope: -8.41 #in ‰
+      elevation: 105.27
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 6.37383
-      slope: -11.78
+      slope: -11.78 #in ‰
+      elevation: 102.06
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 6.70246
-      slope: 8.97
+      slope: 8.97 #in ‰
+      elevation: 98.19
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 7.08145
-      slope: 2.17
+      slope: 2.17 #in ‰
+      elevation: 101.59
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 8.03730
-      slope: 9.57
+      slope: 9.57 #in ‰
+      elevation: 103.66
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 8.51055
-      slope: 5.15
+      slope: 5.15 #in ‰
+      elevation: 108.19
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 9.02500
-      slope: -6.25
+      slope: -6.25 #in ‰
+      elevation: 110.84
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 9.35000
-      slope: -1
+      slope: -1 #in ‰
+      elevation: 108.81
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 10.90000
-      slope: -3.42
+      slope: -3.42 #in ‰
+      elevation: 107.26
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 12.29000
-      slope: 2.88
+      slope: 2.88 #in ‰
+      elevation: 102.50
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 12.86208
-      slope: 12.5
+      slope: 12.5 #in ‰
+      elevation: 104.15
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 14.28919
-      slope: 1.25
+      slope: 1.25 #in ‰
+      elevation: 121.99
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 14.80000
-      slope: -3.43
+      slope: -3.43 #in ‰
+      elevation: 122.63
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 15.56723
-      slope: -12.22
+      slope: -12.22 #in ‰
+      elevation: 120.0
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 16.14006
-      slope: 3.4
+      slope: 3.4 #in ‰
+      elevation: 113.0
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 16.69365
-      slope: 11.58
+      slope: 11.58 #in ‰
+      elevation: 114.88
+      # length:
+      # radius:
     - pos:
         - line: "9724"
           mileage: 18.81700
-      slope: 7.03
+      slope: 7.03 #in ‰
+      elevation: 139.46
+      # length:
+      # radius:
+    - pos:
+        - line: "9724"
+          mileage: 19.8458
+        - line: "9721"
+          mileage: 33.0458
+      slope: -5.88
+      elevation: 146.70
   radius_changes:
     - pos:
         - line:  "9724"
-          mileage: 0.0
-      class: straight
-      radius: Inf  
+          mileage: 0.0 # from here on
+      class: const #transition, straight, curve
     - pos:
         - line:  "9724"
-          mileage: 0.48460
-      class: curve
-      radius: -3000
+          mileage: 0.48460 # from here on
+      class: const
+      radius: -3000 # positive -> left curvature / negative -> right curvature
     - pos:
         - line:  "9724"
-          mileage: 0.62623
-      class: straight
-      radius: Inf
+          mileage: 0.62623 # from here on
+      class: const
     - pos:
         - line:  "9724"
           mileage: 0.75090
-      class: curve
+      class: const
       radius: 300
     - pos:
         - line:  "9724"
           mileage: 0.78405
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 0.84009
-      class: transition
-      type: linear
+      class: varying
+      type: linear # type of function
     - pos:
         - line:  "9724"
           mileage: 1.06409
-      class: curve
+      class: const
       radius: 798
     - pos:
         - line:  "9724"
           mileage: 1.62406
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 1.84806
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 1.96770
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 2.13570
-      class: curve
+      class: const
       radius: -1070
     - pos:
         - line:  "9724"
           mileage: 2.70515
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 2.87315
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 5.46746
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 5.62146
-      class: curve
+      class: const
       radius: -1160
     - pos:
         - line:  "9724"
           mileage: 7.32146
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 7.47546
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 7.67780
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 7.87380
-      class: curve
+      class: const
       radius: 900
     - pos:
         - line:  "9724"
           mileage: 9.08017
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 9.27617
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 10.19665
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 10.33665
-      class: curve
+      class: const
       radius: -1280
     - pos:
         - line:  "9724"
           mileage: 10.63986
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 10.77986
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 11.69784
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 11.85184
-      class: curve
+      class: const
       radius: -1170
     - pos:
         - line:  "9724"
           mileage: 12.54684
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 12.70084
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 13.24571
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 13.37171
-      class: curve
+      class: const
       radius: 1380
     - pos:
         - line:  "9724"
           mileage: 13.62171
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 13.74771
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 13.81659
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 14.04059
-      class: curve
+      class: const
       radius: -800
     - pos:
         - line:  "9724"
           mileage: 14.44400
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 14.66800
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 15.80938
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 15.97738
-      class: curve
+      class: const
       radius: 1081.9
     - pos:
         - line:  "9724"
           mileage: 17.98489
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 18.15289
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 18.73388
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 18.78988
-      class: curve
+      class: const
       radius: -760
     - pos:
         - line:  "9724"
           mileage: 18.90000
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 19.57128
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 19.74728
-      class: curve
+      class: const
       radius: -1500
     - pos:
         - line:  "9724"
           mileage: 20.18621
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 20.36221
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 20.64386
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 20.89986
-      class: curve
+      class: const
       radius: 1050
     - pos:
         - line:  "9724"
           mileage: 21.57986
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 21.83586
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 21.89986
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 21.93853
-      class: curve
+      class: const
       radius: -5000
     - pos:
         - line:  "9724"
           mileage: 22.07375
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 22.11241
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 22.18745
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 22.22612
-      class: curve
+      class: const
       radius: 5000
     - pos:
         - line:  "9724"
           mileage: 22.36133
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 22.40000
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 23.20000
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 23.23867
-      class: curve
+      class: const
       radius: 5000
     - pos:
         - line:  "9724"
           mileage: 23.37388
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 23.41255
-      class: straight
-      radius: Inf
+      class: const
     - pos:
         - line:  "9724"
           mileage: 23.48759
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 23.52625
-      class: curve
+      class: const
       radius: -5000
     - pos:
         - line:  "9724"
           mileage: 23.66147
-      class: transition
+      class: varying
       type: linear
     - pos:
         - line:  "9724"
           mileage: 23.70014
-      class: straight
-      radius: Inf
-- name: Rebenau Buelten via Pockelsdorf (9724, backward)
-  line: "9724"
-  track: single
-  direction: backward
-  id: 9724_backward
-  path: [XBU,XPD_XBU,XPD_east,XPD_1,XPD_west,XR_XPD,XR_east,XR_4] # from NetworkLayer
-  start: 18.9
-  end: 0.0
+      class: const
+- name: Wenden Schlossberg via Okerbach (9721, right, forward)
+  line: "9721"
+  track: right
+  start: 7.7
+  end: 42.0
+  direction: forward
+  id: 9721_right_forward
+  path: [XR_west,XR_1,XR_east,XR_XOG_1,XOG_west,XOG_2,XOP_west,XOP_1,XOP_east,XOP_XBU_1,XBU,XBU_XSZ_1,XSZ_west,XSZ_3,XZS_east]
   allowance:
     - pos:
-        - line: "9724"
-          mileage: 18.9 # from here on
-      vMax: 140 # in km/h
-    - pos:
-        - line: "9724"
-          mileage: 0.84009
+        - line: "9721"
+          mileage: 7.7
       vMax: 160
+    - pos:
+        - line: "9721"
+          mileage: 36.96242
+      vMax: 100
   gradient_changes:
+    - pos:
+        - line: "9721"
+          mileage: 12.8612 # from here on
+      slope: -1.1 # in ‰
+      elevation: 111.60
+    - pos:
+        - line: "9721"
+          mileage: 15.0416
+      slope: 1.72
+      elevation: 109.20
+    - pos:
+        - line: "9721"
+          mileage: 17.663
+      slope: 4.47
+      elevation: 113.7
+    - pos:
+        - line: "9721"
+          mileage: 31.45290
+      slope: 7.03
+      elevation: 135.50
+    - pos:
+        - line: "9721"
+          mileage: 33.0458
+      slope: -5.88
+      elevation: 146.70
+    - pos:
+        - line: "9721"
+          mileage: 34.73
+      slope: 1.05
+      elevation: 136.80
+    - pos:
+        - line: "9721"
+          mileage: 36.8237
+      slope: 3.48
+      elevation: 139.0
+    - pos:
+        - line: "9721"
+          mileage: 38.3483
+      slope: 12.2
+      elevation: 144.30
   radius_changes:
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 7.7
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 31.81604
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 32.7128
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 32.7128
+      radius: 1500
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 33.38621
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 33.56221
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 33.84386
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 34.09986
+      radius: -1050
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 34.77986
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 35.03586
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 35.09986
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 35.18353
+      radius: 5000
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 35.27375
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 35.31241
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 35.38745
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 35.42612
+      radius: -5000
+    - class: varying
+      pos:
+        - line: "9721"
+          mileage: 35.56133
+      type: linear
+    - class: const
+      pos:
+        - line: "9721"
+          mileage: 35.6
+      

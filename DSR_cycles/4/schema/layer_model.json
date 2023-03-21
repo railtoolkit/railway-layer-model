@@ -1,0 +1,439 @@
+{
+  "$id": "https://railtoolkit.org/layer-model/DSR_cycles/1/schema/layer_model.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Railway Layer Model - 4. DSR cycle",
+  "description":
+    "The railway layer model is part of a PhD thesis. Copyright (c) 2018 - 2023, Martin Scheidt [m.scheidt@tu-bs.de] under the ISC License. This schema can be used to verify the YAML snippets for railway layer model. First cycle of DSR only includes the base layer",
+  "type": "object",
+  "anyOf": [
+    {"required": [ "base" ] },
+    {"required": [ "network" ] },
+    {"required": [ "physical" ] },
+    {"required": [ "speed" ] }
+  ],
+  "definitions": {
+    "id": {
+      "type": "string",
+      "description": "might be a UUID or something similar"
+    },
+    "line_position": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "line": { "type": "string" },
+          "mileage": { "type": "number" }
+        },
+        "required": [ "line", "mileage" ]
+      }
+    },
+    "length": {
+      "type": "number",
+      "default": 0,
+      "minimum": 0,
+      "description": "the physical distance between two nodes"
+    },
+    "base_reference": {
+      "type": "string",
+      "description": "ID of a station from base layer"
+    },
+    "network_reference": {
+      "type": "string",
+      "description": "ID of a station from network layer"
+    },
+    "direction": { 
+      "type": "string",
+      "enum": [ "forward", "backward", "bidirectional" ]
+    }
+  },
+  "properties": {
+    "base": {
+      "title": "base layer",
+      "type": "object",
+      "description": "macroscopic connections & network access",
+      "properties": {
+        "name": { "type": "string" },
+        "id": { "$ref": "#/definitions/id" },
+        "stations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": { "$ref": "#/definitions/id" },
+              "name": { "type": "string" },
+              "plot_coord": {
+                "type": "array",
+                "items": {}
+              },
+              "geo_coord": {
+                "type": "array",
+                "items": {}
+              },
+              "pos": { "$ref": "#/definitions/line_position" }
+            },
+            "required": [ "id", "name" ]
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "source": {
+                "description": "$id of a station",
+                "type": "string"
+              },
+              "target": {
+                "description": "$id of a station",
+                "type": "string"
+              },
+              "length": { "$ref": "#/definitions/length" }
+            },
+            "required": [
+              "source",
+              "target",
+              "length"
+            ]
+          }
+        },
+        "lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "id": { "$ref": "#/definitions/id" },
+              "tracks": {
+                "type": "array",
+                "items": {}
+              },
+              "start": { "type": "number" },
+              "end": { "type": "number" },
+              "stations": {
+                "type": "array",
+                "items": {}
+              }
+            },
+            "required": [ "id", "tracks" ]
+          }
+        }
+      },
+      "required": [ "stations", "lines" ]
+    },
+    "network": {
+      "type": "object",
+      "title": "The Network Layer",
+      "description": "junctions, tracks & usage",
+      "required": [ "nodes" ],
+      "properties": {
+        "name": { "type": "string" },
+        "id": { "$ref": "#/definitions/id" },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "id", "base_ref", "type" ],
+            "properties": {
+              "id": { "$ref": "#/definitions/id" },
+              "base_ref": { "$ref": "#/definitions/base_reference" },
+              "type": {
+                "type": "string",
+                "enum": [ "track", "junction" ]
+              }
+            },
+            "allOf": [
+              {
+                "if": { "properties": { "type": { "const": "junction" } } },
+                "then": {
+                  "properties": {
+                    "in": {
+                      "description": "$id of a connection",
+                      "type": "array",
+                      "items": { "type": "string" }
+                    },
+                    "out": {
+                      "description": "$id of a connection",
+                      "type": "array",
+                      "items": { "type": "string" }
+                    },
+                    "limits": {
+                      "description": "$id of a sign/signal from Physical Layer",
+                      "type": "array",
+                      "items": { "type": "string" }
+                    }
+                  },
+                  "required": [ "in", "out", "limits" ]
+                }
+              }
+            ]      
+          }
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "id", "source", "target" ],
+            "properties": {
+              "id": { "$ref": "#/definitions/id" },
+              "source": {
+                "description": "$id of a node",
+                "type": "string"
+              },
+              "target": {
+                "description": "$id of a node",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "physical": {
+      "title": "physical layer",
+      "type": "object",
+      "description": "microscopic connections & topology",
+      "properties": {
+        "id": { "$ref": "#/definitions/id" },
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [ "name", "class", "kind" ],
+            "properties": {
+              "name": { "type": "string" },
+              "base_ref": { "$ref": "#/definitions/base_reference" },
+              "network_ref": { "$ref": "#/definitions/network_reference" },
+              "id": { "$ref": "#/definitions/id" },
+              "pos": { "$ref": "#/definitions/line_position" },
+              "class": { 
+                "type": "string",
+                "enum": [ "berth", "sign", "branching", "trap", "detector", "end" ]
+              },
+              "specimen": { "type": "string" }
+            },
+            "allOf": [
+              {
+                "if": {  "properties": { "class": { "const": "berth" } } },
+                "then": {
+                  "properties": {
+                    "kind": { "type": "string", "enum": ["end platform", "end usable length"] },
+                    "direction": { "$ref": "#/definitions/direction" }
+                  }
+                }
+              }, {
+                "if": { "properties": { "class": { "const": "sign" } } },
+                "then": {
+                  "properties": {
+                    "kind": { "type": "string", "enum": ["board", "signal"] },
+                    "direction": { "$ref": "#/definitions/direction" }
+                  }
+                }
+              }, {
+                "if": { "properties": { "class": { "const": "trap" } } },
+                "then": {
+                  "properties": {
+                    "kind": { "type": "string", "enum": ["derailer", "points"] },
+                    "direction": { "$ref": "#/definitions/direction" }
+                  }
+                }
+              }, {
+                "if": { "properties": { "class": { "const": "branching" } } },
+                "then": {
+                  "properties": {
+                    "kind": { "type": "string", "enum": ["turnout", "slip turnout", "diamond crossing"] },
+                    "branches": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "name",
+                          "path" 
+                        ],
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "enum": [ "left", "right", "straight", "straight2" ]
+                          },
+                          "path": {
+                            "type": "array",
+                            "maxItems" : 2,
+                            "minItems" : 2,
+                            "items": {
+                              "$ref": "#/definitions/id",
+                              "description": "tracksection ID"
+                            }
+                          },
+                          "speed": {
+                            "type": "number",
+                            "default": ".inf"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }, {
+                "if": { "properties": { "class": { "const": "detector" } } },
+                "then": {
+                  "properties": {
+                    "kind": { "type": "string", "enum": ["clearing point", "balise"] },
+                    "direction": { "$ref": "#/definitions/direction" }
+                  }
+                }
+              }, {
+                "if": {  "properties": { "class": { "const": "end" } } },
+                "then": {
+                  "properties": {
+                    "kind": { "type": "string", "enum": ["buffer stop", "continuing"] }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "tracksections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "source",
+              "target"
+            ],
+            "properties": {
+              "name": { "type": "string" },
+              "id": { "$ref": "#/definitions/id" },
+              "length": { "$ref": "#/definitions/length" },
+              "base_ref": { "$ref": "#/definitions/base_reference" },
+              "source": {
+                "$ref": "#/definitions/id",
+                "description": "element ID"
+              },
+              "target": {
+                "$ref": "#/definitions/id",
+                "description": "element ID"
+              }
+            }
+          }
+        }
+       }
+    },
+    "speed": {
+      "title": "physical layer",
+      "type": "array",
+      "description": "microscopic connections & topology",
+      "items": {
+        "type": "object",
+        "anyOf": [
+          {"required": [ "id", "start", "end",  "allowance"] },
+          {"required": [ "id", "start", "end", "gradient_changes"] },
+          {"required": [ "id", "start", "end", "radius_changes"] }
+        ],
+        "properties": {
+          "name": { "type": "string" },
+          "line": { "type": "string" },
+          "track": { "type": "string" },
+          "start": { "type": "number" },
+          "end": { "type": "number" },
+          "direction": { "$ref": "#/definitions/direction" },
+          "id": { "$ref": "#/definitions/id" },
+          "path": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/network_reference" }
+          },
+          "allowance": {
+            "type": "array",
+            "default": [],
+            "title": "The allowance Schema",
+            "minItems" : 1,
+            "items": {
+              "type": "object",
+              "title": "A Schema",
+              "required": [ "pos", "vMax" ],
+              "properties": {
+                "pos": { "$ref": "#/definitions/line_position" },
+                "vMax": {
+                  "type": "number",
+                  "description": "maximum allowed speed in km/h starting from pos"
+                }
+              }
+            }
+          },
+          "gradient_changes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [ "pos", "slope", "elevation" ],
+              "properties": {
+                "pos": { "$ref": "#/definitions/line_position" },
+                "slope": {
+                  "type": "number",
+                  "default": 0.0,
+                  "description": "in permil (‰)"
+                },
+                "elevation": {
+                  "type": "number",
+                  "default": 0.0
+                },
+                "length": {
+                  "type": "number",
+                  "description": "length of the radius of curvature"
+                },
+                "radius": { "type": "number" }
+              }
+            }
+          },
+          "radius_changes": {
+            "type": "array",
+            "default": [],
+            "title": "The radius_changes Schema",
+            "minItems" : 1,
+            "items": {
+              "type": "object",
+              "title": "A Schema",
+              "required": [ "pos", "class" ],
+              "properties": {
+                "pos": { "$ref": "#/definitions/line_position" },
+                "class": {
+                  "type": "string",
+                  "enum": [ "const", "varying" ]
+                }
+              },
+              "allOf": [
+                {
+                  "if": {  "properties": { "class": { "const": "const" } } },
+                  "then": {
+                    "properties": {
+                      "radius": {
+                        "type": "number",
+                        "default": ".Inf",
+                        "description": "positive -> left curvature / negative -> right curvature"
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {  "properties": { "class": { "const": "varying" } } },
+                  "then": {
+                    "properties": {
+                      "type": {
+                        "type": "string",
+                        "default": "linear"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

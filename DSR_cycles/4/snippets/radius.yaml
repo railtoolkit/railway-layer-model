@@ -1,0 +1,23 @@
+%YAML 1.2
+---
+speed:
+- name: Rebenau Buelten via Pockelsdorf (9724, forward)
+  id: 9724_forward
+  start: 0.0
+  end: 18.9
+  radius_changes:
+    - class: const # [varying, const]
+      pos:
+        - line:  "9724"
+          mileage: 0.0 # from here on
+      radius: .Inf # default
+    - class: const
+      pos:
+        - line:  "9724"
+          mileage: 0.48460 # from here on
+      radius: -3000 # positive -> left curvature / negative -> right curvature
+    - class: varying
+      pos:
+        - line:  "9724"
+          mileage: 0.84009
+      type: linear # type of function

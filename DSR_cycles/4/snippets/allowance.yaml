@@ -1,0 +1,12 @@
+%YAML 1.2
+---
+speed:
+- name: Rebenau Buelten via Pockelsdorf (9724, forward)
+  id: 9724_forward
+  start: 0.0
+  end: 18.9
+  allowance:
+    - pos:
+        - line: "9724"
+          mileage: 0.0 # from here on
+      vMax: 160 # in km/h

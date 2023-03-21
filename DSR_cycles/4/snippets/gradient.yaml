@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+speed:
+- name: Rebenau Buelten via Pockelsdorf (9724, forward)
+  id: 9724_forward
+  start: 0.0
+  end: 18.9
+  gradient_changes:
+  - pos:
+      - line: "9724"
+        mileage: 0.0 # from here on
+    slope: 1.72 #in ‰
+    elevation: 111.37
+    # length:
+    # radius:
