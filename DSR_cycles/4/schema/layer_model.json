@@ -325,9 +325,9 @@
        }
     },
     "speed": {
-      "title": "physical layer",
+      "title": "speed profile layer",
       "type": "array",
-      "description": "microscopic connections & topology",
+      "description": "track attributes & running time estimation",
       "items": {
         "type": "object",
         "anyOf": [
@@ -383,6 +383,8 @@
                 },
                 "length": {
                   "type": "number",
+                  "default": 0,
+                  "minimum": 0,
                   "description": "length of the radius of curvature"
                 },
                 "radius": { "type": "number" }
