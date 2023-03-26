@@ -1,0 +1,67 @@
+%YAML 1.2
+---
+network:
+  name: "Example Infrastructure"
+  id: network
+  nodes:
+    - id: XR_XPD
+      base_ref: "rebenau_to_pockelsdorf"
+      type: track
+    - id: XM_XPD
+      base_ref: "mittelstadt_to_pockelsdorf"
+      type: track
+    - id: XPD_west
+      base_ref: "XPD"
+      type: junction
+      in:
+        - previous_node: XR_XPD
+          direction: forward
+          limit:
+            name: A
+            physical_ref: e9449472-545f-4198-b640-6e3de097719b
+        - previous_node: XM_XPD
+          direction: forward
+          limit:
+            name: B
+            physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+      out:
+        - next_node: XPD_1
+          direction: backward
+          limit: 
+            name: P1
+            physical_ref: b361a3ee-5069-4569-872f-6f3642209fe8
+        - next_node: XPD_2
+          direction: backward
+          limit:
+            name: P2
+            physical_ref: 1559135a-021c-4e24-a5c2-e8075bc4c4c5
+        - next_node: XPD_3
+          direction: backward
+          limit:
+            name: P3
+            physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
+    - id: XPD_1
+      base_ref: "XPD"
+      type: track
+    - id: XPD_2
+      base_ref: "XPD"
+      type: track
+    - id: XPD_3
+      base_ref: "XPD"
+      type: track
+  connections:
+    - id: XR_XPD_to_XPD_west
+      source: XR_XPD
+      target: XPD_west
+    - id: XM_XPD_to_XPD_west
+      source: XM_XPD
+      target: XPD_west
+    - id: XPD_west_to_XPD_1
+      source: XPD_west
+      target: XPD_1
+    - id: XPD_west_to_XPD_2
+      source: XPD_west
+      target: XPD_2
+    - id: XPD_west_to_XPD_3
+      source: XPD_west
+      target: XPD_3

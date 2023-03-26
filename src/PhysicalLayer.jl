@@ -13,7 +13,7 @@ import .LMcore
 using Graphs, MetaGraphs
 using DataStructures
 
-export load, save, physicalPaths
+export load, save, physicalPaths, get_route_elements
 
 # ===========================
 """
@@ -279,5 +279,19 @@ function update_queue!(Q,node,distance,predecessor_list,previous_table)
     end
   end
 end # function update_queue!
+
+"""
+Returns all elements of class "branching" and "trap" as a tuple of (name,id) in an array.
+"""
+function get_route_elements(physicalLayer)
+  route_elements = []
+  for elem in vertices(physicalLayer)
+    attr = props(physicalLayer,elem)
+    if attr[:class] == "branching" || attr[:class] == "trap"
+        push!(route_elements, (attr[:name],attr[:id]))
+    end
+  end
+  return route_elements
+end # getRouteElements
 
 end # module PhysicalLayer

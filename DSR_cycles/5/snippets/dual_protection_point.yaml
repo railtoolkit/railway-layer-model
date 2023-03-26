@@ -1,0 +1,54 @@
+%YAML 1.2
+---
+interlocking:
+  - entrance_name: A
+    physical_ref: e9449472-545f-4198-b640-6e3de097719b
+    network_ref: "XPD_west"
+    routes:
+      - id: track3
+        target: XPD_3
+        en_route:
+          - name: W1
+            physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+            branch: left
+          - name: W2
+            physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+            branch: left
+        flankprotection:
+          turnouts:
+            - name: W3
+              physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+              branches: [ straight2, right ]
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight, left ] # dual protection point
+          signals:
+            - name: B # for dual protection point
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+        route_clearing: 
+          name: W2/G103
+          physical_ref: 73c04241-f1a4-4786-aae7-2dae2f085e37
+  - entrance_name: B
+    physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+    network_ref: "XPD_west"
+    routes:
+      - id: main
+        target: XPD_1
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: right
+        flankprotection: 
+          turnouts:
+            - name: W1
+              physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+              branches: [ left ]
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ left, straight ] # dual protection point
+          signals:
+            - name: B # for dual protection point
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+        route_clearing: 
+          name: W3/G301
+          physical_ref: 2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3

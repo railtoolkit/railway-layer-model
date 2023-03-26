@@ -1,0 +1,352 @@
+%YAML 1.2
+---
+interlocking:
+  - entrance_name: A
+    physical_ref: e9449472-545f-4198-b640-6e3de097719b
+    network_ref: "XPD_west"
+    overlaps:
+      - id: main
+        end:
+          - name: G101/G201 # detection object (clearing point)
+            physical_ref: d4a694ec-483e-47eb-8dcf-8d89054ea626
+    routes:
+      - id: main
+        target: XPD_1 # network_id
+        en_route:
+          - name: W1
+            physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+            branch: straight
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: straight
+        flankprotection:
+          turnouts:
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight ]
+          signals:
+            - name: B
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+            - name: P2
+              physical_ref: 1559135a-021c-4e24-a5c2-e8075bc4c4c5
+            - name: P3
+              physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
+        route_clearing: 
+          name: W3/G301
+          physical_ref: 2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3
+      - id: track2
+        target: XPD_2
+        en_route:
+          - name: W1
+            physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+            branch: left
+          - name: W2
+            physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+            branch: straight
+          - name: W4
+            physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+            branch: straight
+        flankprotection:
+          turnouts:
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight ]
+          signals:
+            - name: P3
+              physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
+        route_clearing: 
+          name: W4/G102
+          physical_ref: 1e8df13d-567f-44ad-9563-3820ed0f57b6
+      - id: track3
+        target: XPD_3
+        en_route:
+          - name: W1
+            physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+            branch: left
+          - name: W2
+            physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+            branch: left
+        flankprotection:
+          turnouts:
+            - name: W3
+              physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+              branches: [ straight2, right ]
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight, left ] # dual protection point
+          signals:
+            - name: B # for dual protection point
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+        route_clearing: 
+          name: W2/G103
+          physical_ref: 73c04241-f1a4-4786-aae7-2dae2f085e37
+  - entrance_name: B
+    physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+    network_ref: "XPD_west"
+    overlaps:
+      - id: main
+        end: 
+          - name: G143/G243
+            physical_ref: 7cd65efa-be49-490e-a3c3-209bd5af250f
+    routes:
+      - id: main
+        target: XPD_1
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: right
+        flankprotection: 
+          turnouts:
+            - name: W1
+              physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+              branches: [ left ]
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ left, straight ] # dual protection point
+          signals:
+            - name: B # for dual protection point
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+        route_clearing: 
+          name: W3/G301
+          physical_ref: 2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3
+      - id: track2
+        target: XPD_2
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: straight2
+          - name: W4
+            physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+            branch: left
+        flankprotection: 
+          turnouts:
+            - name: W1
+              physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+              branches: [ left ]
+            - name: W2
+              physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+              branches: [ left ]
+        route_clearing: 
+          name: W4/G102
+          physical_ref: 1e8df13d-567f-44ad-9563-3820ed0f57b6
+  - entrance_name: P1
+    physical_ref: b361a3ee-5069-4569-872f-6f3642209fe8
+    network_ref: "XPD_west"
+    overlaps:
+      - id: main
+        end: 
+          - name: W1/W3
+            physical_ref: cc12e61d-76df-4f2e-8605-192f53daa46e
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: straight
+        flankprotection:
+          turnouts:
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight ]
+          signals:
+            - name: B
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+      - id: left
+        end: 
+          - name: G243/W3
+            physical_ref: c514c6eb-404a-43a0-b99d-8a170668a755
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: right
+        flankprotection:
+          turnouts:
+            - name: W1
+              physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+              branches: [ left ]
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight ]
+      - id: short
+        speed: 40
+        end: 
+          - name: W3/G301
+            physical_ref: 2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3
+    routes:
+      - id: rebenau
+        target: XR_XPD
+        en_route:
+          - name: W1
+            physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+            branch: straight
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: straight
+        flankprotection:
+          turnouts:
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight ]
+          signals:
+            - name: B
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+            - name: P2
+              physical_ref: 1559135a-021c-4e24-a5c2-e8075bc4c4c5
+            - name: P3
+              physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
+        route_clearing: 
+          name: G201/W1
+          physical_ref: eb954114-bb76-479f-96e6-1907c853299a
+      - id: mittelstadt
+        target: XM_XPD
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: right
+        flankprotection: 
+          turnouts:
+            - name: W1
+              physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+              branches: [ left ]
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight, left ] # dual protection point
+          signals:
+            - name: B # for dual protection point
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+        route_clearing: 
+          name: G243/W3
+          physical_ref: c514c6eb-404a-43a0-b99d-8a170668a755
+  - entrance_name: P2
+    physical_ref: 1559135a-021c-4e24-a5c2-e8075bc4c4c5
+    network_ref: "XPD_west"
+    overlaps:
+      - id: main
+        end: 
+          - name: W1/W2
+            physical_ref: 6d4dcc44-ceb0-4523-baca-79f3a9bd13cd
+        en_route:
+          - name: W2
+            physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+            branch: straight
+          - name: W4
+            physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+            branch: straight
+        flankprotection:
+          turnouts:
+            - name: W3
+              physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+              branches: [ straight, right ]
+          signals:
+            - name: P3
+              physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
+      - id: left
+        end: 
+          - name: G243/W3
+            physical_ref: c514c6eb-404a-43a0-b99d-8a170668a755
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: straight2
+          - name: W4
+            physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+            branch: left
+        flankprotection:
+          turnouts:
+            - name: W1
+              physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+              branches: [ left ]
+            - name: W2
+              physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+              branches: [ left ]
+          signals:
+            - name: P1
+              physical_ref: b361a3ee-5069-4569-872f-6f3642209fe8
+      - id: short
+        speed: 40
+        end: 
+          - name: W4/G102
+            physical_ref: 1e8df13d-567f-44ad-9563-3820ed0f57b6
+    routes:
+      - id: rebenau
+        target: XR_XPD
+        en_route:
+          - name: W1
+            physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+            branch: left
+          - name: W2
+            physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+            branch: straight
+          - name: W4
+            physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+            branch: straight
+        flankprotection:
+          turnouts:
+            - name: W3
+              physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+              branches: [ right ]
+          signals:
+            - name: P3
+              physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
+        route_clearing: 
+          name: G201/W1
+          physical_ref: eb954114-bb76-479f-96e6-1907c853299a
+      - id: mittelstadt
+        target: XM_XPD
+        en_route:
+          - name: W3
+            physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+            branch: straight2
+          - name: W4
+            physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+            branch: left
+        flankprotection: 
+          turnouts:
+            - name: W1
+              physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+              branches: [ left ]
+            - name: W2
+              physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+              branches: [ left ]
+        route_clearing: 
+          name: G243/W3
+          physical_ref: eb954114-bb76-479f-96e6-1907c853299a
+  - entrance_name: P3
+    physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
+    network_ref: "XPD_west"
+    overlaps:
+      - id: main
+        end: 
+          - name: W1/W2
+            physical_ref: 6d4dcc44-ceb0-4523-baca-79f3a9bd13cd
+        en_route:
+          - name: W2
+            physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+            branch: left
+        flankprotection:
+          turnouts:
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ left ]
+    routes:
+      - id: main
+        target: XR_XPD
+        en_route:
+          - name: W1
+            physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
+            branch: left
+          - name: W2
+            physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
+            branch: left
+        flankprotection:
+          turnouts:
+            - name: W3
+              physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
+              branches: [ straight2, right ]
+            - name: W4
+              physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
+              branches: [ straight, left ] # dual protection point
+          signals:
+            - name: B # for dual protection point
+              physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
+        route_clearing: 
+          name: G201/W1
+          physical_ref: eb954114-bb76-479f-96e6-1907c853299a

@@ -1,0 +1,20 @@
+Limit,Target,Type,Name,W1,W2,W3,W4
+A,XPD_1,route,main,"[""straight""]",,"[""straight""]","[""straight""]"
+A,XPD_2,route,track2,"[""left""]","[""straight""]",,"[""straight""]"
+A,XPD_3,route,track3,"[""left""]","[""left""]","[""straight2"", ""right""]","[""straight"", ""left""]"
+A,XPD_west,overlap,main,,,,
+B,XPD_1,route,main,"[""left""]",,"[""right""]","[""left"", ""straight""]"
+B,XPD_2,route,track2,"[""left""]","[""left""]","[""straight2""]","[""left""]"
+B,XPD_west,overlap,main,,,,
+P1,XR_XPD,route,rebenau,"[""straight""]",,"[""straight""]","[""straight""]"
+P1,XM_XPD,route,mittelstadt,"[""left""]",,"[""right""]","[""straight"", ""left""]"
+P1,XPD_west,overlap,main,,,"[""straight""]","[""straight""]"
+P1,XPD_west,overlap,left,"[""left""]",,"[""right""]","[""straight""]"
+P1,XPD_west,overlap,short,,,,
+P2,XR_XPD,route,rebenau,"[""left""]","[""straight""]","[""right""]","[""straight""]"
+P2,XM_XPD,route,mittelstadt,"[""left""]","[""left""]","[""straight2""]","[""left""]"
+P2,XPD_west,overlap,main,,"[""straight""]","[""straight"", ""right""]","[""straight""]"
+P2,XPD_west,overlap,left,"[""left""]","[""left""]","[""straight2""]","[""left""]"
+P2,XPD_west,overlap,short,,,,
+P3,XR_XPD,route,main,"[""left""]","[""left""]","[""straight2"", ""right""]","[""straight"", ""left""]"
+P3,XPD_west,overlap,main,,"[""left""]",,"[""left""]"
