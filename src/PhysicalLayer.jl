@@ -13,7 +13,7 @@ import .LMcore
 using Graphs, MetaGraphs
 using DataStructures
 
-export load, save, physicalPaths, get_route_elements
+export load, save, physicalPaths, get_route_elements, get_position
 
 # ===========================
 """
@@ -293,5 +293,11 @@ function get_route_elements(physicalLayer)
   end
   return route_elements
 end # getRouteElements
+
+function get_position(physicalLayer, id)
+  node = first(MetaGraphs.filter_vertices(physicalLayer, :id, id))
+  pos = MetaGraphs.get_prop(physicalLayer, node, :pos)
+  return pos
+end # function get_position
 
 end # module PhysicalLayer

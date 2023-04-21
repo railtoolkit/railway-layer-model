@@ -10,7 +10,7 @@ module NetworkLayer
 include("LMcore.jl")
 using Graphs, MetaGraphs
 
-export load, save, addJunctionPaths!
+export load, save, addJunctionPaths!, get_link_type
 
 # ===========================
 """
@@ -20,8 +20,8 @@ Returns a MetaGraph object.
 function load(file_path)
 
   graph_name = "network"
-  node_name  = "nodes"
-  edge_name  = "connections"
+  node_name  = "junctions"
+  edge_name  = "links"
 
   return LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
@@ -66,5 +66,33 @@ function addJunctionPaths!(physicalLayer::AbstractMetaGraph, networkLayer::Abstr
   MetaGraphs.set_prop!(networkLayer, junction_id, :paths, pathtab)
 
 end # function addJunctionPaths!
+
+function get_edge(networkLayer, id)
+  return first(collect(MetaGraphs.filter_edges(networkLayer, :id, id)))
+end # function get_link_type
+
+function get_link_type(networkLayer, edge)
+  return props(networkLayer, edge)[:type]
+end # function get_link_type
+
+function get_next_junction(networkLayer, id, direction)
+  edge = first(collect(MetaGraphs.filter_edges(networkLayer, :id, id)))
+  if direction == "forward"
+    node = dst(edge)
+  elseif direction == "backward"
+    node = src(edge)
+  end
+  return props(networkLayer, node)
+end # function get_next_junction
+
+function get_next_limit(networkLayer, id, track, direction)
+  junction = get_next_junction(networkLayer, id, direction)
+  if direction == "forward"
+    limits = junction[:in]
+  elseif direction == "backward"
+    limits = junction[:out]
+  end
+  return first(filter(x -> x["track"] == track, limits))["limit"]
+end # function get_next_limit
 
 end # module NetworkLayer

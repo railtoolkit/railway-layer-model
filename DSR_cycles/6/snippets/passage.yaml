@@ -1,0 +1,18 @@
+%YAML 1.2
+---
+resource:
+  passages:
+    - id: XR_XPD
+      name: From Rebenau to Pockelsdorf
+      base_ref: XR_XPD
+      tracks:
+        - id: "XR_XPD"
+          line: "9724"
+          line_track: "main"
+          segments:
+            - physical_ref: ["84fbfb94-4a22-49d9-8918-66bb4cd0242a"]
+              breaking_distance: 0.700 # distant signal
+              clearing_distance: 0.050 # overlap
+            - physical_ref: ["a67f7533-ff97-4d9c-9f3e-6df1dcc5c622"]
+              breaking_distance: 0.700
+              clearing_distance: 0.050

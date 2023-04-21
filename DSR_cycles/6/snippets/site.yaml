@@ -1,0 +1,43 @@
+%YAML 1.2
+---
+resource:
+  sites: # collection of tracks
+    - id: XPD
+      name: Pockelsdorf Station
+      base_ref: XPD
+      sets: [["1","2"],["3"]]
+      tracks:
+        - id: "1"
+          line: "9724"
+          line_track: "main"
+          segments:
+            - physical_ref: ["9f9c6903-8515-43f0-99d8-b8fc738ab647","3e588a7e-8487-4fc5-9541-95db05bdf701","37e6ae6f-9edb-4e43-a935-d1a9646e4ba3","1de2ff52-f471-4b00-9526-eaed4b74ec46"] # ["401_2","401_3","401_4","401_5"]
+              # breaking_distance: 0.700
+              clearing_distance: 0.005
+              berth:
+                forward:
+                  - name: H1_2
+                    physical_ref: 604398d9-43bb-4c1e-b251-fd0bf1696d44
+                    platform: true
+                backward:
+                  - name: P1
+                    physical_ref: b361a3ee-5069-4569-872f-6f3642209fe8
+                    platform: false
+                  - name: H1_1
+                    physical_ref: 763163e9-c6c5-487b-a455-d78c17e826c9
+                    platform: true
+            - physical_ref: ["41b33bd7-22aa-48b3-8bb0-24dc74063b71","73f0544b-59dc-479c-988c-4787670dd916","868283aa-3594-4b05-8fbf-e56795a76ae5","020014fd-ecd1-4e2d-91ef-2f74fd0fa263"] # ["401_6","401_7","401_8","401_9"]
+              # breaking_distance: 0.700
+              clearing_distance: 0.005
+              berth:
+                forward:
+                  - name: N1
+                    physical_ref: 606c2f08-3624-4623-9374-c7398320bace
+                    platform: false
+                  - name: H1_4
+                    physical_ref: abb3dee7-682c-4a2e-af81-ba7e9a394945
+                    platform: true
+                backward:
+                  - name: H1_3
+                    physical_ref: 2477d593-ced3-4cb7-b8e7-4cd12b75d0fe
+                    platform: true

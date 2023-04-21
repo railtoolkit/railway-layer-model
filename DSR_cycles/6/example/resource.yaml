@@ -1,0 +1,163 @@
+%YAML 1.2
+---
+resource:
+  sites: # collection of tracks
+    - id: XR
+      name: Rebenau Station
+      base_ref: XR
+      sets: [["1"],["2","3"],["4","5"]]
+      tracks:
+        # - id: "1"
+        #   line: "9721"
+        #   line_track: "right"
+        #   segments:
+        #     - physical_ref: ["401_2","401_3","401_4"]
+        #       # breaking_distance: 0.700
+        #       # clearing_distance: 0.005
+        #       length: 0.754
+        #       clearing_distance: 0.005
+        #       berth:
+        # - id: "2"
+        #   segments:
+        #     - physical_ref: ["102_2","102_3","102_4"]
+        - id: "3"
+          line: "9721"
+          line_track: "left"
+          segments:
+            - physical_ref: ["4dbd323c-6296-4e61-9d92-1c25743f4f3a","106aae72-ae4d-4b53-a657-3cc261c59e8f","c2302818-fac1-402f-99ec-dbd5c3e06000"] # ["303_2","303_3","303_4"]
+              clearing_distance: 0.000
+              berth:
+                forward:
+                  - name: N3
+                    physical_ref: 897f5fbd-8583-4353-a0d6-feaf0150cbef
+                    platform: false
+                  - name: H3_2
+                    physical_ref: 271f086a-22b4-4139-b8e5-91dd863e5c44
+                    platform: true
+                backward:
+                  - name: P3
+                    physical_ref: 23e608ef-5d85-4537-99d3-a5ebeba4dbba
+                    platform: false
+                  - name: H3_1
+                    physical_ref: 751f4c22-b64f-4f02-b2d5-7290bcc1c85d
+                    platform: true
+        # - id: "4"
+        #   segments:
+        #     - physical_ref: ["104_2","104_3","104_4"]
+        #       line: "9724"
+        #       line_track: "main"
+        # - id: "5"
+        #   segments:
+        #     - physical_ref: ["105_2","105_3","105_4"]
+    - id: XPD
+      name: Pockelsdorf Station
+      base_ref: XPD
+      sets: [["1","2"],["3"]]
+      tracks:
+        - id: "1"
+          line: "9724"
+          line_track: "main"
+          segments:
+            - physical_ref: ["9f9c6903-8515-43f0-99d8-b8fc738ab647","3e588a7e-8487-4fc5-9541-95db05bdf701","37e6ae6f-9edb-4e43-a935-d1a9646e4ba3","1de2ff52-f471-4b00-9526-eaed4b74ec46"] # ["401_2","401_3","401_4","401_5"]
+              # breaking_distance: 0.700
+              clearing_distance: 0.005
+              berth:
+                forward:
+                  - name: H1_2
+                    physical_ref: 604398d9-43bb-4c1e-b251-fd0bf1696d44
+                    platform: true
+                backward:
+                  - name: P1
+                    physical_ref: b361a3ee-5069-4569-872f-6f3642209fe8
+                    platform: false
+                  - name: H1_1
+                    physical_ref: 763163e9-c6c5-487b-a455-d78c17e826c9
+                    platform: true
+            - physical_ref: ["41b33bd7-22aa-48b3-8bb0-24dc74063b71","73f0544b-59dc-479c-988c-4787670dd916","868283aa-3594-4b05-8fbf-e56795a76ae5","020014fd-ecd1-4e2d-91ef-2f74fd0fa263"] # ["401_6","401_7","401_8","401_9"]
+              # breaking_distance: 0.700
+              clearing_distance: 0.005
+              berth:
+                forward:
+                  - name: N1
+                    physical_ref: 606c2f08-3624-4623-9374-c7398320bace
+                    platform: false
+                  - name: H1_4
+                    physical_ref: abb3dee7-682c-4a2e-af81-ba7e9a394945
+                    platform: true
+                backward:
+                  - name: H1_3
+                    physical_ref: 2477d593-ced3-4cb7-b8e7-4cd12b75d0fe
+                    platform: true
+    - id: XSZ
+      name: Schleinitz Station
+      base_ref: XSZ
+      sets: [["2","3"],["1","4"]]
+      tracks:
+        - id: "2"
+          line: "9721"
+          line_track: "2"
+          segments:
+            - physical_ref: ["e510e28c-1518-4a9b-a271-ae7cce111951","4e150880-b35c-45a5-b463-1206f0658120","868d9a6e-7da3-45b0-b39c-0bbfb323a07a"]
+              clearing_distance: 0.000
+              berth:
+                forward:
+                  - name: P2
+                    physical_ref: fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b
+                    platform: false
+                  - name: H2_1
+                    physical_ref: beb565bc-b1d2-483a-a2c9-2ebaad59f995
+                    platform: true
+                backward:
+                  - name: H2_2
+                    physical_ref: 7907115d-238e-432a-a457-e8e00f977ee0
+                    platform: true
+                  - name: N2
+                    physical_ref: 89d3d5aa-716b-4b98-92c7-bff39ed5f91a
+                    platform: false
+  passages:
+    - id: XR_XPD
+      name: From Rebenau to Pockelsdorf
+      base_ref: XR_XPD
+      tracks:
+        - id: "XR_XPD"
+          line: "9724"
+          line_track: "main"
+          segments:
+            - physical_ref: ["84fbfb94-4a22-49d9-8918-66bb4cd0242a"]
+              breaking_distance: 0.700 # distant signal
+              clearing_distance: 0.050 # overlap
+            - physical_ref: ["a67f7533-ff97-4d9c-9f3e-6df1dcc5c622"]
+              breaking_distance: 0.700
+              clearing_distance: 0.050
+    - id: XPD_XBU
+      name: From Pockelsdorf to Bülten
+      base_ref: XPD_XBU
+      tracks:
+        - id: "XPD_XBU"
+          line: "9724"
+          line_track: "main"
+          segments:
+            - physical_ref: ["43ed0124-ce79-40c1-81f3-d941b425f9f8"]
+              breaking_distance: 0.700 # distant signal
+              clearing_distance: 0.050 # overlap
+            - physical_ref: ["18a4469c-b63a-4099-81a2-12b56d552d8a"]
+              breaking_distance: 0.700
+              clearing_distance: 0.050
+    - id: XBU_XSZ
+      base_ref: XBU_XSZ
+      tracks:
+        - id: "XBU_XSZ_1"
+          line: "9724"
+          line_track: "1"
+          segments:
+            - physical_ref: ["0925afe1-2b5b-464d-9f3f-a16c505df23e"]
+              breaking_distance: 1.000
+              clearing_distance: 0.200
+        - id: "XBU_XSZ_2"
+          line: "9724"
+          line_track: "2"
+          segments:
+            - physical_ref: ["826696a2-80c9-40de-a042-dfd925522cc0"]
+              breaking_distance: 1.000
+              clearing_distance: 0.200
+

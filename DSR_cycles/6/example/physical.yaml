@@ -1,0 +1,5791 @@
+physical:
+  elements:
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.126
+        - line: "9721"
+          mileage: 15.865
+      id: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
+      class: "detector"
+      name: "W6/W7"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "500-2"
+      id: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
+      pos:
+        - line: "9724"
+          mileage: 0.136
+        - line: "9721"
+          mileage: 15.875
+      name: "W7"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 80.0
+          id: "left"
+          path:
+            - "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
+            - "81c8f580-840e-4682-ac8e-e338886a36a4"
+        - speed: 120.0
+          id: "right"
+          path:
+            - "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
+            - "b448ec40-82c0-45dc-ad70-6cb087c4e868"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.982
+      id: "398c4772-e871-47fd-abba-beb0b998fc3b"
+      class: "detector"
+      name: "W7/G105"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.982
+      id: "a631e1fa-e935-4995-902b-529ed5a3b07a"
+      class: "sign"
+      name: "P5"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.243
+        - line: "9721"
+          mileage: 15.982
+      id: "f493994b-4415-441f-a815-202691c0d28c"
+      class: "detector"
+      name: "W7/G104"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.243
+        - line: "9721"
+          mileage: 15.982
+      id: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
+      class: "sign"
+      name: "P4"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.032
+      id: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
+      class: "sign"
+      name: "H5_1"
+      network_ref: "XR_5"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.456
+      id: "ee2478ac-01e7-4dd8-823e-acb274b20831"
+      class: "sign"
+      name: "H5_2"
+      network_ref: "XR_5"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.293
+        - line: "9721"
+          mileage: 16.032
+      id: "495a4bab-4ee7-4440-a46c-c304db058aef"
+      class: "sign"
+      name: "H4_1"
+      network_ref: "XR_4"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.803
+        - line: "9721"
+          mileage: 16.542
+      id: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
+      class: "sign"
+      name: "H4_2"
+      network_ref: "XR_4"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.78
+      id: "beb5f987-f0a0-4cda-b7f9-6ea4e6aef29a"
+      class: "detector"
+      name: "W4/W8"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "500-1"
+      id: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
+      pos:
+        - line: "9721"
+          mileage: 15.895
+      name: "W8"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 50.0
+          id: "right2"
+          path:
+            - "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
+            - "4a02cfc5-4f8a-4c1a-8ddc-31804496e2ba"
+        - speed: 160.0
+          id: "right1"
+          path:
+            - "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
+            - "181e892d-4dba-420b-8d2b-b202e0e4d8aa"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.028
+      id: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
+      class: "detector"
+      name: "W8/G303"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.028
+      id: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
+      class: "sign"
+      name: "P3"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.0
+      id: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
+      class: "detector"
+      name: "W8/W9"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.0
+      id: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
+      class: "detector"
+      name: "W11/W9"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "500-1"
+      id: "c65dbc29-58da-406f-9901-d590009a81ba"
+      pos:
+        - line: "9721"
+          mileage: 16.109
+      name: "W9"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "right"
+          path:
+            - "61bd1813-d8cf-4e40-81c9-aad713e5cb3b"
+            - "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "f809f458-5a32-49ec-8ae7-f27a22ed30e3"
+            - "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.114
+      id: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
+      class: "detector"
+      name: "W9/G102"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.114
+      id: "54dec955-deee-4087-b39a-6a670df59706"
+      class: "sign"
+      name: "P2"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.078
+      id: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
+      class: "sign"
+      name: "H3_1"
+      network_ref: "XR_3"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.871
+        - line: "9721"
+          mileage: 16.61
+      id: "271f086a-22b4-4139-b8e5-91dd863e5c44"
+      class: "sign"
+      name: "H3_2"
+      network_ref: "XR_3"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.425
+        - line: "9721"
+          mileage: 16.164
+      id: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
+      class: "sign"
+      name: "H2_1"
+      network_ref: "XR_2"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.481
+      id: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
+      class: "sign"
+      name: "H2_2"
+      network_ref: "XR_2"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.506
+      id: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
+      class: "sign"
+      name: "N5"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.506
+      id: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+      class: "detector"
+      name: "G105/W12"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.853
+        - line: "9721"
+          mileage: 16.592
+      id: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
+      class: "sign"
+      name: "N4"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.853
+        - line: "9721"
+          mileage: 16.592
+      id: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
+      class: "detector"
+      name: "G104/W13"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.921
+        - line: "9721"
+          mileage: 16.66
+      id: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
+      class: "sign"
+      name: "N3"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.66
+      id: "15452298-8414-45f1-b5e0-3b9a60ed088e"
+      class: "detector"
+      name: "G303/W14"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.531
+      id: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
+      class: "sign"
+      name: "N2"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.531
+      id: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
+      class: "detector"
+      name: "G102/W15"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "300-1"
+      id: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+      pos:
+        - line: "9721"
+          mileage: 16.536
+      name: "W15"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 50.0
+          id: "left"
+          path:
+            - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
+            - "246048e1-cb84-4657-99b8-98bc3d6c14c7"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
+            - "01be204c-08ad-4292-ba76-79b61ba189b0"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.8
+      id: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
+      class: "detector"
+      name: "W15/W17"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.77
+      id: "dd64948a-2423-451f-87bb-fc541735aad8"
+      class: "detector"
+      name: "W15/K16"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "190-2"
+      id: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      pos:
+        - line: "9721"
+          mileage: 16.562
+      name: "W12"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 40.0
+          id: "left"
+          path:
+            - "2501d609-0f92-4918-8442-b23df762b366"
+            - "0f107da6-f8cb-4868-b686-1c053336b1d1"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "2501d609-0f92-4918-8442-b23df762b366"
+            - "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.6
+      id: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+      class: "detector"
+      name: "W12/W13"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.927
+        - line: "9721"
+          mileage: 16.666
+      id: "712f1424-b556-4758-9ac6-c0cb328d7705"
+      class: "detector"
+      name: "W13/G204"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.663
+      id: "70122a48-8078-496c-943b-8f1e781dbf64"
+      class: "detector"
+      name: "W13/W14"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.73
+      id: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
+      class: "detector"
+      name: "W14/G403"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.77
+      id: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
+      class: "detector"
+      name: "W14/K16"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      id: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      pos:
+        - line: "9724"
+          mileage: 0.891
+        - line: "9721"
+          mileage: 16.63
+      name: "W13"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+            - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+            - "6125547d-9d2d-4086-8898-16114f058550"
+        - speed: 60.0
+          id: "right"
+          path:
+            - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+            - "6125547d-9d2d-4086-8898-16114f058550"
+        - speed: .inf
+          id: "straight2"
+          path:
+            - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+            - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+    - base_ref: "XR"
+      id: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      pos:
+        - line: "9721"
+          mileage: 16.7
+      name: "W14"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
+            - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
+            - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
+        - speed: 60.0
+          id: "right"
+          path:
+            - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
+            - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
+        - speed: .inf
+          id: "straight2"
+          path:
+            - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
+            - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
+    - base_ref: "XR"
+      id: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      pos:
+        - line: "9721"
+          mileage: 16.785
+      name: "K16"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: .inf
+          id: "straight1"
+          path:
+            - "c446df42-516e-4cbd-8897-bf242bac1e4d"
+            - "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
+        - speed: .inf
+          id: "straight2"
+          path:
+            - "2db166ca-7913-4b3a-97d5-ab981cc34209"
+            - "8337b3a5-29c2-441d-9232-ebdc8e14af07"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.8
+      id: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
+      class: "detector"
+      name: "K16/W17"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.81
+      id: "3a00ba63-ff25-4720-be64-1f08d329a31b"
+      class: "detector"
+      name: "K16/G202"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.161
+        - line: "9721"
+          mileage: 16.9
+      id: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
+      class: "detector"
+      name: "G403/W19"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.9
+      id: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
+      class: "detector"
+      name: "G202/W19"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      id: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      pos:
+        - line: "9721"
+          mileage: 17.005
+      name: "W19"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
+            - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
+            - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
+        - speed: 60.0
+          id: "right"
+          path:
+            - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
+            - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
+        - speed: .inf
+          id: "straight2"
+          path:
+            - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
+            - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.311
+        - line: "9721"
+          mileage: 17.05
+      id: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
+      class: "detector"
+      name: "G204/W20"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.05
+      id: "e4741cd5-3096-431e-8739-bf4a7001221e"
+      class: "detector"
+      name: "W19/W20"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.051
+      id: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
+      class: "detector"
+      name: "W19/G503"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "500-1"
+      id: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+      pos:
+        - line: "9724"
+          mileage: 1.368
+        - line: "9721"
+          mileage: 17.107
+      name: "W20"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "da26a3c4-8a53-4d43-a504-57206151a42d"
+            - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "f39fcc72-c5ad-4df1-b2b1-b7744944c5c2"
+            - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.378
+        - line: "9721"
+          mileage: 17.117
+      id: "8890eec1-8048-4853-8d25-71cfb8365a36"
+      class: "detector"
+      name: "W20/G304"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.378
+        - line: "9721"
+          mileage: 17.117
+      id: "ad21db91-ef23-401b-8138-8dfa933e688c"
+      class: "sign"
+      name: "W20Y"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.521
+        - line: "9721"
+          mileage: 17.26
+      id: "40323a52-1608-4e52-834c-7a6112f56073"
+      class: "detector"
+      name: "G304/G404"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.521
+        - line: "9721"
+          mileage: 17.26
+      id: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
+      class: "sign"
+      name: "Ra10_3"
+      network_ref: "XR_east"
+      kind: "board"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.691
+        - line: "9721"
+          mileage: 17.43
+      id: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
+      class: "detector"
+      name: "G404A"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 1.691
+        - line: "9721"
+          mileage: 17.43
+      id: "ae83219c-febb-4bc7-bee4-218465b65584"
+      class: "sign"
+      name: "G"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.695
+      id: "cc93ea69-365c-451f-92a9-a5754be34e52"
+      class: "end"
+      name: "E_XW_1"
+      kind: "continuing"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.695
+      id: "cc0123c1-5a0c-428d-b4ff-8341cfe3fffd"
+      class: "end"
+      name: "E_XW_2"
+      kind: "continuing"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.695
+      id: "c4d62f2c-71b6-41a8-86f2-36c641af3b0f"
+      class: "sign"
+      name: "AA"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.695
+      id: "1e94145d-9d16-446d-8fed-a61000b4e5d4"
+      class: "sign"
+      name: "A"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.695
+      id: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
+      class: "detector"
+      name: "G103B"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.695
+      id: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
+      class: "detector"
+      name: "G101A"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.92
+      id: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
+      class: "detector"
+      name: "G101/G201"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 14.92
+      id: "6af304ac-5742-452d-a9e2-df6c10df649b"
+      class: "sign"
+      name: "Ra10_1"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.12
+      id: "96341cef-c47f-4a36-b095-caa3c0ab191b"
+      class: "sign"
+      name: "203X"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.12
+      id: "906eea64-c07c-4c28-8a3a-018f29401311"
+      class: "sign"
+      name: "301X"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.12
+      id: "3b394a1e-94f1-40e0-b867-221a95ed7478"
+      class: "detector"
+      name: "G103/W2"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.12
+      id: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
+      class: "detector"
+      name: "G201/W1"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "760-1"
+      id: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
+      pos:
+        - line: "9721"
+          mileage: 15.13
+      name: "W1"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 100.0
+          id: "left"
+          path:
+            - "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
+            - "975a55ac-301c-4221-9e44-c92869304025"
+        - speed: 200.0
+          id: "right"
+          path:
+            - "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
+            - "86a25dce-af41-4d43-83d0-d9bc16f4f63d"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.195
+      id: "268e860e-1b7e-4d3f-9373-e28a25174937"
+      class: "detector"
+      name: "W1/W2"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.195
+      id: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
+      class: "detector"
+      name: "W1/G301"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "760-1"
+      id: "46efc37a-7802-4f69-859b-484b44eed272"
+      pos:
+        - line: "9721"
+          mileage: 15.256
+      name: "W2"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 160.0
+          id: "left1"
+          path:
+            - "bedf4859-682d-4720-8800-0ba6d865acc9"
+            - "52f4b921-81a0-4ea6-8e36-52a41f098d84"
+        - speed: 80.0
+          id: "left2"
+          path:
+            - "853e8e62-5ccd-4d56-9301-edfe49b221a5"
+            - "52f4b921-81a0-4ea6-8e36-52a41f098d84"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.269
+      id: "f80fda90-58c5-488c-885c-388ca1673e9a"
+      class: "detector"
+      name: "W2/G203"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.269
+      id: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
+      class: "sign"
+      name: "203Y"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.266
+      id: "e699224e-44c1-4a39-a400-e7b8b0fded59"
+      class: "sign"
+      name: "301Y"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.536
+      id: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
+      class: "sign"
+      name: "Vn3"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.536
+      id: "77175a18-3820-4035-a6b8-57a2ee609e8d"
+      class: "sign"
+      name: "Vn1"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.583
+      id: "2262fef8-1868-4cc9-94bc-ee7ac622ee22"
+      class: "end"
+      name: "E_Industrie"
+      kind: "continuing"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.583
+      id: "bf41a121-6a3c-4452-b3d2-efef64fe70c2"
+      class: "sign"
+      name: "124X"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.583
+      id: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
+      class: "detector"
+      name: "G124/W3"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.588
+      id: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
+      class: "trap"
+      kind: "derailer"
+      name: "Sp124"
+      network_ref: "XR_west"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.682
+      id: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
+      class: "sign"
+      name: "303X"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.682
+      id: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
+      class: "detector"
+      name: "G203/W4"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.682
+      id: "a563f377-3832-4cc4-9b75-b605550d4c07"
+      class: "sign"
+      name: "7X"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.682
+      id: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
+      class: "detector"
+      name: "G301/W10"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.607
+      id: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
+      class: "trap"
+      kind: "derailer"
+      name: "Sp51"
+      network_ref: "XR_east"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.612
+      id: "5f52ad57-6723-4412-8eb4-16650b308dd7"
+      class: "detector"
+      name: "W12/G51"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.612
+      id: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
+      class: "sign"
+      name: "51X"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.67
+      id: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
+      class: "end"
+      name: "E51"
+      kind: "buffer stop"
+    - base_ref: "XR"
+      specimen: "300-1"
+      id: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
+      pos:
+        - line: "9721"
+          mileage: 15.593
+      name: "W3"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 50.0
+          id: "right"
+          path:
+            - "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
+            - "da07abe1-e40c-4115-84db-dff64b01ba8f"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
+            - "9fcda44e-017a-44db-a615-f182d06e23d3"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.64
+      id: "515f1257-d556-4371-af6a-4bda8d0ee351"
+      class: "detector"
+      name: "W3/W6"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.66
+      id: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
+      class: "detector"
+      name: "W3/W4"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "300-1"
+      id: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
+      pos:
+        - line: "9721"
+          mileage: 15.73
+      name: "W4"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 50.0
+          id: "right"
+          path:
+            - "c4a95b27-b5ba-4055-b349-e6246bee04c6"
+            - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "89259aba-7a16-4ce7-ab35-d553843e548f"
+            - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
+    - base_ref: "XR"
+      specimen: "500-2"
+      id: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
+      pos:
+        - line: "9724"
+          mileage: 0.0
+        - line: "9721"
+          mileage: 15.739
+      name: "W5"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
+            - "d3794520-9377-4fd9-98ac-c3fe9518673b"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
+            - "3511c870-d8bd-4e40-b3f7-95e90391c40d"
+    - base_ref: "XR"
+      pos:
+        - line: "9724"
+          mileage: 0.061
+        - line: "9721"
+          mileage: 15.8
+      id: "814413bd-dee7-4037-af21-5fe0acd57069"
+      class: "detector"
+      name: "W4/W6"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "500-2"
+      id: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
+      pos:
+        - line: "9724"
+          mileage: 0.115
+        - line: "9721"
+          mileage: 15.854
+      name: "W6"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 120.0
+          id: "left"
+          path:
+            - "25c65a85-7ead-4b6b-bea5-a00287940a66"
+            - "80755594-0760-44af-8082-69e5880e9a17"
+        - speed: 100.0
+          id: "right"
+          path:
+            - "9a8b9a4d-6a48-472e-b726-bea8ffdd835c"
+            - "80755594-0760-44af-8082-69e5880e9a17"
+    - base_ref: "XR"
+      specimen: "500-2"
+      id: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
+      pos:
+        - line: "9721"
+          mileage: 15.764
+      name: "W10"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "6d30e635-c33a-470c-816c-61844e528355"
+            - "2bcfa1ac-5cf8-43b6-9541-95438672ec12"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "6d30e635-c33a-470c-816c-61844e528355"
+            - "f2801dc8-7025-4157-9917-d809ea8f620b"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.82
+      id: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
+      class: "detector"
+      name: "W10/W11"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.71
+      id: "2913ae88-0553-4836-8914-38d54b211a40"
+      class: "end"
+      name: "E21"
+      kind: "buffer stop"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.803
+      id: "8067ab6b-61f0-428e-9449-5f2ab7f8ded2"
+      class: "sign"
+      name: "21X"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.803
+      id: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
+      class: "detector"
+      name: "G21/W11"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.805
+      id: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
+      class: "trap"
+      kind: "derailer"
+      name: "Sp21"
+      network_ref: "XR_west"
+      direction: "forward"
+    - base_ref: "XR"
+      specimen: "500-2"
+      id: "4bacaae6-e599-4cfc-822a-35bc23735979"
+      pos:
+        - line: "9721"
+          mileage: 15.864
+      name: "W11"
+      network_ref: "XR_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "cebe90f8-8122-4883-9e94-3daa8960e4d2"
+            - "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "6f7b125c-e706-41fd-9165-ed1719ab9fd9"
+            - "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.929
+      id: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
+      class: "detector"
+      name: "W10/G401"
+      network_ref: "XR_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.929
+      id: "0f8d67a8-3183-4b87-b911-e722107cda5d"
+      class: "sign"
+      name: "P1"
+      network_ref: "XR_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 15.949
+      id: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
+      class: "sign"
+      name: "H1_1"
+      network_ref: "XR_1"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.683
+      id: "de3e722c-a217-4257-b868-0ca6bbc6310c"
+      class: "sign"
+      name: "H1_2"
+      network_ref: "XR_1"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.703
+      id: "cfb9c041-df5f-42ff-96e4-8051299467cc"
+      class: "sign"
+      name: "N1"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.703
+      id: "a4e4c075-249c-45b4-820b-b77523fcf124"
+      class: "detector"
+      name: "G401/W18"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "300-1"
+      id: "0e202ec8-370e-4279-ba82-d53657190abe"
+      pos:
+        - line: "9721"
+          mileage: 16.845
+      name: "W17"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 50.0
+          id: "left"
+          path:
+            - "97292225-29c0-4899-a38b-b359f771ccdf"
+            - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "9c5236c4-0099-4811-a7ee-5d16f82b00a7"
+            - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.846
+      id: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
+      class: "detector"
+      name: "W17/W18"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      specimen: "300-1"
+      id: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+      pos:
+        - line: "9721"
+          mileage: 16.882
+      name: "W18"
+      network_ref: "XR_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 50.0
+          id: "right"
+          path:
+            - "f6980045-b4cf-4cca-bf55-ae41163df70d"
+            - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "4ae249bc-a193-4c8f-b723-dbcf27bbcb5c"
+            - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.892
+      id: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
+      class: "detector"
+      name: "W18/G501"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 16.892
+      id: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
+      class: "sign"
+      name: "501X"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.429
+      id: "1daca293-0191-40d9-9f32-1e749223d03d"
+      class: "detector"
+      name: "G501B"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.429
+      id: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
+      class: "sign"
+      name: "FF"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.429
+      id: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
+      class: "end"
+      name: "E_XOG_2"
+      kind: "continuing"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.051
+      id: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
+      class: "sign"
+      name: "503X"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.151
+      id: "73bc3a56-243d-40eb-ad05-6480825bb643"
+      class: "sign"
+      name: "Ra10_2"
+      network_ref: "XR_east"
+      kind: "board"
+      direction: "forward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.151
+      id: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
+      class: "detector"
+      name: "G503/G603"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.429
+      id: "f31e3747-80c6-4342-9782-8ce4c7a24379"
+      class: "detector"
+      name: "G603A"
+      network_ref: "XR_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.429
+      id: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
+      class: "sign"
+      name: "F"
+      network_ref: "XR_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XR"
+      pos:
+        - line: "9721"
+          mileage: 17.429
+      id: "dc59f431-4159-4667-9e6d-2e109b39bda2"
+      class: "end"
+      name: "E_XOG_1"
+      kind: "continuing"
+    - base_ref: "rebenau_to_pockelsdorf"
+      pos:
+        - line: "9724"
+          mileage: 4.85
+      id: "14e2f6a9-13e5-43c2-be8e-b14282f79cc3"
+      class: "sign"
+      name: "41"
+      network_ref: "XR_XPD"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "rebenau_to_pockelsdorf"
+      pos:
+        - line: "9724"
+          mileage: 4.9
+      id: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
+      class: "detector"
+      name: "BK41/BK42"
+      network_ref: "XR_XPD"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "rebenau_to_pockelsdorf"
+      pos:
+        - line: "9724"
+          mileage: 4.95
+      id: "8db30b9e-38c2-4683-86cd-e13a7d653bfc"
+      class: "sign"
+      name: "42"
+      network_ref: "XR_XPD"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.559
+      id: "e9449472-545f-4198-b640-6e3de097719b"
+      class: "sign"
+      name: "A"
+      network_ref: "XPD_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.559
+      id: "b2a66f9f-3ab3-44c1-8da1-aabcd5f65e89"
+      class: "detector"
+      name: "G101A"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.709
+      id: "d4a694ec-483e-47eb-8dcf-8d89054ea626"
+      class: "detector"
+      name: "G101/G201"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.709
+      id: "4fc84ef1-9396-4a5a-a476-3c86eb850047"
+      class: "sign"
+      name: "Ra10_1"
+      network_ref: "XPD_west"
+      kind: "board"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.909
+      id: "eb954114-bb76-479f-96e6-1907c853299a"
+      class: "detector"
+      name: "G201/W1"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.909
+      id: "30de60bc-4bb5-4ac2-ac06-aa3cb091e1aa"
+      class: "sign"
+      name: "201X"
+      network_ref: "XPD_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      specimen: "500-2"
+      id: "9df723f1-cd38-4418-95e0-b61091abcb13"
+      pos:
+        - line: "9724"
+          mileage: 9.913
+      name: "W1"
+      network_ref: "XPD_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "61f3c2dd-e617-40f0-817e-b39fb1032c8e"
+            - "ff60abea-9ffa-40bc-92dc-585517021fb9"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "61f3c2dd-e617-40f0-817e-b39fb1032c8e"
+            - "6fd4fa17-c27e-43e8-a8ed-b0c55d6c86a5"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.975
+      id: "6d4dcc44-ceb0-4523-baca-79f3a9bd13cd"
+      class: "detector"
+      name: "W1/W2"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.975
+      id: "cc12e61d-76df-4f2e-8605-192f53daa46e"
+      class: "detector"
+      name: "W1/W3"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.04
+      id: "14d4afa0-6d62-4fab-92dc-6f5fe62d26f3"
+      class: "sign"
+      name: "210X"
+      network_ref: "XPD_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.871
+      id: "1e2cb47f-996d-4bfe-af60-1f22695cf0b1"
+      class: "sign"
+      name: "Ra10_3"
+      network_ref: "XPD_west"
+      kind: "board"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.871
+      id: "7cd65efa-be49-490e-a3c3-209bd5af250f"
+      class: "detector"
+      name: "G143/G243"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.685
+      id: "49a33d17-6d19-462e-86b0-fef3e557186c"
+      class: "detector"
+      name: "G143A"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.685
+      id: "a820721f-8fd9-424a-b4ca-ef581c38e366"
+      class: "sign"
+      name: "B"
+      network_ref: "XPD_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 9.6
+      id: "ae108c83-41e5-41f4-9cb3-d7347d7b5b4a"
+      class: "end"
+      name: "E_XM"
+      kind: "continuing"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.04
+      id: "c514c6eb-404a-43a0-b99d-8a170668a755"
+      class: "detector"
+      name: "G243/W3"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      specimen: "300-1"
+      id: "72512996-cd53-4049-8fa6-c41cc3dee301"
+      pos:
+        - line: "9724"
+          mileage: 10.0371
+      name: "W2"
+      network_ref: "XPD_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 50.0
+          id: "left"
+          path:
+            - "7b767860-6ca3-477e-a377-425b54d2c251"
+            - "f3585f08-5acb-49e4-aae6-da83214cc9a0"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "7b767860-6ca3-477e-a377-425b54d2c251"
+            - "6da00c1b-8826-4660-a135-5b9aed624f59"
+    - base_ref: "XPD"
+      id: "ab8e437d-278f-4da1-9ff0-628375c8db03"
+      pos:
+        - line: "9724"
+          mileage: 10.08
+      name: "W3"
+      network_ref: "XPD_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: .inf
+          id: "straight1"
+          path:
+            - "f39cd796-be87-487b-ad70-e6fb8aecc45b"
+            - "f3200c37-4eb0-4cf6-8c4d-1364d94f3598"
+        - speed: 60.0
+          id: "right"
+          path:
+            - "37028cbd-39ac-4b76-9533-7c0fea58d8b1"
+            - "f3200c37-4eb0-4cf6-8c4d-1364d94f3598"
+        - speed: .inf
+          id: "straight12"
+          path:
+            - "37028cbd-39ac-4b76-9533-7c0fea58d8b1"
+            - "0919ffee-91cf-4e42-9176-53a7fa7e00cb"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.12
+      id: "2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3"
+      class: "detector"
+      name: "W3/G301"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.1
+      id: "81ed8132-4731-4069-b999-6d3dfd37e7e8"
+      class: "detector"
+      name: "W3/W4"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.035
+      id: "3e6bdbd9-1704-44c8-bbdd-391e3b928134"
+      class: "detector"
+      name: "W2/W4"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.161
+      id: "73c04241-f1a4-4786-aae7-2dae2f085e37"
+      class: "detector"
+      name: "W2/G103"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.161
+      id: "f0913f71-4530-4209-9da0-4b9e6d7d8250"
+      class: "sign"
+      name: "P3"
+      network_ref: "XPD_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      specimen: "500-2"
+      id: "1632b4a9-5a73-4653-a744-37045e198cef"
+      pos:
+        - line: "9724"
+          mileage: 10.153
+      name: "W4"
+      network_ref: "XPD_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "5e790d82-e409-4e8f-81ef-fd5faa6e34f7"
+            - "9bb44939-1319-47fb-b88e-48a45591191f"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "c74683a0-2e22-4d9a-8861-aff6de295e1f"
+            - "9bb44939-1319-47fb-b88e-48a45591191f"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.181
+      id: "8f8ab62b-74b8-4303-a495-27a2978414a5"
+      class: "sign"
+      name: "H3_1"
+      network_ref: "XPD_3"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.16
+      id: "1e8df13d-567f-44ad-9563-3820ed0f57b6"
+      class: "detector"
+      name: "W4/G102"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.207
+      id: "6292e51a-4808-4fab-b2b4-10a55d1e59dc"
+      class: "detector"
+      name: "G102/G202"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.207
+      id: "16df5974-d6e1-4b08-ae94-d20b26807546"
+      class: "detector"
+      name: "G301/G401"
+      network_ref: "XPD_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.207
+      id: "1559135a-021c-4e24-a5c2-e8075bc4c4c5"
+      class: "sign"
+      name: "P2"
+      network_ref: "XPD_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.207
+      id: "b361a3ee-5069-4569-872f-6f3642209fe8"
+      class: "sign"
+      name: "P1"
+      network_ref: "XPD_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.227
+      id: "6080652c-60fd-4e55-849a-913467a9b094"
+      class: "sign"
+      name: "H2_1"
+      network_ref: "XPD_2"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.227
+      id: "763163e9-c6c5-487b-a455-d78c17e826c9"
+      class: "sign"
+      name: "H1_1"
+      network_ref: "XPD_1"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.37
+      id: "4c6edf43-db69-4d3f-9b06-45d7c94d7e47"
+      class: "sign"
+      name: "H2_2"
+      network_ref: "XPD_2"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.37
+      id: "604398d9-43bb-4c1e-b251-fd0bf1696d44"
+      class: "sign"
+      name: "H1_2"
+      network_ref: "XPD_1"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.37
+      id: "0fb8b00f-7bd4-4c9f-9b12-0ee503ab551a"
+      class: "sign"
+      name: "102X"
+      network_ref: "XPD_2"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.37
+      id: "0675f75f-72ae-4da9-82b8-d65903373996"
+      class: "sign"
+      name: "301X"
+      network_ref: "XPD_1"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.373
+      id: "3573a52a-26f6-4430-aafd-d050f83740ef"
+      class: "detector"
+      name: "G202A"
+      network_ref: "XPD_2"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.373
+      id: "b496cd79-5b95-4eb5-a028-78d8ecac3e12"
+      class: "detector"
+      name: "G401A"
+      network_ref: "XPD_1"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.375
+      id: "f29ccb46-651b-4cee-ad9a-a76011cb00c0"
+      class: "sign"
+      name: "202Y"
+      network_ref: "XPD_2"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.375
+      id: "eba1750e-8bfd-4633-b158-11f69f70cf4a"
+      class: "sign"
+      name: "401Y"
+      network_ref: "XPD_1"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.375
+      id: "140c29f2-3406-4366-be5c-91d683ba2017"
+      class: "sign"
+      name: "H2_3"
+      network_ref: "XPD_2"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.375
+      id: "2477d593-ced3-4cb7-b8e7-4cd12b75d0fe"
+      class: "sign"
+      name: "H1_3"
+      network_ref: "XPD_1"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.434
+      id: "fbe65262-c5f1-4ae9-9aea-080df9fbaebf"
+      class: "sign"
+      name: "H3_2"
+      network_ref: "XPD_3"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.493
+      id: "a2193577-ca8f-4b6c-8b51-115704b11b50"
+      class: "sign"
+      name: "H2_4"
+      network_ref: "XPD_2"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.588
+      id: "abb3dee7-682c-4a2e-af81-ba7e9a394945"
+      class: "sign"
+      name: "H1_4"
+      network_ref: "XPD_1"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.454
+      id: "c72286b5-297f-4ac1-b885-5944511ac734"
+      class: "sign"
+      name: "N3"
+      network_ref: "XPD_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.513
+      id: "94bbccb9-5bfc-474b-a5e7-bea7704077d8"
+      class: "sign"
+      name: "N2"
+      network_ref: "XPD_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.608
+      id: "606c2f08-3624-4623-9374-c7398320bace"
+      class: "sign"
+      name: "N1"
+      network_ref: "XPD_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.513
+      id: "19521a1b-6297-491a-a061-0c73062feb04"
+      class: "detector"
+      name: "G202/W5"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.608
+      id: "560f05a3-8e83-4f8a-a4e2-c0cdf83dcec7"
+      class: "detector"
+      name: "G401/W6"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      specimen: "300-1"
+      id: "c6c855c4-e6c4-4b97-a641-b1022b7d6195"
+      pos:
+        - line: "9724"
+          mileage: 10.618
+      name: "W5"
+      network_ref: "XPD_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "760ec967-8ec1-4025-9ef5-b3a1e4c78844"
+            - "f575f64c-f620-4e4d-93c8-94dd5ae398f5"
+        - speed: 40.0
+          id: "right"
+          path:
+            - "d6fd63b6-a220-46a9-9b16-e4cc0d14ec3c"
+            - "f575f64c-f620-4e4d-93c8-94dd5ae398f5"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.619
+      id: "70c48f98-23d6-4090-816e-65e8c30e8969"
+      class: "detector"
+      name: "W5/W6"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      specimen: "500-2"
+      id: "9895f886-f2f3-4762-9713-9a192cb8f253"
+      pos:
+        - line: "9724"
+          mileage: 10.661
+      name: "W6"
+      network_ref: "XPD_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "right"
+          path:
+            - "14628235-8159-409c-89ec-11b6f3236f37"
+            - "ca4dc14d-d618-4ae2-84b5-4429e4f6dd3a"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "73793972-3d47-48c4-9388-2e5d87b08b41"
+            - "ca4dc14d-d618-4ae2-84b5-4429e4f6dd3a"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.662
+      id: "9801e51c-1c86-4ae9-9b1c-beea9f2ce841"
+      class: "detector"
+      name: "W6/W7"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      specimen: "300-1"
+      id: "93500b41-bf43-446e-9d51-6ecef073b9f5"
+      pos:
+        - line: "9724"
+          mileage: 10.664
+      name: "W7"
+      network_ref: "XPD_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 40.0
+          id: "right"
+          path:
+            - "b4ea06b4-efe2-440a-861d-7b8546145c81"
+            - "9e6bc70e-f21d-4853-8ba7-ea64ee11b6a4"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "b4ea06b4-efe2-440a-861d-7b8546145c81"
+            - "d32a053a-2ac9-4135-a904-7de7941860b0"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.78
+      id: "fb15b45e-88a0-42df-ad67-575d8a003a8e"
+      class: "end"
+      name: "E_Industrie"
+      kind: "continuing"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.714
+      id: "90ccc8bc-0d07-47a2-b4cc-5bb898d88b5d"
+      class: "detector"
+      name: "W7/G501"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.714
+      id: "91ac4007-51b8-497d-ba28-b70732856aab"
+      class: "sign"
+      name: "501Y"
+      network_ref: "XPD_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.914
+      id: "a6da5559-38ee-4434-94b0-80fddeadc3ed"
+      class: "sign"
+      name: "Ra10_2"
+      network_ref: "XPD_east"
+      kind: "board"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.914
+      id: "1951d717-a151-4408-9cd5-03cc3c8fed7a"
+      class: "detector"
+      name: "G501/G601"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 11.093
+      id: "2a219fea-2cf3-4320-a401-c369156a401c"
+      class: "detector"
+      name: "G601B"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 11.093
+      id: "df2d72d2-2e2d-4e55-937c-ec3229be381c"
+      class: "sign"
+      name: "F"
+      network_ref: "XPD_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.733
+      id: "7fb67957-e5db-4a4c-b4b8-9b3b5dadb1e9"
+      class: "trap"
+      kind: "derailer"
+      name: "Sp10"
+      network_ref: "XPD_east"
+      direction: "backward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.738
+      id: "381bd4ad-c5ec-46c8-81fc-7f10a5b3a8da"
+      class: "detector"
+      name: "W7/G10"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.738
+      id: "c074cd16-e8fd-4574-8c69-5e5d13958253"
+      class: "sign"
+      name: "310Y"
+      network_ref: "XPD_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XPD"
+      pos:
+        - line: "9724"
+          mileage: 10.454
+      id: "afa409a4-4436-4f28-969c-984f5d75e908"
+      class: "detector"
+      name: "G103/W5"
+      network_ref: "XPD_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "pockelsdorf_to_buelten"
+      pos:
+        - line: "9724"
+          mileage: 14.35
+      id: "5f115822-5c58-45f9-b9e0-ced2b9cd2be0"
+      class: "sign"
+      name: "47"
+      network_ref: "XPD_XBU"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "pockelsdorf_to_buelten"
+      pos:
+        - line: "9724"
+          mileage: 14.4
+      id: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
+      class: "detector"
+      name: "BK47/BK48"
+      network_ref: "XPD_XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "pockelsdorf_to_buelten"
+      pos:
+        - line: "9724"
+          mileage: 14.45
+      id: "0bc68652-0bdd-4b0b-a366-ded5d870a8e4"
+      class: "sign"
+      name: "48"
+      network_ref: "XPD_XBU"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 31.912
+      id: "1f35a368-41b6-4ff8-8fb7-a992e33ae60e"
+      class: "end"
+      name: "E_XO_1"
+      kind: "continuing"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 31.912
+      id: "ff48a1b7-8ba0-4c6f-ba75-3c0ef0d0285e"
+      class: "end"
+      name: "E_XO_2"
+      kind: "continuing"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 31.912
+      id: "7c4ff364-86b7-4040-b7c4-8a105f592afe"
+      class: "sign"
+      name: "39"
+      network_ref: "XBU"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 31.912
+      id: "aa57a28f-74dc-45eb-ba8d-dc64387fd698"
+      class: "sign"
+      name: "19"
+      network_ref: "XBU"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 31.912
+      id: "5daa7069-572a-48a5-924c-76ec4da497ff"
+      class: "detector"
+      name: "G101A"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 31.912
+      id: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
+      class: "detector"
+      name: "G102A"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.173
+      id: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
+      class: "detector"
+      name: "G101/W103"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.023
+      id: "a53e0380-0c83-4572-9931-e040c80f828d"
+      class: "detector"
+      name: "G102/W101"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9724"
+          mileage: 18.712
+      id: "02cd9644-102e-4534-abb3-f7f714293054"
+      class: "sign"
+      name: "49"
+      network_ref: "XBU"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XBU"
+      pos:
+        - line: "9724"
+          mileage: 18.712
+      id: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
+      class: "detector"
+      name: "G103A"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9724"
+          mileage: 18.823
+      id: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
+      class: "detector"
+      name: "G103/W101"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      specimen: "760-1"
+      id: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
+      pos:
+        - line: "9724"
+          mileage: 18.888
+        - line: "9721"
+          mileage: 32.088
+      name: "W101"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 80.0
+          id: "right"
+          path:
+            - "645435d1-e6b5-45df-9b51-bb2b42d3e5e4"
+            - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "de75e438-11df-4439-9fac-6cc8927f3aed"
+            - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
+    - base_ref: "XBU"
+      pos:
+        - line: "9724"
+          mileage: 18.9
+        - line: "9721"
+          mileage: 32.1
+      id: "8b1888d9-e216-4252-a9ae-f737342ad002"
+      class: "detector"
+      name: "W101/W102"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      specimen: "760-1"
+      id: "34366cf4-7867-4e57-abce-f93b573dd3ed"
+      pos:
+        - line: "9721"
+          mileage: 32.112
+      name: "W102"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 80.0
+          id: "right"
+          path:
+            - "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
+            - "ac58c309-a617-45dd-a0d6-4856379ff143"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
+            - "66d5fd8c-9ca0-4984-8dd2-97ac2f4e3941"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.177
+      id: "52f61012-e921-4ad5-bc16-8895c6b9a043"
+      class: "detector"
+      name: "W102/W103"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      specimen: "760-1"
+      id: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
+      pos:
+        - line: "9721"
+          mileage: 32.238
+      name: "W103"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 80.0
+          id: "right"
+          path:
+            - "16d8c6b8-cc59-452a-8460-3782a940b059"
+            - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "d95ce46a-597c-4b87-8cea-895ced2b8f5d"
+            - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.251
+      id: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
+      class: "detector"
+      name: "W103/G201"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.177
+      id: "db840367-179a-4087-9d0f-574924793914"
+      class: "detector"
+      name: "W102/G202"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.451
+      id: "769ef354-f159-40db-80e5-00cff4d7ad0d"
+      class: "detector"
+      name: "G201B"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.451
+      id: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
+      class: "detector"
+      name: "G202B"
+      network_ref: "XBU"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.451
+      id: "971d9e83-f492-45f3-a7e3-4457e46fc8f7"
+      class: "sign"
+      name: "20"
+      network_ref: "XBU"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XBU"
+      pos:
+        - line: "9721"
+          mileage: 32.451
+      id: "06058d21-d0b1-4926-b60a-0ef82414cbac"
+      class: "sign"
+      name: "30"
+      network_ref: "XBU"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 34.829
+      id: "e68d3951-4d0c-4606-b7d4-fcd63207c2fb"
+      class: "sign"
+      name: "A"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 34.829
+      id: "7cf06e6b-a398-4202-ad15-164d800cc779"
+      class: "sign"
+      name: "AA"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 34.829
+      id: "8a3913bc-f8db-4d3f-8f37-c0c7948a09c6"
+      class: "detector"
+      name: "G102A"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 34.829
+      id: "d2d7f7d4-1c43-4942-93d8-9d65894ca795"
+      class: "detector"
+      name: "G103B"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 34.986
+      id: "49690e1e-1057-479d-9481-d4c0f169ac83"
+      class: "sign"
+      name: "Ra10_1"
+      network_ref: "XSZ_west"
+      kind: "board"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 34.986
+      id: "767f6ef8-364b-4035-af25-e94e80ca84c1"
+      class: "detector"
+      name: "G102/G202"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.069
+      id: "6e0c3501-a7a8-4947-8f44-76d9ebc9bcd5"
+      class: "sign"
+      name: "203X"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.069
+      id: "c9f939f9-897a-42b7-b3ba-ae870fa6e539"
+      class: "detector"
+      name: "G103/W1"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.069
+      id: "ffb7d91a-45c4-4bf6-a3b8-df0be7f237fb"
+      class: "sign"
+      name: "302X"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.069
+      id: "7da89c5f-4ae7-4c69-bc4c-aab16dfd0044"
+      class: "detector"
+      name: "G202/W2"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
+      pos:
+        - line: "9721"
+          mileage: 35.079
+      name: "W1"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "right"
+          path:
+            - "93a6b353-ba1e-4f13-9aed-436f66a0a276"
+            - "7ad94fe9-e01f-4cb7-b28a-1bc055cdc824"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "93a6b353-ba1e-4f13-9aed-436f66a0a276"
+            - "fb0f68b5-7d08-436c-ba27-360552dc5d02"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.12
+      id: "57cdbb94-30f4-41bc-ba9a-0f1e84e84fed"
+      class: "detector"
+      name: "W1/W2"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.13
+      id: "2c34cdc4-52cd-4402-bc5b-d3687b174beb"
+      class: "detector"
+      name: "W1/W4"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
+      pos:
+        - line: "9721"
+          mileage: 35.174
+      name: "W2"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "right"
+          path:
+            - "89546a28-470f-4cbf-ab9c-e6f0a4accc47"
+            - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "e573c6a7-4afa-411e-a91e-a4a0d93191b1"
+            - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "bf53206b-2132-4d50-9bb6-37a488318692"
+      pos:
+        - line: "9721"
+          mileage: 35.183
+      name: "W3"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
+            - "b4e09f43-a962-4567-898e-a46dff3fe13e"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
+            - "8943c5dd-fe5e-4db6-87a2-8f6469b29823"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.23
+      id: "eece4636-b7ab-42ad-9745-47aadd63746a"
+      class: "detector"
+      name: "W2/W4"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.23
+      id: "f616b4e1-c549-49db-896f-2e7de061b28e"
+      class: "detector"
+      name: "W2/W8"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "bb074bbe-1046-4532-9dbd-a645c34789eb"
+      pos:
+        - line: "9721"
+          mileage: 35.316
+      name: "W4"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "9768f2a2-490f-43d9-b41c-bfb4489753fa"
+            - "01a068a3-5e53-48ba-a4c3-04abe6bd03fc"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "650d1f77-d0c1-49dc-a747-bec372bda68e"
+            - "01a068a3-5e53-48ba-a4c3-04abe6bd03fc"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.32
+      id: "8b414b13-4604-4a36-837e-bd0373a6a7c4"
+      class: "detector"
+      name: "W4/W5"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
+      pos:
+        - line: "9721"
+          mileage: 35.411
+      name: "W8"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 160.0
+          id: "left"
+          path:
+            - "29ad8bf4-a42b-49e3-b767-b8aa219a08bb"
+            - "0ff0112a-af29-4b1d-afed-149c5823d26c"
+        - speed: 70.0
+          id: "right"
+          path:
+            - "29ad8bf4-a42b-49e3-b767-b8aa219a08bb"
+            - "6b44d057-5951-4535-84c2-8001d093f272"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.529
+      id: "642d19e1-b327-4257-a705-38f5f7653b05"
+      class: "detector"
+      name: "W8/G101"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.529
+      id: "4ff5ec23-4517-4ed9-9490-88462395e929"
+      class: "sign"
+      name: "P1"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.529
+      id: "966bfedb-27cf-4692-9e14-eb7bd7c686cf"
+      class: "detector"
+      name: "W8/G302"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.529
+      id: "fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b"
+      class: "sign"
+      name: "P2"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.549
+      id: "a756cd47-5f55-4fe5-a311-dd83c67a1a2a"
+      class: "sign"
+      name: "H1_1"
+      network_ref: "XSZ_1"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.549
+      id: "beb565bc-b1d2-483a-a2c9-2ebaad59f995"
+      class: "sign"
+      name: "H2_1"
+      network_ref: "XSZ_2"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.39
+      id: "c46d4118-0d6a-4fe3-a5b3-65c64a1bae2e"
+      class: "end"
+      name: "E41"
+      kind: "buffer stop"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.453
+      id: "9242d5d0-9329-4cbd-aec3-3a0992948a6c"
+      class: "sign"
+      name: "41X"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.453
+      id: "d0894bc4-700c-407b-bc28-c1ea98018cbc"
+      class: "detector"
+      name: "G41/W6"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.458
+      id: "e1ae967e-ab5b-4af6-b406-fb42437ce938"
+      class: "trap"
+      kind: "derailer"
+      name: "Sp41"
+      network_ref: "XSZ_west"
+      direction: "forward"
+    - base_ref: "XSZ"
+      specimen: "500-1"
+      id: "085078f4-e164-48d2-bfa5-f48d5f88728f"
+      pos:
+        - line: "9721"
+          mileage: 35.422
+      name: "W5"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "a0c780fa-909b-438e-a297-e1500cb3600d"
+            - "028c200f-c11e-4d79-a511-84d335cc62f5"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "a0c780fa-909b-438e-a297-e1500cb3600d"
+            - "389bd3b6-9ffc-4993-b84d-400c7970ab68"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.465
+      id: "5a4c21fd-26c1-4abe-bdec-eec5fa41bf67"
+      class: "detector"
+      name: "W5/W6"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "190-2"
+      id: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
+      pos:
+        - line: "9721"
+          mileage: 35.495
+      name: "W6"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 90.0
+          id: "left"
+          path:
+            - "be0e6d4d-5010-481e-ade1-5f8bf4c2c5f5"
+            - "378c8aa1-93cf-4b70-8f4c-37ec77d19a32"
+        - speed: 40.0
+          id: "right"
+          path:
+            - "784e92f6-df18-4d7a-971d-d6abbcde5036"
+            - "378c8aa1-93cf-4b70-8f4c-37ec77d19a32"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.5
+      id: "1de71d78-a163-4cf7-b01b-0ded012a7583"
+      class: "detector"
+      name: "W6/W7"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "190-1"
+      id: "cff292e1-3de4-404d-a471-7bceb80fddcb"
+      pos:
+        - line: "9721"
+          mileage: 35.502
+      name: "W7"
+      network_ref: "XSZ_west"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 40.0
+          id: "left"
+          path:
+            - "636446fe-11d1-4a5e-a43d-79135c5ba631"
+            - "277446d0-fabb-4420-9352-a3dbf660f731"
+        - speed: 90.0
+          id: "right"
+          path:
+            - "636446fe-11d1-4a5e-a43d-79135c5ba631"
+            - "6389d7e2-8bb9-4502-967a-2e4ac0e7d9cd"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.543
+      id: "0e72eb6e-6cd2-443a-a6d6-d84196fbc065"
+      class: "detector"
+      name: "W7/G105"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.543
+      id: "19713f62-e216-46e0-b35e-475666a72761"
+      class: "sign"
+      name: "105Y"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.58
+      id: "14d754b6-43b9-4f1f-96d8-f2a1369e2d75"
+      class: "detector"
+      name: "W7/G104"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.58
+      id: "da21e9b4-84c6-4440-8a62-fdf22fb420ba"
+      class: "sign"
+      name: "P4"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.58
+      id: "10a84137-a0f1-4d18-a237-e4ce8d965add"
+      class: "detector"
+      name: "W5/G203"
+      network_ref: "XSZ_west"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.58
+      id: "72c19288-28bc-4eca-a4c2-4c604b6dd57a"
+      class: "sign"
+      name: "P3"
+      network_ref: "XSZ_west"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.6
+      id: "fd296bfb-e1e8-4611-a4b6-a929155fc3dc"
+      class: "sign"
+      name: "H4_1"
+      network_ref: "XSZ_4"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 35.6
+      id: "fc4fe5af-897a-414b-9757-53d4d100197a"
+      class: "sign"
+      name: "H3_1"
+      network_ref: "XSZ_3"
+      kind: "berth"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.309
+      id: "288fb89d-3db0-45bc-8fc5-179e33168300"
+      class: "sign"
+      name: "H4_2"
+      network_ref: "XSZ_4"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.309
+      id: "b0d18e57-8160-4169-ad48-129aab74bcd5"
+      class: "sign"
+      name: "H3_2"
+      network_ref: "XSZ_3"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.309
+      id: "7907115d-238e-432a-a457-e8e00f977ee0"
+      class: "sign"
+      name: "H2_2"
+      network_ref: "XSZ_2"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.309
+      id: "ce1fdb35-0110-4f80-9315-520362760f20"
+      class: "sign"
+      name: "H1_2"
+      network_ref: "XSZ_1"
+      kind: "berth"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "c08f7e18-ad76-411c-8bbb-560ca591c50f"
+      class: "sign"
+      name: "N4"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "24295eb7-2335-4ddf-94d2-f33e9f8bf96f"
+      class: "sign"
+      name: "N3"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "89d3d5aa-716b-4b98-92c7-bff39ed5f91a"
+      class: "sign"
+      name: "N2"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "9e66fce3-42b8-4edb-8aa2-be4f4fcbcb38"
+      class: "sign"
+      name: "N1"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "7b6dbc79-92ff-4eb1-b306-9d2ac385678c"
+      class: "detector"
+      name: "G104/W11"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "9e8ede47-89c6-4d09-a013-3e2f38b1685b"
+      class: "detector"
+      name: "G203/W12"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "194ec252-6df4-4778-afbd-9d2722445086"
+      class: "detector"
+      name: "G302/W10"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.329
+      id: "4b43cc40-6233-4425-9881-12d960fa94d9"
+      class: "detector"
+      name: "G101/W9"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.405
+      id: "de01a8a2-b464-4e5f-a7d4-a2923949b0da"
+      class: "sign"
+      name: "105X"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.405
+      id: "b32b9392-3d53-4de9-941f-113a53bd1f7a"
+      class: "detector"
+      name: "G105/W11"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "190-1"
+      id: "7b81abd3-5278-4387-9816-911d808db0bb"
+      pos:
+        - line: "9721"
+          mileage: 36.446
+      name: "W11"
+      network_ref: "XSZ_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 90.0
+          id: "left"
+          path:
+            - "d7547c5d-df45-43af-82fd-723c06494e31"
+            - "d7092dcb-2669-41c6-aa27-f4c9fca2ce0f"
+        - speed: 40.0
+          id: "right"
+          path:
+            - "d0a0c674-f9e6-4706-908d-2200ed300f39"
+            - "d7092dcb-2669-41c6-aa27-f4c9fca2ce0f"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.485
+      id: "287a180c-a696-45a9-b82e-8571757ae8a6"
+      class: "detector"
+      name: "W11/W12"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "7e17901c-361f-4c45-a536-191182631ce8"
+      pos:
+        - line: "9721"
+          mileage: 36.526
+      name: "W12"
+      network_ref: "XSZ_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "right"
+          path:
+            - "806ac744-ddb7-443e-bb8c-2048b8d26f47"
+            - "896afbda-b1ce-4aef-9e42-f723bfac8ee3"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "23e49add-053c-4cbb-96a3-9854a4f68edb"
+            - "896afbda-b1ce-4aef-9e42-f723bfac8ee3"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.595
+      id: "390a7b2d-c975-41ef-a855-2ff9e7542a82"
+      class: "detector"
+      name: "W12/W13"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "190-2"
+      id: "854ecaf5-4c86-4770-949c-e620514ed495"
+      pos:
+        - line: "9721"
+          mileage: 36.383
+      name: "W9"
+      network_ref: "XSZ_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 40.0
+          id: "right"
+          path:
+            - "77d4e465-4137-4ded-8a09-60e4ac588a1c"
+            - "4c9beef0-03e2-41ef-b8ea-95dea6550abe"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "77d4e465-4137-4ded-8a09-60e4ac588a1c"
+            - "22048935-a4a9-4090-b00d-a66461bc8303"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.424
+      id: "3b71eb90-399c-4565-992e-bc8b2ce2afca"
+      class: "trap"
+      kind: "derailer"
+      name: "Sp11"
+      network_ref: "XSZ_east"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.429
+      id: "d3253e21-e623-434e-8a57-6198da0246cb"
+      class: "detector"
+      name: "W9/G11"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.429
+      id: "e8026d1c-90e9-432e-bea2-ec720f51e50a"
+      class: "sign"
+      name: "11Y"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.53
+      id: "036ff4b0-c027-4b08-abf5-905c58331ea6"
+      class: "end"
+      name: "E11"
+      kind: "buffer stop"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.444
+      id: "a0a8b218-babb-49d0-aa39-09c308bd1911"
+      class: "detector"
+      name: "W9/W10"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
+      pos:
+        - line: "9721"
+          mileage: 36.519
+      name: "W10"
+      network_ref: "XSZ_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "left"
+          path:
+            - "8263234a-4894-426d-af2c-6e67a5de058e"
+            - "3f8bb6b6-5e80-4745-b94b-cede59f3c19e"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "ed3d5182-958f-4c97-908d-480acb3d6cdd"
+            - "3f8bb6b6-5e80-4745-b94b-cede59f3c19e"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.68
+      id: "fae99c78-2dc7-475c-8dd1-48a51d4646b4"
+      class: "detector"
+      name: "W10/W14"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
+      pos:
+        - line: "9721"
+          mileage: 36.602
+      name: "W13"
+      network_ref: "XSZ_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 60.0
+          id: "right"
+          path:
+            - "001832f1-8442-4230-a954-622aabfdb63e"
+            - "80f00a8e-0842-46de-bfc5-b368b91e1a7d"
+        - speed: .inf
+          id: "straight"
+          path:
+            - "001832f1-8442-4230-a954-622aabfdb63e"
+            - "f611ac36-81de-4f92-b6a1-42b6d96c199f"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.67
+      id: "d7f2738e-a7ec-4659-9019-d96e0794c7bf"
+      class: "detector"
+      name: "W13/W14"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      specimen: "500-2"
+      id: "6f73d007-0451-4d6b-9323-897ff43a4eac"
+      pos:
+        - line: "9721"
+          mileage: 36.734
+      name: "W14"
+      network_ref: "XSZ_east"
+      class: "branching"
+      kind: "turnout"
+      branches:
+        - speed: 160.0
+          id: "left"
+          path:
+            - "8f7c64be-a19d-4681-841b-0d788eb90526"
+            - "e595119f-96d5-422d-b45b-d390877a0848"
+        - speed: 70.0
+          id: "right"
+          path:
+            - "1112a77e-0639-4fef-82ef-2c4e98c88c2b"
+            - "e595119f-96d5-422d-b45b-d390877a0848"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.744
+      id: "2b1f1556-9b4e-4f67-93cf-5a47e0da0f6e"
+      class: "detector"
+      name: "W13/G303"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.744
+      id: "aaca17e4-5c0a-466a-9e6e-1c736d77b684"
+      class: "sign"
+      name: "503Y"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.744
+      id: "82c133ef-4a05-43d7-be08-66a867025ee2"
+      class: "detector"
+      name: "W14/G402"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.744
+      id: "2eafbe28-aac1-4f39-963f-aae39a60f23c"
+      class: "sign"
+      name: "602Y"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.759
+      id: "92f84da4-fd6d-4362-8b59-3573eee5b627"
+      class: "sign"
+      name: "Ra10_2"
+      network_ref: "XSZ_east"
+      kind: "board"
+      direction: "forward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 36.759
+      id: "7d0e31aa-9372-4142-9d21-f4d911be6046"
+      class: "detector"
+      name: "G303/G403"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 37.029
+      id: "8bf4d964-2e52-4a34-bb60-a908bc92c8ba"
+      class: "detector"
+      name: "G403A"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 37.029
+      id: "e04066a1-5044-4d5b-9782-471f4c05ca51"
+      class: "sign"
+      name: "F"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 37.029
+      id: "c9e0519f-3f3f-40ea-ac76-0d00f67dceff"
+      class: "detector"
+      name: "G402B"
+      network_ref: "XSZ_east"
+      kind: "clearing point"
+      direction: "bidirectional"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 37.029
+      id: "f2409ff0-de4d-42ed-9fbd-4953a589c709"
+      class: "sign"
+      name: "FF"
+      network_ref: "XSZ_east"
+      kind: "signal"
+      direction: "backward"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 37.029
+      id: "69941db8-7a21-4eba-b8c6-8cb368e78edb"
+      class: "end"
+      name: "E_XSBG_1"
+      kind: "continuing"
+    - base_ref: "XSZ"
+      pos:
+        - line: "9721"
+          mileage: 37.029
+      id: "68788fa5-14d1-49c9-b67c-4b6d63c33045"
+      class: "end"
+      name: "E_XSBG_2"
+      kind: "continuing"
+  tracksections:
+    - base_ref: "XR"
+      id: "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
+      name: "W7_1"
+      network_ref: "XR_west"
+      source: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
+      target: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
+      length: 0.01
+    - base_ref: "XR"
+      id: "81c8f580-840e-4682-ac8e-e338886a36a4"
+      name: "W7_3"
+      network_ref: "XR_west"
+      source: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
+      target: "398c4772-e871-47fd-abba-beb0b998fc3b"
+      length: 0.107
+    - base_ref: "XR"
+      id: "b448ec40-82c0-45dc-ad70-6cb087c4e868"
+      name: "W7_2"
+      network_ref: "XR_west"
+      source: "e48b849f-8644-4f4f-9a09-f7ffa1fd8d78"
+      target: "f493994b-4415-441f-a815-202691c0d28c"
+      length: 0.107
+    - base_ref: "XR"
+      id: "5b1a33e1-96e0-4acd-bda9-7699d4f4597b"
+      name: "105_1"
+      network_ref: "XR_west"
+      source: "398c4772-e871-47fd-abba-beb0b998fc3b"
+      target: "a631e1fa-e935-4995-902b-529ed5a3b07a"
+      length: 0.0
+    - base_ref: "XR"
+      id: "50ada139-b59f-40b4-8737-a0b3da3ab4ee"
+      name: "105_2"
+      network_ref: "XR_5"
+      source: "a631e1fa-e935-4995-902b-529ed5a3b07a"
+      target: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
+      length: 0.05
+    - base_ref: "XR"
+      id: "dae0d2d3-b47b-4ce2-97bd-91885e61bede"
+      name: "104_1"
+      network_ref: "XR_west"
+      source: "f493994b-4415-441f-a815-202691c0d28c"
+      target: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
+      length: 0.0
+    - base_ref: "XR"
+      id: "91bc846b-2bea-41cc-b7a2-984cee39b67c"
+      name: "104_2"
+      network_ref: "XR_4"
+      source: "3acbdb52-dc3b-477e-92ae-167b8d2817e9"
+      target: "495a4bab-4ee7-4440-a46c-c304db058aef"
+      length: 0.05
+    - base_ref: "XR"
+      id: "524ab6c2-6276-41fb-b792-1d1cfd2fc18c"
+      name: "105_3"
+      network_ref: "XR_5"
+      source: "0eada976-c1c5-437a-a277-3e38bbec3ccb"
+      target: "ee2478ac-01e7-4dd8-823e-acb274b20831"
+      length: 0.424
+    - base_ref: "XR"
+      id: "5817b8ae-7ff3-4162-b520-10984d891ad1"
+      name: "105_4"
+      network_ref: "XR_5"
+      source: "ee2478ac-01e7-4dd8-823e-acb274b20831"
+      target: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
+      length: 0.05
+    - base_ref: "XR"
+      id: "48a1feda-0319-4b57-9962-5e57d4137a4d"
+      name: "104_3"
+      network_ref: "XR_4"
+      source: "495a4bab-4ee7-4440-a46c-c304db058aef"
+      target: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
+      length: 0.51
+    - base_ref: "XR"
+      id: "335c38da-34ee-4f63-8ae0-8e3447a96a19"
+      name: "104_4"
+      network_ref: "XR_4"
+      source: "8baceef4-edb1-46d1-a8ef-77fb067d95f8"
+      target: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
+      length: 0.05
+    - base_ref: "XR"
+      id: "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
+      name: "W8_1"
+      network_ref: "XR_west"
+      source: "beb5f987-f0a0-4cda-b7f9-6ea4e6aef29a"
+      target: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
+      length: 0.115
+    - base_ref: "XR"
+      id: "181e892d-4dba-420b-8d2b-b202e0e4d8aa"
+      name: "W8_2"
+      network_ref: "XR_west"
+      source: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
+      target: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
+      length: 0.133
+    - base_ref: "XR"
+      id: "4a02cfc5-4f8a-4c1a-8ddc-31804496e2ba"
+      name: "W8_3"
+      network_ref: "XR_west"
+      source: "1e2028b9-27b0-4054-9eb4-4d4fd22bae97"
+      target: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
+      length: 0.105
+    - base_ref: "XR"
+      id: "587514a2-29b3-4e28-86ad-0cd6d13a7146"
+      name: "303_1"
+      network_ref: "XR_west"
+      source: "8e37a37a-2d01-4cd6-b1ef-7d4169a48ab1"
+      target: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
+      length: 0.0
+    - base_ref: "XR"
+      id: "4dbd323c-6296-4e61-9d92-1c25743f4f3a"
+      name: "303_2"
+      network_ref: "XR_3"
+      source: "23e608ef-5d85-4537-99d3-a5ebeba4dbba"
+      target: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
+      length: 0.05
+    - base_ref: "XR"
+      id: "61bd1813-d8cf-4e40-81c9-aad713e5cb3b"
+      name: "W9_3"
+      network_ref: "XR_west"
+      source: "c3990f50-860e-41c3-bd4d-13ad76d4e324"
+      target: "c65dbc29-58da-406f-9901-d590009a81ba"
+      length: 0.109
+    - base_ref: "XR"
+      id: "f809f458-5a32-49ec-8ae7-f27a22ed30e3"
+      name: "W9_1"
+      network_ref: "XR_west"
+      source: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
+      target: "c65dbc29-58da-406f-9901-d590009a81ba"
+      length: 0.109
+    - base_ref: "XR"
+      id: "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
+      name: "W9_2"
+      network_ref: "XR_west"
+      source: "c65dbc29-58da-406f-9901-d590009a81ba"
+      target: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
+      length: 0.005
+    - base_ref: "XR"
+      id: "1ee57ded-3380-43a8-8308-cf6435fa9cdc"
+      name: "102_1"
+      network_ref: "XR_west"
+      source: "e3dcf891-4d96-4a3b-98f2-c54ca936fefb"
+      target: "54dec955-deee-4087-b39a-6a670df59706"
+      length: 0.0
+    - base_ref: "XR"
+      id: "a2803fdb-bd26-4863-acdf-fabb5fd21185"
+      name: "102_2"
+      network_ref: "XR_2"
+      source: "54dec955-deee-4087-b39a-6a670df59706"
+      target: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
+      length: 0.05
+    - base_ref: "XR"
+      id: "106aae72-ae4d-4b53-a657-3cc261c59e8f"
+      name: "303_3"
+      network_ref: "XR_3"
+      source: "751f4c22-b64f-4f02-b2d5-7290bcc1c85d"
+      target: "271f086a-22b4-4139-b8e5-91dd863e5c44"
+      length: 0.532
+    - base_ref: "XR"
+      id: "c2302818-fac1-402f-99ec-dbd5c3e06000"
+      name: "303_4"
+      network_ref: "XR_3"
+      source: "271f086a-22b4-4139-b8e5-91dd863e5c44"
+      target: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
+      length: 0.05
+    - base_ref: "XR"
+      id: "dd5e1326-8c11-41fd-8bde-b9fdf7368b83"
+      name: "102_3"
+      network_ref: "XR_2"
+      source: "f5d30bd4-8664-4f79-b530-cc52f19c7007"
+      target: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
+      length: 0.317
+    - base_ref: "XR"
+      id: "b2b2062d-c057-4c56-843a-653b033f1cd4"
+      name: "102_4"
+      network_ref: "XR_2"
+      source: "9ff5b959-6203-46ed-9bc2-ed47bf31b7d1"
+      target: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
+      length: 0.05
+    - base_ref: "XR"
+      id: "b79152c5-d6ed-46c6-87f4-6ba807098296"
+      name: "105_5"
+      network_ref: "XR_east"
+      source: "70ac9fb5-a046-46a2-a2fa-443cbc77ed00"
+      target: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+      length: 0.0
+    - base_ref: "XR"
+      id: "2501d609-0f92-4918-8442-b23df762b366"
+      name: "W12_1"
+      network_ref: "XR_east"
+      source: "4ffb1a84-d7ba-4305-9c7c-70119bdc3031"
+      target: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      length: 0.056
+    - base_ref: "XR"
+      id: "28709dbf-be51-413b-889a-2aea91482f8f"
+      name: "104_5"
+      network_ref: "XR_east"
+      source: "ad18db6d-9384-4c89-8089-0f44c0257d9e"
+      target: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
+      length: 0.0
+    - base_ref: "XR"
+      id: "e95ecc25-ad89-4dff-be84-689b657b8fcc"
+      name: "W13_1"
+      network_ref: "XR_east"
+      source: "bf6ad3d3-2fa1-44f1-a006-8e416658876f"
+      target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      length: 0.038
+    - base_ref: "XR"
+      id: "0e73302c-dae2-4922-bbf5-5f0e9097345c"
+      name: "303_5"
+      network_ref: "XR_east"
+      source: "897f5fbd-8583-4353-a0d6-feaf0150cbef"
+      target: "15452298-8414-45f1-b5e0-3b9a60ed088e"
+      length: 0.0
+    - base_ref: "XR"
+      id: "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
+      name: "W14_1"
+      network_ref: "XR_east"
+      source: "15452298-8414-45f1-b5e0-3b9a60ed088e"
+      target: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      length: 0.04
+    - base_ref: "XR"
+      id: "d2b76579-4a70-4e09-a645-53d9062b9392"
+      name: "102_5"
+      network_ref: "XR_east"
+      source: "7a9a5ad9-30f8-4b0d-b817-10f5818dcdef"
+      target: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
+      length: 0.0
+    - base_ref: "XR"
+      id: "925d9c4c-12a6-4e84-b11c-0c70be0af312"
+      name: "W15_1"
+      network_ref: "XR_east"
+      source: "0dd108e1-a609-476f-9f63-5d3bc17676ff"
+      target: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+      length: 0.005
+    - base_ref: "XR"
+      id: "01be204c-08ad-4292-ba76-79b61ba189b0"
+      name: "W15_3"
+      network_ref: "XR_east"
+      source: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+      target: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
+      length: 0.264
+    - base_ref: "XR"
+      id: "246048e1-cb84-4657-99b8-98bc3d6c14c7"
+      name: "W15_2"
+      network_ref: "XR_east"
+      source: "e444b175-2eff-4bd1-96c5-185ed4424f61"
+      target: "dd64948a-2423-451f-87bb-fc541735aad8"
+      length: 0.234
+    - base_ref: "XR"
+      id: "97292225-29c0-4899-a38b-b359f771ccdf"
+      name: "W17_1"
+      network_ref: "XR_east"
+      source: "4572a666-bf3a-4dee-8a41-7eddad1bcf8f"
+      target: "0e202ec8-370e-4279-ba82-d53657190abe"
+      length: 0.045
+    - base_ref: "XR"
+      id: "2db166ca-7913-4b3a-97d5-ab981cc34209"
+      name: "K16_1"
+      network_ref: "XR_east"
+      source: "dd64948a-2423-451f-87bb-fc541735aad8"
+      target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      length: 0.015
+    - base_ref: "XR"
+      id: "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
+      name: "W12_3"
+      network_ref: "XR_east"
+      source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      target: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+      length: 0.038
+    - base_ref: "XR"
+      id: "0f107da6-f8cb-4868-b686-1c053336b1d1"
+      name: "W12_2"
+      network_ref: "XR_east"
+      source: "421066c4-163f-4ebc-a2be-eb116ab33c5f"
+      target: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
+      length: 0.045
+    - base_ref: "XR"
+      id: "02595aac-198b-404e-8a1c-10fda9d3ef2d"
+      name: "W13_2"
+      network_ref: "XR_east"
+      source: "7ce20494-f263-4939-bdc0-4c2fd3a26b57"
+      target: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      length: 0.03
+    - base_ref: "XR"
+      id: "4aa77376-6a24-469a-aa37-30c251a28dc6"
+      name: "204"
+      network_ref: "XR_east"
+      source: "712f1424-b556-4758-9ac6-c0cb328d7705"
+      target: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
+      length: 0.384
+    - base_ref: "XR"
+      id: "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
+      name: "W14_2"
+      network_ref: "XR_east"
+      source: "70122a48-8078-496c-943b-8f1e781dbf64"
+      target: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      length: 0.037
+    - base_ref: "XR"
+      id: "4bafc796-3fa8-46ce-83cd-223691082044"
+      name: "403"
+      network_ref: "XR_east"
+      source: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
+      target: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
+      length: 0.17
+    - base_ref: "XR"
+      id: "c446df42-516e-4cbd-8897-bf242bac1e4d"
+      name: "K16_2"
+      network_ref: "XR_east"
+      source: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
+      target: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      length: 0.015
+    - base_ref: "XR"
+      id: "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
+      name: "W13_3"
+      network_ref: "XR_east"
+      source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      target: "712f1424-b556-4758-9ac6-c0cb328d7705"
+      length: 0.036
+    - base_ref: "XR"
+      id: "6125547d-9d2d-4086-8898-16114f058550"
+      name: "W13_4"
+      network_ref: "XR_east"
+      source: "9bf91c07-8b03-4294-b44c-d28de8e0f3d5"
+      target: "70122a48-8078-496c-943b-8f1e781dbf64"
+      length: 0.033
+    - base_ref: "XR"
+      id: "dcc02a80-c322-42db-9458-e8ccf613e7a0"
+      name: "W14_3"
+      network_ref: "XR_east"
+      source: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      target: "a3df651d-08fe-4501-ab60-f3814eed0a5f"
+      length: 0.03
+    - base_ref: "XR"
+      id: "42d05546-05d2-4c7d-ad18-d7703bb9259e"
+      name: "W14_4"
+      network_ref: "XR_east"
+      source: "d0342aa7-cb3b-4feb-9200-813f1da75625"
+      target: "8ddc370a-19cb-40e3-bbba-81d269f7d787"
+      length: 0.07
+    - base_ref: "XR"
+      id: "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
+      name: "K16_4"
+      network_ref: "XR_east"
+      source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      target: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
+      length: 0.015
+    - base_ref: "XR"
+      id: "8337b3a5-29c2-441d-9232-ebdc8e14af07"
+      name: "K16_3"
+      network_ref: "XR_east"
+      source: "24fcfb5c-047e-49ed-b699-a00fdfbe0e2c"
+      target: "3a00ba63-ff25-4720-be64-1f08d329a31b"
+      length: 0.025
+    - base_ref: "XR"
+      id: "9c5236c4-0099-4811-a7ee-5d16f82b00a7"
+      name: "W17_2"
+      network_ref: "XR_east"
+      source: "4c05d9a4-db18-4b0b-bac8-ba09dfc6ed37"
+      target: "0e202ec8-370e-4279-ba82-d53657190abe"
+      length: 0.045
+    - base_ref: "XR"
+      id: "6b55968a-c55e-4d6e-bada-615bddb8d9f1"
+      name: "202"
+      network_ref: "XR_east"
+      source: "3a00ba63-ff25-4720-be64-1f08d329a31b"
+      target: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
+      length: 0.09
+    - base_ref: "XR"
+      id: "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
+      name: "W19_2"
+      network_ref: "XR_east"
+      source: "1ddb9570-de2c-4d82-8cbd-7e653596bc35"
+      target: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      length: 0.105
+    - base_ref: "XR"
+      id: "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
+      name: "W19_1"
+      network_ref: "XR_east"
+      source: "3d7c6099-c7d2-4271-8cdf-ea66d323d5d4"
+      target: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      length: 0.105
+    - base_ref: "XR"
+      id: "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
+      name: "W19_3"
+      network_ref: "XR_east"
+      source: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      target: "e4741cd5-3096-431e-8739-bf4a7001221e"
+      length: 0.045
+    - base_ref: "XR"
+      id: "b58eb471-b63e-4021-8965-e7e8cc4e3369"
+      name: "W19_4"
+      network_ref: "XR_east"
+      source: "cc611b72-50b6-4260-b81c-be3cd4cb727e"
+      target: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
+      length: 0.046
+    - base_ref: "XR"
+      id: "f39fcc72-c5ad-4df1-b2b1-b7744944c5c2"
+      name: "W20_1"
+      network_ref: "XR_east"
+      source: "6012faa5-a7b5-4cf2-81c8-30f018235d66"
+      target: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+      length: 0.057
+    - base_ref: "XR"
+      id: "da26a3c4-8a53-4d43-a504-57206151a42d"
+      name: "W20_3"
+      network_ref: "XR_east"
+      source: "e4741cd5-3096-431e-8739-bf4a7001221e"
+      target: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+      length: 0.057
+    - base_ref: "XR"
+      id: "09595d8a-8cd6-4352-aa02-60c77ccceb26"
+      name: "503_1"
+      network_ref: "XR_east"
+      source: "25415a95-1c09-4b04-b0cb-2a25b9c54fad"
+      target: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
+      length: 0.0
+    - base_ref: "XR"
+      id: "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
+      name: "W20_2"
+      network_ref: "XR_east"
+      source: "b6b0f3dd-4521-4962-9a65-70d9e74a75d6"
+      target: "8890eec1-8048-4853-8d25-71cfb8365a36"
+      length: 0.01
+    - base_ref: "XR"
+      id: "7e18556b-9216-4acf-a96b-2ab547cf91d0"
+      name: "304_1"
+      network_ref: "XR_east"
+      source: "8890eec1-8048-4853-8d25-71cfb8365a36"
+      target: "ad21db91-ef23-401b-8138-8dfa933e688c"
+      length: 0.0
+    - base_ref: "XR"
+      id: "e3eea382-8bae-49c8-b3a7-156261786131"
+      name: "304_2"
+      network_ref: "XR_east"
+      source: "ad21db91-ef23-401b-8138-8dfa933e688c"
+      target: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
+      length: 0.143
+    - base_ref: "XR"
+      id: "8578f9aa-a3f1-4de8-837d-c4f51e2dcb48"
+      name: "404_1"
+      network_ref: "XR_east"
+      source: "40323a52-1608-4e52-834c-7a6112f56073"
+      target: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
+      length: 0.17
+    - base_ref: "XR"
+      id: "68a55c8e-a578-45ba-acfd-253a69081599"
+      name: "304_3"
+      network_ref: "XR_east"
+      source: "b8ce7bef-d525-4078-bdc3-4bf5e8e87fba"
+      target: "40323a52-1608-4e52-834c-7a6112f56073"
+      length: 0.0
+    - base_ref: "XR"
+      id: "0c9cd676-60d0-416d-8340-3cb6ded4ff1b"
+      name: "404_2"
+      network_ref: "XR_east"
+      source: "df3cdf49-75a0-4777-8128-9ce1a1d45174"
+      target: "ae83219c-febb-4bc7-bee4-218465b65584"
+      length: 0.0
+    - base_ref: "rebenau_to_pockelsdorf"
+      id: "84fbfb94-4a22-49d9-8918-66bb4cd0242a"
+      name: "9724_1"
+      network_ref: "XR_XPD"
+      source: "ae83219c-febb-4bc7-bee4-218465b65584"
+      target: "14e2f6a9-13e5-43c2-be8e-b14282f79cc3"
+      length: 3.159
+    - base_ref: "XR"
+      id: "aeadda08-8ff0-4201-928e-cd7d4513e119"
+      name: "103_1"
+      source: "cc93ea69-365c-451f-92a9-a5754be34e52"
+      target: "c4d62f2c-71b6-41a8-86f2-36c641af3b0f"
+      length: 0.0
+    - base_ref: "XR"
+      id: "fa4d5c76-68bc-461b-8659-131cc27d3eb0"
+      name: "101_1"
+      source: "cc0123c1-5a0c-428d-b4ff-8341cfe3fffd"
+      target: "1e94145d-9d16-446d-8fed-a61000b4e5d4"
+      length: 0.0
+    - base_ref: "XR"
+      id: "f01f1a87-7d1a-4f41-b9a9-e6bae6897e94"
+      name: "103_2"
+      network_ref: "XR_west"
+      source: "c4d62f2c-71b6-41a8-86f2-36c641af3b0f"
+      target: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
+      length: 0.0
+    - base_ref: "XR"
+      id: "7ef9c3be-fb5b-42bf-8463-c5848294bf14"
+      name: "101_2"
+      network_ref: "XR_west"
+      source: "1e94145d-9d16-446d-8fed-a61000b4e5d4"
+      target: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
+      length: 0.0
+    - base_ref: "XR"
+      id: "766af4d5-2131-4600-9ca1-df0de0bf3b66"
+      name: "103_3"
+      network_ref: "XR_west"
+      source: "6c5f64d8-5256-4f0e-9d21-2e042eab3058"
+      target: "96341cef-c47f-4a36-b095-caa3c0ab191b"
+      length: 0.425
+    - base_ref: "XR"
+      id: "c5587235-6c1e-4f0d-b1bb-b3bbeec7a4d3"
+      name: "101_3"
+      network_ref: "XR_west"
+      source: "485ef1d5-5b12-4e9d-8844-fe0db47611ec"
+      target: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
+      length: 0.225
+    - base_ref: "XR"
+      id: "10088805-c567-47cb-af2a-3d89574d9b23"
+      name: "201_1"
+      network_ref: "XR_west"
+      source: "7aa1dc98-9908-4e58-b5d7-ed5c0e155c5e"
+      target: "6af304ac-5742-452d-a9e2-df6c10df649b"
+      length: 0.0
+    - base_ref: "XR"
+      id: "02ef2a96-f31f-42d0-a9f6-605e773235be"
+      name: "201_2"
+      network_ref: "XR_west"
+      source: "6af304ac-5742-452d-a9e2-df6c10df649b"
+      target: "906eea64-c07c-4c28-8a3a-018f29401311"
+      length: 0.2
+    - base_ref: "XR"
+      id: "ff921d0d-47db-431e-89e6-68647418576d"
+      name: "103_4"
+      network_ref: "XR_west"
+      source: "96341cef-c47f-4a36-b095-caa3c0ab191b"
+      target: "3b394a1e-94f1-40e0-b867-221a95ed7478"
+      length: 0.0
+    - base_ref: "XR"
+      id: "1f6f9c2a-dac6-47de-9d28-1b12200f3ccc"
+      name: "201_3"
+      network_ref: "XR_west"
+      source: "906eea64-c07c-4c28-8a3a-018f29401311"
+      target: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
+      length: 0.0
+    - base_ref: "XR"
+      id: "bedf4859-682d-4720-8800-0ba6d865acc9"
+      name: "W2_1"
+      network_ref: "XR_west"
+      source: "3b394a1e-94f1-40e0-b867-221a95ed7478"
+      target: "46efc37a-7802-4f69-859b-484b44eed272"
+      length: 0.136
+    - base_ref: "XR"
+      id: "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
+      name: "W1_1"
+      network_ref: "XR_west"
+      source: "668aa919-6c92-4b1c-961a-24e5fa519e6a"
+      target: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
+      length: 0.01
+    - base_ref: "XR"
+      id: "975a55ac-301c-4221-9e44-c92869304025"
+      name: "W1_3"
+      network_ref: "XR_west"
+      source: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
+      target: "268e860e-1b7e-4d3f-9373-e28a25174937"
+      length: 0.065
+    - base_ref: "XR"
+      id: "86a25dce-af41-4d43-83d0-d9bc16f4f63d"
+      name: "W1_2"
+      network_ref: "XR_west"
+      source: "8d7d09ec-9b02-4a36-a657-4a9791e2ef82"
+      target: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
+      length: 0.065
+    - base_ref: "XR"
+      id: "853e8e62-5ccd-4d56-9301-edfe49b221a5"
+      name: "W2_3"
+      network_ref: "XR_west"
+      source: "268e860e-1b7e-4d3f-9373-e28a25174937"
+      target: "46efc37a-7802-4f69-859b-484b44eed272"
+      length: 0.061
+    - base_ref: "XR"
+      id: "9e81beff-f5d0-4659-a91f-909f8fc97044"
+      name: "301_1"
+      network_ref: "XR_west"
+      source: "bab80d87-7e67-42e4-8452-94b4ffe7c942"
+      target: "e699224e-44c1-4a39-a400-e7b8b0fded59"
+      length: 0.071
+    - base_ref: "XR"
+      id: "52f4b921-81a0-4ea6-8e36-52a41f098d84"
+      name: "W2_2"
+      network_ref: "XR_west"
+      source: "46efc37a-7802-4f69-859b-484b44eed272"
+      target: "f80fda90-58c5-488c-885c-388ca1673e9a"
+      length: 0.013
+    - base_ref: "XR"
+      id: "4cdfe483-a916-4046-be43-114da8ad086b"
+      name: "203_1"
+      network_ref: "XR_west"
+      source: "f80fda90-58c5-488c-885c-388ca1673e9a"
+      target: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
+      length: 0.0
+    - base_ref: "XR"
+      id: "35ff8e9f-ac49-4017-9119-0ab89b6d2cc3"
+      name: "203_2"
+      network_ref: "XR_west"
+      source: "d562dab5-d4f1-4c5a-855d-6eb2e2ce2188"
+      target: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
+      length: 0.267
+    - base_ref: "XR"
+      id: "b11e4826-24e6-444b-a34c-b2f7061dcd3c"
+      name: "301_2"
+      network_ref: "XR_west"
+      source: "e699224e-44c1-4a39-a400-e7b8b0fded59"
+      target: "77175a18-3820-4035-a6b8-57a2ee609e8d"
+      length: 0.27
+    - base_ref: "XR"
+      id: "c2a637cb-7705-4a2a-a933-c83f68ffa2d5"
+      name: "203_3"
+      network_ref: "XR_west"
+      source: "206917b3-8f5b-48de-be64-cc0cc5b791bc"
+      target: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
+      length: 0.146
+    - base_ref: "XR"
+      id: "aeeecd82-f136-4b54-999d-3e8b13a9a82d"
+      name: "301_3"
+      network_ref: "XR_west"
+      source: "77175a18-3820-4035-a6b8-57a2ee609e8d"
+      target: "a563f377-3832-4cc4-9b75-b605550d4c07"
+      length: 0.146
+    - base_ref: "XR"
+      id: "fa9ba100-346a-4e48-a062-ddcba5b7e4e0"
+      name: "124_1"
+      source: "2262fef8-1868-4cc9-94bc-ee7ac622ee22"
+      target: "bf41a121-6a3c-4452-b3d2-efef64fe70c2"
+      length: 0.0
+    - base_ref: "XR"
+      id: "f2b22410-cf04-450f-ac79-6f70dfc297f9"
+      name: "124_2"
+      network_ref: "XR_west"
+      source: "bf41a121-6a3c-4452-b3d2-efef64fe70c2"
+      target: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
+      length: 0.0
+    - base_ref: "XR"
+      id: "171a617f-867b-4664-a918-d7e92629214e"
+      name: "124_3"
+      network_ref: "XR_west"
+      source: "daa0b1e1-caf1-414d-86d9-dee8efbc401a"
+      target: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
+      length: 0.005
+    - base_ref: "XR"
+      id: "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
+      name: "W3_1"
+      network_ref: "XR_west"
+      source: "99ef4089-195d-42bd-ae82-baf27fa1edaa"
+      target: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
+      length: 0.005
+    - base_ref: "XR"
+      id: "2df2eb98-0968-4a33-b83b-891a108d7147"
+      name: "203_4"
+      network_ref: "XR_west"
+      source: "5e575d68-dc2b-4bee-8ad0-11e635a23114"
+      target: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
+      length: 0.0
+    - base_ref: "XR"
+      id: "89259aba-7a16-4ce7-ab35-d553843e548f"
+      name: "W4_1"
+      network_ref: "XR_west"
+      source: "f0aa0efe-6e4e-4693-bf41-7ecd3eec7325"
+      target: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
+      length: 0.048
+    - base_ref: "XR"
+      id: "7216ff88-b3b2-46e0-9414-9477c79df573"
+      name: "301_4"
+      network_ref: "XR_west"
+      source: "a563f377-3832-4cc4-9b75-b605550d4c07"
+      target: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
+      length: 0.0
+    - base_ref: "XR"
+      id: "6d30e635-c33a-470c-816c-61844e528355"
+      name: "W10_1"
+      network_ref: "XR_west"
+      source: "0509bb4b-f72a-4f60-81f3-24aae29a38cc"
+      target: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
+      length: 0.082
+    - base_ref: "XR"
+      id: "752085c9-58d6-4057-a92c-ac02710b8e82"
+      name: "51_1"
+      network_ref: "XR_east"
+      source: "6ac95844-b735-4ab1-aa93-c06c5946db4a"
+      target: "5f52ad57-6723-4412-8eb4-16650b308dd7"
+      length: 0.005
+    - base_ref: "XR"
+      id: "6c5fbf3c-6b29-4ef4-b133-77cd7cd7f5f4"
+      name: "51_2"
+      network_ref: "XR_east"
+      source: "5f52ad57-6723-4412-8eb4-16650b308dd7"
+      target: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
+      length: 0.0
+    - base_ref: "XR"
+      id: "5d108427-0c91-4c94-b33b-ed0e286694d9"
+      name: "51_3"
+      source: "9b387bde-b8f0-42a5-b1f9-9223dd7ebb15"
+      target: "9d338099-4ef3-4d8f-a2fa-fad4409e9837"
+      length: 0.058
+    - base_ref: "XR"
+      id: "9fcda44e-017a-44db-a615-f182d06e23d3"
+      name: "W3_2"
+      network_ref: "XR_west"
+      source: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
+      target: "515f1257-d556-4371-af6a-4bda8d0ee351"
+      length: 0.047
+    - base_ref: "XR"
+      id: "da07abe1-e40c-4115-84db-dff64b01ba8f"
+      name: "W3_3"
+      network_ref: "XR_west"
+      source: "39f66a9a-177a-4e4a-8a01-017cd6a2bc75"
+      target: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
+      length: 0.067
+    - base_ref: "XR"
+      id: "9a8b9a4d-6a48-472e-b726-bea8ffdd835c"
+      name: "W6_1"
+      network_ref: "XR_west"
+      source: "515f1257-d556-4371-af6a-4bda8d0ee351"
+      target: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
+      length: 0.214
+    - base_ref: "XR"
+      id: "c4a95b27-b5ba-4055-b349-e6246bee04c6"
+      name: "W4_3"
+      network_ref: "XR_west"
+      source: "6e3d8432-d55d-47a6-9438-cad8b747a7d3"
+      target: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
+      length: 0.07
+    - base_ref: "XR"
+      id: "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
+      name: "W4_2"
+      network_ref: "XR_west"
+      source: "1eca5b98-f20b-4141-9a46-c8279f0bee60"
+      target: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
+      length: 0.009
+    - base_ref: "XR"
+      id: "3511c870-d8bd-4e40-b3f7-95e90391c40d"
+      name: "W4_4"
+      network_ref: "XR_west"
+      source: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
+      target: "beb5f987-f0a0-4cda-b7f9-6ea4e6aef29a"
+      length: 0.041
+    - base_ref: "XR"
+      id: "d3794520-9377-4fd9-98ac-c3fe9518673b"
+      name: "W4_5"
+      network_ref: "XR_west"
+      source: "c10fd0b8-356a-4330-a611-81ab4cf3e07d"
+      target: "814413bd-dee7-4037-af21-5fe0acd57069"
+      length: 0.061
+    - base_ref: "XR"
+      id: "25c65a85-7ead-4b6b-bea5-a00287940a66"
+      name: "W6_3"
+      network_ref: "XR_west"
+      source: "814413bd-dee7-4037-af21-5fe0acd57069"
+      target: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
+      length: 0.054
+    - base_ref: "XR"
+      id: "80755594-0760-44af-8082-69e5880e9a17"
+      name: "W6_2"
+      network_ref: "XR_west"
+      source: "b51bb095-b7fe-4969-9e7c-fa00cbc60f2b"
+      target: "b1bb9573-60b5-4412-b61e-910a0b540ac4"
+      length: 0.011
+    - base_ref: "XR"
+      id: "2bcfa1ac-5cf8-43b6-9541-95438672ec12"
+      name: "W10_3"
+      network_ref: "XR_west"
+      source: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
+      target: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
+      length: 0.056
+    - base_ref: "XR"
+      id: "f2801dc8-7025-4157-9917-d809ea8f620b"
+      name: "W10_2"
+      network_ref: "XR_west"
+      source: "81f5097d-65f2-4749-bd20-cce5e538e7d9"
+      target: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
+      length: 0.165
+    - base_ref: "XR"
+      id: "cebe90f8-8122-4883-9e94-3daa8960e4d2"
+      name: "W11_1"
+      network_ref: "XR_west"
+      source: "e63ec5d1-86e1-4589-b4e6-ac737610c548"
+      target: "4bacaae6-e599-4cfc-822a-35bc23735979"
+      length: 0.044
+    - base_ref: "XR"
+      id: "2bd76b1a-107f-4b23-8f82-e8b9982bd7bf"
+      name: "21_1"
+      source: "2913ae88-0553-4836-8914-38d54b211a40"
+      target: "8067ab6b-61f0-428e-9449-5f2ab7f8ded2"
+      length: 0.093
+    - base_ref: "XR"
+      id: "cb0e9b3e-46b7-4fb8-b9dc-2e02e391e011"
+      name: "21_2"
+      network_ref: "XR_west"
+      source: "8067ab6b-61f0-428e-9449-5f2ab7f8ded2"
+      target: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
+      length: 0.0
+    - base_ref: "XR"
+      id: "95caa752-4741-4a22-b293-4d9bbbe82ea9"
+      name: "21_3"
+      network_ref: "XR_west"
+      source: "c30ed61d-fa18-450c-ad65-4c9b95093cab"
+      target: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
+      length: 0.002
+    - base_ref: "XR"
+      id: "6f7b125c-e706-41fd-9165-ed1719ab9fd9"
+      name: "W11_3"
+      network_ref: "XR_west"
+      source: "c6ddd8fa-7276-4f5e-b89d-c0e460ce28cf"
+      target: "4bacaae6-e599-4cfc-822a-35bc23735979"
+      length: 0.059
+    - base_ref: "XR"
+      id: "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
+      name: "W11_2"
+      network_ref: "XR_west"
+      source: "4bacaae6-e599-4cfc-822a-35bc23735979"
+      target: "b73f3881-7bac-4d69-bb91-ae6371ff4041"
+      length: 0.136
+    - base_ref: "XR"
+      id: "1d21963b-03e1-4ac5-9bde-c88814e7b229"
+      name: "401_1"
+      network_ref: "XR_west"
+      source: "d5b7c26f-5189-43d5-bf37-da0453d59de0"
+      target: "0f8d67a8-3183-4b87-b911-e722107cda5d"
+      length: 0.0
+    - base_ref: "XR"
+      id: "7b35b4b0-4550-498c-a5ee-9fdb3ec6c9f5"
+      name: "401_2"
+      network_ref: "XR_1"
+      source: "0f8d67a8-3183-4b87-b911-e722107cda5d"
+      target: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
+      length: 0.02
+    - base_ref: "XR"
+      id: "1ea8c234-a2bc-40e9-9fe3-01aac1dc51a8"
+      name: "401_3"
+      network_ref: "XR_1"
+      source: "0a2d60eb-f9a9-40c6-8898-4041fad2bf5c"
+      target: "de3e722c-a217-4257-b868-0ca6bbc6310c"
+      length: 0.734
+    - base_ref: "XR"
+      id: "343c4abd-a5f1-42b5-b099-367b5c960a53"
+      name: "401_4"
+      network_ref: "XR_1"
+      source: "de3e722c-a217-4257-b868-0ca6bbc6310c"
+      target: "cfb9c041-df5f-42ff-96e4-8051299467cc"
+      length: 0.02
+    - base_ref: "XR"
+      id: "0d5ee3b7-1021-4f70-9a86-4de68bfd6d02"
+      name: "401_5"
+      network_ref: "XR_east"
+      source: "cfb9c041-df5f-42ff-96e4-8051299467cc"
+      target: "a4e4c075-249c-45b4-820b-b77523fcf124"
+      length: 0.0
+    - base_ref: "XR"
+      id: "4ae249bc-a193-4c8f-b723-dbcf27bbcb5c"
+      name: "W18_1"
+      network_ref: "XR_east"
+      source: "a4e4c075-249c-45b4-820b-b77523fcf124"
+      target: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+      length: 0.179
+    - base_ref: "XR"
+      id: "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
+      name: "W17_3"
+      network_ref: "XR_east"
+      source: "0e202ec8-370e-4279-ba82-d53657190abe"
+      target: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
+      length: 0.001
+    - base_ref: "XR"
+      id: "f6980045-b4cf-4cca-bf55-ae41163df70d"
+      name: "W18_3"
+      network_ref: "XR_east"
+      source: "88fdeb8f-746b-42e3-ba4b-3998baeb62e7"
+      target: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+      length: 0.036
+    - base_ref: "XR"
+      id: "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
+      name: "W18_2"
+      network_ref: "XR_east"
+      source: "99feff17-a920-4f0e-9ced-3ea9f7b8675a"
+      target: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
+      length: 0.01
+    - base_ref: "XR"
+      id: "1ba31143-fe9a-4e36-a710-c50510622c4a"
+      name: "501_1"
+      network_ref: "XR_east"
+      source: "7c421f31-cba0-4deb-b716-8d29fab10bb3"
+      target: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
+      length: 0.0
+    - base_ref: "XR"
+      id: "727d9010-302a-4e06-9028-475bb8c2dbec"
+      name: "501_2"
+      network_ref: "XR_east"
+      source: "6971fe16-7b0e-4413-bb9a-74ef84f44a45"
+      target: "1daca293-0191-40d9-9f32-1e749223d03d"
+      length: 0.537
+    - base_ref: "XR"
+      id: "061de7f4-1d51-4ecb-b1bd-6e0fd25d79d3"
+      name: "501_3"
+      network_ref: "XR_east"
+      source: "1daca293-0191-40d9-9f32-1e749223d03d"
+      target: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
+      length: 0.0
+    - base_ref: "XR"
+      id: "c0ea9c28-71f5-44a0-ac3d-ee0990b288b6"
+      name: "501_4"
+      source: "6dba86d8-82d4-4cfc-98f7-6d5b3d086604"
+      target: "88d9933b-5867-48cb-bc13-75d94d4c63d6"
+      length: 0.0
+    - base_ref: "XR"
+      id: "6322afe1-1fa4-40aa-a4df-9f6cd90a24db"
+      name: "503_2"
+      network_ref: "XR_east"
+      source: "ae191b4c-da4f-4cf9-a9b7-fc288a7b2a27"
+      target: "73bc3a56-243d-40eb-ad05-6480825bb643"
+      length: 0.1
+    - base_ref: "XR"
+      id: "08c72bb3-6727-4d9e-83dc-134d1535452b"
+      name: "503_3"
+      network_ref: "XR_east"
+      source: "73bc3a56-243d-40eb-ad05-6480825bb643"
+      target: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
+      length: 0.0
+    - base_ref: "XR"
+      id: "d9e04eaf-ab2f-4625-845c-e7e5732dbe4d"
+      name: "603_1"
+      network_ref: "XR_east"
+      source: "609c0221-6acd-406b-94ac-3cefd97d6d3c"
+      target: "f31e3747-80c6-4342-9782-8ce4c7a24379"
+      length: 0.278
+    - base_ref: "XR"
+      id: "3f0a3950-d11a-40d6-87a0-e57fdbf3dca4"
+      name: "603_2"
+      network_ref: "XR_east"
+      source: "f31e3747-80c6-4342-9782-8ce4c7a24379"
+      target: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
+      length: 0.0
+    - base_ref: "XR"
+      id: "4bace8f9-935d-490d-a7de-ef6f22298fb7"
+      name: "603_3"
+      source: "659eab74-5bc6-4e6a-af8e-dc9c5129a807"
+      target: "dc59f431-4159-4667-9e6d-2e109b39bda2"
+      length: 0.0
+    - base_ref: "rebenau_to_pockelsdorf"
+      id: "a2844695-205f-40d4-a24a-e3e237ef7c96"
+      name: "141"
+      network_ref: "XR_XPD"
+      source: "14e2f6a9-13e5-43c2-be8e-b14282f79cc3"
+      target: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
+      length: 0.05
+    - base_ref: "rebenau_to_pockelsdorf"
+      id: "428d23d0-14aa-4cc5-beea-3cb6f681ffaf"
+      name: "142"
+      network_ref: "XR_XPD"
+      source: "eecc325f-0640-4a48-b1e5-d6af00e516bd"
+      target: "8db30b9e-38c2-4683-86cd-e13a7d653bfc"
+      length: 0.05
+    - base_ref: "rebenau_to_pockelsdorf"
+      id: "a67f7533-ff97-4d9c-9f3e-6df1dcc5c622"
+      name: "9724_2"
+      network_ref: "XR_XPD"
+      source: "8db30b9e-38c2-4683-86cd-e13a7d653bfc"
+      target: "e9449472-545f-4198-b640-6e3de097719b"
+      length: 4.609
+    - base_ref: "XPD"
+      id: "ce3bc270-b5b4-4d72-8ca3-c907cddc591d"
+      name: "101_1"
+      network_ref: "XPD_west"
+      source: "e9449472-545f-4198-b640-6e3de097719b"
+      target: "b2a66f9f-3ab3-44c1-8da1-aabcd5f65e89"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "c7e1f200-a3c9-4ee9-820f-773f86ff0562"
+      name: "101_2"
+      network_ref: "XPD_west"
+      source: "b2a66f9f-3ab3-44c1-8da1-aabcd5f65e89"
+      target: "4fc84ef1-9396-4a5a-a476-3c86eb850047"
+      length: 0.15
+    - base_ref: "XPD"
+      id: "f2818639-0f1d-4b50-96a2-b95a389cb08a"
+      name: "201_2"
+      network_ref: "XPD_west"
+      source: "d4a694ec-483e-47eb-8dcf-8d89054ea626"
+      target: "eb954114-bb76-479f-96e6-1907c853299a"
+      length: 0.2
+    - base_ref: "XPD"
+      id: "8b76bbfd-2d93-4cdc-ac63-42b5d8290b78"
+      name: "201_1"
+      network_ref: "XPD_west"
+      source: "4fc84ef1-9396-4a5a-a476-3c86eb850047"
+      target: "d4a694ec-483e-47eb-8dcf-8d89054ea626"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "13ff7349-9e67-46b6-9f8f-50c9e2621763"
+      name: "201_3"
+      network_ref: "XPD_west"
+      source: "eb954114-bb76-479f-96e6-1907c853299a"
+      target: "30de60bc-4bb5-4ac2-ac06-aa3cb091e1aa"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "61f3c2dd-e617-40f0-817e-b39fb1032c8e"
+      name: "W1_1"
+      network_ref: "XPD_west"
+      source: "30de60bc-4bb5-4ac2-ac06-aa3cb091e1aa"
+      target: "9df723f1-cd38-4418-95e0-b61091abcb13"
+      length: 0.004
+    - base_ref: "XPD"
+      id: "ff60abea-9ffa-40bc-92dc-585517021fb9"
+      name: "W1_3"
+      network_ref: "XPD_west"
+      source: "9df723f1-cd38-4418-95e0-b61091abcb13"
+      target: "6d4dcc44-ceb0-4523-baca-79f3a9bd13cd"
+      length: 0.062
+    - base_ref: "XPD"
+      id: "6fd4fa17-c27e-43e8-a8ed-b0c55d6c86a5"
+      name: "W1_2"
+      network_ref: "XPD_west"
+      source: "9df723f1-cd38-4418-95e0-b61091abcb13"
+      target: "cc12e61d-76df-4f2e-8605-192f53daa46e"
+      length: 0.062
+    - base_ref: "XPD"
+      id: "7b767860-6ca3-477e-a377-425b54d2c251"
+      name: "W2_1"
+      network_ref: "XPD_west"
+      source: "6d4dcc44-ceb0-4523-baca-79f3a9bd13cd"
+      target: "72512996-cd53-4049-8fa6-c41cc3dee301"
+      length: 0.0621
+    - base_ref: "XPD"
+      id: "f39cd796-be87-487b-ad70-e6fb8aecc45b"
+      name: "W3_1"
+      network_ref: "XPD_west"
+      source: "cc12e61d-76df-4f2e-8605-192f53daa46e"
+      target: "ab8e437d-278f-4da1-9ff0-628375c8db03"
+      length: 0.105
+    - base_ref: "XPD"
+      id: "65453ca9-c1fb-4c15-900c-266c451ea238"
+      name: "243_3"
+      network_ref: "XPD_west"
+      source: "14d4afa0-6d62-4fab-92dc-6f5fe62d26f3"
+      target: "c514c6eb-404a-43a0-b99d-8a170668a755"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "13551ff5-784f-493c-b033-8d9c56057824"
+      name: "243_2"
+      network_ref: "XPD_west"
+      source: "1e2cb47f-996d-4bfe-af60-1f22695cf0b1"
+      target: "14d4afa0-6d62-4fab-92dc-6f5fe62d26f3"
+      length: 0.169
+    - base_ref: "XPD"
+      id: "5ec04008-2277-407b-b417-01d1bbe35174"
+      name: "243_1"
+      network_ref: "XPD_west"
+      source: "7cd65efa-be49-490e-a3c3-209bd5af250f"
+      target: "1e2cb47f-996d-4bfe-af60-1f22695cf0b1"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "4ccc4d0c-5cca-4b2e-a80b-a213c1d29dac"
+      name: "143_3"
+      network_ref: "XPD_west"
+      source: "49a33d17-6d19-462e-86b0-fef3e557186c"
+      target: "7cd65efa-be49-490e-a3c3-209bd5af250f"
+      length: 0.186
+    - base_ref: "XPD"
+      id: "eaa66233-d007-4cfa-a9bd-b6ba161b896c"
+      name: "143_2"
+      network_ref: "XPD_west"
+      source: "a820721f-8fd9-424a-b4ca-ef581c38e366"
+      target: "49a33d17-6d19-462e-86b0-fef3e557186c"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "7ed2635f-2122-4a48-8c09-46aa08a65670"
+      name: "143_1"
+      network_ref: "XPD_west"
+      source: "ae108c83-41e5-41f4-9cb3-d7347d7b5b4a"
+      target: "a820721f-8fd9-424a-b4ca-ef581c38e366"
+      length: 0.085
+    - base_ref: "XPD"
+      id: "37028cbd-39ac-4b76-9533-7c0fea58d8b1"
+      name: "W3_2"
+      network_ref: "XPD_west"
+      source: "c514c6eb-404a-43a0-b99d-8a170668a755"
+      target: "ab8e437d-278f-4da1-9ff0-628375c8db03"
+      length: 0.04
+    - base_ref: "XPD"
+      id: "6da00c1b-8826-4660-a135-5b9aed624f59"
+      name: "W2_2"
+      network_ref: "XPD_west"
+      source: "72512996-cd53-4049-8fa6-c41cc3dee301"
+      target: "3e6bdbd9-1704-44c8-bbdd-391e3b928134"
+      length: 0.0579
+    - base_ref: "XPD"
+      id: "f3585f08-5acb-49e4-aae6-da83214cc9a0"
+      name: "W2_3"
+      network_ref: "XPD_west"
+      source: "72512996-cd53-4049-8fa6-c41cc3dee301"
+      target: "73c04241-f1a4-4786-aae7-2dae2f085e37"
+      length: 0.1239
+    - base_ref: "XPD"
+      id: "f3200c37-4eb0-4cf6-8c4d-1364d94f3598"
+      name: "W3_4"
+      network_ref: "XPD_west"
+      source: "ab8e437d-278f-4da1-9ff0-628375c8db03"
+      target: "2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3"
+      length: 0.04
+    - base_ref: "XPD"
+      id: "0919ffee-91cf-4e42-9176-53a7fa7e00cb"
+      name: "W3_3"
+      network_ref: "XPD_west"
+      source: "ab8e437d-278f-4da1-9ff0-628375c8db03"
+      target: "81ed8132-4731-4069-b999-6d3dfd37e7e8"
+      length: 0.02
+    - base_ref: "XPD"
+      id: "6378bf57-c2f8-4781-9761-3ea78f80ed55"
+      name: "301"
+      network_ref: "XPD_west"
+      source: "2cfd552a-6261-42fb-8c0a-e7ae24bbfbc3"
+      target: "16df5974-d6e1-4b08-ae94-d20b26807546"
+      length: 0.087
+    - base_ref: "XPD"
+      id: "5e790d82-e409-4e8f-81ef-fd5faa6e34f7"
+      name: "W4_2"
+      network_ref: "XPD_west"
+      source: "81ed8132-4731-4069-b999-6d3dfd37e7e8"
+      target: "1632b4a9-5a73-4653-a744-37045e198cef"
+      length: 0.053
+    - base_ref: "XPD"
+      id: "c74683a0-2e22-4d9a-8861-aff6de295e1f"
+      name: "W4_1"
+      network_ref: "XPD_west"
+      source: "3e6bdbd9-1704-44c8-bbdd-391e3b928134"
+      target: "1632b4a9-5a73-4653-a744-37045e198cef"
+      length: 0.118
+    - base_ref: "XPD"
+      id: "79bc9f64-d017-417c-baf1-e56d715bf80c"
+      name: "103_1"
+      network_ref: "XPD_west"
+      source: "73c04241-f1a4-4786-aae7-2dae2f085e37"
+      target: "f0913f71-4530-4209-9da0-4b9e6d7d8250"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "7ae49ad4-3b16-4183-9aa2-11cea2eff916"
+      name: "103_2"
+      network_ref: "XPD_3"
+      source: "f0913f71-4530-4209-9da0-4b9e6d7d8250"
+      target: "8f8ab62b-74b8-4303-a495-27a2978414a5"
+      length: 0.02
+    - base_ref: "XPD"
+      id: "9bb44939-1319-47fb-b88e-48a45591191f"
+      name: "W4_3"
+      network_ref: "XPD_west"
+      source: "1632b4a9-5a73-4653-a744-37045e198cef"
+      target: "1e8df13d-567f-44ad-9563-3820ed0f57b6"
+      length: 0.007
+    - base_ref: "XPD"
+      id: "27820ee1-1406-4bf9-80d2-669219b41eb0"
+      name: "103_3"
+      network_ref: "XPD_3"
+      source: "8f8ab62b-74b8-4303-a495-27a2978414a5"
+      target: "fbe65262-c5f1-4ae9-9aea-080df9fbaebf"
+      length: 0.253
+    - base_ref: "XPD"
+      id: "33d64915-3218-47cc-9393-a0737fc60123"
+      name: "102"
+      network_ref: "XPD_west"
+      source: "1e8df13d-567f-44ad-9563-3820ed0f57b6"
+      target: "6292e51a-4808-4fab-b2b4-10a55d1e59dc"
+      length: 0.047
+    - base_ref: "XPD"
+      id: "de1059e9-9d96-4e5d-87d7-614ac9f31ea0"
+      name: "202_1"
+      source: "6292e51a-4808-4fab-b2b4-10a55d1e59dc"
+      target: "1559135a-021c-4e24-a5c2-e8075bc4c4c5"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "67d9a14d-039f-4f2a-b05a-12a10ab12e4b"
+      name: "401_1"
+      network_ref: "XPD_west"
+      source: "16df5974-d6e1-4b08-ae94-d20b26807546"
+      target: "b361a3ee-5069-4569-872f-6f3642209fe8"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "19c9f89f-2246-496a-8aba-ef17ac237724"
+      name: "202_2"
+      network_ref: "XPD_2"
+      source: "1559135a-021c-4e24-a5c2-e8075bc4c4c5"
+      target: "6080652c-60fd-4e55-849a-913467a9b094"
+      length: 0.02
+    - base_ref: "XPD"
+      id: "9f9c6903-8515-43f0-99d8-b8fc738ab647"
+      name: "401_2"
+      network_ref: "XPD_1"
+      source: "b361a3ee-5069-4569-872f-6f3642209fe8"
+      target: "763163e9-c6c5-487b-a455-d78c17e826c9"
+      length: 0.02
+    - base_ref: "XPD"
+      id: "3278b142-8206-475f-8221-1e36e24b4910"
+      name: "202_3"
+      network_ref: "XPD_2"
+      source: "6080652c-60fd-4e55-849a-913467a9b094"
+      target: "4c6edf43-db69-4d3f-9b06-45d7c94d7e47"
+      length: 0.143
+    - base_ref: "XPD"
+      id: "3e588a7e-8487-4fc5-9541-95db05bdf701"
+      name: "401_3"
+      network_ref: "XPD_1"
+      source: "763163e9-c6c5-487b-a455-d78c17e826c9"
+      target: "604398d9-43bb-4c1e-b251-fd0bf1696d44"
+      length: 0.143
+    - base_ref: "XPD"
+      id: "b2e0de86-ce03-43ca-9ed9-c422781a09dd"
+      name: "202_4"
+      network_ref: "XPD_2"
+      source: "4c6edf43-db69-4d3f-9b06-45d7c94d7e47"
+      target: "0fb8b00f-7bd4-4c9f-9b12-0ee503ab551a"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "37e6ae6f-9edb-4e43-a935-d1a9646e4ba3"
+      name: "401_4"
+      network_ref: "XPD_1"
+      source: "604398d9-43bb-4c1e-b251-fd0bf1696d44"
+      target: "0675f75f-72ae-4da9-82b8-d65903373996"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "80b21be6-396b-4b69-958d-3cfa59a1061d"
+      name: "202_5"
+      network_ref: "XPD_2"
+      source: "0fb8b00f-7bd4-4c9f-9b12-0ee503ab551a"
+      target: "3573a52a-26f6-4430-aafd-d050f83740ef"
+      length: 0.003
+    - base_ref: "XPD"
+      id: "1de2ff52-f471-4b00-9526-eaed4b74ec46"
+      name: "401_5"
+      network_ref: "XPD_1"
+      source: "0675f75f-72ae-4da9-82b8-d65903373996"
+      target: "b496cd79-5b95-4eb5-a028-78d8ecac3e12"
+      length: 0.003
+    - base_ref: "XPD"
+      id: "75180fc9-2973-45fc-a36d-b058886fa3ed"
+      name: "202_6"
+      network_ref: "XPD_2"
+      source: "3573a52a-26f6-4430-aafd-d050f83740ef"
+      target: "f29ccb46-651b-4cee-ad9a-a76011cb00c0"
+      length: 0.002
+    - base_ref: "XPD"
+      id: "41b33bd7-22aa-48b3-8bb0-24dc74063b71"
+      name: "401_6"
+      network_ref: "XPD_1"
+      source: "b496cd79-5b95-4eb5-a028-78d8ecac3e12"
+      target: "eba1750e-8bfd-4633-b158-11f69f70cf4a"
+      length: 0.002
+    - base_ref: "XPD"
+      id: "bf8595eb-db82-4eaf-9b5b-526dcb478e29"
+      name: "202_7"
+      network_ref: "XPD_2"
+      source: "f29ccb46-651b-4cee-ad9a-a76011cb00c0"
+      target: "140c29f2-3406-4366-be5c-91d683ba2017"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "73f0544b-59dc-479c-988c-4787670dd916"
+      name: "401_7"
+      network_ref: "XPD_1"
+      source: "eba1750e-8bfd-4633-b158-11f69f70cf4a"
+      target: "2477d593-ced3-4cb7-b8e7-4cd12b75d0fe"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "e028456f-8a6a-4d09-9c68-016da85d2b5d"
+      name: "202_8"
+      network_ref: "XPD_2"
+      source: "140c29f2-3406-4366-be5c-91d683ba2017"
+      target: "a2193577-ca8f-4b6c-8b51-115704b11b50"
+      length: 0.118
+    - base_ref: "XPD"
+      id: "868283aa-3594-4b05-8fbf-e56795a76ae5"
+      name: "401_8"
+      network_ref: "XPD_1"
+      source: "2477d593-ced3-4cb7-b8e7-4cd12b75d0fe"
+      target: "abb3dee7-682c-4a2e-af81-ba7e9a394945"
+      length: 0.213
+    - base_ref: "XPD"
+      id: "2168d379-0a9f-48b2-88f4-fe2a657940d3"
+      name: "103_4"
+      network_ref: "XPD_3"
+      source: "fbe65262-c5f1-4ae9-9aea-080df9fbaebf"
+      target: "c72286b5-297f-4ac1-b885-5944511ac734"
+      length: 0.02
+    - base_ref: "XPD"
+      id: "9bba7f6f-ad8f-4464-8e7f-33e37e1764d4"
+      name: "202_9"
+      network_ref: "XPD_2"
+      source: "a2193577-ca8f-4b6c-8b51-115704b11b50"
+      target: "94bbccb9-5bfc-474b-a5e7-bea7704077d8"
+      length: 0.02
+    - base_ref: "XPD"
+      id: "020014fd-ecd1-4e2d-91ef-2f74fd0fa263"
+      name: "401_9"
+      network_ref: "XPD_1"
+      source: "abb3dee7-682c-4a2e-af81-ba7e9a394945"
+      target: "606c2f08-3624-4623-9374-c7398320bace"
+      length: 0.02
+    - base_ref: "XPD"
+      id: "e5f1480d-a18a-4c0e-b237-d5a17458a6c2"
+      name: "103_5"
+      network_ref: "XPD_east"
+      source: "c72286b5-297f-4ac1-b885-5944511ac734"
+      target: "afa409a4-4436-4f28-969c-984f5d75e908"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "c1e7345c-0d81-4b6e-b878-feaea64bfd93"
+      name: "202_10"
+      network_ref: "XPD_east"
+      source: "94bbccb9-5bfc-474b-a5e7-bea7704077d8"
+      target: "19521a1b-6297-491a-a061-0c73062feb04"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "ec18a6ce-ceae-44fc-8819-53ef9b3e61c8"
+      name: "401_10"
+      network_ref: "XPD_east"
+      source: "606c2f08-3624-4623-9374-c7398320bace"
+      target: "560f05a3-8e83-4f8a-a4e2-c0cdf83dcec7"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "760ec967-8ec1-4025-9ef5-b3a1e4c78844"
+      name: "W5_2"
+      network_ref: "XPD_east"
+      source: "19521a1b-6297-491a-a061-0c73062feb04"
+      target: "c6c855c4-e6c4-4b97-a641-b1022b7d6195"
+      length: 0.105
+    - base_ref: "XPD"
+      id: "73793972-3d47-48c4-9388-2e5d87b08b41"
+      name: "W6_2"
+      network_ref: "XPD_east"
+      source: "560f05a3-8e83-4f8a-a4e2-c0cdf83dcec7"
+      target: "9895f886-f2f3-4762-9713-9a192cb8f253"
+      length: 0.053
+    - base_ref: "XPD"
+      id: "f575f64c-f620-4e4d-93c8-94dd5ae398f5"
+      name: "W5_3"
+      network_ref: "XPD_east"
+      source: "c6c855c4-e6c4-4b97-a641-b1022b7d6195"
+      target: "70c48f98-23d6-4090-816e-65e8c30e8969"
+      length: 0.001
+    - base_ref: "XPD"
+      id: "14628235-8159-409c-89ec-11b6f3236f37"
+      name: "W6_1"
+      network_ref: "XPD_east"
+      source: "70c48f98-23d6-4090-816e-65e8c30e8969"
+      target: "9895f886-f2f3-4762-9713-9a192cb8f253"
+      length: 0.042
+    - base_ref: "XPD"
+      id: "ca4dc14d-d618-4ae2-84b5-4429e4f6dd3a"
+      name: "W6_3"
+      network_ref: "XPD_east"
+      source: "9895f886-f2f3-4762-9713-9a192cb8f253"
+      target: "9801e51c-1c86-4ae9-9b1c-beea9f2ce841"
+      length: 0.001
+    - base_ref: "XPD"
+      id: "b4ea06b4-efe2-440a-861d-7b8546145c81"
+      name: "W7_1"
+      network_ref: "XPD_east"
+      source: "9801e51c-1c86-4ae9-9b1c-beea9f2ce841"
+      target: "93500b41-bf43-446e-9d51-6ecef073b9f5"
+      length: 0.002
+    - base_ref: "XPD"
+      id: "d32a053a-2ac9-4135-a904-7de7941860b0"
+      name: "W7_2"
+      network_ref: "XPD_east"
+      source: "93500b41-bf43-446e-9d51-6ecef073b9f5"
+      target: "90ccc8bc-0d07-47a2-b4cc-5bb898d88b5d"
+      length: 0.05
+    - base_ref: "XPD"
+      id: "9e6bc70e-f21d-4853-8ba7-ea64ee11b6a4"
+      name: "W7_3"
+      network_ref: "XPD_east"
+      source: "93500b41-bf43-446e-9d51-6ecef073b9f5"
+      target: "7fb67957-e5db-4a4c-b4b8-9b3b5dadb1e9"
+      length: 0.069
+    - base_ref: "XPD"
+      id: "711c28ed-dc58-4088-a737-b2535f555161"
+      name: "501_1"
+      network_ref: "XPD_east"
+      source: "90ccc8bc-0d07-47a2-b4cc-5bb898d88b5d"
+      target: "91ac4007-51b8-497d-ba28-b70732856aab"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "30e189bb-d219-40cf-862a-c6ee5b5f3fb2"
+      name: "501_2"
+      network_ref: "XPD_east"
+      source: "91ac4007-51b8-497d-ba28-b70732856aab"
+      target: "a6da5559-38ee-4434-94b0-80fddeadc3ed"
+      length: 0.2
+    - base_ref: "XPD"
+      id: "bbce9726-b625-4682-b73d-1364ad913134"
+      name: "501_3"
+      network_ref: "XPD_east"
+      source: "a6da5559-38ee-4434-94b0-80fddeadc3ed"
+      target: "1951d717-a151-4408-9cd5-03cc3c8fed7a"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "de7665e7-c95d-40bc-94bb-ad68428fbc62"
+      name: "601_1"
+      network_ref: "XPD_east"
+      source: "1951d717-a151-4408-9cd5-03cc3c8fed7a"
+      target: "2a219fea-2cf3-4320-a401-c369156a401c"
+      length: 0.179
+    - base_ref: "XPD"
+      id: "1a75cc18-eaed-4e47-9efb-bda06370911b"
+      name: "601_2"
+      network_ref: "XPD_east"
+      source: "2a219fea-2cf3-4320-a401-c369156a401c"
+      target: "df2d72d2-2e2d-4e55-937c-ec3229be381c"
+      length: 0.0
+    - id: "43ed0124-ce79-40c1-81f3-d941b425f9f8"
+      name: "9724_3"
+      source: "df2d72d2-2e2d-4e55-937c-ec3229be381c"
+      target: "5f115822-5c58-45f9-b9e0-ced2b9cd2be0"
+      length: 3.257
+    - base_ref: "XPD"
+      id: "557223d3-87e5-4f20-86fb-3f2b2bad4060"
+      name: "G10_1"
+      network_ref: "XPD_east"
+      source: "7fb67957-e5db-4a4c-b4b8-9b3b5dadb1e9"
+      target: "381bd4ad-c5ec-46c8-81fc-7f10a5b3a8da"
+      length: 0.005
+    - base_ref: "XPD"
+      id: "51aeee4f-5e36-4f17-a92d-05b50e0b3c20"
+      name: "G10_2"
+      network_ref: "XPD_east"
+      source: "381bd4ad-c5ec-46c8-81fc-7f10a5b3a8da"
+      target: "c074cd16-e8fd-4574-8c69-5e5d13958253"
+      length: 0.0
+    - base_ref: "XPD"
+      id: "53c72463-7bed-48ef-ab10-d1410971df1a"
+      name: "G10_3"
+      source: "c074cd16-e8fd-4574-8c69-5e5d13958253"
+      target: "fb15b45e-88a0-42df-ad67-575d8a003a8e"
+      length: 0.042
+    - base_ref: "XPD"
+      id: "d6fd63b6-a220-46a9-9b16-e4cc0d14ec3c"
+      name: "W5_1"
+      network_ref: "XPD_east"
+      source: "afa409a4-4436-4f28-969c-984f5d75e908"
+      target: "c6c855c4-e6c4-4b97-a641-b1022b7d6195"
+      length: 0.164
+    - base_ref: "pockelsdorf_to_buelten"
+      id: "831f33f3-6bed-456c-b304-2248e6765d20"
+      name: "147"
+      network_ref: "XPD_XBU"
+      source: "5f115822-5c58-45f9-b9e0-ced2b9cd2be0"
+      target: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
+      length: 0.05
+    - base_ref: "pockelsdorf_to_buelten"
+      id: "a93de29e-43b6-4ddd-a739-3200957579df"
+      name: "148"
+      network_ref: "XPD_XBU"
+      source: "6ff59465-3e7d-4b6a-a8d6-0923308f0556"
+      target: "0bc68652-0bdd-4b0b-a366-ded5d870a8e4"
+      length: 0.05
+    - base_ref: "pockelsdorf_to_buelten"
+      id: "18a4469c-b63a-4099-81a2-12b56d552d8a"
+      name: "9724_4"
+      network_ref: "XPD_XBU"
+      source: "0bc68652-0bdd-4b0b-a366-ded5d870a8e4"
+      target: "02cd9644-102e-4534-abb3-f7f714293054"
+      length: 4.262
+    - base_ref: "XBU"
+      id: "d9958863-0acc-40a6-a89f-ec4c8b252aea"
+      name: "101_1"
+      source: "1f35a368-41b6-4ff8-8fb7-a992e33ae60e"
+      target: "7c4ff364-86b7-4040-b7c4-8a105f592afe"
+      length: 0.0
+    - base_ref: "XBU"
+      id: "c127dee9-dfcc-4b30-9bcc-b10a6f88740c"
+      name: "102_1"
+      source: "ff48a1b7-8ba0-4c6f-ba75-3c0ef0d0285e"
+      target: "aa57a28f-74dc-45eb-ba8d-dc64387fd698"
+      length: 0.0
+    - base_ref: "XBU"
+      id: "4e333a7e-7020-495a-86ee-c2d2ee4ee564"
+      name: "101_2"
+      network_ref: "XBU"
+      source: "7c4ff364-86b7-4040-b7c4-8a105f592afe"
+      target: "5daa7069-572a-48a5-924c-76ec4da497ff"
+      length: 0.0
+    - base_ref: "XBU"
+      id: "414302e1-dd8a-4850-b128-7ab466c9ab93"
+      name: "102_2"
+      network_ref: "XBU"
+      source: "aa57a28f-74dc-45eb-ba8d-dc64387fd698"
+      target: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
+      length: 0.0
+    - base_ref: "XBU"
+      id: "7b09e642-0c3a-44db-8fc5-8a2f8c04edf3"
+      name: "101_3"
+      network_ref: "XBU"
+      source: "5daa7069-572a-48a5-924c-76ec4da497ff"
+      target: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
+      length: 0.261
+    - base_ref: "XBU"
+      id: "ee57c98a-0940-4659-a8c4-b1f64e60999f"
+      name: "102_3"
+      network_ref: "XBU"
+      source: "46b3f076-9ff0-4923-9bc6-d730c1094f04"
+      target: "a53e0380-0c83-4572-9931-e040c80f828d"
+      length: 0.111
+    - base_ref: "XBU"
+      id: "d95ce46a-597c-4b87-8cea-895ced2b8f5d"
+      name: "W103_1"
+      network_ref: "XBU"
+      source: "3c2dcacd-897f-4e60-8435-cf52f5e91a5b"
+      target: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
+      length: 0.065
+    - base_ref: "XBU"
+      id: "de75e438-11df-4439-9fac-6cc8927f3aed"
+      name: "W101_1"
+      network_ref: "XBU"
+      source: "a53e0380-0c83-4572-9931-e040c80f828d"
+      target: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
+      length: 0.065
+    - base_ref: "XBU"
+      id: "788bc33e-1a9a-41a3-a747-e7813c0d4fec"
+      name: "103_1"
+      network_ref: "XBU"
+      source: "02cd9644-102e-4534-abb3-f7f714293054"
+      target: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
+      length: 0.0
+    - base_ref: "XBU"
+      id: "8e9e24d2-3800-4b78-a95c-913d2511eff9"
+      name: "103_2"
+      network_ref: "XBU"
+      source: "8d7de8cd-cd08-4d59-8a56-22f9e0695cc8"
+      target: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
+      length: 0.111
+    - base_ref: "XBU"
+      id: "645435d1-e6b5-45df-9b51-bb2b42d3e5e4"
+      name: "W101_3"
+      network_ref: "XBU"
+      source: "8cbf70a7-06f1-498c-ab88-343a76ecf258"
+      target: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
+      length: 0.065
+    - base_ref: "XBU"
+      id: "98da089e-cbed-4783-9350-0bb97e4a9cc9"
+      name: "W101_2"
+      network_ref: "XBU"
+      source: "5e45cc8a-8e4c-4928-9d32-0bf94562b14a"
+      target: "8b1888d9-e216-4252-a9ae-f737342ad002"
+      length: 0.012
+    - base_ref: "XBU"
+      id: "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
+      name: "W102_1"
+      network_ref: "XBU"
+      source: "8b1888d9-e216-4252-a9ae-f737342ad002"
+      target: "34366cf4-7867-4e57-abce-f93b573dd3ed"
+      length: 0.012
+    - base_ref: "XBU"
+      id: "ac58c309-a617-45dd-a0d6-4856379ff143"
+      name: "W102_3"
+      network_ref: "XBU"
+      source: "34366cf4-7867-4e57-abce-f93b573dd3ed"
+      target: "52f61012-e921-4ad5-bc16-8895c6b9a043"
+      length: 0.065
+    - base_ref: "XBU"
+      id: "66d5fd8c-9ca0-4984-8dd2-97ac2f4e3941"
+      name: "W102_2"
+      network_ref: "XBU"
+      source: "34366cf4-7867-4e57-abce-f93b573dd3ed"
+      target: "db840367-179a-4087-9d0f-574924793914"
+      length: 0.065
+    - base_ref: "XBU"
+      id: "16d8c6b8-cc59-452a-8460-3782a940b059"
+      name: "W103_3"
+      network_ref: "XBU"
+      source: "52f61012-e921-4ad5-bc16-8895c6b9a043"
+      target: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
+      length: 0.061
+    - base_ref: "XBU"
+      id: "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
+      name: "W103_2"
+      network_ref: "XBU"
+      source: "5b4d7626-5b3b-4d14-b442-00db7b279b6e"
+      target: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
+      length: 0.013
+    - base_ref: "XBU"
+      id: "17139506-d503-4104-919c-470f78759c4b"
+      name: "201_1"
+      network_ref: "XBU"
+      source: "5eb2eee1-e93f-40e1-b670-7a2eec73760e"
+      target: "769ef354-f159-40db-80e5-00cff4d7ad0d"
+      length: 0.2
+    - base_ref: "XBU"
+      id: "0d71f223-331a-4ddb-b4d0-ff80154f313f"
+      name: "202_1"
+      network_ref: "XBU"
+      source: "db840367-179a-4087-9d0f-574924793914"
+      target: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
+      length: 0.274
+    - base_ref: "XBU"
+      id: "5d76ed6f-d7d8-4307-a39b-48b20ad3fa02"
+      name: "201_2"
+      network_ref: "XBU"
+      source: "769ef354-f159-40db-80e5-00cff4d7ad0d"
+      target: "971d9e83-f492-45f3-a7e3-4457e46fc8f7"
+      length: 0.0
+    - base_ref: "XBU"
+      id: "ce514783-e182-4f08-9a9a-bff77479b4df"
+      name: "202_2"
+      network_ref: "XBU"
+      source: "2dc80d4b-81bf-4375-bdc4-13039127a6cd"
+      target: "06058d21-d0b1-4926-b60a-0ef82414cbac"
+      length: 0.0
+    - base_ref: "buelten_to_schleinitz"
+      id: "0925afe1-2b5b-464d-9f3f-a16c505df23e"
+      name: "9721_1"
+      network_ref: "XBU_XSZ_1"
+      source: "971d9e83-f492-45f3-a7e3-4457e46fc8f7"
+      target: "7cf06e6b-a398-4202-ad15-164d800cc779"
+      length: 2.378
+    - base_ref: "buelten_to_schleinitz"
+      id: "826696a2-80c9-40de-a042-dfd925522cc0"
+      name: "9721_2"
+      network_ref: "XBU_XSZ_2"
+      source: "06058d21-d0b1-4926-b60a-0ef82414cbac"
+      target: "e68d3951-4d0c-4606-b7d4-fcd63207c2fb"
+      length: 2.378
+    - base_ref: "XSZ"
+      id: "1ec76f15-384f-415c-af7d-1e8fac6448a8"
+      name: "102_1"
+      network_ref: "XSZ_west"
+      source: "e68d3951-4d0c-4606-b7d4-fcd63207c2fb"
+      target: "8a3913bc-f8db-4d3f-8f37-c0c7948a09c6"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "3939e291-79b3-4a3d-9f63-9287dd046a7d"
+      name: "103_1"
+      network_ref: "XSZ_west"
+      source: "7cf06e6b-a398-4202-ad15-164d800cc779"
+      target: "d2d7f7d4-1c43-4942-93d8-9d65894ca795"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "ba065979-37fc-4ee3-af57-14ac7fb9ea3e"
+      name: "102_2"
+      network_ref: "XSZ_west"
+      source: "8a3913bc-f8db-4d3f-8f37-c0c7948a09c6"
+      target: "767f6ef8-364b-4035-af25-e94e80ca84c1"
+      length: 0.157
+    - base_ref: "XSZ"
+      id: "2ce063cf-17c2-40db-9760-54a86ad78fa4"
+      name: "103_2"
+      network_ref: "XSZ_west"
+      source: "d2d7f7d4-1c43-4942-93d8-9d65894ca795"
+      target: "6e0c3501-a7a8-4947-8f44-76d9ebc9bcd5"
+      length: 0.24
+    - base_ref: "XSZ"
+      id: "6f3e743f-aeba-4820-9490-dcec337fddf1"
+      name: "202_2"
+      network_ref: "XSZ_west"
+      source: "49690e1e-1057-479d-9481-d4c0f169ac83"
+      target: "ffb7d91a-45c4-4bf6-a3b8-df0be7f237fb"
+      length: 0.083
+    - base_ref: "XSZ"
+      id: "55702a79-e4c0-41c5-aced-816726de407a"
+      name: "202_1"
+      network_ref: "XSZ_west"
+      source: "767f6ef8-364b-4035-af25-e94e80ca84c1"
+      target: "49690e1e-1057-479d-9481-d4c0f169ac83"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "a2722f64-3cd5-4873-9fd6-1e03ff0409f5"
+      name: "103_3"
+      network_ref: "XSZ_west"
+      source: "6e0c3501-a7a8-4947-8f44-76d9ebc9bcd5"
+      target: "c9f939f9-897a-42b7-b3ba-ae870fa6e539"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "93a6b353-ba1e-4f13-9aed-436f66a0a276"
+      name: "W1_1"
+      network_ref: "XSZ_west"
+      source: "c9f939f9-897a-42b7-b3ba-ae870fa6e539"
+      target: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
+      length: 0.01
+    - base_ref: "XSZ"
+      id: "793cd3c3-3da9-48cf-9c47-9b617641eed7"
+      name: "202_3"
+      network_ref: "XSZ_west"
+      source: "ffb7d91a-45c4-4bf6-a3b8-df0be7f237fb"
+      target: "7da89c5f-4ae7-4c69-bc4c-aab16dfd0044"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "e573c6a7-4afa-411e-a91e-a4a0d93191b1"
+      name: "W2_1"
+      network_ref: "XSZ_west"
+      source: "7da89c5f-4ae7-4c69-bc4c-aab16dfd0044"
+      target: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
+      length: 0.105
+    - base_ref: "XSZ"
+      id: "7ad94fe9-e01f-4cb7-b28a-1bc055cdc824"
+      name: "W1_3"
+      network_ref: "XSZ_west"
+      source: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
+      target: "57cdbb94-30f4-41bc-ba9a-0f1e84e84fed"
+      length: 0.041
+    - base_ref: "XSZ"
+      id: "fb0f68b5-7d08-436c-ba27-360552dc5d02"
+      name: "W1_2"
+      network_ref: "XSZ_west"
+      source: "67bf6956-c2b7-4aff-98a5-4ec9008f0b9a"
+      target: "2c34cdc4-52cd-4402-bc5b-d3687b174beb"
+      length: 0.051
+    - base_ref: "XSZ"
+      id: "89546a28-470f-4cbf-ab9c-e6f0a4accc47"
+      name: "W2_3"
+      network_ref: "XSZ_west"
+      source: "57cdbb94-30f4-41bc-ba9a-0f1e84e84fed"
+      target: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
+      length: 0.054
+    - base_ref: "XSZ"
+      id: "650d1f77-d0c1-49dc-a747-bec372bda68e"
+      name: "W4_1"
+      network_ref: "XSZ_west"
+      source: "2c34cdc4-52cd-4402-bc5b-d3687b174beb"
+      target: "bb074bbe-1046-4532-9dbd-a645c34789eb"
+      length: 0.186
+    - base_ref: "XSZ"
+      id: "921aa9f6-2148-49c6-9c7f-2b84f9bd10e3"
+      name: "W2_2"
+      network_ref: "XSZ_west"
+      source: "12993ffa-3fa9-4c53-89be-0e4ba15bc15a"
+      target: "bf53206b-2132-4d50-9bb6-37a488318692"
+      length: 0.009
+    - base_ref: "XSZ"
+      id: "b4e09f43-a962-4567-898e-a46dff3fe13e"
+      name: "W3_3"
+      network_ref: "XSZ_west"
+      source: "bf53206b-2132-4d50-9bb6-37a488318692"
+      target: "eece4636-b7ab-42ad-9745-47aadd63746a"
+      length: 0.047
+    - base_ref: "XSZ"
+      id: "8943c5dd-fe5e-4db6-87a2-8f6469b29823"
+      name: "W3_2"
+      network_ref: "XSZ_west"
+      source: "bf53206b-2132-4d50-9bb6-37a488318692"
+      target: "f616b4e1-c549-49db-896f-2e7de061b28e"
+      length: 0.047
+    - base_ref: "XSZ"
+      id: "9768f2a2-490f-43d9-b41c-bfb4489753fa"
+      name: "W4_3"
+      network_ref: "XSZ_west"
+      source: "eece4636-b7ab-42ad-9745-47aadd63746a"
+      target: "bb074bbe-1046-4532-9dbd-a645c34789eb"
+      length: 0.086
+    - base_ref: "XSZ"
+      id: "29ad8bf4-a42b-49e3-b767-b8aa219a08bb"
+      name: "W8_1"
+      network_ref: "XSZ_west"
+      source: "f616b4e1-c549-49db-896f-2e7de061b28e"
+      target: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
+      length: 0.181
+    - base_ref: "XSZ"
+      id: "01a068a3-5e53-48ba-a4c3-04abe6bd03fc"
+      name: "W4_2"
+      network_ref: "XSZ_west"
+      source: "bb074bbe-1046-4532-9dbd-a645c34789eb"
+      target: "8b414b13-4604-4a36-837e-bd0373a6a7c4"
+      length: 0.004
+    - base_ref: "XSZ"
+      id: "a0c780fa-909b-438e-a297-e1500cb3600d"
+      name: "W5_1"
+      network_ref: "XSZ_west"
+      source: "8b414b13-4604-4a36-837e-bd0373a6a7c4"
+      target: "085078f4-e164-48d2-bfa5-f48d5f88728f"
+      length: 0.102
+    - base_ref: "XSZ"
+      id: "6b44d057-5951-4535-84c2-8001d093f272"
+      name: "W8_3"
+      network_ref: "XSZ_west"
+      source: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
+      target: "642d19e1-b327-4257-a705-38f5f7653b05"
+      length: 0.118
+    - base_ref: "XSZ"
+      id: "0ff0112a-af29-4b1d-afed-149c5823d26c"
+      name: "W8_2"
+      network_ref: "XSZ_west"
+      source: "4d82a8d8-87b1-4800-bee4-0b7ee597a3a3"
+      target: "966bfedb-27cf-4692-9e14-eb7bd7c686cf"
+      length: 0.118
+    - base_ref: "XSZ"
+      id: "961815c3-e024-47e8-b0a5-a85542cb951a"
+      name: "101_1"
+      network_ref: "XSZ_west"
+      source: "642d19e1-b327-4257-a705-38f5f7653b05"
+      target: "4ff5ec23-4517-4ed9-9490-88462395e929"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "c0537897-c19b-4729-9d7f-011306316880"
+      name: "101_2"
+      network_ref: "XSZ_1"
+      source: "4ff5ec23-4517-4ed9-9490-88462395e929"
+      target: "a756cd47-5f55-4fe5-a311-dd83c67a1a2a"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "38a2198f-c1ae-4ffa-bc6c-73f1a9103db3"
+      name: "302_1"
+      network_ref: "XSZ_west"
+      source: "966bfedb-27cf-4692-9e14-eb7bd7c686cf"
+      target: "fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "e510e28c-1518-4a9b-a271-ae7cce111951"
+      name: "302_2"
+      network_ref: "XSZ_2"
+      source: "fcc2426a-4e8d-4025-9c76-6c4e1ae10c1b"
+      target: "beb565bc-b1d2-483a-a2c9-2ebaad59f995"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "2466363f-ebfc-44e1-a821-5482b432bbfb"
+      name: "101_3"
+      network_ref: "XSZ_1"
+      source: "a756cd47-5f55-4fe5-a311-dd83c67a1a2a"
+      target: "ce1fdb35-0110-4f80-9315-520362760f20"
+      length: 0.76
+    - base_ref: "XSZ"
+      id: "4e150880-b35c-45a5-b463-1206f0658120"
+      name: "302_3"
+      network_ref: "XSZ_2"
+      source: "beb565bc-b1d2-483a-a2c9-2ebaad59f995"
+      target: "7907115d-238e-432a-a457-e8e00f977ee0"
+      length: 0.76
+    - base_ref: "XSZ"
+      id: "21511970-ce62-4adc-9d64-b1beece7ce07"
+      name: "41_1"
+      source: "c46d4118-0d6a-4fe3-a5b3-65c64a1bae2e"
+      target: "9242d5d0-9329-4cbd-aec3-3a0992948a6c"
+      length: 0.063
+    - base_ref: "XSZ"
+      id: "ddf60c3b-b527-4f27-a8f3-c138d714a845"
+      name: "41_2"
+      network_ref: "XSZ_west"
+      source: "9242d5d0-9329-4cbd-aec3-3a0992948a6c"
+      target: "d0894bc4-700c-407b-bc28-c1ea98018cbc"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "c7a33007-2ae9-4ef3-9258-04eb3e5528e5"
+      name: "41_3"
+      network_ref: "XSZ_west"
+      source: "d0894bc4-700c-407b-bc28-c1ea98018cbc"
+      target: "e1ae967e-ab5b-4af6-b406-fb42437ce938"
+      length: 0.005
+    - base_ref: "XSZ"
+      id: "784e92f6-df18-4d7a-971d-d6abbcde5036"
+      name: "W6_3"
+      network_ref: "XSZ_west"
+      source: "e1ae967e-ab5b-4af6-b406-fb42437ce938"
+      target: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
+      length: 0.037
+    - base_ref: "XSZ"
+      id: "028c200f-c11e-4d79-a511-84d335cc62f5"
+      name: "W5_3"
+      network_ref: "XSZ_west"
+      source: "085078f4-e164-48d2-bfa5-f48d5f88728f"
+      target: "5a4c21fd-26c1-4abe-bdec-eec5fa41bf67"
+      length: 0.043
+    - base_ref: "XSZ"
+      id: "389bd3b6-9ffc-4993-b84d-400c7970ab68"
+      name: "W5_2"
+      network_ref: "XSZ_west"
+      source: "085078f4-e164-48d2-bfa5-f48d5f88728f"
+      target: "10a84137-a0f1-4d18-a237-e4ce8d965add"
+      length: 0.158
+    - base_ref: "XSZ"
+      id: "be0e6d4d-5010-481e-ade1-5f8bf4c2c5f5"
+      name: "W6_1"
+      network_ref: "XSZ_west"
+      source: "5a4c21fd-26c1-4abe-bdec-eec5fa41bf67"
+      target: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
+      length: 0.03
+    - base_ref: "XSZ"
+      id: "378c8aa1-93cf-4b70-8f4c-37ec77d19a32"
+      name: "W6_2"
+      network_ref: "XSZ_west"
+      source: "2d029ad2-cd6c-4449-aa0e-bdd2ef513834"
+      target: "1de71d78-a163-4cf7-b01b-0ded012a7583"
+      length: 0.005
+    - base_ref: "XSZ"
+      id: "636446fe-11d1-4a5e-a43d-79135c5ba631"
+      name: "W7_1"
+      network_ref: "XSZ_west"
+      source: "1de71d78-a163-4cf7-b01b-0ded012a7583"
+      target: "cff292e1-3de4-404d-a471-7bceb80fddcb"
+      length: 0.002
+    - base_ref: "XSZ"
+      id: "277446d0-fabb-4420-9352-a3dbf660f731"
+      name: "W7_3"
+      network_ref: "XSZ_west"
+      source: "cff292e1-3de4-404d-a471-7bceb80fddcb"
+      target: "0e72eb6e-6cd2-443a-a6d6-d84196fbc065"
+      length: 0.041
+    - base_ref: "XSZ"
+      id: "6389d7e2-8bb9-4502-967a-2e4ac0e7d9cd"
+      name: "W7_2"
+      network_ref: "XSZ_west"
+      source: "cff292e1-3de4-404d-a471-7bceb80fddcb"
+      target: "14d754b6-43b9-4f1f-96d8-f2a1369e2d75"
+      length: 0.078
+    - base_ref: "XSZ"
+      id: "c3668af8-b7eb-4926-bfad-15f6248072ad"
+      name: "105_1"
+      network_ref: "XSZ_west"
+      source: "0e72eb6e-6cd2-443a-a6d6-d84196fbc065"
+      target: "19713f62-e216-46e0-b35e-475666a72761"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "5c372e2f-00af-4157-a4b2-09c3ad677a6f"
+      name: "105_2"
+      network_ref: "XSZ_5"
+      source: "19713f62-e216-46e0-b35e-475666a72761"
+      target: "de01a8a2-b464-4e5f-a7d4-a2923949b0da"
+      length: 0.862
+    - base_ref: "XSZ"
+      id: "1b8f1c66-7ed2-44a6-9b2a-5f1c0ff9cf36"
+      name: "104_1"
+      network_ref: "XSZ_west"
+      source: "14d754b6-43b9-4f1f-96d8-f2a1369e2d75"
+      target: "da21e9b4-84c6-4440-8a62-fdf22fb420ba"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "61500e86-ddd6-4141-9f1e-e38d58514773"
+      name: "104_2"
+      network_ref: "XSZ_4"
+      source: "da21e9b4-84c6-4440-8a62-fdf22fb420ba"
+      target: "fd296bfb-e1e8-4611-a4b6-a929155fc3dc"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "b1b8fa58-2080-46a4-b475-c4bfb1a667ad"
+      name: "203_1"
+      network_ref: "XSZ_west"
+      source: "10a84137-a0f1-4d18-a237-e4ce8d965add"
+      target: "72c19288-28bc-4eca-a4c2-4c604b6dd57a"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "0039bd46-dbf1-4dc0-9fe0-def4973b544b"
+      name: "203_2"
+      network_ref: "XSZ_3"
+      source: "72c19288-28bc-4eca-a4c2-4c604b6dd57a"
+      target: "fc4fe5af-897a-414b-9757-53d4d100197a"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "348beb5b-7e47-4075-b759-e05272a1a57f"
+      name: "104_3"
+      network_ref: "XSZ_4"
+      source: "fd296bfb-e1e8-4611-a4b6-a929155fc3dc"
+      target: "288fb89d-3db0-45bc-8fc5-179e33168300"
+      length: 0.709
+    - base_ref: "XSZ"
+      id: "8b2170ac-685f-481d-890e-8832def49f54"
+      name: "203_3"
+      network_ref: "XSZ_3"
+      source: "fc4fe5af-897a-414b-9757-53d4d100197a"
+      target: "b0d18e57-8160-4169-ad48-129aab74bcd5"
+      length: 0.709
+    - base_ref: "XSZ"
+      id: "45d6815f-b792-49f5-9513-7d19af1c5cf8"
+      name: "104_4"
+      network_ref: "XSZ_4"
+      source: "288fb89d-3db0-45bc-8fc5-179e33168300"
+      target: "c08f7e18-ad76-411c-8bbb-560ca591c50f"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "47701754-83ce-416c-9c97-52ca8d8b7aef"
+      name: "203_4"
+      network_ref: "XSZ_3"
+      source: "b0d18e57-8160-4169-ad48-129aab74bcd5"
+      target: "24295eb7-2335-4ddf-94d2-f33e9f8bf96f"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "868d9a6e-7da3-45b0-b39c-0bbfb323a07a"
+      name: "302_4"
+      network_ref: "XSZ_2"
+      source: "7907115d-238e-432a-a457-e8e00f977ee0"
+      target: "89d3d5aa-716b-4b98-92c7-bff39ed5f91a"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "8f1851b7-fef7-4e30-8abe-53f16b96785e"
+      name: "101_4"
+      network_ref: "XSZ_1"
+      source: "ce1fdb35-0110-4f80-9315-520362760f20"
+      target: "9e66fce3-42b8-4edb-8aa2-be4f4fcbcb38"
+      length: 0.02
+    - base_ref: "XSZ"
+      id: "a683c766-1176-47b3-bc79-f4f51f5d5436"
+      name: "104_5"
+      network_ref: "XSZ_east"
+      source: "c08f7e18-ad76-411c-8bbb-560ca591c50f"
+      target: "7b6dbc79-92ff-4eb1-b306-9d2ac385678c"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "1655fcbe-3c44-46c5-8a85-b7b3d51cdbb0"
+      name: "203_5"
+      network_ref: "XSZ_east"
+      source: "24295eb7-2335-4ddf-94d2-f33e9f8bf96f"
+      target: "9e8ede47-89c6-4d09-a013-3e2f38b1685b"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "33c0915e-892a-4b53-bd8e-83c14a40a0a1"
+      name: "302_5"
+      network_ref: "XSZ_east"
+      source: "89d3d5aa-716b-4b98-92c7-bff39ed5f91a"
+      target: "194ec252-6df4-4778-afbd-9d2722445086"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "4e2f19f3-7a96-49f4-bd02-3923f6f829d8"
+      name: "101_5"
+      network_ref: "XSZ_east"
+      source: "9e66fce3-42b8-4edb-8aa2-be4f4fcbcb38"
+      target: "4b43cc40-6233-4425-9881-12d960fa94d9"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "d7547c5d-df45-43af-82fd-723c06494e31"
+      name: "W11_1"
+      network_ref: "XSZ_east"
+      source: "7b6dbc79-92ff-4eb1-b306-9d2ac385678c"
+      target: "7b81abd3-5278-4387-9816-911d808db0bb"
+      length: 0.117
+    - base_ref: "XSZ"
+      id: "23e49add-053c-4cbb-96a3-9854a4f68edb"
+      name: "W12_1"
+      network_ref: "XSZ_east"
+      source: "9e8ede47-89c6-4d09-a013-3e2f38b1685b"
+      target: "7e17901c-361f-4c45-a536-191182631ce8"
+      length: 0.197
+    - base_ref: "XSZ"
+      id: "ed3d5182-958f-4c97-908d-480acb3d6cdd"
+      name: "W10_1"
+      network_ref: "XSZ_east"
+      source: "194ec252-6df4-4778-afbd-9d2722445086"
+      target: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
+      length: 0.19
+    - base_ref: "XSZ"
+      id: "77d4e465-4137-4ded-8a09-60e4ac588a1c"
+      name: "W9_1"
+      network_ref: "XSZ_east"
+      source: "4b43cc40-6233-4425-9881-12d960fa94d9"
+      target: "854ecaf5-4c86-4770-949c-e620514ed495"
+      length: 0.054
+    - base_ref: "XSZ"
+      id: "e7323f0d-ee31-4aee-a2dd-03cfe36cc449"
+      name: "105_3"
+      network_ref: "XSZ_east"
+      source: "de01a8a2-b464-4e5f-a7d4-a2923949b0da"
+      target: "b32b9392-3d53-4de9-941f-113a53bd1f7a"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "d0a0c674-f9e6-4706-908d-2200ed300f39"
+      name: "W11_3"
+      network_ref: "XSZ_east"
+      source: "b32b9392-3d53-4de9-941f-113a53bd1f7a"
+      target: "7b81abd3-5278-4387-9816-911d808db0bb"
+      length: 0.041
+    - base_ref: "XSZ"
+      id: "d7092dcb-2669-41c6-aa27-f4c9fca2ce0f"
+      name: "W11_2"
+      network_ref: "XSZ_east"
+      source: "7b81abd3-5278-4387-9816-911d808db0bb"
+      target: "287a180c-a696-45a9-b82e-8571757ae8a6"
+      length: 0.039
+    - base_ref: "XSZ"
+      id: "806ac744-ddb7-443e-bb8c-2048b8d26f47"
+      name: "W12_2"
+      network_ref: "XSZ_east"
+      source: "287a180c-a696-45a9-b82e-8571757ae8a6"
+      target: "7e17901c-361f-4c45-a536-191182631ce8"
+      length: 0.041
+    - base_ref: "XSZ"
+      id: "896afbda-b1ce-4aef-9e42-f723bfac8ee3"
+      name: "W12_3"
+      network_ref: "XSZ_east"
+      source: "7e17901c-361f-4c45-a536-191182631ce8"
+      target: "390a7b2d-c975-41ef-a855-2ff9e7542a82"
+      length: 0.069
+    - base_ref: "XSZ"
+      id: "001832f1-8442-4230-a954-622aabfdb63e"
+      name: "W13_1"
+      network_ref: "XSZ_east"
+      source: "390a7b2d-c975-41ef-a855-2ff9e7542a82"
+      target: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
+      length: 0.007
+    - base_ref: "XSZ"
+      id: "4c9beef0-03e2-41ef-b8ea-95dea6550abe"
+      name: "W9_3"
+      network_ref: "XSZ_east"
+      source: "854ecaf5-4c86-4770-949c-e620514ed495"
+      target: "3b71eb90-399c-4565-992e-bc8b2ce2afca"
+      length: 0.041
+    - base_ref: "XSZ"
+      id: "22048935-a4a9-4090-b00d-a66461bc8303"
+      name: "W9_2"
+      network_ref: "XSZ_east"
+      source: "854ecaf5-4c86-4770-949c-e620514ed495"
+      target: "a0a8b218-babb-49d0-aa39-09c308bd1911"
+      length: 0.061
+    - base_ref: "XSZ"
+      id: "6a80568e-4b39-4d45-b26c-060e9591ac35"
+      name: "11_1"
+      network_ref: "XSZ_east"
+      source: "3b71eb90-399c-4565-992e-bc8b2ce2afca"
+      target: "d3253e21-e623-434e-8a57-6198da0246cb"
+      length: 0.005
+    - base_ref: "XSZ"
+      id: "39ab202e-3e51-44d5-b2ef-afb029166719"
+      name: "11_2"
+      network_ref: "XSZ_east"
+      source: "d3253e21-e623-434e-8a57-6198da0246cb"
+      target: "e8026d1c-90e9-432e-bea2-ec720f51e50a"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "56fba7da-37f2-47ae-b2f7-369fb2116238"
+      name: "11_3"
+      source: "e8026d1c-90e9-432e-bea2-ec720f51e50a"
+      target: "036ff4b0-c027-4b08-abf5-905c58331ea6"
+      length: 0.101
+    - base_ref: "XSZ"
+      id: "8263234a-4894-426d-af2c-6e67a5de058e"
+      name: "W10_2"
+      network_ref: "XSZ_east"
+      source: "a0a8b218-babb-49d0-aa39-09c308bd1911"
+      target: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
+      length: 0.075
+    - base_ref: "XSZ"
+      id: "3f8bb6b6-5e80-4745-b94b-cede59f3c19e"
+      name: "W10_3"
+      network_ref: "XSZ_east"
+      source: "99f9a69b-ca10-4dc6-9729-5b2cefce81f6"
+      target: "fae99c78-2dc7-475c-8dd1-48a51d4646b4"
+      length: 0.161
+    - base_ref: "XSZ"
+      id: "8f7c64be-a19d-4681-841b-0d788eb90526"
+      name: "W14_1"
+      network_ref: "XSZ_east"
+      source: "fae99c78-2dc7-475c-8dd1-48a51d4646b4"
+      target: "6f73d007-0451-4d6b-9323-897ff43a4eac"
+      length: 0.054
+    - base_ref: "XSZ"
+      id: "80f00a8e-0842-46de-bfc5-b368b91e1a7d"
+      name: "W13_3"
+      network_ref: "XSZ_east"
+      source: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
+      target: "d7f2738e-a7ec-4659-9019-d96e0794c7bf"
+      length: 0.068
+    - base_ref: "XSZ"
+      id: "f611ac36-81de-4f92-b6a1-42b6d96c199f"
+      name: "W13_2"
+      network_ref: "XSZ_east"
+      source: "40308dd8-9dd9-4993-88a2-353dbe7b2cbd"
+      target: "2b1f1556-9b4e-4f67-93cf-5a47e0da0f6e"
+      length: 0.142
+    - base_ref: "XSZ"
+      id: "1112a77e-0639-4fef-82ef-2c4e98c88c2b"
+      name: "W14_3"
+      network_ref: "XSZ_east"
+      source: "d7f2738e-a7ec-4659-9019-d96e0794c7bf"
+      target: "6f73d007-0451-4d6b-9323-897ff43a4eac"
+      length: 0.064
+    - base_ref: "XSZ"
+      id: "e595119f-96d5-422d-b45b-d390877a0848"
+      name: "W14_2"
+      network_ref: "XSZ_east"
+      source: "6f73d007-0451-4d6b-9323-897ff43a4eac"
+      target: "82c133ef-4a05-43d7-be08-66a867025ee2"
+      length: 0.01
+    - base_ref: "XSZ"
+      id: "7367ff66-707f-4bc4-896c-ffa08b566ebd"
+      name: "503_1"
+      network_ref: "XSZ_east"
+      source: "2b1f1556-9b4e-4f67-93cf-5a47e0da0f6e"
+      target: "aaca17e4-5c0a-466a-9e6e-1c736d77b684"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "b41ba980-6692-47ff-9f61-738565767d0d"
+      name: "503_2"
+      network_ref: "XSZ_east"
+      source: "aaca17e4-5c0a-466a-9e6e-1c736d77b684"
+      target: "92f84da4-fd6d-4362-8b59-3573eee5b627"
+      length: 0.015
+    - base_ref: "XSZ"
+      id: "13b204e0-51df-4f0e-8ca5-450709a05b9a"
+      name: "602_1"
+      network_ref: "XSZ_east"
+      source: "82c133ef-4a05-43d7-be08-66a867025ee2"
+      target: "2eafbe28-aac1-4f39-963f-aae39a60f23c"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "f216ef7e-b746-49fe-861d-2b0a7056cb67"
+      name: "602_2"
+      network_ref: "XSZ_east"
+      source: "2eafbe28-aac1-4f39-963f-aae39a60f23c"
+      target: "c9e0519f-3f3f-40ea-ac76-0d00f67dceff"
+      length: 0.285
+    - base_ref: "XSZ"
+      id: "7016decc-b13d-4959-a5d9-91c7dc8e609b"
+      name: "503_3"
+      network_ref: "XSZ_east"
+      source: "92f84da4-fd6d-4362-8b59-3573eee5b627"
+      target: "7d0e31aa-9372-4142-9d21-f4d911be6046"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "ea1f6b66-65e1-4785-bef9-9aec8e99bc6f"
+      name: "403_1"
+      network_ref: "XSZ_east"
+      source: "7d0e31aa-9372-4142-9d21-f4d911be6046"
+      target: "8bf4d964-2e52-4a34-bb60-a908bc92c8ba"
+      length: 0.27
+    - base_ref: "XSZ"
+      id: "41fff331-f6f5-4af6-8604-26fe0b16d3f1"
+      name: "403_2"
+      network_ref: "XSZ_east"
+      source: "8bf4d964-2e52-4a34-bb60-a908bc92c8ba"
+      target: "e04066a1-5044-4d5b-9782-471f4c05ca51"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "e8002464-1362-4d62-a558-6deb7b711a7b"
+      name: "403_3"
+      source: "e04066a1-5044-4d5b-9782-471f4c05ca51"
+      target: "68788fa5-14d1-49c9-b67c-4b6d63c33045"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "32951c04-82a3-4664-8150-1ea26093c1cc"
+      name: "602_3"
+      network_ref: "XSZ_east"
+      source: "c9e0519f-3f3f-40ea-ac76-0d00f67dceff"
+      target: "f2409ff0-de4d-42ed-9fbd-4953a589c709"
+      length: 0.0
+    - base_ref: "XSZ"
+      id: "d02f73d4-0f46-4376-bc35-42278e0443be"
+      name: "602_4"
+      source: "f2409ff0-de4d-42ed-9fbd-4953a589c709"
+      target: "69941db8-7a21-4eba-b8c6-8cb368e78edb"
+      length: 0.0
