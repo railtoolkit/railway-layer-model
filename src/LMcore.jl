@@ -260,4 +260,27 @@ function has_edge(graph, edge_id)::Bool
   return !(length(collect(MetaGraphs.filter_edges(graph, :id, edge_id))) == 0)
 end # function has_edge
 
+function get_nextnode(graph, node_num, prop, prop_value, search_direction)
+  global node = node_num
+  global found = false
+  while found == false
+    if search_direction == "forward"
+      nextnode = Graphs.outneighbors(graph, node)
+    else
+      nextnode = Graphs.inneighbors(graph, node)
+    end
+    if length(nextnode) > 1
+      @warn "Encountered node $node has multiple neighbors. Only the first one will be followed!"
+    elseif isempty(nextnode)
+      error("Node $v has no neighbors!")
+      break
+    end
+    global node = first(nextnode)
+    if MetaGraphs.get_prop(graph, node, prop) == prop_value
+      global found = true
+    end
+  end
+  return node
+end # function get_nextnode
+
 end # module LMcore

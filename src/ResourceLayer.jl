@@ -57,7 +57,7 @@ function get_poi(path, networkLayer, resourceLayer, physicalLayer, interlockingL
 
   for elem in network_path
 
-    println(elem)
+    # println(elem)
     current_path_element, link, track = elem
     current_path_element_pos = first(findall(x -> x[:resource] == current_path_element, network_path))
     if current_path_element_pos != length(network_path)
@@ -146,5 +146,17 @@ function get_poi(path, networkLayer, resourceLayer, physicalLayer, interlockingL
 
   return sort!(df, [:Mileage])
 end # function get_poi
+
+function add_poi!(df, position, measure, label)
+  push!(df, Dict(:position => position, :measure => measure, :label => label))
+  sort!(df, [:position])
+end
+
+function unify_mileage!(df, line_to_offset, offset)
+  df[!, "Original Mileage"] = df[!,:Mileage]
+  # df[!, :Mileage] = df_in2[!, :Mileage] .- offset
+  df.Mileage = @. ifelse(df.Line == line_to_offset, df.Mileage - offset, df.Mileage)
+  rename!(df, :Mileage => :Position)
+end # function unify_mileage
 
 end #module

@@ -300,4 +300,47 @@ function get_position(physicalLayer, id)
   return pos
 end # function get_position
 
+function get_node_num(physicalLayer, name, base_ref)
+  x = collect(MetaGraphs.filter_vertices(physicalLayer, :name, name))
+  if length(x) == 1
+    return first(x)
+  else
+    y = collect(MetaGraphs.filter_vertices(physicalLayer, :base_ref, base_ref))
+    return first(intersect(x,y))
+  end
+end
+
+function get_node_distance(physicalLayer, node1, node2)
+  node1_id = MetaGraphs.get_prop(physicalLayer,node1,:id)
+  node2_id = MetaGraphs.get_prop(physicalLayer,node2,:id)
+  pos1 = PhysicalLayer.get_position(physicalLayer, node1_id)
+  pos2 = PhysicalLayer.get_position(physicalLayer, node2_id)
+
+  # get common line
+  pos1_lines = []
+  for elem in pos1
+    push!(pos1_lines,elem["line"])
+  end
+  pos2_lines = []
+  for elem in pos2
+    push!(pos2_lines,elem["line"])
+  end
+  line = first(intersect(pos1_lines,pos2_lines))
+
+  # get mileage
+  mileage1 = get_mileage(pos1, line)
+  mileage2 = get_mileage(pos2, line)
+
+  return abs(mileage1 - mileage2)
+end
+
+function get_mileage(positions,line_id)
+  for elem in positions
+    if elem["line"] == line_id
+      return elem["mileage"]
+      break
+    end
+  end
+end
+
 end # module PhysicalLayer

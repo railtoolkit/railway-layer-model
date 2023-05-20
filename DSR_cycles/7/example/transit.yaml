@@ -1,0 +1,1064 @@
+%YAML 1.2
+---
+transit:
+  snippets:
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg1_1, run_start"
+      core_length: 872.0
+      id: "1c1c69b4-8eae-4f76-864f-1486635c2627"
+      description: ""
+      ingress_type: halt
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR:run-start"
+      direction: forward
+      post_duration: 35.47
+      core_duration: 31.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg1_1, route_begin"
+      core_length: 217.0
+      id: "b4219a21-ce4e-470f-b504-e2de8a13e3d8"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 35.0
+      core_duration: 13.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg1_1, route_extend"
+      core_length: 3522.0
+      id: "3bca0722-985e-4c78-a415-4d7c5b8c0bee"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 172.0
+      core_duration: 125.0
+    - trigger_duration: 9.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 23.0
+      name: "pax_leg1_1, pass"
+      core_length: 4809.0
+      id: "63ea202f-d0c6-49c1-aec0-7a8b5a2efd79"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      direction: forward
+      post_duration: 320.0
+      core_duration: 148.0
+    - trigger_duration: 9.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 29.0
+      name: "pax_leg1_1, route_begin"
+      core_length: 411.0
+      id: "1876688f-27d7-4fe3-8629-71259304d954"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 320.0
+      core_duration: 21.0
+    - trigger_duration: 9.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:run-end"
+      push_pre: false
+      egress_type: halt
+      pre_duration: 28.764999999999986
+      name: "pax_leg1_1, run_end"
+      core_length: 664.0
+      id: "2424261f-c196-4af5-a7cb-8891b4d8d385"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 2
+      core_duration: 56.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg1_2, run_start"
+      core_length: 872.0
+      id: "d7c5269f-a4f3-428d-a974-8d69f9f3c6d4"
+      description: ""
+      ingress_type: halt
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR:run-start"
+      direction: forward
+      post_duration: 35.47
+      core_duration: 31.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg1_2, route_begin"
+      core_length: 217.0
+      id: "c4873fef-6a56-4567-a010-3dc06aa92271"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 35.0
+      core_duration: 13.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg1_2, route_extend"
+      core_length: 3522.0
+      id: "61710f0d-2b7a-4df8-8702-7577e46dcefd"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 172.0
+      core_duration: 125.0
+    - trigger_duration: 9.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 23.0
+      name: "pax_leg1_2, pass"
+      core_length: 4809.0
+      id: "c82ef0eb-e8ba-4055-b07a-7413a5339e9c"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      direction: forward
+      post_duration: 318.0
+      core_duration: 146.0
+    - trigger_duration: 9.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 27.0
+      name: "pax_leg1_2, route_begin"
+      core_length: 411.0
+      id: "a70d251d-42a0-49f5-9db1-767d3dbbfd96"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 318.0
+      core_duration: 17.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg1_2, route_extend"
+      core_length: 258.0
+      id: "e940f2e0-6d0c-4a22-b992-8d10ee89937f"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 352.0
+      core_duration: 15.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:run-end"
+      push_pre: false
+      egress_type: halt
+      pre_duration: 0.0
+      name: "pax_leg1_2, run_end"
+      core_length: 230.0
+      id: "425c3b0b-a5d0-4b7e-9a39-7edaff74de7b"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      direction: forward
+      post_duration: 2
+      core_duration: 31.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg2_1, run_start"
+      core_length: 171.0
+      id: "624228e2-c6c5-4d0e-a3ac-ff694fa0596f"
+      description: ""
+      ingress_type: halt
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:run-start"
+      direction: forward
+      post_duration: 12.782
+      core_duration: 4.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg2_1, pass"
+      core_length: 336.0
+      id: "53114f84-f6d3-4d1e-9c81-e06783ac9b60"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      direction: forward
+      post_duration: 39.0
+      core_duration: 30.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg2_1, pass"
+      core_length: 3686.0
+      id: "46c97513-a768-4933-ada5-48a8d5cde169"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      direction: forward
+      post_duration: 183.0
+      core_duration: 145.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 27.0
+      name: "pax_leg2_1, pass"
+      core_length: 4423.0
+      id: "38fecc4c-c3a3-4f9c-9a5c-c12b8a219aca"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      direction: forward
+      post_duration: 342.0
+      core_duration: 160.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 29.0
+      name: "pax_leg2_1, route_begin"
+      core_length: 154.0
+      id: "356f1e4c-8665-4493-9464-6b16ff4b9069"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 342.0
+      core_duration: 6.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg2_1, route_extend"
+      core_length: 2809.0
+      id: "994a3ce5-1ca2-4ede-bcb4-3e23a56f3844"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 449.0
+      core_duration: 101.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 42.0
+      name: "pax_leg2_1, route_begin"
+      core_length: 543.0
+      id: "08a65d8b-3d57-4d8f-b9e6-f700124a14ec"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      direction: forward
+      post_duration: 449.0
+      core_duration: 20.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ:run-end"
+      push_pre: false
+      egress_type: halt
+      pre_duration: 41.65199999999999
+      name: "pax_leg2_1, run_end"
+      core_length: 1343.0
+      id: "78b5e188-a8de-4a55-86ce-70d836c5fe3e"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      direction: forward
+      post_duration: 2
+      core_duration: 80.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg2_2, run_start"
+      core_length: 341.0
+      id: "670e1756-6145-4129-8411-6d576b6c9e10"
+      description: ""
+      ingress_type: halt
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:run-start"
+      direction: forward
+      post_duration: 23.471
+      core_duration: 18.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg2_2, pass"
+      core_length: 3686.0
+      id: "cd604272-05fa-4933-a366-85e6eae58ef4"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      direction: forward
+      post_duration: 174.0
+      core_duration: 152.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 27.0
+      name: "pax_leg2_2, pass"
+      core_length: 4423.0
+      id: "95263df0-7c2f-4a2a-ba64-50f65e226a22"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      direction: forward
+      post_duration: 333.0
+      core_duration: 160.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 29.0
+      name: "pax_leg2_2, route_begin"
+      core_length: 154.0
+      id: "a02d66ac-9323-439c-8470-ed3a85d217bc"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 333.0
+      core_duration: 6.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "pax_leg2_2, route_extend"
+      core_length: 2809.0
+      id: "fe8d3b17-ead7-4bc1-a84c-b25c5cf5bfc5"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 440.0
+      core_duration: 101.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 42.0
+      name: "pax_leg2_2, route_begin"
+      core_length: 543.0
+      id: "e64a5587-52b3-424b-a49e-215ac096cd2e"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      direction: forward
+      post_duration: 440.0
+      core_duration: 20.0
+    - trigger_duration: 11.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ:run-end"
+      push_pre: false
+      egress_type: halt
+      pre_duration: 41.652000000000044
+      name: "pax_leg2_2, run_end"
+      core_length: 1343.0
+      id: "f8083690-db98-4819-a4a5-3d8e09214f61"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      direction: forward
+      post_duration: 2
+      core_duration: 80.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_leg1, run_start"
+      core_length: 872.0
+      id: "477d16ec-dcb4-4766-80dd-b6d9997ea48a"
+      description: ""
+      ingress_type: halt
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR:run-start"
+      direction: forward
+      post_duration: 90.933
+      core_duration: 61.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_leg1, route_begin"
+      core_length: 217.0
+      id: "c39e6189-f871-4e9f-a825-c0e9471b5b8d"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 91.0
+      core_duration: 29.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_leg1, route_extend"
+      core_length: 3522.0
+      id: "c6974138-7c9c-48b2-bdb6-da3c311cf346"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 340.0
+      core_duration: 235.0
+    - trigger_duration: 18.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 46.0
+      name: "freight_leg1, pass"
+      core_length: 4809.0
+      id: "c5e3104a-d031-4aff-8718-89eb2092f8d1"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      direction: forward
+      post_duration: 606.0
+      core_duration: 266.0
+    - trigger_duration: 19.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 53.0
+      name: "freight_leg1, route_begin"
+      core_length: 411.0
+      id: "dbd69399-e492-4cf8-8870-b6f4d5c9affc"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 606.0
+      core_duration: 25.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_leg1, route_extend"
+      core_length: 258.0
+      id: "6c769082-fc35-4cd5-8c4d-83432090ad38"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 669.0
+      core_duration: 21.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:run-end"
+      push_pre: false
+      egress_type: halt
+      pre_duration: 0.0
+      name: "freight_leg1, run_end"
+      core_length: 230.0
+      id: "fad95fea-f38a-4f8a-8248-de0aaf4014ca"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      direction: forward
+      post_duration: 2
+      core_duration: 45.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_leg2, run_start"
+      core_length: 341.0
+      id: "4198233a-4f81-492e-9957-3f3225efaa20"
+      description: ""
+      ingress_type: halt
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:run-start"
+      direction: forward
+      post_duration: 67.554
+      core_duration: 35.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_leg2, pass"
+      core_length: 3686.0
+      id: "da814ace-a891-4c0d-b60b-900e8478e2d7"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      direction: forward
+      post_duration: 425.0
+      core_duration: 360.0
+    - trigger_duration: 29.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 112.0
+      name: "freight_leg2, pass"
+      core_length: 4423.0
+      id: "70733eb2-0f39-4343-9d4c-b30664629938"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      direction: forward
+      post_duration: 846.0
+      core_duration: 412.0
+    - trigger_duration: 30.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 124.0
+      name: "freight_leg2, route_begin"
+      core_length: 154.0
+      id: "372b7575-ca49-4dec-b79d-f78007d4d3fd"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 846.0
+      core_duration: 28.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_leg2, route_extend"
+      core_length: 2809.0
+      id: "7b8f0f5e-fac0-4011-bd38-57fad44de5c3"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 1123.0
+      core_duration: 274.0
+    - trigger_duration: 23.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 71.0
+      name: "freight_leg2, route_begin"
+      core_length: 543.0
+      id: "b163e97b-8fc1-4c1a-bab7-0a7020747182"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      direction: forward
+      post_duration: 1123.0
+      core_duration: 31.0
+    - trigger_duration: 23.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ:run-end"
+      push_pre: false
+      egress_type: halt
+      pre_duration: 70.81399999999985
+      name: "freight_leg2, run_end"
+      core_length: 1343.0
+      id: "99ee8c76-beb8-405c-b75a-5c53527fc81c"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      direction: forward
+      post_duration: 2
+      core_duration: 115.0
+    - trigger_duration: 21.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 83.0
+      name: "freight_pass, route_begin"
+      core_length: 217.0
+      id: "24e6d8b2-646b-47f8-aa16-522fbe310c81"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 384.0
+      core_duration: 15.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_pass, route_extend"
+      core_length: 3522.0
+      id: "35adbe43-3795-4b3d-8971-95c143720bf0"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_east:N3"
+      direction: forward
+      post_duration: 589.0
+      core_duration: 193.0
+    - trigger_duration: 16.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 41.0
+      name: "freight_pass, pass"
+      core_length: 4809.0
+      id: "a2a2618f-e38c-42c6-988b-195f3f3ea173"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XR_XPD:41"
+      direction: forward
+      post_duration: 843.0
+      core_duration: 254.0
+    - trigger_duration: 18.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 51.0
+      name: "freight_pass, route_begin"
+      core_length: 411.0
+      id: "70878685-f8c5-4260-948c-494ba2e4e3d7"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 843.0
+      core_duration: 23.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_pass, route_extend"
+      core_length: 258.0
+      id: "efb98cbd-ed6e-4472-8af7-97ef7e501587"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      direction: forward
+      post_duration: 880.0
+      core_duration: 14.0
+    - trigger_duration: 12
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_pass, pass"
+      core_length: 336.0
+      id: "30d86b18-2777-445a-90cf-1495e52eef59"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      direction: forward
+      post_duration: 899.0
+      core_duration: 19.0
+    - trigger_duration: 17.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 45.0
+      name: "freight_pass, pass"
+      core_length: 3686.0
+      id: "777ae4f1-3783-452a-8722-dfcf5981ddb6"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_east:N1"
+      direction: forward
+      post_duration: 1130.0
+      core_duration: 223.0
+    - trigger_duration: 20.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 65.0
+      name: "freight_pass, pass"
+      core_length: 4423.0
+      id: "0b3b5a27-7714-42ef-9ce9-0e34a738baf6"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_XBU:47"
+      direction: forward
+      post_duration: 1521.0
+      core_duration: 376.0
+    - trigger_duration: 29.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 116.0
+      name: "freight_pass, route_begin"
+      core_length: 154.0
+      id: "cc980dbe-cb29-4e91-8c61-454fd63b95e8"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 1521.0
+      core_duration: 27.0
+    - trigger_duration: 0.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: false
+      egress_type: pass
+      pre_duration: 0.0
+      name: "freight_pass, route_extend"
+      core_length: 2809.0
+      id: "76c7b97f-a7e0-4365-ab6b-8c1721e2a0cb"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XBU:49"
+      direction: forward
+      post_duration: 1797.0
+      core_duration: 272.0
+    - trigger_duration: 23.0
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      push_pre: true
+      egress_type: pass
+      pre_duration: 71.0
+      name: "freight_pass, route_begin"
+      core_length: 543.0
+      id: "b4137781-1a33-4903-b04f-da362bdd578d"
+      description: ""
+      ingress_type: pass
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XSZ_west:A"
+      direction: forward
+      post_duration: 1797.0
+      core_duration: 31.0

@@ -43,13 +43,13 @@ function allowanceTable(speedprofile_layer, id)
   df = DataFrame(Mileage=Real[], Allowance=Union{Missing, Real}[], Track_ID=String[])
   allowance_changes = track["allowance"]
   track_start = track["start"]
-  track_end = track["end"]
+  # track_end = track["end"]
 
   first_elem = first(allowance_changes)
   first_mileage = first_elem["pos"][1]["mileage"]
   last_elem = last(allowance_changes)
-  last_mileage = last_elem["pos"][1]["mileage"]
-  last_allowance = last_elem["vMax"]
+  # last_mileage = last_elem["pos"][1]["mileage"]
+  # last_allowance = last_elem["vMax"]
   if track_start > first_mileage
       push!(df, (track_start, missing, id))
   end
@@ -58,10 +58,10 @@ function allowanceTable(speedprofile_layer, id)
       allowance = elem["vMax"]
       push!(df, (mileage, allowance, id))
   end
-  if track_end >= last_mileage
-      push!(df, (track_end, last_allowance, id))
-  end
-
+  # if track_end >= last_mileage
+  #     push!(df, (track_end, last_allowance, id))
+  # end
+  return df
 end
 
 function cutAllowanceTable!(df, start_mileage, end_mileage)
@@ -73,23 +73,24 @@ function cutAllowanceTable!(df, start_mileage, end_mileage)
     upper_id = last(upper)[:Track_ID]
     pushfirst!(df, (start_mileage, upper_allowance, upper_id))
   end
-  if ! (last(df)[:Mileage] == end_mileage)
-    lower_allowance = last(df)[:Allowance]
-    lower_id = last(df)[:Track_ID]
-    push!(df, (end_mileage, lower_allowance, lower_id))
-  end
+  # if ! (last(df)[:Mileage] == end_mileage)
+  #   lower_allowance = last(df)[:Allowance]
+  #   lower_id = last(df)[:Track_ID]
+  #   push!(df, (end_mileage, lower_allowance, lower_id))
+  # end
 end
 
-function joinAllowanceTable(df_in1, df_in2)
+function joinAllowanceTable(df_in1, df_in2, offset)
   sort!(df_in1, [:Mileage])
   df_in1[!, "Original Mileage"] = df_in1[!,:Mileage]
   sort!(df_in2, [:Mileage])
   df_in2[!, "Original Mileage"] = df_in2[!,:Mileage]
-  offset1 = first(df_in2)[:Mileage] - last(df_in1)[:Mileage]
-  df_in2[!, :Mileage] = df_in2[!, :Mileage] .- offset1
+  # offset1 = first(df_in2)[:Mileage] - last(df_in1)[:Mileage]
+  df_in2[!, :Mileage] = df_in2[!, :Mileage] .- offset
   df_out = [df_in1;df_in2]
-  offset2 = first(df_out)[:Mileage]
-  df_out[!, :Mileage] = df_out[!, :Mileage] .- offset2
+  # offset2 = first(df_out)[:Mileage]
+  # df_out[!, :Mileage] = df_out[!, :Mileage] .- offset2
+  rename!(df_out, :Mileage => :Position)
   return df_out
 end
 
@@ -111,7 +112,7 @@ end
 function cutGradientTable!(df, start_mileage, end_mileage)
   sort!(df, [:Mileage])
   upper = filter(:Mileage => n -> n < start_mileage, df)
-  lower = filter(:Mileage => n -> n > end_mileage, df)
+  # lower = filter(:Mileage => n -> n > end_mileage, df)
   filter!(:Mileage => n -> n >= start_mileage && n <= end_mileage, df)
   if ! isempty(upper)
     first_mileage = first(df)[:Mileage]
@@ -123,32 +124,33 @@ function cutGradientTable!(df, start_mileage, end_mileage)
     new_elevation = (first_elevation - upper_elevation) / (first_mileage - upper_mileage) * (start_mileage - upper_mileage) + upper_elevation
     pushfirst!(df, (start_mileage, upper_slope, new_elevation, upper_id))
   end
-  if ! isempty(lower)
-    last_mileage = last(df)[:Mileage]
-    last_elevation = last(df)[:Elevation]
-    last_slope = last(df)[:Slope]
-    lower_mileage = first(lower)[:Mileage]
-    lower_elevation = first(lower)[:Elevation]
-    lower_id = first(lower)[:Track_ID]
-    new_elevation = (lower_elevation - last_elevation) / (lower_mileage - last_mileage) * (end_mileage - last_mileage) + last_elevation
-    push!(df, (end_mileage, last_slope, new_elevation, lower_id))
-  end
+  # if ! isempty(lower)
+  #   last_mileage = last(df)[:Mileage]
+  #   last_elevation = last(df)[:Elevation]
+  #   last_slope = last(df)[:Slope]
+  #   lower_mileage = first(lower)[:Mileage]
+  #   lower_elevation = first(lower)[:Elevation]
+  #   lower_id = first(lower)[:Track_ID]
+  #   new_elevation = (lower_elevation - last_elevation) / (lower_mileage - last_mileage) * (end_mileage - last_mileage) + last_elevation
+  #   push!(df, (end_mileage, last_slope, new_elevation, lower_id))
+  # end
 end
 
-function joinGradientTable(df_in1, df_in2)
+function joinGradientTable(df_in1, df_in2, offset)
 
   sort!(df_in1, [:Mileage])
   df_in1[!, "Original Mileage"] = df_in1[!,:Mileage]
   sort!(df_in2, [:Mileage])
   df_in2[!, "Original Mileage"] = df_in2[!,:Mileage]
-  offset1 = first(df_in2)[:Mileage] - last(df_in1)[:Mileage]
-  df_in2[!, :Mileage] = df_in2[!, :Mileage] .- offset1
+  # offset1 = first(df_in2)[:Mileage] - last(df_in1)[:Mileage]
+  df_in2[!, :Mileage] = df_in2[!, :Mileage] .- offset
 
   # # concat df at mileage
   df_out = [df_in1;df_in2]
   # # set offset to nullify
-  offset2 = first(df_out)[:Mileage]
-  df_out[!, :Mileage] = df_out[!, :Mileage] .- offset2
+  # offset2 = first(df_out)[:Mileage]
+  # df_out[!, :Mileage] = df_out[!, :Mileage] .- offset2
+  rename!(df_out, :Mileage => :Position)
 
   return df_out
 end
@@ -220,20 +222,21 @@ function cutCurvatureTable!(df, start_mileage, end_mileage)
 
 end
 
-function joinCurvatureTable(df_in1, df_in2)
+function joinCurvatureTable(df_in1, df_in2, offset)
 
   sort!(df_in1, [:Mileage])
   df_in1[!, "Original Mileage"] = df_in1[!,:Mileage]
   sort!(df_in2, [:Mileage])
   df_in2[!, "Original Mileage"] = df_in2[!,:Mileage]
-  offset1 = first(df_in2)[:Mileage] - last(df_in1)[:Mileage]
-  df_in2[!, :Mileage] = df_in2[!, :Mileage] .- offset1
+  # offset1 = first(df_in2)[:Mileage] - last(df_in1)[:Mileage]
+  df_in2[!, :Mileage] = df_in2[!, :Mileage] .- offset
 
   # # concat df at mileage
   df_out = [df_in1;df_in2]
   # # set offset to nullify
-  offset2 = first(df_out)[:Mileage]
-  df_out[!, :Mileage] = df_out[!, :Mileage] .- offset2
+  # offset2 = first(df_out)[:Mileage]
+  # df_out[!, :Mileage] = df_out[!, :Mileage] .- offset2
+  rename!(df_out, :Mileage => :Position)
 
   return df_out
   

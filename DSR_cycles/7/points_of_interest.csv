@@ -1,0 +1,43 @@
+Object;Type;NetworkElement;Position;Line;Original Mileage;Measure;Label
+N3;trigger point;XR_east;-0,37899999999999995;9724;-0,37899999999999995;front;XR_east:N3:trigger point
+N3;breaking distance;XR_east;-0,07899999999999996;9724;-0,07899999999999996;front;XR_east:N3:breaking distance
+H3_2;berth;XR;0,871;9724;0,871;front;XR:H3_2:berth
+N3;berth;XR;0,921;9724;0,921;front;XR:N3:berth
+N3;main signal;XR_east;0,921;9724;0,921;front;XR_east:N3:main signal
+N3;block clearing;XR_east;1,161;9724;1,161;rear;XR_east:N3:block clearing
+N3;route clearing;XR_east;1,378;9724;1,378;rear;XR_east:N3:route clearing
+41;trigger point;XR_XPD;3,8499999999999996;9724;3,8499999999999996;front;XR_XPD:41:trigger point
+41;breaking distance;XR_XPD;4,1499999999999995;9724;4,1499999999999995;front;XR_XPD:41:breaking distance
+41;block signal;XR_XPD;4,85;9724;4,85;front;XR_XPD:41:block signal
+41;block clearing;XR_XPD;4,8999999999999995;9724;4,8999999999999995;rear;XR_XPD:41:block clearing
+A;trigger point;XPD_west;8,559;9724;8,559;front;XPD_west:A:trigger point
+A;breaking distance;XPD_west;8,859;9724;8,859;front;XPD_west:A:breaking distance
+A;main signal;XPD_west;9,559;9724;9,559;front;XPD_west:A:main signal
+N1;trigger point;XPD_east;9,608;9724;9,608;front;XPD_east:N1:trigger point
+A;block clearing;XPD_west;9,709;9724;9,709;rear;XPD_west:A:block clearing
+N1;breaking distance;XPD_east;9,908000000000001;9724;9,908000000000001;front;XPD_east:N1:breaking distance
+A;route clearing;XPD_west;10,12;9724;10,12;rear;XPD_west:A:route clearing
+H1_2;berth;XPD;10,37;9724;10,37;front;XPD:H1_2:berth
+G401A;block signal;XPD;10,373;9724;10,373;front;XPD:G401A:block signal
+G401A;block clearing;XPD;10,378;9724;10,378;rear;XPD:G401A:block clearing
+H1_4;berth;XPD;10,588;9724;10,588;front;XPD:H1_4:berth
+N1;berth;XPD;10,608;9724;10,608;front;XPD:N1:berth
+N1;main signal;XPD_east;10,608;9724;10,608;front;XPD_east:N1:main signal
+N1;block clearing;XPD_east;10,714;9724;10,714;rear;XPD_east:N1:block clearing
+N1;route clearing;XPD_east;10,714;9724;10,714;rear;XPD_east:N1:route clearing
+47;trigger point;XPD_XBU;13,35;9724;13,35;front;XPD_XBU:47:trigger point
+47;breaking distance;XPD_XBU;13,65;9724;13,65;front;XPD_XBU:47:breaking distance
+47;block signal;XPD_XBU;14,35;9724;14,35;front;XPD_XBU:47:block signal
+47;block clearing;XPD_XBU;14,4;9724;14,4;rear;XPD_XBU:47:block clearing
+49;trigger point;XBU;17,712;9724;17,712;front;XBU:49:trigger point
+49;breaking distance;XBU;18,012;9724;18,012;front;XBU:49:breaking distance
+49;main signal;XBU;18,712;9724;18,712;front;XBU:49:main signal
+49;block clearing;XBU;18,823;9724;18,823;rear;XBU:49:block clearing
+49;route clearing;XBU;18,976999999999997;9721;32,177;rear;XBU:49:route clearing
+A;trigger point;XSZ_west;20,329;9721;33,529;front;XSZ_west:A:trigger point
+A;breaking distance;XSZ_west;20,628999999999998;9721;33,829;front;XSZ_west:A:breaking distance
+A;main signal;XSZ_west;21,628999999999998;9721;34,829;front;XSZ_west:A:main signal
+A;block clearing;XSZ_west;21,785999999999994;9721;34,986;rear;XSZ_west:A:block clearing
+A;route clearing;XSZ_west;22,329;9721;35,529;rear;XSZ_west:A:route clearing
+H2_2;berth;XSZ;23,108999999999995;9721;36,309;front;XSZ:H2_2:berth
+N2;berth;XSZ;23,128999999999998;9721;36,329;front;XSZ:N2:berth

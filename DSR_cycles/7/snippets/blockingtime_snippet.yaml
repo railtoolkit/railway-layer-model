@@ -1,0 +1,44 @@
+%YAML 1.2
+---
+transit:
+  snippets:
+    - id: "70878685-f8c5-4260-948c-494ba2e4e3d7"
+      name: "freight_pass, route_begin"
+      description: ""
+      direction: forward
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      ingress_type: pass
+      egress_type: pass
+      push_pre: true
+      trigger_duration: 18.0
+      pre_duration: 51.0
+      core_length: 411.0
+      post_duration: 843.0
+      core_duration: 23.0
+    - id: "efb98cbd-ed6e-4472-8af7-97ef7e501587"
+      name: "freight_pass, route_extend"
+      description: ""
+      direction: forward
+      ingress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD_west:A"
+      egress_object:
+        name: ""
+        physical_ref: ""
+        associated: "XPD:G401A"
+      ingress_type: pass
+      egress_type: pass
+      push_pre: false
+      trigger_duration: 0.0
+      pre_duration: 0.0
+      core_length: 258.0
+      post_duration: 880.0
+      core_duration: 14.0
