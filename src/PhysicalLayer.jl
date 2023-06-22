@@ -33,7 +33,7 @@ function load(file_path)
   for node in MetaGraphs.filter_vertices(graph, :branches)#
     # replace strings in :relations with Edge object
     paths = Dict{Symbol, Tuple{Graphs.Edge, Graphs.Edge}}()
-    speeds = Dict{Symbol, Float64}()
+    speeds = Dict{Symbol, Any}()
     default_id = 1
     for branch in MetaGraphs.get_prop(graph, node, :branches)
       id = get(branch, "id", string("l",default_id))

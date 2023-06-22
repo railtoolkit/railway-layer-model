@@ -1,0 +1,120 @@
+%YAML 1.2
+---
+base:
+  name: "Example Infrastructure"
+  id: base
+  locations:
+    - id: XWN
+      name: Wenden
+      plot_coord: [0.0,0.0]
+      pos:
+        - line: "9721"
+          mileage: 9.1
+    - id: XR
+      name: Rebenau
+      plot_coord: [2.0,0.0]
+      pos:
+        - line: "9721"
+          mileage: 16.3
+        - line: "9724"
+          mileage: 0.561
+    - id: XO
+      name: Okerbach
+      plot_coord: [5.0,-0.5]
+      pos:
+        - line: "9721"
+          mileage: 27.2
+    - id: XBU
+      name: Abzweig Bülten
+      plot_coord: [8.0,0.0]
+      pos:
+        - line: "9721"
+          mileage: 32.1
+        - line: "9724"
+          mileage: 18.9
+    - id: XSZ
+      name: Schleinitz
+      plot_coord: [10.0,0.0]
+      pos:
+        - line: "9721"
+          mileage: 36.0
+    - id: XSBG
+      name: Schlossberg
+      plot_coord: [13.0,0.0]
+      pos:
+        - line: "9721"
+          mileage: 42.8
+    - id: XM
+      name: Mittelstadt
+      plot_coord: [2.0,1.0]
+      pos:
+        - line: "9344"
+          mileage: 5.5
+    - id: XPD
+      name: Pockelsdorf
+      plot_coord: [5.0,0.5]
+      pos:
+        - line: "9724"
+          mileage: 9.8
+        - line: "9344"
+          mileage: 9.7
+  connections:
+    # Wenden Schlossberg via Okerbach (9721)
+    - source: XWN
+      target: XR
+      length: 7.2
+    - source: XR
+      target: XOG
+      length: 10.0
+    - source: XOG
+      target: XO
+      length: 0.9
+    - source: XO
+      target: XBU
+      length: 4.9
+    - source: XBU
+      target: XSZ
+      length: 3.9
+    - source: XSZ
+      target: XSBG
+      length: 6.8
+    # Rebenau Buelten via Pockelsdorf (9724)
+    - source: XR
+      target: XPD
+      length: 9.8
+    - source: XPD
+      target: XBU
+      length: 9.1
+    # Mittelstadt Pockelsdorf (9344)
+    - source: XM
+      target: XPD
+      length: 9.5
+  lines:
+    - name: Wenden Schlossberg via Okerbach
+      id: "9721"
+      start: 7.7
+      end: 42.0
+      mileage_jump:
+      locations: [XW,XR,XO,XBU,XSZ,XSBG]
+      conjunctions:
+        - location: XR
+          line: "9724"
+        - location: XBU
+          line: "9724"
+    - name: Rebenau Buelten via Pockelsdorf
+      id: "9724"
+      start: 0.0
+      end: 18.9
+      locations: [XR,XPD,XBU]
+      conjunctions:
+        - location: XR
+          line: "9721"
+        - location: XBU
+          line: "9721"
+        - location: XPD
+          line: "9344"
+    - name: Mittelstadt Pockelsdorf
+      id: "9344"
+      conjunctions:
+        - location: XPD
+          line: "9724"

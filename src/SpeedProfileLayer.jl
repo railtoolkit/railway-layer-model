@@ -37,9 +37,9 @@ end # function save
 """
 Takes a Dict with speed allowances and converts it to a DataFrame for CSV export
 """
-function allowanceTable(speedprofile_layer, id)
+function allowanceTable(speedprofileLayer, id, speed_name = "default")
   
-  track = SpeedProfileLayer.getTrack(speedprofile_layer, id)
+  track = SpeedProfileLayer.getTrack(speedprofileLayer, id)
   df = DataFrame(Mileage=Real[], Allowance=Union{Missing, Real}[], Track_ID=String[])
   allowance_changes = track["allowance"]
   track_start = track["start"]
@@ -47,7 +47,7 @@ function allowanceTable(speedprofile_layer, id)
 
   first_elem = first(allowance_changes)
   first_mileage = first_elem["pos"][1]["mileage"]
-  last_elem = last(allowance_changes)
+  # last_elem = last(allowance_changes)
   # last_mileage = last_elem["pos"][1]["mileage"]
   # last_allowance = last_elem["vMax"]
   if track_start > first_mileage
@@ -55,8 +55,8 @@ function allowanceTable(speedprofile_layer, id)
   end
   for elem in allowance_changes
       mileage = elem["pos"][1]["mileage"]
-      allowance = elem["vMax"]
-      push!(df, (mileage, allowance, id))
+      allowance = first(filter(d -> d["name"] == speed_name, elem["speed"]))
+      push!(df, (mileage, allowance["speed_limit"], id))
   end
   # if track_end >= last_mileage
   #     push!(df, (track_end, last_allowance, id))

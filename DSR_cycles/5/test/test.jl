@@ -40,7 +40,7 @@ end
 
 physicalLayer = PhysicalLayer.load(physicalLayerFile)
 interlockingLayer = InterlockingLayer.load(interlockingLayerFile)
-InterlockingLayer.selectLimit!(interlockingLayer, "XPD_west" ) # only one interlocking limit
+InterlockingLayer.selectJunction!(interlockingLayer, "XPD_west" ) # only one interlocking limit
 
 interlocking_elements = PhysicalLayer.get_route_elements(physicalLayer)
 route_table = InterlockingLayer.get_route_table(interlockingLayer, interlocking_elements)

@@ -1,0 +1,107 @@
+%YAML 1.2
+---
+transport:
+  periods:
+    - id: tty2223
+      name: whole timetable year 2022/23 - only weekdays
+      startdate: "2022-12-12"
+      enddate: "2023-12-10"
+      bitmask: "1111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100"
+  trainruns:
+    - id: tr1
+      train_data: local # from transit layer
+      running_path: ## pre calculated
+        - sequence: 1
+          link: XR
+          track: "3"
+          route: main
+          type: start # start, pass, stop
+          departure: 0.0
+          margin: 0.0
+          snippet_out: pax_leg1_2
+        - sequence: 2
+          link: XR_XPD
+          track: XR_XPD
+          route: main
+          type: pass
+          departure: 308.933
+          margin: 0.0
+          snippet_in: pax_leg1_2
+          snippet_out: pax_leg1_2
+        - sequence: 3
+          link: XPD
+          track: "1"
+          route: main
+          type: stop
+          arrival: 378.504
+          departure: 618.504
+          margin: 0.0
+          snippet_in: pax_leg1_2
+          snippet_out: pax_leg2_2
+        - sequence: 4
+          link: XPD_XBU
+          track: XPD_XBU
+          route: main
+          type: pass
+          departure: 920.281
+          margin: 0.0
+          snippet_in: pax_leg2_2
+          snippet_out: pax_leg2_2
+        - sequence: 5
+          link: XBU_XSZ
+          track: XBU_XSZ_2
+          route: main
+          type: pass
+          departure: 1009.369
+          margin: 0.0
+          snippet_in: pax_leg2_2
+          snippet_out: pax_leg2_2
+        - sequence: 6
+          link: XSZ
+          track: "2"
+          route: main
+          type: stop
+          arrival: 1092.957
+          margin: 0.0
+          snippet_in: pax_leg2_2
+  services: # group of service lines
+    - id: local_1
+      name: Regio 1 up
+      trainrun: tr1 # id from trainruns
+      period: tty2223 # id from periods
+      type: passenger # cargo, internal, etc.
+      roster_start: 06:10:00
+      interval: 01:00:00
+      cycles: 12
+      direction: forward
+    - id: local_2
+      name: Regio 1 down
+      trainrun: tr1 # id from trainruns
+      period: tty2223 # id from periods
+      type: passenger # cargo, internal, etc.
+      roster_start: 06:50:00
+      interval: 01:00:00
+      cycles: 12
+      direction: backward
+  trains:
+    - id: "0815"
+      service: local_1
+      cycle: 1
+      company: ""
+    - id: "0817"
+      service: local_1
+      cycle: 2
+      company: ""
+  connections:
+    - id: local_1_2
+      link: XPD
+      type: transportation # transportation (connections for passengers or goods) OR vehicle (connections for turnaround or rotation)
+      source: local_1
+      target: local_2
+      minimum_duration: 240.0
+    - id: local_2_1
+      link: XPD
+      type: transportation # transportation (connections for passengers or goods) OR vehicle (connections for turnaround or rotation)
+      source: local_2
+      target: local_1
+      minimum_duration: 240.0

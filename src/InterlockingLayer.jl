@@ -9,7 +9,7 @@ module InterlockingLayer
 
 using YAML, DataFrames, MetaGraphs, Graphs
 
-export load, getRouteElements
+export load, getRouteElements, selectLimit
 
 # ===========================
 """
@@ -22,8 +22,12 @@ function load(file_path)
 
 end # function load
 
-function selectLimit!(layer, interlocking_id)
+function selectJunction!(layer, network_ref)
   filter!(x -> x["network_ref"] == interlocking_id, layer)
+end
+
+function selectLimit(layer, interlocking_id; key = "network_ref")
+  filter(x -> x[key] == interlocking_id, layer)
 end
 
 function get_route_table(interlockingLayer, interlocking_elements)
@@ -87,7 +91,9 @@ function get_route_table(interlockingLayer, interlocking_elements)
 
 end # function get_route_table
 
-
+"""
+generates a route conflict matrix
+"""
 function get_route_conflicts(route_table, interlocking_elements)
 
   ## private  functions
@@ -146,5 +152,29 @@ function get_route_conflicts(route_table, interlocking_elements)
   return matrix
 
 end # function get_route_conflicts
+
+function routes_of_running_path(running_path,networkLayer,interlockingLayer)
+  used_routes = []
+  for item in 1:(length(running_path)-1)
+    println(item)
+    link1, track1 = running_path[item]
+    link2, track2 = running_path[item+1]
+    edge1 = first(MetaGraphs.filter_edges(networkLayer, :id, link1))
+    edge2 = first(MetaGraphs.filter_edges(networkLayer, :id, link2))
+    if dst(edge1) == src(edge2) || dst(edge1) == dst(edge2)
+      direction = :forward
+    else
+      direction = :backward
+    end
+    direction == :forward ? junction = dst(edge1) : junction = src(edge1)
+    direction == :forward ? node = :in : node = :out
+    
+    limit = first(filter(entry -> entry["track"] == track1, MetaGraphs.props(networkLayer, junction)[node]))["limit"]
+    routes = first(InterlockingLayer.selectLimit(interlockingLayer,limit["physical_ref"], key = "physical_ref"))["routes"]
+    route = first(filter(entry -> entry["target"] == track2,routes))
+    push!(used_routes,(limit = limit["name"] ,target = route["target"],route_id = route["id"],junction_ref = MetaGraphs.props(networkLayer, junction)[:id]))
+  end
+  return used_routes
+end
 
 end #module

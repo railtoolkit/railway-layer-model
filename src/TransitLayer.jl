@@ -11,12 +11,14 @@ include("LMcore.jl")
 import .LMcore
 include("PhysicalLayer.jl")
 import .PhysicalLayer
+include("SpeedProfileLayer.jl")
+import .SpeedProfileLayer
 # include("NetworkLayer.jl")
 # import .NetworkLayer
 # include("InterlockingLayer.jl")
 # import .InterlockingLayer
 
-using YAML, DataFrames, TrainRuns, UUIDs, MetaGraphs
+using YAML, DataFrames, UUIDs, MetaGraphs
 
 export load, save, Path, getMovingSection
 
@@ -79,6 +81,44 @@ function saveSnippets(file_path, snippets::Vector{Any})
   YAML.write_file(file_path, Dict("transit" => Dict("snippets" => tmp_array)))
 end # function saveSnippets
 
+function exportSnippets2DF(snippets)
+  df = DataFrame(
+    id = String[],
+    name = String[],
+    description = String[],
+    ingress_object = String[],
+    egress_object = String[],
+    direction = Symbol[],
+    core_length= Real[],
+    core_duration = Real[],
+    trigger_duration = Real[],
+    pre_duration = Real[],
+    post_duration = Real[],
+    ingress_type = Symbol[],
+    egress_type = Symbol[],
+    push_pre = Bool[]
+  )
+  for snippet in snippets
+    push!(df,(
+      snippet.id,
+      snippet.name,
+      snippet.description,
+      snippet.ingress_object,
+      snippet.egress_object,
+      snippet.direction,
+      snippet.core_length,
+      snippet.core_duration,
+      snippet.trigger_duration,
+      snippet.pre_duration,
+      snippet.post_duration,
+      snippet.ingress_type,
+      snippet.egress_type,
+      snippet.push_pre
+    ))
+  end
+  return df
+end
+
 """
 ###
 position relateted: ingress route egress block
@@ -112,38 +152,43 @@ function getSnippet(run::DataFrame, entry_point::String, exit_point::String;
                     id = UUIDs.uuid4(),
                     name::String = "",
                     description::String = "",
-                    reaction_time::Real = 10,
-                    grant_authoriy_time::Real = 2,
-                    release_time::Real = 2)
+                    reaction_time::Real = 10.0,
+                    grant_authoriy_time::Real = 2.0,
+                    release_time::Real = 2.0)
   
   push_pre = false
   ingress_type = :pass
   egress_type = :pass
 
-  trigger  = filter(row -> occursin(entry_point,row.label) && occursin("trigger" ,row.label)        && occursin("front" ,row.label), run)
-  breaking = filter(row -> occursin(entry_point,row.label) && occursin("breaking" ,row.label)       && occursin("front" ,row.label), run)
-  ingress  = filter(row -> occursin(entry_point,row.label) && occursin("block clearing" ,row.label) && occursin("front" ,row.label), run)
-  egress   = filter(row -> occursin(exit_point,row.label)  && occursin("block clearing" ,row.label) && occursin("front" ,row.label), run)
-  clear    = filter(row -> occursin(exit_point,row.label)  && occursin("block clearing" ,row.label) && occursin("rear" ,row.label),  run)
+  entry_base_ref, entry_name, entry_object = split(entry_point, ":")
+  exit_base_ref, exit_name, exit_object = split(exit_point, ":")
+  entry = entry_base_ref * ":" * entry_name
+  exit = exit_base_ref * ":" * exit_name
+
+  trigger  = filter(row -> occursin(entry,row.label) && occursin("trigger" ,row.label)        && occursin("front" ,row.label), run)
+  breaking = filter(row -> occursin(entry,row.label) && occursin("breaking" ,row.label)       && occursin("front" ,row.label), run)
+  ingress  = filter(row -> occursin(entry,row.label) && occursin("block clearing" ,row.label) && occursin("front" ,row.label), run)
+  egress   = filter(row -> occursin(exit,row.label)  && occursin("block clearing" ,row.label) && occursin("front" ,row.label), run)
+  clear    = filter(row -> occursin(exit,row.label)  && occursin("block clearing" ,row.label) && occursin("rear" ,row.label),  run)
 
   if type == :run_start
     core    = filter(row -> string(row.driving_mode) == "breakFree", run)
-    core_length      = round(abs(egress[1,:s] - ingress[1,:s]))
-    core_duration    = round(abs(egress[1,:t] - core[1,:t]))
+    core_length      = abs(egress[1,:s] - ingress[1,:s])
+    core_duration    = abs(egress[1,:t] - core[1,:t])
     trigger_duration = reaction_time + grant_authoriy_time
     pre_duration     = 0.0
-    post_duration    = release_time + clear[1,:t]
+    post_duration    = abs(clear[1,:t] - egress[1,:t]) + release_time
     ingress_type     = :halt
     push_pre         = true
   elseif type == :run_end
-    ingress = filter(row -> occursin(entry_point,row.label) && occursin("clearing" ,row.label) && occursin("front" ,row.label), run)
+    ingress = filter(row -> occursin(entry,row.label) && occursin("clearing" ,row.label) && occursin("front" ,row.label), run)
     core    = filter(row -> string(row.driving_mode) == "halt", run)
-    core_length      = round(abs(egress[1,:s] - ingress[1,:s]))
-    core_duration    = round(abs(core[1,:t] - ingress[1,:t]))
+    core_length      = abs(egress[1,:s] - ingress[1,:s])
+    core_duration    = abs(core[1,:t] - ingress[1,:t])
     if isempty(trigger)
       trigger_duration = 0.0
     else
-      trigger_duration = round(abs(breaking[1,:t] - trigger[1,:t]))
+      trigger_duration = abs(breaking[1,:t] - trigger[1,:t])
     end
     if isempty(breaking)
       pre_duration = 0.0
@@ -153,42 +198,43 @@ function getSnippet(run::DataFrame, entry_point::String, exit_point::String;
     post_duration    = release_time
     egress_type      = :halt
   elseif type == :route_begin
-    egress  = filter(row -> occursin(exit_point,row.label)  && occursin("route clearing" ,row.label) && occursin("front" ,row.label), run)
-    core_length      = round(abs(egress[1,:s] - ingress[1,:s]))
-    core_duration    = round(abs(egress[1,:t] - ingress[1,:t]))
+    egress = filter(row -> occursin(exit,row.label)  && occursin("route clearing" ,row.label) && occursin("front" ,row.label), run)
+    clear  = filter(row -> occursin(exit,row.label)  && occursin("route clearing" ,row.label) && occursin("rear" ,row.label),  run)
+    core_length      = abs(egress[1,:s] - ingress[1,:s])
+    core_duration    = abs(egress[1,:t] - ingress[1,:t])
     if isempty(trigger)
       trigger_duration = reaction_time + grant_authoriy_time
     else
-      trigger_duration = round(abs(breaking[1,:t] - trigger[1,:t]))
+      trigger_duration = abs(breaking[1,:t] - trigger[1,:t])
     end
     if isempty(breaking)
       pre_duration = 0.0
     else
-      pre_duration = round(abs(ingress[1,:t] - breaking[1,:t]))
+      pre_duration = abs(ingress[1,:t] - breaking[1,:t])
     end
-    post_duration    =  round(release_time + clear[1,:t])
+    post_duration  = abs(clear[1,:t] - egress[1,:t]) + release_time
     push_pre = true
   elseif type == :route_extend
-    ingress = filter(row -> occursin(entry_point,row.label) && occursin("route clearing" ,row.label) && occursin("front" ,row.label), run)
-    core_length      = round(abs(egress[1,:s] - ingress[1,:s]))
-    core_duration    = round(abs(egress[1,:t] - ingress[1,:t]))
+    ingress = filter(row -> occursin(entry,row.label) && occursin("route clearing" ,row.label) && occursin("front" ,row.label), run)
+    core_length      = abs(egress[1,:s] - ingress[1,:s])
+    core_duration    = abs(egress[1,:t] - ingress[1,:t])
     trigger_duration = 0.0
     pre_duration     = 0.0
-    post_duration    = round(release_time + clear[1,:t])
+    post_duration    = abs(clear[1,:t] - egress[1,:t]) + release_time
   else # type == :pass
-    core_length      = round(abs(egress[1,:s] - ingress[1,:s]))
-    core_duration    = round(abs(egress[1,:t] - ingress[1,:t]))
+    core_length      = abs(egress[1,:s] - ingress[1,:s])
+    core_duration    = abs(egress[1,:t] - ingress[1,:t])
     if isempty(trigger)
       trigger_duration = reaction_time + grant_authoriy_time
     else
-      trigger_duration = round(abs(breaking[1,:t] - trigger[1,:t]))
+      trigger_duration = abs(breaking[1,:t] - trigger[1,:t])
     end
     if isempty(breaking)
       pre_duration = 0.0
     else
-      pre_duration = round(abs(ingress[1,:t] - breaking[1,:t]))
+      pre_duration = abs(ingress[1,:t] - breaking[1,:t])
     end
-    post_duration    = round(release_time + clear[1,:t])
+    post_duration  = abs(clear[1,:t] - egress[1,:t]) + release_time
   end
 
   # println("description: ", description)
@@ -200,7 +246,22 @@ function getSnippet(run::DataFrame, entry_point::String, exit_point::String;
   # println("pre_duration: ", pre_duration)
   # println("post_duration: ", post_duration)
 
-  return TransitLayer.BlockingTimeSnippet(string(id),name,description,entry_point,exit_point,direction,core_length,core_duration,trigger_duration,pre_duration,post_duration,ingress_type,egress_type,push_pre)
+  return TransitLayer.BlockingTimeSnippet(
+    string(id),
+    name,
+    description,
+    entry_point,
+    exit_point,
+    direction,
+    round(core_length,     digits=3),
+    round(core_duration,   digits=2),
+    round(trigger_duration,digits=2),
+    round(pre_duration,    digits=2),
+    round(post_duration,   digits=2),
+    ingress_type,
+    egress_type,
+    push_pre
+  )
 end
 
 function getMovingSection(characteristic_sections, start_mileage, end_mileage)
@@ -243,13 +304,15 @@ takes a train run and returns snippets borders and info with:
   * egress object
 as DataFrame
 """
-function getSnippetInfo(running_times::DataFrame)
-  snippettype = Array{Union{Symbol,Missing},1}(missing, size(running_times,1))
-  ingressobject = Array{Union{String,Missing},1}(missing, size(running_times,1))
-  egressobject = Array{Union{String,Missing},1}(missing, size(running_times,1))
+function getSnippetInfo(run::DataFrame)
+  # loop init
+  snippettype = Array{Union{Symbol,Missing},1}(missing, size(run,1))
+  ingressobject = Array{Union{String,Missing},1}(missing, size(run,1))
+  egressobject = Array{Union{String,Missing},1}(missing, size(run,1))
   previous_type_pos = 1
   previous_clearing = ""
-  for row in eachrow(running_times)
+  # loop
+  for row in eachrow(run)
     # println(type_pos)
     base_ref,name,object,measure = split(row.label, ":")
     if occursin("clearing",object) && measure == "front"
@@ -271,8 +334,8 @@ function getSnippetInfo(running_times::DataFrame)
       if name == "run-end"
         snippettype[previous_type_pos] = :run_end
       end
-      egressobject[previous_type_pos] = base_ref * ":" * name
-      ingressobject[rownumber(row)] = base_ref * ":" * name
+      egressobject[previous_type_pos] = base_ref * ":" * name * ":" * object
+      ingressobject[rownumber(row)] = base_ref * ":" * name * ":" * object
       previous_type_pos = rownumber(row)
       previous_clearing = object
     else
@@ -287,7 +350,9 @@ function getSnippetInfo(running_times::DataFrame)
   return df
 end
 
-
+"""
+extends the running time dataframe with the next clearing point an beginning and end of the train run.
+"""
 function addClearingAtEdge!(clearingtimes::DataFrame,physicalLayer::AbstractMetaGraph)
   allowmissing!(clearingtimes)
 
@@ -306,6 +371,60 @@ function addClearingAtEdge!(clearingtimes::DataFrame,physicalLayer::AbstractMeta
     dist34 = PhysicalLayer.get_node_distance(physicalLayer, node3, node4) * 1000
     push!(     clearingtimes, Dict(:label => base_ref3 * ":run-end:block clearing:front",   :s => (last(clearingtimes)[:s]+dist34)), cols = :subset)
   end
+end
+
+"""
+returns a DataFrame with characteristic sections in relative positioning
+
+example for the input:
+line_sections = [
+  (id = "9724_forward",       begining =  0.0, ending = 18.9),
+  (id = "9721_right_forward", begining = 32.1, ending = 38.0),
+]
+"""
+function get_characteristic_sections(speedprofileLayer, line_sections)::DataFrame
+  ## allowance
+  line_allowances = []
+  for line in line_sections
+    line_allowance = SpeedProfileLayer.allowanceTable(speedprofileLayer, line.id)
+    SpeedProfileLayer.cutAllowanceTable!(line_allowance, line.begining, line.ending)
+    push!(line_allowances, line_allowance)
+  end
+
+  allowance = SpeedProfileLayer.joinAllowanceTable(line_allowances[1],line_allowances[2],line_sections[2].begining-line_sections[1].ending)
+  for i in 2:(length(line_allowances)-1)
+    allowance = SpeedProfileLayer.joinAllowanceTable(allowance,line_allowances[i],line_sections[i].begining-line_sections[i-1].ending)
+  end
+  select!(allowance, [:Position,:Allowance])
+
+  ## gradient
+  line_gradients = []
+  for line in line_sections
+    line_gradient = SpeedProfileLayer.gradientTable(speedprofileLayer, line.id)
+    SpeedProfileLayer.cutGradientTable!(line_gradient, line.begining, line.ending)
+    push!(line_gradients, line_gradient)
+  end
+  gradient = SpeedProfileLayer.joinGradientTable(line_gradients[1],line_gradients[2],line_sections[2].begining-line_sections[1].ending)
+  for i in 2:(length(line_gradients)-1)
+    gradient = SpeedProfileLayer.joinGradientTable(gradient,line_gradients[i],line_sections[i].begining-line_sections[i-1].ending)
+  end
+  select!(gradient, [:Position,:Slope])
+
+  ## join allowance and gradient
+  characteristic_sections = outerjoin(allowance, gradient, on = :Position)
+  sort!(characteristic_sections, [:Position])
+  allowance = missing
+  slope = missing
+  for row in eachrow(characteristic_sections)
+    ismissing(row[:Allowance]) ? row[:Allowance] = allowance : allowance = row[:Allowance]
+    ismissing(row[:Slope]) ? row[:Slope] = slope : slope = row[:Slope]
+  end
+  rename!(characteristic_sections, :Position => :position, :Slope => :resistance, :Allowance => :speed )
+  ## SI - units
+  characteristic_sections.speed = characteristic_sections.speed ./3.6
+  characteristic_sections.position = characteristic_sections.position .* 1000
+
+  return characteristic_sections
 end
 
 end #module
