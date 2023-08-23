@@ -17,12 +17,12 @@ import .PhysicalLayer
 using MetaGraphs
 
 # load PhysicalLayer of operational points (in geo order)
-rebenau     = PhysicalLayer.load("example_data/snippets/2_physical_rebenau.yaml")
-bk4142      = PhysicalLayer.load("example_data/snippets/2_physical_bk4142.yaml")
-pockelsdorf = PhysicalLayer.load("example_data/snippets/2_physical_pockelsdorf.yaml")
-bk4748      = PhysicalLayer.load("example_data/snippets/2_physical_bk4748.yaml")
-buelten     = PhysicalLayer.load("example_data/snippets/2_physical_buelten.yaml")
-schleinitz  = PhysicalLayer.load("example_data/snippets/2_physical_schleinitz.yaml")
+rebenau     = PhysicalLayer.load("data/snippets/2_physical_rebenau.yaml")
+bk4142      = PhysicalLayer.load("data/snippets/2_physical_bk4142.yaml")
+pockelsdorf = PhysicalLayer.load("data/snippets/2_physical_pockelsdorf.yaml")
+bk4748      = PhysicalLayer.load("data/snippets/2_physical_bk4748.yaml")
+buelten     = PhysicalLayer.load("data/snippets/2_physical_buelten.yaml")
+schleinitz  = PhysicalLayer.load("data/snippets/2_physical_schleinitz.yaml")
 
 # # add base_ref IDs from BaseLayer
 # LMtools.addProp!(rebenau, :base_ref, "XR")
@@ -41,12 +41,12 @@ schleinitz  = PhysicalLayer.load("example_data/snippets/2_physical_schleinitz.ya
 # LMtools.shiftID2Name!(schleinitz)
 
 # # save modification
-# PhysicalLayer.save(rebenau, "example_data/snippets/2_physical_rebenau.yaml")
-# PhysicalLayer.save(bk4142, "example_data/snippets/2_physical_bk4142.yaml")
-# PhysicalLayer.save(pockelsdorf, "example_data/snippets/2_physical_pockelsdorf.yaml")
-# PhysicalLayer.save(bk4748, "example_data/snippets/2_physical_bk4748.yaml")
-# PhysicalLayer.save(buelten, "example_data/snippets/2_physical_buelten.yaml")
-# PhysicalLayer.save(schleinitz, "example_data/snippets/2_physical_schleinitz.yaml")
+# PhysicalLayer.save(rebenau, "data/snippets/2_physical_rebenau.yaml")
+# PhysicalLayer.save(bk4142, "data/snippets/2_physical_bk4142.yaml")
+# PhysicalLayer.save(pockelsdorf, "data/snippets/2_physical_pockelsdorf.yaml")
+# PhysicalLayer.save(bk4748, "data/snippets/2_physical_bk4748.yaml")
+# PhysicalLayer.save(buelten, "data/snippets/2_physical_buelten.yaml")
+# PhysicalLayer.save(schleinitz, "data/snippets/2_physical_schleinitz.yaml")
 
 
 # # level mileage to the same of bk4142, bk4748 and pockelsdorf
@@ -90,6 +90,6 @@ MetaGraphs.set_prop!(physicalLayer, edge, :base_ref, "buelten_to_schleinitz")
 MetaGraphs.set_prop!(physicalLayer, edge, :network_ref, "XBU_XSZ_2")
 
 # save new graph
-PhysicalLayer.save(physicalLayer, "example_data/layer/2_physical.yaml")
+PhysicalLayer.save(physicalLayer, "data/layer/2_physical.yaml")
 
 end # module TransformPhysicalLayer

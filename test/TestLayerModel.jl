@@ -23,28 +23,28 @@ using Test
 
 module TestLayerModel
 
-@time baseLayer = BaseLayer.load("example_data/layer/0_base.yaml")
-@time networkLayer = NetworkLayer.load("example_data/layer/1_network.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/layer/2_physical.yaml")
+@time baseLayer = BaseLayer.load("data/layer/0_base.yaml")
+@time networkLayer = NetworkLayer.load("data/layer/1_network.yaml")
+@time physicalLayer = PhysicalLayer.load("data/layer/2_physical.yaml")
 
 ### test files:
-@time networkLayer = NetworkLayer.load("example_data/snippets/selective_protective_point.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/selective_protective_point.yaml")
+@time networkLayer = NetworkLayer.load("data/snippets/selective_protective_point.yaml")
+@time physicalLayer = PhysicalLayer.load("data/snippets/selective_protective_point.yaml")
 #
-@time networkLayer = NetworkLayer.load("example_data/snippets/track.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/track.yaml")
+@time networkLayer = NetworkLayer.load("data/snippets/track.yaml")
+@time physicalLayer = PhysicalLayer.load("data/snippets/track.yaml")
 #
 # test turnout/corssing information for links
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/turnout.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/crossing.yaml")
+@time physicalLayer = PhysicalLayer.load("data/snippets/turnout.yaml")
+@time physicalLayer = PhysicalLayer.load("data/snippets/crossing.yaml")
 #
-@time networkLayer = NetworkLayer.load("example_data/snippets/junction2.yaml")
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/junction2.yaml")
+@time networkLayer = NetworkLayer.load("data/snippets/junction2.yaml")
+@time physicalLayer = PhysicalLayer.load("data/snippets/junction2.yaml")
 #
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/double_crossing.yaml")
+@time physicalLayer = PhysicalLayer.load("data/snippets/double_crossing.yaml")
 @time pathtab = PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2","E3"], ["E4","E5","E6"])
 #
-@time physicalLayer = PhysicalLayer.load("example_data/snippets/single_slip_turnout.yaml")
+@time physicalLayer = PhysicalLayer.load("data/snippets/single_slip_turnout.yaml")
 @time pathtab = PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2"], ["E3","E4"])
 
 # test function add_junction_paths!

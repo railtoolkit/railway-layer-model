@@ -11,12 +11,12 @@ import .ChangeTurnoutModel
 module TransformTurnoutModel
 #
 # convert from old to new turnout model
-ChangeTurnoutModel.replaceModel!("example_data/snippets/junction1.yaml")
-ChangeTurnoutModel.replaceModel!("example_data/snippets/junction2.yaml")
-ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_buelten.yaml")
-ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_pockelsdorf.yaml")
-ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_rebenau.yaml")
-ChangeTurnoutModel.replaceModel!("example_data/snippets/2_physical_schleinitz.yaml")
-ChangeTurnoutModel.replaceModel!("example_data/layer/2_physical.yaml")
+ChangeTurnoutModel.replaceModel!("data/snippets/junction1.yaml")
+ChangeTurnoutModel.replaceModel!("data/snippets/junction2.yaml")
+ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_buelten.yaml")
+ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_pockelsdorf.yaml")
+ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_rebenau.yaml")
+ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_schleinitz.yaml")
+ChangeTurnoutModel.replaceModel!("data/layer/2_physical.yaml")
 
 end # module TransformTurnoutModel

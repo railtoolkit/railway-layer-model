@@ -25,10 +25,10 @@ destination = ("XR_4", "H4_1")
 #check speed an gradient from speed layer
 
 
-baseLayer = BaseLayer.load("example_data/layer/0_base.yaml")
-networkLayer = NetworkLayer.load("example_data/layer/1_network.yaml")
+baseLayer = BaseLayer.load("data/layer/0_base.yaml")
+networkLayer = NetworkLayer.load("data/layer/1_network.yaml")
 
-physicalLayer = PhysicalLayer.load("example_data/snippets/double_crossing.yaml")
+physicalLayer = PhysicalLayer.load("data/snippets/double_crossing.yaml")
 pathtab = PhysicalLayer.physicalPaths(physicalLayer, ["E1","E2","E3"], ["E4","E5","E6"])
 
 end # module TestSpeedInformatiion
