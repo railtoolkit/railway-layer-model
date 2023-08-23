@@ -37,7 +37,7 @@ physical:
       class: end
       pos:
         "line0": 0.850 # in km
-  tracksections:
+  segments:
     - id: a
       source: "1"
       target: "2"

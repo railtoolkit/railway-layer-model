@@ -30,7 +30,7 @@ physical:
       type: "sign"
       class: "signal"
       direction: "backward"
-  tracksections:
+  segments:
     - base_ref: "rebenau_to_pockelsdorf"
       network_ref: "XR_XPD"
       id: "a2844695-205f-40d4-a24a-e3e237ef7c96"

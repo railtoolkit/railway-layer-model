@@ -19,7 +19,7 @@ Returns a MetaGraph object.
 function load(file_path)
 
   graph_name = "base"
-  node_name  = "stations"
+  node_name  = "locations"
   edge_name  = "relations"
 
   return LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
@@ -33,7 +33,7 @@ Takes a Base Layer MetaGraph object and converts it to a YAML-file.
 function save(baseLayer, file_path)
 
   graph_name = "base"
-  node_name  = "stations"
+  node_name  = "locations"
   edge_name  = "relations"
 
   LMcore.saveGraph(baseLayer, file_path, graph_name, node_name, edge_name)

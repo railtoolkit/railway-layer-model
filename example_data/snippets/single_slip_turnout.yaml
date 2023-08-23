@@ -5,52 +5,70 @@ physical:
   elements:
     - id: E1
       class: end
+      kind: continuing
       pos:
-        "line0": 0.000
+        - line: "line0"
+          mileage: 0.000
     - id: E2
       class: end
+      kind: continuing
       pos:
-        "line0": 0.000
-    - id: W1
+        - line: "line0"
+          mileage: 0.000
+    - id: T1
       class: branching
       branches:
-        - id: straight1
+        - id: straight
           path: [a,d]
-          speed: .inf
+          speed:
+            - name: default
+              parent: null
+              speed_limit: .inf
         - id: straight2
           path: [b,c]
-          speed: .inf
+          speed:
+            - name: default
+              parent: null
+              speed_limit: .inf
         - id: right
           path: [b,d]
-          speed: .inf
+          speed:
+            - name: default
+              parent: null
+              speed_limit: 60.0
       pos:
-        "line0": 0.250
+        - line: "line0"
+          mileage: 0.250
     - id: E3
       class: end
+      kind: continuing
       pos:
-        "line0": 0.500
+        - line: "line0"
+          mileage: 0.500
     - id: E4
       class: end
+      kind: continuing
       pos:
-        "line0": 0.500
-  tracksections:
+        - line: "line0"
+          mileage: 0.500
+  segments:
     - id: a
       source: E1
-      target: W1
+      target: T1
       start: 0.000
       end: 0.250
     - id: b
       source: E2
-      target: W1
+      target: T1
       start: 0.000
       end: 0.250
     - id: c
-      source: W1
+      source: T1
       target: E3
       start: 0.250
       end: 0.500
     - id: d
-      source: W1
+      source: T1
       target: E4
       start: 0.250
       end: 0.500

@@ -1,7 +1,7 @@
 # base layer
 
-  *  stations, connections & locations
-    * stations as vertex and connections as edges of a graph
+  *  locations, connections & locations
+    * locations as vertex and connections as edges of a graph
     * locations the mileage of lines
     * redefined "lines" into "locations"
   * a station with multiple parts can be grouped together
@@ -11,7 +11,7 @@
   * simplify network layer with junction as vertex and link as edges (directed graph)
     * renamed "nodes" to "junctions and "connections" to "links"
     * network node either "in" or "out"
-    * links - can have multiple tracks, track sections or train berths
+    * links - can have multiple tracks, track segments or train berths
     * junction->track: is a track reachable? substitutability/vertretbarkeit? -> solved in ResourceLayer (see [8])
     *  -> clustering of track berth in resource layer (see [8])
   * junction border is a class "sign" from physical layer
@@ -32,9 +32,9 @@
   * differentiating between junctions and links from network layer
   * links from network layer git type:
     * "site" and "passage" as list in resource layer
-  * composing larger area stations with different sites: e.g. Okerbach or divide Rebenau in passenger and freight site
-  * borders by clearing points -> tracksections from physical layer
-  * "virtual" smaller 'tracksections/physical layer' (e.g. 50 m) to accompany Moving Block with virtual blocks for transit layer and interlocking layer
+  * composing larger area locations with different sites: e.g. Okerbach or divide Rebenau in passenger and freight site
+  * borders by clearing points -> segments from physical layer
+  * "virtual" smaller 'segments/physical layer' (e.g. 50 m) to accompany Moving Block with virtual blocks for transit layer and interlocking layer
   * [8] clustering of track berth for properties("vertretbarkeit") and naming for passengers
     * sets/ group of tracks
   

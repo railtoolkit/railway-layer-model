@@ -34,7 +34,7 @@ physical:
           mileage: 16.63
         - line: "9724"
           mileage: 0.891
-  tracksections:
+  segments:
     - length: 0.038
       name: "W13_1"
       base_ref: "XR"

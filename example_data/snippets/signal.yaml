@@ -5,21 +5,24 @@ physical:
   elements:
     - id: E1
       class: end
+      kind: continuing
       pos:
-        "line0": 0.000
+      - line: "line0"
+        mileage: 0.000
     - id: S1
       class: sign
       kind: signal
       direction: forward
-      overlaps: #todo
-      routes: #todo
       pos:
-        "line0": 0.250
+      - line: "line0"
+        mileage: 0.250
     - id: E2
       class: end
+      kind: continuing
       pos:
-        "line0": 0.500
-  tracksections:
+      - line: "line0"
+        mileage: 0.500
+  segments:
     - id: a
       source: E1
       target: S1

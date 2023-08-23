@@ -3565,7 +3565,7 @@ physical:
       class: "end"
       name: "E_XSBG_2"
       kind: "continuing"
-  tracksections:
+  segments:
     - base_ref: "XR"
       id: "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
       name: "W7_1"

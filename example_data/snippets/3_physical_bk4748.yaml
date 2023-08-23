@@ -30,7 +30,7 @@ physical:
       type: "sign"
       class: "signal"
       direction: "backward"
-  tracksections:
+  segments:
     - name: "147"
       base_ref: "pockelsdorf_to_buelten"
       network_ref: XPD_XBU

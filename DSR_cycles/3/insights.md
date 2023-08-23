@@ -1,6 +1,6 @@
 # network layer
 
-  * tracks - can have multiple track sections or train berths
+  * tracks - can have multiple track segments or train berths
   * junctions definied as either the american Interlocking limit by NORAC:
     "Interlocking limit: The tracks between the opposing home signals of an interlocking. - Home Signal: A fixed signal governing entrance to an interlocking or controlled point."
     or by Vakhtel:2002 "Gesamtfahrstraßenknoten"

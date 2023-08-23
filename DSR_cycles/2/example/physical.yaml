@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
 physical:
-  tracksections:
+  segments:
     - length: 0.0
       name: "105_5"
       base_ref: "XR"

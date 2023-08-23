@@ -16,7 +16,7 @@ physical:
       class: end
       pos:
         "line0": 0.200
-  tracksections:
+  segments:
     - id: a
       source: E1
       target: D1

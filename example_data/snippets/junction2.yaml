@@ -13,7 +13,7 @@ network:
   id: "network"
 physical:
   name: "junction case 2"
-  tracksections:
+  segments:
     - length: 0.2
       source: "1"
       id: "a"

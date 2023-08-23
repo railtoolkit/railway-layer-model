@@ -11,7 +11,10 @@ using YAML, DataFrames
 
 include("LMcore.jl")
 
-export load, allowanceTable, cutAllowanceTable, joinAllowanceTable, curvatureTable, cutCurvatureTable, joinCurvatureTable, getTrack
+export load, save, getTrack
+export allowanceTable, cutAllowanceTable!, joinAllowanceTable
+export gradientTable, cutGradientTable!, joinGradientTable
+export curvatureTable, cutCurvatureTable!, joinCurvatureTable
 
 # ===========================
 """
@@ -161,7 +164,8 @@ Takes a Dict with radius_changes and converts it to a DataFrame for CSV export
 function curvatureTable(speedprofile_layer, id)
 
   radius_changes = getTrack(speedprofile_layer, id)["radius_changes"]
-  df = DataFrame(Mileage=Real[], Curvature=Union{Missing, Real}[], Class=String[], Track_ID=String[])
+  df = DataFrame(Mileage=Real[], Radius=Union{Missing, Real}[], Curvature=Union{Missing, Real}[], Class=Union{Missing, String}[], Type=Union{Missing, String}[], Track_ID=String[])
+  previous_radius = missing
   previous_curvature = missing
   previous_class = "transition curve"
 
@@ -169,13 +173,15 @@ function curvatureTable(speedprofile_layer, id)
 
     mileage = radius_change["pos"][1]["mileage"]
 
+    haskey(radius_change, "type")   ? type   = radius_change["type"]   : type = missing
+
     if haskey(radius_change, "radius")
       radius = radius_change["radius"]
       radius isa Number ? nothing : radius = parse(Float64,radius)
-      curvature = 1000.0 / radius
     else
-      curvature = 0.0 # default
+      radius = Inf # default
     end
+    curvature = 1000.0 / radius
 
     if radius_change["class"] == "const"
       if curvature == 0
@@ -184,16 +190,17 @@ function curvatureTable(speedprofile_layer, id)
         class = "curve"
       end
       if previous_class == "transition curve" || previous_class == class
-        push!(df, (mileage, curvature, class, id))
+        push!(df, Dict(:Mileage => mileage, :Radius => radius, :Curvature => curvature, :Class => class, :Type => type, :Track_ID => id))
       else
-        push!(df, (mileage, previous_curvature, "(stub)", id))
-        push!(df, (mileage, curvature, class, id))
+        push!(df, Dict(:Mileage => mileage, :Radius => previous_radius, :Curvature => previous_curvature, :Class => "(stub)", :Type => type, :Track_ID => id))
+        push!(df, Dict(:Mileage => mileage, :Radius => radius, :Curvature => curvature, :Class => class, :Type => type, :Track_ID => id))
       end
     else
       class = "transition curve"
-      push!(df, (mileage, previous_curvature, class, id))
+      push!(df, Dict(:Mileage => mileage, :Radius => previous_radius, :Curvature => previous_curvature, :Class => class, :Type => type, :Track_ID => id))
     end
 
+    previous_radius = radius
     previous_curvature = curvature
     previous_class = class
 
@@ -209,15 +216,19 @@ function cutCurvatureTable!(df, start_mileage, end_mileage)
   filter!(:Mileage => n -> n >= start_mileage && n <= end_mileage, df)
   if ! isempty(upper)
     upper_curvature = last(upper)[:Curvature]
+    upper_radius = last(upper)[:Radius]
     upper_class = last(upper)[:Class]
+    upper_type = last(upper)[:Type]
     upper_id = last(upper)[:Track_ID]
-    pushfirst!(df, (start_mileage, upper_curvature, upper_class, upper_id))
+    pushfirst!(df, Dict(:Mileage => start_mileage, :Curvature => upper_curvature, :Class => upper_class, :Type => upper_type, :Track_ID => upper_id))
   end
   if ! (last(df)[:Mileage] == end_mileage)
     lower_curvature = last(df)[:Curvature]
+    lower_radius = last(df)[:Radius]
     lower_class = last(df)[:Class]
+    lower_type = last(df)[:Type]
     lower_id = last(df)[:Track_ID]
-    push!(df, (end_mileage, lower_curvature, lower_class, lower_id))
+    push!(df, Dict(:Mileage => end_mileage, :Curvature => lower_curvature, :Class => lower_class, :Type => lower_type, :Track_ID => lower_id))
   end
 
 end

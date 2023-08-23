@@ -5,50 +5,66 @@ physical:
   elements:
     - id: E1
       class: end
+      kind: continuing
       pos:
-        "line0": 0.000
+      - line: "line0"
+        mileage: 0.000
     - id: E2
       class: end
+      kind: continuing
       pos:
-        "line0": 0.000
-    - id: K1
+      - line: "line0"
+        mileage:  0.000
+    - id: X1
       class: branching
+      kind: diamond crossing
       branches:
-        - id: straight1
+        - id: straight
           path: [a,d]
-          speed: .inf
+          speed:
+            - name: default
+              parent: null
+              speed_limit: .inf
         - id: straight2
           path: [b,c]
-          speed: .inf
-      specimen: 500-1 # kind in katalog
+          speed:
+            - name: default
+              parent: null
+              speed_limit: .inf
+      specimen: 500-1 # katalog
       pos:
-        "line0": 0.250
+      - line: "line0"
+        mileage: 0.250
     - id: E3
       class: end
+      kind: continuing
       pos:
-        "line0": 0.500
+      - line: "line0"
+        mileage: 0.500
     - id: E4
       class: end
+      kind: continuing
       pos:
-        "line0": 0.500
-  tracksections:
+      - line: "line0"
+        mileage: 0.500
+  segments:
     - id: a
       source: E1
-      target: K1
+      target: X1
       start: 0.000
       end: 0.250
     - id: b
       source: E2
-      target: K1
+      target: X1
       start: 0.000
       end: 0.250
     - id: c
-      source: K1
+      source: X1
       target: E3
       start: 0.250
       end: 0.500
     - id: d
-      source: K1
+      source: X1
       target: E4
       start: 0.250
       end: 0.500

@@ -1,5 +1,5 @@
 {
-  "$id": "https://railtoolkit.org/layer-model/DSR_cycles/1/schema/layer_model.json",
+  "$id": "https://railtoolkit.org/layer-model/DSR_cycles/5/schema/layer_model.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Railway Layer Model - 5. DSR cycle",
   "description":
@@ -12,7 +12,7 @@
     {"required": [ "speed" ] },
     {"required": [ "interlocking" ] }
   ],
-  "definitions": {
+  "$defs": {
     "id": {
       "type": "string",
       "description": "might be a UUID or something similar"
@@ -72,13 +72,13 @@
       "description": "macroscopic connections & network access",
       "properties": {
         "name": { "type": "string" },
-        "id": { "$ref": "#/definitions/id" },
-        "stations": {
+        "id": { "$ref": "#/$defs/id" },
+        "locations": {
           "type": "array",
           "items": {
             "type": "object",
             "properties": {
-              "id": { "$ref": "#/definitions/id" },
+              "id": { "$ref": "#/$defs/id" },
               "name": { "type": "string" },
               "plot_coord": {
                 "type": "array",
@@ -88,7 +88,7 @@
                 "type": "array",
                 "items": {}
               },
-              "pos": { "$ref": "#/definitions/line_position" }
+              "pos": { "$ref": "#/$defs/line_position" }
             },
             "required": [ "id", "name" ]
           }
@@ -112,7 +112,7 @@
                 "description": "$id of a station",
                 "type": "string"
               },
-              "length": { "$ref": "#/definitions/length" }
+              "length": { "$ref": "#/$defs/length" }
             },
             "required": [
               "source",
@@ -127,14 +127,14 @@
             "type": "object",
             "properties": {
               "name": { "type": "string" },
-              "id": { "$ref": "#/definitions/id" },
+              "id": { "$ref": "#/$defs/id" },
               "tracks": {
                 "type": "array",
                 "items": {}
               },
               "start": { "type": "number" },
               "end": { "type": "number" },
-              "stations": {
+              "locations": {
                 "type": "array",
                 "items": {}
               }
@@ -143,7 +143,7 @@
           }
         }
       },
-      "required": [ "stations", "lines" ]
+      "required": [ "locations", "lines" ]
     },
     "network": {
       "type": "object",
@@ -152,15 +152,15 @@
       "required": [ "nodes" ],
       "properties": {
         "name": { "type": "string" },
-        "id": { "$ref": "#/definitions/id" },
+        "id": { "$ref": "#/$defs/id" },
         "nodes": {
           "type": "array",
           "items": {
             "type": "object",
             "required": [ "id", "base_ref", "type" ],
             "properties": {
-              "id": { "$ref": "#/definitions/id" },
-              "base_ref": { "$ref": "#/definitions/base_reference" },
+              "id": { "$ref": "#/$defs/id" },
+              "base_ref": { "$ref": "#/$defs/base_reference" },
               "type": {
                 "type": "string",
                 "enum": [ "track", "junction" ]
@@ -179,15 +179,15 @@
                         "properties": {
                           "previous_node": { "type": "string" },
                           "direction": {
-                            "$ref": "#/definitions/direction",
+                            "$ref": "#/$defs/direction",
                             "default": "forward"
                           },
                           "limit": {
                             "type": "object",
                             "required": [ "name" ],
                             "properties": {
-                              "name": { "$ref": "#/definitions/name" },
-                              "physical_ref": { "$ref": "#/definitions/physical_reference" }
+                              "name": { "$ref": "#/$defs/name" },
+                              "physical_ref": { "$ref": "#/$defs/physical_reference" }
                             }
                           }
                         }
@@ -201,15 +201,15 @@
                         "properties": {
                           "next_node": { "type": "string" },
                           "direction": {
-                            "$ref": "#/definitions/direction",
+                            "$ref": "#/$defs/direction",
                             "default": "backward"
                           },
                           "limit": {
                             "type": "object",
                             "required": [ "name" ],
                             "properties": {
-                              "name": { "$ref": "#/definitions/name" },
-                              "physical_ref": { "$ref": "#/definitions/physical_reference" }
+                              "name": { "$ref": "#/$defs/name" },
+                              "physical_ref": { "$ref": "#/$defs/physical_reference" }
                             }
                           }
                         }
@@ -228,7 +228,7 @@
             "type": "object",
             "required": [ "id", "source", "target" ],
             "properties": {
-              "id": { "$ref": "#/definitions/id" },
+              "id": { "$ref": "#/$defs/id" },
               "source": {
                 "description": "$id of a node",
                 "type": "string"
@@ -247,7 +247,7 @@
       "type": "object",
       "description": "microscopic connections & topology",
       "properties": {
-        "id": { "$ref": "#/definitions/id" },
+        "id": { "$ref": "#/$defs/id" },
         "elements": {
           "type": "array",
           "items": {
@@ -255,10 +255,10 @@
             "required": [ "name", "class", "kind" ],
             "properties": {
               "name": { "type": "string" },
-              "base_ref": { "$ref": "#/definitions/base_reference" },
-              "network_ref": { "$ref": "#/definitions/network_reference" },
-              "id": { "$ref": "#/definitions/id" },
-              "pos": { "$ref": "#/definitions/line_position" },
+              "base_ref": { "$ref": "#/$defs/base_reference" },
+              "network_ref": { "$ref": "#/$defs/network_reference" },
+              "id": { "$ref": "#/$defs/id" },
+              "pos": { "$ref": "#/$defs/line_position" },
               "class": { 
                 "type": "string",
                 "enum": [ "berth", "sign", "branching", "trap", "detector", "end" ]
@@ -271,7 +271,7 @@
                 "then": {
                   "properties": {
                     "kind": { "type": "string", "enum": ["end platform", "end usable length"] },
-                    "direction": { "$ref": "#/definitions/direction" }
+                    "direction": { "$ref": "#/$defs/direction" }
                   }
                 }
               }, {
@@ -279,7 +279,7 @@
                 "then": {
                   "properties": {
                     "kind": { "type": "string", "enum": ["board", "signal"] },
-                    "direction": { "$ref": "#/definitions/direction" }
+                    "direction": { "$ref": "#/$defs/direction" }
                   }
                 }
               }, {
@@ -287,7 +287,7 @@
                 "then": {
                   "properties": {
                     "kind": { "type": "string", "enum": ["derailer", "points"] },
-                    "direction": { "$ref": "#/definitions/direction" }
+                    "direction": { "$ref": "#/$defs/direction" }
                   }
                 }
               }, {
@@ -304,17 +304,17 @@
                           "path" 
                         ],
                         "properties": {
-                          "name": { "$ref": "#/definitions/switch_branches" },
+                          "name": { "$ref": "#/$defs/switch_branches" },
                           "path": {
                             "type": "array",
                             "maxItems" : 2,
                             "minItems" : 2,
                             "items": {
-                              "$ref": "#/definitions/id",
+                              "$ref": "#/$defs/id",
                               "description": "tracksection ID"
                             }
                           },
-                          "speed": { "$ref": "#/definitions/velocity" }
+                          "speed": { "$ref": "#/$defs/velocity" }
                         }
                       }
                     }
@@ -325,7 +325,7 @@
                 "then": {
                   "properties": {
                     "kind": { "type": "string", "enum": ["clearing point", "balise"] },
-                    "direction": { "$ref": "#/definitions/direction" }
+                    "direction": { "$ref": "#/$defs/direction" }
                   }
                 }
               }, {
@@ -339,7 +339,7 @@
             ]
           }
         },
-        "tracksections": {
+        "segments": {
           "type": "array",
           "items": {
             "type": "object",
@@ -350,15 +350,15 @@
             ],
             "properties": {
               "name": { "type": "string" },
-              "id": { "$ref": "#/definitions/id" },
-              "length": { "$ref": "#/definitions/length" },
-              "base_ref": { "$ref": "#/definitions/base_reference" },
+              "id": { "$ref": "#/$defs/id" },
+              "length": { "$ref": "#/$defs/length" },
+              "base_ref": { "$ref": "#/$defs/base_reference" },
               "source": {
-                "$ref": "#/definitions/id",
+                "$ref": "#/$defs/id",
                 "description": "element ID"
               },
               "target": {
-                "$ref": "#/definitions/id",
+                "$ref": "#/$defs/id",
                 "description": "element ID"
               }
             }
@@ -383,11 +383,11 @@
           "track": { "type": "string" },
           "start": { "type": "number" },
           "end": { "type": "number" },
-          "direction": { "$ref": "#/definitions/direction" },
-          "id": { "$ref": "#/definitions/id" },
+          "direction": { "$ref": "#/$defs/direction" },
+          "id": { "$ref": "#/$defs/id" },
           "path": {
             "type": "array",
-            "items": { "$ref": "#/definitions/network_reference" }
+            "items": { "$ref": "#/$defs/network_reference" }
           },
           "allowance": {
             "type": "array",
@@ -399,8 +399,8 @@
               "title": "A Schema",
               "required": [ "pos", "vMax" ],
               "properties": {
-                "pos": { "$ref": "#/definitions/line_position" },
-                "vMax": { "$ref": "#/definitions/velocity" }
+                "pos": { "$ref": "#/$defs/line_position" },
+                "vMax": { "$ref": "#/$defs/velocity" }
               }
             }
           },
@@ -410,7 +410,7 @@
               "type": "object",
               "required": [ "pos", "slope", "elevation" ],
               "properties": {
-                "pos": { "$ref": "#/definitions/line_position" },
+                "pos": { "$ref": "#/$defs/line_position" },
                 "slope": {
                   "type": "number",
                   "default": 0.0,
@@ -438,7 +438,7 @@
               "title": "A Schema",
               "required": [ "pos", "class" ],
               "properties": {
-                "pos": { "$ref": "#/definitions/line_position" },
+                "pos": { "$ref": "#/$defs/line_position" },
                 "class": {
                   "type": "string",
                   "enum": [ "const", "varying" ]
@@ -483,8 +483,8 @@
         "required": [ "physical_ref", "network_ref", "overlaps", "routes" ],
         "properties": {
           "entrance_name": { "type": "string" },
-          "physical_ref": { "$ref": "#/definitions/physical_reference" },
-          "network_ref": { "$ref": "#/definitions/network_reference" },
+          "physical_ref": { "$ref": "#/$defs/physical_reference" },
+          "network_ref": { "$ref": "#/$defs/network_reference" },
           "overlaps": {
             "type": "array",
             "items": {
@@ -493,7 +493,7 @@
               "required": [ "id", "end" ],
               "properties": {
                 "id": {
-                  "$ref": "#/definitions/id",
+                  "$ref": "#/$defs/id",
                   "default": "main",
                   "description": "id for the overlap to select"
                 },
@@ -503,8 +503,8 @@
                     "type": "object",
                     "required": [ "physical_ref" ],
                     "properties": {
-                      "name": { "$ref": "#/definitions/name" },
-                      "physical_ref": { "$ref": "#/definitions/physical_reference" }
+                      "name": { "$ref": "#/$defs/name" },
+                      "physical_ref": { "$ref": "#/$defs/physical_reference" }
                     }
                   }
                 },
@@ -523,7 +523,7 @@
                         "type": "string",
                         "title": "The name Schema"
                       },
-                      "physical_ref": { "$ref": "#/definitions/physical_reference" },
+                      "physical_ref": { "$ref": "#/$defs/physical_reference" },
                       "branch": {
                         "type": "string"
                       }
@@ -545,8 +545,8 @@
                         "title": "A Schema",
                         "required": [ "physical_ref", "branches" ],
                         "properties": {
-                          "name": { "$ref": "#/definitions/name" },
-                          "physical_ref": { "$ref": "#/definitions/physical_reference" },
+                          "name": { "$ref": "#/$defs/name" },
+                          "physical_ref": { "$ref": "#/$defs/physical_reference" },
                           "branches": {
                             "type": "array",
                             "items": { "type": "string" }
@@ -560,14 +560,14 @@
                         "type": "object",
                         "required": [ "physical_ref" ],
                         "properties": {
-                          "name": { "$ref": "#/definitions/name" },
-                          "physical_ref": { "$ref": "#/definitions/physical_reference" }
+                          "name": { "$ref": "#/$defs/name" },
+                          "physical_ref": { "$ref": "#/$defs/physical_reference" }
                         }
                       }
                     }
                   }
                 },
-                "speed_restriction": { "$ref": "#/definitions/velocity" }
+                "speed_restriction": { "$ref": "#/$defs/velocity" }
               }
             }
           },
@@ -579,20 +579,20 @@
               "required": [ "id", "target", "en_route", "flankprotection", "route_clearing" ],
               "properties": {
                 "id": {
-                  "$ref": "#/definitions/id",
+                  "$ref": "#/$defs/id",
                   "default": "main",
                   "description": "id for the route to select"
                 },
-                "target": { "$ref": "#/definitions/network_reference" },
+                "target": { "$ref": "#/$defs/network_reference" },
                 "en_route": {
                   "type": "array",
                   "items": {
                     "type": "object",
                     "required": [ "physical_ref", "branch" ],
                     "properties": {
-                      "name": { "$ref": "#/definitions/name" },
-                      "physical_ref": { "$ref": "#/definitions/physical_reference" },
-                      "branch": { "$ref": "#/definitions/switch_branches" }
+                      "name": { "$ref": "#/$defs/name" },
+                      "physical_ref": { "$ref": "#/$defs/physical_reference" },
+                      "branch": { "$ref": "#/$defs/switch_branches" }
                     }
                   }
                 },
@@ -610,11 +610,11 @@
                         "title": "A Schema",
                         "required": [ "physical_ref", "branches" ],
                         "properties": {
-                          "name": { "$ref": "#/definitions/name" },
-                          "physical_ref": { "$ref": "#/definitions/physical_reference" },
+                          "name": { "$ref": "#/$defs/name" },
+                          "physical_ref": { "$ref": "#/$defs/physical_reference" },
                           "branches": {
                             "type": "array",
-                            "items": { "$ref": "#/definitions/switch_branches" }
+                            "items": { "$ref": "#/$defs/switch_branches" }
                           }
                         }
                       }
@@ -625,8 +625,8 @@
                         "type": "object",
                         "required": [ "physical_ref" ],
                         "properties": {
-                          "name": { "$ref": "#/definitions/name" },
-                          "physical_ref": { "$ref": "#/definitions/physical_reference" }
+                          "name": { "$ref": "#/$defs/name" },
+                          "physical_ref": { "$ref": "#/$defs/physical_reference" }
                         }
                       }
                     }
@@ -636,8 +636,8 @@
                   "type": "object",
                   "required": [ "physical_ref" ],
                   "properties": {
-                    "name": { "$ref": "#/definitions/name" },
-                    "physical_ref": { "$ref": "#/definitions/physical_reference" }
+                    "name": { "$ref": "#/$defs/name" },
+                    "physical_ref": { "$ref": "#/$defs/physical_reference" }
                   }
                 }
               }

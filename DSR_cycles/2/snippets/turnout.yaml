@@ -23,7 +23,7 @@ physical:
         - line: "9721"
           mileage: 16.562
       specimen: 190-2
-  tracksections:
+  segments:
     - length: 0.056
       name: "W12_1"
       base_ref: "XR"

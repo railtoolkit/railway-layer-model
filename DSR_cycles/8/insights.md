@@ -2,7 +2,7 @@
 
   * joints/conjunctions of lines/locations needed
   * renaming "locations" into "lines"
-  * renaming "stations" into "locations"
+  * renaming "locations" into "locations"
 
 # physical layer
 

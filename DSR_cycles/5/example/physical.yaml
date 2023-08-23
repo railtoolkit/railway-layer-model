@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
 physical:
-  tracksections:
+  segments:
     - base_ref: "XPD"
       id: "ce3bc270-b5b4-4d72-8ca3-c907cddc591d"
       name: "101_1"

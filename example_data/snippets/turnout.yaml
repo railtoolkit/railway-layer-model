@@ -5,29 +5,43 @@ physical:
   elements:
     - id: E1
       class: end
+      kind: continuing
       pos:
-        "line0": 0.000
+      - line: "line0"
+        mileage: 0.000
     - id: W1
       class: branching
+      kind: turnout
       branches:
         - id: straight
           path: [a,b]
-          speed: .inf
+          speed:
+            - name: default
+              parent: null
+              speed_limit: .inf
         - id: left
           path: [a,c]
-          speed: 60
+          speed: 
+            - name: default
+              parent: null
+              speed_limit: 60.0
       pos:
-        "line0": 0.250
+      - line: "line0"
+        mileage: 0.250
       specimen: 500-1 # kind in katalog
     - id: E2
       class: end
+      kind: continuing
       pos:
-        "line0": 0.500
+      - line: "line0"
+        mileage: 0.500
     - id: E3
       class: end
+      kind: continuing
       pos:
-        "line0": 0.500
-  tracksections:
+      - line: "line0"
+        mileage: 0.500
+  segments:
     - id: a
       source: E1
       target: W1

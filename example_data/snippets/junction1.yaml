@@ -83,7 +83,7 @@ physical:
       pos:
         "line0": 0.5
       class: "end"
-  tracksections:
+  segments:
     - length: 0.2
       source: "1"
       id: "a"

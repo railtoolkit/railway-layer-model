@@ -1,4 +1,4 @@
-* übertragung von track geometry auf physical layer
+* track geometry in physical layer
 * function runtime()
 * function staticSpeedProfile()
 * function dynamicSpeedProfile()

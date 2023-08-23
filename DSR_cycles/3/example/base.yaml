@@ -3,7 +3,7 @@
 base:
   name: "Example Infrastructure"
   id: base
-  stations:
+  locations:
     - id: XWN
       name: Wenden
       plot_coord: [0.0,0.0]

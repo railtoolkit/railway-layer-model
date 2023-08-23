@@ -1,5 +1,5 @@
 physical:
-  tracksections:
+  segments:
     - length: 0.0
       name: "101_1"
       base_ref: "XPD"

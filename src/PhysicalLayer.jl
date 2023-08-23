@@ -24,7 +24,7 @@ function load(file_path)
 
   graph_name = "physical"
   node_name  = "elements"
-  edge_name  = "tracksections"
+  edge_name  = "segments"
 
   graph = LMcore.loadGraph(file_path, graph_name, node_name, edge_name)
 
@@ -66,7 +66,7 @@ function save(graph, file_path)
 
   graph_name = "physical"
   node_name  = "elements"
-  edge_name  = "tracksections"
+  edge_name  = "segments"
 
   # find type branching
   for node in MetaGraphs.filter_vertices(physicalLayer, :paths)

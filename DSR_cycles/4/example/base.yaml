@@ -3,7 +3,7 @@
 base:
   name: "Example Infrastructure"
   id: base
-  stations:
+  locations:
     - id: XWN
       name: Wenden
       plot_coord: [0.0,0.0]
@@ -101,13 +101,13 @@ base:
       tracks: [left,right]
       start: 7.7
       end: 42.0
-      stations: [XW,XR,XOG,XOP,XBU,XSZ,XSBG]
+      locations: [XW,XR,XOG,XOP,XBU,XSZ,XSBG]
     - name: Rebenau Buelten via Pockelsdorf
       id: "9724"
       tracks: [single]
       start: 0.0
       end: 18.9
-      stations: [XR,XPD,XBU]
+      locations: [XR,XPD,XBU]
     - name: Mittelstadt Pockelsdorf
       id: "9344"
       tracks: [single]
