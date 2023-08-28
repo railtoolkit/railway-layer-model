@@ -23,9 +23,9 @@ using Test
 
 module TestLayerModel
 
-@time baseLayer = BaseLayer.load("data/layer/0_base.yaml")
-@time networkLayer = NetworkLayer.load("data/layer/1_network.yaml")
-@time physicalLayer = PhysicalLayer.load("data/layer/2_physical.yaml")
+@time baseLayer = BaseLayer.load("data/layers/base.yaml")
+@time networkLayer = NetworkLayer.load("data/layers/network.yaml")
+@time physicalLayer = PhysicalLayer.load("data/layers/physical.yaml")
 
 ### test files:
 @time networkLayer = NetworkLayer.load("data/snippets/selective_protective_point.yaml")

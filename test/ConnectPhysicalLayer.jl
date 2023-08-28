@@ -90,6 +90,6 @@ MetaGraphs.set_prop!(physicalLayer, edge, :base_ref, "buelten_to_schleinitz")
 MetaGraphs.set_prop!(physicalLayer, edge, :network_ref, "XBU_XSZ_2")
 
 # save new graph
-PhysicalLayer.save(physicalLayer, "data/layer/2_physical.yaml")
+PhysicalLayer.save(physicalLayer, "data/layers/physical.yaml")
 
 end # module TransformPhysicalLayer

@@ -30,14 +30,14 @@ import .TransitLayer
 include("../src/TransportLayer.jl")
 import .TransportLayer
 
-baseLayerFile = "data/layer/base.yaml"
-networkLayerFile = "data/layer/network.yaml"
-physicalLayerFile = "data/layer/physical.yaml"
-speedprofileLayerFile = "data/layer/speedprofile.yaml"
-interlockingLayerFile = "data/layer/interlocking.yaml"
-resourceLayerFile = "data/layer/resource.yaml"
-transitLayerFile = "data/layer/transit.yaml"
-tranportLayerFile = "data/layer/transport.yaml"
+baseLayerFile = "data/layers/base.yaml"
+networkLayerFile = "data/layers/network.yaml"
+physicalLayerFile = "data/layers/physical.yaml"
+speedprofileLayerFile = "data/layers/speedprofile.yaml"
+interlockingLayerFile = "data/layers/interlocking.yaml"
+resourceLayerFile = "data/layers/resource.yaml"
+transitLayerFile = "data/layers/transit.yaml"
+tranportLayerFile = "data/layers/transport.yaml"
 
 schemaFile = "schema/layer_model.json"
 validate(Schema(JSON.parsefile(schemaFile)), YAML.load(open(baseLayerFile)))

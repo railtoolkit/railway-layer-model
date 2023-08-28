@@ -17,6 +17,6 @@ ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_buelten.yaml")
 ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_pockelsdorf.yaml")
 ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_rebenau.yaml")
 ChangeTurnoutModel.replaceModel!("data/snippets/2_physical_schleinitz.yaml")
-ChangeTurnoutModel.replaceModel!("data/layer/2_physical.yaml")
+ChangeTurnoutModel.replaceModel!("data/layers/physical.yaml")
 
 end # module TransformTurnoutModel
