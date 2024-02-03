@@ -40,7 +40,7 @@ interlocking:
         en_route:
           - name: W1
             physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-            branch: left
+            branch: diverging
           - name: W2
             physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
             branch: straight
@@ -63,18 +63,18 @@ interlocking:
         en_route:
           - name: W1
             physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-            branch: left
+            branch: diverging
           - name: W2
             physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
-            branch: left
+            branch: diverging
         flankprotection:
           turnouts:
             - name: W3
               physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
-              branches: [ straight2, right ]
+              branches: [ straight2, diverging2 ]
             - name: W4
               physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-              branches: [ straight, left ] # dual protection point
+              branches: [ straight, diverging ] # dual protection point
           signals:
             - name: P2 # for dual protection point
               physical_ref: 1559135a-021c-4e24-a5c2-e8075bc4c4c5
@@ -96,15 +96,15 @@ interlocking:
         en_route:
           - name: W3
             physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
-            branch: right
+            branch: diverging2
         flankprotection: 
           turnouts:
             - name: W1
               physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-              branches: [ left ]
+              branches: [ diverging ]
             - name: W4
               physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-              branches: [ left, straight ] # dual protection point
+              branches: [ diverging, straight ] # dual protection point
           signals:
             - name: P2 # for dual protection point
               physical_ref: 1559135a-021c-4e24-a5c2-e8075bc4c4c5
@@ -119,15 +119,15 @@ interlocking:
             branch: straight2
           - name: W4
             physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-            branch: left
+            branch: diverging
         flankprotection: 
           turnouts:
             - name: W1
               physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-              branches: [ left ]
+              branches: [ diverging ]
             - name: W2
               physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
-              branches: [ left ]
+              branches: [ diverging ]
         route_clearing: 
           name: W4/G102
           physical_ref: 1e8df13d-567f-44ad-9563-3820ed0f57b6
@@ -152,19 +152,19 @@ interlocking:
           signals:
             - name: B
               physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
-      - id: left
+      - id: diverging
         end: 
           - name: G243/W3
             physical_ref: c514c6eb-404a-43a0-b99d-8a170668a755
         en_route:
           - name: W3
             physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
-            branch: right
+            branch: diverging2
         flankprotection:
           turnouts:
             - name: W1
               physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-              branches: [ left ]
+              branches: [ diverging ]
             - name: W4
               physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
               branches: [ straight ]
@@ -206,15 +206,15 @@ interlocking:
         en_route:
           - name: W3
             physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
-            branch: right
+            branch: diverging2
         flankprotection: 
           turnouts:
             - name: W1
               physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-              branches: [ left ]
+              branches: [ diverging ]
             - name: W4
               physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-              branches: [ straight, left ] # dual protection point
+              branches: [ straight, diverging ] # dual protection point
           signals:
             - name: B # for dual protection point
               physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
@@ -241,11 +241,11 @@ interlocking:
           turnouts:
             - name: W3
               physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
-              branches: [ straight, right ]
+              branches: [ straight, diverging2 ]
           signals:
             - name: P3
               physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
-      - id: left
+      - id: diverging
         end: 
           - name: G243/W3
             physical_ref: c514c6eb-404a-43a0-b99d-8a170668a755
@@ -255,15 +255,15 @@ interlocking:
             branch: straight2
           - name: W4
             physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-            branch: left
+            branch: diverging
         flankprotection:
           turnouts:
             - name: W1
               physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-              branches: [ left ]
+              branches: [ diverging ]
             - name: W2
               physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
-              branches: [ left ]
+              branches: [ diverging ]
           signals:
             - name: P1
               physical_ref: b361a3ee-5069-4569-872f-6f3642209fe8
@@ -281,7 +281,7 @@ interlocking:
         en_route:
           - name: W1
             physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-            branch: left
+            branch: diverging
           - name: W2
             physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
             branch: straight
@@ -292,7 +292,7 @@ interlocking:
           turnouts:
             - name: W3
               physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
-              branches: [ right ]
+              branches: [ diverging2 ]
           signals:
             - name: P3
               physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
@@ -307,15 +307,15 @@ interlocking:
             branch: straight2
           - name: W4
             physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-            branch: left
+            branch: diverging
         flankprotection: 
           turnouts:
             - name: W1
               physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-              branches: [ left ]
+              branches: [ diverging ]
             - name: W2
               physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
-              branches: [ left ]
+              branches: [ diverging ]
         route_clearing: 
           name: G243/W3
           physical_ref: eb954114-bb76-479f-96e6-1907c853299a
@@ -331,30 +331,30 @@ interlocking:
         en_route:
           - name: W2
             physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
-            branch: left
+            branch: diverging
         flankprotection:
           turnouts:
             - name: W4
               physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-              branches: [ left ]
+              branches: [ diverging ]
     routes:
       - id: main
         target: XR_XPD
         en_route:
           - name: W1
             physical_ref: 9df723f1-cd38-4418-95e0-b61091abcb13
-            branch: left
+            branch: diverging
           - name: W2
             physical_ref: 72512996-cd53-4049-8fa6-c41cc3dee301
-            branch: left
+            branch: diverging
         flankprotection:
           turnouts:
             - name: W3
               physical_ref: ab8e437d-278f-4da1-9ff0-628375c8db03
-              branches: [ straight2, right ]
+              branches: [ straight2, diverging2 ]
             - name: W4
               physical_ref: 1632b4a9-5a73-4653-a744-37045e198cef
-              branches: [ straight, left ] # dual protection point
+              branches: [ straight, diverging ] # dual protection point
           signals:
             - name: B # for dual protection point
               physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
@@ -383,18 +383,18 @@ interlocking:
             branch: straight2
           - name: W19
             physical_ref: cc611b72-50b6-4260-b81c-be3cd4cb727e
-            branch: left
+            branch: diverging
           - name: W20
             physical_ref: b6b0f3dd-4521-4962-9a65-70d9e74a75d6
-            branch: left
+            branch: diverging
         flankprotection:
           turnouts:
             - name: W13
               physical_ref: 9bf91c07-8b03-4294-b44c-d28de8e0f3d5
-              branches: [ straight, left ]
+              branches: [ straight, diverging ]
             - name: W15
               physical_ref: e444b175-2eff-4bd1-96c5-185ed4424f61
-              branches: [ right ]
+              branches: [ diverging2 ]
             - name: W17
               physical_ref: 0e202ec8-370e-4279-ba82-d53657190abe
               branches: [left ]
@@ -466,7 +466,7 @@ interlocking:
         en_route:
           - name: W101
             physical_ref: 5e45cc8a-8e4c-4928-9d32-0bf94562b14a
-            branch: left
+            branch: diverging
           - name: W102
             physical_ref: 34366cf4-7867-4e57-abce-f93b573dd3ed
             branch: straight
@@ -502,7 +502,7 @@ interlocking:
             branch: straight
           - name: W8
             physical_ref: 4d82a8d8-87b1-4800-bee4-0b7ee597a3a3
-            branch: right
+            branch: diverging2
         flankprotection:
           turnouts:
             - name: W1

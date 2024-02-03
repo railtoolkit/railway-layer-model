@@ -26,7 +26,7 @@
     },
     "switch_branches": {
       "type": "string",
-      "enum": [ "left", "right", "straight", "straight2" ]
+      "enum": [ "diverging", "diverging2", "straight", "straight2" ]
     },
     "mileage": {
       "type": "number",

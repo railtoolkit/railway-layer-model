@@ -939,12 +939,12 @@ physical:
       type: "detector"
     - name: "W7"
       branches:
-        - id: "left"
+        - id: diverging
           path:
             - "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
             - "81c8f580-840e-4682-ac8e-e338886a36a4"
           speed: 80
-        - id: "right"
+        - id: diverging2
           path:
             - "88a1cd4d-edbf-4875-a6e7-0f5e2cda948e"
             - "b448ec40-82c0-45dc-ad70-6cb087c4e868"
@@ -1059,12 +1059,12 @@ physical:
       type: "detector"
     - name: "W8"
       branches:
-        - id: "right1"
+        - id: diverging
           path:
             - "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
             - "181e892d-4dba-420b-8d2b-b202e0e4d8aa"
           speed: 160
-        - id: "right2"
+        - id: diverging2
           path:
             - "19e2f104-d1ab-4fee-b528-f431c0cfa12f"
             - "4a02cfc5-4f8a-4c1a-8ddc-31804496e2ba"
@@ -1119,12 +1119,12 @@ physical:
       type: "detector"
     - name: "W9"
       branches:
-        - id: "right"
+        - id: diverging2
           path:
             - "61bd1813-d8cf-4e40-81c9-aad713e5cb3b"
             - "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
           speed: 60
-        - id: "straight"
+        - id: straight
           path:
             - "f809f458-5a32-49ec-8ae7-f27a22ed30e3"
             - "0a3d882b-ed5d-4695-bb00-4a300d8bb29e"
@@ -1283,12 +1283,12 @@ physical:
       type: "detector"
     - name: "W15"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
             - "01be204c-08ad-4292-ba76-79b61ba189b0"
           speed: .inf
-        - id: "left"
+        - id: diverging
           path:
             - "925d9c4c-12a6-4e84-b11c-0c70be0af312"
             - "246048e1-cb84-4657-99b8-98bc3d6c14c7"
@@ -1323,12 +1323,12 @@ physical:
       type: "detector"
     - name: "W12"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "2501d609-0f92-4918-8442-b23df762b366"
             - "eab38d1e-32b1-4d47-b60b-e74ce67a55db"
           speed: .inf
-        - id: "left"
+        - id: diverging
           path:
             - "2501d609-0f92-4918-8442-b23df762b366"
             - "0f107da6-f8cb-4868-b686-1c053336b1d1"
@@ -1395,22 +1395,22 @@ physical:
       type: "detector"
     - name: "W13"
       branches:
-        - id: "straight1"
+        - id: straight
           path:
             - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
             - "6125547d-9d2d-4086-8898-16114f058550"
           speed: .inf
-        - id: "left"
+        - id: diverging
           path:
             - "02595aac-198b-404e-8a1c-10fda9d3ef2d"
             - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
           speed: 60
-        - id: "right"
+        - id: diverging2
           path:
             - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
             - "6125547d-9d2d-4086-8898-16114f058550"
           speed: 60
-        - id: "straight2"
+        - id: straight2
           path:
             - "e95ecc25-ad89-4dff-be84-689b657b8fcc"
             - "5e4ba8f0-5d8d-4b82-81fc-fedef2ea59d4"
@@ -1427,22 +1427,22 @@ physical:
       specimen: ~
     - name: "W14"
       branches:
-        - id: "straight1"
+        - id: straight
           path:
             - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
             - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
           speed: .inf
-        - id: "left"
+        - id: diverging
           path:
             - "1ea9e90c-61d4-4f06-8184-ef6e5b5cafa2"
             - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
           speed: 60
-        - id: "right"
+        - id: diverging2
           path:
             - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
             - "42d05546-05d2-4c7d-ad18-d7703bb9259e"
           speed: 60
-        - id: "straight2"
+        - id: straight2
           path:
             - "f492b6cf-97b9-4ba6-8e7a-17728e47891a"
             - "dcc02a80-c322-42db-9458-e8ccf613e7a0"
@@ -1457,12 +1457,12 @@ physical:
       specimen: ~
     - name: "K16"
       branches:
-        - id: "straight1"
+        - id: straight
           path:
             - "c446df42-516e-4cbd-8897-bf242bac1e4d"
             - "a040e061-0a6c-4a2e-8cbd-57dfab10b443"
           speed: .inf
-        - id: "straight2"
+        - id: straight2
           path:
             - "2db166ca-7913-4b3a-97d5-ab981cc34209"
             - "8337b3a5-29c2-441d-9232-ebdc8e14af07"
@@ -1517,22 +1517,22 @@ physical:
       type: "detector"
     - name: "W19"
       branches:
-        - id: "straight1"
+        - id: straight
           path:
             - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
             - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
           speed: .inf
-        - id: "left"
+        - id: diverging
           path:
             - "33ffa920-d7e3-4b34-b48c-29de65ebfe31"
             - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
           speed: 60
-        - id: "right"
+        - id: diverging2
           path:
             - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
             - "b58eb471-b63e-4021-8965-e7e8cc4e3369"
           speed: 60
-        - id: "straight2"
+        - id: straight2
           path:
             - "c578b1c0-f6b8-474b-8e88-3382ab31adf8"
             - "9c5169c5-4c03-472b-b6c5-45b58ab7cce4"
@@ -1579,12 +1579,12 @@ physical:
       type: "detector"
     - name: "W20"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "f39fcc72-c5ad-4df1-b2b1-b7744944c5c2"
             - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
           speed: .inf
-        - id: "left"
+        - id: diverging
           path:
             - "da26a3c4-8a53-4d43-a504-57206151a42d"
             - "bad685f6-d2f8-4ea9-bc14-efebbd19b793"
@@ -1789,12 +1789,12 @@ physical:
       type: "detector"
     - name: "W1"
       branches:
-        - id: "right"
+        - id: diverging2
           path:
             - "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
             - "86a25dce-af41-4d43-83d0-d9bc16f4f63d"
           speed: 200
-        - id: "left"
+        - id: diverging
           path:
             - "1c0eddcf-ac09-4c1b-bfde-5bcd0736be5e"
             - "975a55ac-301c-4221-9e44-c92869304025"
@@ -1829,12 +1829,12 @@ physical:
       type: "detector"
     - name: "W2"
       branches:
-        - id: "left1"
+        - id: diverging
           path:
             - "bedf4859-682d-4720-8800-0ba6d865acc9"
             - "52f4b921-81a0-4ea6-8e36-52a41f098d84"
           speed: 160
-        - id: "left2"
+        - id: diverging2
           path:
             - "853e8e62-5ccd-4d56-9301-edfe49b221a5"
             - "52f4b921-81a0-4ea6-8e36-52a41f098d84"
@@ -2013,12 +2013,12 @@ physical:
       type: "end"
     - name: "W3"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
             - "9fcda44e-017a-44db-a615-f182d06e23d3"
           speed: .inf
-        - id: "right"
+        - id: diverging2
           path:
             - "55e78766-2cd8-47e0-b81e-f27cbb5b708f"
             - "da07abe1-e40c-4115-84db-dff64b01ba8f"
@@ -2053,12 +2053,12 @@ physical:
       type: "detector"
     - name: "W4"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "89259aba-7a16-4ce7-ab35-d553843e548f"
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
           speed: .inf
-        - id: "right"
+        - id: diverging2
           path:
             - "c4a95b27-b5ba-4055-b349-e6246bee04c6"
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
@@ -2073,12 +2073,12 @@ physical:
       specimen: 300-1
     - name: "W5"
       branches:
-        - id: "left"
+        - id: diverging
           path:
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
             - "d3794520-9377-4fd9-98ac-c3fe9518673b"
           speed: 60
-        - id: "straight"
+        - id: straight
           path:
             - "7aa78cea-35a8-4cdf-a5a4-003b3ecbe898"
             - "3511c870-d8bd-4e40-b3f7-95e90391c40d"
@@ -2107,12 +2107,12 @@ physical:
       type: "detector"
     - name: "W6"
       branches:
-        - id: "right"
+        - id: diverging2
           path:
             - "9a8b9a4d-6a48-472e-b726-bea8ffdd835c"
             - "80755594-0760-44af-8082-69e5880e9a17"
           speed: 100
-        - id: "left"
+        - id: diverging
           path:
             - "25c65a85-7ead-4b6b-bea5-a00287940a66"
             - "80755594-0760-44af-8082-69e5880e9a17"
@@ -2129,12 +2129,12 @@ physical:
       specimen: 500-2
     - name: "W10"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "6d30e635-c33a-470c-816c-61844e528355"
             - "f2801dc8-7025-4157-9917-d809ea8f620b"
           speed: .inf
-        - id: "left"
+        - id: diverging
           path:
             - "6d30e635-c33a-470c-816c-61844e528355"
             - "2bcfa1ac-5cf8-43b6-9541-95438672ec12"
@@ -2196,12 +2196,12 @@ physical:
       type: "derailer"
     - name: "W11"
       branches:
-        - id: "left"
+        - id: diverging
           path:
             - "cebe90f8-8122-4883-9e94-3daa8960e4d2"
             - "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
           speed: 60
-        - id: "straight"
+        - id: straight
           path:
             - "6f7b125c-e706-41fd-9165-ed1719ab9fd9"
             - "3d9f7ef2-4aee-44c1-91c8-ada27920e98b"
@@ -2276,12 +2276,12 @@ physical:
       type: "detector"
     - name: "W17"
       branches:
-        - id: "left"
+        - id: diverging
           path:
             - "97292225-29c0-4899-a38b-b359f771ccdf"
             - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
           speed: 50
-        - id: "straight"
+        - id: straight
           path:
             - "9c5236c4-0099-4811-a7ee-5d16f82b00a7"
             - "a2e4edf7-0538-451c-bf88-dfa571aa3b09"
@@ -2306,12 +2306,12 @@ physical:
       type: "detector"
     - name: "W18"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "4ae249bc-a193-4c8f-b723-dbcf27bbcb5c"
             - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"
           speed: .inf
-        - id: "right"
+        - id: diverging2
           path:
             - "f6980045-b4cf-4cca-bf55-ae41163df70d"
             - "e254ad7f-57fd-40a0-bb35-bbb9c64fc886"

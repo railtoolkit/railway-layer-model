@@ -19,7 +19,7 @@ physical:
             - name: default
               parent: null
               speed_limit: .inf
-        - id: left
+        - id: diverging
           path: [a,c]
           speed: 
             - name: default

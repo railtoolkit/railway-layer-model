@@ -254,12 +254,12 @@ physical:
       type: "detector"
     - name: "W101"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "de75e438-11df-4439-9fac-6cc8927f3aed"
             - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
           speed: .inf
-        - id: "right"
+        - id: diverging2
           path:
             - "645435d1-e6b5-45df-9b51-bb2b42d3e5e4"
             - "98da089e-cbed-4783-9350-0bb97e4a9cc9"
@@ -287,12 +287,12 @@ physical:
       type: "detector"
     - name: "W102"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
             - "66d5fd8c-9ca0-4984-8dd2-97ac2f4e3941"
           speed: .inf
-        - id: "right"
+        - id: diverging2
           path:
             - "1b55e6ee-29f2-40c0-8044-c8b1b1cabc7f"
             - "ac58c309-a617-45dd-a0d6-4856379ff143"
@@ -316,12 +316,12 @@ physical:
       type: "detector"
     - name: "W103"
       branches:
-        - id: "straight"
+        - id: straight
           path:
             - "d95ce46a-597c-4b87-8cea-895ced2b8f5d"
             - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"
           speed: .inf
-        - id: "right"
+        - id: diverging2
           path:
             - "16d8c6b8-cc59-452a-8460-3782a940b059"
             - "ef1e8fd1-fe8d-409f-b8fe-0aab611d5aee"

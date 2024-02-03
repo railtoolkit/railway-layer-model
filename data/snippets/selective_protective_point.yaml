@@ -27,7 +27,7 @@ physical:
         - id: straight
           path: [a,b]
           speed: .inf
-        - id: left
+        - id: diverging
           path: [a,c]
           speed: 60
       pos:
@@ -35,10 +35,10 @@ physical:
     - id: W2
       class: branching
       branches:
-        - id: right
+        - id: diverging2
           path: [c,d]
           speed: 60
-        - id: left
+        - id: diverging
           path: [e,d]
           speed: 60
       pos:
@@ -49,7 +49,7 @@ physical:
         - id: straight
           path: [f,g]
           speed: .inf
-        - id: right
+        - id: diverging2
           path: [f,e]
           speed: 60
       pos:

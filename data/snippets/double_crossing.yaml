@@ -24,7 +24,7 @@ physical:
     - id: K1
       class: branching
       branches:
-        - id: straight1
+        - id: straight
           path: [b,g]
           speed: .inf
         - id: straight2
@@ -36,7 +36,7 @@ physical:
     - id: K2
       class: branching
       branches:
-        - id: straight1
+        - id: straight
           path: [a,f]
           speed: .inf
         - id: straight2
