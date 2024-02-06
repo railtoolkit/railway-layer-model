@@ -7,7 +7,7 @@ transport:
       startdate: "2022-12-12"
       enddate: "2023-12-10"
       bitmask: "1111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100111110011111001111100"
-  trainruns:
+  runs:
     - id: tr_passenger
       train_data: RB50-1 # from transit layer
       running_path: ## pre calculated
@@ -123,7 +123,7 @@ transport:
   services: # group of service lines
     - id: passenger_1
       name: Regio 1 (XR-XPD-XSZ)
-      trainrun: tr_passenger # id from trainruns
+      run: tr_passenger # id from runs
       period: tty2223 # id from periods
       type: passenger # cargo, internal, etc.
       roster_start: 06:10:00
@@ -132,7 +132,7 @@ transport:
       direction: forward
     - id: freight_1
       name: Freight 1 (XR-XPD-XSZ)
-      trainrun: tr_freight # id from trainruns
+      run: tr_freight # id from runs
       period: tty2223 # id from periods
       type: freight # cargo, internal, etc.
       roster_start: 06:00:00

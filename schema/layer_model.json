@@ -1023,7 +1023,7 @@
       "title": "transport layer",
       "description": "services, intervals, trains",
       "type": "object",
-      "required": [ "periods", "trainruns", "services", "trains" ],
+      "required": [ "periods", "runs", "services", "trains" ],
       "properties": {
         "periods": {
           "type": "array",
@@ -1044,7 +1044,7 @@
             }
           }
         },
-        "trainruns": {
+        "runs": {
           "type": "array",
           "items": {
             "type": "object",
@@ -1108,11 +1108,11 @@
           "items": {
             "type": "object",
             "title": "A Schema",
-            "required": [ "id", "name", "trainrun", "period", "type", "roster_start", "interval", "cycles", "direction" ],
+            "required": [ "id", "name", "run", "period", "type", "roster_start", "interval", "cycles", "direction" ],
             "properties": {
               "id": { "$ref": "#/$defs/id" },
               "name": { "type": "string" },
-              "trainrun": { "$ref": "#/$defs/id" },
+              "run": { "$ref": "#/$defs/id" },
               "period": { "$ref": "#/$defs/id" },
               "type": { "type": "string" },
               "roster_start": {

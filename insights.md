@@ -251,7 +251,7 @@
       * parameters for driving behaviour
   * route and overlap
     * test if two trains have a route conflict -> interlocking layer
-  * PESP (\cite{Liebchen:2007}) enabling vie the connections and trainruns
+  * PESP (\cite{Liebchen:2007}) enabling vie the connections and runs
   * run time checkpoints for start and stop at berth; for pass at leaving the signal
 
   

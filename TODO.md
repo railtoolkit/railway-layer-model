@@ -50,7 +50,7 @@
 
 * Transport Layer:
   * GTFS and NeTEx compatibility
-  * reference trainrun/service to Resource Layer via passage/site
+  * reference run/service to Resource Layer via passage/site
   * reference service to Resource Layer via berth
 
 

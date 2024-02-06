@@ -181,15 +181,15 @@ end
 
 function addTrain!(
     svt_plot::Makie.Figure,
-    trainrun::DataFrame,
+    run::DataFrame,
     blockingtimes::DataFrame=DataFrame();
     color = :blue,
     t_offset=0,
     s_offset=0
   )
   ## adding running graph
-  lines!(svt_plot[1,1], trainrun.s./1000, trainrun.v.*3.6, color = color)
-  lines!(svt_plot[2:4,1], trainrun.s./1000, (trainrun.t .+ t_offset)./60, color = color)
+  lines!(svt_plot[1,1], run.s./1000, run.v.*3.6, color = color)
+  lines!(svt_plot[2:4,1], run.s./1000, (run.t .+ t_offset)./60, color = color)
   ## adding blocking times
   for blockingtime in eachrow(blockingtimes)
     rect = Makie.Rect(blockingtime.s/1000,(blockingtime.t + t_offset)/60,blockingtime.vs/1000,blockingtime.vt/60)
