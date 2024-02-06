@@ -3,7 +3,7 @@
 ## code
 _ISC License_
 
-Copyright (c) 2018 - 2023, Martin Scheidt [m.scheidt@tu-bs.de].
+Copyright (c) 2018 - 2024, Martin Scheidt [m.scheidt@tu-bs.de].
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
@@ -29,4 +29,4 @@ Copyright (c) 2019, Jörn Pachl
 ### sketches
 
 _CC-BY 4.0_
-Copyright (c) 2023, Martin Scheidt
+Copyright (c) 2024, Martin Scheidt
