@@ -3,7 +3,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Railway Layer Model",
   "description":
-    "The railway layer model is part of a PhD thesis. Copyright (c) 2018 - 2023, Martin Scheidt [m.scheidt@tu-bs.de] under the ISC License. This schema can be used to verify the YAML snippets for railway layer model. First cycle of DSR only includes the base layer",
+    "The railway layer model is part of a PhD thesis. Copyright (c) 2018 - 2024, Martin Scheidt [m.scheidt@tu-bs.de] under the ISC License. This schema can be used to verify the YAML snippets for railway layer model. First cycle of DSR only includes the base layer",
   "type": "object",
   "anyOf": [
     {"required": [ "base" ] },
@@ -1023,7 +1023,7 @@
       "title": "transport layer",
       "description": "services, intervals, trains",
       "type": "object",
-      "required": [ "periods", "runs", "services", "trains" ],
+      "required": [ "periods", "runs", "services", "courses" ],
       "properties": {
         "periods": {
           "type": "array",
