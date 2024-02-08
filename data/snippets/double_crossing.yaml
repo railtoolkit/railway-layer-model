@@ -4,25 +4,25 @@ physical:
   id: "double crossing"
   elements:
     - id: E1
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.000
     - id: E2
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.000
     - id: E3
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.000
     - id: K1
-      class: branching
+      kind: branching
       branches:
         - id: straight
           path: [b,g]
@@ -34,7 +34,7 @@ physical:
       - line: "line0"
         mileage:  0.200
     - id: K2
-      class: branching
+      kind: branching
       branches:
         - id: straight
           path: [a,f]
@@ -46,19 +46,19 @@ physical:
       - line: "line0"
         mileage: 0.300
     - id: E4
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.500
     - id: E5
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.500
     - id: E6
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"

@@ -4,19 +4,19 @@ physical:
   id: "crossing"
   elements:
     - id: E1
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.000
     - id: E2
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage:  0.000
     - id: X1
-      class: branching
+      kind: branching
       kind: diamond crossing
       branches:
         - id: straight
@@ -36,13 +36,13 @@ physical:
       - line: "line0"
         mileage: 0.250
     - id: E3
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.500
     - id: E4
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"

@@ -4,16 +4,16 @@ physical:
   id: "turnout"
   elements:
     - id: E1
-      class: end
+      kind: end
       pos:
         "line0": 0.000
     - id: D1
-      class: derailer
+      kind: derailer
       direction: forward
       pos:
         "line0": 0.100
     - id: E2
-      class: end
+      kind: end
       pos:
         "line0": 0.200
   segments:

@@ -9,7 +9,7 @@ speed:
     - pos:
         "line0": 16.57909 # from here on
       kind: transition
-      class: linear # class of function
+      kind: linear # class of function
     - pos:
         "line0": 16.80309 # from here on
       kind: curve

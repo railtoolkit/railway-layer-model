@@ -4,13 +4,13 @@ physical:
   id: "turnout"
   elements:
     - id: E1
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.000
     - id: W1
-      class: branching
+      kind: branching
       kind: turnout
       branches:
         - id: straight
@@ -30,13 +30,13 @@ physical:
         mileage: 0.250
       specimen: 500-1 # kind in katalog
     - id: E2
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.500
     - id: E3
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"

@@ -4,20 +4,20 @@ physical:
   id: "signal"
   elements:
     - id: E1
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"
         mileage: 0.000
     - id: S1
-      class: sign
+      kind: sign
       kind: signal
       direction: forward
       pos:
       - line: "line0"
         mileage: 0.250
     - id: E2
-      class: end
+      kind: end
       kind: continuing
       pos:
       - line: "line0"

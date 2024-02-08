@@ -5,7 +5,7 @@ network:
   id: network
   nodes:
     - id: west
-      class: junction
+      kind: junction
       in: [1,2]
       out: [3,4,5]
   connections:  
@@ -14,15 +14,15 @@ physical:
   id: west
   elements:
     - id: "1"
-      class: end
+      kind: end
       pos:
         "line0": 0.000
     - id: "2"
-      class: end
+      kind: end
       pos:
         "line0": 0.000
     - id: W1
-      class: branching
+      kind: branching
       branches:
         - id: straight
           path: [a,b]
@@ -33,7 +33,7 @@ physical:
       pos:
         "line0": 0.250
     - id: W2
-      class: branching
+      kind: branching
       branches:
         - id: diverging2
           path: [c,d]
@@ -44,7 +44,7 @@ physical:
       pos:
         "line0": 0.350
     - id: W3
-      class: branching
+      kind: branching
       branches:
         - id: straight
           path: [f,g]
@@ -55,15 +55,15 @@ physical:
       pos:
         "line0": 0.250
     - id: "3"
-      class: end
+      kind: end
       pos:
         "line0": 0.500
     - id: "4"
-      class: end
+      kind: end
       pos:
         "line0": 0.500
     - id: "5"
-      class: end
+      kind: end
       pos:
         "line0": 0.500
   segments:

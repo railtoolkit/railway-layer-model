@@ -3,206 +3,206 @@
 speed:
   radius_changes:
     - pos: -1
-      class: straight
+      kind: straight
       radius: Inf  
     - pos: 0.48460
-      class: curvature
+      kind: curvature
       radius: -3000
     - pos: 0.62623
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 0.75090
-      class: curvature
+      kind: curvature
       radius: 300
     - pos: 0.78405
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 0.84009
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 1.06409
-      class: curvature
+      kind: curvature
       radius: 798
     - pos: 1.62406
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 1.84806
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 1.96770
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 2.13570
-      class: curvature
+      kind: curvature
       radius: -1070
     - pos: 2.70515
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 2.87315
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 5.46746
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 5.62146
-      class: curvature
+      kind: curvature
       radius: -1160
     - pos: 7.32146
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 7.47546
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 7.67780
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 7.87380
-      class: curvature
+      kind: curvature
       radius: 900
     - pos: 9.08017
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 9.27617
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 10.19665
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 10.33665
-      class: curvature
+      kind: curvature
       radius: -1280
     - pos: 10.63986
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 10.77986
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 11.69784
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 11.85184
-      class: curvature
+      kind: curvature
       radius: -1170
     - pos: 12.54684
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 12.70084
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 13.24571
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 13.37171
-      class: curvature
+      kind: curvature
       radius: 1380
     - pos: 13.62171
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 13.74771
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 13.81659
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 14.04059
-      class: curvature
+      kind: curvature
       radius: -800
     - pos: 14.44400
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 14.66800
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 15.80938
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 15.97738
-      class: curvature
+      kind: curvature
       radius: 1081.9
     - pos: 17.98489
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 18.15289
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 18.73388
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 18.78988
-      class: curvature
+      kind: curvature
       radius: -760
     - pos: 18.90000
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 19.57128
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 19.74728
-      class: curvature
+      kind: curvature
       radius: -1500
     - pos: 20.18621
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 20.36221
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 20.64386
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 20.89986
-      class: curvature
+      kind: curvature
       radius: 1050
     - pos: 21.57986
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 21.83586
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 21.89986
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 21.93853
-      class: curvature
+      kind: curvature
       radius: -5000
     - pos: 22.07375
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 22.11241
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 22.18745
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 22.22612
-      class: curvature
+      kind: curvature
       radius: 5000
     - pos: 22.36133
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 22.40000
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 23.20000
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 23.23867
-      class: curvature
+      kind: curvature
       radius: 5000
     - pos: 23.37388
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 23.41255
-      class: straight
+      kind: straight
       radius: Inf
     - pos: 23.48759
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 23.52625
-      class: curvature
+      kind: curvature
       radius: -5000
     - pos: 23.66147
-      class: transition
-      type: linear
+      kind: transition
+      class: linear
     - pos: 23.70014
-      class: straight
+      kind: straight
       radius: Inf
