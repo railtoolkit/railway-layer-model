@@ -28,6 +28,7 @@
 * Speed Profile Layer:
   * modify Speed Profile Layer to extend coverage further than the running lines
   * [1] graph instead of a list/array; see also [2]
+  * Resistance instead of Radius and Gradient
 
 * Interlocking Layer:
   * interlocking logic
