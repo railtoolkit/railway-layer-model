@@ -41,6 +41,6 @@
   * usefullness of layer?
     * automated dispatching \ref[p. 2-7 -- 2-12]{Pachl:1993}
       * Fahrstraßenanforderungspunkt, Einstellanstoßpunkt, Signalsichtpunkt, Bremseinsatzpunkt
-      * request point, trigger point, view point, breaking point
-    * trigger point 300m from breaking point fix \ref{Kuemmell:1958}
+      * request point, trigger point, view point, braking point
+    * trigger point 300m from braking point fix \ref{Kuemmell:1958}
     * main signal, clearing point

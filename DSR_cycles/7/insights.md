@@ -8,7 +8,7 @@
   * enable blocking time and headway time
     * switch from signal to signal based occupation time to clearing point to clearing point based occupation time
       * decribed in P.114  Pachl:2002 3.edition - no longer included in higher editions
-    * trigger/breaking point still oriented towards signals
+    * trigger/braking point still oriented towards signals
   * cases: pass, run-start, run-end, route-begin, route-extend
     * minimal snippets might be combined
     * edge cases: (swinging) overlap

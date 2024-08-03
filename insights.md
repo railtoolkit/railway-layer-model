@@ -202,8 +202,8 @@
   * usefullness of layer?
     * automated dispatching \cite[p. 2-7 -- 2-12]{Pachl:1993}
       * Fahrstraßenanforderungspunkt, Einstellanstoßpunkt, Signalsichtpunkt, Bremseinsatzpunkt
-      * request point, trigger point, view point, breaking point
-    * trigger point 300m from breaking point fix \cite{Kuemmell:1958}
+      * request point, trigger point, view point, braking point
+    * trigger point 300m from braking point fix \cite{Kuemmell:1958}
     * main signal, clearing point
 
   -------
@@ -215,7 +215,7 @@
   * enable blocking time and headway time
     * switch from signal to signal based occupation time to clearing point to clearing point based occupation time
       * decribed in P.114  Pachl:2002 3.edition - no longer included in higher editions
-    * trigger/breaking point still oriented towards signals
+    * trigger/braking point still oriented towards signals
   * cases: pass, run-start, run-end, route-begin, route-extend
     * minimal snippets might be combined
     * edge cases: (swinging) overlap

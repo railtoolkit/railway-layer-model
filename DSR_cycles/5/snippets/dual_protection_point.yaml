@@ -4,7 +4,7 @@ interlocking:
 - entrance_name: A
   physical_ref: e9449472-545f-4198-b640-6e3de097719b
   network_ref: "XPD_west"
-  breaking_distance: 0.700
+  braking_distance: 0.700
   routes:
     - id: track3
       target: "3"
@@ -35,7 +35,7 @@ interlocking:
 - entrance_name: B
   physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
   network_ref: "XPD_west"
-  breaking_distance: 0.700
+  braking_distance: 0.700
   routes:
     - id: main
       target: XPD_1

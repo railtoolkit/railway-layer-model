@@ -166,7 +166,7 @@ function getSnippet(run::DataFrame, entry_point::String, exit_point::String;
   exit = exit_base_ref * ":" * exit_name
 
   trigger  = filter(row -> occursin(entry,row.label) && occursin("trigger" ,row.label)        && occursin("front" ,row.label), run)
-  breaking = filter(row -> occursin(entry,row.label) && occursin("breaking" ,row.label)       && occursin("front" ,row.label), run)
+  braking = filter(row -> occursin(entry,row.label) && occursin("braking" ,row.label)       && occursin("front" ,row.label), run)
   ingress  = filter(row -> occursin(entry,row.label) && occursin("block clearing" ,row.label) && occursin("front" ,row.label), run)
   egress   = filter(row -> occursin(exit,row.label)  && occursin("block clearing" ,row.label) && occursin("front" ,row.label), run)
   clear    = filter(row -> occursin(exit,row.label)  && occursin("block clearing" ,row.label) && occursin("rear" ,row.label),  run)
@@ -188,12 +188,12 @@ function getSnippet(run::DataFrame, entry_point::String, exit_point::String;
     if isempty(trigger)
       trigger_duration = 0.0
     else
-      trigger_duration = abs(breaking[1,:t] - trigger[1,:t])
+      trigger_duration = abs(braking[1,:t] - trigger[1,:t])
     end
-    if isempty(breaking)
+    if isempty(braking)
       pre_duration = 0.0
     else
-      pre_duration = abs(ingress[1,:t] - breaking[1,:t])
+      pre_duration = abs(ingress[1,:t] - braking[1,:t])
     end
     post_duration    = release_time
     egress_type      = :halt
@@ -205,12 +205,12 @@ function getSnippet(run::DataFrame, entry_point::String, exit_point::String;
     if isempty(trigger)
       trigger_duration = reaction_time + grant_authoriy_time
     else
-      trigger_duration = abs(breaking[1,:t] - trigger[1,:t])
+      trigger_duration = abs(braking[1,:t] - trigger[1,:t])
     end
-    if isempty(breaking)
+    if isempty(braking)
       pre_duration = 0.0
     else
-      pre_duration = abs(ingress[1,:t] - breaking[1,:t])
+      pre_duration = abs(ingress[1,:t] - braking[1,:t])
     end
     post_duration  = abs(clear[1,:t] - egress[1,:t]) + release_time
     push_pre = true
@@ -227,12 +227,12 @@ function getSnippet(run::DataFrame, entry_point::String, exit_point::String;
     if isempty(trigger)
       trigger_duration = reaction_time + grant_authoriy_time
     else
-      trigger_duration = abs(breaking[1,:t] - trigger[1,:t])
+      trigger_duration = abs(braking[1,:t] - trigger[1,:t])
     end
-    if isempty(breaking)
+    if isempty(braking)
       pre_duration = 0.0
     else
-      pre_duration = abs(ingress[1,:t] - breaking[1,:t])
+      pre_duration = abs(ingress[1,:t] - braking[1,:t])
     end
     post_duration  = abs(clear[1,:t] - egress[1,:t]) + release_time
   end

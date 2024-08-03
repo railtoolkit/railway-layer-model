@@ -101,9 +101,9 @@ function get_poi(path, networkLayer, resourceLayer, physicalLayer, interlockingL
         if haskey(segment, "clearing_distance")
           push!(df, (object_name, "block clearing", current_path_element, mileage + direction_factor * segment["clearing_distance"], line))
         end
-        if haskey(segment, "breaking_distance")
-          mileage = mileage - direction_factor * segment["breaking_distance"]
-          push!(df, (object_name, "breaking distance", current_path_element, mileage, line))
+        if haskey(segment, "braking_distance")
+          mileage = mileage - direction_factor * segment["braking_distance"]
+          push!(df, (object_name, "braking distance", current_path_element, mileage, line))
           mileage = mileage - direction_factor * 0.3
           push!(df, (object_name, "trigger point", current_path_element, mileage, line))
         end
@@ -121,8 +121,8 @@ function get_poi(path, networkLayer, resourceLayer, physicalLayer, interlockingL
       push!(df, (limit["name"], "main signal", network_element, mileage, line))
 
       # 2.2. distant signal
-      mileage = mileage - direction_factor * limit["breaking_distance"]
-      push!(df, (limit["name"], "breaking distance", network_element, mileage, line))
+      mileage = mileage - direction_factor * limit["braking_distance"]
+      push!(df, (limit["name"], "braking distance", network_element, mileage, line))
       # 2.3 trigger point
       mileage = mileage - direction_factor * 0.3
       push!(df, (limit["name"], "trigger point", network_element, mileage, line))

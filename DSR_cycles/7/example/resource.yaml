@@ -12,7 +12,7 @@ resource:
         #   line_track: "right"
         #   segments:
         #     - physical_ref: ["401_2","401_3","401_4"]
-        #       # breaking_distance: 0.700
+        #       # braking_distance: 0.700
         #       # clearing_distance: 0.005
         #       length: 0.754
         #       clearing_distance: 0.005
@@ -60,7 +60,7 @@ resource:
           line_track: "main"
           segments:
             - physical_ref: ["9f9c6903-8515-43f0-99d8-b8fc738ab647","3e588a7e-8487-4fc5-9541-95db05bdf701","37e6ae6f-9edb-4e43-a935-d1a9646e4ba3","1de2ff52-f471-4b00-9526-eaed4b74ec46"] # ["401_2","401_3","401_4","401_5"]
-              # breaking_distance: 0.700
+              # braking_distance: 0.700
               id: XPD_1_1
               clearing_distance: 0.005
               berth:
@@ -76,7 +76,7 @@ resource:
                     physical_ref: 763163e9-c6c5-487b-a455-d78c17e826c9
                     platform: true
             - physical_ref: ["41b33bd7-22aa-48b3-8bb0-24dc74063b71","73f0544b-59dc-479c-988c-4787670dd916","868283aa-3594-4b05-8fbf-e56795a76ae5","020014fd-ecd1-4e2d-91ef-2f74fd0fa263"] # ["401_6","401_7","401_8","401_9"]
-              # breaking_distance: 0.700
+              # braking_distance: 0.700
               clearing_distance: 0.005
               id: XPD_1_2
               berth:
@@ -129,11 +129,11 @@ resource:
           segments:
             - physical_ref: ["84fbfb94-4a22-49d9-8918-66bb4cd0242a"]
               id: XR_XPD_1
-              breaking_distance: 0.700 # distant signal
+              braking_distance: 0.700 # distant signal
               clearing_distance: 0.050 # overlap
             - physical_ref: ["a67f7533-ff97-4d9c-9f3e-6df1dcc5c622"]
               id: XR_XPD_2
-              breaking_distance: 0.700
+              braking_distance: 0.700
               clearing_distance: 0.050
     - id: XPD_XBU
       name: From Pockelsdorf to Bülten
@@ -145,11 +145,11 @@ resource:
           segments:
             - physical_ref: ["43ed0124-ce79-40c1-81f3-d941b425f9f8"]
               id: XPD_XBU_1
-              breaking_distance: 0.700 # distant signal
+              braking_distance: 0.700 # distant signal
               clearing_distance: 0.050 # overlap
             - physical_ref: ["18a4469c-b63a-4099-81a2-12b56d552d8a"]
               id: XPD_XBU_2
-              breaking_distance: 0.700
+              braking_distance: 0.700
               clearing_distance: 0.050
     - id: XBU_XSZ
       base_ref: XBU_XSZ
@@ -160,7 +160,7 @@ resource:
           segments:
             - physical_ref: ["0925afe1-2b5b-464d-9f3f-a16c505df23e"]
               id: XBU_XSZ_1_1
-              breaking_distance: 1.000
+              braking_distance: 1.000
               clearing_distance: 0.200
         - id: "XBU_XSZ_2"
           line: "9724"
@@ -168,6 +168,6 @@ resource:
           segments:
             - physical_ref: ["826696a2-80c9-40de-a042-dfd925522cc0"]
               id: XBU_XSZ_1_2
-              breaking_distance: 1.000
+              braking_distance: 1.000
               clearing_distance: 0.200
 

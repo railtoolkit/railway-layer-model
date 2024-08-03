@@ -4,7 +4,7 @@ interlocking:
   - entrance_name: A
     physical_ref: e9449472-545f-4198-b640-6e3de097719b
     network_ref: "XPD_west"
-    breaking_distance: 0.700
+    braking_distance: 0.700
     overlaps:
       - id: main
         end:
@@ -84,7 +84,7 @@ interlocking:
   - entrance_name: B
     physical_ref: a820721f-8fd9-424a-b4ca-ef581c38e366
     network_ref: "XPD_west"
-    breaking_distance: 0.700
+    braking_distance: 0.700
     overlaps:
       - id: main
         end: 
@@ -134,7 +134,7 @@ interlocking:
   - entrance_name: P1
     physical_ref: b361a3ee-5069-4569-872f-6f3642209fe8
     network_ref: "XPD_west"
-    breaking_distance: 0.700
+    braking_distance: 0.700
     overlaps:
       - id: main
         end: 
@@ -224,7 +224,7 @@ interlocking:
   - entrance_name: P2
     physical_ref: 1559135a-021c-4e24-a5c2-e8075bc4c4c5
     network_ref: "XPD_west"
-    breaking_distance: 0.700
+    braking_distance: 0.700
     overlaps:
       - id: main
         end: 
@@ -322,7 +322,7 @@ interlocking:
   - entrance_name: P3
     physical_ref: f0913f71-4530-4209-9da0-4b9e6d7d8250
     network_ref: "XPD_west"
-    breaking_distance: 0.700
+    braking_distance: 0.700
     overlaps:
       - id: main
         end: 
@@ -364,7 +364,7 @@ interlocking:
   - entrance_name: N3
     physical_ref: 897f5fbd-8583-4353-a0d6-feaf0150cbef
     network_ref: "XR_east"
-    breaking_distance: 1.000
+    braking_distance: 1.000
     overlaps:
       - id: main
         end:
@@ -409,7 +409,7 @@ interlocking:
   - entrance_name: N1
     physical_ref: 606c2f08-3624-4623-9374-c7398320bace
     network_ref: XPD_east
-    breaking_distance: 0.700
+    braking_distance: 0.700
     overlaps:
       - id: main
         end:
@@ -454,7 +454,7 @@ interlocking:
   - entrance_name: "49"
     physical_ref: 02cd9644-102e-4534-abb3-f7f714293054
     network_ref: XBU
-    breaking_distance: 0.700
+    braking_distance: 0.700
     overlaps:
       - id: main
         end:
@@ -484,7 +484,7 @@ interlocking:
   - entrance_name: A
     physical_ref: e68d3951-4d0c-4606-b7d4-fcd63207c2fb
     network_ref: XSZ_west
-    breaking_distance: 1.000
+    braking_distance: 1.000
     overlaps:
       - id: main
         end:

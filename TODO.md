@@ -36,7 +36,7 @@
   * shunting routes
   * level crossings
   * permissible train protection system
-  * make breaking_distance optional
+  * make braking_distance optional
 
 * Resource Layer:
   * dispatching rules

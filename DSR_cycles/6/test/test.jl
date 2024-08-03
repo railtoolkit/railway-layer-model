@@ -56,7 +56,7 @@ fig = LMcore.show(networkLayer)
 draw(PDF("network.pdf", 42cm, 18cm), fig)# save the plot
 
 
-# trigger point, view point, breaking point/distant signal, main signal, clearing point
+# trigger point, view point, braking point/distant signal, main signal, clearing point
 path = [("XR","3"),("XR_XPD","XR_XPD"),("XPD","1"),("XPD_XBU","XPD_XBU"),("XBU_XSZ","XBU_XSZ_2"),("XSZ","2")]
 
 points_of_interest = ResourceLayer.get_poi(path, networkLayer, resourceLayer, physicalLayer, interlockingLayer)

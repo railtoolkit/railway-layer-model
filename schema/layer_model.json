@@ -66,14 +66,14 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [ "id", "physical_ref", "breaking_distance", "clearing_distance" ],
+        "required": [ "id", "physical_ref", "braking_distance", "clearing_distance" ],
         "properties": {
           "id": { "$ref": "#/$defs/id" },
           "physical_ref": {
             "type": "array",
             "items": { "$ref": "#/$defs/physical_reference" }
           },
-          "breaking_distance": { "$ref": "#/$defs/length" },
+          "braking_distance": { "$ref": "#/$defs/length" },
           "clearing_distance": { "$ref": "#/$defs/length" }
         }
       }
@@ -527,12 +527,12 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [ "physical_ref", "network_ref", "breaking_distance", "overlaps", "routes" ],
+        "required": [ "physical_ref", "network_ref", "braking_distance", "overlaps", "routes" ],
         "properties": {
           "entrance_name": { "type": "string" },
           "physical_ref": { "$ref": "#/$defs/physical_reference" },
           "network_ref": { "$ref": "#/$defs/network_reference" },
-          "breaking_distance": { "$ref": "#/$defs/mileage" },
+          "braking_distance": { "$ref": "#/$defs/mileage" },
           "overlaps": {
             "type": "array",
             "items": {

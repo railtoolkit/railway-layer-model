@@ -12,7 +12,7 @@ resource:
           line_track: "main"
           segments:
             - physical_ref: ["9f9c6903-8515-43f0-99d8-b8fc738ab647","3e588a7e-8487-4fc5-9541-95db05bdf701","37e6ae6f-9edb-4e43-a935-d1a9646e4ba3","1de2ff52-f471-4b00-9526-eaed4b74ec46"] # ["401_2","401_3","401_4","401_5"]
-              # breaking_distance: 0.700
+              # braking_distance: 0.700
               clearing_distance: 0.005
               berth:
                 forward:
@@ -27,7 +27,7 @@ resource:
                     physical_ref: 763163e9-c6c5-487b-a455-d78c17e826c9
                     platform: true
             - physical_ref: ["41b33bd7-22aa-48b3-8bb0-24dc74063b71","73f0544b-59dc-479c-988c-4787670dd916","868283aa-3594-4b05-8fbf-e56795a76ae5","020014fd-ecd1-4e2d-91ef-2f74fd0fa263"] # ["401_6","401_7","401_8","401_9"]
-              # breaking_distance: 0.700
+              # braking_distance: 0.700
               clearing_distance: 0.005
               berth:
                 forward:
